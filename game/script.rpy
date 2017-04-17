@@ -41,6 +41,6 @@ label start:
 
             "You did the right thing. You’ve won the respect of your key staff and caught the attention of investors."
 
-    "Done"
+    pause 5.0
 
     return
