@@ -1,0 +1,16 @@
+*.rpyc
+*.rpyb
+*.odt#
+*.bak
+*.save
+*.log
+*persistent
+backlog.json
+errors.txt
+traceback.txt
+log.txt
+tmp/
+docs/_build/
+game/cache/
+game/data/user/
+game/saves/
