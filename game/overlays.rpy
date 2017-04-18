@@ -1,44 +1,14 @@
-init python:
-    check = {
-
-    "energy": 0,
-    "morale": 0,
-    "money": 0
-    }
-
-    def variable(name, value):
-        old_value = getattr(store, name)
-        new_value = old_value + value
-
-        if old_value > new_value:
-            store.check[name] = -1
-        elif old_value < new_value:
-            store.check[name] = 1
-        else:
-            store.check[name] = 0
-
-        setattr(store, name, new_value)
-        return
-
-    def counter(name):
-        value = getattr(store, name)
-
-        if check[name] == -1:
-            check[name] = 0
-            return "{color=#ff0000}" + str(value) + "{/color}"
-        elif check[name] == 1:
-            check[name] = 0
-            return "{color=#00ff00}" + str(value) + "{/color}"
-        else:
-            return str(value)
-
 screen hud():
+    if check["confirm"]:
+        key "dismiss" action [SetDict(check, "energy", ""), SetDict(check, "morale", ""), SetDict(check, "money", ""), SetDict(check, "confirm", False), Function(renpy.IgnoreEvent)]
     frame:
         xpos 25
         yalign 0.5
 
         xsize 320
         ysize 960
+
+        text "Month: {0:02d}".format(divmod(turn_no, 4)[0] + 1) size 45 xalign 0.5 ypos 20
 
         vbox:
             xalign 0.5
@@ -48,14 +18,29 @@ screen hud():
             vbox:
                 spacing 10
                 text "ENERGY" xalign 0.5
-                text counter("energy") xalign 0.5
+                text "[energy]" xalign 0.5
+
+                if check["energy"]:
+                    text check["energy"] xalign 0.5 at flash
+                else:
+                    null height 40
 
             vbox:
                 spacing 10
                 text "MORALE" xalign 0.5
-                text counter("morale") xalign 0.5
+                text "[morale]" xalign 0.5
+
+                if check["morale"]:
+                    text check["morale"] xalign 0.5 at flash
+                else:
+                    null height 40
 
             vbox:
                 spacing 10
                 text "CASH" xalign 0.5
-                text "[CURRENCY]" + counter("money") xalign 0.5
+                text "[CURRENCY]" + "[money]" xalign 0.5
+
+                if check["money"]:
+                    text check["money"] xalign 0.5 at flash
+                else:
+                    null height 40

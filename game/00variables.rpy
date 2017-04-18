@@ -1,5 +1,7 @@
 define CURRENCY = "$"
 
-define energy = 50
-define morale = 50
+define energy = 75
+define morale = 75
 define money = 100000
+
+define turn_no = 1

@@ -1,2 +1,2 @@
 image bg lounge = "images/bg/lounge.jpg"
-image mr grey = Placeholder("boy")
+image mr x = Placeholder("boy")
