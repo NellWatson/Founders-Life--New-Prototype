@@ -18,5 +18,5 @@ init python:
 
         setattr(store, name, new_value)
 
-    def find_event(pool=["major_event", "minor_event"]):
+    def find_event(pool=["major_event", "minor_event_1", "minor_event_2", "minor_event_3", "minor_event_4"]):
         return renpy.random.choice(pool)

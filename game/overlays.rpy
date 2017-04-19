@@ -1,6 +1,17 @@
 screen hud():
     if check["confirm"]:
         key "dismiss" action [SetDict(check, "energy", ""), SetDict(check, "morale", ""), SetDict(check, "money", ""), SetDict(check, "confirm", False), Function(renpy.IgnoreEvent)]
+
+    if event_name:
+        frame:
+            xalign 0.5
+            ypos -5
+
+            xsize 300
+            ysize 55
+
+            text "[event_name]" xalign 0.5 yalign 0.6
+
     frame:
         xpos 25
         yalign 0.5
@@ -8,7 +19,7 @@ screen hud():
         xsize 320
         ysize 960
 
-        text "Month: {0:02d}".format(divmod(turn_no, 4)[0] + 1) size 45 xalign 0.5 ypos 20
+        text "Month: {0:02d}".format(month) size 45 xalign 0.5 ypos 20
 
         vbox:
             xalign 0.5

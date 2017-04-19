@@ -9,15 +9,31 @@ label start:
     show mr x at center with dissolve
 
 label checkpoint:
-    if energy > 0 and morale > 0 and money > 0:
-        jump expression find_event()
+    if turn_no and not (turn_no % 4):
+        $ month += 1
 
-    pause 5.0
+    if energy > 0 and morale > 0 and money > 0:
+        $ turn_no += 1
+
+        "And here comes another turning point in Mr. X's life."
+        
+        jump expression find_event()
+    elif energy > 0:
+        "You are out of Energy."
+    elif morale > 0:
+        "You are out of Morale."
+    elif money > 0:
+        "You are out of Cash."
+
+    if month > 1:
+        "You survived [month] months."
+    else:
+        "You survived [month] month."
 
     return
 
-label minor_event:
-    $ turn_no += 1
+label minor_event_1:
+    $ event_name = "Minor Event 1"
 
     "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
 
@@ -53,39 +69,150 @@ label minor_event:
 
     jump checkpoint
 
+label minor_event_2:
+    $ event_name = "Minor Event 2"
+
+    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
+
+    menu:
+        "What should he do?"
+
+        "Choose A":
+            "Some time in the future..."
+
+            $ variable("energy", 5)
+            $ variable("morale", -5)
+            $ variable("money", 5000)
+
+            "Awesome. You earned money"
+
+        "Choose B":
+            "Some time in the future..."
+
+            $ variable("energy", -5)
+            $ variable("morale", 5)
+            $ variable("money", 5000)
+
+            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+
+        "Choose C":
+            "Some time in the future..."
+
+            $ variable("energy", 5)
+            $ variable("morale", -5)
+            $ variable("money", -5000)
+
+            "Well on the plus side, you have some extra energy."
+
+    jump checkpoint
+
+label minor_event_3:
+    $ event_name = "Minor Event 3"
+
+    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
+
+    menu:
+        "What should he do?"
+
+        "Choose A":
+            "Some time in the future..."
+
+            $ variable("energy", 10)
+            $ variable("morale", -10)
+            $ variable("money", 10000)
+
+            "Awesome. You earned money"
+
+        "Choose B":
+            "Some time in the future..."
+
+            $ variable("energy", -10)
+            $ variable("morale", 10)
+            $ variable("money", 10000)
+
+            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+
+        "Choose C":
+            "Some time in the future..."
+
+            $ variable("energy", -10)
+            $ variable("morale", -10)
+            $ variable("money", 10000)
+
+            "Well on the plus side, you have some extra energy."
+
+    jump checkpoint
+
+label minor_event_4:
+    $ event_name = "Minor Event 4"
+
+    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
+
+    menu:
+        "What should he do?"
+
+        "Choose A":
+            "Some time in the future..."
+
+            $ variable("energy", 5)
+            $ variable("morale", 5)
+            $ variable("money", -10000)
+
+            "Awesome. You are a bit more energetic."
+
+        "Choose B":
+            "Some time in the future..."
+
+            $ variable("energy", -5)
+            $ variable("morale", 5)
+            $ variable("money", 5000)
+
+            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+
+        "Choose C":
+            "Some time in the future..."
+
+            $ variable("energy", 5)
+            $ variable("morale", -5)
+            $ variable("money", +5000)
+
+            "Well you have some extra money and energy."
+
+    jump checkpoint
+
 label major_event:
-    $ turn_no += 1
+    $ event_name = "Major Event 1"
 
     "He is sitting motionlessly in a corner, mulling over one of the hardest decision of his life."
 
     menu:
         "What should he do?"
 
-        "Pay $$$ to secretly acquire it":
+        "Choose Major A":
             "Some time in the future..."
 
             $ variable("energy", 50)
             $ variable("morale", -50)
             $ variable("money", 50000)
 
-            "Awesome. You’ve saved time AND made your startup more valuable! ...But key staff have lost respect for you."
+            "Awesome. You earned money"
 
-        "Publicly expose employee":
+        "Choose Major B":
             "Some time in the future..."
 
             $ variable("energy", -50)
             $ variable("morale", 50)
             $ variable("money", 50000)
 
-            "You did the right thing, even Hacker News thinks so. Unfortunately, the PR fallout costs you a lot of energy and stalled progress."
+            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
 
-        "Privately reject offer":
+        "Choose Major C":
             "Some time in the future..."
 
             $ variable("energy", 50)
             $ variable("morale", -50)
             $ variable("money", -50000)
 
-            "You did the right thing. You’ve won the respect of your key staff and caught the attention of investors."
+            "Well on the plus side, you have some extra energy."
 
     jump checkpoint
