@@ -18,11 +18,11 @@ label checkpoint:
         "And here comes another turning point in Mr. X's life."
         
         jump expression find_event()
-    elif energy > 0:
+    elif energy < 0:
         "You are out of Energy."
-    elif morale > 0:
+    elif morale < 0:
         "You are out of Morale."
-    elif money > 0:
+    elif money < 0:
         "You are out of Cash."
 
     if month > 1:
