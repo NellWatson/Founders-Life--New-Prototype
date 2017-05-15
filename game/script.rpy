@@ -19,11 +19,11 @@ label checkpoint:
         
         jump expression find_event()
     elif energy < 0:
-        "You are out of Energy."
+        call screen err_msg(message="You are out of Energy.", title="game over")
     elif morale < 0:
-        "You are out of Morale."
+        call screen err_msg(message="You are out of Morale.", title="game over")
     elif money < 0:
-        "You are out of Cash."
+        call screen err_msg(message="You are out of Cash.", title="game over")
 
     if month > 1:
         "You survived [month] months."
