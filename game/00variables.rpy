@@ -1,10 +1,10 @@
-define CURRENCY = "$"
+default CURRENCY = "$"
 
-define energy = 75
-define morale = 75
-define money = 100000
+default energy = 75
+default morale = 75
+default money = 100000
 
-define turn_no = 0
-define month = 1
+default turn_no = 0
+default month = 1
 
-define event_name = ""
+default event_name = ""

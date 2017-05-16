@@ -216,22 +216,48 @@ screen choice(items):
 
     vbox:
         xalign 0.98
-        yalign 0.5
+        yalign 0.32
         spacing 30
 
         for i in items:
-            textbutton i.caption:
-                xsize 280
-                ysize 250
 
-                background Solid("#00ff00")
-                hover_background Solid("#ff4500")
+            if i.caption == "$_YES":
+                button:
+                    xysize (300, 300)
 
-                text_align 0.5
-                text_color "#000000"
-                text_xalign 0.5
+                    background Solid("#00ff00")
+                    hover_background Solid(Color("#00ff00").tint(0.5))
+                    selected_background Solid(Color("#00ff00").shade(0.5))
 
-                action i.action
+                    add "images/gui/choice/up.png" zoom 0.5 xalign 0.5 yalign 0.5
+
+                    action i.action
+
+            elif i.caption == "$_NO":
+                button:
+                    xysize (300, 300)
+
+                    background Solid("#ff0000")
+                    hover_background Solid(Color("#ff0000").tint(0.5))
+                    selected_background Solid(Color("#ff0000").shade(0.5))
+
+                    add "images/gui/choice/down.png" zoom 0.5 xalign 0.5 yalign 0.5
+
+                    action i.action
+
+            else:
+                textbutton i.caption:
+                    xsize 280
+                    ysize 250
+
+                    background Solid("#00ff00")
+                    hover_background Solid("#ff4500")
+
+                    text_align 0.5
+                    text_color "#000000"
+                    text_xalign 0.5
+
+                    action i.action
 
 
 ## When this is true, menu captions will be spoken by the narrator. When false,

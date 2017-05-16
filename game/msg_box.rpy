@@ -6,7 +6,6 @@ init python:
         """
 
         w, h = Text(message).size()
-
         modifier, round_up = divmod(w, width)
 
         # Add +1 if the value is even a fraction bigger
@@ -21,7 +20,7 @@ init python:
 
         return height if height > min_height else min_height
 
-screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=400, _bar_height=100):
+screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=400, _bar_height=90):
 
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
@@ -51,8 +50,9 @@ screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=
 
                 idle_background Solid(colour)
                 hover_background Solid(tinted)
+                selected_background Solid(shaded)
 
-                text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.57
+                text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                 action If(tagged or called, true=If(tagged, true=Show(name), false=Return()), false=Hide(name))
 
@@ -69,7 +69,7 @@ screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=
 screen warn_msg(message, title="Warning", width=600, height=0):
     modal True
 
-    default actual_height = find_height(message, width-20)
+    default actual_height = height if height else find_height(message, width-20)
 
     use fl_window("warn_msg", title, colour="#ff8800", width=width, height=actual_height):
         vbox:
@@ -81,7 +81,7 @@ screen warn_msg(message, title="Warning", width=600, height=0):
 screen err_msg(message, title="Error", width=600, height=0):
     modal True
     
-    default actual_height = find_height(message, width-20)
+    default actual_height = height if height else find_height(message, width-20)
 
     use fl_window("err_msg", title, colour="#ff0000", width=width, height=actual_height):
         vbox:
@@ -93,7 +93,7 @@ screen err_msg(message, title="Error", width=600, height=0):
 screen msg(message, title="Information", width=600, height=0):
     modal True
     
-    default actual_height = find_height(message, width-20)
+    default actual_height = height if height else find_height(message, width-20)
 
     use fl_window("err_msg", title, colour="#559fdd", width=width, height=actual_height):
         vbox:

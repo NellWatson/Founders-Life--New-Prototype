@@ -14,15 +14,18 @@ label checkpoint:
 
     if energy > 0 and morale > 0 and money > 0:
         $ turn_no += 1
-
         "And here comes another turning point in Mr. X's life."
         
         jump expression find_event()
+
     elif energy < 0:
+        $ print energy
         call screen err_msg(message="You are out of Energy.", title="game over")
     elif morale < 0:
+        $ print morale
         call screen err_msg(message="You are out of Morale.", title="game over")
     elif money < 0:
+        $ print money
         call screen err_msg(message="You are out of Cash.", title="game over")
 
     if month > 1:
@@ -40,7 +43,7 @@ label minor_event_1:
     menu:
         "What should he do?"
 
-        "Choose A":
+        "$_YES":
             "Some time in the future..."
 
             $ variable("energy", 10)
@@ -49,7 +52,7 @@ label minor_event_1:
 
             "Awesome. You earned money"
 
-        "Choose B":
+        "$_NO":
             "Some time in the future..."
 
             $ variable("energy", -10)
@@ -57,15 +60,6 @@ label minor_event_1:
             $ variable("money", 10000)
 
             "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-        "Choose C":
-            "Some time in the future..."
-
-            $ variable("energy", 10)
-            $ variable("morale", -10)
-            $ variable("money", -10000)
-
-            "Well on the plus side, you have some extra energy."
 
     jump checkpoint
 
@@ -77,7 +71,7 @@ label minor_event_2:
     menu:
         "What should he do?"
 
-        "Choose A":
+        "$_YES":
             "Some time in the future..."
 
             $ variable("energy", 5)
@@ -86,7 +80,7 @@ label minor_event_2:
 
             "Awesome. You earned money"
 
-        "Choose B":
+        "$_NO":
             "Some time in the future..."
 
             $ variable("energy", -5)
@@ -94,15 +88,6 @@ label minor_event_2:
             $ variable("money", 5000)
 
             "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-        "Choose C":
-            "Some time in the future..."
-
-            $ variable("energy", 5)
-            $ variable("morale", -5)
-            $ variable("money", -5000)
-
-            "Well on the plus side, you have some extra energy."
 
     jump checkpoint
 
@@ -114,7 +99,7 @@ label minor_event_3:
     menu:
         "What should he do?"
 
-        "Choose A":
+        "$_YES":
             "Some time in the future..."
 
             $ variable("energy", 10)
@@ -123,7 +108,7 @@ label minor_event_3:
 
             "Awesome. You earned money"
 
-        "Choose B":
+        "$_NO":
             "Some time in the future..."
 
             $ variable("energy", -10)
@@ -131,15 +116,6 @@ label minor_event_3:
             $ variable("money", 10000)
 
             "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-        "Choose C":
-            "Some time in the future..."
-
-            $ variable("energy", -10)
-            $ variable("morale", -10)
-            $ variable("money", 10000)
-
-            "Well on the plus side, you have some extra energy."
 
     jump checkpoint
 
@@ -151,7 +127,7 @@ label minor_event_4:
     menu:
         "What should he do?"
 
-        "Choose A":
+        "$_YES":
             "Some time in the future..."
 
             $ variable("energy", 5)
@@ -160,7 +136,7 @@ label minor_event_4:
 
             "Awesome. You are a bit more energetic."
 
-        "Choose B":
+        "$_NO":
             "Some time in the future..."
 
             $ variable("energy", -5)
@@ -168,15 +144,6 @@ label minor_event_4:
             $ variable("money", 5000)
 
             "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-        "Choose C":
-            "Some time in the future..."
-
-            $ variable("energy", 5)
-            $ variable("morale", -5)
-            $ variable("money", +5000)
-
-            "Well you have some extra money and energy."
 
     jump checkpoint
 
@@ -188,7 +155,7 @@ label major_event:
     menu:
         "What should he do?"
 
-        "Choose Major A":
+        "$_YES":
             "Some time in the future..."
 
             $ variable("energy", 50)
@@ -197,7 +164,7 @@ label major_event:
 
             "Awesome. You earned money"
 
-        "Choose Major B":
+        "$_NO":
             "Some time in the future..."
 
             $ variable("energy", -50)
@@ -205,14 +172,5 @@ label major_event:
             $ variable("money", 50000)
 
             "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-        "Choose Major C":
-            "Some time in the future..."
-
-            $ variable("energy", 50)
-            $ variable("morale", -50)
-            $ variable("money", -50000)
-
-            "Well on the plus side, you have some extra energy."
 
     jump checkpoint

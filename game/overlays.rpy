@@ -19,7 +19,7 @@ screen hud():
         xsize 320
         ysize 960
 
-        text "Month: {0:02d}".format(month) size 45 xalign 0.5 ypos 20
+        text "Founder Weeks: {0:02d}".format(turn_no) size 45 xalign 0.5 ypos 20
 
         vbox:
             xalign 0.5
