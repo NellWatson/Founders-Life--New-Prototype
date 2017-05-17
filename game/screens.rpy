@@ -183,12 +183,16 @@ screen input(prompt):
     window:
 
         vbox:
+            spacing 5
+            
             xpos gui.text_xpos
             xanchor gui.text_xalign
             ypos gui.text_ypos
 
             text prompt style "input_prompt"
-            input id "input"
+            hbox:
+                text "> "
+                input id "input"
 
 
 style input_prompt is default
@@ -202,6 +206,7 @@ style input:
     xmaximum gui.text_width
     xalign gui.text_xalign
     text_align gui.text_xalign
+    caret "input_caret"
 
 ## Choice screen ###############################################################
 ##

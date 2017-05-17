@@ -3,14 +3,23 @@ label start:
     scene bg lounge
     show screen hud
 
-    ""
-    "This is Mr. X's lounge."
-
-    show mr x at center with dissolve
+    jump set_startup
 
 label checkpoint:
+    $ event_name = ""
+    
     if turn_no and not (turn_no % 4):
         $ month += 1
+
+        call screen startup_review("bg lounge")
+        
+        $ founder_level += 1
+
+        if founder_level > 10:
+            $ founder_level = 10
+
+        call screen level_up("bg lounge")
+        call screen startup_preview("bg lounge")
 
     if energy > 0 and morale > 0 and money > 0:
         $ turn_no += 1

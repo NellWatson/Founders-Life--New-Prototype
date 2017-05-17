@@ -20,7 +20,7 @@ init python:
 
         return height if height > min_height else min_height
 
-screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=400, _bar_height=90):
+screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=400, _bar_height=90, cross=True):
 
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
@@ -45,18 +45,19 @@ screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=
             add Solid(colour)
             text title.upper() size t_size color "#ffffff" font "DejaVuSans.ttf" yalign 0.5 xalign 0.5
 
-            button:
-                xysize _bar_height, _bar_height
+            if cross:
+                button:
+                    xysize _bar_height, _bar_height
 
-                idle_background Solid(colour)
-                hover_background Solid(tinted)
-                selected_background Solid(shaded)
+                    idle_background Solid(colour)
+                    hover_background Solid(tinted)
+                    selected_background Solid(shaded)
 
-                text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-                action If(tagged or called, true=If(tagged, true=Show(name), false=Return()), false=Hide(name))
+                    action If(tagged or called, true=If(tagged, true=Show(name), false=Return()), false=Hide(name))
 
-                xpos width+20
+                    xpos width+20
     
         frame:
             xsize width

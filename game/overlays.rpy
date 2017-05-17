@@ -14,20 +14,22 @@ screen hud():
 
     frame:
         xpos 25
-        yalign 0.5
+        ypos 40
 
         xsize 320
-        ysize 960
-
-        text "Founder Weeks: {0:02d}".format(turn_no) size 45 xalign 0.5 ypos 20
+        ysize 720
 
         vbox:
             xalign 0.5
             yalign 0.5
-            spacing 100
+            spacing 70
+
+            text "Founder Weeks: {0:02d}".format(turn_no) size 30 xalign 0.5
 
             vbox:
+                xalign 0.5
                 spacing 10
+                
                 text "ENERGY" xalign 0.5
                 text "[energy]" xalign 0.5
 
@@ -37,7 +39,9 @@ screen hud():
                     null height 40
 
             vbox:
+                xalign 0.5
                 spacing 10
+                
                 text "MORALE" xalign 0.5
                 text "[morale]" xalign 0.5
 
@@ -47,7 +51,9 @@ screen hud():
                     null height 40
 
             vbox:
+                xalign 0.5
                 spacing 10
+                
                 text "CASH" xalign 0.5
                 text "[CURRENCY]" + "[money]" xalign 0.5
 
