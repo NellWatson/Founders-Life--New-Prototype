@@ -7,18 +7,19 @@ label start:
 
 label checkpoint:
     $ event_name = ""
+    $ weekly_deductions()
+    $ startup_development(10)
+    $ startup_pr(10)
     
+    $ can_upgrade_startup()
     if turn_no and not (turn_no % 4):
         $ month += 1
 
         call screen startup_review("bg lounge")
-        
-        $ founder_level += 1
 
         if founder_level > 10:
             $ founder_level = 10
 
-        call screen level_up("bg lounge")
         call screen startup_preview("bg lounge")
 
     if energy > 0 and morale > 0 and money > 0:
@@ -44,142 +45,136 @@ label checkpoint:
 
     return
 
-label minor_event_1:
-    $ event_name = "Minor Event 1"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
+label pr_vs_development:
     menu:
-        "What should he do?"
+        "One of your friend who is helping you out in your startup think you should focus on PR more than development to create hype. So do you follow his advice?"
 
         "$_YES":
-            "Some time in the future..."
+            $ move_employees("development", "pr")
+            $ variable("morale", 10)
 
-            $ variable("energy", 10)
-            $ variable("morale", -10)
-            $ variable("money", 10000)
-
-            "Awesome. You earned money"
+            "Your small team bounced with joy when they saw their first like and follow. Though opening a new front has slowed down the app development."
 
         "$_NO":
-            "Some time in the future..."
+            $ variable("morale", -10)
 
-            $ variable("energy", -10)
-            $ variable("morale", 10)
-            $ variable("money", 10000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+            "Your friend seemed a bit down by your rejection but at this stage, it's important that you focus on developing the app."
 
     jump checkpoint
 
-label minor_event_2:
-    $ event_name = "Minor Event 2"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
+label hire_more:
     menu:
-        "What should he do?"
+        "Progress is going slower then you expected. But a small team can only do so much. Should you hire a new employee?"
 
         "$_YES":
-            "Some time in the future..."
+            $ variable("morale", 10)
+            $ variable("energy", -25)
+            $ variable("money", -100)
+            $ dev_employees += 1
 
-            $ variable("energy", 5)
+            "Your budget only allowed you to hire a freshly graduated kid. He seems enthusiastic and a new face brought the morale up a bit."
+
+        "$_NO":
+            $ variable("morale", -10)
+            $ variable("energy", -5)
+
+            "You looked at your finance and decided against hiring. You need all the money you can right now, and there is no way you could have hired a decent developer at the price you would have offered."
+
+    jump checkpoint
+
+label late_night_sprint:
+    menu:
+        "You and your team have been working since morning. It's almost midnight and you are just about done. The last meal you all had was lunch. Treat your employees to dinner?"
+
+        "$_YES":
+            $ variable("morale", 25)
+            $ variable("money", -600)
+
+            "You ordered pizza and soft drinks for everyone. It wasn't much, but your team appreciated your thoughtfulness."
+
+        "$_NO":
+            $ variable("morale", -10)
+            $ variable("energy", -25)
+
+            "You decided against it. Money is tight and it's not like you are not paying them salaries."
+
+    jump checkpoint
+
+label holiday:
+    menu:
+        "You evaluated the development progress and realised that you might not make the deadline. There are a couple of holidays coming. If you cancel them, you might be able to finish it by the deadline. What do you do?"
+
+        "$_YES":
+            $ variable("morale", -15)
+            $ variable("energy", -10)
+            $ startup_development(20)
+
+            "You gave a very moving speech and all of your employees agreed to come on holidays. They aren't super happy about it though."
+
+        "$_NO":
+            $ variable("energy", -25)
+
+            "You remembered your own working days and decided against it. You always hated when your boss pulled that card and you are not going to put your employees through the same."
+
+    jump checkpoint
+
+label bad_ui:
+    "You were browsing through 'StartUp Unite' and got jealous and a bit depressed looking at other people beautiful looking app. Your app looked like as if it was imagined by a guy high on the world's most potent drugs."
+
+    menu:
+        "Since you don't have a UI guy on team, you need to outsource it. Do you?"
+
+        "$_YES":
+            $ variable("morale", 15)
+            $ variable("energy", 10)
+            $ variable("money", -5000)
+
+            "Everyone in your team was happy looking at the fabulous UI. It will definitely give you some bragging points while hyping your app."
+            "But your wallet took a bit hit. You need to budget more now or you will go under."
+
+        "$_NO":
             $ variable("morale", -5)
-            $ variable("money", 5000)
 
-            "Awesome. You earned money"
-
-        "$_NO":
-            "Some time in the future..."
-
-            $ variable("energy", -5)
-            $ variable("morale", 5)
-            $ variable("money", 5000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+            "You decided against it because honestly, you don't have the money. You googled \"apps which were ugly in their start\" to give yourself some mental peace."
 
     jump checkpoint
 
-label minor_event_3:
-    $ event_name = "Minor Event 3"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
+label testing:
     menu:
-        "What should he do?"
+        "Your app is at a stage where internal testing just doesn't cut it. Do you find more people to test your app?"
 
         "$_YES":
-            "Some time in the future..."
-
-            $ variable("energy", 10)
-            $ variable("morale", -10)
-            $ variable("money", 10000)
-
-            "Awesome. You earned money"
-
-        "$_NO":
-            "Some time in the future..."
-
+            $ variable("morale", -15)
             $ variable("energy", -10)
-            $ variable("morale", 10)
-            $ variable("money", 10000)
+            $ variable("money", -100)
+            $ startup_development(-25)
 
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+            "Your testing was a success... and depressing. Everything seemed broken in the hands of people who weren't from your team. That was hard to watch."
+            "And you had to buy some of those kids ice creams and stuff for their 'help'."
+            "Well atleast now your app will be much more robust when you finally let it loose in the wild."
+
+        "$_NO":
+            $ move_employees("development", "testing")
+
+            "You decided against external testing. You don't want people to find out about your idea and you can test it out yourself."
+            "It might be slow but it will protect your 'unique' idea and you don't have to bother figuring out what was a 'user error' and what was a genuine error."
 
     jump checkpoint
 
-label minor_event_4:
-    $ event_name = "Minor Event 4"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
+label nda:
     menu:
-        "What should he do?"
+        "One of your lawyer friend told you about NDAs and it seemed interesting and particularly useful. Do you get one?"
 
         "$_YES":
-            "Some time in the future..."
+            $ variable("morale", -25)
+            $ variable("money", -2000)
 
-            $ variable("energy", 5)
-            $ variable("morale", 5)
-            $ variable("money", -10000)
-
-            "Awesome. You are a bit more energetic."
+            "The lawyer drafted one quickly but after doing some research, you find that investors usually frown upon NDAs, especially when you ask them to sign it."
 
         "$_NO":
-            "Some time in the future..."
+            $ variable("energy", -25)
 
-            $ variable("energy", -5)
-            $ variable("morale", 5)
-            $ variable("money", 5000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-    jump checkpoint
-
-label major_event:
-    $ event_name = "Major Event 1"
-
-    "He is sitting motionlessly in a corner, mulling over one of the hardest decision of his life."
-
-    menu:
-        "What should he do?"
-
-        "$_YES":
-            "Some time in the future..."
-
-            $ variable("energy", 50)
-            $ variable("morale", -50)
-            $ variable("money", 50000)
-
-            "Awesome. You earned money"
-
-        "$_NO":
-            "Some time in the future..."
-
-            $ variable("energy", -50)
-            $ variable("morale", 50)
-            $ variable("money", 50000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+            "You researched about them some more and found that investors usually frown upon NDAs, especially when you ask them to sign it."
+            "Since you want to be in the good graces of any future investors, you decided against getting a NDA."
 
     jump checkpoint

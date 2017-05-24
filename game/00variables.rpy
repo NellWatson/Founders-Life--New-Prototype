@@ -4,10 +4,24 @@ define STARTUP_FIELDS = ["Energy", "A.I.", "Robotics", "Biotech", "Healthcare", 
 define STARTUP_ICONS = ["biomass-512.png", "chip-512.png", "crab-512.png", "dice-512.png", "factory-512.png", "gas-512.png", "greentech-512.png", "in_love-512.png", "lighthouse-512.png", "matches-512.png", "pig-512.png", "plant_under_sun-512.png", "pretzel-512.png", "private-512.png", "queen-512.png", "retro_tv-512.png", "sparrow-512.png", "survival_bag-512.png", "thor_hammer-512.png"]
 
 define FOUNDER_INDEX = {
-    0: "Validating Market",
-    1: "Prototyping",
-    2: "Incorporating",
-    3: "Incubating",
+    1: {
+        "name": "Prototyping",
+        "dev": 0,
+        "pr": 0,
+        "testing": 0
+    },
+    2: {
+        "name": "Incorporating",
+        "dev": 280,
+        "pr": 0,
+        "testing": 0
+    },
+    3: {
+        "name": "Incubating",
+        "dev": 680,
+        "pr": 150,
+        "testing": 300
+    },
     4: "Accelerating",
     5: "Raising VC investment",
     6: "Capturing Product/Market Fit",
@@ -24,11 +38,18 @@ default startup_name = ""
 default startup_field = ""
 default startup_icon = ""
 
-default founder_level = 0
+default founder_level = 1
 
-default energy = 75
-default morale = 75
-default money = 100000
+default energy = 100
+default morale = 100
+default money = 25000
+
+default development = 0
+default dev_employees = 3
+default pr = 0
+default pr_employees = 0
+default testing = 0
+default testing_employees = 0
 
 default turn_no = 0
 default month = 1

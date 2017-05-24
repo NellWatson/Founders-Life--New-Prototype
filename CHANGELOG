@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.3-0525
+------------
+* Added new startup leveling up mechanic.
+* Added new events.
+
 v 0.0.2-0517
 ------------
 * Added "review", "level_up", "preview" screen.

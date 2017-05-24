@@ -89,7 +89,7 @@ screen startup_review(bg):
             text "Another sprint completed" color "#000000" xalign 0.5
             text "It's been [turn_no] weeks since you became a founder." color "#000000" xalign 0.5
             text "Founder Level: [founder_level]" color "#000000" xalign 0.5
-            text "Founder Status: " + FOUNDER_INDEX[founder_level] color "#000000" xalign 0.5
+            text "Founder Status: " + FOUNDER_INDEX[founder_level]["name"] color "#000000" xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
@@ -113,7 +113,7 @@ screen startup_preview(bg):
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
             text "[founder_name], it's been [turn_no] weeks since you became a founder." color "#000000" xalign 0.5
             text "Founder Level: [founder_level]" color "#000000" xalign 0.5
-            text "Founder Status: " + FOUNDER_INDEX[founder_level] color "#000000" xalign 0.5
+            text "Founder Status: " + FOUNDER_INDEX[founder_level]["name"] color "#000000" xalign 0.5
 
         textbutton _("START SPRINT"):
             idle_background("#d3d3d3")
@@ -138,7 +138,7 @@ screen level_up(bg):
             text "Congratulations [founder_name]" color "#000000" xalign 0.5
             text "It's been {color=#00ff00}[turn_no]{/color} weeks since you became a founder." color "#000000" xalign 0.5
             text "Founder Level: {color=#00ff00}[founder_level]{/color}" color "#000000" xalign 0.5
-            text "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level] + "{/color}" color "#000000" xalign 0.5
+            text "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level]["name"] + "{/color}" color "#000000" xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
