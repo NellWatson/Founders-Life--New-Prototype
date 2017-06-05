@@ -1,6 +1,6 @@
 screen hud():
     if check["confirm"]:
-        key "dismiss" action [SetDict(check, "energy", ""), SetDict(check, "morale", ""), SetDict(check, "money", ""), SetDict(check, "confirm", False), Function(renpy.IgnoreEvent)]
+        key "dismiss" action [SetDict(check, "energy", ""), SetDict(check, "morale", ""), SetDict(check, "confirm", False), Function(renpy.IgnoreEvent)]
 
     if event_name:
         frame:
@@ -47,17 +47,5 @@ screen hud():
 
                 if check["morale"]:
                     text check["morale"] xalign 0.5 at flash
-                else:
-                    null height 40
-
-            vbox:
-                xalign 0.5
-                spacing 10
-                
-                text "CASH" xalign 0.5
-                text "[CURRENCY]" + "[money]" xalign 0.5
-
-                if check["money"]:
-                    text check["money"] xalign 0.5 at flash
                 else:
                     null height 40

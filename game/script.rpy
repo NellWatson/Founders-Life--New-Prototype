@@ -21,7 +21,7 @@ label checkpoint:
         call screen level_up("bg lounge")
         call screen startup_preview("bg lounge")
 
-    if energy > 0 and morale > 0 and money > 0:
+    if energy > 0 and morale > 0:
         $ turn_no += 1
         "And here comes another turning point in Mr. X's life."
         
@@ -33,9 +33,6 @@ label checkpoint:
     elif morale < 0:
         $ print morale
         call screen err_msg(message="You are out of Morale.", title="game over")
-    elif money < 0:
-        $ print money
-        call screen err_msg(message="You are out of Cash.", title="game over")
 
     if month > 1:
         "You survived [month] months."
@@ -44,142 +41,176 @@ label checkpoint:
 
     return
 
-label minor_event_1:
-    $ event_name = "Minor Event 1"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
+label cloud:
     menu:
-        "What should he do?"
+        "Your lead programmer wants us build and run our own servers. Do it?"
 
         "$_YES":
-            "Some time in the future..."
-
-            $ variable("energy", 10)
-            $ variable("morale", -10)
-            $ variable("money", 10000)
-
-            "Awesome. You earned money"
+            $ variable("energy", -20)
+            $ variable("morale", 20)
 
         "$_NO":
-            "Some time in the future..."
+            $ variable("energy", 20)
+            $ variable("morale", -20)
 
-            $ variable("energy", -10)
-            $ variable("morale", 10)
-            $ variable("money", 10000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+    "Until we have validated our startup, it would had been better to simply utilise cloud platforms and services."
 
     jump checkpoint
 
-label minor_event_2:
-    $ event_name = "Minor Event 2"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
+label day_one_pr:
     menu:
-        "What should he do?"
+        "Send out a press release to announce your new venture?"
 
         "$_YES":
-            "Some time in the future..."
-
-            $ variable("energy", 5)
-            $ variable("morale", -5)
-            $ variable("money", 5000)
-
-            "Awesome. You earned money"
-
-        "$_NO":
-            "Some time in the future..."
-
             $ variable("energy", -5)
-            $ variable("morale", 5)
-            $ variable("money", 5000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-    jump checkpoint
-
-label minor_event_3:
-    $ event_name = "Minor Event 3"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
-    menu:
-        "What should he do?"
-
-        "$_YES":
-            "Some time in the future..."
-
-            $ variable("energy", 10)
             $ variable("morale", -10)
-            $ variable("money", 10000)
-
-            "Awesome. You earned money"
 
         "$_NO":
-            "Some time in the future..."
+            $ variable("energy", 20)
+            $ variable("morale", 20)
 
-            $ variable("energy", -10)
-            $ variable("morale", 10)
-            $ variable("money", 10000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+    "Don’t waste your time, energy and money on premature, unfocused publicity."
 
     jump checkpoint
 
-label minor_event_4:
-    $ event_name = "Minor Event 4"
-
-    "He is sitting motionlessly in a corner, mulling over one of the easiest decision of his life. Make X's mind for him please because... reasons!"
-
+label conference:
     menu:
-        "What should he do?"
+        "There’s a conference coming up that looks interesting. Buy a ticket for $5,000?"
 
         "$_YES":
-            "Some time in the future..."
-
-            $ variable("energy", 5)
-            $ variable("morale", 5)
-            $ variable("money", -10000)
-
-            "Awesome. You are a bit more energetic."
-
-        "$_NO":
-            "Some time in the future..."
-
-            $ variable("energy", -5)
-            $ variable("morale", 5)
-            $ variable("money", 5000)
-
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
-
-    jump checkpoint
-
-label major_event:
-    $ event_name = "Major Event 1"
-
-    "He is sitting motionlessly in a corner, mulling over one of the hardest decision of his life."
-
-    menu:
-        "What should he do?"
-
-        "$_YES":
-            "Some time in the future..."
-
-            $ variable("energy", 50)
-            $ variable("morale", -50)
-            $ variable("money", 50000)
-
-            "Awesome. You earned money"
-
-        "$_NO":
-            "Some time in the future..."
-
             $ variable("energy", -50)
-            $ variable("morale", 50)
-            $ variable("money", 50000)
+            $ variable("morale", -10)
 
-            "Fantastic. Money and Morale; that's an M&M I like (aside from the regular ones)."
+        "$_NO":
+            $ variable("energy", 50)
+            $ variable("morale", 50)
+
+    "Don’t waste vital product development funds on conferences in the early stages of your startup."
+
+    jump checkpoint
+
+label key_messaging:
+    menu:
+        "Figuring out the key messaging for your startup is distracting you from product development. Should you hire a PR firm?"
+
+        "$_YES":
+            $ variable("energy", 20)
+            $ variable("morale", -20)
+
+        "$_NO":
+            $ variable("energy", -30)
+            $ variable("morale", 50)
+
+    "\"Never outsource the key messaging of the company to a PR firm…You should figure int what the message if the company is going to be yourself.\" - Sam Altman"
+
+    jump checkpoint
+
+label premature_launch:
+    menu:
+        "We have a very basic working version. Should we roll out a public beta?"
+
+        "$_YES":
+            $ variable("energy", 0)
+            $ variable("morale", -20)
+
+        "$_NO":
+            $ variable("morale", 20)
+
+    "\"Launching too slowly has probably killed a hundred times more startups than too fast, but it is possible to launch too fast. The danger here is that you ruin your reputation. You launch something, the early adaptors try it out, and if it’s not good they don’t come back.\""
+
+    jump checkpoint
+
+label ux_research:
+    menu:
+        "Your designer thinks you should run some UX Research before we continue building out the product?"
+
+        "$_YES":
+            $ variable("energy", -20)
+            $ variable("morale", 20)
+
+        "$_NO":
+            $ variable("energy", 30)
+            $ variable("morale", -30)
+
+    "UX Research is important. You are not your user."
+
+    jump checkpoint
+
+label delegation:
+    menu:
+        "Your workload is becoming distracting. Should you take a week out to train up your team to handle key tasks?"
+
+        "$_YES":
+            $ variable("energy", -20)
+            $ variable("morale", 30)
+
+        "$_NO":
+            $ variable("energy", -40)
+            $ variable("morale", -40)
+
+    "\"Many founders try to delegate by having employees do all the grunt work, but then stuck try to make ask the decisions.\" - Sam Altman"
+
+    jump checkpoint
+
+label equity:
+    menu:
+        "You have finally found your perfect designer but she wants 10% equity to join. Should you agree to her terms?"
+
+        "$_YES":
+            $ variable("energy", 30)
+            $ variable("morale", 30)
+
+        "$_NO":
+            $ variable("energy", -30)
+            $ variable("morale", -30)
+
+    "\"Equity is…a very important component of compensation. YC company data suggests the most successful companies give out a lot of equity.\" - Sam Altman"
+
+    jump checkpoint
+
+label beta:
+    menu:
+        "It is going to impossible to get to \"Feature Complete\" for the next scheduled Beta rollout. Should we push back the release date?"
+
+        "$_YES":
+            $ variable("morale", -10)
+
+        "$_NO":
+            $ variable("energy", -20)
+            $ variable("morale", 30)
+
+    "\"Fix Time and Budget, Flex Scope. “Scope down. It’s better to make half a product than a half-assed product.\" - Jason Fried"
+
+    jump checkpoint
+
+label nda:
+    menu:
+        "Your lawyer wants to draw up an NDA for potential VCs to sign?"
+
+        "$_YES":
+            $ variable("energy", -20)
+            $ variable("morale", -50)
+
+        "$_NO":
+            $ variable("energy", 5)
+            $ variable("morale", 40)
+
+    "Typically, VCs won’t sign an NDA. Asking them diminishes their confidence in you."
+
+    jump checkpoint
+
+label micro_managing:
+    menu:
+        "Key team members want to own the tasks they have been delegated. Should you stop micro-managing key activities?"
+
+        "$_YES":
+            $ variable("energy", 40)
+            $ variable("morale", 40)
+
+        "$_NO":
+            $ variable("energy", -40)
+            $ variable("morale", -40)
+
+    "\"Many founders try to delegate by having employees do all the grunt work, but then stuck try to make ask the decisions.\" - Sam Altman"
 
     jump checkpoint

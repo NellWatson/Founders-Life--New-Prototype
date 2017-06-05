@@ -24,7 +24,7 @@ default startup_name = ""
 default startup_field = ""
 default startup_icon = ""
 
-default founder_level = 0
+default founder_level = 1
 
 default energy = 75
 default morale = 75

@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v 0.0.2-0606
+------------
+* Reverted back to build 0516.
+* Removed Cash KPI.
+* Added ST events.
+
 v 0.0.2-0517
 ------------
 * Added "review", "level_up", "preview" screen.
