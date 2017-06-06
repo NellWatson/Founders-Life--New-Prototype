@@ -80,42 +80,35 @@ screen startup_review(bg):
     add bg
     add Solid("#00000050")
 
-    use fl_window("startup_preview", startup_name, colour="#559fdd", width=900, height=500, cross=False):
+    use fl_window("startup_preview", startup_name, colour="#559fdd", width=900, height=550, cross=False):
         vbox:
+            xsize 800
             xalign 0.5
             spacing 20
 
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
-            text "Another sprint completed" color "#000000" xalign 0.5
-            text "It's been [turn_no] weeks since you became a founder." color "#000000" xalign 0.5
-            text "Founder Level: [founder_level]" color "#000000" xalign 0.5
-            text "Founder Status: " + FOUNDER_INDEX[founder_level] color "#000000" xalign 0.5
+            text "Another sprint completed [founder_name]" color "#000000" xalign 0.5
+
+            grid 2 5:
+                xpos 150
+                spacing 10
+
+                text "Energy Remaining Bonus      " color "#000000"
+                text "[energy]" color "#000000"
+                
+                text "Morale Remaining Bonus" color "#000000"
+                text "[morale]" color "#000000"
+                
+                text "Days as Founder Bonus" color "#000000"
+                text str(month * 30) color "#000000"
+                
+                text "Founder XP Level Bonus" color "#000000"
+                text "[founder_level]" color "#000000"
+                
+                text "{b}Sprint Score{/b}" color "#000000"
+                text "{b}[current_sprint]{/b}" color "#000000"
 
         textbutton _("CONTINUE"):
-            idle_background("#d3d3d3")
-            hover_background Solid( Color("#d3d3d3").tint(0.5) )
-            selected_background Solid( Color("#d3d3d3").shade(0.5) )
-
-            action Return()
-
-            xalign 0.5
-            yalign 0.99
-
-screen startup_preview(bg):
-    add bg
-    add Solid("#00000050")
-
-    use fl_window("startup_preview", startup_name, colour="#559fdd", width=900, height=500, cross=False):
-        vbox:
-            xalign 0.5
-            spacing 20
-
-            add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
-            text "[founder_name], it's been [turn_no] weeks since you became a founder." color "#000000" xalign 0.5
-            text "Founder Level: [founder_level]" color "#000000" xalign 0.5
-            text "Founder Status: " + FOUNDER_INDEX[founder_level] color "#000000" xalign 0.5
-
-        textbutton _("START SPRINT"):
             idle_background("#d3d3d3")
             hover_background Solid( Color("#d3d3d3").tint(0.5) )
             selected_background Solid( Color("#d3d3d3").shade(0.5) )
@@ -132,13 +125,12 @@ screen level_up(bg):
     use fl_window("startup_preview", startup_name, colour="#559fdd", width=900, height=500, cross=False):
         vbox:
             xalign 0.5
-            spacing 20
+            spacing 25
 
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
-            text "Congratulations [founder_name]" color "#000000" xalign 0.5
-            text "It's been {color=#00ff00}[turn_no]{/color} weeks since you became a founder." color "#000000" xalign 0.5
             text "Founder Level: {color=#00ff00}[founder_level]{/color}" color "#000000" xalign 0.5
-            text "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level] + "{/color}" color "#000000" xalign 0.5
+            text "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level][0] + "{/color}" color "#000000" xalign 0.5
+            text "Startup Valuation = $[money] (+$[current_sprint])" color "#000000" xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")

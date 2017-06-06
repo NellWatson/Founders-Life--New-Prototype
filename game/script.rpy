@@ -7,19 +7,26 @@ label start:
 
 label checkpoint:
     $ event_name = ""
+
+    if energy > 100:
+        $ energy = 100
+
+    if morale > 100:
+        $ morale = 100
     
     if turn_no and not (turn_no % 4):
-        $ month += 1
+        $ current_sprint = energy * morale * turn_no * founder_level
+        $ money += current_sprint
 
         call screen startup_review("bg lounge")
-        
-        $ founder_level += 1
 
-        if founder_level > 10:
-            $ founder_level = 10
+        if money > FOUNDER_INDEX[founder_level][1]:
+            $ founder_level += 1
+            if founder_level > 10:
+                $ founder_level = 10
+        $ month += 1
 
         call screen level_up("bg lounge")
-        call screen startup_preview("bg lounge")
 
     if energy > 0 and morale > 0:
         $ turn_no += 1
@@ -28,10 +35,8 @@ label checkpoint:
         jump expression find_event()
 
     elif energy < 0:
-        $ print energy
         call screen err_msg(message="You are out of Energy.", title="game over")
     elif morale < 0:
-        $ print morale
         call screen err_msg(message="You are out of Morale.", title="game over")
 
     if month > 1:

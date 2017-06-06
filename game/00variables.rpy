@@ -5,10 +5,10 @@ define STARTUP_ICONS = ["biomass-512.png", "chip-512.png", "crab-512.png", "dice
 
 define FOUNDER_INDEX = {
     0: "Validating Market",
-    1: "Prototyping",
-    2: "Incorporating",
-    3: "Incubating",
-    4: "Accelerating",
+    1: ("Prototyping", 99000),
+    2: ("Incorporating", 250000),
+    3: ("Incubating", 500000),
+    4: ("Accelerating", 1000000),
     5: "Raising VC investment",
     6: "Capturing Product/Market Fit",
     7: "Scaling growth",
@@ -26,9 +26,10 @@ default startup_icon = ""
 
 default founder_level = 1
 
-default energy = 75
-default morale = 75
-default money = 100000
+default energy = 100
+default morale = 100
+default money = 0
+default current_sprint = 0
 
 default turn_no = 0
 default month = 1

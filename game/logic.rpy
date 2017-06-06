@@ -6,7 +6,7 @@ init python:
     }
 
     events_pool = {
-        9999: ["ux_research", "delegation", "equity", "beta"],
+        9999: ["ux_research", "delegation", "beta"],
         1: ["cloud", "day_one_pr", "conference", "key_messaging", "premature_launch"],
         2: ["nda", "micro_managing"]
     }
@@ -25,4 +25,4 @@ init python:
 
     def find_event():
         actual_pool = events_pool[founder_level] + events_pool[9999]
-        return renpy.random.choice( events_pool[actual_pool] )
+        return renpy.random.choice( actual_pool )
