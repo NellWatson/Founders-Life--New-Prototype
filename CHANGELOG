@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v 0.0.2-0607
+------------
+* Changed Game Over review;
+* Reordered Sprint Review 'B' and Sprint Review 'A';
+* Changed value formula to use days instead of weeks;
+
 v 0.0.2-0606
 ------------
 * Added new Sprint reviews.

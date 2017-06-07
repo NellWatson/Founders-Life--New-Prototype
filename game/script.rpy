@@ -15,7 +15,7 @@ label checkpoint:
         $ morale = 100
     
     if turn_no and not (turn_no % 4):
-        $ current_sprint = energy * morale * turn_no * founder_level
+        $ current_sprint = energy * morale * turn_no * 7 * founder_level
         $ money += current_sprint
 
         call screen startup_review("bg lounge")
@@ -30,7 +30,6 @@ label checkpoint:
 
     if energy > 0 and morale > 0:
         $ turn_no += 1
-        "And here comes another turning point in Mr. X's life."
         
         jump expression find_event()
 
@@ -40,9 +39,9 @@ label checkpoint:
         call screen err_msg(message="You are out of Morale.", title="game over")
 
     if month > 1:
-        "You survived [month] months."
+        "You survived [turn_no] weeks."
     else:
-        "You survived [month] month."
+        "You survived [turn_no] weeks."
 
     return
 

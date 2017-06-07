@@ -80,7 +80,7 @@ screen startup_review(bg):
     add bg
     add Solid("#00000050")
 
-    use fl_window("startup_preview", startup_name, colour="#559fdd", width=900, height=550, cross=False):
+    use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=550, cross=False):
         vbox:
             xsize 800
             xalign 0.5
@@ -105,8 +105,8 @@ screen startup_review(bg):
                 text "Founder XP Level Bonus" color "#000000"
                 text "[founder_level]" color "#000000"
                 
-                text "{b}Sprint Score{/b}" color "#000000"
-                text "{b}[current_sprint]{/b}" color "#000000"
+                text "{b}Valued Added{/b}" color "#000000"
+                text "${b}[current_sprint]{/b}" color "#000000"
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
@@ -122,15 +122,17 @@ screen level_up(bg):
     add bg
     add Solid("#00000050")
 
-    use fl_window("startup_preview", startup_name, colour="#559fdd", width=900, height=500, cross=False):
+    use fl_window("startup_preview", founder_name, colour="#559fdd", width=900, height=500, cross=False):
         vbox:
             xalign 0.5
-            spacing 25
+            spacing 10
 
+            text "[startup_name]" color "#000000" xalign 0.5
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
+            text " "
+            text "Startup Valuation: $[money] ({color=#00ff00}+$[current_sprint]{/color})" color "#000000" xalign 0.5
             text "Founder Level: {color=#00ff00}[founder_level]{/color}" color "#000000" xalign 0.5
             text "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level][0] + "{/color}" color "#000000" xalign 0.5
-            text "Startup Valuation = $[money] (+$[current_sprint])" color "#000000" xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
