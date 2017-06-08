@@ -12,6 +12,15 @@ init python:
 
         return _random_list
 
+    def dynamic_show(st, at, req_st, value, effect=None):
+        if req_st > st:
+            return Text("0", color="#000000"), .1
+        else:
+            if effect:
+                return At(Text(str(value), color="#000000"), effect), None
+            else:
+                return Text(str(value), color="#000000"), None
+
 label set_startup:
     show nell bot at center with dissolve
 
@@ -80,7 +89,7 @@ screen startup_review(bg):
     add bg
     add Solid("#00000050")
 
-    use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=550, cross=False):
+    use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=600, cross=False):
         vbox:
             xsize 800
             xalign 0.5
@@ -89,24 +98,27 @@ screen startup_review(bg):
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
             text "Another sprint completed [founder_name]" color "#000000" xalign 0.5
 
-            grid 2 5:
+            grid 2 6:
                 xpos 150
                 spacing 10
 
                 text "Energy Remaining Bonus      " color "#000000"
-                text "[energy]" color "#000000"
+                text DynamicDisplayable(dynamic_show, 1, energy) color "#000000"
                 
                 text "Morale Remaining Bonus" color "#000000"
-                text "[morale]" color "#000000"
+                text DynamicDisplayable(dynamic_show, 2, morale) color "#000000"
                 
                 text "Days as Founder Bonus" color "#000000"
-                text str(month * 30) color "#000000"
+                text DynamicDisplayable(dynamic_show, 3, month*30) color "#000000"
                 
                 text "Founder XP Level Bonus" color "#000000"
-                text "[founder_level]" color "#000000"
+                text DynamicDisplayable(dynamic_show, 4, founder_level) color "#000000"
                 
                 text "{b}Valued Added{/b}" color "#000000"
-                text "${b}[current_sprint]{/b}" color "#000000"
+                text DynamicDisplayable(dynamic_show, 5, "{b}$[current_sprint]{/b}") color "#000000"
+
+                text "{b}Startup Valuation{/b}" color "#000000"
+                text DynamicDisplayable(dynamic_show, 6, "{b}$[money]{/b}", flash) color "#000000"
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")

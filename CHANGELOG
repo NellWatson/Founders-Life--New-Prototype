@@ -3,9 +3,14 @@ CHANGELOG
 
 v 0.0.2-0607
 ------------
-* Changed Game Over review;
-* Reordered Sprint Review 'B' and Sprint Review 'A';
-* Changed value formula to use days instead of weeks;
+* Changed Sprint Review screen.
+* Added more (sample) events.
+
+v 0.0.2-0607
+------------
+* Changed Game Over review.
+* Reordered Sprint Review 'B' and Sprint Review 'A'.
+* Changed value formula to use days instead of weeks.
 
 v 0.0.2-0606
 ------------

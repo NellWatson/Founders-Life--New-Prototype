@@ -218,3 +218,115 @@ label micro_managing:
     "\"Many founders try to delegate by having employees do all the grunt work, but then stuck try to make ask the decisions.\" - Sam Altman"
 
     jump checkpoint
+
+label tier_2_1:
+    menu:
+        "This is a Tier 2 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", -10)
+            $ variable("morale", 20)
+
+        "$_NO":
+            $ variable("energy", 20)
+            $ variable("morale", -10)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_3_1:
+    menu:
+        "This is a Tier 3 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", -10)
+            $ variable("morale", 20)
+
+        "$_NO":
+            $ variable("energy", 20)
+            $ variable("morale", -10)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_3_2:
+    menu:
+        "This is a Tier 3 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", 30)
+            $ variable("morale", -20)
+
+        "$_NO":
+            $ variable("energy", -20)
+            $ variable("morale", 30)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_4_1:
+    menu:
+        "This is a Tier 4 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", -10)
+            $ variable("morale", 20)
+
+        "$_NO":
+            $ variable("energy", 20)
+            $ variable("morale", -10)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_4_2:
+    menu:
+        "This is a Tier 4 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", 30)
+            $ variable("morale", -20)
+
+        "$_NO":
+            $ variable("energy", -20)
+            $ variable("morale", 30)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_5_1:
+    menu:
+        "This is a Tier 5 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", -10)
+            $ variable("morale", 20)
+
+        "$_NO":
+            $ variable("energy", 20)
+            $ variable("morale", -10)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_5_2:
+    menu:
+        "This is a Tier 5 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", 30)
+            $ variable("morale", -20)
+
+        "$_NO":
+            $ variable("energy", -20)
+            $ variable("morale", 30)
+
+    "Nice testing"
+
+    jump checkpoint
