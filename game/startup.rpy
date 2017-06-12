@@ -118,7 +118,7 @@ screen startup_review(bg):
                 text DynamicDisplayable(dynamic_show, 5, "{b}$[current_sprint]{/b}") color "#000000"
 
                 text "{b}Startup Valuation{/b}" color "#000000"
-                text DynamicDisplayable(dynamic_show, 6, "{b}$[money]{/b}", flash) color "#000000"
+                text DynamicDisplayable(dynamic_show, 6, "{color=#00ff00}{b}$[money]{/b}{/color}", flash) color "#000000"
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
