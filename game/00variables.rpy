@@ -9,12 +9,12 @@ define FOUNDER_INDEX = {
     2: ("Incorporating", 250000),
     3: ("Incubating", 500000),
     4: ("Accelerating", 1000000),
-    5: "Raising VC investment",
-    6: "Capturing Product/Market Fit",
-    7: "Scaling growth",
-    8: "Preparing for IPO",
-    9: "Making shareholders happy",
-    10: "The latest, greatest startup unicorn!",
+    5: ("Raising VC investment", 5000000),
+    6: ("Capturing Product/Market Fit", 10000000),
+    7: ("Scaling growth", 50000000),
+    8: ("Preparing for IPO", 250000000),
+    9: ("Making shareholders happy", 1000000000),
+    10: ("The latest, greatest startup unicorn!", 100000000000),
 }
 
 default CURRENCY = "$"
@@ -33,5 +33,6 @@ default current_sprint = 0
 
 default turn_no = 0
 default month = 1
+default level_up = False
 
 default event_name = ""

@@ -11,7 +11,9 @@ init python:
         2: ["nda", "micro_managing", "tier_2_1"],
         3: ["tier_3_1", "tier_3_2"],
         4: ["tier_4_1", "tier_4_2"],
-        5: ["tier_5_1", "tier_5_2"]
+        5: ["tier_5_1", "tier_5_2"],
+        6: ["tier_6_1", "tier_6_2"],
+        7: ["tier_7_1", "tier_7_2"]
     }
 
     available_pool = {
@@ -20,7 +22,9 @@ init python:
         2: ["nda", "micro_managing", "tier_2_1"],
         3: ["tier_3_1", "tier_3_2"],
         4: ["tier_4_1", "tier_4_2"],
-        5: ["tier_5_1", "tier_5_2"]
+        5: ["tier_5_1", "tier_5_2"],
+        6: ["tier_6_1", "tier_6_2"],
+        7: ["tier_7_1", "tier_7_2"]
     }
 
     def variable(name, value):

@@ -134,17 +134,25 @@ screen level_up(bg):
     add bg
     add Solid("#00000050")
 
-    use fl_window("startup_preview", founder_name, colour="#559fdd", width=900, height=500, cross=False):
+    default next_xp = FOUNDER_INDEX[founder_level+1][1] if founder_level < 11 else 100000000000
+
+    use fl_window("startup_preview", founder_name, colour="#559fdd", width=900, height=550, cross=False):
         vbox:
             xalign 0.5
             spacing 10
 
             text "[startup_name]" color "#000000" xalign 0.5
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
-            text " "
-            text "Startup Valuation: $[money] ({color=#00ff00}+$[current_sprint]{/color})" color "#000000" xalign 0.5
-            text "Founder Level: {color=#00ff00}[founder_level]{/color}" color "#000000" xalign 0.5
-            text "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level][0] + "{/color}" color "#000000" xalign 0.5
+            if level_up:
+                text DynamicDisplayable(dynamic_show, 1, "Startup Valuation: {color=#00ff00}$[money] (+$[current_sprint]{/color})", flash) color "#000000" xalign 0.5
+                text DynamicDisplayable(dynamic_show, 2, "Founder Level: {color=#00ff00}[founder_level]{/color}", flash) color "#000000" xalign 0.5
+            else:
+                text DynamicDisplayable(dynamic_show, 1, "Startup Valuation: $[money] ({color=#00ff00}+$[current_sprint]{/color})") color "#000000" xalign 0.5
+                text DynamicDisplayable(dynamic_show, 2, "Founder Level: [founder_level]") color "#000000" xalign 0.5
+            text " " size 10
+            bar value money range next_xp ysize 10
+            text "[money] / [next_xp]" color "#000000" xalign 0.5
+            text DynamicDisplayable(dynamic_show, 3, "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level][0] + "{/color}") color "#000000" xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")

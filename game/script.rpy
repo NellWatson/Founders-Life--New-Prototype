@@ -17,11 +17,13 @@ label checkpoint:
     if turn_no and not (turn_no % 4):
         $ current_sprint = energy * morale * turn_no * 7 * founder_level
         $ money += current_sprint
+        $ level_up = False
 
         call screen startup_review("bg lounge")
 
-        if money > FOUNDER_INDEX[founder_level][1]:
+        while money > FOUNDER_INDEX[founder_level][1]:
             $ founder_level += 1
+            $ level_up = True
             if founder_level > 10:
                 $ founder_level = 10
         $ month += 1
@@ -318,6 +320,70 @@ label tier_5_1:
 label tier_5_2:
     menu:
         "This is a Tier 5 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", 30)
+            $ variable("morale", -20)
+
+        "$_NO":
+            $ variable("energy", -20)
+            $ variable("morale", 30)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_6_1:
+    menu:
+        "This is a Tier 6 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", -10)
+            $ variable("morale", 20)
+
+        "$_NO":
+            $ variable("energy", 20)
+            $ variable("morale", -10)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_6_2:
+    menu:
+        "This is a Tier 6 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", 30)
+            $ variable("morale", -20)
+
+        "$_NO":
+            $ variable("energy", -20)
+            $ variable("morale", 30)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_7_1:
+    menu:
+        "This is a Tier 7 Test Event (Yes = Morale, No = Energy)"
+
+        "$_YES":
+            $ variable("energy", -10)
+            $ variable("morale", 20)
+
+        "$_NO":
+            $ variable("energy", 20)
+            $ variable("morale", -10)
+
+    "Nice testing"
+
+    jump checkpoint
+
+label tier_7_2:
+    menu:
+        "This is a Tier 7 Test Event (Yes = Morale, No = Energy)"
 
         "$_YES":
             $ variable("energy", 30)
