@@ -12,14 +12,20 @@ init python:
 
         return _random_list
 
-    def dynamic_show(st, at, req_st, value, effect=None):
+    def dynamic_show_text(st, at, req_st, value, effect=None, default="0"):
         if req_st > st:
-            return Text("0", color="#000000"), .1
+            return Text(default, color="#000000"), .1
         else:
             if effect:
                 return At(Text(str(value), color="#000000"), effect), None
             else:
                 return Text(str(value), color="#000000"), None
+
+    def dynamic_show(st, at, req_st, d):
+        if req_st > st:
+            return Text(""), .1
+        else:
+            return d, None
 
 label set_startup:
     show nell bot at center with dissolve
@@ -103,22 +109,22 @@ screen startup_review(bg):
                 spacing 10
 
                 text "Energy Remaining Bonus      " color "#000000"
-                text DynamicDisplayable(dynamic_show, 1, energy) color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 1, energy) color "#000000"
                 
                 text "Morale Remaining Bonus" color "#000000"
-                text DynamicDisplayable(dynamic_show, 2, morale) color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 2, morale) color "#000000"
                 
                 text "Days as Founder Bonus" color "#000000"
-                text DynamicDisplayable(dynamic_show, 3, month*30) color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 3, month*30) color "#000000"
                 
                 text "Founder XP Level Bonus" color "#000000"
-                text DynamicDisplayable(dynamic_show, 4, founder_level) color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 4, founder_level) color "#000000"
                 
                 text "{b}Valued Added{/b}" color "#000000"
-                text DynamicDisplayable(dynamic_show, 5, "{b}$[current_sprint]{/b}") color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 5, "{b}$[current_sprint]{/b}") color "#000000"
 
                 text "{b}Startup Valuation{/b}" color "#000000"
-                text DynamicDisplayable(dynamic_show, 6, "{color=#00ff00}{b}$[money]{/b}{/color}", flash) color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 6, "{color=#00ff00}{b}$[money]{/b}{/color}", flash) color "#000000"
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
@@ -144,15 +150,15 @@ screen level_up(bg):
             text "[startup_name]" color "#000000" xalign 0.5
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
             if level_up:
-                text DynamicDisplayable(dynamic_show, 1, "Startup Valuation: {color=#00ff00}$[money] (+$[current_sprint]{/color})", flash) color "#000000" xalign 0.5
-                text DynamicDisplayable(dynamic_show, 2, "Founder Level: {color=#00ff00}[founder_level]{/color}", flash) color "#000000" xalign 0.5
+                text DynamicDisplayable(dynamic_show_text, 1, "Startup Valuation: {color=#00ff00}$[money] (+$[current_sprint]{/color})", flash, default="") xalign 0.5
+                text DynamicDisplayable(dynamic_show_text, 2, "Founder Level: {color=#00ff00}[founder_level]{/color}", flash, default="") xalign 0.5
             else:
-                text DynamicDisplayable(dynamic_show, 1, "Startup Valuation: $[money] ({color=#00ff00}+$[current_sprint]{/color})") color "#000000" xalign 0.5
-                text DynamicDisplayable(dynamic_show, 2, "Founder Level: [founder_level]") color "#000000" xalign 0.5
-            text " " size 10
-            bar value money range next_xp ysize 10
-            text "[money] / [next_xp]" color "#000000" xalign 0.5
-            text DynamicDisplayable(dynamic_show, 3, "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level][0] + "{/color}") color "#000000" xalign 0.5
+                text DynamicDisplayable(dynamic_show_text, 1, "Startup Valuation: $[money] ({color=#00ff00}+$[current_sprint]{/color})", default="") xalign 0.5
+                text DynamicDisplayable(dynamic_show_text, 2, "Founder Level: [founder_level]", default="") xalign 0.5
+            text " " size 7
+            add DynamicDisplayable(dynamic_show, 3, Bar(value=AnimatedValue(value=money, range=next_xp, delay=2, old_value=0), ysize=10)) xalign 0.5
+            text DynamicDisplayable(dynamic_show_text, 5, "[money] / " + str(next_xp), default="") xalign 0.5
+            text DynamicDisplayable(dynamic_show_text, 6, "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level][0] + "{/color}", default="") xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
