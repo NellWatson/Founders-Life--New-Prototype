@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v 0.0.2-0622
+------------
+* Revised Game Over Text.
+* Revised Review B screen.
+* Big numbers are ',' formatted now.
+
 v 0.0.2-0621
 ------------
 * Added Animated delayed bars.

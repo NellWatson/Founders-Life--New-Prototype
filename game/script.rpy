@@ -41,9 +41,11 @@ label checkpoint:
         call screen err_msg(message="You are out of Morale.", title="game over")
 
     if month > 1:
-        "You survived [turn_no] weeks."
+        $ temp = turn_no * 7
+        "You survived [temp] days."
     else:
-        "You survived [turn_no] weeks."
+        $ temp = turn_no * 7
+        "You survived [temp] days."
 
     return
 
