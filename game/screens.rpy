@@ -102,69 +102,34 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
-screen say(who, what):
-    style_prefix "say"
+screen say(who, what, side_image=None):
+    if who:
+        window:
+            style "say_who_window"
+            xalign 0.0
+            yalign 0.6722
+            xanchor 0
+            yanchor 0
+            background "gui/nameplate.png"
+
+            text who id "who" font "fonts/Geo-Regular.ttf" size 100 color "#559fdd" xoffset 488
 
     window:
         id "window"
+        xalign 0.0
+        yalign 0.6930
+        xanchor 0
+        yanchor 0
+        right_padding 250
+        background "gui/textbox.png"
 
-        if who is not None:
+        text what id "what" font "fonts/Dosis-Regular.ttf" size 36 color "#ffffff" line_leading -2 xoffset 440 yoffset 90 xmaximum 1400
 
-            window:
-                style "namebox"
-                text who id "who"
-
-        text what id "what"
-
-
-    ## If there's a side image, display it above the text. Do not display on the
-    ## phone variant - there's no room.
-    if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
-
-
-style window is default
-style say_label is default
-style say_dialogue is default
-style say_thought is say_dialogue
-
-style namebox is default
-style namebox_label is say_label
-
-
-style window:
-    xalign 0.5
-    xfill True
-    yalign gui.textbox_yalign
-    ysize gui.textbox_height
-
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
-
-style namebox:
-    xpos gui.name_xpos
-    xanchor gui.name_xalign
-    xsize gui.namebox_width
-    ypos gui.name_ypos
-    ysize gui.namebox_height
-
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
-    padding gui.namebox_borders.padding
-
-style say_label:
-    color gui.accent_color
-    font gui.name_font
-    size gui.name_text_size
-    xalign gui.name_xalign
-    yalign 0.5
-
-style say_dialogue:
-    xpos gui.text_xpos
-    xanchor gui.text_xalign
-    xsize gui.text_width
-    ypos gui.text_ypos
-
-    text_align gui.text_xalign
-    layout ("subtitle" if gui.text_xalign else "tex")
+    # If there's a side image, display it above the text.
+    if side_image:
+        add side_image xpos 125 ypos 774
+    else:
+        add SideImage() xpos 40 ypos 684
 
 
 ## Input screen ################################################################
@@ -178,34 +143,28 @@ style say_dialogue:
 ## http://www.renpy.org/doc/html/screen_special.html#input
 
 screen input(prompt):
-    style_prefix "input"
-
-    window:
-
+    window style "new_input_window":
         vbox:
-            spacing 5
-            
-            xpos gui.text_xpos
-            xanchor gui.text_xalign
-            ypos gui.text_ypos
+            xpos 440
+            ypos 90
 
-            text prompt style "input_prompt"
+            text prompt style "new_input_text"
             hbox:
                 text "> "
                 input id "input"
 
+style new_input_window is window:
+    xalign 0.0
+    yalign 0.6930
+    xanchor 0
+    yanchor 0
+    right_padding 250
+    background "gui/textbox.png"
 
-style input_prompt is default
-
-style input_prompt:
-    xmaximum gui.text_width
-    xalign gui.text_xalign
-    text_align gui.text_xalign
-
-style input:
-    xmaximum gui.text_width
-    xalign gui.text_xalign
-    text_align gui.text_xalign
+style new_input_text is text:
+    font "fonts/Dosis-Regular.ttf"
+    size 36
+    color "#ffffff"
     caret "input_caret"
 
 ## Choice screen ###############################################################

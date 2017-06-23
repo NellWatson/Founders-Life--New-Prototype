@@ -33,23 +33,6 @@ init python:
         else:
             return d, None
 
-label set_startup:
-    show nell bot at center with dissolve
-
-    n "Welcome I'm Nell, your mentor.
-    I'll be helping you out as you embark upon your exciting journey as a founder."
-
-    $ founder_name = renpy.input("What's your name:") or "Founder"
-    $ startup_name = renpy.input("What's your startup name:") or "StartUP Inc"
-
-    show screen startup_sector
-    n "What's your startup sector?"
-
-    show screen startup_logo
-    n "What's your startup logo?"
-    
-    jump checkpoint
-
 screen startup_sector():
     modal True
     zorder 100
@@ -57,22 +40,24 @@ screen startup_sector():
     default fields = return_random_ele(STARTUP_FIELDS, 6)
 
     for i in range(0, 6):
-        textbutton _(fields[i]):
-            xsize 540
+        button:
+            xsize 400
 
             idle_background "#ffff00"
             hover_background "#00ff00"
 
-            text_color "#000000"
-            text_text_align 0.5
+            if len(fields[i]) > 20:
+                text fields[i] size 27 color "#000000" xalign 0.5 yalign 0.5
+            else:
+                text fields[i] color "#000000" xalign 0.5 yalign 0.5
 
             action [SetVariable("startup_field", fields[i]), Hide("startup_sector")]
 
-            xpos 80 + (i%3) * 600
+            xpos 440 + (i%3) * 450
             if i < 3:
-                ypos 930
+                ypos 895
             else:
-                ypos 1000
+                ypos 965
 
 screen startup_logo(_transient=True):
     modal True
@@ -81,17 +66,17 @@ screen startup_logo(_transient=True):
     default fields = return_random_ele(STARTUP_ICONS, 3)
 
     hbox:
-        xalign 0.5
-        ypos 930
-        spacing 300
+        xpos 440
+        ypos 887
+        spacing 250
 
         for i in range(0, 3):
             button:
                 xysize(128, 128)
 
-                idle_background Solid("#d3d3d3")
-                hover_background Solid( Color("#d3d3d3").tint(0.5) )
-                selected_background Solid( Color("#d3d3d3").shade(0.5) )
+                idle_background Solid("#559fdd")
+                hover_background Solid( Color("#559fdd").shade(0.5) )
+                selected_background Solid( Color("#559fdd").tint(0.5) )
 
                 add "images/icons/" + fields[i] zoom 0.20 xalign 0.5 yalign 0.5
 

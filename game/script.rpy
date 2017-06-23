@@ -3,7 +3,7 @@ label start:
     scene bg lounge
     show screen hud
 
-    jump set_startup
+    jump event_intro
 
 label checkpoint:
     $ event_name = ""

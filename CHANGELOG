@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.2-0623
+------------
+* Added Intro from the previous game.
+* Ported textbox from the previous game.
+
 v 0.0.2-0622
 ------------
 * Revised Game Over Text.
