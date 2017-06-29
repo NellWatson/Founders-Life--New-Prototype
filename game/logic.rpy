@@ -30,6 +30,8 @@ init python:
     def variable(name, value):
         old_value = getattr(store, name)
         new_value = old_value + value
+        if new_value > 100:
+            new_value = 100
         
         if value < 0:
             store.check[name] = "{color=#ff0000}" + str(value) + "{/color}"

@@ -36,3 +36,6 @@ default month = 1
 default level_up = False
 
 default event_name = ""
+
+default energy_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "energy", width=500, height=50)
+default morale_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "morale", width=500, height=50)
