@@ -1,9 +1,13 @@
 label start:
-
     scene bg lounge
     show screen hud
 
     jump event_intro
+
+screen game_screen():
+    modal True
+    default b = ReviewB()
+    add DynamicDisplayable(dynamic_review, b)
 
 label checkpoint:
     $ event_name = ""
@@ -18,6 +22,7 @@ label checkpoint:
         $ current_sprint = energy * morale * turn_no * 7 * founder_level
         $ money += current_sprint
         $ level_up = False
+        $ last_founder_level = founder_level
 
         call screen startup_review("bg lounge")
 

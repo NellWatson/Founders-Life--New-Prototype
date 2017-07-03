@@ -132,6 +132,7 @@ screen level_up(bg):
     add Solid("#00000050")
 
     default next_xp = FOUNDER_INDEX[founder_level+1][1] if founder_level < 11 else 100000000000
+    default review = ReviewB()
 
     use fl_window("startup_preview", founder_name, colour="#559fdd", width=900, height=550, cross=False):
         vbox:
@@ -151,17 +152,11 @@ screen level_up(bg):
                 text "Startup Valuation: " color "#000000"
                 text "Founder Level: " color "#000000"
 
-                if level_up:
-                    text DynamicDisplayable(dynamic_show_text, 1, "{color=#00ff00}$" + "{:,}".format(money) + " (+$" + "{:,}".format(current_sprint) + "{/color})", flash) xalign 0.5
-                    text DynamicDisplayable(dynamic_show_text, 2, "{color=#00ff00}[founder_level]{/color}", flash) xalign 0.5
-                else:
-                    text DynamicDisplayable(dynamic_show_text, 1, "$" + "{:,}".format(money) + " ({color=#00ff00}+$" + "{:,}".format(current_sprint) + "{/color})") xalign 0.5 
-                    text DynamicDisplayable(dynamic_show_text, 2, "[founder_level]") xalign 0.5
+                text DynamicDisplayable(dynamic_review, review.valuation, 0.0) xalign 0.5
+                text DynamicDisplayable(dynamic_review, review.fl, 1.0) xalign 0.5
 
             text " " size 7
-            add DynamicDisplayable(dynamic_show, 3, Bar(value=AnimatedValue(value=money, range=next_xp, delay=2, old_value=0), ysize=10)) xalign 0.5
-            text DynamicDisplayable(dynamic_show_text, 5, "[money] / " + str(next_xp), default="") xalign 0.5
-            text DynamicDisplayable(dynamic_show_text, 6, "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[founder_level][0] + "{/color}", default="") xalign 0.5
+            add DynamicDisplayable(dynamic_review, review.bar, 2.0) xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
@@ -171,4 +166,4 @@ screen level_up(bg):
             action Return()
 
             xalign 0.5
-            yalign 0.99
+            yalign 0.999
