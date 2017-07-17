@@ -128,13 +128,17 @@ screen startup_review(bg):
             yalign 0.99
 
 screen level_up(bg):
+
+    on "hide":
+        action With("dissolve")
+        
     add bg
     add Solid("#00000050")
 
     default next_xp = FOUNDER_INDEX[founder_level+1][1] if founder_level < 11 else 100000000000
     default review = ReviewB()
 
-    use fl_window("startup_preview", founder_name, colour="#559fdd", width=900, height=550, cross=False):
+    use fl_window("startup_preview", founder_name, colour="#559fdd", width=900, height=575, cross=False):
         vbox:
             xsize 900
             xalign 0.5

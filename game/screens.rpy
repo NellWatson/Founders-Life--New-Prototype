@@ -150,8 +150,8 @@ screen input(prompt):
 
             text prompt style "new_input_text"
             hbox:
-                text "> "
-                input id "input"
+                text "> " yoffset 3
+                input id "input" font "fonts/Dosis-Regular.ttf" color "#ffffff" size 36
 
 style new_input_window is window:
     xalign 0.0

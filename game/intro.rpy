@@ -24,4 +24,11 @@ label event_intro:
 
     hide screen block_keys
 
+    # Set up a dummy screen
+    $ current_sprint = 0
+    $ last_founder_level = founder_level
+
+    call screen level_up("bg lounge")
+    with dissolve
+
     jump checkpoint

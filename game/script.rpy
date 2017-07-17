@@ -29,6 +29,7 @@ label checkpoint:
         while money > FOUNDER_INDEX[founder_level][1]:
             $ founder_level += 1
             $ level_up = True
+
             if founder_level > 10:
                 $ founder_level = 10
         $ month += 1

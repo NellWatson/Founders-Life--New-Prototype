@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.2-0717
+------------
+* Fixed Issue #36, #48.
+* Added proper formatting to Input.
+
 v 0.0.2-0703
 ------------
 * Revamped Review B screen.

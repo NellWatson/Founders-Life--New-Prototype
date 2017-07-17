@@ -77,12 +77,20 @@ init python:
 
             if store.current_sprint > 0:
                 tag = "{color=#00ff00}$"
+                symbol = "(+$"
+                end_tag = "){/color}"
+
+            elif store.current_sprint == 0:
+                tag = "$"
+                symbol = "(+$"
+                end_tag = ")"
+
             else:
                 tag = "{color=#ff0000}$"
+                symbol = "(-$"
+                end_tag = "){/color}"
 
-            symbol = " (+$" if store.current_sprint > 0 else " (-$"
-
-            return Text(tag + "{:,}".format(store.money) + symbol + "{:,}".format(store.current_sprint) + "){/color}")
+            return Text(tag + "{:,}".format(store.money) + symbol + "{:,}".format(store.current_sprint) + end_tag, color="#000000")
 
         def fl(self, st, limit):
             # If enough time had not passed, don't show the text
@@ -131,7 +139,7 @@ init python:
             else:
                 status = "Founder Status: " + FOUNDER_INDEX[self.founder_level][0]
 
-            return VBox(Bar(range=self.bar_range, value=self.bar_value, height=10), Text(str(self.old_money) + "/" + str(FOUNDER_INDEX[self.founder_level][1]), color="#000000", xalign=0.5), Text(status, xalign=0.5, color="#000000"), spacing=10, xalign=0.5)
+            return VBox(Bar(range=self.bar_range, value=self.bar_value, height=10), Text("${:,}".format(self.old_money) + " / " + "${:,}".format(FOUNDER_INDEX[self.founder_level][1]), color="#000000", xalign=0.5), Text(status, xalign=0.5, color="#000000"), spacing=10, xalign=0.5)
 
     def dynamic_bar(st, at, bar):
         return bar.displayable(st), 0.1
