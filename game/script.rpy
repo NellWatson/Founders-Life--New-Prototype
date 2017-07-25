@@ -7,6 +7,7 @@ label start:
 screen game_screen():
     modal True
     default b = ReviewB()
+    
     add DynamicDisplayable(dynamic_review, b)
 
 label checkpoint:

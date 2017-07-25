@@ -133,6 +133,8 @@ init python:
             if self.old_money < self.money:
                 self.bar_value += self.review_step
                 self.old_money += self.review_step
+            else:
+                self.old_money = self.money
 
             if self.updated_fl:
                 status = "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}"

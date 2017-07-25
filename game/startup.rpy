@@ -130,7 +130,7 @@ screen startup_review(bg):
 screen level_up(bg):
 
     on "hide":
-        action With("dissolve")
+        action With(dissolve)
         
     add bg
     add Solid("#00000050")
