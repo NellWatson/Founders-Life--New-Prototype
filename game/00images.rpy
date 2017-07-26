@@ -1,6 +1,6 @@
 image bg lounge = "images/bg/lounge.jpg"
-image nell bot = Placeholder("girl")
-image nell normal = Transform("images/contacts/nell.png", crop=(0, 0, 210, 255))
+image side nell bot = Placeholder("girl")
+image side nell normal = "images/contacts/nell.png"
 
 image input_caret:
     Text("|")

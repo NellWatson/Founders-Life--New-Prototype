@@ -1,8 +1,6 @@
 label event_intro:
     show screen block_keys("game_menu")
 
-    show nell bot at center
-
     n "Welcome to Founder's Life."
     n "You've got an entirely new business to create from the bottom up."
 

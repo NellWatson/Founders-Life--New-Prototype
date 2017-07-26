@@ -3,7 +3,7 @@ screen hud():
         xsize 1920
         ysize 160
 
-        text "Founder Weeks: {0:02d}".format(turn_no) size 30 xalign 0.05 yalign 0.5
+        text "Founder Days: {0:02d}".format(turn_no*7) size 30 xalign 0.05 yalign 0.5
 
         vbox:
             xalign 0.5
@@ -24,4 +24,7 @@ screen hud():
                 spacing 20
 
                 text "Morale" yalign 0.5
-                add DynamicDisplayable(dynamic_bar, morale_bar) xoffset 3   
+                add DynamicDisplayable(dynamic_bar, morale_bar) xoffset 3
+
+        if turn_no > 4:
+            text "Valuation: ${:,}".format(money) size 30 xalign 0.95 yalign 0.5

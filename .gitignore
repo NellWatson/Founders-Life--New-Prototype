@@ -1,5 +1,6 @@
 *.rpyc
 *.rpyb
+*.rpymc
 *.odt#
 *.bak
 *.save
