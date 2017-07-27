@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.2-0728
+------------
+* Closes Issue #53.
+* Fixes wrong Valuation milestone display in some edge cases.
+
 v 0.0.2-0726
 ------------
 * Fixed Issue #51, #52.

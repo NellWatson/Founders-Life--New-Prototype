@@ -49,7 +49,7 @@ init python:
     class ReviewB():
 
         def __init__(self):
-            self.founder_level = 1
+            self.founder_level = last_founder_level
             self.founder_status = "founder_status"
             self.colour = "#00ff00"
 
@@ -103,6 +103,7 @@ init python:
                 return Text(str(last_founder_level), color="#000000")
 
         def bar(self, st, limit):
+            # Wait for 'st' time before starting to update the bar
             if st < limit:
                 return Bar(range=FOUNDER_INDEX[self.founder_level][1], value=store.money - store.current_sprint, height=20)
 
@@ -115,9 +116,6 @@ init python:
                 # Set the Bar range to the current Founder Level milestone
                 self.bar_range = FOUNDER_INDEX[self.founder_level][1]
                 self.bar_value = self.old_money
-
-                # Find the last money milestone
-                last_money_milestone = FOUNDER_INDEX[self.founder_level-1][1]
 
                 # Find the steps by which the bar will be updated
                 self.review_step = store.current_sprint * 3000 / self.bar_range

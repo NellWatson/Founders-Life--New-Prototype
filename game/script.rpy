@@ -1,5 +1,5 @@
 label start:
-    scene bg lounge
+    scene bg bedroom
     show screen hud
 
     jump event_intro
@@ -39,7 +39,8 @@ label checkpoint:
 
     if energy > 0 and morale > 0:
         $ turn_no += 1
-        
+
+        scene expression "bg " + BACKGROUNDS[founder_level - 1] with dissolve
         jump expression find_event()
 
     elif energy < 0:

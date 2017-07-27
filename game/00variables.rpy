@@ -16,6 +16,7 @@ define FOUNDER_INDEX = {
     9: ("Making shareholders happy", 1000000000),
     10: ("The latest, greatest startup unicorn!", 100000000000),
 }
+define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
 
 default CURRENCY = "$"
 
