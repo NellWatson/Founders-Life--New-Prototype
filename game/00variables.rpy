@@ -32,6 +32,7 @@ default energy = 100
 default morale = 100
 default money = 0
 default current_sprint = 0
+default current_bg = "bg bedroom"
 
 default turn_no = 0
 default month = 1

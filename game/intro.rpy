@@ -1,7 +1,7 @@
 label event_intro:
     show screen block_keys("game_menu")
 
-    n "Welcome to Founder's Life."
+    n normal "Welcome to Founder's Life."
     n "You've got an entirely new business to create from the bottom up."
 
     $ founder_name = renpy.input("Let's start off with the basics - what's your name?", length=30) or "Sam"
@@ -26,7 +26,7 @@ label event_intro:
     $ current_sprint = 0
     $ last_founder_level = founder_level
 
-    call screen level_up("bg lounge")
+    call screen level_up(current_bg)
     with dissolve
 
     jump checkpoint

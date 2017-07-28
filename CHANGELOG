@@ -5,6 +5,8 @@ v 0.0.2-0728
 ------------
 * Closes Issue #53.
 * Fixes wrong Valuation milestone display in some edge cases.
+* Removed mention of old bg "lounge".
+* Added side images to text and input boxes. (#39)
 
 v 0.0.2-0726
 ------------

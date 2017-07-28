@@ -25,7 +25,7 @@ label checkpoint:
         $ level_up = False
         $ last_founder_level = founder_level
 
-        call screen startup_review("bg lounge")
+        call screen startup_review(current_bg)
 
         while money > FOUNDER_INDEX[founder_level][1]:
             $ founder_level += 1
@@ -33,14 +33,17 @@ label checkpoint:
 
             if founder_level > 10:
                 $ founder_level = 10
+
         $ month += 1
 
-        call screen level_up("bg lounge")
+        call screen level_up(current_bg)
+        
+        $ current_bg = "bg " + BACKGROUNDS[founder_level - 1]
 
     if energy > 0 and morale > 0:
         $ turn_no += 1
 
-        scene expression "bg " + BACKGROUNDS[founder_level - 1] with dissolve
+        scene expression current_bg with dissolve
         jump expression find_event()
 
     elif energy < 0:

@@ -129,7 +129,7 @@ screen say(who, what, side_image=None):
     if side_image:
         add side_image xpos 125 ypos 774
     else:
-        add SideImage() xpos 40 ypos 684
+        add SideImage() xpos 125 ypos 774
 
 
 ## Input screen ################################################################
@@ -152,6 +152,8 @@ screen input(prompt):
             hbox:
                 text "> " yoffset 3
                 input id "input" font "fonts/Dosis-Regular.ttf" color "#ffffff" size 36
+
+    add "side nell normal" xpos 125 ypos 774
 
 style new_input_window is window:
     xalign 0.0
