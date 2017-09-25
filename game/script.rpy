@@ -19,13 +19,18 @@ label checkpoint:
     if morale > 100:
         $ morale = 100
     
-    if turn_no and not (turn_no % 4):
-        $ current_sprint = energy * morale * turn_no * 7 * founder_level
+    if turn_no and not (turn_no % 5):
+        $ current_sprint = energy * morale * turn_no * founder_level
         $ money += current_sprint
         $ level_up = False
         $ last_founder_level = founder_level
 
+        call screen sprint_review(current_bg)
         call screen startup_review(current_bg)
+
+        if turn_no > 19:
+            call screen err_msg(message="End of Episode. More coming soon.", title="game over")
+            return
 
         while money > FOUNDER_INDEX[founder_level][1]:
             $ founder_level += 1
@@ -34,14 +39,11 @@ label checkpoint:
             if founder_level > 10:
                 $ founder_level = 10
 
-        $ month += 1
-
         call screen level_up(current_bg)
-        
-        $ current_bg = "bg " + BACKGROUNDS[founder_level - 1]
 
     if energy > 0 and morale > 0:
         $ turn_no += 1
+        $ current_bg = "bg " + BACKGROUNDS[founder_level - 1]
 
         scene expression current_bg with dissolve
         jump expression find_event()
@@ -51,12 +53,7 @@ label checkpoint:
     elif morale < 0:
         call screen err_msg(message="You are out of Morale.", title="game over")
 
-    if month > 1:
-        $ temp = turn_no * 7
-        "You survived [temp] days."
-    else:
-        $ temp = turn_no * 7
-        "You survived [temp] days."
+    "You survived [turn_no] days."
 
     return
 
@@ -72,8 +69,6 @@ label cloud:
             $ variable("energy", 20)
             $ variable("morale", -20)
 
-    "Until we have validated our startup, it would had been better to simply utilise cloud platforms and services."
-
     jump checkpoint
 
 label day_one_pr:
@@ -87,8 +82,6 @@ label day_one_pr:
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", 20)
-
-    "Don’t waste your time, energy and money on premature, unfocused publicity."
 
     jump checkpoint
 
@@ -104,8 +97,6 @@ label conference:
             $ variable("energy", 50)
             $ variable("morale", 50)
 
-    "Don’t waste vital product development funds on conferences in the early stages of your startup."
-
     jump checkpoint
 
 label key_messaging:
@@ -120,8 +111,6 @@ label key_messaging:
             $ variable("energy", -30)
             $ variable("morale", 50)
 
-    "\"Never outsource the key messaging of the company to a PR firm…You should figure int what the message if the company is going to be yourself.\" - Sam Altman"
-
     jump checkpoint
 
 label premature_launch:
@@ -134,8 +123,6 @@ label premature_launch:
 
         "$_NO":
             $ variable("morale", 20)
-
-    "\"Launching too slowly has probably killed a hundred times more startups than too fast, but it is possible to launch too fast. The danger here is that you ruin your reputation. You launch something, the early adaptors try it out, and if it’s not good they don’t come back.\""
 
     jump checkpoint
 
@@ -151,8 +138,6 @@ label ux_research:
             $ variable("energy", 30)
             $ variable("morale", -30)
 
-    "UX Research is important. You are not your user."
-
     jump checkpoint
 
 label delegation:
@@ -166,8 +151,6 @@ label delegation:
         "$_NO":
             $ variable("energy", -40)
             $ variable("morale", -40)
-
-    "\"Many founders try to delegate by having employees do all the grunt work, but then stuck try to make ask the decisions.\" - Sam Altman"
 
     jump checkpoint
 
@@ -183,8 +166,6 @@ label equity:
             $ variable("energy", -30)
             $ variable("morale", -30)
 
-    "\"Equity is…a very important component of compensation. YC company data suggests the most successful companies give out a lot of equity.\" - Sam Altman"
-
     jump checkpoint
 
 label beta:
@@ -197,8 +178,6 @@ label beta:
         "$_NO":
             $ variable("energy", -20)
             $ variable("morale", 30)
-
-    "\"Fix Time and Budget, Flex Scope. “Scope down. It’s better to make half a product than a half-assed product.\" - Jason Fried"
 
     jump checkpoint
 
@@ -214,8 +193,6 @@ label nda:
             $ variable("energy", 5)
             $ variable("morale", 40)
 
-    "Typically, VCs won’t sign an NDA. Asking them diminishes their confidence in you."
-
     jump checkpoint
 
 label micro_managing:
@@ -229,8 +206,6 @@ label micro_managing:
         "$_NO":
             $ variable("energy", -40)
             $ variable("morale", -40)
-
-    "\"Many founders try to delegate by having employees do all the grunt work, but then stuck try to make ask the decisions.\" - Sam Altman"
 
     jump checkpoint
 
@@ -246,8 +221,6 @@ label tier_2_1:
             $ variable("energy", 20)
             $ variable("morale", -10)
 
-    "Nice testing"
-
     jump checkpoint
 
 label tier_3_1:
@@ -261,8 +234,6 @@ label tier_3_1:
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
-
-    "Nice testing"
 
     jump checkpoint
 
@@ -278,8 +249,6 @@ label tier_3_2:
             $ variable("energy", -20)
             $ variable("morale", 30)
 
-    "Nice testing"
-
     jump checkpoint
 
 label tier_4_1:
@@ -293,8 +262,6 @@ label tier_4_1:
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
-
-    "Nice testing"
 
     jump checkpoint
 
@@ -310,8 +277,6 @@ label tier_4_2:
             $ variable("energy", -20)
             $ variable("morale", 30)
 
-    "Nice testing"
-
     jump checkpoint
 
 label tier_5_1:
@@ -325,8 +290,6 @@ label tier_5_1:
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
-
-    "Nice testing"
 
     jump checkpoint
 
@@ -342,8 +305,6 @@ label tier_5_2:
             $ variable("energy", -20)
             $ variable("morale", 30)
 
-    "Nice testing"
-
     jump checkpoint
 
 label tier_6_1:
@@ -357,8 +318,6 @@ label tier_6_1:
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
-
-    "Nice testing"
 
     jump checkpoint
 
@@ -374,8 +333,6 @@ label tier_6_2:
             $ variable("energy", -20)
             $ variable("morale", 30)
 
-    "Nice testing"
-
     jump checkpoint
 
 label tier_7_1:
@@ -390,8 +347,6 @@ label tier_7_1:
             $ variable("energy", 20)
             $ variable("morale", -10)
 
-    "Nice testing"
-
     jump checkpoint
 
 label tier_7_2:
@@ -405,7 +360,5 @@ label tier_7_2:
         "$_NO":
             $ variable("energy", -20)
             $ variable("morale", 30)
-
-    "Nice testing"
 
     jump checkpoint

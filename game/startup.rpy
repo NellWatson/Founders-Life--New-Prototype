@@ -82,6 +82,31 @@ screen startup_logo(_transient=True):
 
                 action [SetVariable("startup_icon", fields[i]), Hide("startup_logo")]
 
+screen sprint_review(bg):
+    add bg
+    add Solid("#00000050")
+
+    use fl_window("startup_preview", "DAYS AS FOUNDER", colour="#559fdd", width=900, height=380, cross=False):
+        vbox:
+            xsize 800
+            xalign 0.5
+            spacing 10
+            first_spacing 40
+
+            add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
+            text "Congratulations [founder_name]" color "#000000" xalign 0.5
+            text "You have survived [turn_no] as a founder." color "#000000" xalign 0.5
+
+        textbutton _("CONTINUE"):
+            idle_background("#d3d3d3")
+            hover_background Solid( Color("#d3d3d3").tint(0.5) )
+            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+
+            action Return()
+
+            xalign 0.5
+            yalign 0.99
+
 screen startup_review(bg):
     add bg
     add Solid("#00000050")
@@ -106,7 +131,7 @@ screen startup_review(bg):
                 text DynamicDisplayable(dynamic_show_text, 2, morale)
                 
                 text "Days as Founder Bonus" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 3, month*30)
+                text DynamicDisplayable(dynamic_show_text, 3, turn_no)
                 
                 text "Founder XP Level Bonus" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 4, founder_level)

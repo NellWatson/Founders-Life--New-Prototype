@@ -28,9 +28,9 @@ default startup_icon = ""
 default founder_level = 1
 default last_founder_level = 0
 
-default energy = 100
-default morale = 100
-default money = 0
+default energy = 50
+default morale = 50
+default money = 50
 default current_sprint = 0
 default current_bg = "bg bedroom"
 
