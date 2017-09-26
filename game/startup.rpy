@@ -120,27 +120,24 @@ screen startup_review(bg):
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
             text "Another sprint completed [founder_name]" color "#000000" xalign 0.5
 
-            grid 2 6:
+            grid 2 5:
                 xpos 150
                 spacing 10
 
-                text "Energy Remaining Bonus      " color "#000000"
+                text "Energy Remaining" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 1, energy)
                 
-                text "Morale Remaining Bonus" color "#000000"
+                text "Morale Remaining" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 2, morale)
                 
-                text "Days as Founder Bonus" color "#000000"
+                text "Money Remaining " color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 2, money)
+                
+                text "Days as Founder " color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 3, turn_no)
                 
-                text "Founder XP Level Bonus" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 4, founder_level)
-                
-                text "{b}Valued Added{/b}" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 5, "{b}$" + "{:,}".format(current_sprint) + "{/b}")
-
-                text "{b}Startup Valuation{/b}" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 6, "{color=#00ff00}{b}$" + "{:,}".format(money) + "{/b}{/color}", flash)
+                text "Founder Score   " color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 4, founder_score)
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")

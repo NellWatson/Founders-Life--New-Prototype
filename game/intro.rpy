@@ -22,7 +22,7 @@ label event_intro:
     $ current_sprint = 0
     $ last_founder_level = founder_level
 
-    call screen level_up(current_bg)
-    with dissolve
+    #call screen level_up(current_bg)
+    #with dissolve
 
     jump checkpoint

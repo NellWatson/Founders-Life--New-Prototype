@@ -20,8 +20,9 @@ label checkpoint:
         $ morale = 100
     
     if turn_no and not (turn_no % 5):
-        $ current_sprint = energy * morale * turn_no * founder_level
-        $ money += current_sprint
+        # current_sprint = energy * morale * turn_no * founder_level
+        # money += current_sprint
+        $ founder_score = energy + morale + (money * turn_no)
         $ level_up = False
         $ last_founder_level = founder_level
 
@@ -39,7 +40,15 @@ label checkpoint:
             if founder_level > 10:
                 $ founder_level = 10
 
-        call screen level_up(current_bg)
+        #call screen level_up(current_bg)
+        if energy < 30:
+            call screen warn_msg(message="Being a founder is physically tough, you need to pro-actively manage your energy.", title="warning")
+
+        if morale < 30:
+            call screen warn_msg(message="Being a founder is mentally exhausting, you need to be mindful of your mental well-being.", title="warning")
+
+        if money < 30:
+            call screen warn_msg(message="Being a founder is financially draining, you need to strike a balance between investing in your dreams and being frugal with your cash reserves.", title="warning")
 
     if energy > 0 and morale > 0:
         $ turn_no += 1
