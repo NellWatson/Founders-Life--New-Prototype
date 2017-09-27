@@ -1,4 +1,5 @@
 label event_intro:
+    call screen msg("Meeting Your Mentor", title="episode 1", show_button="Let's go!")
     show screen block_keys("game_menu")
 
     n normal "Welcome to Founder's Life."

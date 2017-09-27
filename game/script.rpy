@@ -1,6 +1,9 @@
 label start:
     scene bg bedroom
+    # print renpy.display.core.scene_lists().get_all_displayables()
+    
     show screen hud
+    call screen founder_map
 
     jump event_intro
 

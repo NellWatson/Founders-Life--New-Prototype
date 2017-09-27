@@ -20,12 +20,15 @@ init python:
 
         return height if height > min_height else min_height
 
-screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=400, _bar_height=90, cross=True):
+screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_height=90, cross=True, hide_anyway=False, show_button=None):
 
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
 
-    $ called = (renpy.game.context().info._current_interact_type == "screen")
+    if not hide_anyway:
+        $ called = (renpy.game.context().info._current_interact_type == "screen")
+    else:
+        $ called = False
 
     add Solid("#000000") alpha 0.60
 
@@ -45,7 +48,7 @@ screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=
             add Solid(colour)
             text title.upper() size t_size color "#ffffff" font "DejaVuSans.ttf" yalign 0.5 xalign 0.5
 
-            if cross:
+            if cross and not show_button:
                 button:
                     xysize _bar_height, _bar_height
 
@@ -55,7 +58,7 @@ screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=
 
                     text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-                    action If(tagged or called, true=If(tagged, true=Show(name), false=Return()), false=Hide(name))
+                    action If(called, true=Return(), false=Hide(name))
 
                     xpos width+20
     
@@ -67,12 +70,24 @@ screen fl_window(name, title, colour="#559fdd", tagged=False, width=600, height=
 
             transclude
 
-screen warn_msg(message, title="Warning", width=600, height=0):
+        button:
+            xysize width, _bar_height-15
+            yoffset 20
+
+            idle_background Solid(colour)
+            hover_background Solid(tinted)
+            selected_background Solid(shaded)
+
+            text show_button font "DejaVuSans.ttf" size 50 color "#ffffff" yalign 0.5 xalign 0.52
+
+            action If(called, true=Return(), false=Hide(name))
+
+screen warn_msg(message, title="Warning", width=600, height=0, hide_anyway=False):
     modal True
 
     default actual_height = height if height else find_height(message, width-20)
 
-    use fl_window("warn_msg", title, colour="#ff8800", width=width, height=actual_height):
+    use fl_window("warn_msg", title, colour="#ff8800", width=width, height=actual_height, hide_anyway=hide_anyway):
         vbox:
             xalign 0.5
             yalign 0.5
@@ -91,12 +106,12 @@ screen err_msg(message, title="Error", width=600, height=0):
 
             text message color "#000000"
 
-screen msg(message, title="Information", width=600, height=0):
+screen msg(message, title="Information", width=600, height=0, **kwargs):
     modal True
     
     default actual_height = height if height else find_height(message, width-20)
 
-    use fl_window("err_msg", title, colour="#559fdd", width=width, height=actual_height):
+    use fl_window("err_msg", title, colour="#559fdd", width=width, height=actual_height, **kwargs):
         vbox:
             xalign 0.5
             yalign 0.5

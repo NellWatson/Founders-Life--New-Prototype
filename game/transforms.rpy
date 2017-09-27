@@ -5,3 +5,7 @@ transform flash:
     linear 0.5 alpha 1.0
     
     repeat
+
+transform zoom_out(factor):
+    subpixel True
+    zoom factor
