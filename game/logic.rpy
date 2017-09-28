@@ -27,11 +27,11 @@ init python:
         7: ["tier_7_1", "tier_7_2"]
     }
 
-    def variable(name, value):
+    def variable(name, value, maximum=100):
         old_value = getattr(store, name)
         new_value = old_value + value
-        if new_value > 100:
-            new_value = 100
+        if new_value > maximum:
+            new_value = maximum
         
         if value < 0:
             store.check[name] = "{color=#ff0000}" + str(value) + "{/color}"

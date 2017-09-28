@@ -44,13 +44,25 @@ label checkpoint:
                 $ founder_level = 10
 
         #call screen level_up(current_bg)
-        if energy < 30:
+        if energy < 30 and morale < 30 and money < 3000:
+            call screen warn_msg(message="Wow, you are physically, mentally and financially exhausted. You need to take a step back and start rebuilding your energy, mindfulness and cash reserves.", width=1000)
+
+        elif energy < 30 and morale < 30:
+            call screen warn_msg(message="Being a founder is physically tough and mentally exhausting, you need to pro-actively manage your energy and be mindful of your mental well-being.", width=1000)
+
+        elif energy < 30 and money < 3000:
+            call screen warn_msg(message="Being a founder is physically tough and financially draining, you need to pro-actively manage your energy and strike a balance between investing in your dreams and being frugal with your cash reserves.", width=1200)
+
+        elif morale < 30 and money < 3000:
+            call screen warn_msg(message="Being a founder is mentally exhausting and financially draining, you need to be mindful of your mental well-being and strike a balance between investing in your dreams and being frugal with your cash reserves.", width=1200)
+
+        elif energy < 30:
             call screen warn_msg(message="Being a founder is physically tough, you need to pro-actively manage your energy.", title="warning")
 
-        if morale < 30:
+        elif morale < 30:
             call screen warn_msg(message="Being a founder is mentally exhausting, you need to be mindful of your mental well-being.", title="warning")
 
-        if money < 30:
+        elif money < 3000:
             call screen warn_msg(message="Being a founder is financially draining, you need to strike a balance between investing in your dreams and being frugal with your cash reserves.", title="warning")
 
     if energy > 0 and morale > 0:
@@ -76,6 +88,7 @@ label cloud:
         "$_YES":
             $ variable("energy", -20)
             $ variable("morale", 20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
@@ -90,6 +103,7 @@ label day_one_pr:
         "$_YES":
             $ variable("energy", -5)
             $ variable("morale", -10)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
@@ -102,8 +116,14 @@ label conference:
         "There’s a conference coming up that looks interesting. Buy a ticket for $5,000?"
 
         "$_YES":
-            $ variable("energy", -50)
-            $ variable("morale", -10)
+            if money < 5000:
+                $ variable("energy", -50)
+                $ variable("morale", -10)
+                $ variable("money", -5000)
+            else:
+                "Not enough money."
+                $ variable("energy", -50)
+                $ variable("morale", -50)
 
         "$_NO":
             $ variable("energy", 50)
@@ -118,6 +138,7 @@ label key_messaging:
         "$_YES":
             $ variable("energy", 20)
             $ variable("morale", -20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -30)
@@ -132,6 +153,7 @@ label premature_launch:
         "$_YES":
             $ variable("energy", 0)
             $ variable("morale", -20)
+            $ variable("money", 500, maximum=10000)
 
         "$_NO":
             $ variable("morale", 20)
@@ -145,6 +167,7 @@ label ux_research:
         "$_YES":
             $ variable("energy", -20)
             $ variable("morale", 20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 30)
@@ -159,10 +182,12 @@ label delegation:
         "$_YES":
             $ variable("energy", -20)
             $ variable("morale", 30)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -40)
             $ variable("morale", -40)
+            $ variable("money", 500, maximum=10000)
 
     jump checkpoint
 
@@ -186,6 +211,7 @@ label beta:
 
         "$_YES":
             $ variable("morale", -10)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -20)
@@ -228,10 +254,12 @@ label tier_2_1:
         "$_YES":
             $ variable("energy", -10)
             $ variable("morale", 20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
+            $ variable("money", 500, maximum=10000)
 
     jump checkpoint
 
@@ -242,10 +270,12 @@ label tier_3_1:
         "$_YES":
             $ variable("energy", -10)
             $ variable("morale", 20)
+            $ variable("money", 500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
+            $ variable("money", -500, maximum=10000)
 
     jump checkpoint
 
@@ -256,10 +286,12 @@ label tier_3_2:
         "$_YES":
             $ variable("energy", 30)
             $ variable("morale", -20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -20)
             $ variable("morale", 30)
+            $ variable("money", 500, maximum=10000)
 
     jump checkpoint
 
@@ -270,10 +302,12 @@ label tier_4_1:
         "$_YES":
             $ variable("energy", -10)
             $ variable("morale", 20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
+            $ variable("money", 500, maximum=10000)
 
     jump checkpoint
 
@@ -284,10 +318,12 @@ label tier_4_2:
         "$_YES":
             $ variable("energy", 30)
             $ variable("morale", -20)
+            $ variable("money", 500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -20)
             $ variable("morale", 30)
+            $ variable("money", -500, maximum=10000)
 
     jump checkpoint
 
@@ -298,10 +334,12 @@ label tier_5_1:
         "$_YES":
             $ variable("energy", -10)
             $ variable("morale", 20)
+            $ variable("money", 500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
+            $ variable("money", -500, maximum=10000)
 
     jump checkpoint
 
@@ -312,10 +350,12 @@ label tier_5_2:
         "$_YES":
             $ variable("energy", 30)
             $ variable("morale", -20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -20)
             $ variable("morale", 30)
+            $ variable("money", 500, maximum=10000)
 
     jump checkpoint
 
@@ -326,10 +366,12 @@ label tier_6_1:
         "$_YES":
             $ variable("energy", -10)
             $ variable("morale", 20)
+            $ variable("money", 500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
+            $ variable("money", -500, maximum=10000)
 
     jump checkpoint
 
@@ -340,10 +382,12 @@ label tier_6_2:
         "$_YES":
             $ variable("energy", 30)
             $ variable("morale", -20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -20)
             $ variable("morale", 30)
+            $ variable("money", 500, maximum=10000)
 
     jump checkpoint
 
@@ -354,10 +398,12 @@ label tier_7_1:
         "$_YES":
             $ variable("energy", -10)
             $ variable("morale", 20)
+            $ variable("money", -500, maximum=10000)
 
         "$_NO":
             $ variable("energy", 20)
             $ variable("morale", -10)
+            $ variable("money", 500, maximum=10000)
 
     jump checkpoint
 
@@ -368,9 +414,11 @@ label tier_7_2:
         "$_YES":
             $ variable("energy", 30)
             $ variable("morale", -20)
+            $ variable("money", 500, maximum=10000)
 
         "$_NO":
             $ variable("energy", -20)
             $ variable("morale", 30)
+            $ variable("money", -500, maximum=10000)
 
     jump checkpoint

@@ -131,13 +131,13 @@ screen startup_review(bg):
                 text DynamicDisplayable(dynamic_show_text, 2, morale)
                 
                 text "Money Remaining " color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 2, money)
+                text DynamicDisplayable(dynamic_show_text, 3, money)
                 
                 text "Days as Founder " color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 3, turn_no)
+                text DynamicDisplayable(dynamic_show_text, 4, turn_no)
                 
                 text "Founder Score   " color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 4, founder_score)
+                text DynamicDisplayable(dynamic_show_text, 5, founder_score)
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")

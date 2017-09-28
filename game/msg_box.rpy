@@ -70,17 +70,18 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
 
             transclude
 
-        button:
-            xysize width, _bar_height-15
-            yoffset 20
+        if show_button:
+            button:
+                xysize width, _bar_height-15
+                yoffset 20
 
-            idle_background Solid(colour)
-            hover_background Solid(tinted)
-            selected_background Solid(shaded)
+                idle_background Solid(colour)
+                hover_background Solid(tinted)
+                selected_background Solid(shaded)
 
-            text show_button font "DejaVuSans.ttf" size 50 color "#ffffff" yalign 0.5 xalign 0.52
+                text show_button font "DejaVuSans.ttf" size 50 color "#ffffff" yalign 0.5 xalign 0.52
 
-            action If(called, true=Return(), false=Hide(name))
+                action If(called, true=Return(), false=Hide(name))
 
 screen warn_msg(message, title="Warning", width=600, height=0, hide_anyway=False):
     modal True

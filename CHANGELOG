@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.2-0928
+------------
+* Added Money KPI to the events.
+* Added more condition checks for warning dialogues.
+
 v 0.0.2-0927
 ------------
 * Added a simplified Founder map.

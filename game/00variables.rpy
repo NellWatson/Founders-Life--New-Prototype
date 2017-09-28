@@ -30,7 +30,7 @@ default last_founder_level = 0
 
 default energy = 50
 default morale = 50
-default money = 50
+default money = 5000
 default current_sprint = 0
 default current_bg = "bg bedroom"
 
