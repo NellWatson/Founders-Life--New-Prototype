@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.2-1004
+------------
+* Refactored game according to #62, #63 and #66.
+* Fifth event consequences are visible now.
+
 v 0.0.2-0928
 ------------
 * Added Money KPI to the events.

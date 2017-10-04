@@ -3,8 +3,6 @@ label start:
     # print renpy.display.core.scene_lists().get_all_displayables()
     
     show screen hud
-    call screen founder_map
-
     jump event_intro
 
 screen game_screen():
@@ -28,6 +26,11 @@ label checkpoint:
         $ founder_score = energy + morale + (money * turn_no)
         $ level_up = False
         $ last_founder_level = founder_level
+        $ week += 1
+
+        window show
+        pause 1.5
+        window hide
 
         call screen sprint_review(current_bg)
         call screen startup_review(current_bg)

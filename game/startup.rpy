@@ -86,7 +86,7 @@ screen sprint_review(bg):
     add bg
     add Solid("#00000050")
 
-    use fl_window("startup_preview", "DAYS AS FOUNDER", colour="#559fdd", width=900, height=380, cross=False):
+    use fl_window("startup_preview", "WEEKLY SPRINT COMPLETED", colour="#559fdd", width=900, height=380, cross=False):
         vbox:
             xsize 800
             xalign 0.5
@@ -95,7 +95,7 @@ screen sprint_review(bg):
 
             add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
             text "Congratulations [founder_name]" color "#000000" xalign 0.5
-            text "You have survived [turn_no] as a founder." color "#000000" xalign 0.5
+            text "You have survived [week] weeks of life as a founder." color "#000000" xalign 0.5
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
@@ -133,7 +133,7 @@ screen startup_review(bg):
                 text "Money Remaining " color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 3, money)
                 
-                text "Days as Founder " color "#000000"
+                text "Weeks as Founder " color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 4, turn_no)
                 
                 text "Founder Score   " color "#000000"

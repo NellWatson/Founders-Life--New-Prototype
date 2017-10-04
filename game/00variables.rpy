@@ -35,7 +35,7 @@ default current_sprint = 0
 default current_bg = "bg bedroom"
 
 default turn_no = 0
-default month = 1
+default week = 0
 default level_up = False
 
 default event_name = ""

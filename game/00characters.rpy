@@ -1,1 +1,1 @@
-define n = Character("Nell Bot", image="nell")
+define n = Character("Nell", image="nell")
