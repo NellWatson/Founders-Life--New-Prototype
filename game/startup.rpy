@@ -134,7 +134,7 @@ screen startup_review(bg):
                 text DynamicDisplayable(dynamic_show_text, 3, money)
                 
                 text "Weeks as Founder " color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 4, turn_no)
+                text DynamicDisplayable(dynamic_show_text, 4, week)
                 
                 text "Founder Score   " color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 5, founder_score)

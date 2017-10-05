@@ -14,12 +14,18 @@ screen game_screen():
 label checkpoint:
     $ event_name = ""
 
-    if energy > 100:
-        $ energy = 100
+    if energy < 0:
+        call screen err_msg(message="You are out of Energy.", title="game over")
 
-    if morale > 100:
-        $ morale = 100
-    
+        "You survived [turn_no] days."
+        return
+
+    elif morale < 0:
+        call screen err_msg(message="You are out of Morale.", title="game over")
+
+        "You survived [turn_no] days."
+        return
+
     if turn_no and not (turn_no % 5):
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
@@ -74,15 +80,6 @@ label checkpoint:
 
         scene expression current_bg with dissolve
         jump expression find_event()
-
-    elif energy < 0:
-        call screen err_msg(message="You are out of Energy.", title="game over")
-    elif morale < 0:
-        call screen err_msg(message="You are out of Morale.", title="game over")
-
-    "You survived [turn_no] days."
-
-    return
 
 label cloud:
     menu:

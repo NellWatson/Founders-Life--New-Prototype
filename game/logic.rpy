@@ -43,7 +43,7 @@ init python:
 
     def find_event():
         if not available_pool[founder_level]:
-            available_pool[founder_level] = events_pool[founder_level]
+            available_pool[founder_level] = events_pool[founder_level][:]
 
         if not available_pool[9999]:
             available_pool[9999] = events_pool[9999]

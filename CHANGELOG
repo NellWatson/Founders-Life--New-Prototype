@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.0.2-1005
+------------
+* Fixed #65 bug.
+
 v 0.0.2-1004
 ------------
 * Refactored game according to #62, #63 and #66.
