@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+v 0.0.2-1025
+------------
+* Implemented new event system.
+* Implemented New Information Design #68.
+* Iterate Game Review #69 done.
+* Iterate Game Review: Performance Feedback #70 done.
+* Iterate play loop #71 done.
+* Refined game over ceremony #72.
+
 v 0.0.2-1005
 ------------
 * Fixed #65 bug.

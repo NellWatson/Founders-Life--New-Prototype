@@ -5,27 +5,16 @@ init python:
         "confirm": False,
     }
 
-    events_pool = {
-        9999: ["ux_research", "delegation", "beta"],
-        1: ["cloud", "day_one_pr", "conference", "key_messaging", "premature_launch"],
-        2: ["nda", "micro_managing", "tier_2_1"],
-        3: ["tier_3_1", "tier_3_2"],
-        4: ["tier_4_1", "tier_4_2"],
-        5: ["tier_5_1", "tier_5_2"],
-        6: ["tier_6_1", "tier_6_2"],
-        7: ["tier_7_1", "tier_7_2"]
-    }
+    def calculate_pool():
+        top_level = ["productivity", "energy", "morale", "money"]
+        mid_level = ["major", "minor"]
+        low_level = ["01", "02", "03", "04", "05"]
 
-    available_pool = {
-        9999: ["ux_research", "delegation", "beta"],
-        1: ["cloud", "day_one_pr", "conference", "key_messaging", "premature_launch"],
-        2: ["nda", "micro_managing", "tier_2_1"],
-        3: ["tier_3_1", "tier_3_2"],
-        4: ["tier_4_1", "tier_4_2"],
-        5: ["tier_5_1", "tier_5_2"],
-        6: ["tier_6_1", "tier_6_2"],
-        7: ["tier_7_1", "tier_7_2"]
-    }
+        for i in top_level:
+            events_pool[i] = []
+            for j in mid_level:
+                for k in low_level:
+                    events_pool[i].append( i + "_" + j + "_" + k )
 
     def variable(name, value, maximum=100):
         old_value = getattr(store, name)
@@ -42,17 +31,14 @@ init python:
         setattr(store, name, new_value)
 
     def find_event():
-        if not available_pool[founder_level]:
-            available_pool[founder_level] = events_pool[founder_level][:]
+        _available_buckets = events_pool.keys()
 
-        if not available_pool[9999]:
-            available_pool[9999] = events_pool[9999]
-
-        event = renpy.random.choice(available_pool[founder_level] + available_pool[9999])
-
-        if event in available_pool[founder_level]:
-            available_pool[founder_level].remove(event)
-        elif event in available_pool[9999]:
-            available_pool[9999].remove(event)
+        if store.last_event_bucket:
+            _available_buckets.remove(last_event_bucket)
+        current_bucket = renpy.random.choice(_available_buckets)
+    
+        event = renpy.random.choice( events_pool[current_bucket] )
+        store.last_event_bucket = event.split("_")[0]
+        events_pool[last_event_bucket].remove(event)
 
         return event
