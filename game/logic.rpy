@@ -19,7 +19,7 @@ init python:
     def variable(name, value, maximum=100):
         old_value = getattr(store, name)
         new_value = old_value + value
-        if new_value > maximum:
+        if new_value > maximum and name != "money":
             new_value = maximum
         
         if value < 0:

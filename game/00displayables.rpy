@@ -55,11 +55,11 @@ init python:
 
             self.updated_fl = False
 
-            # The current money player has earned
-            self.money = 0
+            # The current Founder Score of player
+            self.total_founder_score = 0
 
-            # The money player had before this sprint
-            self.old_money = 0
+            # The old Founder Score of player
+            self.old_founder_score = 0
 
             # The step by which the bar should update
             self.review_step = 0
@@ -69,8 +69,6 @@ init python:
 
             # The range of the bar
             self.bar_range = 1
-
-            # Check to see if we can show bar
 
         def valuation(self, st, limit):
             header = "Startup Valuation: "
@@ -105,20 +103,22 @@ init python:
         def bar(self, st, limit):
             # Wait for 'st' time before starting to update the bar
             if st < limit:
-                return Bar(range=FOUNDER_INDEX[self.founder_level][1], value=store.money - store.current_sprint, height=20)
+                return Bar(range=FOUNDER_INDEX[self.founder_level][1], value=store.total_founder_score - store.founder_score, height=20)
 
-            if self.money != store.money:
-                self.money = store.money
+            # If the current Founder Score and stored Founder score don't match, update them before continuing
+            if self.total_founder_score != store.total_founder_score:
+                self.total_founder_score = store.total_founder_score
 
-                # Find the money Founder had before this sprint
-                self.old_money = store.money - store.current_sprint
+                # Find the Founder Score player had before this sprint
+                self.founder_score = store.total_founder_score - store.founder_score
 
                 # Set the Bar range to the current Founder Level milestone
-                self.bar_range = FOUNDER_INDEX[self.founder_level][1]
-                self.bar_value = self.old_money
+                self.bar_range = FOUNDER_INDEX[self.founder_level+1][1]
+                self.bar_value = self.founder_score
 
                 # Find the steps by which the bar will be updated
-                self.review_step = store.current_sprint * 3000 / self.bar_range
+                print store.founder_score, self.bar_range
+                self.review_step = store.founder_score * 3000 / self.bar_range
 
             # If the bar is full, check to see if we can update the bar to a new one
             if self.bar_value >= self.bar_range:
@@ -128,18 +128,18 @@ init python:
                 self.bar_range = FOUNDER_INDEX[self.founder_level][1] - self.bar_range
 
             # Update the bar
-            if self.old_money < self.money:
+            if self.founder_score < self.total_founder_score:
                 self.bar_value += self.review_step
-                self.old_money += self.review_step
+                self.founder_score += self.review_step
             else:
-                self.old_money = self.money
+                self.founder_score = self.total_founder_score
 
             if self.updated_fl:
                 status = "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}"
             else:
                 status = "Founder Status: " + FOUNDER_INDEX[self.founder_level][0]
 
-            return VBox(Bar(range=self.bar_range, value=self.bar_value, height=10), Text("${:,}".format(self.old_money) + " / " + "${:,}".format(FOUNDER_INDEX[self.founder_level][1]), color="#000000", xalign=0.5), Text(status, xalign=0.5, color="#000000"), spacing=10, xalign=0.5)
+            return Bar(range=self.bar_range, value=self.bar_value, height=10)
 
     def dynamic_bar(st, at, bar):
         return bar.displayable(st), 0.1

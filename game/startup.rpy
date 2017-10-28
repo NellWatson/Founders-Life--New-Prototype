@@ -86,6 +86,8 @@ screen sprint_review(bg):
     add bg
     add Solid("#00000050")
 
+    default review = ReviewB()
+
     use fl_window("startup_preview", "WEEKLY SPRINT COMPLETED", colour="#559fdd", width=900, height=380, cross=False):
         vbox:
             xsize 800
@@ -93,11 +95,16 @@ screen sprint_review(bg):
             spacing 10
             first_spacing 40
 
-            add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
-            text "Congratulations [founder_name]" color "#000000" xalign 0.5
-            text "You have survived [week] weeks of life as a founder." color "#000000" xalign 0.5
+            text "[founder_name]" color "#000000" xalign 0.5
+            text "Founder Points Earned: [total_founder_score]" color "#000000" xalign 0.5
 
-        textbutton _("CONTINUE"):
+            null height 1.0
+            add DynamicDisplayable(dynamic_review, review.bar, 0.25) xalign 0.5
+
+            text "Founder Level: [founder_level]" color "#000000" xalign 0.5
+            text "Founder Status: " + FOUNDER_INDEX[founder_level][0] color "#000000" xalign 0.5
+
+        textbutton _("Let's Go"):
             idle_background("#d3d3d3")
             hover_background Solid( Color("#d3d3d3").tint(0.5) )
             selected_background Solid( Color("#d3d3d3").shade(0.5) )
@@ -111,17 +118,18 @@ screen startup_review(bg):
     add bg
     add Solid("#00000050")
 
-    use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=600, cross=False):
+    use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=550, cross=False):
         vbox:
             xsize 800
             xalign 0.5
-            spacing 20
+            spacing 10
 
-            add "images/icons/" + startup_icon zoom 0.3 xalign 0.5
+            null height 1.0
             text "Another sprint completed [founder_name]" color "#000000" xalign 0.5
+            null height 8.0
 
-            grid 2 6:
-                xpos 150
+            grid 2 7:
+                xpos 200
                 spacing 10
 
                 text "Productivity" color "#000000"
@@ -139,7 +147,10 @@ screen startup_review(bg):
                 text "Days as Founder   " color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 3.75, week)
                 
-                text "Founder Points" color "#000000"
+                null height 1.0
+                null height 1.0
+
+                text "{b}Founder Points{/b}" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 4.5, founder_score)
 
         textbutton _("CONTINUE"):

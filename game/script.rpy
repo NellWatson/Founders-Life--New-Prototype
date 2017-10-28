@@ -31,10 +31,11 @@ label checkpoint:
         "Game over. You have run out of savings."
         return
 
-    if turn_no and not (turn_no % 7):
+    if turn_no and not (turn_no % 1):
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
         $ founder_score = productivity + energy + morale + money + (turn_no * founder_level)
+        $ total_founder_score += founder_score
         $ level_up = False
         $ last_founder_level = founder_level
         $ week += 1
@@ -43,14 +44,14 @@ label checkpoint:
         pause 1.5
         window hide
 
-        call screen sprint_review(current_bg)
         call screen startup_review(current_bg)
+        call screen sprint_review(current_bg)
 
         if turn_no > 19:
             call screen err_msg(message="End of Episode. More coming soon.", title="game over")
             return
 
-        while money > FOUNDER_INDEX[founder_level][1]:
+        while total_founder_score > FOUNDER_INDEX[founder_level][1]:
             $ founder_level += 1
             $ level_up = True
 

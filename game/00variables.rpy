@@ -27,6 +27,9 @@ default startup_icon = ""
 default founder_level = 1
 default last_founder_level = 0
 
+default founder_score = 0
+default total_founder_score = 0
+
 default productivity = 100
 default energy = 100
 default morale = 100
