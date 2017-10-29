@@ -15,6 +15,11 @@ screen game_screen():
 label checkpoint:
     $ event_name = ""
 
+    if turn_no > 28:
+        n normal "Thank you for playing Chapter 1 of Founders Life."
+
+        return
+
     if productivity <= 0:
         "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
         return
@@ -31,10 +36,10 @@ label checkpoint:
         "Game over. You have run out of savings."
         return
 
-    if turn_no and not (turn_no % 1):
+    if turn_no and not (turn_no % 7):
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
-        $ founder_score = productivity + energy + morale + money + (turn_no * founder_level)
+        $ founder_score = (productivity + energy + morale + money + (turn_no * founder_level)) * founder_level
         $ total_founder_score += founder_score
         $ level_up = False
         $ last_founder_level = founder_level

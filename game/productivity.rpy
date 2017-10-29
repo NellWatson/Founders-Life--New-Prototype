@@ -72,7 +72,7 @@ label productivity_major_01:
 
 label productivity_major_02:
     menu:
-        "You have finally found your perfect Lead Designer but she wants 10% equity to join. Should you agree to her terms?"
+        "You have finally found your perfect Lead Designer but she wants 10%% equity to join. Should you agree to her terms?"
 
         "$_YES":
             $ variable("productivity", 10)
@@ -84,7 +84,7 @@ label productivity_major_02:
 
 label productivity_major_03:
     menu:
-        "Domenique Martel emails to say that she really liked your recent blog post. She has a bunch of free time now that her startup has been acquired by Google. She'd like to mentor you for a 1% stake but she's not willing to make an angel investment in the company right now. Accept the offer?"
+        "Domenique Martel emails to say that she really liked your recent blog post. She has a bunch of free time now that her startup has been acquired by Google. She'd like to mentor you for a 1%% stake but she's not willing to make an angel investment in the company right now. Accept the offer?"
 
         "$_YES":
             $ variable("productivity", 10)

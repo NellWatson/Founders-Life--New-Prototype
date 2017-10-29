@@ -88,7 +88,7 @@ screen sprint_review(bg):
 
     default review = ReviewB()
 
-    use fl_window("startup_preview", "WEEKLY SPRINT COMPLETED", colour="#559fdd", width=900, height=380, cross=False):
+    use fl_window("startup_preview", "WEEKLY SPRINT COMPLETED", colour="#559fdd", width=900, height=440, cross=False):
         vbox:
             xsize 800
             xalign 0.5
@@ -96,13 +96,16 @@ screen sprint_review(bg):
             first_spacing 40
 
             text "[founder_name]" color "#000000" xalign 0.5
-            text "Founder Points Earned: [total_founder_score]" color "#000000" xalign 0.5
+            text "Founder Points Earned: [founder_score]" color "#000000" xalign 0.5
 
             null height 1.0
             add DynamicDisplayable(dynamic_review, review.bar, 0.25) xalign 0.5
 
             text "Founder Level: [founder_level]" color "#000000" xalign 0.5
             text "Founder Status: " + FOUNDER_INDEX[founder_level][0] color "#000000" xalign 0.5
+            
+            null height 1.0
+            text "Total Founder Points: [total_founder_score]" color "#000000" xalign 0.5
 
         textbutton _("Let's Go"):
             idle_background("#d3d3d3")
