@@ -15,7 +15,7 @@ screen game_screen():
 label checkpoint:
     $ event_name = ""
 
-    if turn_no > 28:
+    if turn_no > 27:
         n normal "Thank you for playing Chapter 1 of Founders Life."
 
         return
@@ -52,7 +52,7 @@ label checkpoint:
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
-        if turn_no > 19:
+        if turn_no > 28:
             call screen err_msg(message="End of Episode. More coming soon.", title="game over")
             return
 

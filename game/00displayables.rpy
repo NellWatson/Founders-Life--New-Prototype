@@ -113,7 +113,7 @@ init python:
                 self.founder_score = store.total_founder_score - store.founder_score
 
                 # Set the Bar range to the current Founder Level milestone
-                self.bar_range = FOUNDER_INDEX[self.founder_level+1][1]
+                self.bar_range = FOUNDER_INDEX[self.founder_level][1]
                 self.bar_value = self.founder_score
 
                 # Find the steps by which the bar will be updated
@@ -145,4 +145,4 @@ init python:
         return bar.displayable(st), 0.1
 
     def dynamic_review(st, at, d, limit):
-        return d(st, limit), 0.1
+        return d(st, limit), 0.01
