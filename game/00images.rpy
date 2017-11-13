@@ -10,6 +10,11 @@ image bg boardroom = Transform("images/bg/xp-9-boardroom.jpg", zoom=1.5)
 image bg spaceship = Transform("images/bg/xp-10-spaceship.jpg", zoom=1.5)
 
 image side nell normal = "images/contacts/nell.png"
+image player a = Placeholder("boy")
+image player b = Placeholder("girl")
+image player c = Placeholder("boy")
+image player d = Placeholder("girl")
+image player e = Placeholder("boy")
 
 image input_caret:
     Text("|")

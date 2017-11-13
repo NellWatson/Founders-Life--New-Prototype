@@ -1,1 +1,6 @@
-define n = Character("Nell", image="nell")
+define character.n = Character("Nell", image="nell")
+define character.a = Character("A")
+define character.b = Character("B")
+define character.c = Character("C")
+define character.d = Character("D")
+define character.e = Character("E")

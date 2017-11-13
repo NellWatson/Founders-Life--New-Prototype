@@ -1,8 +1,6 @@
 init python:
     check = {
-        "energy": "",
-        "morale": "",
-        "confirm": False,
+        "money": ""
     }
 
     def calculate_pool():
@@ -22,20 +20,31 @@ init python:
         if new_value > maximum and name != "money":
             new_value = maximum
         
-        if value < 0:
-            store.check[name] = "{color=#ff0000}" + str(value) + "{/color}"
-        else:
-            store.check[name] = "{color=#00ff00}+" + str(value) + "{/color}"
-        store.check["confirm"] = True
+        check["money"] = ""
+        if name == "money":
+            if value < 0:
+                store.check[name] = "{color=#ff0000}$" + str(new_value) + "{/color}"
+            else:
+                store.check[name] = "{color=#00ff00}$" + str(new_value) + "{/color}"
 
         setattr(store, name, new_value)
 
     def find_event():
         _available_buckets = events_pool.keys()
 
-        if store.last_event_bucket:
-            _available_buckets.remove(last_event_bucket)
+        # On turn 5 and 7 check if any event bucket hasn't been used yet
+        if not turn_no % 5 or not turn_no % 7:
+            print len(week_event_bucket_type)
+            if len(week_event_bucket_type) < 4:
+                _available_buckets = [i for i in _available_buckets if i not in week_event_bucket_type]
+                print _available_buckets, week_event_bucket_type
+        else:
+            # For regular days, just make sure that two types of events are not repeated
+            if store.last_event_bucket:
+                _available_buckets.remove(last_event_bucket)
+
         current_bucket = renpy.random.choice(_available_buckets)
+        week_event_bucket_type.add(current_bucket)
     
         event = renpy.random.choice( events_pool[current_bucket] )
         store.last_event_bucket = event.split("_")[0]

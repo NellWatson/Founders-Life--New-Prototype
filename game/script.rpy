@@ -3,7 +3,6 @@ label start:
     scene bg bedroom
     # print renpy.display.core.scene_lists().get_all_displayables()
     
-    show screen hud
     jump event_intro
 
 screen game_screen():
@@ -14,11 +13,6 @@ screen game_screen():
 
 label checkpoint:
     $ event_name = ""
-
-    if turn_no > 27:
-        n normal "Thank you for playing Chapter 1 of Founders Life."
-
-        return
 
     if productivity <= 0:
         "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
@@ -37,6 +31,9 @@ label checkpoint:
         return
 
     if turn_no and not (turn_no % 7):
+
+        hide player
+        n normal "Congratulations [founder_name].\nYou have survived [turn_no] as a founder."
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
         $ founder_score = (productivity + energy + morale + money + (turn_no * founder_level)) * founder_level
@@ -44,16 +41,14 @@ label checkpoint:
         $ level_up = False
         $ last_founder_level = founder_level
         $ week += 1
-
-        window show
-        pause 1.5
-        window hide
+        $ week_event_bucket_type = set()
+        $ check["money"] = ""
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
-        if turn_no > 28:
-            call screen err_msg(message="End of Episode. More coming soon.", title="game over")
+        if turn_no == 28:
+            n normal "Thank you for playing Chapter 1 of Founders Life."
             return
 
         while total_founder_score > FOUNDER_INDEX[founder_level][1]:

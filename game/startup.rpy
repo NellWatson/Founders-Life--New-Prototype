@@ -96,16 +96,16 @@ screen sprint_review(bg):
             first_spacing 40
 
             text "[founder_name]" color "#000000" xalign 0.5
-            text "Founder Points Earned: [founder_score]" color "#000000" xalign 0.5
+            text "Founder Points Earned: {:,}".format(total_founder_score) color "#000000" xalign 0.5
 
             null height 1.0
             add DynamicDisplayable(dynamic_review, review.bar, 0.25) xalign 0.5
 
-            text "Founder Level: [founder_level]" color "#000000" xalign 0.5
+            text "Founder Level: {:,}".format(founder_level) color "#000000" xalign 0.5
             text "Founder Status: " + FOUNDER_INDEX[founder_level][0] color "#000000" xalign 0.5
             
             null height 1.0
-            text "Total Founder Points: [total_founder_score]" color "#000000" xalign 0.5
+            text "Total Founder Points: {:,}".format(total_founder_score) color "#000000" xalign 0.5
 
         textbutton _("Let's Go"):
             idle_background("#d3d3d3")

@@ -24,6 +24,8 @@ label event_intro:
     # Set up a dummy screen
     $ current_sprint = 0
     $ last_founder_level = founder_level
+    
+    show screen hud
 
     #call screen level_up(current_bg)
     #with dissolve

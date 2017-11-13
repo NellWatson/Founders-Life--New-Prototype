@@ -36,8 +36,16 @@ screen hud():
 
                 add "images/gui/Mindfulness/meditation_guru-32.png" yalign 0.5 xoffset -44
                 add DynamicDisplayable(dynamic_bar, morale_bar)
+        
+        hbox:
+            xalign 0.95
+            yalign 0.15
             
-        text "Savings: $[money]" color "#000000" xalign 0.95 yalign 0.15
+            text "Savings: " color "#000000"
+            if check["money"]:
+                text check["money"] color "#000000" at flash
+            else:
+                text "$[money]" color "#000000"
 
 screen founder_map():
     add Solid("#ffffff")

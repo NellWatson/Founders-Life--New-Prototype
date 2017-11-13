@@ -1,6 +1,7 @@
 label money_minor_01:
+    show player a at center
     menu:
-        "An old friend gets in touch. His company need some technical writing done and he thought you'd be perfect. It pays $500, take the day off do the job?"
+        "(savings_minor_01) An old friend gets in touch. His company need some technical writing done and he thought you'd be perfect. It pays $500, take the day off do the job?"
 
         "$_YES":
             $ variable("money", 500)
@@ -11,8 +12,9 @@ label money_minor_01:
     jump checkpoint
 
 label money_minor_02:
+    show player b at center
     menu:
-        "A lawyer advises that you incorporate your startup. It might feel 'too soon' but is an unincorporated idea a risk worth taking?"
+        "(savings_minor_02) A lawyer advises that you incorporate your startup. It might feel 'too soon' but is an unincorporated idea a risk worth taking?"
 
         "$_YES":
             $ variable("money", -500)
@@ -23,8 +25,9 @@ label money_minor_02:
     jump checkpoint
 
 label money_minor_03:
+    show player c at center
     menu:
-        "The MVP needs a Terms of Service. Enlist the help of a lawyer?"
+        "(savings_minor_03) The MVP needs a Terms of Service. Enlist the help of a lawyer?"
 
         "$_YES":
             $ variable("money", -500)
@@ -35,8 +38,9 @@ label money_minor_03:
     jump checkpoint
 
 label money_minor_04:
+    show player d at center
     menu:
-        "A tech publication wants to pay to syndicate your blog posts. The catch? You'll have to write a new one every week. Accept?"
+        "(savings_minor_04) A tech publication wants to pay to syndicate your blog posts. The catch? You'll have to write a new one every week. Accept?"
 
         "$_YES":
             $ variable("money", 100)
@@ -47,8 +51,9 @@ label money_minor_04:
     jump checkpoint
 
 label money_minor_05:
+    show player e at center
     menu:
-        "There's a great office downtown but the agent is demanding a long-term lease. Sign?"
+        "(savings_minor_05) There's a great office downtown but the agent is demanding a long-term lease. Sign?"
 
         "$_YES":
             $ variable("money", -100)
@@ -59,8 +64,9 @@ label money_minor_05:
     jump checkpoint
 
 label money_major_01:
+    show player a at center
     menu:
-        "Draw up NDA"
+        "(savings_major_01) Draw up NDA"
 
         "$_YES":
             $ variable("money", 500)
@@ -71,8 +77,9 @@ label money_major_01:
     jump checkpoint
 
 label money_major_02:
+    show player b at center
     menu:
-        "Amazon want you to use AWS instead of building your own server infrastructure. Accept?"
+        "(savings_major_02) Amazon want you to use AWS instead of building your own server infrastructure. Accept?"
 
         "$_YES":
             $ variable("money", 1)
@@ -83,8 +90,9 @@ label money_major_02:
     jump checkpoint
 
 label money_major_03:
+    show player c at center
     menu:
-        "Squarespace want to sponsor your podcast but it's conditional on a weekly cadence for your startup's show. Accept?"
+        "(savings_major_03) Squarespace want to sponsor your podcast but it's conditional on a weekly cadence for your startup's show. Accept?"
 
         "$_YES":
             $ variable("money", 500)
@@ -95,8 +103,9 @@ label money_major_03:
     jump checkpoint
 
 label money_major_04:
+    show player d at center
     menu:
-        "TechCrunch offer you a 50%% discount on conference tickets. Attend?"
+        "(savings_major_04) TechCrunch offer you a 50%% discount on conference tickets. Attend?"
 
         "$_YES":
             $ variable("money", -100)
@@ -107,8 +116,9 @@ label money_major_04:
     jump checkpoint
 
 label money_major_05:
+    show player e at center
     menu:
-        "Your accountant emails to advise that you get rid of free Uber and Lunch perks. It would reduce your burn rate by $500pm. Take the advice? "
+        "(savings_major_05) Your accountant emails to advise that you get rid of free Uber and Lunch perks. It would reduce your burn rate by $500pm. Take the advice? "
 
         "$_YES":
             $ variable("money", 500)

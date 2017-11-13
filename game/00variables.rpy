@@ -30,9 +30,9 @@ default last_founder_level = 0
 default founder_score = 0
 default total_founder_score = 0
 
-default productivity = 100
-default energy = 100
-default morale = 100
+default productivity = 75
+default energy = 75
+default morale = 75
 default money = 5000
 default current_sprint = 0
 default current_bg = "bg bedroom"
@@ -43,6 +43,7 @@ default level_up = False
 
 default event_name = ""
 default last_event_bucket = None
+default week_event_bucket_type = set()
 default events_pool = {}
 
 default productivity_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "productivity", xysize=(700, 36))

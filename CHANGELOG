@@ -1,6 +1,17 @@
 CHANGELOG
 =========
 
+v 0.0.2-1113
+------------
+* Closed issue #75. Revised KPI.
+* Closed Issue #76. Added debug keywords.
+* Closed Issue #77. Added Event Characters.
+* Closed Issue #78. Hide HUD in Preview.
+* Closed Issue #79. Flash money values on update.
+* Closed Issue #80. Tweaked Performance Review screen
+* Closed Issue #81. Addded missing End of Ceremony.
+* Closed Isuue #82. Pushed End of Episode back.
+
 v 0.0.2-1029
 ------------
 * Improved Sprint Review.
