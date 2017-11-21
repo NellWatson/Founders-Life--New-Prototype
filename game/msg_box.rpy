@@ -20,7 +20,7 @@ init python:
 
         return height if height > min_height else min_height
 
-screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_height=90, cross=True, hide_anyway=False, show_button=None):
+screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_height=90, cross=True, hide_anyway=False, show_button=None, underlay=True):
 
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
@@ -30,7 +30,8 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
     else:
         $ called = False
 
-    add Solid("#000000") alpha 0.60
+    if underlay:
+        add Solid("#000000") alpha 0.60
 
     if len(title) > 20:
         default t_size = 50

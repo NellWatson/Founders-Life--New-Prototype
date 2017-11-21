@@ -117,7 +117,7 @@ init python:
                 self.bar_value = self.founder_score
 
                 # Find the steps by which the bar will be updated
-                self.review_step = store.founder_score * 3000 / self.bar_range
+                self.review_step = store.founder_score * 540 / self.bar_range
 
             # If the bar is full, check to see if we can update the bar to a new one
             if self.bar_value >= self.bar_range:
@@ -138,7 +138,7 @@ init python:
             else:
                 status = "Founder Status: " + FOUNDER_INDEX[self.founder_level][0]
 
-            return Fixed(Bar(range=self.bar_range, value=self.bar_value, height=10), Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8), xfit=True, yfit=True)
+            return VBox(Fixed(Bar(range=self.bar_range, value=self.bar_value, height=10), Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8), xfit=True, yfit=True), Text("Founder Level: {:,}".format(self.founder_level), color="#000000", xalign=0.5), Text("Founder Status: " + FOUNDER_INDEX[self.founder_level][0], color="#000000", xalign=0.5), spacing=12)
 
     def dynamic_bar(st, at, bar):
         return bar.displayable(st), 0.1

@@ -17,7 +17,7 @@ label event_intro:
     n "Working on your own is about more than just business. If you can figure out what you want to do and why exactly you want to do it, you will be a lot happier."
 
     call screen founder_map
-    call screen msg("Meeting Your Mentor", title="episode 1", show_button="Let's go!")
+    #call screen msg("Meeting Your Mentor", title="episode 1", show_button="Let's go!")
 
     hide screen block_keys
 

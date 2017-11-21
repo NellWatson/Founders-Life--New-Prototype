@@ -48,6 +48,8 @@ label checkpoint:
         call screen sprint_review(current_bg)
 
         if turn_no == 28:
+            $ current_episode += 1
+            call screen founder_map
             n normal "Thank you for playing Chapter 1 of Founders Life."
             return
 

@@ -100,11 +100,8 @@ screen sprint_review(bg):
 
             null height 1.0
             add DynamicDisplayable(dynamic_review, review.bar, 0.25) xalign 0.5
-
-            text "Founder Level: {:,}".format(founder_level) color "#000000" xalign 0.5
-            text "Founder Status: " + FOUNDER_INDEX[founder_level][0] color "#000000" xalign 0.5
             
-            null height 1.0
+            null height 16.0
             text "Total Founder Points: {:,}".format(total_founder_score) color "#000000" xalign 0.5
 
         textbutton _("Let's Go"):
