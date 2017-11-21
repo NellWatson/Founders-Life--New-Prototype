@@ -4,8 +4,8 @@ define STARTUP_FIELDS = ["Energy", "A.I.", "Robotics", "Biotech", "Healthcare", 
 define STARTUP_ICONS = ["biomass-512.png", "chip-512.png", "crab-512.png", "dice-512.png", "factory-512.png", "gas-512.png", "greentech-512.png", "in_love-512.png", "lighthouse-512.png", "matches-512.png", "pig-512.png", "plant_under_sun-512.png", "pretzel-512.png", "private-512.png", "queen-512.png", "retro_tv-512.png", "sparrow-512.png", "survival_bag-512.png", "thor_hammer-512.png"]
 
 define FOUNDER_INDEX = {
-    1: ("Starting Up", 49999),
-    2: ("Tiny Traction", 149999),
+    1: ("Starting Up", 9999),
+    2: ("Tiny Traction", 99999),
     3: ("Incubating", 249999),
     4: ("Problem/Solution Fit", 449999),
     5: ("Raising Seed", 999999),
@@ -15,6 +15,11 @@ define FOUNDER_INDEX = {
     9: ("Preparing for IPO", 19999999),
     10: ("Unleashing a Unicorn", 100000000)
 }
+
+define EPISODE_NAMES = [
+    "Meeting your Mentor",
+    "Joining the Incubator"
+    ]
 define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
 
 default CURRENCY = "$"
@@ -38,6 +43,7 @@ default current_sprint = 0
 default current_bg = "bg bedroom"
 
 default turn_no = 0
+default current_episode = 1
 default week = 0
 default level_up = False
 

@@ -45,7 +45,7 @@ screen hud():
             if check["money"]:
                 text check["money"] color "#000000" at flash
             else:
-                text "$[money]" color "#000000"
+                text "${:,}".format(money) color "#000000"
 
 screen founder_map():
     add Solid("#ffffff")

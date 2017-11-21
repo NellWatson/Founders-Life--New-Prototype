@@ -33,7 +33,7 @@ label checkpoint:
     if turn_no and not (turn_no % 7):
 
         hide player
-        n normal "Congratulations [founder_name].\nYou have survived [turn_no] as a founder."
+        n normal "Congratulations [founder_name].\nYou have survived [turn_no] days as a founder."
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
         $ founder_score = (productivity + energy + morale + money + (turn_no * founder_level)) * founder_level

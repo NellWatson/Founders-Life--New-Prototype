@@ -23,9 +23,9 @@ init python:
         check["money"] = ""
         if name == "money":
             if value < 0:
-                store.check[name] = "{color=#ff0000}$" + str(new_value) + "{/color}"
+                store.check[name] = "{color=#ff0000}$" + format(new_value, ",") + "{/color}"
             else:
-                store.check[name] = "{color=#00ff00}$" + str(new_value) + "{/color}"
+                store.check[name] = "{color=#00ff00}$" + format(new_value, ",") + "{/color}"
 
         setattr(store, name, new_value)
 
@@ -34,10 +34,8 @@ init python:
 
         # On turn 5 and 7 check if any event bucket hasn't been used yet
         if not turn_no % 5 or not turn_no % 7:
-            print len(week_event_bucket_type)
             if len(week_event_bucket_type) < 4:
                 _available_buckets = [i for i in _available_buckets if i not in week_event_bucket_type]
-                print _available_buckets, week_event_bucket_type
         else:
             # For regular days, just make sure that two types of events are not repeated
             if store.last_event_bucket:

@@ -1,7 +1,11 @@
 CHANGELOG
 =========
 
-v 0.0.2-1113
+v 0.0.5-1121
+------------
+* Closed Issue #84, #85, #86, #87.
+
+v 0.0.3-1113
 ------------
 * Closed issue #75. Revised KPI.
 * Closed Issue #76. Added debug keywords.
@@ -12,13 +16,13 @@ v 0.0.2-1113
 * Closed Issue #81. Addded missing End of Ceremony.
 * Closed Isuue #82. Pushed End of Episode back.
 
-v 0.0.2-1029
+v 0.0.3-1029
 ------------
 * Improved Sprint Review.
 * Reintroduced Founder XP Ceremony #73.
 * Added Key Scenes #74.
 
-v 0.0.2-1027
+v 0.0.3-1027
 ------------
 * Improved Sprint Review
 
