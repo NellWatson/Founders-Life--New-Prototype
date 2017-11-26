@@ -48,15 +48,15 @@ screen hud():
                 text "${:,}".format(money) color "#000000"
 
 screen founder_map():
-    add Solid("#dfdfdf")
+    add Solid("#ffffff")
 
     vbox:
         xalign 0.90
         ypos 100
         spacing 5
 
-        text "Score: {:,}".format(founder_score) size 45 color "#000000" xalign 1.0
-        text "Weeks as Founder: {}".format(week) size 45 color "#000000" xalign 1.0
+        text "Founder Score: {:,}".format(total_founder_score) size 45 color "#000000" xalign 1.0
+        text "Days as Founder: {}".format(turn_no) size 45 color "#000000" xalign 1.0
 
     vbox:
         xalign 0.10
@@ -74,9 +74,9 @@ screen founder_map():
             if i < current_episode:
                 add Fixed(Circle(100, "#00ff00"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200)
             elif i == current_episode:
-                add Fixed(Circle(100, "#00a1ff"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200) at flash
+                add Fixed(Circle(100, "#ffff00"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200) at flash
             else:
-                add Fixed(Circle(100, "#00a1ff"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200)
+                add Fixed(Circle(100, "#dfdfdf"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200)
 
             if i != 5:
                 if i >= current_episode:

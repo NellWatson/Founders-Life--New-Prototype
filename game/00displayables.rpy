@@ -70,6 +70,8 @@ init python:
             # The range of the bar
             self.bar_range = 1
 
+            self.bar_normalise = 0
+
         def valuation(self, st, limit):
             header = "Startup Valuation: "
 
@@ -117,21 +119,26 @@ init python:
                 self.bar_value = self.founder_score
 
                 # Find the steps by which the bar will be updated
-                self.review_step = store.founder_score * 540 / self.bar_range
+                if store.founder_score > 7000:
+                    multiplier = store.founder_score / 8
+                else:
+                    multiplier = 400
+                self.review_step = store.founder_score * multiplier / self.bar_range
 
             # If the bar is full, check to see if we can update the bar to a new one
             if self.bar_value >= self.bar_range:
                 self.updated_fl = True
                 self.founder_level += 1
-                self.bar_value = 0
-                self.bar_range = FOUNDER_INDEX[self.founder_level][1] - self.bar_range
+                self.bar_range = FOUNDER_INDEX[self.founder_level][1]
 
             # Update the bar
             if self.founder_score < self.total_founder_score:
                 self.bar_value += self.review_step
                 self.founder_score += self.review_step
-            else:
-                self.founder_score = self.total_founder_score
+
+                if self.founder_score > self.total_founder_score:
+                    self.founder_score = self.total_founder_score
+                    self.bar_value = self.founder_score - self.bar_normalise
 
             if self.updated_fl:
                 status = "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}"
