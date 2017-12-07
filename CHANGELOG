@@ -3,7 +3,7 @@ CHANGELOG
 
 v 0.0.5-1207-3
 --------------
-* Closed Issue #96. In place of productivity value, we were displaying the energy value.
+* Closed Issue #96. We were showing energy value instead of productivity value for productivity.
 
 v 0.0.5-1207-2
 --------------
