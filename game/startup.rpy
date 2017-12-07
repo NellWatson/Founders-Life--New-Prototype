@@ -114,6 +114,19 @@ screen sprint_review(bg):
             xalign 0.5
             yalign 0.99
 
+    if trophy_shelf.show_trophy_icon:
+        imagebutton:
+            idle circular_buttons(80, "#ffffff", "gui/achievements/achievement.png")
+            hover circular_buttons(80, "#dfdfdf", "gui/achievements/achievement.png")
+
+            action Show("achievement_screen", shelf=trophy_shelf)
+
+            xalign 0.02
+            yalign 0.02
+
+            if trophy_shelf.unseen:
+                at flash_zoom
+
 screen startup_review(bg):
     add bg
     add Solid("#00000050")

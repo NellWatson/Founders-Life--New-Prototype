@@ -131,6 +131,13 @@ init python:
                 self.founder_level += 1
                 self.bar_range = FOUNDER_INDEX[self.founder_level][1]
 
+                # Check if there is an achievement associated with the level.
+                # If yes, unlock the achievement and show the notification.
+                unlocked_ach = trophy_shelf.check_unlock(self.founder_level)
+                if unlocked_ach:
+                    renpy.show_screen("achievement_notify", title=unlocked_ach)
+                    renpy.restart_interaction()
+
             # Update the bar
             if self.founder_score < self.total_founder_score:
                 self.bar_value += self.review_step

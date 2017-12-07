@@ -1,5 +1,7 @@
 label start:
     $ calculate_pool()
+
+    call _create_achievements
     scene bg bedroom
     # print renpy.display.core.scene_lists().get_all_displayables()
     
@@ -44,6 +46,10 @@ label checkpoint:
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
+
+        # If we have seen the achievement button once, mark it so that the flashing doesn't happen again
+        if trophy_shelf.show_trophy_icon:
+            $ trophy_shelf.unseen = False
 
         if turn_no == 28:
             $ current_episode += 1

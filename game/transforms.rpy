@@ -9,3 +9,42 @@ transform flash:
 transform zoom_out(factor):
     subpixel True
     zoom factor
+
+transform flash_zoom:
+    alpha 1.0
+    zoom 1.05
+    
+    xanchor 0.5
+    yanchor  0.5
+    xoffset 70
+    yoffset 70
+
+    block:
+        parallel:
+            linear 0.75 alpha 0.8
+        parallel:
+            linear 0.75 zoom 0.95
+    block:
+        parallel:
+            linear 0.75 alpha 1.0
+        parallel:
+            linear 0.75 zoom 1.05
+
+    repeat
+
+transform slide_down_center:
+    alpha 0.0
+    xalign 0.5
+    yalign -0.05
+
+    on show:
+        parallel:
+            linear 0.7 alpha 1.0
+        parallel:
+            linear 0.7 yalign 0.05
+
+    on hide:
+        parallel:
+            linear 0.7 alpha 0.0
+        parallel:
+            linear 0.7 yalign -0.05

@@ -25,3 +25,10 @@ init python:
 
             renpy.redraw(self, 0)
             return r
+
+    def circular_buttons(radius, colour, image_path):
+        """
+        Returns a circular displayable which has a centered image.
+        """
+        
+        return Fixed(Circle(radius, colour), Image(image_path, xalign=0.5, yalign=0.5), xsize=radius*2, ysize=radius*2)

@@ -22,6 +22,8 @@ define EPISODE_NAMES = [
     ]
 define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
 
+default trophy_shelf = Shelf("Achievements", "gui/achievements/locked.png", "#aaaaaa", 10)
+
 default CURRENCY = "$"
 
 default founder_name = ""
