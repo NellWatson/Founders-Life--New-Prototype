@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.5-1207-2
+--------------
+* Closed Issue #94, #95.
+* If the player got an game over because of having no money, total day played wasn't shown.
+
 v 0.0.5-1207
 ------------
 * Closed Issue #92. Refactored Event Content.

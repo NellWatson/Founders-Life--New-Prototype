@@ -47,7 +47,6 @@ default current_episode = 1
 default week = 0
 default level_up = False
 
-default event_name = ""
 default last_event_bucket = None
 default week_event_bucket_type = set()
 default events_pool = {}
