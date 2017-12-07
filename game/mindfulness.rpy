@@ -1,7 +1,7 @@
 label morale_minor_01:
-    show player a at center
+    show player c at center
     menu:
-        a "(mindfulness_minor_01) You've found a precious ten minutes of quiet time but the latest release needs tested. Block out the time to meditate?"
+        c "(mindfulness_minor_01) You've found a precious ten minutes of quiet time but the latest release needs tested. Block out the time to meditate?"
 
         "$_YES":
             $ variable("morale", 10)
@@ -12,22 +12,24 @@ label morale_minor_01:
     jump checkpoint
 
 label morale_minor_02:
-    show player b at center
+    show player a at center
     menu:
-        b "(mindfulness_minor_02) You keep getting distracted by unimportant emails. Remove notifications from your phone?"
+        a "(mindfulness_minor_02) You keep getting distracted by unimportant emails. Remove notifications from your phone?"
 
         "$_YES":
+            $ variable("productivity", -10)
             $ variable("morale", 10)
 
         "$_NO":
+            $ variable("productivity", 10)
             $ variable("morale", -10)
 
     jump checkpoint
 
 label morale_minor_03:
-    show player c at center
+    show player b at center
     menu:
-        c "(mindfulness_minor_03) Some old school friends are in town and want to take you sailing this weekend. Accept their invitation?"
+        b "(mindfulness_minor_03) Some old school friends are in town and want to take you sailing this weekend. Accept their invitation?"
 
         "$_YES":
             $ variable("morale", 10)
@@ -38,22 +40,26 @@ label morale_minor_03:
     jump checkpoint
 
 label morale_minor_04:
-    show player d at center
+    show player c at center
     menu:
-        d "(mindfulness_minor_04) An aspiring founder wants to meet for coffee. Accept?"
+        c "(mindfulness_minor_04) An aspiring founder wants to meet for coffee. Accept?"
 
         "$_YES":
+            $ variable("productivity", -10)
+            $ variable("energy", -10)
             $ variable("morale", 10)
 
         "$_NO":
+            $ variable("productivity", 10)
+            $ variable("energy", 10)
             $ variable("morale", -10)
 
     jump checkpoint
 
 label morale_minor_05:
-    show player e at center
+    show player a at center
     menu:
-        e "(mindfulness_minor_010) You've stopped reflecting on your day. Reset the habit?"
+        a "(mindfulness_minor_010) You've stopped reflecting on your day. Reset the habit?"
 
         "$_YES":
             $ variable("morale", 10)
@@ -64,48 +70,56 @@ label morale_minor_05:
     jump checkpoint
 
 label morale_major_01:
-    show player a at center
+    show player b at center
     menu:
-        a "(mindfulness_major_01) Danny is an incredible engineer but his arrogance and aloofness keeps upsetting the design team. Fire him?"
+        b "(mindfulness_major_01) Danny is an incredible engineer but his arrogance and aloofness keeps upsetting the design team. Fire him?"
 
         "$_YES":
+            $ variable("productivity", -20)
             $ variable("morale", 20)
 
         "$_NO":
+            $ variable("productivity", 20)
             $ variable("morale", -20)
 
     jump checkpoint
 
 label morale_major_02:
-    show player b at center
+    show player c at center
     menu:
-        "(mindfulness_major_02) Mandy has ordered in pizza for lunch. Leave your quinoa salad in the fridge and join the team for a slice?"
+        c "(mindfulness_major_02) Mandy has ordered in pizza for lunch. Leave your quinoa salad in the fridge and join the team for a slice?"
 
         "$_YES":
+            $ variable("productivity", 20)
+            $ variable("energy", -20)
             $ variable("morale", 20)
 
         "$_NO":
+            $ variable("productivity", -20)
+            $ variable("energy", 20)
             $ variable("morale", -20)
 
     jump checkpoint
 
 label morale_major_03:
-    show player c at center
+    show player a at center
     menu:
-        "(mindfulness_major_03) With your current pace, there is no way that the MVP is going to ship to the schedule you promised interested VCs. Pressure the team to crunch over the weekend?"
+        a "(mindfulness_major_03) With your current pace, there is no way that the MVP is going to ship to the schedule you promised interested VCs. Pressure the team to crunch over the weekend?"
 
         "$_YES":
+            $ variable("productivity", 20)
             $ variable("morale", -20)
 
         "$_NO":
+            $ variable("productivity", -20)
             $ variable("morale", 20)
 
     jump checkpoint
 
 label morale_major_04:
-    show player d at center
+    show player b at center
     menu:
-        "(mindfulness_major_04) You have a hilarious idea for a little selfie app. Cancel brunch plans and crunch it as a weekend side-project?"
+        b "(mindfulness_major_04) You have a hilarious idea for a little selfie app. Cancel brunch plans and crunch it as a weekend side-project?"
 
         "$_YES":
             $ variable("morale", -20)
@@ -116,14 +130,16 @@ label morale_major_04:
     jump checkpoint
 
 label morale_major_05:
-    show player e at center
+    show player c at center
     menu:
-        "(mindfulness_major_010) These financials won't model themselves and you can't move forward without them. Finish them tonight, whatever it takes?"
+        c "(mindfulness_major_010) These financials won't model themselves and you can't move forward without them. Finish them tonight, whatever it takes?"
 
         "$_YES":
+            $ variable("energy", -20)
             $ variable("morale", -20)
 
         "$_NO":
+            $ variable("energy", 20)
             $ variable("morale", 20)
 
     jump checkpoint

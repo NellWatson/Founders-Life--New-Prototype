@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.0.5-1207
+------------
+* Closed Issue #92. Refactored Event Content.
+
 v 0.0.5-1126
 ------------
 * Closed Issue #89, #90, #91

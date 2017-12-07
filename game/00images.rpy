@@ -14,7 +14,6 @@ image player a = Placeholder("boy")
 image player b = Placeholder("girl")
 image player c = Placeholder("boy")
 image player d = Placeholder("girl")
-image player e = Placeholder("boy")
 
 image input_caret:
     Text("|")
