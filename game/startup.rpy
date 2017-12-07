@@ -96,7 +96,7 @@ screen sprint_review(bg):
             first_spacing 40
 
             text "[founder_name]" color "#000000" xalign 0.5
-            text "Founder Points Earned: {:,}".format(total_founder_score) color "#000000" xalign 0.5
+            text "Founder Points Earned: {:,}".format(founder_score) color "#000000" xalign 0.5
 
             null height 1.0
             add DynamicDisplayable(dynamic_review, review.bar, 0.25) xalign 0.5
@@ -133,7 +133,7 @@ screen startup_review(bg):
                 spacing 10
 
                 text "Productivity" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 0.75, energy)
+                text DynamicDisplayable(dynamic_show_text, 0.75, productivity)
                 
                 text "Energy" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 1.5, energy)
@@ -142,15 +142,17 @@ screen startup_review(bg):
                 text DynamicDisplayable(dynamic_show_text, 2.25, morale)
                 
                 text "Savings" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 3, money)
+                hbox:
+                    text "$" color "#000000"
+                    text DynamicDisplayable(dynamic_show_text, 3, money)
                 
                 text "Days as Founder   " color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 3.75, week)
+                text DynamicDisplayable(dynamic_show_text, 3.75, turn_no)
                 
                 null height 1.0
                 null height 1.0
 
-                text "{b}Founder Points{/b}" color "#000000"
+                text "{b}Founder Points Earned{/b}" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 4.5, founder_score)
 
         textbutton _("CONTINUE"):

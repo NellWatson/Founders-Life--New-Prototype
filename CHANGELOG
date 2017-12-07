@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.0.5-1207-3
+--------------
+* Closed Issue #96. In place of productivity value, we were displaying the energy value.
+
 v 0.0.5-1207-2
 --------------
 * Closed Issue #94, #95.
