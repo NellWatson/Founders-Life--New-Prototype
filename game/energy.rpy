@@ -1,136 +1,127 @@
-label energy_minor_01:
-    show player b at center
-    menu:
-        b "(energy_minor_01) So much work to do but so little time. Skip lunch and power through?"
-
-        "$_YES":
-            $ variable("energy", -10)
-
-        "$_NO":
-            $ variable("productivity", 10)
-
-    jump checkpoint
-
-label energy_minor_02:
-    show player c at center
-    menu:
-        c "(energy_minor_02) Things are crazy today, more coffee?"
-
-        "$_YES":
-            $ variable("energy", 10)
-
-        "$_NO":
-            $ variable("morale", -10)
-
-    jump checkpoint
-
-label energy_minor_03:
-    show player a at center
-    menu:
-        a "(energy_minor_03) It's been a long day, skip the gym?"
-
-        "$_YES":
-            $ variable("energy", 10)
-
-        "$_NO":
-            $ variable("morale", 10)
-
-    jump checkpoint
-
-label energy_minor_04:
-    show player b at center
-    menu:
-        b "(energy_minor_04) Your first free evening in a long time. Your friend Mia suggests you both settle down for a pizza and Netflix marathon. Decline and pre-prepare individual meals for the next week instead?"
-
-        "$_YES":
-            $ variable("energy", 10)
-
-        "$_NO":
-            $ variable("morale", 10)
-
-    jump checkpoint
-
-label energy_minor_05:
-    show player c at center
-    menu:
-        c "(energy_minor_010) You read a Fast Company article on successful founders and their exercise habits. Set the alarm for an hour early and hit the gym?"
-
-        "$_YES":
-            $ variable("energy", 10)
-
-        "$_NO":
-            $ variable("morale", -10)
-
-    jump checkpoint
-
 label energy_major_01:
-    show player a at center
+    $ event_code = "ch01e08"
+    show player e at center
     menu:
-        a "(energy_major_01) It's a sunny day but you are running a little late. Call ahead to let the team know when you'll arrive and then enjoy a leisurely stroll?"
+        e "With your current pace, there is no way that the MVP is going to ship to the schedule you promised interested investors. Pressure the team to crunch some nights and weekends?"
 
         "$_YES":
-            $ variable("energy", 20)
-
-        "$_NO":
-            $ variable("productivity", 20)
-
-    jump checkpoint
-
-label energy_major_02:
-    show player b at center
-    menu:
-        b "(energy_major_02) The deadline is getting closer but the backlog is not getting smaller. Rally the troops and pull and all-nighter?"
-
-        "$_YES":
-            $ variable("energy", -20)
-
-        "$_NO":
-            $ variable("productivity", 20)
-
-    jump checkpoint
-
-label energy_major_03:
-    show player c at center
-    menu:
-        c "(energy_major_03) Your 'maker' schedule is distracting from your 'manager' value. Should you clear a week in the schedule and train up the team to handle some key tasks?"
-
-        "$_YES":
-            $ variable("energy", -20)
-
-        "$_NO":
-            $ variable("productivity", -20)
-
-    jump checkpoint
-
-label energy_major_04:
-    show player a at center
-    menu:
-        a "(energy_major_04) You are getting buried under a mountain of paperwork. Hire a Virtual Assistant from Upwork?"
-
-        "$_YES":
-            $ variable("productivity", 20)
-            $ variable("energy", 20)
-            $ variable("money", -500)
-
-        "$_NO":
-            $ variable("productivity", -20)
-            $ variable("energy", -20)
-
-    jump checkpoint
-
-label energy_major_05:
-    show player b at center
-    menu:
-        b "(energy_major_010) The product feature you have been working on is holding up this week's release. Work all night to catch up instead of delegating?"
-
-        "$_YES":
-            $ variable("productivity", -20)
+            $ variable("productivity", 10)
             $ variable("energy", -20)
             $ variable("morale", -20)
 
         "$_NO":
-            $ variable("productivity", 20)
+            $ variable("productivity", -10)
             $ variable("energy", 20)
             $ variable("morale", 20)
+
+    jump checkpoint
+
+label energy_major_02:
+    $ event_code = "ch01e12"
+    show player e at center
+    menu:
+        e "It's clear that the team is not completely aligned with your vision. Put development on hold for a few days to go offsite to articulate a coherent mission and compelling vision to the team?"
+
+        "$_YES":
+            $ variable("productivity", -20)
+            $ variable("energy", 20)
+            $ variable("morale", 20)
+            $ variable("money", -1000)
+
+        "$_NO":
+            $ variable("productivity", 20)
+            $ variable("energy", -20)
+            $ variable("morale", -20)
+
+    jump checkpoint
+
+label energy_minor_01:
+    $ event_code = "ch01e17"
+    show player r at center
+    menu:
+        r "Hey, [founder_name], bookkeeping is a pain...a time-consuming pain. Do you want me to hook you up with a part-time accountant, they'll look after the books for $500 per month?"
+
+        "$_YES":
+            $ variable("productivity", 10)
+            $ variable("energy", 10)
+            $ variable("morale", 10)
+            $ variable("money", -600)
+
+        "$_NO":
+            $ variable("productivity", -10)
+            $ variable("energy", -10)
+            $ variable("morale", -10)
+
+    jump checkpoint
+
+label energy_minor_02:
+    $ event_code = "ch01e23"
+    show player e at center
+    menu:
+        e "These financials projections won't model themselves and you can't move forward without them. Finish them tonight, whatever it takes?"
+
+        "$_YES":
+            $ variable("productivity", 10)
+            $ variable("energy", -10)
+            $ variable("morale", -10)
+
+        "$_NO":
+            $ variable("productivity", -10)
+            $ variable("energy", 10)
+            $ variable("morale", 10)
+
+    jump checkpoint
+
+label energy_minor_03:
+    $ event_code = "ch01e25"
+    show player e at center
+    menu:
+        e "A reminder email just came in about tonight's VC Mixer, confirm attendance?"
+
+        "$_YES":
+            $ variable("productivity", 10)
+            $ variable("energy", -10)
+            $ variable("morale", 10)
+
+        "$_NO":
+            $ variable("productivity", -10)
+            $ variable("energy", 10)
+            $ variable("morale", -10)
+
+    jump checkpoint
+
+label energy_minor_04:
+    $ event_code = "ch01e30"
+    show player e at center
+    menu:
+        e "How hard can it be to track down one stupid little bug? Delay today's release and go for a long walk?"
+
+        "$_YES":
+            $ variable("productivity", -10)
+            $ variable("energy", 10)
+            $ variable("morale", 10)
+
+        "$_NO":
+            $ variable("productivity", 10)
+            $ variable("energy", -10)
+            $ variable("morale", -10)
+
+    jump checkpoint
+
+label energy_minor_05:
+    $ event_code = "ch01e32"
+    show player e at center
+    menu:
+        e "Everyone is busy but nothing productive seems to get down. Introduce the team to Objectives and Key Results (OKRs)?"
+
+        "$_YES":
+            $ variable("productivity", 10)
+            $ variable("energy", 10)
+            $ variable("morale", 10)
+
+        "$_NO":
+            $ variable("productivity", -10)
+            $ variable("energy", -10)
+            $ variable("morale", -10)
 
     jump checkpoint

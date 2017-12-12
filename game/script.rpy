@@ -15,6 +15,7 @@ screen game_screen():
 
 label checkpoint:
     hide player
+    $ event_code = ""
 
     if productivity <= 0:
         n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
@@ -122,9 +123,10 @@ label checkpoint:
             jump chapter_one_finale
 
 label chapter_one_finale:
+    $ event_code = "ch01e99"
     show player d at center
     menu:
-        "(Chapter_One_Finale) Domenique Martel emails to say that she really liked your recent blog post. She has a bunch of free time now that her startup has been acquired by Google. She'd like to mentor you for a 1% stake but she's not willing to make an angel investment in the company right now. Accept the offer?"
+        d "Hi, [founder_name], I'm Dominique Martel. I just wanted to reach out to tell you how impressed I've been with the progress you've been making with [startup_name]. I love the idea and your execution.\nI've a lot of free time now I've left Google, and I'd like to spend some of it mentoring you.\nWhat do you say?"
 
         "$_YES":
             $ variable("productivity", 20)

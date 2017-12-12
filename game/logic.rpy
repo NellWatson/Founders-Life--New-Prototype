@@ -4,14 +4,23 @@ init python:
     }
 
     def calculate_pool():
-        top_level = ["productivity", "energy", "morale", "money"]
+        top_level = [
+            ("productivity", "03", "05"),
+            ("energy", "02", "05"),
+            ("morale", "03", "05"),
+            ("money", "02", "06")
+            ]
         mid_level = ["major", "minor"]
-        low_level = ["01", "02", "03", "04", "05"]
+        low_level = ["01", "02", "03", "04", "05", "06"]
 
-        for i in top_level:
+        for i, major_limit, minor_limit in top_level:
             events_pool[i] = []
             for j in mid_level:
                 for k in low_level:
+                    if j == "major" and k == major_limit:
+                        break
+                    elif j == "minor" and k == minor_limit:
+                        break
                     events_pool[i].append( i + "_" + j + "_" + k )
 
     def variable(name, value, maximum=100):
@@ -40,6 +49,9 @@ init python:
             # For regular days, just make sure that two types of events are not repeated
             if store.last_event_bucket:
                 _available_buckets.remove(last_event_bucket)
+
+        # Remove empty buckets from the que
+        _available_buckets = [ x for x in _available_buckets if events_pool[x] ]
 
         current_bucket = renpy.random.choice(_available_buckets)
         week_event_bucket_type.add(current_bucket)

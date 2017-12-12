@@ -47,6 +47,7 @@ default current_bg = "bg bedroom"
 default turn_no = 0
 default current_episode = 1
 default week = 0
+default event_code = ""
 default level_up = False
 
 default last_event_bucket = None
