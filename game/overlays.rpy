@@ -3,7 +3,7 @@ screen hud():
         xsize 1920
         ysize 160
 
-        background Solid("#d3d3d3")
+        background Solid("#ffffff")
 
         text "Days as Founder: {0:02d}".format(turn_no) size 30 color "#000000" xalign 0.05 yalign 0.15
         if config.developer:

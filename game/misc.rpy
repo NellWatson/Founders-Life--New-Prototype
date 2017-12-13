@@ -1,5 +1,13 @@
 init python:
 
+    class NewestFileLoad(Action):
+
+        def __init__(self):
+            self.name = renpy.newest_slot()
+
+        def __call__(self):
+            renpy.load(self.name)
+
     class Circle(renpy.Displayable):
 
         def __init__(self, radius, colour, width=0, pos=None, **kwargs):

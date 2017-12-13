@@ -1,6 +1,6 @@
 label morale_major_01:
     $ event_code = "ch01e01"
-    show player e at center
+    show eileen at center
     menu:
         e "Danny is an incredible engineer but his arrogance and aloofness keeps the rest of the team. Fire him?"
 
@@ -19,7 +19,7 @@ label morale_major_01:
 
 label morale_major_02:
     $ event_code = "ch01e21"
-    show player e at center
+    show eileen at center
     menu:
         e "You are getting so much done today, that's the beauty of curating a no-distration environment. Cancel the team pizza lunch and continue the productivity streak?"
 
@@ -37,7 +37,7 @@ label morale_major_02:
 
 label morale_major_03:
     $ event_code = "ch01e22"
-    show player r at center
+    show raquel at center
     menu:
         r "Hey, [founder_name], I know you enjoy your co-working space but a contact just told me of some great office space downtown going for $2,000 a month. Shall I prepare the lease?"
 
@@ -56,7 +56,7 @@ label morale_major_03:
 
 label morale_minor_01:
     $ event_code = "ch01e07"
-    show player c at center
+    show carla at center
     menu:
         c "Hey, are you still on for the college reunion this weekend? I know things are hectic at [startup_name]?"
 
@@ -74,7 +74,7 @@ label morale_minor_01:
 
 label morale_minor_02:
     $ event_code = "ch01e09"
-    show player e at center
+    show eileen at center
     menu:
         e "It's been a long day, skip the gym and grab takeout and beer?"
 
@@ -92,7 +92,7 @@ label morale_minor_02:
 
 label morale_minor_03:
     $ event_code = "ch01e15"
-    show player e at center
+    show eileen at center
     menu:
         e "A Twitter acquaintance is in town and would like to meet for coffee today, go?"
 
@@ -110,7 +110,7 @@ label morale_minor_03:
 
 label morale_minor_04:
     $ event_code = "ch01e27"
-    show player e at center
+    show eileen at center
     menu:
         e "Your first free evening in a long time. Your friend, Mia, suggests you both settle down for a pizza and Netflix marathon. Politely decline and get an early night?"
 
@@ -128,7 +128,7 @@ label morale_minor_04:
 
 label morale_minor_05:
     $ event_code = "ch01e28"
-    show player r at center
+    show raquel at center
     menu:
         r "Hey, [founder_name], my cousin's gym just opened. I can get you a lifetime membership for just $500. Shall I send over the papers?"
 

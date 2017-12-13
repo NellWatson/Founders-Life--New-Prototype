@@ -124,7 +124,7 @@ label checkpoint:
 
 label chapter_one_finale:
     $ event_code = "ch01e99"
-    show player d at center
+    show dominique at center
     menu:
         d "Hi, [founder_name], I'm Dominique Martel. I just wanted to reach out to tell you how impressed I've been with the progress you've been making with [startup_name]. I love the idea and your execution.\nI've a lot of free time now I've left Google, and I'd like to spend some of it mentoring you.\nWhat do you say?"
 

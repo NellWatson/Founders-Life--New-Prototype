@@ -3,6 +3,10 @@ CHANGELOG
 
 v 0.0.6-1213
 ------------
+* Closed Issue #100, #101, #105, #105, #106.
+
+v 0.0.6-1213
+------------
 * Closed Issue #99. Tweaked event flow.
 
 v 0.0.6-1208

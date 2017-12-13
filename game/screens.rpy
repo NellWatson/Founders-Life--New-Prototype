@@ -348,36 +348,66 @@ style navigation_button_text:
 
 screen main_menu():
 
-    ## This ensures that any other menu screen is replaced.
     tag menu
 
-    style_prefix "main_menu"
+    add "gui/mainmenu/bg.png"
 
-    add gui.main_menu_background
+    if renpy.newest_slot():
+        button:
+            xysize (489, 155)
 
-    ## This empty frame darkens the main menu.
-    frame:
-        pass
+            idle_background Fixed("gui/mainmenu/blank.png", Text("RESUME", font="fonts/Dosis-Bold.ttf", size=54, color="#404040", xalign=0.5, yalign=0.5, kerning=-1.0))
+            hover_background Fixed("gui/mainmenu/blank_hover.png", Text("RESUME", font="fonts/Dosis-Bold.ttf", size=54, color="#559fdd", xalign=0.5, yalign=0.5, kerning=-1.0))
 
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
+            action NewestFileLoad()
+            
+            xalign 0.5
+            yalign 0.80
+        imagebutton:
+            idle "gui/mainmenu/launch.png"
+            hover "gui/mainmenu/launch_hover.png"
+            action Start()
+            xalign 0.5
+            yalign 0.97
+    else:
+        imagebutton:
+            idle "gui/mainmenu/launch.png"
+            hover "gui/mainmenu/launch_hover.png"
+            action Start()
+            xalign 0.5
+            yalign 0.9
+    imagebutton:
+        idle "gui/mainmenu/load.png"
+        hover "gui/mainmenu/load_hover.png"
+        action ShowMenu("load")
+        xalign 0.16
+        yalign 0.54
+    imagebutton:
+        idle "gui/mainmenu/pref.png"
+        hover "gui/mainmenu/pref_hover.png"
+        action ShowMenu("preferences")
+        xalign 0.24
+        yalign 0.79
+    imagebutton:
+        idle "gui/mainmenu/help.png"
+        hover "gui/mainmenu/help_hover.png"
+        action NullAction()
+        xalign 0.76
+        yalign 0.79
+    imagebutton:
+        idle "gui/mainmenu/extras.png"
+        hover "gui/mainmenu/extras_hover.png"
+        action NullAction()
+        xalign 0.84
+        yalign 0.54
+    imagebutton:
+        idle "gui/mainmenu/x.png"
+        hover "gui/mainmenu/x_hover.png"
+        action Quit(confirm=False)
+        xalign 0.992
+        yalign 0.01
 
-    if gui.show_name:
-
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
-
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
+    text "v [config.version]" xalign 0.99 yalign 1.0 style "st_contact_text"
 
 style main_menu_frame:
     xsize 420
