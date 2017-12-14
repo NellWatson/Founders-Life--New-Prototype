@@ -83,8 +83,7 @@ screen startup_logo(_transient=True):
                 action [SetVariable("startup_icon", fields[i]), Hide("startup_logo")]
 
 screen sprint_review(bg):
-    add bg
-    add Solid("#00000050")
+    add "bg review"
 
     default review = ReviewB()
 
@@ -128,8 +127,7 @@ screen sprint_review(bg):
                 at flash_zoom
 
 screen startup_review(bg):
-    add bg
-    add Solid("#00000050")
+    add "bg review"
 
     use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=550, cross=False):
         vbox:

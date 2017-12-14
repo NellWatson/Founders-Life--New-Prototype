@@ -1,9 +1,14 @@
 CHANGELOG
 =========
 
-v 0.0.6-1213
+v 0.0.6-1214-2
+--------------
+* Closed Issue #102, #103, #104, #108, #109, #110, #111.
+* Removed reduntant image files and moved all the ui assets to gui/
+
+v 0.0.6-1214
 ------------
-* Closed Issue #100, #101, #105, #105, #106.
+* Closed Issue #100, #101, #105, #106.
 
 v 0.0.6-1213
 ------------

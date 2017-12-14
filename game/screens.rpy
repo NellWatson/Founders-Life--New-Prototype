@@ -126,11 +126,16 @@ screen say(who, what, side_image=None):
         text what id "what" font "fonts/Dosis-Regular.ttf" size 36 color "#ffffff" line_leading -2 xoffset 440 yoffset 90 xmaximum 1400
 
     # If there's a side image, display it above the text.
-    if side_image:
-        add side_image xpos 125 ypos 774
+    if who == "Nell":
+        if side_image:
+            add side_image xpos 139 ypos 790
+        else:
+            add SideImage() xpos 139 ypos 790
     else:
-        add SideImage() xpos 125 ypos 774
-
+        if side_image:
+            add side_image xpos 129 ypos 786
+        else:
+            add SideImage() xpos 129 ypos 786
 
 ## Input screen ################################################################
 ##
@@ -153,7 +158,7 @@ screen input(prompt):
                 text "> " yoffset 3
                 input id "input" font "fonts/Dosis-Regular.ttf" color "#ffffff" size 36
 
-    add "side nell normal" xpos 125 ypos 774
+    add "side nell normal" xpos 139 ypos 790
 
 style new_input_window is window:
     xalign 0.0
@@ -183,34 +188,24 @@ screen choice(items):
     for i in items:
 
         if i.caption == "$_YES":
-            button:
-                xysize (300, 300)
-
-                background Solid("#00ff00")
-                hover_background Solid(Color("#00ff00").tint(0.5))
-                selected_background Solid(Color("#00ff00").shade(0.5))
-
-                add "images/gui/choice/up.png" zoom 0.5 xalign 0.5 yalign 0.5
+            imagebutton:
+                idle "gui/choice/dislike_idle.png"
+                hover "gui/choice/dislike_hover.png"
 
                 action i.action
 
                 xalign 0.04
-                yalign 0.5
+                yalign 0.45
 
         elif i.caption == "$_NO":
-            button:
-                xysize (300, 300)
-
-                background Solid("#ff0000")
-                hover_background Solid(Color("#ff0000").tint(0.5))
-                selected_background Solid(Color("#ff0000").shade(0.5))
-
-                add "images/gui/choice/down.png" zoom 0.5 xalign 0.5 yalign 0.5
+            imagebutton:
+                idle "gui/choice/like_idle.png"
+                hover "gui/choice/like_hover.png"
 
                 action i.action
 
                 xalign 0.96
-                yalign 0.5
+                yalign 0.45
 
         else:
 

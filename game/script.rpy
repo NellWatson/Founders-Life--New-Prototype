@@ -14,7 +14,7 @@ screen game_screen():
     add DynamicDisplayable(dynamic_review, b)
 
 label checkpoint:
-    hide player
+    scene bg bedroom
     $ event_code = ""
 
     if productivity <= 0:

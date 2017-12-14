@@ -8,12 +8,18 @@ image bg major office = Transform("images/bg/xp-7-sv_office_major.jpg", zoom=1.5
 image bg googleplex = Transform("images/bg/xp-8-googleplex.jpg", zoom=1.5)
 image bg boardroom = Transform("images/bg/xp-9-boardroom.jpg", zoom=1.5)
 image bg spaceship = Transform("images/bg/xp-10-spaceship.jpg", zoom=1.5)
+image bg review = Transform("images/bg/out-of-play.jpg", zoom=1.5)
 
 image side nell normal = "images/contacts/nell.png"
-image carla = Placeholder("girl")
-image dominique = Placeholder("girl")
-image eileen = Placeholder("girl")
-image raquel = Placeholder("girl")
+image side carla = "images/contacts/carla.png"
+image side dominique = "images/contacts/dominique.png"
+image side eileen = "images/contacts/eileen.png"
+image side raquel = "images/contacts/raquel.png"
+
+image carla = Transform(Placeholder("boy"), yoffset=94)
+image dominique = Transform(Placeholder("boy"), yoffset=94)
+image eileen = Transform(Placeholder("girl"), yoffset=58)
+image raquel = Transform(Placeholder("boy"), yoffset=94)
 
 image input_caret:
     Text("|")

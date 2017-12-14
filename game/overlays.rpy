@@ -20,7 +20,7 @@ screen hud():
 
                 spacing 7
 
-                add "images/gui/Productivity/rocket-32.png" yalign 0.5 xoffset -44
+                add "gui/hud/productivity.png" yalign 0.5 xoffset -44
                 add DynamicDisplayable(dynamic_bar, productivity_bar)
             hbox:
                 xalign 0.5
@@ -28,7 +28,7 @@ screen hud():
 
                 spacing 7
 
-                add "images/gui/Energy/charge_battery-32.png" yalign 0.5 xoffset -44
+                add "gui/hud/energy.png" yalign 0.5 xoffset -44
                 add DynamicDisplayable(dynamic_bar, energy_bar)
             
             hbox:
@@ -36,7 +36,7 @@ screen hud():
                 yalign 0.5
                 spacing 7
 
-                add "images/gui/Mindfulness/meditation_guru-32.png" yalign 0.5 xoffset -44
+                add "gui/hud/morale.png" yalign 0.5 xoffset -44
                 add DynamicDisplayable(dynamic_bar, morale_bar)
         
         hbox:
@@ -50,7 +50,7 @@ screen hud():
                 text "${:,}".format(money) color "#000000"
 
 screen founder_map():
-    add Solid("#ffffff")
+    add "bg review"
 
     vbox:
         xalign 0.90
