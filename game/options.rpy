@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Founders Life New Prototype")
+define config.name = _("Founders Life")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.0.6-1214-2"
+define config.version = "0.0.7-1215"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -152,6 +152,9 @@ define config.window_icon = "gui/window_icon.png"
 
 init python:
 
+    build.directory_name = "FoundersLife-v" + config.version
+    build.executable_name = "FoundersLife"
+
     ## The following functions take file patterns. File patterns are case-
     ## insensitive, and matched against the path relative to the base directory,
     ## with and without a leading /. If multiple patterns match, the first is
@@ -173,14 +176,24 @@ init python:
 
     build.classify('**~', None)
     build.classify('**.bak', None)
-    build.classify('**/.**', None)
+    build.classify('*.txt', None)
+    build.classify('**.rpy', None)
+    build.classify('CHANGELOG', None)
+    build.classify('.gitattributes', None)
+    build.classify('.gitignore', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('game/saves/**.**', None)
+    build.classify('game/cache/**.**', None)
+    build.classify('game/tl/**/**.**', None)
+    build.classify('game/images/icon/**.**', None)
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.rpyc', 'archive')
+    build.classify('game/fonts/**.**', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.

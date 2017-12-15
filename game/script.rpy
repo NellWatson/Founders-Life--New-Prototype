@@ -1,7 +1,7 @@
 label start:
     $ calculate_pool()
 
-    call _create_achievements
+    call _create_achievements from _call__create_achievements
     scene bg bedroom
     # print renpy.display.core.scene_lists().get_all_displayables()
     

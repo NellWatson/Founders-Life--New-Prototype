@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+v 0.0.7-1215
+------------
+* Closed Issue #107.
+* Edit main menu buttons and Nell intro to be centered properly.
+* Added credits.txt.
+* Updated build naming rules.
+* Updated build rules to exclude reduntant files when building distributions.
+
 v 0.0.6-1214-2
 --------------
 * Closed Issue #102, #103, #104, #108, #109, #110, #111.

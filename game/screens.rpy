@@ -346,63 +346,35 @@ screen main_menu():
     tag menu
 
     add "gui/mainmenu/bg.png"
-
-    if renpy.newest_slot():
-        button:
-            xysize (489, 155)
-
-            idle_background Fixed("gui/mainmenu/blank.png", Text("RESUME", font="fonts/Dosis-Bold.ttf", size=54, color="#404040", xalign=0.5, yalign=0.5, kerning=-1.0))
-            hover_background Fixed("gui/mainmenu/blank_hover.png", Text("RESUME", font="fonts/Dosis-Bold.ttf", size=54, color="#559fdd", xalign=0.5, yalign=0.5, kerning=-1.0))
-
-            action NewestFileLoad()
-            
-            xalign 0.5
-            yalign 0.80
-        imagebutton:
-            idle "gui/mainmenu/launch.png"
-            hover "gui/mainmenu/launch_hover.png"
-            action Start()
-            xalign 0.5
-            yalign 0.97
-    else:
-        imagebutton:
-            idle "gui/mainmenu/launch.png"
-            hover "gui/mainmenu/launch_hover.png"
-            action Start()
-            xalign 0.5
-            yalign 0.9
+    
     imagebutton:
-        idle "gui/mainmenu/load.png"
-        hover "gui/mainmenu/load_hover.png"
-        action ShowMenu("load")
-        xalign 0.16
-        yalign 0.54
+        idle "gui/mainmenu/play_idle.png"
+        hover "gui/mainmenu/play_hover.png"
+
+        action Start()
+        
+        xalign 0.50
+        yalign 0.93
+
     imagebutton:
-        idle "gui/mainmenu/pref.png"
-        hover "gui/mainmenu/pref_hover.png"
-        action ShowMenu("preferences")
-        xalign 0.24
-        yalign 0.79
-    imagebutton:
-        idle "gui/mainmenu/help.png"
+        idle "gui/mainmenu/help_idle.png"
         hover "gui/mainmenu/help_hover.png"
-        action NullAction()
-        xalign 0.76
-        yalign 0.79
-    imagebutton:
-        idle "gui/mainmenu/extras.png"
-        hover "gui/mainmenu/extras_hover.png"
-        action NullAction()
-        xalign 0.84
-        yalign 0.54
-    imagebutton:
-        idle "gui/mainmenu/x.png"
-        hover "gui/mainmenu/x_hover.png"
-        action Quit(confirm=False)
-        xalign 0.992
-        yalign 0.01
 
-    text "v [config.version]" xalign 0.99 yalign 1.0 style "st_contact_text"
+        action ShowMenu("preferences")
+
+        xalign 0.015
+        yalign 0.025
+
+    imagebutton:
+        idle "gui/mainmenu/quit_idle.png"
+        hover "gui/mainmenu/quit_hover.png"
+
+        action Quit(confirm=False)
+
+        xalign 0.985
+        yalign 0.025
+
+    text "v [config.version]" size 50 color "#000000" xalign 0.99 yalign 1.0
 
 style main_menu_frame:
     xsize 420

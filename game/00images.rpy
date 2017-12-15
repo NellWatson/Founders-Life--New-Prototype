@@ -10,6 +10,11 @@ image bg boardroom = Transform("images/bg/xp-9-boardroom.jpg", zoom=1.5)
 image bg spaceship = Transform("images/bg/xp-10-spaceship.jpg", zoom=1.5)
 image bg review = Transform("images/bg/out-of-play.jpg", zoom=1.5)
 
+image intro productivity = "images/intro/productivity.png"
+image intro energy = "images/intro/energy.png"
+image intro morale = "images/intro/morale.png"
+image intro money = "images/intro/money.png"
+
 image side nell normal = "images/contacts/nell.png"
 image side carla = "images/contacts/carla.png"
 image side dominique = "images/contacts/dominique.png"

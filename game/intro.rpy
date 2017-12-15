@@ -10,6 +10,19 @@ label event_intro:
     n "You've got a lot of work to do, and your savings won't keep you afloat forever."
     n "But remember to take care of yourself. You are your best investment, and you can't work if you run your body, mind, or spirit into the ground."
     n "Working on your own is about more than just business. If you can figure out what you want to do and why exactly you want to do it, you will be a lot happier."
+    n "A good founder learns how to balance..."
+
+    show intro productivity at im_center
+    n "... Productivity"
+
+    show intro energy at im_center
+    n "... Energy"
+
+    show intro morale at im_center
+    n "... Mindfulness"
+
+    show intro money at im_center
+    n "... Cashflow"
 
     call screen founder_map
     #call screen msg("Meeting Your Mentor", title="episode 1", show_button="Let's go!")

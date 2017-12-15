@@ -48,3 +48,10 @@ transform slide_down_center:
             linear 0.7 alpha 0.0
         parallel:
             linear 0.7 yalign -0.05
+
+transform im_center:
+    xalign 0.5
+    yalign 0.45
+    alpha 0.0
+
+    linear 0.75 alpha 1.0
