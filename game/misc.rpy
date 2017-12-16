@@ -1,12 +1,19 @@
 init python:
 
-    class NewestFileLoad(Action):
+    for slot in renpy.list_saved_games(fast=True):
+        if slot != "custom":
+            renpy.unlink_save(slot)
 
-        def __init__(self):
-            self.name = renpy.newest_slot()
+    class ResumeLastGame(Action):
+
+        def __init__(self, slot):
+            self.slot = slot
 
         def __call__(self):
-            renpy.load(self.name)
+            if renpy.can_load(self.slot):
+                renpy.load(self.slot)
+            else:
+                renpy.jump_out_of_context("start")
 
     class Circle(renpy.Displayable):
 

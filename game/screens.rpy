@@ -23,14 +23,16 @@ style hyperlink_text:
     hover_color gui.hover_color
     hover_underline True
 
+style image_button:
+    hover_sound "sfx/Selection01.wav"
 
 style gui_text:
     font gui.interface_font
     color gui.interface_text_color
     size gui.interface_text_size
 
-
 style button:
+    hover_sound "sfx/Selection01.wav"
     properties gui.button_properties("button")
 
 style button_text is gui_text:
@@ -193,6 +195,7 @@ screen choice(items):
                 hover "gui/choice/dislike_hover.png"
 
                 action i.action
+                hover_sound "sfx/Selection02.wav"
 
                 xalign 0.04
                 yalign 0.45
@@ -203,6 +206,7 @@ screen choice(items):
                 hover "gui/choice/like_hover.png"
 
                 action i.action
+                hover_sound "sfx/Selection03.wav"
 
                 xalign 0.96
                 yalign 0.45
@@ -291,18 +295,6 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        if main_menu:
-
-            textbutton _("Start") action Start()
-
-        else:
-
-            textbutton _("History") action ShowMenu("history")
-
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
         textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
@@ -345,13 +337,16 @@ screen main_menu():
 
     tag menu
 
+    on "show":
+        action Play("music", "music/product_theme_01.mp3")
+
     add "gui/mainmenu/bg.png"
     
     imagebutton:
         idle "gui/mainmenu/play_idle.png"
         hover "gui/mainmenu/play_hover.png"
 
-        action Start()
+        action ResumeLastGame("custom")
         
         xalign 0.50
         yalign 0.93

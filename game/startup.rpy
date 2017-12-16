@@ -83,6 +83,9 @@ screen startup_logo(_transient=True):
                 action [SetVariable("startup_icon", fields[i]), Hide("startup_logo")]
 
 screen sprint_review(bg):
+    on "show":
+        action Play("sound", "sfx/Fanfare04.wav")
+        
     add "bg review"
 
     default review = ReviewB()
@@ -127,6 +130,9 @@ screen sprint_review(bg):
                 at flash_zoom
 
 screen startup_review(bg):
+    on "show":
+        action Play("sound", "sfx/Fanfare03.wav")
+
     add "bg review"
 
     use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=550, cross=False):

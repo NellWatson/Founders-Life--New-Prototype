@@ -17,9 +17,9 @@ init python:
             events_pool[i] = []
             for j in mid_level:
                 for k in low_level:
-                    if j == "major" and k == major_limit:
+                    if j == "major" and k > major_limit:
                         break
-                    elif j == "minor" and k == minor_limit:
+                    elif j == "minor" and k > minor_limit:
                         break
                     events_pool[i].append( i + "_" + j + "_" + k )
 
@@ -59,5 +59,7 @@ init python:
         event = renpy.random.choice( events_pool[current_bucket] )
         store.last_event_bucket = event.split("_")[0]
         events_pool[last_event_bucket].remove(event)
+
+        renpy.sound.play("sfx/Attention02.wav")
 
         return event

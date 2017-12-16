@@ -13,6 +13,7 @@ init python:
             self.last_value = getattr(store, var)
             self.delta = 0
             self.review_step = 0
+            self.sound_played = False
 
         def displayable(self, st):
             current = getattr(store, self.var)
@@ -42,8 +43,13 @@ init python:
             self.last_value = current
 
             if self.delta or current <= 10:
+                if not self.sound_played and current <= 10:
+                    self.sound_played = True
+                    renpy.sound.play("sfx/Attention01.wav")
+
                 return At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash)
             else:
+                self.sound_played = False
                 return Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties)
 
     class ReviewB():
