@@ -1,5 +1,5 @@
 label morale_major_01:
-    $ event_code = "ch01e01"
+    $ event_code = "ch01e08"
     show eileen at center
     menu:
         e "Danny is an incredible engineer but his arrogance and aloofness keeps the rest of the team. Fire him?"
@@ -18,7 +18,7 @@ label morale_major_01:
     jump checkpoint
 
 label morale_major_02:
-    $ event_code = "ch01e21"
+    $ event_code = "ch01e09"
     show eileen at center
     menu:
         e "You are getting so much done today, that's the beauty of curating a no-distration environment. Cancel the team pizza lunch and continue the productivity streak?"
@@ -36,7 +36,7 @@ label morale_major_02:
     jump checkpoint
 
 label morale_major_03:
-    $ event_code = "ch01e22"
+    $ event_code = "ch01e10"
     show raquel at center
     menu:
         r "Hey, [founder_name], I know you enjoy your co-working space but a contact just told me of some great office space downtown going for $2,000 a month. Shall I prepare the lease?"
@@ -55,7 +55,7 @@ label morale_major_03:
     jump checkpoint
 
 label morale_minor_01:
-    $ event_code = "ch01e07"
+    $ event_code = "ch01e11"
     show carla at center
     menu:
         c "Hey, are you still on for the college reunion this weekend? I know things are hectic at [startup_name]?"
@@ -73,7 +73,7 @@ label morale_minor_01:
     jump checkpoint
 
 label morale_minor_02:
-    $ event_code = "ch01e09"
+    $ event_code = "ch01e12"
     show eileen at center
     menu:
         e "It's been a long day, skip the gym and grab takeout and beer?"
@@ -91,7 +91,7 @@ label morale_minor_02:
     jump checkpoint
 
 label morale_minor_03:
-    $ event_code = "ch01e15"
+    $ event_code = "ch01e13"
     show eileen at center
     menu:
         e "A Twitter acquaintance is in town and would like to meet for coffee today, go?"
@@ -109,7 +109,7 @@ label morale_minor_03:
     jump checkpoint
 
 label morale_minor_04:
-    $ event_code = "ch01e27"
+    $ event_code = "ch01e14"
     show eileen at center
     menu:
         e "Your first free evening in a long time. Your friend, Mia, suggests you both settle down for a pizza and Netflix marathon. Politely decline and get an early night?"
@@ -127,7 +127,7 @@ label morale_minor_04:
     jump checkpoint
 
 label morale_minor_05:
-    $ event_code = "ch01e28"
+    $ event_code = "ch01e15"
     show raquel at center
     menu:
         r "Hey, [founder_name], my cousin's gym just opened. I can get you a lifetime membership for just $500. Shall I send over the papers?"

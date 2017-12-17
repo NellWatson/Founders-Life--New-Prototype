@@ -1,7 +1,9 @@
 init python:
 
+    renpy.music.register_channel("bar_sound", mixer="sfx", loop=True)
+
     for slot in renpy.list_saved_games(fast=True):
-        if slot != "custom":
+        if slot != "custom" and not config.developer:
             renpy.unlink_save(slot)
 
     class ResumeLastGame(Action):

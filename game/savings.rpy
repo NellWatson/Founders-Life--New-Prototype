@@ -1,5 +1,5 @@
 label money_major_01:
-    $ event_code = "ch01e06"
+    $ event_code = "ch01e24"
     show eileen at center
     menu:
         e "Hey, [founder_name], you really want to have a Non-Disclosure Agreement (NDA) in place before you speak to potential investors - they are sharks! I can draft you one for $2,000?"
@@ -15,7 +15,7 @@ label money_major_01:
     jump checkpoint
 
 label money_major_02:
-    $ event_code = "ch01e11"
+    $ event_code = "ch01e25"
     show eileen at center
     menu:
         e "A fellow startup wants you to perform code review for them. It pays $1,000 - block out time away from [startup_name] and do the work?"
@@ -34,7 +34,7 @@ label money_major_02:
     jump checkpoint
 
 label money_minor_01:
-    $ event_code = "ch01e02"
+    $ event_code = "ch01e26"
     show eileen at center
     menu:
         e "An old friend needs a day of technical writing done and thinks you'd be the perfect freelancer for the gig. It pays $500, take the day off from [startup_name] and do the work?"
@@ -52,7 +52,7 @@ label money_minor_01:
     jump checkpoint
 
 label money_minor_02:
-    $ event_code = "ch01e03"
+    $ event_code = "ch01e27"
     show eileen at center
     menu:
         e "There's a chance to run some UX research with some solid prospects. It will take a day and cost $500 in gift cards, stop making and start testing?"
@@ -70,7 +70,7 @@ label money_minor_02:
     jump checkpoint
 
 label money_minor_03:
-    $ event_code = "ch01e14"
+    $ event_code = "ch01e28"
     show eileen at center
     menu:
         e "The local community college would like you to speak to their students. It pays $500 but it would involve going out of town. Do it?"
@@ -89,7 +89,7 @@ label money_minor_03:
     jump checkpoint
 
 label money_minor_04:
-    $ event_code = "ch01e16"
+    $ event_code = "ch01e29"
     show eileen at center
     menu:
         e "Fast Company would like you to author an essay on Startup Mindfulness, they'll pay $500?"
@@ -108,7 +108,7 @@ label money_minor_04:
     jump checkpoint
 
 label money_minor_05:
-    $ event_code = "ch01e16"
+    $ event_code = "ch01e30"
     show eileen at center
     menu:
         e "Your Uber bill is now $500 a month. Take the productivity hit, pocket the saving and start walking more?"
@@ -127,7 +127,7 @@ label money_minor_05:
     jump checkpoint
 
 label money_minor_06:
-    $ event_code = "ch01e24"
+    $ event_code = "ch01e31"
     show eileen at center
     menu:
         e "StartStars Incubator would like you to mentor at their Startup Weekend, they'll pay $500?"

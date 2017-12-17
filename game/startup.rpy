@@ -16,6 +16,8 @@ init python:
         if req_st > st:
             return Text(default, color="#000000"), .1
         else:
+            if req_st < 4:
+                renpy.sound.play("sfx/fx008.wav")
             if effect:
                 if type(value) == int:
                     return At(Text("{:,}".format(value), color="#000000"), effect), None
@@ -84,7 +86,7 @@ screen startup_logo(_transient=True):
 
 screen sprint_review(bg):
     on "show":
-        action Play("sound", "sfx/Fanfare04.wav")
+        action Play("sound", "sfx/fx009.wav")
         
     add "bg review"
 
@@ -130,9 +132,6 @@ screen sprint_review(bg):
                 at flash_zoom
 
 screen startup_review(bg):
-    on "show":
-        action Play("sound", "sfx/Fanfare03.wav")
-
     add "bg review"
 
     use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=550, cross=False):
@@ -155,10 +154,10 @@ screen startup_review(bg):
                 text "Energy" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 1.5, energy)
                 
-                text "Morale" color "#000000"
+                text "Mindfulness" color "#000000"
                 text DynamicDisplayable(dynamic_show_text, 2.25, morale)
                 
-                text "Savings" color "#000000"
+                text "Cashflow" color "#000000"
                 hbox:
                     text "$" color "#000000"
                     text DynamicDisplayable(dynamic_show_text, 3, money)

@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.0.7-1217
+------------
+* Closed Issue #114, #115, #116, #118.
+* Started working on Audio.
+
 v 0.0.7-1216
 ------------
 * Closed Issue #112, #113.

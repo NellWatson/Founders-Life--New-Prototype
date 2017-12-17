@@ -45,7 +45,7 @@ init python:
             if self.delta or current <= 10:
                 if not self.sound_played and current <= 10:
                     self.sound_played = True
-                    renpy.sound.play("sfx/Attention01.wav")
+                    renpy.sound.play("sfx/fx007.wav")
 
                 return At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash)
             else:
@@ -60,6 +60,7 @@ init python:
             self.colour = "#00ff00"
 
             self.updated_fl = False
+            self.bar_update_anim = 2
 
             # The current Founder Score of player
             self.total_founder_score = 0
@@ -124,18 +125,15 @@ init python:
                 self.bar_range = FOUNDER_INDEX[self.founder_level][1]
                 self.bar_value = self.founder_score
 
-                # Find the steps by which the bar will be updated
-                if store.founder_score > 7000:
-                    multiplier = store.founder_score / 8
-                else:
-                    multiplier = 400
-                self.review_step = store.founder_score * multiplier / self.bar_range
+                self.review_step = store.founder_score / (self.bar_update_anim * 20)
+                renpy.sound.play("sfx/fx010.wav", channel="bar_sound", loop=True)
 
             # If the bar is full, check to see if we can update the bar to a new one
             if self.bar_value >= self.bar_range:
                 self.updated_fl = True
                 self.founder_level += 1
                 self.bar_range = FOUNDER_INDEX[self.founder_level][1]
+                renpy.sound.play("sfx/fx011.wav")
 
                 # Check if there is an achievement associated with the level.
                 # If yes, unlock the achievement and show the notification.
@@ -149,9 +147,11 @@ init python:
                 self.bar_value += self.review_step
                 self.founder_score += self.review_step
 
-                if self.founder_score > self.total_founder_score:
-                    self.founder_score = self.total_founder_score
-                    self.bar_value = self.founder_score - self.bar_normalise
+            if self.founder_score > self.total_founder_score:
+                self.founder_score = self.total_founder_score
+                self.bar_value = self.founder_score - self.bar_normalise
+
+                renpy.sound.stop(channel="bar_sound")
 
             if self.updated_fl:
                 status = "Founder Status: {color=#00ff00}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}"
@@ -164,4 +164,4 @@ init python:
         return bar.displayable(st), 0.1
 
     def dynamic_review(st, at, d, limit):
-        return d(st, limit), 0.01
+        return d(st, limit), 0.05

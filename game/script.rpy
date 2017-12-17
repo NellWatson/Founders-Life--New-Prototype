@@ -10,7 +10,7 @@ label start:
 
     call _create_achievements from _call__create_achievements
 
-    play music "music/play_theme_02.mp3" fadein 1.5
+    play music "music/ost002.mp3" fadein 1.5
     scene bg bedroom
     # print renpy.display.core.scene_lists().get_all_displayables()
 
@@ -23,34 +23,34 @@ label checkpoint:
     if productivity <= 0:
         $ renpy.unlink_save("custom")
 
-        play sound "sfx/Fanfare07.wav"
+        play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
         return
 
     elif energy <= 0:
         $ renpy.unlink_save("custom")
 
-        play sound "sfx/Fanfare07.wav"
+        play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [turn_no] days."
         return
 
     elif morale <= 0:
         $ renpy.unlink_save("custom")
 
-        play sound "sfx/Fanfare07.wav"
+        play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [turn_no] days."
         return
 
     elif money <= 0:
         $ renpy.unlink_save("custom")
 
-        play sound "sfx/Fanfare07.wav"
+        play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [turn_no] days."
         return
 
     if turn_no and not (turn_no % 7):
-        $ renpy.sound.play("sfx/Fanfare01.wav")
-
+        
+        play sound "sfx/fx003.wav"
         n normal "Congratulations [founder_name].\nYou have survived [turn_no] days as a founder."
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
@@ -85,7 +85,7 @@ label checkpoint:
                 $ founder_level = 10
 
         $ renpy.save("custom")
-        $ renpy.sound.play("sfx/Fanfare02.wav")
+        $ renpy.sound.play("sfx/fx004.wav")
 
         #call screen level_up(current_bg)
         if energy < 30 and morale < 30 and productivity < 30 and money < 1500:

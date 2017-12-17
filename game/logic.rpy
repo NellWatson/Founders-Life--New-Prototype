@@ -60,6 +60,6 @@ init python:
         store.last_event_bucket = event.split("_")[0]
         events_pool[last_event_bucket].remove(event)
 
-        renpy.sound.play("sfx/Attention02.wav")
+        renpy.sound.play("sfx/fx002.wav")
 
         return event
