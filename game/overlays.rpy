@@ -7,7 +7,14 @@ screen hud():
 
         text "Days as Founder: {0:02d}".format(turn_no) size 30 color "#000000" xalign 0.05 yalign 0.15
         if config.developer:
-            text "[event_code]" color "#000000" xalign 0.05 yalign 0.80
+            hbox:
+                xalign 0.05
+                yalign 0.80
+                spacing 5
+                
+                text "[event_code]" color "#000000" yalign 0.5
+                textbutton _("Feedback"):
+                    action Show("feedback_form_screen")
 
         vbox:
             xalign 0.5

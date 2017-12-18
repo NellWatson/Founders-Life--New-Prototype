@@ -55,3 +55,19 @@ transform im_center:
     alpha 0.0
 
     linear 0.75 alpha 1.0
+
+transform button_hover:
+    anchor (0.5, 0.5)
+    on idle:
+        alpha 1.0
+        zoom 0.99
+
+    on hover:
+        parallel:
+            linear 0.6 alpha 0.8
+            linear 0.6 alpha 1.0
+        parallel:
+            linear 0.6 zoom 1.1
+            linear 0.6 zoom 0.99
+
+        repeat

@@ -54,6 +54,9 @@ default last_event_bucket = None
 default week_event_bucket_type = set()
 default events_pool = {}
 
+default feedback = {}
+default feedback_given = False
+
 default productivity_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "productivity", xysize=(700, 36))
 default energy_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "energy", xysize=(700, 36))
 default morale_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "morale", xysize=(700, 36))
