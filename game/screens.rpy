@@ -195,7 +195,7 @@ screen choice(items):
                 hover "gui/choice/like_hover.png"
 
                 action i.action
-                hover_sound "sfx/fx005.wav"
+                activate_sound "sfx/fx005.wav"
 
                 xalign 0.04
                 yalign 0.45
@@ -206,7 +206,7 @@ screen choice(items):
                 hover "gui/choice/dislike_hover.png"
 
                 action i.action
-                hover_sound "sfx/fx006.wav"
+                activate_sound "sfx/fx006.wav"
 
                 xalign 0.96
                 yalign 0.45

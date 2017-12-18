@@ -50,7 +50,7 @@ label checkpoint:
 
     if turn_no and not (turn_no % 7):
         
-        play sound "sfx/fx003.wav"
+        play week_sound "sfx/fx003.wav"
         n normal "Congratulations [founder_name].\nYou have survived [turn_no] days as a founder."
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
@@ -85,7 +85,7 @@ label checkpoint:
                 $ founder_level = 10
 
         $ renpy.save("custom")
-        $ renpy.sound.play("sfx/fx004.wav")
+        play week_sound "sfx/fx004.wav"
 
         #call screen level_up(current_bg)
         if energy < 30 and morale < 30 and productivity < 30 and money < 1500:

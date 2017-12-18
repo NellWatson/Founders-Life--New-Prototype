@@ -1,6 +1,8 @@
 init python:
 
     renpy.music.register_channel("bar_sound", mixer="sfx", loop=True)
+    renpy.music.register_channel("week_sound", mixer="sfx", loop=False)
+    renpy.sound.set_volume(_preferences.volumes['sfx']*0.1, "week_sound")
 
     for slot in renpy.list_saved_games(fast=True):
         if slot != "custom" and not config.developer:

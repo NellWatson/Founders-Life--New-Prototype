@@ -18,6 +18,8 @@ init python:
         else:
             if req_st < 4:
                 renpy.sound.play("sfx/fx008.wav")
+            else:
+                renpy.sound.play("sfx/fx009.wav")
             if effect:
                 if type(value) == int:
                     return At(Text("{:,}".format(value), color="#000000"), effect), None
