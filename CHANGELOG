@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.0.8-1220
+------------
+* Started adding Telemetry.
+
+* Fixed a bug where fast clicking will cause the xp rising sound effect to continue play.
+* In some cases, the sound of custom channel was not being reset.
+
 v 0.0.8-1218-2
 --------------
 * Added mock Feedback form.

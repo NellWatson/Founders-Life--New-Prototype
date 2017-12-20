@@ -1,13 +1,5 @@
 init python:
 
-    renpy.music.register_channel("bar_sound", mixer="sfx", loop=True)
-    renpy.music.register_channel("week_sound", mixer="sfx", loop=False)
-    renpy.sound.set_volume(_preferences.volumes['sfx']*0.1, "week_sound")
-
-    for slot in renpy.list_saved_games(fast=True):
-        if slot != "custom" and not config.developer:
-            renpy.unlink_save(slot)
-
     class ResumeLastGame(Action):
 
         def __init__(self, slot):
@@ -51,3 +43,6 @@ init python:
         """
         
         return Fixed(Circle(radius, colour), Image(image_path, xalign=0.5, yalign=0.5), xsize=radius*2, ysize=radius*2)
+
+label after_load():
+    $ telemetry.resume()

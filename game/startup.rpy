@@ -115,7 +115,7 @@ screen sprint_review(bg):
             hover_background Solid( Color("#d3d3d3").tint(0.5) )
             selected_background Solid( Color("#d3d3d3").shade(0.5) )
 
-            action Return()
+            action [ Stop("bar_sound"), Return() ]
 
             xalign 0.5
             yalign 0.99

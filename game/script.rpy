@@ -1,12 +1,7 @@
-label splashscreen:
-    if not persistent.set_volumes:
-        $ persistent.set_volumes = True
-        
-        $ _preferences.volumes['music'] *= 0.25
-    return
-
 label start:
     $ calculate_pool()
+    $ telemetry.init()
+    $ telemetry.setup()
 
     call _create_achievements from _call__create_achievements
 
@@ -22,6 +17,7 @@ label checkpoint:
 
     if productivity <= 0:
         $ renpy.unlink_save("custom")
+        $ telemetry.end("No Productivity")
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
@@ -29,6 +25,7 @@ label checkpoint:
 
     elif energy <= 0:
         $ renpy.unlink_save("custom")
+        $ telemetry.end("No Energy")
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [turn_no] days."
@@ -36,6 +33,7 @@ label checkpoint:
 
     elif morale <= 0:
         $ renpy.unlink_save("custom")
+        $ telemetry.end("No Mindfulness")
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [turn_no] days."
@@ -43,6 +41,7 @@ label checkpoint:
 
     elif money <= 0:
         $ renpy.unlink_save("custom")
+        $ telemetry.end("No Cashflow")
 
         play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [turn_no] days."
@@ -62,6 +61,9 @@ label checkpoint:
         $ week_event_bucket_type = set()
         $ check["money"] = ""
 
+        $ telemetry.collect()
+        $ telemetry.sync()
+
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
@@ -74,6 +76,7 @@ label checkpoint:
             call screen founder_map
 
             $ renpy.unlink_save("custom")
+            $ telemetry.end("done")
             n normal "Thank you for playing Chapter 1 of Founders Life."
             return
 
