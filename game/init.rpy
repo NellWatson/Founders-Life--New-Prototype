@@ -21,6 +21,9 @@ init python:
     if not persistent.multiple_id:
         persistent.multiple_id = False
 
+    if not persistent.submitted_form:
+        persistent.submitted_form = False
+
     if not persistent.set_volumes:
         persistent.set_volumes = True
         _preferences.volumes['music'] = 0.25

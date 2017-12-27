@@ -353,6 +353,6 @@ screen feedback_form_screen():
 
                 text "Okay" style "fl_button_text"
 
-                action Hide("feedback_form_screen") #[ Function(telemetry.submit_form), Return() ]
+                action [ Function(telemetry.submit_form), SetField(persistent, "submitted_form", True), Return() ]
 
                 xalign 0.5

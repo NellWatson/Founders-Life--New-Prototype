@@ -6,7 +6,7 @@ init python in telemetry:
 
         global host, project_id, game_id, collected_data, sessions, last_session_length, session_blocks, status
 
-        host = "http://192.241.146.97:3000/v1/" # "http://localhost:3000/v1/"
+        host = "http://localhost:3000/v1/" # "http://192.241.146.97:3000/v1/"
         project_id = "FoundersLifeAlpha"
         game_id = ""
 
@@ -77,6 +77,7 @@ init python in telemetry:
         # Set the status to mark that we are in an operation
         status = "collecting"
         week = renpy.store.week
+        print game_id.encode("utf-8")
 
         # If for some reason no game_id has been generated, generate one.
         if game_id == "placeholder":
@@ -188,4 +189,37 @@ init python in telemetry:
             r = urllib2.Request(url, data, { "Content-Type": "application/json" })
             response = urllib2.urlopen(r)
         except Exception, e:
+            return "No Internet Connection"
+        status = ""
+
+    def submit_form():
+        """
+        Start the actual syncing process in a thread so the game doesn't hang.
+        """
+
+        while status:
+            continue
+
+        if game_id == "placeholder":
+            setup()
+            return
+
+        url = host + project_id + "/" + game_id + "/form"
+        renpy.invoke_in_thread(_submit_form, available_data=renpy.store.feedback, url=url)
+
+    def _submit_form(available_data, url):
+        global status
+
+        status = "syncing"
+
+        if not check_internet():
+            return "No Internet Connection"
+
+        data = json.dumps(available_data)
+
+        try:
+            r = urllib2.Request(url, data, { "Content-Type": "application/json" })
+            response = urllib2.urlopen(r)
+        except Exception, e:
+            print str(e)
             return "No Internet Connection"

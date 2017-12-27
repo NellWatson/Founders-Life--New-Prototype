@@ -13,8 +13,6 @@ screen hud():
                 spacing 5
                 
                 text "[event_code]" color "#000000" yalign 0.5
-                textbutton _("Feedback"):
-                    action Show("feedback_form_screen")
 
         vbox:
             xalign 0.5

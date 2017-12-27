@@ -75,8 +75,13 @@ label checkpoint:
             $ current_episode += 1
             call screen founder_map
 
+            if not persistent.submitted_form:
+                n normal "Please let us know your feedback."
+                call screen feedback_form_screen
+
             $ renpy.unlink_save("custom")
             $ telemetry.end("done")
+
             n normal "Thank you for playing Chapter 1 of Founders Life."
             return
 

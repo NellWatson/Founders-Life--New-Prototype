@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.0.9-1227
+------------
+* Added full support for feedback.
+
 v 0.0.8-1220
 ------------
 * Started adding Telemetry.
