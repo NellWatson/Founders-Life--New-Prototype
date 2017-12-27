@@ -6,7 +6,7 @@ init python in telemetry:
 
         global host, project_id, game_id, collected_data, sessions, last_session_length, session_blocks, status
 
-        host = "http://localhost:3000/v1/" # "http://192.241.146.97:3000/v1/"
+        host = "http://192.241.146.97:3000/v1/" # "http://localhost:3000/v1/"
         project_id = "FoundersLifeAlpha"
         game_id = ""
 
