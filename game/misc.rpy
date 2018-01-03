@@ -44,5 +44,36 @@ init python:
         
         return Fixed(Circle(radius, colour), Image(image_path, xalign=0.5, yalign=0.5), xsize=radius*2, ysize=radius*2)
 
+    def clear_user_data():
+        renpy.unlink_save("custom")
+        persistent._clear()
+
+        renpy.show_screen("inform", message="Game was successfully reset.")
+
 label after_load():
     $ telemetry.resume()
+
+screen inform(message):
+    modal True
+    zorder 200
+
+    style_prefix "confirm"
+
+    add "gui/overlay/confirm.png"
+
+    frame:
+
+        vbox:
+            xalign .5
+            yalign .5
+            spacing 45
+
+            label _(message):
+                style "confirm_prompt"
+                xalign 0.5
+
+            hbox:
+                xalign 0.5
+                spacing 150
+
+                textbutton _("Okay") action Hide("inform")

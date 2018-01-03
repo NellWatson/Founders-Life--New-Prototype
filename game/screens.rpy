@@ -319,6 +319,8 @@ screen navigation():
             ## The quit button is banned on iOS and unnecessary on Android.
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
+        textbutton _("Reset") action Function(clear_user_data)
+
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -551,7 +553,9 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n")
+            text _("Avatars credit: People vector created by Enggang - Freepik.com\n")
+            text _("Background credits: Office XP2 Photo by Benjamin Child on Unsplash, Postits Photo by Patrick Perkins on Unsplash.")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
@@ -1452,7 +1456,3 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 900
-
-
-
-
