@@ -15,8 +15,16 @@ init python:
     renpy.sound.set_volume(0.1, "week_sound")
 
     for slot in renpy.list_saved_games(fast=True):
-        if slot != "custom" and not config.developer:
+        if config.developer:
+            break
+
+        if slot != "custom":
             renpy.unlink_save(slot)
+        else:
+            # If this is the first run of the game, make sure we remove all the saves
+            if not persistent.first_run:
+                renpy.unlink_save(slot)
+    persistent.first_run = True
 
     if not persistent.multiple_id:
         persistent.multiple_id = False

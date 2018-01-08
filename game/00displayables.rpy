@@ -158,7 +158,15 @@ init python:
             else:
                 status = "Founder Status: " + FOUNDER_INDEX[self.founder_level][0]
 
-            return VBox(Fixed(Bar(range=self.bar_range, value=self.bar_value, height=10), Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8), xfit=True, yfit=True), Text("Founder Level: {:,}".format(self.founder_level), color="#000000", xalign=0.5), Text("Founder Status: " + FOUNDER_INDEX[self.founder_level][0], color="#000000", xalign=0.5), spacing=12)
+            bar_d = Bar(range=self.bar_range, value=self.bar_value, height=10)
+            if self.updated_fl:
+                text_fl = At(Text("Founder Level: {color=#00e500}" + "{:,}".format(self.founder_level) + "{/color}", color="#000000", xalign=0.5), flash)
+                text_fs = At(Text("Founder Status: {color=#00e500}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", color="#000000", xalign=0.5), flash)
+            else:
+                text_fl = Text("Founder Level: {color=#000000}" + "{:,}".format(self.founder_level) + "{/color}", color="#000000", xalign=0.5)
+                text_fs = Text("Founder Status: {color=#000000}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", color="#000000", xalign=0.5)
+
+            return VBox(Fixed(bar_d, Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8), xfit=True, yfit=True), text_fl, text_fs, spacing=12)
 
     def dynamic_bar(st, at, bar):
         return bar.displayable(st), 0.1

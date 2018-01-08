@@ -21,6 +21,10 @@ label checkpoint:
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
+        
+        if not persistent.submitted_form:
+            n normal "Please let us know your feedback."
+            call screen feedback_form_screen
         return
 
     elif energy <= 0:
@@ -29,6 +33,10 @@ label checkpoint:
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [turn_no] days."
+        
+        if not persistent.submitted_form:
+            n normal "Please let us know your feedback."
+            call screen feedback_form_screen
         return
 
     elif morale <= 0:
@@ -37,6 +45,10 @@ label checkpoint:
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [turn_no] days."
+        
+        if not persistent.submitted_form:
+            n normal "Please let us know your feedback."
+            call screen feedback_form_screen
         return
 
     elif money <= 0:
@@ -45,6 +57,10 @@ label checkpoint:
 
         play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [turn_no] days."
+        
+        if not persistent.submitted_form:
+            n normal "Please let us know your feedback."
+            call screen feedback_form_screen
         return
 
     if turn_no and not (turn_no % 7):

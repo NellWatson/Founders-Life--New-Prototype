@@ -375,7 +375,7 @@ screen main_menu():
         xalign 0.985
         yalign 0.025
 
-    text "v [config.version]" size 50 color "#000000" xalign 0.99 yalign 1.0
+    text "v [config.version]" size 45 xalign 1.0 yalign 1.0
 
 style main_menu_frame:
     xsize 420

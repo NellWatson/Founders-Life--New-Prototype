@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.0.9-0108
+------------
+* Updated Feedback form questions. (#121)
+* Tweaked Sprint screen to new specs. (#122)
+* Now we remove all the save files for first time players.
+* Changed version number text colour to white to follow the main menu asthetic
+
 v 0.0.9-0103
 ------------
 * Added reset button.

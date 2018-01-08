@@ -97,7 +97,7 @@ screen feedback_form_screen():
                 xalign 0.5
                 yalign 0.0
 
-        if slide < 7:
+        if slide < 4:
             button:
                 xysize (1250, 150)
 
@@ -118,10 +118,10 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("narrative"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("liked"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
                 
-                text "Question #01/08" style "feedback_text" size 50
-                text "What do you think about the overall story?" style "feedback_text" xmaximum 1400 xalign 0.5
+                text "Question #01/05" style "feedback_text" size 50
+                text "What did you like about Founders Life?" style "feedback_text" xmaximum 1400 xalign 0.5
 
                 fixed:
                     fit_first True
@@ -141,10 +141,10 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("dialogue"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("not_liked"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
                 
-                text "Question #02/08" style "feedback_text" size 50
-                text "How did you find the in-game dialogues?" style "feedback_text" xmaximum 1400 xalign 0.5
+                text "Question #02/05" style "feedback_text" size 50
+                text "What did you dislike about Founder Life?" style "feedback_text" xmaximum 1400 xalign 0.5
 
                 fixed:
                     fit_first True
@@ -164,10 +164,10 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("character"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("more_of"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
                 
-                text "Question #03/08" style "feedback_text" size 50
-                text "What are your views on the characters? Did you find them believable?" style "feedback_text" xmaximum 1400 xalign 0.5
+                text "Question #03/05" style "feedback_text" size 50
+                text "Founder Life should have more..." style "feedback_text" xmaximum 1400 xalign 0.5
 
                 fixed:
                     fit_first True
@@ -187,10 +187,10 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("liked"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("less_of"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
                 
-                text "Question #04/08" style "feedback_text" size 50
-                text "What did you like about Founder Life?" style "feedback_text" xmaximum 1400 xalign 0.5
+                text "Question #04/05" style "feedback_text" size 50
+                text "Founder Life should have less..." style "feedback_text" xmaximum 1400 xalign 0.5
 
                 fixed:
                     fit_first True
@@ -209,76 +209,10 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("not_liked"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("one_change"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
                 
-                text "Question #05/08" style "feedback_text" size 50
-                text "What did you dislike about Founder Life?" style "feedback_text" xmaximum 1400 xalign 0.5
-
-                fixed:
-                    fit_first True
-
-                    add Solid("#4c8fc6", xysize=(1350, 160))
-                    button:
-                        xysize (1350, 200)
-                        background "#00000000"
-
-                        action input.enable
-                        add input
-
-        elif slide == 5:
-            vbox:
-                xalign 0.5
-                yalign 0.4
-                spacing 40
-
-                $ input = Input(value=FeedbackInputValue("improvement"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
-
-                text "Question #06/08" style "feedback_text" size 50
-                text "If you could change one thing in the game, what would it be?" style "feedback_text"  xmaximum 1400 xalign 0.5
-
-                fixed:
-                    fit_first True
-
-                    add Solid("#4c8fc6", xysize=(1350, 160))
-                    button:
-                        xysize (1350, 200)
-                        background "#00000000"
-
-                        action input.enable
-                        add input
-
-        elif slide == 6:
-            vbox:
-                xalign 0.5
-                yalign 0.4
-                spacing 40
-
-                $ input = Input(value=FeedbackInputValue("confusing_parts"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=2530)
-
-                text "Question #07/08" style "feedback_text" size 50
-                text "Was there any point where you were confused by what was happening?" style "feedback_text" xmaximum 1400 xalign 0.5
-
-                fixed:
-                    fit_first True
-
-                    add Solid("#4c8fc6", xysize=(1350, 160))
-                    button:
-                        xysize (1350, 200)
-                        background "#00000000"
-
-                        action input.enable
-                        add input
-
-        elif slide == 7:
-            vbox:
-                xalign 0.5
-                yalign 0.4
-                spacing 40
-
-                $ input = Input(value=FeedbackInputValue("player_changes"), size=30, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=2530)
-
-                text "Question #08/08" style "feedback_text" size 50
-                text "What, if anything, would have to change before you played Founder Life again?" style "feedback_text" xmaximum 1400 xalign 0.5
+                text "Question #05/05" style "feedback_text" size 50
+                text "If I was to only change one thing about the game, it would be..." style "feedback_text" xmaximum 1400 xalign 0.5
 
                 fixed:
                     fit_first True

@@ -6,7 +6,7 @@ init python in telemetry:
 
         global host, project_id, game_id, collected_data, sessions, last_session_length, session_blocks, status
 
-        host = "http://192.241.146.97:3000/v1/" # "http://localhost:3000/v1/"
+        host = "http://192.241.146.97:3000/v1/" #"http://localhost:3000/v1/" #
         project_id = "FoundersLifeAlpha"
         game_id = ""
 
@@ -156,7 +156,10 @@ init python in telemetry:
     def resume():
         global sessions, last_session_length, session_blocks
 
-        sessions += 1
+        try:
+            sessions += 1
+        except NameError:
+            sessions = 2
         last_session_length = renpy.get_game_runtime() - last_session_length
         session_blocks.append(last_session_length)
 
@@ -180,7 +183,8 @@ init python in telemetry:
             "total_points": renpy.store.total_founder_score,
             "play_time": play_time,
             "sessions": session,
-            "sessions_length": session_blocks
+            "sessions_length": session_blocks,
+            "days": renpy.store.turn_no
             }
 
         data = json.dumps(data)
