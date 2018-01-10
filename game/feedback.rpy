@@ -121,7 +121,7 @@ screen feedback_form_screen():
                 $ input = Input(value=FeedbackInputValue("liked"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
                 
                 text "Question #01/05" style "feedback_text" size 50
-                text "What did you like about Founders Life?" style "feedback_text" xmaximum 1400 xalign 0.5
+                text "What did you like about Founder Life?" style "feedback_text" xmaximum 1400 xalign 0.5
 
                 fixed:
                     fit_first True

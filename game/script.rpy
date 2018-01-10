@@ -98,7 +98,7 @@ label checkpoint:
             $ renpy.unlink_save("custom")
             $ telemetry.end("done")
 
-            n normal "Thank you for playing Chapter 1 of Founders Life."
+            n normal "Thank you for playing Chapter 1 of Founder Life."
             return
 
         while total_founder_score > FOUNDER_INDEX[founder_level][1]:
