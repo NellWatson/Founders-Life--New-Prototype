@@ -191,9 +191,13 @@ init python:
 
     ## To archive files, classify them as 'archive'.
 
-    build.classify('game/**.png', 'archive')
-    build.classify('game/**.jpg', 'archive')
-    build.classify('game/**.rpyc', 'archive')
+    build.classify('**/**.png', 'archive')
+    build.classify('**/**.jpg', 'archive')
+    build.classify('**/**.jpeg', 'archive')
+    build.classify('**/**.rpyc', 'archive')
+    build.classify('**/**.mp3', 'archive')
+    build.classify('**/**.ogg', 'archive')
+    build.classify('**/**.wav', 'archive')
     build.classify('game/fonts/**.**', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,

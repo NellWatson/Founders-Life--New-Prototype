@@ -4,6 +4,7 @@ CHANGELOG
 v 0.1.0-0115
 ------------
 * Build release.
+* Update build rule to fix image missing errors.
 
 v 0.0.9-0108
 ------------
