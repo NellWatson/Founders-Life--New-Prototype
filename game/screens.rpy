@@ -259,13 +259,6 @@ screen quick_menu():
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
-## This code ensures that the quick_menu screen is displayed in-game, whenever
-## the player has not explicitly hidden the interface.
-init python:
-    config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
-
 style quick_button is default
 style quick_button_text is button_text
 

@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.1.1-0115
+------------
+* Updated build rules. Created different archives for different assets.
+* Hide quick menu screen.
+* On press of game_menu buttons, show `preferences` screen instead of save screen.
+* Ranamed `00images.rpy` to `0images.rpy`. Ren'Py wasn't including `00images.rpy` in the final build for some reason.
+
 v 0.1.0-0115
 ------------
 * Build release.

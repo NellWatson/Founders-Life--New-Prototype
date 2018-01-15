@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.1.0-0115"
+define config.version = "0.1.1-0115"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -189,16 +189,19 @@ init python:
     build.classify('game/tl/**/**.**', None)
     build.classify('game/images/icon/**.**', None)
 
-    ## To archive files, classify them as 'archive'.
+    build.archive("scripts", "all")
+    build.archive("images", "all")
+    build.archive("music", "all")
+    build.archive("misc", "all")
 
-    build.classify('**/**.png', 'archive')
-    build.classify('**/**.jpg', 'archive')
-    build.classify('**/**.jpeg', 'archive')
-    build.classify('**/**.rpyc', 'archive')
-    build.classify('**/**.mp3', 'archive')
-    build.classify('**/**.ogg', 'archive')
-    build.classify('**/**.wav', 'archive')
-    build.classify('game/fonts/**.**', 'archive')
+    build.classify('**/**.png', 'images')
+    build.classify('**/**.jpg', 'images')
+    build.classify('**/**.jpeg', 'images')
+    build.classify('**/**.rpyc', 'scripts')
+    build.classify('**/**.mp3', 'music')
+    build.classify('**/**.ogg', 'music')
+    build.classify('**/**.wav', 'music')
+    build.classify('game/fonts/**.**', 'misc')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
