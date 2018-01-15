@@ -156,10 +156,7 @@ init python in telemetry:
     def resume():
         global sessions, last_session_length, session_blocks
 
-        try:
-            sessions += 1
-        except NameError:
-            sessions = 2
+        sessions += 1
         last_session_length = renpy.get_game_runtime() - last_session_length
         session_blocks.append(last_session_length)
 

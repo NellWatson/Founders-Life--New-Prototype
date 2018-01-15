@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.0.9-0110"
+define config.version = "0.1.0-0115"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -37,7 +37,7 @@ define gui.about = _("")
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "FoundersLifeewPrototype"
+define build.name = "FounderLife"
 
 
 ## Sounds and music ############################################################
@@ -47,7 +47,7 @@ define build.name = "FoundersLifeewPrototype"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -153,8 +153,8 @@ define config.window_icon = "gui/window_icon.png"
 
 init python:
 
-    build.directory_name = "FoundersLife-v" + config.version
-    build.executable_name = "FoundersLife"
+    build.directory_name = "FounderLife-v" + config.version
+    build.executable_name = "FounderLife"
 
     ## The following functions take file patterns. File patterns are case-
     ## insensitive, and matched against the path relative to the base directory,
