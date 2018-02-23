@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.1.2-0223
+------------
+* Fix IndexError in logic.rpy
+
 v 0.1.1-0115
 ------------
 * Updated build rules. Created different archives for different assets.

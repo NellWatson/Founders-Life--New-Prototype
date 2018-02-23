@@ -41,14 +41,15 @@ init python:
     def find_event():
         _available_buckets = events_pool.keys()
 
-        # On turn 5 and 7 check if any event bucket hasn't been used yet
-        if not turn_no % 5 or not turn_no % 7:
-            if len(week_event_bucket_type) < 4:
-                _available_buckets = [i for i in _available_buckets if i not in week_event_bucket_type]
-        else:
-            # For regular days, just make sure that two types of events are not repeated
-            if store.last_event_bucket:
-                _available_buckets.remove(last_event_bucket)
+        if (events_pool) > 1:
+            # On turn 5 and 7 check if any event bucket hasn't been used yet
+            if not turn_no % 5 or not turn_no % 7:
+                if len(week_event_bucket_type) < 4:
+                    _available_buckets = [i for i in _available_buckets if i not in week_event_bucket_type]
+            else:
+                # For regular days, just make sure that two types of events are not repeated
+                if store.last_event_bucket:
+                    _available_buckets.remove(last_event_bucket)
 
         # Remove empty buckets from the que
         _available_buckets = [ x for x in _available_buckets if events_pool[x] ]
@@ -59,6 +60,10 @@ init python:
         event = renpy.random.choice( events_pool[current_bucket] )
         store.last_event_bucket = event.split("_")[0]
         events_pool[last_event_bucket].remove(event)
+
+        # If the event pool for an event is empty, rmeove it
+        if not events_pool[current_bucket]:
+            del events_pool[current_bucket]
 
         renpy.sound.play("sfx/fx002.wav")
 
