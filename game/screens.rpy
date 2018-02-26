@@ -370,6 +370,14 @@ screen main_menu():
 
     text "v [config.version]" size 45 xalign 1.0 yalign 1.0
 
+    if config.developer:
+        textbutton _("Image data"):
+            text_idle_color "#ffffff"
+            text_hover_color "#d3d3d3"
+            action ShowMenu("image_data_screen")
+            xalign 0.0
+            yalign 1.0
+
 style main_menu_frame:
     xsize 420
     yfill True

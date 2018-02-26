@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.1.2-0226
+------------
+* Added dev options
+* Removed two mockup images
+
 v 0.1.2-0223
 ------------
 * Fix IndexError in logic.rpy

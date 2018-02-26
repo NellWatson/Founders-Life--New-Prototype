@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.1.2-0223"
+define config.version = "0.1.2-0226"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -188,6 +188,7 @@ init python:
     build.classify('game/cache/**.**', None)
     build.classify('game/tl/**/**.**', None)
     build.classify('game/images/icon/**.**', None)
+    build.classify('game/dev_options.rpy', None)
 
     build.archive("scripts", "all")
     build.archive("images", "all")
