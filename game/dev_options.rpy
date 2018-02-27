@@ -1,5 +1,6 @@
 init python:
     from collections import OrderedDict
+    import json
 
     SORT_DATA = {
         "achievements": "Achivements",
@@ -32,6 +33,10 @@ init python:
             }
 
         return image_data
+
+    def write_data(image_data):
+        with open((renpy.game.basepath + "/image_data.json"), "a") as data:
+            data.write("{}\n".format(json.dumps(image_data)))
 
 screen image_data_screen():
     zorder 10
@@ -70,9 +75,9 @@ screen image_data_screen():
 
                     action SetScreenVariable("showing_image", path)
 
-    textbutton _("Return"):
+    textbutton _("Save"):
         text_color "#ffffff"
-        action Return()
+        action Function(write_data, image_data=data)
 
         xalign 1.0
         yalign 0.0
