@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+v 0.1.2-0512
+------------
+* Added Roadmap to main menu
+* Added Local Leaderboard
+* Fixed achievement not registering if "Let's go" button was clicked before the bar hit the end
+* Fixed an `IndexError` related to the events bucket
+* Moved Achievements to persistent to support roadmap
+* Clicked on "Reset Game" only deletes the save file now
+
 v 0.1.2-0226
 ------------
 * Added dev options

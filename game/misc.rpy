@@ -46,8 +46,6 @@ init python:
 
     def clear_user_data():
         renpy.unlink_save("custom")
-        persistent._clear()
-
         renpy.show_screen("inform", message="Game was successfully reset.")
 
 label after_load():

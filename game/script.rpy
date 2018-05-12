@@ -2,8 +2,7 @@ label start:
     $ calculate_pool()
     $ telemetry.init()
     $ telemetry.setup()
-
-    call _create_achievements from _call__create_achievements
+    $ persistent.trophy_shelf.check_unlock(founder_level)
 
     play music "music/ost002.mp3" fadein 1.5
     scene bg bedroom
@@ -18,6 +17,7 @@ label checkpoint:
     if productivity <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Productivity")
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
@@ -30,6 +30,7 @@ label checkpoint:
     elif energy <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Energy")
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [turn_no] days."
@@ -42,6 +43,7 @@ label checkpoint:
     elif morale <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Mindfulness")
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [turn_no] days."
@@ -54,6 +56,7 @@ label checkpoint:
     elif money <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Cashflow")
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
 
         play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [turn_no] days."
@@ -84,8 +87,8 @@ label checkpoint:
         call screen sprint_review(current_bg)
 
         # If we have seen the achievement button once, mark it so that the flashing doesn't happen again
-        if trophy_shelf.show_trophy_icon:
-            $ trophy_shelf.unseen = False
+        if persistent.trophy_shelf.show_trophy_icon:
+            $ persistent.trophy_shelf.unseen = False
 
         if turn_no == 28:
             $ current_episode += 1
@@ -97,6 +100,7 @@ label checkpoint:
 
             $ renpy.unlink_save("custom")
             $ telemetry.end("done")
+            $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
 
             n normal "Thank you for playing Chapter 1 of Founder Life."
             return

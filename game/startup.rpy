@@ -115,22 +115,22 @@ screen sprint_review(bg):
             hover_background Solid( Color("#d3d3d3").tint(0.5) )
             selected_background Solid( Color("#d3d3d3").shade(0.5) )
 
-            action [ Stop("bar_sound"), Return() ]
+            action [ Function(review.force_update), Stop("bar_sound"), Return() ]
 
             xalign 0.5
             yalign 0.99
 
-    if trophy_shelf.show_trophy_icon:
+    if persistent.trophy_shelf.show_trophy_icon:
         imagebutton:
             idle circular_buttons(80, "#ffffff", "gui/achievements/achievement.png")
             hover circular_buttons(80, "#dfdfdf", "gui/achievements/achievement.png")
 
-            action Show("achievement_screen", shelf=trophy_shelf)
+            action Show("achievement_screen", shelf=persistent.trophy_shelf)
 
             xalign 0.02
             yalign 0.02
 
-            if trophy_shelf.unseen:
+            if persistent.trophy_shelf.unseen:
                 at flash_zoom
 
 screen startup_review(bg):

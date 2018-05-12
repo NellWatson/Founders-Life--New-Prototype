@@ -78,6 +78,7 @@ init python:
             self.bar_range = 1
 
             self.bar_normalise = 0
+            self.show_achivement_popup = False
 
         def valuation(self, st, limit):
             header = "Startup Valuation: "
@@ -109,6 +110,20 @@ init python:
             else:
                 return Text(str(last_founder_level), color="#000000")
 
+        def force_update(self):
+            if self.show_achivement_popup:
+                self.founder_level += 1
+                self.check_ach()
+                self.show_achivement_popup = False
+
+        def check_ach(self):
+            # Check if there is an achievement associated with the level.
+            # If yes, unlock the achievement and show the notification.
+            unlocked_ach = persistent.trophy_shelf.check_unlock(self.founder_level)
+            if unlocked_ach:
+                renpy.show_screen("achievement_notify", title=unlocked_ach)
+                renpy.restart_interaction()
+
         def bar(self, st, limit):
             # Wait for 'st' time before starting to update the bar
             if st < limit:
@@ -125,6 +140,9 @@ init python:
                 self.bar_range = FOUNDER_INDEX[self.founder_level][1]
                 self.bar_value = self.founder_score
 
+                if self.founder_score + store.founder_score >= self.bar_range:
+                    self.show_achivement_popup = True
+
                 self.review_step = store.founder_score / (self.bar_update_anim * 20)
                 renpy.sound.play("sfx/fx010.wav", channel="bar_sound", loop=True)
 
@@ -135,12 +153,7 @@ init python:
                 self.bar_range = FOUNDER_INDEX[self.founder_level][1]
                 renpy.sound.play("sfx/fx011.wav")
 
-                # Check if there is an achievement associated with the level.
-                # If yes, unlock the achievement and show the notification.
-                unlocked_ach = trophy_shelf.check_unlock(self.founder_level)
-                if unlocked_ach:
-                    renpy.show_screen("achievement_notify", title=unlocked_ach)
-                    renpy.restart_interaction()
+                self.check_ach()
 
             # Update the bar
             if self.founder_score < self.total_founder_score:

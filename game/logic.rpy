@@ -52,7 +52,7 @@ init python:
                     _available_buckets.remove(last_event_bucket)
 
         # Remove empty buckets from the que
-        _available_buckets = [ x for x in _available_buckets if events_pool[x] ]
+        _available_buckets = [ x for x in _available_buckets if x in events_pool ]
 
         current_bucket = renpy.random.choice(_available_buckets)
         week_event_bucket_type.add(current_bucket)

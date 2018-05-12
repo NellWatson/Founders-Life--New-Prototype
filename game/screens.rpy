@@ -360,13 +360,22 @@ screen main_menu():
         yalign 0.025
 
     imagebutton:
+        idle "gui/mainmenu/roadmap.png"
+        hover "gui/mainmenu/roadmap_hover.png"
+
+        action ShowMenu("leaderboard_screen")
+
+        xalign 0.985
+        yalign 0.025
+
+    imagebutton:
         idle "gui/mainmenu/quit_idle.png"
         hover "gui/mainmenu/quit_hover.png"
 
         action Quit(confirm=False)
 
-        xalign 0.985
-        yalign 0.025
+        xalign 0.015
+        yalign 0.925
 
     text "v [config.version]" size 45 xalign 1.0 yalign 1.0
 
