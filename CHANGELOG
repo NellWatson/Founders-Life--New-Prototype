@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.1.3-0523
+------------
+* Fix IndexError crash.
+
 v 0.1.3-0512
 ------------
 * Added Roadmap to main menu
