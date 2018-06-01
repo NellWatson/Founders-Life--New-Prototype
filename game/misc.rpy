@@ -48,6 +48,40 @@ init python:
         renpy.unlink_save("custom")
         renpy.show_screen("inform", message="Game was successfully reset.")
 
+    def meets_condition(var, value, condition):
+        """
+        Checks if the condition is satisfied or not.
+
+        var : Name of the variable.
+        value : The value of the variable.
+        condition: Can be either "greater", "lesser", "equal", "greater_equal", "lesser_equal".
+        """
+
+        if ":affection" in var:
+            stored_value = characters_roster.get_affection(var.split(":")[0])
+        else:
+            stored_value = getattr(store, var)
+
+        if condition == "equal":
+            if stored_value == value:
+                return True
+        elif condition == "greater":
+            if stored_value > value:
+                return True
+        elif condition == "lesser":
+            if stored_value < value:
+                return True
+        elif condition == "greater_equal":
+            if stored_value >= value:
+                return True
+        elif condition == "lesser_equal":
+            if stored_value <= value:
+                return True
+        elif condition == "not":
+            if stored_value != value:
+                return True
+        return False
+
 label after_load():
     $ telemetry.resume()
 

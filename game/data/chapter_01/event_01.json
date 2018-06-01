@@ -1,0 +1,17 @@
+{
+    "id": "chapter_01_01",
+    "category": "energy",
+    "character": "eileen",
+    "condition": [],
+    "description": "Yada yada",
+    "yes_action": {
+        "productivity": 1,
+        "energy": 1,
+        "affection": 1
+    },
+    "no_action": {
+        "productivity": 1,
+        "energy": 1,
+        "affection": 1
+    }
+}

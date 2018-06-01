@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.1.4-0601
+------------
+* New Event engine.
+
 v 0.1.3-0523
 ------------
 * Fix IndexError crash.

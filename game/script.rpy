@@ -1,4 +1,11 @@
 label start:
+    $ characters_roster = CharacterRooster()
+    $ chapter_manager = ChapterManager()
+    
+    $ characters_roster.add_character("eileen", "Eileen", "e", "eileen")
+    $ chapter_manager.load_chapter("ch_01", "chapter_01")
+    $ chapter_manager.set_chapter("ch_01")
+
     $ calculate_pool()
     $ telemetry.init()
     $ telemetry.setup()
@@ -9,6 +16,26 @@ label start:
     # print renpy.display.core.scene_lists().get_all_displayables()
 
     jump event_intro
+    #jump week_event
+
+label week_event:
+    $ _event = chapter_manager.get_event()
+
+    show expression _event.character.sprite at center
+    menu:
+        _event.character.get_character_object "[_event.description]"
+
+        "$_YES":
+            $ variable("productivity", 10)
+            $ variable("energy", 10)
+            $ variable("morale", 10)
+
+        "$_NO":
+            $ variable("productivity", -10)
+            $ variable("energy", -10)
+            $ variable("morale", -10)
+
+    jump checkpoint
 
 label checkpoint:
     scene bg bedroom
