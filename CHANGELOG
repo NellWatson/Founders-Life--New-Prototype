@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.1.4-0605
+------------
+* Show end of week ceremony on game end.
+* Allow description field to take multiple stings for translation purposes.
+
 v 0.1.4-0601
 ------------
 * New Event engine.

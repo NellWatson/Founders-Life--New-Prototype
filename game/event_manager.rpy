@@ -7,7 +7,7 @@ init python:
             self.category = category
             self.character = characters_roster.get_character_object(character)
             self.condition = condition
-            self.description = description
+            self._description = description
             self.yes_action = yes_action
             self.no_action = no_action
             self.version = version
@@ -53,6 +53,10 @@ init python:
         def has_seen(self):
             return self.seen_on_day > -1
 
+        @property
+        def description(self):
+            return self._description["en"]
+
     class EventManager():
 
         def __init__(self, id):
@@ -75,7 +79,6 @@ init python:
         @property
         def run_event(self):
             available_events = self.available_events_this_week
-            print available_events
 
             if len(available_events) == 1:
                 chosen_event = available_events[0]

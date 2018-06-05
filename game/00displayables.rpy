@@ -66,7 +66,7 @@ init python:
             self.total_founder_score = 0
 
             # The old Founder Score of player
-            self.old_founder_score = 0
+            self.founder_score = 0
 
             # The step by which the bar should update
             self.review_step = 0

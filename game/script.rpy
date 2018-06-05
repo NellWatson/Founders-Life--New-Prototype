@@ -46,6 +46,9 @@ label checkpoint:
         $ telemetry.end("No Productivity")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
 
+        call screen startup_review(current_bg)
+        call screen sprint_review(current_bg)
+
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
         
@@ -58,6 +61,9 @@ label checkpoint:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Energy")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
+
+        call screen startup_review(current_bg)
+        call screen sprint_review(current_bg)
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [turn_no] days."
@@ -72,6 +78,9 @@ label checkpoint:
         $ telemetry.end("No Mindfulness")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
 
+        call screen startup_review(current_bg)
+        call screen sprint_review(current_bg)
+
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [turn_no] days."
         
@@ -84,6 +93,9 @@ label checkpoint:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Cashflow")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
+
+        call screen startup_review(current_bg)
+        call screen sprint_review(current_bg)
 
         play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [turn_no] days."
