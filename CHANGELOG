@@ -3,6 +3,7 @@ CHANGELOG
 
 v 0.1.4-0713
 ------------
+* Allow events to have multi-line descriptions (Closes #136)
 
 v 0.1.4-0605
 ------------
