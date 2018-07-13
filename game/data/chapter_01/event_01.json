@@ -8,7 +8,7 @@
         ["productivity", 10, "less"]
     ],
     "description": {
-        "en": "Yada yada"
+        "en": ["Yada yada"]
     },
     "yes_action": {
         "productivity": 1,

@@ -14,6 +14,9 @@ init python:
 
             self.seen_on_day = -1
             self.chose_action = None
+            self.last_description_no = -1
+
+            self.current_language = "en"
 
         def mark_as_seen(self):
             self.seen_on_day = store.turn_no
@@ -55,7 +58,20 @@ init python:
 
         @property
         def description(self):
-            return self._description["en"]
+            self.last_description_no += 1
+            return self._description[self.current_language][self.last_description_no]
+
+        @property
+        def last_description(self):
+            return self._description[self.current_language][-1]
+
+        @property
+        def has_multiple_description(self):
+            return len(self._description[self.current_language]) > 1
+
+        @property
+        def seeing_last_description(self):
+            return self.last_description_no + 1 == len(self._description[self.current_language])
 
     class EventManager():
 

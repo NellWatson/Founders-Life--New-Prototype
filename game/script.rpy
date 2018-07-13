@@ -22,8 +22,13 @@ label week_event:
     $ _event = chapter_manager.get_event()
 
     show expression _event.character.sprite at center
+    
+    if _event.has_multiple_description:
+        while not _event.seeing_last_description:
+            _event.character.get_character_object "[_event.description]"
+
     menu:
-        _event.character.get_character_object "[_event.description]"
+        _event.character.get_character_object "[_event.last_description]"
 
         "$_YES":
             $ variable("productivity", 10)

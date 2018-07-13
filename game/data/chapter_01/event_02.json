@@ -4,7 +4,7 @@
     "character": "eileen",
     "condition": [],
     "description": {
-        "en": "Yada yada"
+        "en": ["Yada yada", "Yada yada #2", "Yada yada #3"]
     },
     "yes_action": {
         "productivity": 1,
