@@ -1,0 +1,375 @@
+#ChapterOne Events Pt 1
+
+
+#Intro Events
+
+
+
+#Announcement
+
+###This should be the first event to take place
+##For the events that just involve the PC, either no character, Nell, or the PC themselves can present it.
+##Similarly, can have a brief scene if player says "Yes" of giving that info to Skylar.
+{
+    "id": "chapter_01_01",
+    "category": "productivity",
+    "character": "none",
+    "condition": [
+        ["turn_no", 1, "greater"],
+    ],
+    "description": {
+        "en": "You've decided to become an entrepreneur. Would you like to officially announce this to friends and family?"
+    },
+    "yes_action": {
+        "productivity": 10,
+        "mindfulness": -5,
+    },
+    "no_action": {
+        "productivity": -10,
+        "mindfulness": 0,
+    }
+}
+
+##2. Support
+{
+    "id": "chapter_01_05",
+    "category": "mindfulness",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 2, "greater"],
+        ["turn_no", 4, "lesser"],
+    ],
+    "description": {
+        "en": "I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."
+    },
+    "yes_action": {
+        "productivity": +10,
+        "mindfulness": +10,
+        "energy": +10,
+    },
+    "no_action": {
+        "productivity": +10,
+        "mindfulness": +10,
+        "energy": +10,
+    }
+}
+
+
+#Skylar/SO Events
+
+
+##1. Someone to talk to
+{
+    "id": "chapter_01_02",
+    "category": "mindfulness",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 1, "greater"],
+    ],
+    "description": {
+        "en": "Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."
+    },
+    "yes_action": {
+        "productivity": -15,
+        "mindfulness": +10,
+        "affection": +1
+    },
+    "no_action": {
+        "productivity": +15,
+        "mindfulness": -10,
+        "affection": -1
+    }
+}
+
+
+
+##2. Date Night
+{
+    "id": "chapter_01_03",
+    "category": "productivity",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 7, "greater"],
+    ],
+    "description": {
+        "en": "Hey, honey! It's time for our date! Are you ready to go?"
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": +10,
+        "energy": -10,
+        "money": -100,
+        "affection": +1
+    },
+    "no_action": {
+        "productivity": +10,
+        "affection": -1
+    }
+}
+
+
+##3. Ignoring
+{
+    "id": "chapter_01_04",
+    "category": "mindfulness",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 14, "greater"],
+    ],
+    "description": {
+        "en": "#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 0,
+        "energy": -20,
+        "affection": +1
+    },
+    "no_action": {
+        "productivity": +10,
+        "mindfulness": -20,
+        "energy": -10
+        "affection": -1
+    }
+}
+
+##4. Support
+{
+    "id": "chapter_01_06",
+    "category": "mindfulness",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 2, "greater"],
+        ["turn_no", 4, "lesser"],
+    ],
+    "description": {
+        "en": "I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."
+    },
+    "yes_action": {
+        "productivity": +10,
+        "mindfulness": +10,
+        "energy": +10,
+    },
+    "no_action": {
+        "productivity": +10,
+        "mindfulness": +10,
+        "energy": +10,
+    }
+}
+
+#Takashi Events
+
+
+#1. Friendship
+
+{
+    "id": "chapter_01_07",
+    "category": "productivity",
+    "character": "takashi",
+    "condition": [
+        ["turn_no", 1, "greater"],
+    ],
+    "description": {
+        "en": "So you're trying to start up your own business? That's awesome! Hey, come on down to the café for a break. I want to hear all about it!"
+    },
+    "yes_action": {
+        "productivity": -15,
+        "energy": +5,
+        "mindfulness": +10,
+        "money": -50,
+        "affection": +1
+    },
+    "no_action": {
+        "productivity": +15,
+        "energy": 0,
+        "mindfulness": 0,
+        "affection": -1
+    }
+}
+
+#2. Movies
+{
+    "id": "chapter_01_08",
+    "category": "productivity",
+    "character": "takashi",
+    "condition": [
+        ["turn_no", 10, "greater"],
+    ],
+    "description": {
+        "en": "Did you hear?! They made a movie out of that old TV-show we were obsessed with in elementary school! We have to go to the premiere tonight."
+    },
+    "yes_action": {
+        "productivity": -20,
+        "energy": -20,
+        "mindfulness": +10,
+        "money": -50,
+        "affection": +1
+    },
+    "no_action": {
+        "productivity": +10,
+        "energy": 0,
+        "mindfulness": -5,
+        "affection": -1
+    }
+}
+
+
+#3. Rager
+{
+    "id": "chapter_01_09",
+    "category": "productivity",
+    "character": "takashi",
+    "condition": [
+        ["turn_no", 14, "greater"],
+    ],
+    "description": {
+        "en": "It's my birthdaaaay! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."
+    },
+    "yes_action": {
+        "productivity": -30,
+        "energy": -20,
+        "mindfulness": +5,
+        "money": -200,
+        "affection": +1
+    },
+    "no_action": {
+        "productivity": +10,
+        "energy": 0,
+        "mindfulness": -10,
+        "affection": -1
+    }
+}
+
+
+#4. Disappointment
+{
+    "id": "chapter_01_10",
+    "category": "mindfulness",
+    "character": "takashi",
+    "condition": [
+        ["takashi:affection", 3, "lesser"],
+        ["turn_no", 20, "greater"],
+    ],
+    "description": {
+        "en": "Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You're gonna have to step it up, okay?"
+    },
+    "yes_action": {
+        "mindfulness": -20
+    },
+    "no_action": {
+        "mindfulness": -20
+    }
+}
+
+
+#Solo Events
+
+#Planning
+{
+    "id": "chapter_01_11",
+    "category": "productivity",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"],
+    ],
+    "description": {
+        "en": "It's been a few days, but you haven't made much headway on your project. Spend tonight planning the rest of the week?"
+    },
+    "yes_action": {
+        "productivity": 30,
+        "energy": -10
+    },
+    "no_action": {
+        "productivity": -10,
+        "mindfulness": 0,
+    }
+}
+
+#Roger
+{
+    "id": "chapter_01_12",
+    "category": "productivity",
+    "character": "roger",
+    "condition": [
+        ["turn_no", 20, "greater"],
+    ],
+    "description": {
+        "en": "Today, your boss Roger slammed an extra two assignments, due today, on your desk, saying it 'seemed like you weren't getting enough work.' This has left you too tired to work tonight."
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10
+        "mindfulness": -10
+    },
+    "no_action": {
+        "productivity": -10,
+        "energy": -10
+        "mindfulness": -10
+    }
+}
+
+#Productivity App
+{
+    "id": "chapter_01_13",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"],
+    ],
+    "description": {
+        "en": "You've stumbled across an app suite that seems like it'll help your productivity. Organized checklists and calendar events dance in front of your eyes. Buy it and give it a shot?"
+    },
+    "yes_action": {
+        "productivity": +10,
+        "money": -100
+    },
+    "no_action": {
+        "productivity": 0,
+        "money": 0
+    }
+}
+
+#Classes
+{
+    "id": "chapter_01_14",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"],
+    ],
+    "description": {
+        "en": "Now that you're trying to make your own products, you're realizing there's a lot of skills you don't have. Invest in an online course to gain those skills?"
+    },
+    "yes_action": {
+        "productivity": +50,
+        "money": -500
+    },
+    "no_action": {
+        "productivity": 0,
+        "money": 0
+    }
+}
+
+#Taking Breaks
+{
+    "id": "chapter_01_15",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"],
+        ["mindfulness", 30, "lesser"]
+    ],
+    "description": {
+        "en": "You're trying to get work done tonight, but you're feeling restless, listless, and a little despondent. Take a break?"
+    },
+    "yes_action": {
+        "productivity": +10,
+        "mindfulness": +20,
+        "energy": +10
+    },
+    "no_action": {
+        "productivity": +10,
+        "mindfulness": -15,
+        "energy": -20
+    }
+}
