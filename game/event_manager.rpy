@@ -42,6 +42,7 @@ init python:
                 if meets_condition(*condition):
                     continue
                 return False
+            return True
 
         @property
         def yes(self):
@@ -108,8 +109,9 @@ init python:
         def available_events_this_week(self):
             _temp_list = []
             for id in self.store:
-                # If any event needs to be played this turn, play it
-                if self.store[id].play_on-1 == self.events_seen:
+                # If any event needs to be played this turn, play it.
+                # Also makes sure that if there are any conditions, they are satisfied.
+                if self.store[id].play_on-1 == self.events_seen and self.store[id].can_run:
                     return [id]
 
                 if self.store[id].can_run:
