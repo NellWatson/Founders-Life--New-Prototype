@@ -18,7 +18,7 @@
         ["turn_no", 1, "greater"],
     ],
     "description": {
-        "en": "You've decided to become an entrepreneur. Would you like to officially announce this to friends and family?"
+        "en": ["You've decided to become an entrepreneur. Would you like to officially announce this to friends and family?"]
     },
     "yes_action": {
         "productivity": 10,
@@ -40,7 +40,7 @@
         ["turn_no", 4, "lesser"],
     ],
     "description": {
-        "en": "I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."
+        "en": ["I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."]
     },
     "yes_action": {
         "productivity": +10,
@@ -67,7 +67,7 @@
         ["turn_no", 1, "greater"],
     ],
     "description": {
-        "en": "Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."
+        "en": ["Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."]
     },
     "yes_action": {
         "productivity": -15,
@@ -92,7 +92,7 @@
         ["turn_no", 7, "greater"],
     ],
     "description": {
-        "en": "Hey, honey! It's time for our date! Are you ready to go?"
+        "en": ["Hey, honey! It's time for our date! Are you ready to go?"]
     },
     "yes_action": {
         "productivity": -10,
@@ -117,7 +117,7 @@
         ["turn_no", 14, "greater"],
     ],
     "description": {
-        "en": "#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."
+        "en": ["#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
     },
     "yes_action": {
         "productivity": -10,

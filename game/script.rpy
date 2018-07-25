@@ -2,6 +2,7 @@ label start:
     $ characters_roster = CharacterRooster()
     $ chapter_manager = ChapterManager()
     
+    $ characters_roster.add_character("none", "Nell", "n", None)
     $ characters_roster.add_character("eileen", "Eileen", "e", "eileen")
     $ chapter_manager.load_chapter("ch_01", "chapter_01")
     $ chapter_manager.set_chapter("ch_01")
@@ -21,7 +22,8 @@ label start:
 label week_event:
     $ _event = chapter_manager.get_event()
 
-    show expression _event.character.sprite at center
+    if _event.character.sprite:
+        show expression _event.character.sprite at center
     
     if _event.has_multiple_description:
         while not _event.seeing_last_description:

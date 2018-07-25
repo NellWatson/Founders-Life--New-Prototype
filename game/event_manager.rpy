@@ -2,7 +2,7 @@ init python:
 
     class Event():
 
-        def __init__(self, id, category, character, condition, description, yes_action, no_action, version="1"):
+        def __init__(self, id, category, character, condition, description, yes_action, no_action, play_on=0, version="1"):
             self.id = id
             self.category = category
             self.character = characters_roster.get_character_object(character)
@@ -10,6 +10,7 @@ init python:
             self._description = description
             self.yes_action = yes_action
             self.no_action = no_action
+            self.play_on = play_on
             self.version = version
 
             self.seen_on_day = -1
@@ -79,6 +80,7 @@ init python:
             self.id = id
             self.store = {}
 
+            self.events_seen = 0
             self.all_categories = []
             self.last_event_category = None
             self.last_version = ""
@@ -106,6 +108,10 @@ init python:
         def available_events_this_week(self):
             _temp_list = []
             for id in self.store:
+                # If any event needs to be played this turn, play it
+                if self.store[id].play_on-1 == self.events_seen:
+                    return [id]
+
                 if self.store[id].can_run:
                     _temp_list.append(id)
 

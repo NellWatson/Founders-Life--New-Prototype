@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.1.4-0725
+------------
+* Allow events to be played on specific turns in a chapter.
+* In events where there is no character, show Nell.
+
 v 0.1.4-0713
 ------------
 * Allow events to have multi-line descriptions (Closes #136)

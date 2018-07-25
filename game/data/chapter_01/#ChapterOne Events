@@ -14,11 +14,8 @@
     "id": "chapter_01_01",
     "category": "productivity",
     "character": "none",
-    "condition": [
-        ["turn_no", 1, "greater"],
-    ],
     "description": {
-        "en": "You've decided to become an entrepreneur. Would you like to officially announce this to friends and family?"
+        "en": ["You've decided to become an entrepreneur. Would you like to officially announce this to friends and family?"]
     },
     "yes_action": {
         "productivity": 10,
@@ -27,7 +24,8 @@
     "no_action": {
         "productivity": -10,
         "mindfulness": 0,
-    }
+    },
+    "play_on": 1
 }
 
 ##2. Support
@@ -40,7 +38,7 @@
         ["turn_no", 4, "lesser"],
     ],
     "description": {
-        "en": "I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."
+        "en": ["I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."]
     },
     "yes_action": {
         "productivity": +10,
@@ -67,7 +65,7 @@
         ["turn_no", 1, "greater"],
     ],
     "description": {
-        "en": "Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."
+        "en": ["Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."]
     },
     "yes_action": {
         "productivity": -15,
@@ -92,7 +90,7 @@
         ["turn_no", 7, "greater"],
     ],
     "description": {
-        "en": "Hey, honey! It's time for our date! Are you ready to go?"
+        "en": ["Hey, honey! It's time for our date! Are you ready to go?"]
     },
     "yes_action": {
         "productivity": -10,
@@ -117,7 +115,7 @@
         ["turn_no", 14, "greater"],
     ],
     "description": {
-        "en": "#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."
+        "en": ["#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
     },
     "yes_action": {
         "productivity": -10,
@@ -143,7 +141,7 @@
         ["turn_no", 4, "lesser"],
     ],
     "description": {
-        "en": "I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."
+        "en": ["I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."]
     },
     "yes_action": {
         "productivity": +10,
@@ -170,7 +168,7 @@
         ["turn_no", 1, "greater"],
     ],
     "description": {
-        "en": "So you're trying to start up your own business? That's awesome! Hey, come on down to the café for a break. I want to hear all about it!"
+        "en": ["So you're trying to start up your own business? That's awesome! Hey, come on down to the café for a break. I want to hear all about it!"]
     },
     "yes_action": {
         "productivity": -15,
@@ -196,7 +194,7 @@
         ["turn_no", 10, "greater"],
     ],
     "description": {
-        "en": "Did you hear?! They made a movie out of that old TV-show we were obsessed with in elementary school! We have to go to the premiere tonight."
+        "en": ["Did you hear?! They made a movie out of that old TV-show we were obsessed with in elementary school! We have to go to the premiere tonight."]
     },
     "yes_action": {
         "productivity": -20,
@@ -223,7 +221,7 @@
         ["turn_no", 14, "greater"],
     ],
     "description": {
-        "en": "It's my birthdaaaay! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."
+        "en": ["It's my birthdaaaay! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."]
     },
     "yes_action": {
         "productivity": -30,
@@ -251,7 +249,7 @@
         ["turn_no", 20, "greater"],
     ],
     "description": {
-        "en": "Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You're gonna have to step it up, okay?"
+        "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You're gonna have to step it up, okay?"]
     },
     "yes_action": {
         "mindfulness": -20
@@ -273,7 +271,7 @@
         ["turn_no", 4, "greater"],
     ],
     "description": {
-        "en": "It's been a few days, but you haven't made much headway on your project. Spend tonight planning the rest of the week?"
+        "en": ["It's been a few days, but you haven't made much headway on your project. Spend tonight planning the rest of the week?"]
     },
     "yes_action": {
         "productivity": 30,
@@ -294,7 +292,7 @@
         ["turn_no", 20, "greater"],
     ],
     "description": {
-        "en": "Today, your boss Roger slammed an extra two assignments, due today, on your desk, saying it 'seemed like you weren't getting enough work.' This has left you too tired to work tonight."
+        "en": ["Today, your boss Roger slammed an extra two assignments, due today, on your desk, saying it 'seemed like you weren't getting enough work.' This has left you too tired to work tonight."]
     },
     "yes_action": {
         "productivity": -10,
@@ -317,7 +315,7 @@
         ["turn_no", 4, "greater"],
     ],
     "description": {
-        "en": "You've stumbled across an app suite that seems like it'll help your productivity. Organized checklists and calendar events dance in front of your eyes. Buy it and give it a shot?"
+        "en": ["You've stumbled across an app suite that seems like it'll help your productivity. Organized checklists and calendar events dance in front of your eyes. Buy it and give it a shot?"]
     },
     "yes_action": {
         "productivity": +10,
@@ -338,7 +336,7 @@
         ["turn_no", 4, "greater"],
     ],
     "description": {
-        "en": "Now that you're trying to make your own products, you're realizing there's a lot of skills you don't have. Invest in an online course to gain those skills?"
+        "en": ["Now that you're trying to make your own products, you're realizing there's a lot of skills you don't have. Invest in an online course to gain those skills?"]
     },
     "yes_action": {
         "productivity": +50,
@@ -360,7 +358,7 @@
         ["mindfulness", 30, "lesser"]
     ],
     "description": {
-        "en": "You're trying to get work done tonight, but you're feeling restless, listless, and a little despondent. Take a break?"
+        "en": ["You're trying to get work done tonight, but you're feeling restless, listless, and a little despondent. Take a break?"]
     },
     "yes_action": {
         "productivity": +10,
