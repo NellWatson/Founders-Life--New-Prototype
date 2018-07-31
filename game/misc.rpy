@@ -56,6 +56,9 @@ init python:
         value : The value of the variable.
         condition: Can be either "greater", "lesser", "equal", "greater_equal", "lesser_equal".
         """
+            
+        if var == "mindfulness":
+            var = "morale"
 
         if ":affection" in var:
             stored_value = characters_roster.get_affection(var.split(":")[0])

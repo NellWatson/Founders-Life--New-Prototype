@@ -1,0 +1,22 @@
+{
+    "id": "chapter_01_07",
+    "category": "productivity",
+    "character": "takashi",
+    "condition": [
+        ["turn_no", 1, "greater"]
+    ],
+    "description": {
+        "en": ["So you're trying to start up your own business? That's awesome! Hey, come on down to the café for a break. I want to hear all about it!"]
+    },
+    "yes_action": {
+        "productivity": -15,
+        "energy": 5,
+        "mindfulness": 10,
+        "money": -50,
+        "affection": 1
+    },
+    "no_action": {
+        "productivity": 15,
+        "affection": -1
+    }
+}

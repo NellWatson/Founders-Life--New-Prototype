@@ -1,0 +1,21 @@
+{
+    "id": "chapter_01-02_02",
+    "category": "mindfulness",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 1, "greater"]
+    ],
+    "description": {
+        "en": ["Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."]
+    },
+    "yes_action": {
+        "productivity": -15,
+        "mindfulness": 10,
+        "affection": 1
+    },
+    "no_action": {
+        "productivity": 15,
+        "mindfulness": -10,
+        "affection": -1
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "id": "chapter_01_11",
+    "category": "productivity",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"]
+    ],
+    "description": {
+        "en": ["It's been a few days, but you haven't made much headway on your project. Spend tonight planning the rest of the week?"]
+    },
+    "yes_action": {
+        "productivity": 30,
+        "energy": -10
+    },
+    "no_action": {
+        "productivity": -10
+    }
+}

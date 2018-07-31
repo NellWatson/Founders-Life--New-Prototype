@@ -1,0 +1,22 @@
+{
+    "id": "chapter_01-02_03",
+    "category": "productivity",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 7, "greater"]
+    ],
+    "description": {
+        "en": ["Hey, honey! It's time for our date! Are you ready to go?"]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10,
+        "energy": -10,
+        "money": -100,
+        "affection": 1
+    },
+    "no_action": {
+        "productivity": 10,
+        "affection": -1
+    }
+}

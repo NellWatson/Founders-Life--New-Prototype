@@ -1,9 +1,12 @@
 {
-    "id": "chapter_01_01",
+    "id": "chapter_01_16",
     "category": "productivity",
     "character": "none",
+    "condition": [
+        ["turn_no", 1, "greater"]
+    ],
     "description": {
-        "en": ["You've decided to become an entrepreneur. Would you like to officially announce this to friends and family?"]
+        "en": ["You've decided to become an entrepreneur. Would you like to officially announce this to friends and family? (repeat event)"]
     },
     "yes_action": {
         "productivity": 10,
@@ -12,6 +15,5 @@
     "no_action": {
         "productivity": -10,
         "mindfulness": 0
-    },
-    "play_on": 1
+    }
 }

@@ -1,0 +1,21 @@
+{
+    "id": "chapter_01_12",
+    "category": "productivity",
+    "character": "roger",
+    "condition": [
+        ["turn_no", 20, "greater"]
+    ],
+    "description": {
+        "en": ["Today, your boss Roger slammed an extra two assignments, due today, on your desk, saying it 'seemed like you weren't getting enough work.' This has left you too tired to work tonight."]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "productivity": -10,
+        "energy": -10,
+        "mindfulness": -10
+    }
+}

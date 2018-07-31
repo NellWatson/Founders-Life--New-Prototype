@@ -1,0 +1,16 @@
+{
+    "id": "chapter_01_13",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"]
+    ],
+    "description": {
+        "en": ["You've stumbled across an app suite that seems like it'll help your productivity. Organized checklists and calendar events dance in front of your eyes. Buy it and give it a shot?"]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "money": -100
+    },
+    "no_action": {}
+}

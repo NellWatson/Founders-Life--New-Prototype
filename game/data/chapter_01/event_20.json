@@ -1,0 +1,22 @@
+{
+    "id": "chapter_01-02_04",
+    "category": "mindfulness",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 14, "greater"]
+    ],
+    "description": {
+        "en": ["#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -20,
+        "affection": 1
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -20,
+        "energy": -10,
+        "affection": -1
+    }
+}

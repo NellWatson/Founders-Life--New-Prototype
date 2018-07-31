@@ -20,11 +20,15 @@ image side carla = "images/contacts/carla.png"
 image side dominique = "images/contacts/dominique.png"
 image side eileen = "images/contacts/eileen.png"
 image side raquel = "images/contacts/raquel.png"
+image side none = "images/contacts/none.png"
 
 image carla = Transform(Placeholder("boy"), yoffset=94)
 image dominique = Transform(Placeholder("boy"), yoffset=94)
 image eileen = Transform(Placeholder("girl"), yoffset=58)
 image raquel = Transform(Placeholder("boy"), yoffset=94)
+image skylar = Transform(Placeholder("girl"), yoffset=58)
+image takashi = Transform(Placeholder("boy"), yoffset=94)
+image roger = Transform(Placeholder("boy"), yoffset=94)
 
 image input_caret:
     Text("|")

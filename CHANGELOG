@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.1.4-0731
+------------
+* Switch on the new event engine (old event data and code is still retained)
+* Give a default sprite to None events.
+
 v 0.1.4-0725
 ------------
 * Allow events to be played on specific turns in a chapter.

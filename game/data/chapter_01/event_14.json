@@ -1,0 +1,16 @@
+{
+    "id": "chapter_01_14",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"]
+    ],
+    "description": {
+        "en": ["Now that you're trying to make your own products, you're realizing there's a lot of skills you don't have. Invest in an online course to gain those skills?"]
+    },
+    "yes_action": {
+        "productivity": 50,
+        "money": -500
+    },
+    "no_action": {}
+}

@@ -1,0 +1,22 @@
+{
+    "id": "chapter_01_15",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"],
+        ["mindfulness", 30, "lesser"]
+    ],
+    "description": {
+        "en": ["You're trying to get work done tonight, but you're feeling restless, listless, and a little despondent. Take a break?"]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "mindfulness": 20,
+        "energy": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -15,
+        "energy": -20
+    }
+}

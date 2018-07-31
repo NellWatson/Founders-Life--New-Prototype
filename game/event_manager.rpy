@@ -2,7 +2,7 @@ init python:
 
     class Event():
 
-        def __init__(self, id, category, character, condition, description, yes_action, no_action, play_on=0, version="1"):
+        def __init__(self, id, category, character, description, yes_action, no_action, condition=[], play_on=0, repeatable=True, version="1"):
             self.id = id
             self.category = category
             self.character = characters_roster.get_character_object(character)
@@ -12,6 +12,7 @@ init python:
             self.no_action = no_action
             self.play_on = play_on
             self.version = version
+            self.repeatable = repeatable
 
             self.seen_on_day = -1
             self.chose_action = None
@@ -25,6 +26,8 @@ init python:
         def run_action(self, action_list):
             self.mark_as_seen()
             for name, value in action_list.items():
+                if name == "mindfulness":
+                    name = "morale"
                 if name == "affection":
                     self.character.affection += value
                 else:
@@ -32,6 +35,9 @@ init python:
 
         @property
         def can_run(self):
+            if self.play_on and self.play_on != store.turn_no:
+                return False
+
             if self.has_seen:
                 return False
 
@@ -56,7 +62,10 @@ init python:
 
         @property
         def has_seen(self):
-            return self.seen_on_day > -1
+            if self.repeatable:
+                return self.seen_on_day > -1 and int(self.seen_on_day / 7) == int(store.turn_no / 7)
+            else:
+                return self.seen_on_day > -1
 
         @property
         def description(self):
@@ -102,7 +111,9 @@ init python:
             if len(available_events) == 1:
                 chosen_event = available_events[0]
             else:
-                chosen_event = renpy.random.choice(self.available_events_this_week)
+                print available_events
+                chosen_event = renpy.random.choice(available_events)
+            print chosen_event
             return self.store[chosen_event]
 
         @property
@@ -111,12 +122,10 @@ init python:
             for id in self.store:
                 # If any event needs to be played this turn, play it.
                 # Also makes sure that if there are any conditions, they are satisfied.
-                if self.store[id].play_on-1 == self.events_seen and self.store[id].can_run:
-                    return [id]
-
                 if self.store[id].can_run:
+                    if self.store[id].play_on-1 == store.turn_no:
+                        return [id]
                     _temp_list.append(id)
-
             return _temp_list
 
     class ChapterManager():
