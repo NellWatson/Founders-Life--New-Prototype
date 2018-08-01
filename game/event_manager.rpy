@@ -70,11 +70,11 @@ init python:
         @property
         def description(self):
             self.last_description_no += 1
-            return self._description[self.current_language][self.last_description_no]
+            return self._description[self.current_language][self.last_description_no].replace("#NAME", store.founder_name)
 
         @property
         def last_description(self):
-            return self._description[self.current_language][-1]
+            return self._description[self.current_language][-1].replace("#NAME", store.founder_name)
 
         @property
         def has_multiple_description(self):
