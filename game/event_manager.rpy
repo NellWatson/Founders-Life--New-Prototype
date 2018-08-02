@@ -2,7 +2,7 @@ init python:
 
     class Event():
 
-        def __init__(self, id, category, character, description, yes_action, no_action, condition=[], play_on=0, repeatable=True, version="1"):
+        def __init__(self, id, category, character, description, yes_action, no_action, condition=[], play_on=0, repeatable=False, version="1"):
             self.id = id
             self.category = category
             self.character = characters_roster.get_character_object(character)
@@ -111,9 +111,7 @@ init python:
             if len(available_events) == 1:
                 chosen_event = available_events[0]
             else:
-                print available_events
                 chosen_event = renpy.random.choice(available_events)
-            print chosen_event
             return self.store[chosen_event]
 
         @property

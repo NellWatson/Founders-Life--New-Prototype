@@ -1,9 +1,14 @@
 CHANGELOG
 =========
 
+v 0.1.5-0802
+------------
+* Fix Event ID not showing.
+* Stop repeating of events.
+
 v 0.1.5-0801
 ------------
-* Replace #NAME with founder name
+* Replace #NAME with founder name.
 
 v 0.1.4-0731
 ------------
