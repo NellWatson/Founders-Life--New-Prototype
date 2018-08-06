@@ -12,7 +12,7 @@ init python:
             """
 
             if isinstance(j, unicode):
-                j = j.encode("utf-8")
+                j = j.encode("utf-8").replace("\xc3\xa9", "é")
 
                 if j == u"True":
                     j = True

@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.1.5-0806
+------------
+* Properly decode 'é'.
+
 v 0.1.5-0802
 ------------
 * Fix Event ID not showing.
