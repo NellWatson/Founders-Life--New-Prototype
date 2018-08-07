@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.1.5-0807
+------------
+* Show KPI bar values in developer mode.
+
 v 0.1.5-0806
 ------------
 * Properly decode 'é'.

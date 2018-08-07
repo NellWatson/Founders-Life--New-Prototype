@@ -41,16 +41,24 @@ init python:
                 self.review_step = 0
 
             self.last_value = current
+            v = int(v)
 
             if self.delta or current <= 10:
                 if not self.sound_played and current <= 10:
                     self.sound_played = True
                     renpy.sound.play("sfx/fx007.wav")
 
-                return At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash)
+                if config.developer:
+                    return Fixed(At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash), Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18), xfit=True, yfit=True)
+                else:
+                    return At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash)
             else:
-                self.sound_played = False
-                return Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties)
+                self.sound_played = False   
+
+                if config.developer:
+                    return Fixed(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18), xfit=True, yfit=True)
+                else:
+                    return Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties)
 
     class ReviewB():
 
