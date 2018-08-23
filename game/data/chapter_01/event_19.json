@@ -1,22 +1,21 @@
 {
-    "id": "chapter_01-02_03",
-    "category": "productivity",
+    "id": "chapter_01_19",
+    "category": "energy",
     "character": "skylar",
     "condition": [
-        ["turn_no", 7, "greater"]
+        ["turn_no", 14, "greater"]
     ],
     "description": {
-        "en": ["Hey, honey! It's time for our date! Are you ready to go?"]
+        "en": ["#NAME, you promised you would go rock-climbing with me tonight! I know you're tired, but you always keep your promises. Are you ready to go?"]
     },
     "yes_action": {
-        "productivity": -10,
-        "mindfulness": 10,
-        "energy": -10,
-        "money": -100,
+        "productivity": -20,
+        "energy": -30,
         "affection": 1
     },
     "no_action": {
         "productivity": 10,
+        "mindfulness": -20,
         "affection": -1
     }
 }

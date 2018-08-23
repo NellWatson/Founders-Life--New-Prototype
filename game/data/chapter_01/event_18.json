@@ -1,21 +1,25 @@
 {
-    "id": "chapter_01-02_02",
+    "id": "chapter_01_18",
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
-        ["turn_no", 1, "greater"]
+        ["turn_no", 3, "greater"],
+        ["turn_no", 7, "lesser"]
     ],
     "description": {
-        "en": ["Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."]
+        "en": [
+            "Honey... can we talk? The thing is, you never gave me a chance to agree to you trying to have a startup. But this affects me as well - if you quit your job and this doesn't pan out, we'll be living off of my income.",
+            "I know we've only been dating for eight months, so it's hard for me to say this. It makes our relationship so serious. But we do live together. And if we're going to be together long-term, what you do affects me, and what I do affects you.",
+            "I'm trying my hardest to be supportive of your dream, but... this isn't something you should've approached as if I don't exist. I just wanted you to know that.",
+            "If you work hard, then I'll try my hardest, too. But cut me some slack as well, okay?"
+        ]
     },
     "yes_action": {
-        "productivity": -15,
-        "mindfulness": 10,
+        "mindfulness": 20,
         "affection": 1
     },
     "no_action": {
-        "productivity": 15,
-        "mindfulness": -10,
+        "mindfulness": -20,
         "affection": -1
     }
 }

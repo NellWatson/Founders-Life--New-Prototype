@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.1.5-0823
+------------
+* Updated Events.
+
 v 0.1.5-0807
 ------------
 * Show KPI bar values in developer mode.

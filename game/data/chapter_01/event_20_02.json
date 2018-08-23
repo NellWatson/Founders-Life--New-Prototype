@@ -1,0 +1,20 @@
+{
+    "id": "chapter_01_20_02",
+    "category": "mindfulness",
+    "character": "none",
+    "condition": [
+        ["turn_no", 14, "greater"],
+        ["mindfulness", 69, "lesser"]
+    ],
+    "description": {
+        "en": ["The power goes out just as you're about to save your work for today. Although you know you should sit down and get back to work, you're too angry to bother. Instead you turn in early for the night."]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10
+    },
+    "no_action": {
+        "productivity": -10,
+        "energy": -10
+    }
+}

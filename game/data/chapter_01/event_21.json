@@ -1,0 +1,21 @@
+{
+    "id": "chapter_01_21",
+    "category": "energy",
+    "character": "none",
+    "condition": [
+        ["turn_no", 1, "greater"]
+    ],
+    "description": {
+        "en": ["You read online that exercise helps with productivity, mood, and energy, but are worried that taking an extra hour out of your day will harm how much you can get done. Become a member at your local gym?"]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10,
+        "energy": -5,
+        "money": -100
+    },
+    "no_action": {
+        "productivity": 5,
+        "energy": -10
+    }
+}

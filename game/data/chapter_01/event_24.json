@@ -1,0 +1,22 @@
+{
+    "id": "chapter_01_24",
+    "category": "energy",
+    "character": "skylar",
+    "condition": [
+        ["energy", 50, "lesser"]
+    ],
+    "description": {
+        "en": ["Yeesh, you look tired. How about we go to the spa together? I know it might be a little weird, but I promise it'll completely relax you!"]
+    },
+    "yes_action": {
+        "productivity": -20,
+        "mindfulness": 10,
+        "energy": 20,
+        "money": -100
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -5,
+        "energy": -10
+    }
+}

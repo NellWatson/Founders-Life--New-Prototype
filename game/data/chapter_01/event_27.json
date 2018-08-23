@@ -1,0 +1,21 @@
+{
+    "id": "chapter_01_27",
+    "category": "energy",
+    "character": "skylar",
+    "condition": [
+        ["turn_no", 14, "greater"]
+    ],
+    "description": {
+        "en": ["My mom is calling. She says it's 'an emergency,' and you know how those go. Can you please handle this? After our last fight, I don't know if I can talk to her."]
+    },
+    "yes_action": {
+        "productivity": -20,
+        "mindfulness": -10,
+        "energy": 30
+    },
+    "no_action": {
+        "productivity": 5,
+        "mindfulness": -20,
+        "affection": -1
+    }
+}

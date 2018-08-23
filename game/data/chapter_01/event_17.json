@@ -1,22 +1,22 @@
 {
-    "id": "chapter_01-02_05",
-    "category": "mindfulness",
+    "id": "chapter_01_17",
+    "category": "energy",
     "character": "skylar",
     "condition": [
-        ["turn_no", 2, "greater"],
-        ["turn_no", 4, "lesser"]
+        ["turn_no", 15, "greater"]
     ],
     "description": {
-        "en": ["I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."]
+        "en": ["My dear, I've cleaned up after you every night these past two weeks. I didn't agree to be your servant just because you're fooling around with your little pet project! Step it up around here!"]
     },
     "yes_action": {
-        "productivity": 10,
-        "mindfulness": 10,
-        "energy": 10
+        "productivity": -10,
+        "mindfulness": -10,
+        "energy": -30,
+        "affection": 1
     },
     "no_action": {
         "productivity": 10,
-        "mindfulness": 10,
-        "energy": 10
+        "mindfulness": -30,
+        "affection": -1
     }
 }

@@ -107,7 +107,6 @@ init python:
         @property
         def run_event(self):
             available_events = self.available_events_this_week
-
             if len(available_events) == 1:
                 chosen_event = available_events[0]
             else:
