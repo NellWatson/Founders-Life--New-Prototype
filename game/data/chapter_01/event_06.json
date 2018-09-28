@@ -1,22 +1,21 @@
 {
     "id": "chapter_01_06",
     "category": "mindfulness",
-    "character": "skylar",
+    "character": "none",
     "condition": [
-        ["turn_no", 2, "greater"],
-        ["turn_no", 4, "lesser"]
+        ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."]
+        "en": ["You finish working for the day, and even though you're tired, you can't help but feel like you haven't accomplished enough. Keep working?"]
     },
     "yes_action": {
-        "productivity": 10,
-        "mindfulness": 10,
-        "energy": 10
+        "productivity": -20,
+        "energy": -20,
+        "mindfulness": -20
     },
     "no_action": {
-        "productivity": 10,
-        "mindfulness": 10,
-        "energy": 10
-    }
+        "mindfulness": -10
+    },
+    "yes_caption": "Keep going!",
+    "no_caption": "Call it a night."
 }

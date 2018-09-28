@@ -3,7 +3,7 @@
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
-        ["turn_no", 14, "greater"]
+        ["turn_no", 21, "greater"]
     ],
     "description": {
         "en": ["#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
@@ -18,5 +18,7 @@
         "mindfulness": -20,
         "energy": -10,
         "affection": -1
-    }
+    },
+    "yes_caption": "All right.",
+    "no_caption": "I'm not finished with work."
 }

@@ -19,5 +19,7 @@
         "productivity": 10,
         "mindfulness": -5,
         "affection": -1
-    }
+    },
+    "yes_caption": "Sounds like fun!",
+    "no_caption": "Gotta work."
 }

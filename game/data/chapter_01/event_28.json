@@ -2,6 +2,10 @@
     "id": "chapter_01_28",
     "category": "money",
     "character": "none",
+    "condition": [
+        ["turn_no", 7, "greater"],
+        ["turn_no", 15, "lesser"]
+    ],
     "description": {
         "en": ["Payday! At least this can cover some costs for the rest of the week. You can save all of it, or spend a small portion to blow off some steam. Do you want to spend it?"]
     },
@@ -14,5 +18,6 @@
         "energy": -10,
         "money": 1000
     },
-    "play_on": 7
+    "yes_caption": "Spend it.",
+    "no_caption": "Save it."
 }

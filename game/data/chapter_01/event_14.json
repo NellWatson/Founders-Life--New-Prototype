@@ -12,5 +12,9 @@
         "productivity": 50,
         "money": -500
     },
-    "no_action": {}
+    "no_action": {
+        "productivity": -10
+    },
+    "yes_caption": "Learn!",
+    "no_caption": "I can study on my own."
 }

@@ -3,19 +3,21 @@
     "category": "energy",
     "character": "skylar",
     "condition": [
-        ["turn_no", 14, "greater"]
+        ["turn_no", 4, "greater"]
     ],
     "description": {
         "en": ["My mom is calling. She says it's 'an emergency,' and you know how those go. Can you please handle this? After our last fight, I don't know if I can talk to her."]
     },
     "yes_action": {
         "productivity": -20,
-        "mindfulness": -10,
-        "energy": 30
+        "energy": 30,
+        "mindfulness": -10
     },
     "no_action": {
         "productivity": 5,
         "mindfulness": -20,
         "affection": -1
-    }
+    },
+    "yes_caption": "I'll do it",
+    "no_caption": "She's your mother. You handle it."
 }

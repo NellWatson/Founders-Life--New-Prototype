@@ -3,10 +3,14 @@
     "category": "money",
     "character": "roger",
     "condition": [
-        ["turn_no", 18, "greater"]
+        ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Roger calls you just as you're getting ready for work. 'One of the projects you're working on is getting cancelled. There's no need for you to come into work today.' Take the hit in finances and take the day off?"]
+        "en": [
+            "Roger calls you just as you're getting ready for work.",
+            "One of the projects you're working on is getting cancelled. There's no need for you to come into work today.",
+            "Take the hit in finances and take the day off?"
+        ]
     },
     "yes_action": {
         "productivity": 25,
@@ -15,7 +19,9 @@
     },
     "no_action": {
         "productivity": -10,
-        "mindfulness": -10,
-        "energy": -10
-    }
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Vacation time!",
+    "no_caption": "I need the money."
 }

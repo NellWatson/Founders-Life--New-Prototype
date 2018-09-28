@@ -3,20 +3,19 @@
     "category": "mindfulness",
     "character": "none",
     "condition": [
-        ["turn_no", 14, "greater"],
+        ["turn_no", 4, "greater"],
         ["mindfulness", 70, "greater"]
     ],
     "description": {
         "en": ["The power goes out just as you're about to save your work for today. Thankfully, you're in a good mood today. You take a break, and when the power comes back on, redo your work."]
     },
     "yes_action": {
-        "productivity": 10,
-        "mindfulness": 10,
-        "energy": 10
+        "productivity": 10
     },
     "no_action": {
-        "productivity": 10,
-        "mindfulness": 10,
-        "energy": 10
-    }
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Redo your work.",
+    "no_caption": "Call it a night."
 }

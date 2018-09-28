@@ -1,0 +1,23 @@
+{
+    "id": "chapter_01_15",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"],
+        ["mindfulness", 30, "greater"]
+    ],
+    "description": {
+        "en": ["You're working decently well today - well enough that you think you've earned yourself an early night."]
+    },
+    "yes_action": {
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "energy": -10,
+        "mindfulness": -15
+    },
+    "yes_caption": "Rest early.",
+    "no_caption": "Grind."
+}

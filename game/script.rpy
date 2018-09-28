@@ -36,10 +36,10 @@ label week_event:
     menu:
         _event.character.get_character_object "[_event.last_description]"
 
-        "$_YES":
+        "[_event.yes_caption]":
             $ _event.yes
 
-        "$_NO":
+        "[_event.no_caption]":
             $ _event.no
 
     jump checkpoint

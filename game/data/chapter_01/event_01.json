@@ -10,8 +10,7 @@
         "mindfulness": -5
     },
     "no_action": {
-        "productivity": -10,
-        "mindfulness": 0
+        "productivity": -10
     },
     "play_on": 1
 }

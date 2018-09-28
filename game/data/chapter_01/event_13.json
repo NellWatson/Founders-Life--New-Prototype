@@ -12,5 +12,7 @@
         "productivity": 10,
         "money": -100
     },
-    "no_action": {}
+    "no_action": {},
+    "yes_caption": "Give it a shot.",
+    "no_caption": "Save your money."
 }

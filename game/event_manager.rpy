@@ -2,7 +2,7 @@ init python:
 
     class Event():
 
-        def __init__(self, id, category, character, description, yes_action, no_action, condition=[], play_on=0, repeatable=False, version="1"):
+        def __init__(self, id, category, character, description, yes_action, no_action, yes_caption="Yes", no_caption="No", condition=[], play_on=0, repeatable=False, version="1"):
             self.id = id
             self.category = category
             self.character = characters_roster.get_character_object(character)
@@ -10,6 +10,8 @@ init python:
             self._description = description
             self.yes_action = yes_action
             self.no_action = no_action
+            self.yes_caption = yes_caption
+            self.no_caption = no_caption
             self.play_on = play_on
             self.version = version
             self.repeatable = repeatable

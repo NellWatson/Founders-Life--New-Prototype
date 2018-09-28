@@ -3,14 +3,14 @@
     "category": "productivity",
     "character": "takashi",
     "condition": [
-        ["turn_no", 14, "greater"]
+        ["turn_no", 7, "greater"]
     ],
     "description": {
         "en": ["It's my birthdaaaay! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."]
     },
     "yes_action": {
         "productivity": -30,
-        "energy": -20,
+        "energy": -30,
         "mindfulness": 5,
         "money": -200,
         "affection": 1
@@ -19,5 +19,7 @@
         "productivity": 10,
         "mindfulness": -10,
         "affection": -1
-    }
+    },
+    "yes_caption": "Happy birthday!",
+    "no_caption": "I'm busy."
 }

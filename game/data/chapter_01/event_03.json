@@ -3,7 +3,7 @@
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
-        ["turn_no", 1, "greater"]
+        ["turn_no", 4, "greater"]
     ],
     "description": {
         "en": ["Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."]
@@ -17,5 +17,7 @@
         "productivity": 15,
         "mindfulness": -10,
         "affection": -1
-    }
+    },
+    "yes_caption": "I'm here for you.",
+    "no_caption": "I'm sorry."
 }

@@ -1,0 +1,25 @@
+{
+    "id": "chapter_01_10_02",
+    "category": "mindfulness",
+    "character": "takashi",
+    "condition": [
+        ["takashi:affection", 3, "greater"]
+    ],
+    "description": {
+        "en": [
+            "Hey. I just wanted to say, I know you've got your own things going on, but I really appreciate that you made time for me.",
+            "People say when you become self-employed, you disappear from the people you know because you're working too much or something. Not you!",
+            "In my opinion, you've got your priorities set straight!"
+            ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": -20
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -20
+    },
+    "yes_caption": "Thanks.",
+    "no_caption": "Work is my priority."
+}

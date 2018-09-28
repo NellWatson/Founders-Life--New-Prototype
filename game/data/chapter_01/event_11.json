@@ -6,13 +6,16 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["It's been a few days, but you haven't made much headway on your project. Spend tonight planning the rest of the week?"]
+        "en": ["You feel a bit scattered in your work. You're not sure what's the highest priority for you to work on next. Spend today planning and prioritizing?"]
     },
     "yes_action": {
-        "productivity": 30,
+        "productivity": 10,
         "energy": -10
     },
     "no_action": {
-        "productivity": -10
-    }
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Planning leads to success.",
+    "no_caption": "Planning stifles my creativity."
 }

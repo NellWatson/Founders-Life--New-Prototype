@@ -3,7 +3,8 @@
     "category": "productivity",
     "character": "takashi",
     "condition": [
-        ["turn_no", 1, "greater"]
+        ["turn_no", 1, "greater"],
+        ["turn_no", 7, "lesser"]
     ],
     "description": {
         "en": ["So you're trying to start up your own business? That's awesome! Hey, come on down to the café for a break. I want to hear all about it!"]
@@ -18,5 +19,7 @@
     "no_action": {
         "productivity": 15,
         "affection": -1
-    }
+    },
+    "yes_caption": "Sure",
+    "no_caption": "I should be working."
 }

@@ -212,24 +212,30 @@ screen choice(items):
                 yalign 0.45
 
         else:
-
-            textbutton i.caption:
-                xsize 280
-                ysize 250
-
-                background Solid("#00ff00")
-                hover_background Solid("#ff4500")
-
-                text_align 0.5
-                text_color "#000000"
-                text_xalign 0.5
-
-                action i.action
-
+            vbox:
+                for i in items:
+                    textbutton i.caption action i.action
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
 define config.narrator_menu = True
+
+style choice_vbox is vbox
+style choice_button is button
+style choice_button_text is button_text
+
+style choice_vbox:
+    xalign 0.5
+    ypos 405
+    yanchor 0.5
+
+    spacing gui.choice_spacing
+
+style choice_button is default:
+    properties gui.button_properties("choice_button")
+
+style choice_button_text is default:
+    properties gui.button_text_properties("choice_button")
 
 ## Quick Menu screen ###########################################################
 ##

@@ -1,0 +1,26 @@
+{
+    "id": "chapter_01_24",
+    "category": "energy",
+    "character": "none",
+    "condition": [
+        ["energy", 50, "greater"]
+    ],
+    "description": {
+        "en": [
+            "You've been self-employed for a little while now, but you worry you aren't working hard enough.",
+            "This is your one shot to have your own company. Who knows when you'll get another chance?",
+            "You feel like you haven't been giving your everything to your company. Guilt creeps into you."
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "energy": -20,
+        "mindfulness": -25,
+        "money": -100
+    },
+    "no_action": {
+        "mindfulness": 10
+    },
+    "yes_caption": "Commit to working harder.",
+    "no_caption": "Fight the guilt. You're doing fine."
+}

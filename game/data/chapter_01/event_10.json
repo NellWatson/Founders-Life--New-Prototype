@@ -4,7 +4,7 @@
     "character": "takashi",
     "condition": [
         ["takashi:affection", 3, "lesser"],
-        ["turn_no", 20, "greater"]
+        ["turn_no", 21, "greater"]
     ],
     "description": {
         "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You're gonna have to step it up, okay?"]
@@ -14,5 +14,7 @@
     },
     "no_action": {
         "mindfulness": -20
-    }
+    },
+    "yes_caption": "I'll try.",
+    "no_caption": "I've been busy."
 }

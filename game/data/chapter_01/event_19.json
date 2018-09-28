@@ -3,7 +3,7 @@
     "category": "energy",
     "character": "skylar",
     "condition": [
-        ["turn_no", 14, "greater"]
+        ["turn_no", 4, "greater"]
     ],
     "description": {
         "en": ["#NAME, you promised you would go rock-climbing with me tonight! I know you're tired, but you always keep your promises. Are you ready to go?"]
@@ -17,5 +17,7 @@
         "productivity": 10,
         "mindfulness": -20,
         "affection": -1
-    }
+    },
+    "yes_caption": "Go rock climbing.",
+    "no_caption": "I'm too tired..."
 }

@@ -3,19 +3,21 @@
     "category": "energy",
     "character": "none",
     "condition": [
-        ["turn_no", 1, "greater"]
+        ["turn_no", 4, "greater"]
     ],
     "description": {
         "en": ["Work today has left you exhausted, but you told yourself you'd get in a bit of time on your own projects before going to bed. Push through the exhaustion?"]
     },
     "yes_action": {
         "productivity": 5,
-        "mindfulness": -15,
-        "energy": -20
+        "energy": -20,
+        "mindfulness": -15
     },
     "no_action": {
         "productivity": -10,
-        "mindfulness": 10,
-        "energy": 10
-    }
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Work.",
+    "no_caption": "Too tired."
 }

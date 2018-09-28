@@ -1,0 +1,22 @@
+{
+    "id": "chapter_01_04",
+    "category": "mindfulness",
+    "character": "none",
+    "condition": [
+        ["turn_no", 4, "greater"]
+    ],
+    "description": {
+        "en": ["You find your focus drifting away from work. You don't feel all that well tonight, either. Call it a night?"]
+    },
+    "yes_action": {
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 5,
+        "energy": -20,
+        "mindfulness": -10
+    },
+    "yes_caption": "Head to bed.",
+    "no_caption": "Don't be lazy. Push through."
+}

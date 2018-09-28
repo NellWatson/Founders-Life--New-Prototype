@@ -3,19 +3,22 @@
     "category": "energy",
     "character": "none",
     "condition": [
-        ["turn_no", 1, "greater"]
+        ["turn_no", 4, "greater"]
     ],
     "description": {
         "en": ["You read online that exercise helps with productivity, mood, and energy, but are worried that taking an extra hour out of your day will harm how much you can get done. Become a member at your local gym?"]
     },
     "yes_action": {
         "productivity": -10,
-        "mindfulness": 10,
         "energy": -5,
+        "mindfulness": 20,
         "money": -100
     },
     "no_action": {
         "productivity": 5,
-        "energy": -10
-    }
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Establish an exercise routine.",
+    "no_caption": "It's not worth it."
 }

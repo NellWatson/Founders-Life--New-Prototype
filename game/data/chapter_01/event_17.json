@@ -3,7 +3,8 @@
     "category": "energy",
     "character": "skylar",
     "condition": [
-        ["turn_no", 15, "greater"]
+        ["turn_no", 7, "greater"],
+        ["turn_no", 15, "lesser"]
     ],
     "description": {
         "en": ["My dear, I've cleaned up after you every night these past two weeks. I didn't agree to be your servant just because you're fooling around with your little pet project! Step it up around here!"]
@@ -18,5 +19,7 @@
         "productivity": 10,
         "mindfulness": -30,
         "affection": -1
-    }
+    },
+    "yes_caption": "I'll help out more.",
+    "no_caption": "I can't."
 }
