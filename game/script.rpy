@@ -42,6 +42,10 @@ label week_event:
         "[_event.no_caption]":
             $ _event.no
 
+    if _event.choice_have_description:
+        while not _event.seeing_choice_last_description:
+            _event.character.get_character_object "[_event.choice_description]"
+
     jump checkpoint
 
 label checkpoint:

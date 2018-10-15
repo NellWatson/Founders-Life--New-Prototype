@@ -56,6 +56,17 @@ init python:
         value : The value of the variable.
         condition: Can be either "greater", "lesser", "equal", "greater_equal", "lesser_equal".
         """
+
+        if ":chapter" in var:
+            _seen, _chosen = chapter_manager.seen_event(var.split(":")[0], value)
+
+            if not _seen:
+                return False
+
+            if condition == "chose:any":
+                return _seen
+            else:
+                return _chosen == condition.split(":")[1]
             
         if var == "mindfulness":
             var = "morale"

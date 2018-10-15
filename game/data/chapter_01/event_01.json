@@ -12,5 +12,14 @@
     "no_action": {
         "productivity": -10
     },
+    "yes_description": {
+        "en": [
+            "Your family  and friends are somewhat skeptical of your new endevaour.",
+            "But all of them are happy to see you chasing your dreams."
+        ]
+    },
+    "no_description": {
+        "en": ["Your family and friends are very curious about what you are doing these days."]
+    },
     "play_on": 1
 }

@@ -2,7 +2,7 @@ init python:
 
     class Event():
 
-        def __init__(self, id, category, character, description, yes_action, no_action, yes_caption="Yes", no_caption="No", condition=[], play_on=0, repeatable=False, version="1"):
+        def __init__(self, id, category, character, description, yes_action, no_action, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, repeatable=False, version="1"):
             self.id = id
             self.category = category
             self.character = characters_roster.get_character_object(character)
@@ -12,6 +12,8 @@ init python:
             self.no_action = no_action
             self.yes_caption = yes_caption
             self.no_caption = no_caption
+            self._yes_description = yes_description
+            self._no_description = no_description
             self.play_on = play_on
             self.version = version
             self.repeatable = repeatable
@@ -19,6 +21,7 @@ init python:
             self.seen_on_day = -1
             self.chose_action = None
             self.last_description_no = -1
+            self.choice_last_description_no = -1
 
             self.current_language = "en"
 
@@ -86,6 +89,39 @@ init python:
         def seeing_last_description(self):
             return self.last_description_no + 1 == len(self._description[self.current_language])
 
+        @property
+        def choice_have_description(self):
+            if self.chose_action == "yes":
+                if self.current_language not in self._yes_description:
+                    return False
+                return len(self._yes_description[self.current_language])
+
+            elif self.chose_action == "no":
+                if self.current_language not in self._no_description:
+                    return False
+                return len(self._no_description[self.current_language])
+
+        @property
+        def choice_description(self):
+            return self.yes_description if self.chose_action == "yes" else self.no_description
+
+        @property
+        def yes_description(self):
+            self.choice_last_description_no += 1
+            return self._yes_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name)
+        
+        @property
+        def no_description(self):
+            self.choice_last_description_no += 1
+            return self._no_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name)
+
+        @property
+        def seeing_choice_last_description(self):
+            if self.chose_action == "yes":
+                return self.choice_last_description_no + 1 == len(self._yes_description[self.current_language])
+            elif self.chose_action == "no":
+                return self.choice_last_description_no + 1 == len(self._no_description[self.current_language])
+
     class EventManager():
 
         def __init__(self, id):
@@ -104,7 +140,10 @@ init python:
                 data = load(filepath, file)
 
                 if file not in self.store:
-                    self.store[file] = Event(version=version, **data)
+                    self.store[data["id"]] = Event(version=version, **data)
+
+        def get_event(self, event):
+            return self.store[event]
 
         @property
         def run_event(self):
@@ -122,7 +161,7 @@ init python:
                 # If any event needs to be played this turn, play it.
                 # Also makes sure that if there are any conditions, they are satisfied.
                 if self.store[id].can_run:
-                    if self.store[id].play_on-1 == store.turn_no:
+                    if self.store[id].play_on == store.turn_no:
                         return [id]
                     _temp_list.append(id)
             return _temp_list
@@ -142,3 +181,6 @@ init python:
 
         def get_event(self):
             return self.store[self.current_chapter].run_event
+
+        def seen_event(self, chapter, event):
+            return ( self.store[chapter].get_event(event).has_seen, self.store[chapter].get_event(event).chose_action )
