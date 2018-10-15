@@ -122,7 +122,7 @@ init python:
                 # If any event needs to be played this turn, play it.
                 # Also makes sure that if there are any conditions, they are satisfied.
                 if self.store[id].can_run:
-                    if self.store[id].play_on-1 == store.turn_no:
+                    if self.store[id].play_on == store.turn_no:
                         return [id]
                     _temp_list.append(id)
             return _temp_list
