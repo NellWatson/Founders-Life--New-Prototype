@@ -6,7 +6,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You find your focus drifting away from work. You don't feel all that well tonight, either. Call it a night?"]
+        "en": ["You find your focus drifting away from work. You don't feel all that well tonight, either."]
     },
     "yes_action": {
         "energy": 10,

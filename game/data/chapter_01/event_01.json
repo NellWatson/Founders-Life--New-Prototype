@@ -3,7 +3,7 @@
     "category": "productivity",
     "character": "none",
     "description": {
-        "en": ["You've decided to become an entrepreneur. Would you like to officially announce this to friends and family?"]
+        "en": ["Would you like to announce your decision to become an entrepeneur to your friends and family?"]
     },
     "yes_action": {
         "productivity": 10,
