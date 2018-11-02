@@ -17,5 +17,11 @@
         "money": 0
     },
     "yes_caption": "Do it.",
-    "no_caption": "Focus on your work."
+    "no_caption": "Focus on your work.",
+    "yes_description": {
+        "en": ["It hurts your productivity, and you find it draining to work on a project you don't care as much about. But the money sure is good!"]
+    },
+    "no_description": {
+        "en": ["You turn it down. Now's the time to make your dreams happen, not someone else's."]
+    }
 }

@@ -15,5 +15,11 @@
         "energy": -15
     },
     "yes_caption": "Ask for help in forums and stop here.",
-    "no_caption": "Try to fix it yourself."
+    "no_caption": "Try to fix it yourself.",
+    "yes_description": {
+        "en": ["You ask for help in the forums, and by the next morning you have a solution. The program is up and running, ready for your next session."]
+    },
+    "no_description": {
+        "en": ["After a lot of cursing and struggling, you get it working again. You get a bit of work done, but the frustration follows you into your dreams."]
+    }
 }

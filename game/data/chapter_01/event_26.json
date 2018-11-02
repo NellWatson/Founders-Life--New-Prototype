@@ -16,5 +16,11 @@
         "mindfulness": -30
     },
     "yes_caption": "Save something.",
-    "no_caption": "Take a risk"
+    "no_caption": "Take a risk",
+    "yes_description": {
+        "en": ["You decide it's not the time to go up against the government and set aside a few thousand dollars."]
+    },
+    "no_description": {
+        "en": ["You bite your lip and hope that you'll work hard enough to recoup the cost of taxes by the time they're due. But every now and then, you remember that risk and your heart skips a beat."]
+    }
 }

@@ -14,8 +14,15 @@
         "mindfulness": -20
     },
     "no_action": {
+        "energy": -10,
         "mindfulness": -10
     },
     "yes_caption": "Keep going!",
-    "no_caption": "Call it a night."
+    "no_caption": "Call it a night.",
+    "yes_description": {
+        "en": ["You keep going and get things done, but at a cost."]
+    },
+    "no_description": {
+        "en": ["You decide to call it a night, but the guilt stays with you. You don't know how late it is when you finally fall asleep."]
+    }
 }

@@ -21,5 +21,11 @@
         "affection": -1
     },
     "yes_caption": "Sure",
-    "no_caption": "I should be working."
+    "no_caption": "I should be working.",
+    "yes_description": {
+        "en": ["Takashi seems to get a kick out of what you're saying, but at least he's on your side."]
+    },
+    "no_description": {
+        "en": ["You explain that you can't drop work on a moment's notice because you're trying to take this seriously. Takashi's disappointed, but lets it go."]
+    }
 }

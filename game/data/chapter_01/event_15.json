@@ -19,5 +19,11 @@
         "mindfulness": -15
     },
     "yes_caption": "Take a break.",
-    "no_caption": "Push through."
+    "no_caption": "Push through.",
+    "yes_description": {
+        "en": ["You assume your mind is sending you a signal to take a break, and you're correct. You end up coming back to work an hour later and getting a lot done!"]
+    },
+    "no_description": {
+        "en": ["You push through and manage to get the day's work done, but you feel rather worse for the wear."]
+    }
 }

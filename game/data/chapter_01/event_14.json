@@ -16,5 +16,11 @@
         "productivity": -10
     },
     "yes_caption": "Learn!",
-    "no_caption": "I can study on my own."
+    "no_caption": "I can study on my own.",
+    "yes_description": {
+        "en": ["It costs a lot of money, but you learn a fair bit about marketing that you would never have known otherwise. This will come in handy later. Anything you can learn from a course, you can probably Google."]
+    },
+    "no_description": {
+        "en": ["Anything you can learn from a course, you can probably Google."]
+    }
 }

@@ -21,5 +21,11 @@
         "affection": -1
     },
     "yes_caption": "Sounds like fun!",
-    "no_caption": "Gotta work."
+    "no_caption": "Gotta work.",
+    "yes_description": {
+        "en": ["The movie was a little disappointing, but Takashi is happy you got to spend time together."]
+    },
+    "no_description": {
+        "en": ["\"Man. I feel like I haven't seen you in forever. We used to be really close. I can't be the only one putting effort in, you know.\""]
+    }
 }

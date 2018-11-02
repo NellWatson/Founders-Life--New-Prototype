@@ -16,5 +16,11 @@
         "mindfulness": -20
     },
     "yes_caption": "I'll try.",
-    "no_caption": "I've been busy."
+    "no_caption": "I've been busy.",
+    "yes_description": {
+        "en": ["Juggling friendships with work is hard, but you've decided it's worth it."]
+    },
+    "no_description": {
+        "en": ["You can't afford the luxury of social time right now. You hope he'll understand."]
+    }
 }

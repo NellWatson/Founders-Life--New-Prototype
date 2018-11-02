@@ -1,24 +1,23 @@
 {
-    "id": "chapter_01_04",
+    "id": "chapter_01_05",
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
-        ["turn_no", 21, "greater"]
+        ["turn_no", 1, "greater"]
     ],
     "description": {
-        "en": ["#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
+        "en": ["I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."]
     },
     "yes_action": {
-        "productivity": -10,
-        "energy": -20,
-        "affection": 1
+        "productivity": 10,
+        "mindfulness": 10,
+        "energy": 10
     },
     "no_action": {
         "productivity": 10,
-        "mindfulness": -20,
-        "energy": -10,
-        "affection": -1
+        "mindfulness": 10,
+        "energy": 10
     },
-    "yes_caption": "All right.",
-    "no_caption": "I'm not finished with work."
+    "yes_caption": "Thank you!",
+    "no_caption": "So sweet."
 }

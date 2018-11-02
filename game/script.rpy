@@ -4,9 +4,9 @@ label start:
     
     $ characters_roster.add_character("none", "None", "none", None)
     $ characters_roster.add_character("eileen", "Eileen", "e", "eileen")
-    $ characters_roster.add_character("skylar", "Skylar", "s", "carla")
-    $ characters_roster.add_character("takashi", "Takashi", "t", "raquel")
-    $ characters_roster.add_character("roger", "Roger", "r", "dominique")
+    $ characters_roster.add_character("skylar", "Skylar", "s", "skylar")
+    $ characters_roster.add_character("takashi", "Takashi", "t", "takashi")
+    $ characters_roster.add_character("roger", "Roger", "r", "roger")
     $ chapter_manager.load_chapter("ch_01", "chapter_01")
     $ chapter_manager.set_chapter("ch_01")
 

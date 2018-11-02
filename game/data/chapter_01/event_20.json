@@ -17,5 +17,11 @@
         "mindfulness": 10
     },
     "yes_caption": "Redo your work.",
-    "no_caption": "Call it a night."
+    "no_caption": "Call it a night.",
+    "yes_description": {
+        "en": ["Thankfully, your mind is clear and you don't feel too stressed at the moment. You brush off the interruption and catch back up to where you were before calling it a night."]
+    },
+    "no_description": {
+        "en": ["You decide to save yourself the trouble and call it a night. You get some self-care in before bed and end up in great spirits!"]
+    }
 }

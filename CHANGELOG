@@ -1,11 +1,16 @@
 CHANGELOG
 =========
 
+v 0.1.8.1102
+------------
+* Merged development branch with master which brings support for extended narrative capabilities.
+* Tweaked events based on the latest changes.
+
 v 0.1.7-1015
 ------------
-* Description text can be shown after making a choice to showcase cause & effect;
-* Future events an be dependent on past events;
-* Events ID are now correctly based on the in-file IDs instead of file name;
+* Description text can be shown after making a choice to showcase cause & effect.
+* Future events an be dependent on past events.
+* Events ID are now correctly based on the in-file IDs instead of file name.
 
 v 0.1.6-0929
 ------------

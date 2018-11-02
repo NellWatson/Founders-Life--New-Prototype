@@ -19,5 +19,11 @@
         "mindfulness": 10
     },
     "yes_caption": "Work.",
-    "no_caption": "Too tired."
+    "no_caption": "Too tired.",
+    "yes_description": {
+        "en": ["Your lack of focus means you don't get much done, but you spend a lot of time and energy trying to do it."]
+    },
+    "no_description": {
+        "en": ["You eschew work for the day and go straight to bed."]
+    }
 }

@@ -19,5 +19,11 @@
         "mindfulness": 20
     },
     "yes_caption": "Redo your work.",
-    "no_caption": "Call it a night."
+    "no_caption": "Call it a night.",
+    "yes_description": {
+        "en": ["You curse and sputter, then grudgingly restart your work. You get it all done, but you're not happy about it."]
+    },
+    "no_description": {
+        "en": ["After taking a deep breath, you realize you're too uptight to deal with this right now. You go to sleep and wake up refreshed and mostly clear-headed."]
+    }
 }

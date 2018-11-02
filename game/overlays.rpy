@@ -101,3 +101,29 @@ screen founder_map():
                 yalign 0.5
 
                 text EPISODE_NAMES[current_episode-1] color "#000000"
+
+screen character_intro():
+    default character_list = ["skylar", "takashi", "roger"]
+    add Solid("#00000000") alpha 0.5
+
+    hbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 40
+
+        for i in character_list:
+            button:
+                xysize (309, 310)
+
+                background "gui/who.png"
+                add "images/contacts/" + i + ".png" xalign 0.5 yalign 0.5 xoffset 1 yoffset 4
+
+                action Call(i + "_intro")
+
+    textbutton _("Let's Start the Journey"):
+        style "fl_button"
+
+        action Jump("checkpoint")
+
+        xalign 0.5
+        yalign 0.85

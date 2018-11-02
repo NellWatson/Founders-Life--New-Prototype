@@ -1,23 +1,24 @@
 {
-    "id": "chapter_01_02",
-    "category": "mindfulness",
+    "id": "chapter_01_03",
+    "category": "productivity",
     "character": "skylar",
     "condition": [
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."]
+        "en": ["Hey, honey! It's time for our date! Are you ready to go?"]
     },
     "yes_action": {
-        "productivity": -15,
+        "productivity": -10,
+        "energy": -10,
         "mindfulness": 10,
+        "money": -100,
         "affection": 1
     },
     "no_action": {
-        "productivity": 15,
-        "mindfulness": -10,
+        "productivity": 10,
         "affection": -1
     },
-    "yes_caption": "I'm here for you.",
-    "no_caption": "I'm sorry."
+    "yes_caption": "All set",
+    "no_caption": "I have to work..."
 }

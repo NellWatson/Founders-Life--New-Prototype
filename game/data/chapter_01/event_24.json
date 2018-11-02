@@ -20,5 +20,11 @@
         "mindfulness": -5
     },
     "yes_caption": "Do it.",
-    "no_caption": "I should work."
+    "no_caption": "I should work.",
+    "yes_description": {
+        "en": ["You feel refreshed, and Skylar looks happier knowing that the spa day helped you take some time out for yourself."]
+    },
+    "no_description": {
+        "en": ["You get the work done, but your body aches at the thought of what you turned down."]
+    }
 }

@@ -23,5 +23,11 @@
         "mindfulness": -10
     },
     "yes_caption": "Vacation time!",
-    "no_caption": "I need the money."
+    "no_caption": "I need the money.",
+    "yes_description": {
+        "en": ["Sometimes money isn't everything!"]
+    },
+    "no_description": {
+        "en": ["Now isn't the time to be making risky financial decisions. You stick to the plan."]
+    }
 }

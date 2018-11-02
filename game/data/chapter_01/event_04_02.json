@@ -18,5 +18,11 @@
         "mindfulness": -10
     },
     "yes_caption": "Head to bed.",
-    "no_caption": "Don't be lazy. Push through."
+    "no_caption": "Don't be lazy. Push through.",
+    "yes_description": {
+        "en": ["Breaks are important. Getting sick will put you back weeks, and you can't afford that."]
+    },
+    "no_description": {
+        "en": ["You criticize yourself as a way to motivate yourself through the laziness. You get everything done, but feel exhausted afterwards."]
+    }
 }

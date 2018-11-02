@@ -21,5 +21,11 @@
         "affection": -1
     },
     "yes_caption": "Happy birthday!",
-    "no_caption": "I'm busy."
+    "no_caption": "I'm busy.",
+    "yes_description": {
+        "en": ["You feel a bit guilty that you forgot Takashi's birthday, so you spend a bit more on him than you wanted to. He ends the night happy, and you get less work done the next day due to the hangover."]
+    },
+    "no_description": {
+        "en": ["Sometimes achieving your dreams requires sacrifices. But as you turn him down, you hear the disappointment in his voice. It stays with you all night."]
+    }
 }

@@ -14,5 +14,11 @@
     },
     "no_action": {},
     "yes_caption": "Give it a shot.",
-    "no_caption": "Save your money."
+    "no_caption": "Save your money.",
+    "yes_description": {
+        "en": ["It makes you a bit more productive for a week, but you can't seem to figure out how to get the complex mechanics to work for what you want to do. Still, at least it helped a bit!"]
+    },
+    "no_description": {
+        "en": ["You've been down this path before. Organization apps tend to distract you more than help your productivity, so you pass."]
+    }
 }

@@ -19,5 +19,11 @@
         "affection": -1
     },
     "yes_caption": "Yup!",
-    "no_caption": "I'm too tired..."
+    "no_caption": "I'm too tired...",
+    "yes_description": {
+        "en": ["Despite your exhaustion, you go rock climbing with Skylar. It drives you to the brink, and you feel scattered the next day. You don't get much done."]
+    },
+    "no_description": {
+        "en": ["Skylar just sighs and leaves. You tell yourself that you're in the right and ignore the niggling doubt at the back of your mind."]
+    }
 }

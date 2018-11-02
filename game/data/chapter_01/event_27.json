@@ -19,5 +19,11 @@
         "affection": -1
     },
     "yes_caption": "I'll do it",
-    "no_caption": "She's your mother. You handle it."
+    "no_caption": "She's your mother. You handle it.",
+    "yes_description": {
+        "en": ["You hate these calls with Skylar's panicky mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]
+    },
+    "no_description": {
+        "en": ["You know the conversation will last the entire night, and you can't be bothered. Skylar looks at you as though seeing you for the first time."]
+    }
 }

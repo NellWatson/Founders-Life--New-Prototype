@@ -14,10 +14,16 @@
         "mindfulness": 10
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "energy": -10,
         "mindfulness": -15
     },
     "yes_caption": "Rest early.",
-    "no_caption": "Grind."
+    "no_caption": "Grind.",
+    "yes_description": {
+        "en": ["You take the night off, basking in the sense of achievement you feel."]
+    },
+    "no_description": {
+        "en": ["If you're on a roll, now's the time to keep it going. You get more done, but feel a bit depleted after."]
+    }
 }
