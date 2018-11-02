@@ -6,7 +6,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You finish working for the day, and even though you're tired, you can't help but feel like you haven't accomplished enough. Keep working?"]
+        "en": ["You finish working for the day, and even though you're tired, you can't help but feel like you haven't accomplished enough."]
     },
     "yes_action": {
         "productivity": -20,

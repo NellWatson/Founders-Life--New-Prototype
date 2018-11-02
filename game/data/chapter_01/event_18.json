@@ -15,7 +15,7 @@
         ]
     },
     "yes_action": {
-        "mindfulness": 20,
+        "mindfulness": -10,
         "affection": 1
     },
     "no_action": {
@@ -23,5 +23,5 @@
         "affection": -1
     },
     "yes_caption": "I'll try.",
-    "no_caption": "Sorry."
+    "no_caption": "This is my situation to deal with."
 }
