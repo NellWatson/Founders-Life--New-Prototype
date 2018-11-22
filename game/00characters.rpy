@@ -1,11 +1,8 @@
 define character.n = Character("Nell", image="nell")
-define character.c = Character("Carla", image="carla")
-define character.d = Character("Dominique", image="dominique")
 define character.e = Character("Eileen", image="eileen")
-define character.ra = Character("Raquel", image="raquel")
-define character.s = Character("Skylar", image="carla")
-define character.t = Character("Takashi", image="raquel")
-define character.r = Character("Roger", image="dominique")
+define character.s = Character("Skylar", image="skylar")
+define character.t = Character("Takashi", image="takashi")
+define character.r = Character("Roger", image="roger")
 define character.none = Character(image="none")
 
 init python:
