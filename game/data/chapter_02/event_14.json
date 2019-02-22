@@ -1,0 +1,32 @@
+{
+    "id": "chapter_02_14",
+    "title": "Negotiation 2",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 15, "greater"]
+    ],
+    "description": {
+        "en": [
+            "Another negotiation for pay. You remember how the last one went down, and decide to raise your prices - but should you ask for $500 or a safer $300?"
+        ]
+    },
+    "yes_action": {
+        "money": 0
+    },
+    "no_action": {
+        "money": 300
+    },
+    "yes_caption": "$500",
+    "no_caption": "$300",
+    "yes_description": {
+        "en": [
+            "Your message disappears into the void. You hear nothing from the client again, and are forced to wonder whether your price threw them off, or whether they died in a mysterious plane accident."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "After a few days, the client grudgingly accepts your offer. You're happy you didn't ask for more. Right now, some work for lower pay is better than none."
+        ]
+    }
+}

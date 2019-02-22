@@ -1,0 +1,34 @@
+{
+    "id": "chapter_02_27",
+    "title": "Quality",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "You're finishing up a project for a client ahead of schedule (the deadline is a few days off still), but as you're getting ready to send it, your heart sinks.",
+            "You know this isn't your best work, but you're not sure you have the energy to do it all over again. It's not terrible quality, but it's not up to your usual standards. What do you do?"
+        ]
+    },
+    "yes_action": {
+        "mindfulness": -10,
+        "money": 100
+    },
+    "no_action": {
+        "productivity": -30,
+        "energy": -20,
+        "mindfulness": 20,
+        "money": 250
+    },
+    "yes_caption": "Sent it off",
+    "no_caption": "Redo it",
+    "yes_description": {
+        "en": [
+            "You send it off to the client. They don't seem overjoyed, but they pay you and thank you for your work."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You redo the project over the next few days, and when the client receives it, they're ecstatic. They even give you a little bonus!"
+        ]
+    }
+}

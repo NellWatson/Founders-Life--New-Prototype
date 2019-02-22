@@ -1,0 +1,32 @@
+{
+    "id": "chapter_02_18",
+    "title": "Sick Day",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "You woke up today feeling sick to your stomach. Your head swims, and you know what's going on: you're sick.",
+            "Do you take some time off to relax, or try to power through?"
+        ]
+    },
+    "yes_action": {
+        "energy": 20,
+        "mindfulness": 20
+    },
+    "no_action": {
+        "productivity": -20,
+        "mindfulness": -20
+    },
+    "yes_caption": "Take time off",
+    "no_caption": "Power through",
+    "yes_description": {
+        "en": [
+            "You rest in bed, drinking as much water as possible. Thankfully, it's cleared up by the next day."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You power through, trying to get work done... and knock yourself flat on your back. You have to take even more time off than you would've originally, and feel terrible the whole time"
+        ]
+    }
+}

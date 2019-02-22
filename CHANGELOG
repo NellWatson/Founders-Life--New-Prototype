@@ -1,6 +1,21 @@
 CHANGELOG
 =========
 
+v 0.2.0.0222
+------------
+* Added Chapter 2 content.
+* Changes to Event system
+    * Added `is_yes` and `is_no` method to selecitvely show the choices
+    * Added `get_speaker` to get the current speaker of the current dialogue
+    * Added support for showing money earned in the current month in narrative text
+    * Added support for letting player speak lines during a weekly character event
+    * Added "title" field for all events
+* Added `MoneyManager` method to track money earned.
+* Added another conditional to events, ":money".
+* Added `next_chapter` function to jump to next chapter and update the required variables.
+* Now `turn_no` variable gets reset every month. Total days can be tracked via `total_days` variable.
+* Make the event id's case independent.
+
 v 0.1.8.1102
 ------------
 * Merged development branch with master which brings support for extended narrative capabilities.

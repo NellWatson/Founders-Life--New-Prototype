@@ -1,0 +1,35 @@
+{
+    "id": "chapter_02_10_1",
+    "title": "A Friend in Me",
+    "category": "mindfulness",
+    "character": "Takashi",
+    "condition": [
+        ["takashi:affection", 3, "lesser"]
+    ],
+    "description": {
+        "en": [
+            "Hey, #NAME. I just came by to say... goodbye, really.",
+            "You just aren't the same person I used to know. You've become really stingy and grumpy and stressed...",
+            "We barely saw each other last month. I just thought I meant more to you. So I'm going to get out of your hair, since that's clearly what you want from me."
+        ]
+    },
+    "yes_action": {
+        "mindfulness": -20
+    },
+    "no_action": {
+        "mindfulness": -20
+    },
+    "yes_caption": "Takashi, what are you talking about?",
+    "no_caption": "Fine. Good riddance!",
+    "yes_description": {
+        "en": [
+            "You know, sometimes people change. Circumstances change.",
+            "I guess we're just at different points in our lives."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Yeah. Don't know why I expected any different."
+        ]
+    }
+}

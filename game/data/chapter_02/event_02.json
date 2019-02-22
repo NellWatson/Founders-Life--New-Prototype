@@ -1,0 +1,34 @@
+{
+    "id": "chapter_02_02",
+    "title": "The Concerned Partner",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": [
+            "Skylar's been worried about the business, and you've yet to discuss how much money you brought in last month. Should you be honest and upfront about it, or try not to cause worry?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -20,
+        "energy": -20,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -10,
+        "skylar:affection": -1
+    },
+    "yes_caption": "Be honest and upfront",
+    "no_caption": "Try not to cause worry",
+    "yes_description": {
+        "en": [
+            "The frown on Skylar's face deepens. You knew this wasn't good news, but seeing this reaction is really demotivating. At least your conscience is clear."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Skylar's eyes narrow with suspicion, but no questions are asked. You wonder whether you got away with it."
+        ]
+    },
+    "play_on": 1
+}

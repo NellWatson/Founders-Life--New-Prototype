@@ -1,0 +1,30 @@
+{
+    "id": "chapter_02_26",
+    "title": "Exposure",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "A potential client e-mails you about a quick job that should only take you an evening to finish. There's a caveat, though: They want to pay you in exposure."
+        ]
+    },
+    "yes_action": {
+        "energy": -20,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "mindfulness": 10
+    },
+    "yes_caption": "Maybe it'll pay off?",
+    "no_caption": "My time is worth money",
+    "yes_description": {
+        "en": [
+            "You finish up the work and send it to the client - only for your name to be buried deep within their website, on a credits page no one will ever read. Oh, well."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You ignore the e-mail. Your time is worth money, and knowing this gives your self-esteem a boost."
+        ]
+    }
+}

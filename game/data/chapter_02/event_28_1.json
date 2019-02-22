@@ -1,0 +1,28 @@
+{
+    "id": "chapter_02_28_1",
+    "title": "Moment of Truth",
+    "category": "none",
+    "character": "Skylar",
+    "condition": [
+        ["current:money", 2000, "greater"]
+    ],
+    "description": {
+        "en": [
+            "Okay, #NAME. It's time to see how you did.",
+            "You made #MONEY_MONTH this month. That's over $2,000. You did it!"
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "energy": 20,
+        "mindfulness": 20
+    },
+    "yes_caption": "I did!",
+    "yes_description": {
+        "en": [
+            "I'm so happy for you. As the month went on, I was really struggling... I felt like a terrible partner. It was hard for me to decide whether to put your dreams first, or my mental wellbeing first.",
+            "I'm glad that now, I don't have to worry about it. If I get anxious, I'll remind myself you're doing all right."
+        ]
+    },
+    "play_on": 28
+}

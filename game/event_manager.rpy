@@ -2,8 +2,9 @@ init python:
 
     class Event():
 
-        def __init__(self, id, category, character, description, yes_action, no_action, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, repeatable=False, version="1"):
+        def __init__(self, id, title, category, character, description, yes_action, no_action={}, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, repeatable=False, version="1"):
             self.id = id
+            self.title = title
             self.category = category
             self.character = characters_roster.get_character_object(character)
             self.condition = condition
@@ -33,8 +34,12 @@ init python:
             for name, value in action_list.items():
                 if name == "mindfulness":
                     name = "morale"
-                if name == "affection":
-                    self.character.affection += value
+                elif "affection" in name:
+                    if ":" in name:
+                        character, affection = name.split(":")
+                        characters_roster.update_affection(character, value)
+                    else:
+                        self.character.affection += value
                 else:
                     variable(name, value)
 
@@ -66,6 +71,14 @@ init python:
             self.run_action(self.no_action)
 
         @property
+        def is_yes(self):
+            return self.yes_action != {}
+
+        @property
+        def is_no(self):
+            return self.no_action != {}
+
+        @property
         def has_seen(self):
             if self.repeatable:
                 return self.seen_on_day > -1 and int(self.seen_on_day / 7) == int(store.turn_no / 7)
@@ -73,13 +86,23 @@ init python:
                 return self.seen_on_day > -1
 
         @property
+        def get_speaker(self):
+            current_description_no = self.last_description_no + 1
+            if current_description_no == len(self._description[self.current_language]):
+                current_description_no -= 1
+            if "#PLAYER:" in self._description[self.current_language][current_description_no]:
+                return characters_roster.get_character_object("none").get_character_object
+            else:
+                return self.character.get_character_object
+
+        @property
         def description(self):
             self.last_description_no += 1
-            return self._description[self.current_language][self.last_description_no].replace("#NAME", store.founder_name)
+            return self._description[self.current_language][self.last_description_no].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning())
 
         @property
         def last_description(self):
-            return self._description[self.current_language][-1].replace("#NAME", store.founder_name)
+            return self._description[self.current_language][-1].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning())
 
         @property
         def has_multiple_description(self):
@@ -108,11 +131,15 @@ init python:
         @property
         def yes_description(self):
             self.choice_last_description_no += 1
+            if self.choice_last_description_no == len(self._yes_description[self.current_language]):
+                self.choice_last_description_no -= 1
             return self._yes_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name)
         
         @property
         def no_description(self):
             self.choice_last_description_no += 1
+            if self.choice_last_description_no == len(self._no_description[self.current_language]):
+                self.choice_last_description_no -= 1
             return self._no_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name)
 
         @property
@@ -138,6 +165,8 @@ init python:
 
             for file, version in file_list:
                 data = load(filepath, file)
+                if "title" not in data:
+                    data["title"] = "No Title"
 
                 if file not in self.store:
                     self.store[data["id"]] = Event(version=version, **data)
@@ -184,3 +213,6 @@ init python:
 
         def seen_event(self, chapter, event):
             return ( self.store[chapter].get_event(event).has_seen, self.store[chapter].get_event(event).chose_action )
+
+    def string_formatter(string):
+        pass

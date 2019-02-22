@@ -53,6 +53,7 @@ label event_intro:
     menu:
         "I want to strike it rich!":
             $ money += 1000
+            $ money_manager = MoneyManager(money)
         "I want to see just how far I can go.":
             $ productivity += 20
         "I want control over how I spend my time.":

@@ -1,0 +1,33 @@
+{
+    "id": "chapter_02_01",
+    "title": "Freelance",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "Your product still isn't anywhere near being able to sell. Should you take on more freelance work, or work on your own project?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10,
+        "mindfulness": -10,
+        "money": 100
+    },
+    "no_action": {
+        "productivity": 10,
+        "energy": -10
+    },
+    "yes_caption": "Take on more freelance work",
+    "no_caption": "Work on own project",
+    "yes_description": {
+        "en": [
+            "Despite doing the same work, it's much more boring to work on something that isn't yours. But you get it done."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Getting this to market is what's really going to get you the big bucks. You work on it, a few hours closer to a working prototype."
+        ]
+    }
+}

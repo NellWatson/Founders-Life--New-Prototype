@@ -1,0 +1,19 @@
+{
+    "id": "chapter_02_19_1",
+    "title": "Coursework",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["ch_01:chapter", "chapter_01_14", "chose:yes"]
+    ],
+    "description": {
+        "en": [
+            "This week, you found yourself without a lot of spare time and with a huge deadline. Thankfully, you used the skills you learned from the course you took a month ago, organized your time effeciently, and got it done. Guess it paid off after all!"
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "money": 300
+    },
+    "yes_caption": "Get back to work"
+}

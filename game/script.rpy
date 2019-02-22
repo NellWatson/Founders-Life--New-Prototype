@@ -8,6 +8,7 @@ label start:
     $ characters_roster.add_character("takashi", "Takashi", "t", "takashi")
     $ characters_roster.add_character("roger", "Roger", "r", "roger")
     $ chapter_manager.load_chapter("ch_01", "chapter_01")
+    $ chapter_manager.load_chapter("ch_02", "chapter_02")
     $ chapter_manager.set_chapter("ch_01")
 
     $ calculate_pool()
@@ -31,15 +32,15 @@ label week_event:
     
     if _event.has_multiple_description:
         while not _event.seeing_last_description:
-            _event.character.get_character_object "[_event.description]"
+            _event.get_speaker "[_event.description]"
 
     menu:
-        _event.character.get_character_object "[_event.last_description]"
+        _event.get_speaker "[_event.last_description]"
 
-        "[_event.yes_caption]":
+        "[_event.yes_caption]" if _event.is_yes:
             $ _event.yes
 
-        "[_event.no_caption]":
+        "[_event.no_caption]" if _event.is_no:
             $ _event.no
 
     if _event.choice_have_description:
@@ -55,13 +56,13 @@ label checkpoint:
     if productivity <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Productivity")
-        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
         play sound "sfx/fx012.wav"
-        n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [turn_no] days."
+        n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [total_days] days."
         
         if not persistent.submitted_form:
             n normal "Please let us know your feedback."
@@ -71,13 +72,13 @@ label checkpoint:
     elif energy <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Energy")
-        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
         play sound "sfx/fx012.wav"
-        n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [turn_no] days."
+        n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [total_days] days."
         
         if not persistent.submitted_form:
             n normal "Please let us know your feedback."
@@ -87,13 +88,13 @@ label checkpoint:
     elif morale <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Mindfulness")
-        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
         play sound "sfx/fx012.wav"
-        n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [turn_no] days."
+        n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [total_days] days."
         
         if not persistent.submitted_form:
             n normal "Please let us know your feedback."
@@ -103,13 +104,13 @@ label checkpoint:
     elif money <= 0:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Cashflow")
-        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
         play sound "sfx/fx012.wav"
-        n normal "Game over. You have run out of savings.\nYou survived [turn_no] days."
+        n normal "Game over. You have run out of savings.\nYou survived [total_days] days."
         
         if not persistent.submitted_form:
             n normal "Please let us know your feedback."
@@ -119,10 +120,10 @@ label checkpoint:
     if turn_no and not (turn_no % 7):
         
         play week_sound "sfx/fx003.wav"
-        n normal "Congratulations [founder_name].\nYou have survived [turn_no] days as a founder."
+        n normal "Congratulations [founder_name].\nYou have survived [total_days] days as a founder."
         # current_sprint = energy * morale * turn_no * founder_level
         # money += current_sprint
-        $ founder_score = (productivity + energy + morale + money + (turn_no * founder_level)) * founder_level
+        $ founder_score = (productivity + energy + morale + money + (total_days * founder_level)) * founder_level
         $ total_founder_score += founder_score
         $ level_up = False
         $ last_founder_level = founder_level
@@ -132,6 +133,7 @@ label checkpoint:
 
         $ telemetry.collect()
         $ telemetry.sync()
+        $ money_manager.add_weekly_earning()
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
@@ -141,7 +143,7 @@ label checkpoint:
             $ persistent.trophy_shelf.unseen = False
 
         if turn_no == 28:
-            $ current_episode += 1
+            $ current_chapter += 1
             call screen founder_map
 
             if not persistent.submitted_form:
@@ -150,7 +152,7 @@ label checkpoint:
 
             $ renpy.unlink_save("custom")
             $ telemetry.end("done")
-            $ persistent.leaderboard.append([ datetime.date.today(), founder_name, turn_no, founder_score ])
+            $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
 
             n normal "Thank you for playing Chapter 1 of Founder Life."
             return
@@ -213,6 +215,7 @@ label checkpoint:
 
     if energy > 0 and morale > 0:
         $ turn_no += 1
+        $ total_days = ((current_chapter-1) * CHAPTER_DAY_COUNT) + turn_no
         $ current_bg = "bg " + BACKGROUNDS[founder_level - 1]
 
         scene expression current_bg with dissolve
@@ -220,11 +223,19 @@ label checkpoint:
         if turn_no <= 27:
             jump week_event#expression find_event()
         else:
-            jump chapter_one_finale
+            jump chapter_finale
+
+label chapter_finale:
+    $ next_chapter()
+    if current_chapter == 2:
+        jump chapter_one_finale
+    elif current_chapter == 3:
+        jump chapter_two_finale
 
 label chapter_one_finale:
-    $ event_code = "ch01e99"
+    $ event_code = "chapter_01_99"
     show dominique at center
+
     menu:
         d "Hi, [founder_name], I'm Dominique Martel. I just wanted to reach out to tell you how impressed I've been with the progress you've been making with [startup_name]. I love the idea and your execution.\nI've a lot of free time now I've left Google, and I'd like to spend some of it mentoring you.\nWhat do you say?"
 
@@ -237,5 +248,19 @@ label chapter_one_finale:
             $ variable("productivity", -20)
             $ variable("energy", -20)
             $ variable("morale", -20)
+
+    hide dominique
+
+    call screen founder_map
+    $ event_code = "chapter_02_00"
+
+    "It's the second full month of pursuing your dreams, and you've had a terrible realization."
+    "You aren't making anywhere near enough money to be able to quit your job."
+    "But what can you do? While you're still working your full-time job, there's only so much time you can put into this venture."
+    "At least you still have a safety net. If you had quit your job and jumped into this first thing, you'd be feeling the burn."
+
+    menu:
+        "It's disappointing, but I have to work harder to try and make this viable. You decide to focus on making more money this month.":
+            pass
 
     jump checkpoint

@@ -1,0 +1,30 @@
+{
+    "id": "chapter_02_28_2",
+    "title": "Moment of Truth",
+    "category": "none",
+    "character": "Skylar",
+    "condition": [
+        ["current:money", 2000, "lesser"]
+    ],
+    "description": {
+        "en": [
+            "Okay, #NAME. It's time to see how you did.",
+            "You made #MONEY_MONTH this month. That's... not enough.",
+            "...",
+            "I've thought a lot about this over this past month. And I just - I don't think I can be with you while you're taking such big risks. It just doesn't feel safe to me. So, if this is really something you still want to do... I think we should end this."
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "energy": 20,
+        "mindfulness": 20
+    },
+    "yes_caption": "I did!",
+    "yes_description": {
+        "en": [
+            "I'm so happy for you. As the month went on, I was really struggling... I felt like a terrible partner. It was hard for me to decide whether to put your dreams first, or my mental wellbeing first.",
+            "I'm glad that now, I don't have to worry about it. If I get anxious, I'll remind myself you're doing all right."
+        ]
+    },
+    "play_on": 28
+}

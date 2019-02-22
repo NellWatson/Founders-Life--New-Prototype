@@ -1,0 +1,33 @@
+{
+    "id": "chapter_02_13",
+    "title": "Negotiation 1",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 15, "lesser"]
+    ],
+    "description": {
+        "en": [
+            "You're at the final stages of negotiation work from a client, and you have to do what you always dread - pitching a price.",
+            "Should you highball for $400 and hope it goes through, or go for the safe $200?"
+        ]
+    },
+    "yes_action": {
+        "money": 400
+    },
+    "no_action": {
+        "money": 200
+    },
+    "yes_caption": "Highball for $400",
+    "no_caption": "Lowball for $200",
+    "yes_description": {
+        "en": [
+            "The client accepts without even counteroffering - and you're left wondering whether what you pitched was high, after all."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "The client immediately accepts - and you get the feeling you didn't get what you're worth."
+        ]
+    }
+}

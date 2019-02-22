@@ -1,0 +1,33 @@
+{
+    "id": "chapter_02_24",
+    "title": "Relaxation",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "An article you found has been troubling you all day today. It claimed successful CEOs all work at least 60 hours a week on their business - if not radically more.",
+            "You're nowhere near that amount, and you wonder whether you should be cutting back on sleep to get more done."
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "energy": -20,
+        "mindfulness": -20
+    },
+    "no_action": {
+        "productivity": 0
+    },
+    "yes_caption": "More work, more money",
+    "no_caption": "Health is more important than money",
+    "yes_description": {
+        "en": [
+            "You definitely have the time to get more done, but find it harder to maintain energy throughout the day. Not only that, but the bickering between you and Skylar has gotten much worse.",
+            "At least work is going well."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You decide against changing your schedule. Maybe you will in the future - or maybe the article was just clickbait, meant to stoke your fears for clicks."
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "id": "chapter_02_20",
+    "title": "Skylar and Your Work",
+    "category": "mindfulness",
+    "character": "Skylar",
+    "condition": [
+        ["turn_no", 15, "greater"]
+    ],
+    "description": {
+        "en": [
+            "Honey, I noticed you've been putting a lot less effort into your job lately, and Roger seems to be getting upset with you.",
+            "Please remember that this is the job that's paying our bills. You can't risk losing it!"
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "mindfulness": -20
+    },
+    "no_action": {
+        "productivity": -10,
+        "energy": -20,
+        "mindfulness": 10,
+        "affection": 1
+    },
+    "yes_caption": "I'll be quitting soon enough",
+    "no_caption": "Okay, I'll work harder",
+    "yes_description": {
+        "en": [
+            "You'll - I mean, I know that you're planning on doing your own thing full-time, but --",
+            "Forget it. We'll talk about this some other time."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Thank you for listening, #NAME."
+        ]
+    }
+}

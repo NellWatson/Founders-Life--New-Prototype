@@ -1,0 +1,31 @@
+{
+    "id": "chapter_02_22",
+    "title": "Date Night 2",
+    "category": "mindfulness",
+    "character": "Skylar",
+    "description": {
+        "en": [
+            "Hey, #NAME. Mind taking the night off of work to talk? We've both been so busy, I feel like I haven't seen you at all."
+        ]
+    },
+    "yes_action": {
+        "productivity": -20,
+        "energy": 20,
+        "mindfulness": 20,
+        "affection": 1
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -10
+    },
+    "yes_description": {
+        "en": [
+            "This was fun! Things have been so stressful, it was nice to hangout and remember what it's like to be normal."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "All right. I understand. You're just trying to do what I asked of you."
+        ]
+    }
+}

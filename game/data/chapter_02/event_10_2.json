@@ -1,0 +1,26 @@
+{
+    "id": "chapter_02_10_2",
+    "title": "A Friend in Me",
+    "category": "mindfulness",
+    "character": "Takashi",
+    "condition": [
+        ["takashi:affection", 3, "greater_equal"]
+    ],
+    "description": {
+        "en": [
+            "Hey, #NAME. I was thinking about it yesterday, and... I'm sorry.",
+            "You've been really trying to give this your all. I think that's amazing! And if I'm anywhere close to being a good enough friend of yours, I should support you - not get all selfish and want to take up all your time.",
+            "So I'm sorry that I've been distracting you. I can wait a while. You go get your dream. I'll be here when you come back."
+        ]
+    },
+    "yes_action": {
+        "energy": 10,
+        "mindfulness": 20
+    },
+    "yes_caption": "Thank you, Takashi.",
+    "yes_description": {
+        "en": [
+            "Of course, #NAME. I got your back!"
+        ]
+    }
+}

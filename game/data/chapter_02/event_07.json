@@ -1,0 +1,32 @@
+{
+    "id": "chapter_02_07",
+    "title": "Shifting",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "A client you've been working with e-mails you - they need the job done a full week sooner than originally anticipated. You'd have to pull an all-nighter to get it done, and even then you're not sure you can."
+        ]
+    },
+    "yes_action": {
+        "energy": -50,
+        "mindfulness": -40,
+        "money": 500
+    },
+    "no_action": {
+        "mindfulness": 10,
+        "money": 200
+    },
+    "yes_caption": "Put your nose to the grindstone.",
+    "no_caption": "Apologize for not being able to accomodate them, but stick to the original deadline.",
+    "yes_description": {
+        "en": [
+            "You work with intense focus (and several cups of coffee) to finish the job overnight. It's not perfect, but the client is ecstatic and sends you a nice bonus for the work."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "The client understands, but sounds disappointed. You do eventually finish the job, but you get the feeling you won't be receiving work from them again in the future."
+        ]
+    }
+}

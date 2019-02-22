@@ -1,0 +1,18 @@
+{
+    "id": "chapter_02_15",
+    "title": "Bankrupted",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": [
+            "It turns out one of the companies you freelanced for just a few weeks ago has gone bankrupt. Thankfully, you've already gotten paid, but the news is a grim reminder of what you're risking."
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 20
+    },
+    "no_action": {
+        "money": 300
+    },
+    "yes_caption": "Get back to work."
+}

@@ -1,0 +1,33 @@
+{
+    "id": "chapter_02_21",
+    "title": "Ergonomics",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "All these hours you're spending craning over your desk are doing a number on your back, and the resulting pain is affecting how well you work.",
+            "You can invest in some ergonomic office furniture, but it would cost quite a bit."
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "energy": 20,
+        "money": -500
+    },
+    "no_action": {
+        "productivity": -20,
+        "energy": -10
+    },
+    "yes_caption": "Invest",
+    "no_caption": "I can stretch in my off hours",
+    "yes_description": {
+        "en": [
+            "The investment pays off. You feel better, get more work done, and have more energy at the end of the day to boot!"
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You tell yourself you'll do stretches while working, and for a few days you do, but then it slips your mind. The pain ends up becoming a constant."
+        ]
+    }
+}

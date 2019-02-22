@@ -181,7 +181,7 @@ init python in telemetry:
             "play_time": play_time,
             "sessions": session,
             "sessions_length": session_blocks,
-            "days": renpy.store.turn_no
+            "days": renpy.store.total_days
             }
 
         data = json.dumps(data)

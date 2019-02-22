@@ -1,0 +1,38 @@
+{
+    "id": "chapter_02_17",
+    "title": "Sick Day",
+    "category": "productivity",
+    "character": "Skylar",
+    "condition": [
+        ["turn_no", 10, "greater"]
+    ],
+    "description": {
+        "en": [
+            "Hey, #NAME. I know things have been a little weird between us, lately. But I appreciate that you're working hard.",
+            "Can I take a look at what you're working on?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -20,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "mindfulness": -10,
+        "affection": -1
+    },
+    "yes_caption": "Proudly show her your work",
+    "no_caption": "Sorry, it's not ready",
+    "yes_description": {
+        "en": [
+            "Hmmm, I see. Wait, is this all you have?",
+            "Oh, I'm sorry #NAME! I didn't mean it like that - I just...",
+            "You're doing great. I mean it."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "...Okay. I understand. If it's not ready, you wouldn't want me getting the wrong idea or something.",
+            "No, no. I'm fine. Go ahead and get back to work, okay?"
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "id": "chapter_02_23",
+    "title": "Relaxation",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "The stress has really been getting to you recently. Maybe taking a night off to devote to relaxation would be worth it?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": 20,
+        "mindfulness": 20
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Relax away!",
+    "no_caption": "Not right now.",
+    "yes_description": {
+        "en": [
+            "Taking care of yourself now will pay off in the future."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Maybe in a month or two, when things settle down, it'll be worth taking a break. But right now is too crucial a time to slack off."
+        ]
+    }
+}

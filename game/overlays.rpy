@@ -5,7 +5,7 @@ screen hud():
 
         background Solid("#ffffff")
 
-        text "Days as Founder: {0:02d}".format(turn_no) size 30 color "#000000" xalign 0.05 yalign 0.15
+        text "Days as Founder: {0:02d}".format(total_days) size 30 color "#000000" xalign 0.05 yalign 0.15
         if config.developer:
             hbox:
                 xalign 0.05
@@ -78,15 +78,15 @@ screen founder_map():
         yalign 0.5
 
         for i in range(1, 6):
-            if i < current_episode:
+            if i < current_chapter:
                 add Fixed(Circle(100, "#00ff00"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200)
-            elif i == current_episode:
+            elif i == current_chapter:
                 add Fixed(Circle(100, "#ffff00"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200) at flash
             else:
                 add Fixed(Circle(100, "#dfdfdf"), Text(str(i), color="#ffffff", size=52, xalign=0.5, yalign=0.5), xsize=200, ysize=200)
 
             if i != 5:
-                if i >= current_episode:
+                if i >= current_chapter:
                     add Solid("#00a1ff", xysize=(200, 10)) yalign 0.5
                 else:
                     add Solid("#00ff00", xysize=(200, 10)) yalign 0.5
@@ -95,12 +95,12 @@ screen founder_map():
         xalign 0.5
         ypos 360
 
-        use fl_window("err_msg", "EPISODE " + str(current_episode), colour="#559fdd", width=600, height=100, show_button="Let's go!", underlay=False):
+        use fl_window("err_msg", "EPISODE " + str(current_chapter), colour="#559fdd", width=600, height=100, show_button="Let's go!", underlay=False):
             vbox:
                 xalign 0.5
                 yalign 0.5
 
-                text EPISODE_NAMES[current_episode-1] color "#000000"
+                text EPISODE_NAMES[current_chapter-1] color "#000000"
 
 screen character_intro():
     default character_list = ["skylar", "takashi", "roger"]

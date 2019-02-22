@@ -21,6 +21,7 @@ define EPISODE_NAMES = [
     "Joining the Incubator"
     ]
 define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
+define CHAPTER_DAY_COUNT = 28
 
 default CURRENCY = "$"
 
@@ -42,9 +43,13 @@ default money = 5000
 default current_sprint = 0
 default current_bg = "bg bedroom"
 
+default money_manager = MoneyManager(money)
+
 default turn_no = 0
-default current_episode = 1
+default current_chapter = 1
+default total_days = 0
 default week = 0
+default month = 0
 default event_code = ""
 default level_up = False
 
