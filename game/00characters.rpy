@@ -3,7 +3,7 @@ define character.e = Character("Eileen", image="eileen")
 define character.s = Character("Skylar", image="skylar")
 define character.t = Character("Takashi", image="takashi")
 define character.r = Character("Roger", image="roger")
-define character.d = Character("Dominique")
+define character.d = Character("Dominique", image="dominique")
 define character.none = Character(image="none")
 
 init python:

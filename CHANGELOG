@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.2.0.0303
+------------
+* Define missing character side images. Closes #145.
+
 v 0.2.0.0222
 ------------
 * Added Chapter 2 content.
