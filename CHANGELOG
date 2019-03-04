@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.2.0.0304
+------------
+* Allow default events to show when there are no events remaining to show. Closes #144.
+* Bugfix: Mindfulness/Morale variable wsn't being changed on event actions.
+
 v 0.2.0.0303
 ------------
 * Define missing character side images. Closes #145.

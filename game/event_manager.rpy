@@ -32,15 +32,15 @@ init python:
         def run_action(self, action_list):
             self.mark_as_seen()
             for name, value in action_list.items():
-                if name == "mindfulness":
-                    name = "morale"
-                elif "affection" in name:
+                if "affection" in name:
                     if ":" in name:
                         character, affection = name.split(":")
                         characters_roster.update_affection(character, value)
                     else:
                         self.character.affection += value
                 else:
+                    if name == "mindfulness":
+                        name = "morale"
                     variable(name, value)
 
         @property
@@ -179,6 +179,8 @@ init python:
             available_events = self.available_events_this_week
             if len(available_events) == 1:
                 chosen_event = available_events[0]
+            elif len(available_events) == 0:
+                chosen_event = "chapter_default"
             else:
                 chosen_event = renpy.random.choice(available_events)
             return self.store[chosen_event]
