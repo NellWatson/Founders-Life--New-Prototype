@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.2.0.0307
+------------
+* Stop default event from appearing in regular event que. Closes #147.
+* Asign the none image to Dominique. Closes #146.
+
 v 0.2.0.0304
 ------------
 * Allow default events to show when there are no events remaining to show. Closes #144.

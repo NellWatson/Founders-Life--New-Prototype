@@ -16,7 +16,7 @@ image intro morale = "images/intro/morale.png"
 image intro money = "images/intro/money.png"
 
 image side nell normal = "images/contacts/nell.png"
-image side dominique = "images/contacts/dominique.png"
+image side dominique = "images/contacts/none.png"
 image side eileen = "images/contacts/eileen.png"
 image side skylar = "images/contacts/skylar.png"
 image side takashi = "images/contacts/takashi.png"

@@ -191,6 +191,10 @@ init python:
             for id in self.store:
                 # If any event needs to be played this turn, play it.
                 # Also makes sure that if there are any conditions, they are satisfied.
+
+                if id == "chapter_default":
+                    continue
+                    
                 if self.store[id].can_run:
                     if self.store[id].play_on == store.turn_no:
                         return [id]
