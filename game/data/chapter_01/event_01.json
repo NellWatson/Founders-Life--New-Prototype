@@ -16,9 +16,9 @@
     "yes_description": {
         "en": [
             "You told Skylar, though not as confidently as you would have liked.",
-            "\"You're not quitting your job, though, right?\"",
-            "\"As long as you're careful, then of course I will support you!\"",
-            "\"I would have... liked to be a part of this decision, though.\"",
+            "skylar::\"You're not quitting your job, though, right?\"",
+            "skylar::\"As long as you're careful, then of course I will support you!\"",
+            "skylar::\"I would have... liked to be a part of this decision, though.\"",
             "Your friends responded with polite interest and encouragement. You wonder how many actually believe you can do it. You don't tell your boss, though."
         ]
     },

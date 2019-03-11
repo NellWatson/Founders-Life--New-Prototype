@@ -87,22 +87,36 @@ init python:
 
         @property
         def get_speaker(self):
-            current_description_no = self.last_description_no + 1
-            if current_description_no == len(self._description[self.current_language]):
+            if not self.chose_action:
+                current_description_no = self.last_description_no + 1
+                description_list = self._description[self.current_language]
+            else:
+                current_description_no = self.choice_last_description_no + 1
+                if self.chose_action == "yes":
+                    description_list = self._yes_description[self.current_language]
+                if self.chose_action == "no":
+                    description_list = self._no_description[self.current_language]
+
+            if current_description_no == len(description_list):
                 current_description_no -= 1
-            if "#PLAYER:" in self._description[self.current_language][current_description_no]:
+
+            if "#PLAYER:" in description_list[current_description_no]:
                 return characters_roster.get_character_object("none").get_character_object
             else:
+                if "::" in description_list[current_description_no]:
+                    _char = description_list[current_description_no].split("::")[0]
+                    return characters_roster.get_character_object(_char).get_character_object
+
                 return self.character.get_character_object
 
         @property
         def description(self):
             self.last_description_no += 1
-            return self._description[self.current_language][self.last_description_no].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning())
+            return self._description[self.current_language][self.last_description_no].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning()).split("::")[-1]
 
         @property
         def last_description(self):
-            return self._description[self.current_language][-1].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning())
+            return self._description[self.current_language][-1].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning()).split("::")[-1]
 
         @property
         def has_multiple_description(self):
@@ -133,14 +147,14 @@ init python:
             self.choice_last_description_no += 1
             if self.choice_last_description_no == len(self._yes_description[self.current_language]):
                 self.choice_last_description_no -= 1
-            return self._yes_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name)
+            return self._yes_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name).split("::")[-1]
         
         @property
         def no_description(self):
             self.choice_last_description_no += 1
             if self.choice_last_description_no == len(self._no_description[self.current_language]):
                 self.choice_last_description_no -= 1
-            return self._no_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name)
+            return self._no_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name).split("::")[-1]
 
         @property
         def seeing_choice_last_description(self):
@@ -194,7 +208,7 @@ init python:
 
                 if id == "chapter_default":
                     continue
-                    
+
                 if self.store[id].can_run:
                     if self.store[id].play_on == store.turn_no:
                         return [id]

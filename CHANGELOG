@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.2.0.0311
+------------
+* Allow yes and no_description to show different character dialogues.
+
 v 0.2.0.0307
 ------------
 * Stop default event from appearing in regular event que. Closes #147.
