@@ -1,0 +1,25 @@
+{
+    "id": "chapter_01_29",
+    "title": "Constitutional",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": ["You've been working for most of the past few days, and it's starting to show up as aches and pains in your body. But you have a deadline coming up and know you can't afford a day off. How do you deal with this?"]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": 20,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 0
+    },
+    "yes_caption": "Go on a long walk",
+    "no_caption": "Do some stretches and get back to work",
+    "yes_description": {
+        "en": ["You take a long walk around the neighborhood to clear your mind. It helps, and you are more energetic and productive when you get back to work."]
+    },
+    "no_description": {
+        "en": ["You stretch your muscles, and while it helps for a bit, they start to ache again in another hour or so. You accept the pain and try to work around it."]
+    }
+}

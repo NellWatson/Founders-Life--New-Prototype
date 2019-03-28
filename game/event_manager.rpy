@@ -25,6 +25,30 @@ init python:
             self.choice_last_description_no = -1
 
             self.current_language = "en"
+            self.positive_kpi = []
+            self.negative_kpi = []
+
+            self.positive_lean = 0
+            self.negative_lean = 0
+
+            self.determine_event_lean()
+
+        def determine_event_lean(self):
+            for name, value in self.yes_action.items():
+                if value > 0:
+                    if name in self.no_action:
+                        self.positive_kpi.append(name)
+                    self.positive_lean += 1
+                elif value < 0:
+                    if name in self.no_action:
+                        self.negative_kpi.append(name)
+                    self.positive_lean -= 1
+
+            for name, value in self.no_action.items():
+                if value > 0:
+                    self.negative_lean += 1
+                elif value < 0:
+                    self.negative_lean += 1
 
         def mark_as_seen(self):
             self.seen_on_day = store.turn_no
@@ -43,6 +67,10 @@ init python:
                         name = "morale"
                     variable(name, value)
 
+        @property
+        def overall_lean(self):
+            return self.positive_lean - self.negative_lean
+        
         @property
         def can_run(self):
             if self.play_on and self.play_on != store.turn_no:
@@ -64,11 +92,19 @@ init python:
         def yes(self):
             self.chose_action = "yes"
             self.run_action(self.yes_action)
+            if self.positive_lean > 0:
+                chapter_manager.record_choice_lean(1)
+            else:
+                chapter_manager.record_choice_lean(0)
 
         @property
         def no(self):
             self.chose_action = "no"
             self.run_action(self.no_action)
+            if self.negative_lean > 0:
+                chapter_manager.record_choice_lean(-1)
+            else:
+                chapter_manager.record_choice_lean(0)
 
         @property
         def is_yes(self):
@@ -174,6 +210,8 @@ init python:
             self.last_event_category = None
             self.last_version = ""
 
+            self.event_choices_lean = []
+
         def load(self, filepath, extra_index_file=None):
             file_list = load(filepath, "index")
 
@@ -196,6 +234,18 @@ init python:
             elif len(available_events) == 0:
                 chosen_event = "chapter_default"
             else:
+                if len(self.event_choices_lean) > 6:
+                    last_seven_lean = sum(self.event_choices_lean[-7:])
+                    final_events = []
+                    
+                    if last_seven_lean <= 0:
+                        for i in available_events:
+                            if self.store[i].overall_lean >= 0:
+                                final_events.append(i)
+
+                    if len(final_events):
+                        available_events = final_events
+
                 chosen_event = renpy.random.choice(available_events)
             return self.store[chosen_event]
 
@@ -233,6 +283,9 @@ init python:
 
         def seen_event(self, chapter, event):
             return ( self.store[chapter].get_event(event).has_seen, self.store[chapter].get_event(event).chose_action )
+
+        def record_choice_lean(self, value):
+            self.store[self.current_chapter].event_choices_lean.append(value)
 
     def string_formatter(string):
         pass

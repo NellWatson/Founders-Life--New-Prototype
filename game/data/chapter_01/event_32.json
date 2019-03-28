@@ -1,0 +1,26 @@
+{
+    "id": "chapter_01_32",
+    "title": "Extra Work",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": ["Someone approaches you about some quick contract work. It's easy money, but you were looking forward to a break this evening. What do you do?"]
+    },
+    "yes_action": {
+        "energy": -10,
+        "mindfulness": -10,
+        "money": 100
+    },
+    "no_action": {
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Accept the money",
+    "no_caption": "Keep control of your time",
+    "yes_description": {
+        "en": ["The extra money will help, and now is the time for hustling."]
+    },
+    "no_description": {
+        "en": ["Your time belongs to you, and you don't want to give this hour away. You say no."]
+    }
+}

@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "A client you've been working with e-mails you - they need the job done a full week sooner than originally anticipated. You'd have to pull an all-nighter to get it done, and even then you're not sure you can."
+            "A client you've been working with emails you - they need the job done a full week sooner than originally anticipated! You'd have to pull an all-nighter to get it done, and even then you're not sure you can do it."
         ]
     },
     "yes_action": {
@@ -18,7 +18,7 @@
         "money": 200
     },
     "yes_caption": "Put your nose to the grindstone.",
-    "no_caption": "Apologize for not being able to accomodate them, but stick to the original deadline.",
+    "no_caption": "Apologize, but stick to the original deadline.",
     "yes_description": {
         "en": [
             "You work with intense focus (and several cups of coffee) to finish the job overnight. It's not perfect, but the client is ecstatic and sends you a nice bonus for the work."
@@ -26,7 +26,7 @@
     },
     "no_description": {
         "en": [
-            "The client understands, but sounds disappointed. You do eventually finish the job, but you get the feeling you won't be receiving work from them again in the future."
+            "The client understands, but sounds disappointed. You do eventually finish the job, but you get the feeling you won't be receiving work from them in the future."
         ]
     }
 }

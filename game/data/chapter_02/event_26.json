@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "A potential client e-mails you about a quick job that should only take you an evening to finish. There's a caveat, though: They want to pay you in exposure."
+            "A potential client emails you about a quick job that should only take you an evening to finish. There's a caveat, though: they want to pay you in exposure."
         ]
     },
     "yes_action": {
@@ -19,12 +19,12 @@
     "no_caption": "My time is worth money",
     "yes_description": {
         "en": [
-            "You finish up the work and send it to the client - only for your name to be buried deep within their website, on a credits page no one will ever read. Oh, well."
+            "You finish up the work and send it to the client - only for your name to be buried deep within their website on a credits page no one will ever read. Oh well."
         ]
     },
     "no_description": {
         "en": [
-            "You ignore the e-mail. Your time is worth money, and knowing this gives your self-esteem a boost."
+            "You ignore the email. Your time is worth money, and knowing this gives your self-esteem a boost."
         ]
     }
 }

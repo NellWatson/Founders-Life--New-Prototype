@@ -26,13 +26,13 @@
     "no_caption": "Okay, I'll work harder",
     "yes_description": {
         "en": [
-            "You'll - I mean, I know that you're planning on doing your own thing full-time, but --",
-            "Forget it. We'll talk about this some other time."
+            "skylar::\"You'll - I mean, I know you're planning on doing your own thing full-time, but --\"",
+            "skylar::\"Forget it. We'll talk about this some other time.\""
         ]
     },
     "no_description": {
         "en": [
-            "Thank you for listening, #NAME."
+            "skylar::\"Thank you for listening, #NAME.\""
         ]
     }
 }

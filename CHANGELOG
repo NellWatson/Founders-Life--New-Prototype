@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.2.0.0328
+------------
+* Update events
+* Add new events to Chapter 1
+* Add first iteration of slightly not random event dispatcher
+* Tweak variable values based on player overall responses.
+
 v 0.2.0.0311
 ------------
 * Allow yes and no_description to show different character dialogues.

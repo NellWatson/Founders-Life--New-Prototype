@@ -5,7 +5,7 @@
     "character": "Roger",
     "description": {
         "en": [
-            "I've noticed you're metrics are off, #NAME. You've been doing some real bad work lately.",
+            "I've noticed your metrics are off, NAME. You've been doing some real bad work lately.",
             "Get it together. If this lasts much longer, I'm not sure you will."
         ]
     },
@@ -17,7 +17,7 @@
     "yes_caption": "Got it, Boss.",
     "yes_description": {
         "en": [
-            "You lay off of your own work tonight to put in the time with your full-time job.",
+            "You lay off of your own work tonight to catch up with your full-time job.",
             "There just aren't enough hours in the day..."
         ]
     }

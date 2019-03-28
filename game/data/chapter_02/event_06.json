@@ -19,13 +19,13 @@
     "no_caption": "It's not worth raising a fuss over.",
     "yes_description": {
         "en": [
-            "The client responds with a sassy e-mail, informing you that you didn't sign a contract and the sparse verbal one you agreed to guaranteed payment only upon use of the item in question. Still, they send you $100 - probably just to keep you quiet."
+            "The client responds with a sassy e-mail, declaring that you didn't sign a contract and the sparse verbal one you agreed to guaranteed payment only upon use of the asset in question. Still, they send you $100 - probably to keep you quiet."
         ]
     },
     "no_description": {
         "en": [
             "It's not something you're happy about, but when you've already wasted this much time and energy on them, there's no reason to waste more.",
-            "You do still end up leaving an anonymous, nasty review for them online as payback, though"
+            "You still leave a scathing - and anonymous - review for them online, though."
         ]
     }
 }

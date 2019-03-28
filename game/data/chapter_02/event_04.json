@@ -5,8 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You've landed a great freelance gig that's going to pay really well. There's just one caveat - the client can't make up their mind about what they want!",
-            "You've created a mockup that they initially accepted, but now they want to go with an idea they've presented. What should you do?"
+            "You landed a great freelance gig that's going to pay really well. There's just one caveat - the client can't make up their mind about what they want!",
+            "You created a mockup that they initially accepted, but now they want to go with a completely different idea they've presented. What should you do?"
         ]
     },
     "yes_action": {
@@ -23,7 +23,7 @@
     "no_caption": "Inform the customer that you're sticking with the original plan.",
     "yes_description": {
         "en": [
-            "You grit your teeth and put in the extra work. The client thanks you, and you finally get paid."
+            "You grit your teeth and put in the extra work. The client thanks you and you finally get paid."
         ]
     },
     "no_description": {

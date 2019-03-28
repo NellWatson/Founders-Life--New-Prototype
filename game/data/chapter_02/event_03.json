@@ -8,10 +8,10 @@
     ],
     "description": {
         "en": [
-            "Hey, I need to talk to you. I looked into how much money you made last month, and what your business plan looks like...",
+            "Hey, I need to talk to you. I looked into how much money you made last month... and then also looked over your general business plan.",
             "I know I was going to try and let you do your own thing, but this is crazy. We're a partnership, and I can't help but feel like you're putting us in danger. There's no way this is going to be sustainable.",
             "But I know this means a lot to you. Even if I want you to stop, that isn't fair of me. So I have a proposition. If you can make enough money to cover rent this month, $2000, then I'll be quiet and trust your decisions from now on.",
-            "But if you can't do that, I can't support you doing this."
+            "But if you can't do that, then I can't support you in this."
         ]
     },
     "yes_action": {
@@ -26,15 +26,15 @@
     "no_caption": "But what will happen if I fail?",
     "yes_description": {
         "en": [
-            "Okay. Thank you for being okay with this. It's just so risky. You know how my mom's always been, running her little scams and always chasing after the next big money-making scheme...",
-            "It's just so scary for me, I feel like I've only been getting more and more anxious.",
-            "Hopefully this will help."
+            "skylar::\"Okay. Thank you for being okay with this. It's just so risky. You know how my mom is, running her little scams and always chasing the next big money-making scheme...\"",
+            "skylar::\"It's just so scary for me, I feel like I've only been getting more and more anxious.\"",
+            "skylar::\"Hopefully this will help.\""
         ]
     },
     "no_description": {
         "en": [
-            "If you fail...",
-            "I don't know what will happen. I don't want to force you to give up your dream, but I just - I can't live with this kind of insecurity. It's been so stressful for me. I know it's not just about me, but..."
+            "skylar::\"If you fail...\"",
+            "skylar::\"I don't know what will happen. I don't want to force you to give up your dream, but I just - I can't live with this kind of insecurity. It's been so stressful for me. I know it's not about me, but...\""
         ]
     }
 }

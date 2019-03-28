@@ -1,0 +1,25 @@
+{
+    "id": "chapter_01_30",
+    "title": "Migraine",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": ["While working, you suddenly notice a dark spot in your vision. You can't read clearly, and you know what this means - you're about to get a migraine! How do you handle it?"]
+    },
+    "yes_action": {
+        "energy": -10
+    },
+    "no_action": {
+        "productivity": -10,
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Take some medicine and push on",
+    "no_caption": "Finish up what you can and go lay down",
+    "yes_description": {
+        "en": ["You take some medicine and keep working, but in no time the migraine hits. The medicine was no help. You're completely unable to keep going, and take the night off."]
+    },
+    "no_description": {
+        "en": ["You crawl into bed, all lights shut off. You feel bad about the work that's not getting done, but after a while realize you probably needed a break anyways."]
+    }
+}

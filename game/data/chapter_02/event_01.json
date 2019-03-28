@@ -22,12 +22,12 @@
     "no_caption": "Work on own project",
     "yes_description": {
         "en": [
-            "Despite doing the same work, it's much more boring to work on something that isn't yours. But you get it done."
+            "Despite doing the same kind of work, it's far less interesting when it's for a project that isn't yours. But you get it done."
         ]
     },
     "no_description": {
         "en": [
-            "Getting this to market is what's really going to get you the big bucks. You work on it, a few hours closer to a working prototype."
+            "Getting this to market is what's really going to get you the big bucks. You're now a few hours closer to a working prototype."
         ]
     }
 }

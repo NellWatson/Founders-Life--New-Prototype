@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "An article you found has been troubling you all day today. It claimed successful CEOs all work at least 60 hours a week on their business - if not radically more.",
+            "An article you found has been troubling you all day. It claimed successful CEOs work at least 60 hours a week on their business - if not terrifically more!",
             "You're nowhere near that amount, and you wonder whether you should be cutting back on sleep to get more done."
         ]
     },
@@ -21,13 +21,13 @@
     "no_caption": "Health is more important than money",
     "yes_description": {
         "en": [
-            "You definitely have the time to get more done, but find it harder to maintain energy throughout the day. Not only that, but the bickering between you and Skylar has gotten much worse.",
+            "You definitely have the time to get more done, but find it harder to maintain energy throughout the day. Not only that, but the bickering between you and Skylar gets much worse.",
             "At least work is going well."
         ]
     },
     "no_description": {
         "en": [
-            "You decide against changing your schedule. Maybe you will in the future - or maybe the article was just clickbait, meant to stoke your fears for clicks."
+            "You decide against changing your schedule. Maybe you will in the future - or maybe the article was only meant to stoke your fears for clicks."
         ]
     }
 }

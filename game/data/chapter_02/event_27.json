@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "You're finishing up a project for a client ahead of schedule (the deadline is a few days off still), but as you're getting ready to send it, your heart sinks.",
+            "You finish up a project for a client ahead of schedule (the deadline is a few days off still), but as you're getting ready to send it, your heart sinks.",
             "You know this isn't your best work, but you're not sure you have the energy to do it all over again. It's not terrible quality, but it's not up to your usual standards. What do you do?"
         ]
     },
@@ -19,7 +19,7 @@
         "mindfulness": 20,
         "money": 250
     },
-    "yes_caption": "Sent it off",
+    "yes_caption": "Send it off",
     "no_caption": "Redo it",
     "yes_description": {
         "en": [

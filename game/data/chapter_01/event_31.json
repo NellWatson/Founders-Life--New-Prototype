@@ -1,0 +1,24 @@
+{
+    "id": "chapter_01_31",
+    "title": "Skill Sharpening",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": ["You finish your work early this evening, and have the option of taking off early or of spending some extra time polishing up your skills."]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "energy": -10
+    },
+    "no_action": {
+        "energy": 10
+    },
+    "yes_caption": "Polish your skills",
+    "no_caption": "Take the night off",
+    "yes_description": {
+        "en": ["You take the time to dig around for some good books and tutorials to help you improve, and you learn some things you know will prove very useful."]
+    },
+    "no_description": {
+        "en": ["You take the night off, and feel pretty good about it, too!"]
+    }
+}

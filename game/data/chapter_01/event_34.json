@@ -1,0 +1,28 @@
+{
+    "id": "chapter_01_34",
+    "title": "A Balance of Fun",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": [
+            "It hits you while you're working: you really haven't had time for fun this month. The things that used to take up your time - TV, friends, hobbies - have fallen away in favor of your overall goal. You wonder whether this is a good thing, or whether you should make time for fun."
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Make time for fun",
+    "no_caption": "Now is the time to hustle",
+    "yes_description": {
+        "en": ["You make some time that evening to do something just for the enjoyment of it, and it completely refreshes you. There's more to life than just work!"]
+    },
+    "no_description": {
+        "en": ["There will be time for fun once you've truly established yourself, you decide."]
+    }
+}

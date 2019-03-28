@@ -5,9 +5,9 @@
     "character": "none",
     "description": {
         "en": [
-            "You've been working so hard on all of your jobs that you're starting to feel a bit worse-for-wear.",
+            "You've been working so hard on all of your jobs that you're starting to feel a bit worse for wear.",
             "Then a brilliant idea occurs to you: why not call in sick and dedicate the entire day to working for yourself?",
-            "Your boss wouldn't be happy, but you'd be able to work without stressing yourself out."
+            "Your boss wouldn't be happy, but you'd be able to get something done without stressing yourself out."
         ]
     },
     "yes_action": {
@@ -24,7 +24,7 @@
     "no_caption": "That's immoral",
     "yes_description": {
         "en": [
-            "You end up getting a lot of work done and feeling a bit like a kid who got out of school early. The boost completely shifts your mood, and you're able to get a lot done and have a good time doing it!"
+            "You feel a bit like a kid who got out of school early. The boost completely shifts your mood, and you're able to get a lot done and have a good time doing it!"
         ]
     },
     "no_description": {

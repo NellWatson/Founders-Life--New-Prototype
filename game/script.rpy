@@ -1,6 +1,7 @@
 label start:
     $ characters_roster = CharacterRooster()
     $ chapter_manager = ChapterManager()
+    $ var_tracker = VarTracker()
     
     $ characters_roster.add_character("none", "None", "none", None)
     $ characters_roster.add_character("eileen", "Eileen", "e", "eileen")
@@ -254,13 +255,12 @@ label chapter_one_finale:
     call screen founder_map
     $ event_code = "chapter_02_00"
 
-    "It's the second full month of pursuing your dreams, and you've had a terrible realization."
-    "You aren't making anywhere near enough money to be able to quit your job."
+    "It's the second full month of pursuing your dreams, and you've had a terrible realization: you aren't making nearly enough money to be able to quit your job."
     "But what can you do? While you're still working your full-time job, there's only so much time you can put into this venture."
-    "At least you still have a safety net. If you had quit your job and jumped into this first thing, you'd be feeling the burn."
+    "At least you have a safety net. If you'd quit your job and jumped into this first thing, you'd be feeling the burn."
 
     menu:
-        "It's disappointing, but I have to work harder to try and make this viable. You decide to focus on making more money this month.":
+        "It's disappointing, but you have to work harder to make this viable. You decide to focus on making more money this month.":
             pass
 
     jump checkpoint
