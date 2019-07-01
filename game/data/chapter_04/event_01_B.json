@@ -1,0 +1,18 @@
+{
+    "id": "chapter_04_01_B",
+    "title": "On Time or Late",
+    "category": "mindfulness",
+    "character": "none",
+    "condition": [
+        ["ch_04:chapter", "chapter_04_12", "chose:no"]
+    ],
+    "description": {
+        "en": ["The graphic designer hasn't turned in their work on time. You have to get on them, nagging them about meeting the deadline. A few days later, they do turn their work in - but you need to ask them for basic tweaks for transparency and can't implement them as-is. The whole thing turns into a headache, and one you really didn't need."]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "play_after": "chapter_04_12"
+}

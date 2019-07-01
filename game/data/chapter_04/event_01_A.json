@@ -1,0 +1,18 @@
+{
+    "id": "chapter_04_01_A",
+    "title": "On Time or Late",
+    "category": "mindfulness",
+    "character": "none",
+    "condition": [
+        ["ch_04:chapter", "chapter_04_12", "chose:yes"]
+    ],
+    "description": {
+        "en": ["The graphics designer sends you their finished work on time and with many thoughtful touches that make the work easier to implement. You're very satisfied and leave a great commendation for them."]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "play_after": "chapter_04_12"
+}

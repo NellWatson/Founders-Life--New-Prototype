@@ -1,0 +1,30 @@
+{
+    "id": "chapter_04_32",
+    "title": "Passive Aggression ",
+    "category": "productivity",
+    "character": "dominique",
+    "description": {
+        "en": [
+            "You receive a book in the mail titled, \"How to Handle Criticism Constructively! Change Your Life by Changing Your Attitude.\" There's no way to know when it was sent, but you know who sent it: Dominique. How should you respond?"
+        ]
+    },
+    "yes_action": {
+        "energy": -20,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "mindfulness": 10
+    },
+    "yes_caption": "Read the book.",
+    "no_caption": "Throw him some sass",
+    "yes_description": {
+        "en": [
+            "You grudgingly read the book. It has good exercises and proves to be useful, but the effort of containing your anger and defensiveness while reading tires you out."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You send Dominique an \"innocent\" e-mail, talking about how someone must have sent you this book and what an idiot that person must be! You end by saying you're going to donate it to your local library. After all, who can argue with such a generous person?"
+        ]
+    }
+}

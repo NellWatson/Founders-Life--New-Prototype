@@ -1,0 +1,35 @@
+{
+    "id": "chapter_03_10",
+    "title": "Target Audience",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 21, "greater"]
+    ],
+    "description": {
+        "en": [
+            "You realize that you know who you believe the target audience is for your product, but you haven't actually done any market research into this idea. With the pitch so close, you don't have time to devote the amount of effort you'd like to get solid data.",
+            "Hire a firm to do it for you or go with your intial assumptions?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "money": -500
+    },
+    "no_action": {
+        "mindfulness": -10
+    },
+    "yes_caption": "Do market research",
+    "no_caption": "Stick to your gut",
+    "yes_description": {
+        "en": [
+            "Though it hurts your wallet to do it, you hire out a firm.",
+            "They come back with not just a good understanding of who you're marketing to, but a bunch of suggestions that should help make your product better overall. How useful!"
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You save the money and keep to your initial instincts. After all, you wouldn't have started making this product without an intuitive understand of who it is for."
+        ]
+    }
+}

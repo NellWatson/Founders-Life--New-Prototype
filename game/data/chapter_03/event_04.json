@@ -1,0 +1,34 @@
+{
+    "id": "chapter_03_04",
+    "title": "Elevator Pitch 2",
+    "category": "mindfulness",
+    "character": "none",
+    "condition": [
+        ["ch_03:chapter", "chapter_03_03", "chose:any"]
+    ],
+    "description": {
+        "en": [
+            "Having settled on an elevator pitch, you now just need the confidence to deliver it. You read once that the best way to cultivate this confidence is to go outside, talk to strangers, and see how interested you can make them with your pitch. At the same time, you're not sure doing that won't explode in your face and end up demoralizing you. You've never been good at talking with strangers, and you're not sure why this exercise should be any different."
+        ]
+    },
+    "yes_action": {
+        "energy": -10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Pitch to strangers",
+    "no_caption": "Practice by yourself",
+    "yes_description": {
+        "en": [
+            "You go and pitch to strangers - and end up falling flat on your face, repeatedly. You're not sure whether the problem is with your pitch or your delivery, but they're visibly uninterested in everything you're trying to do."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Although you feel a little lame for staying it, you realize there's a lot to learn just from practicing in front of a mirror. Your expressions are off, and you seem at turns aggressive, hesitant, and bored of your own ideas.",
+            "You focus on delivering the pitch with confidence and enthusiasm, practicing until you have something you think may be infectious."
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "chapter_04_25_A",
+    "title": "Follow-Up to Upgrade",
+    "category": "productivity",
+    "character": "none",
+    "condition": [
+        ["ch_04:chapter", "chapter_04_13", "chose:yes"]
+    ],
+    "description": {
+        "en": ["The new computer is running smooth as butter. You've been able to get a decent amount more work done every day. It's nothing life changing, but an added thirty minutes of solid work adds up."]
+    },
+    "yes_action": {
+        "productivity": 20
+    },
+    "yes_caption": "Continue",
+    "yes_description": {
+        "en": [
+            "You go to bed, feeling extremely guilty. When you explain the situation to Dominique the next day, he responds with compassion.",
+            "dominique::\"To be honest, I put extra items on the list - I like to aim high so that I achieve more than I otherwise would've. That you've even gotten this close is impressive!\""
+        ]
+    },
+    "play_after": "chapter_04_13"
+}

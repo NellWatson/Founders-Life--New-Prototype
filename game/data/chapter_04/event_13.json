@@ -1,0 +1,30 @@
+{
+    "id": "chapter_04_13",
+    "title": "Upgrades",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "Now that you have an investor, more possibilities have opened up to you. One of those involves your computer. It was fine at first - you didn't really have a choice - but now you're noticing how much time is lost waiting for applications to open, dealing with crashes, and restarting your computer. Is it worth the money to upgrade it?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": -10,
+        "mindfulness": 10,
+        "money": -1500
+    },
+    "no_action": {
+        "mindfulness": 0
+    },
+    "yes_description": {
+        "en": [
+            "You upgrade your computer and spend a day transferring files, programs, and preferences over, making sure you don't lose anything. It'll be worth it in the end."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You decide not to upgrade your computer - this one is running fine, and there are more important things to spend money on."
+        ]
+    }
+}

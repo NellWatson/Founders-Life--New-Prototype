@@ -1,0 +1,29 @@
+{
+    "id": "chapter_04_26",
+    "title": "Health Insurance",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": ["Now that you have someone to back you up, you realize quitting your full-time job is real, achievable, and right around the corner. But with the joy of that realization comes an unpleasant reality: you'll soon be out of health insurance. The anxiety sits in the back of your mind, tugging at you. Is it worth doing some research to see what your options are?"]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness":  -10
+    },
+    "yes_caption": "Do the research",
+    "no_caption": "Put it out of your mind",
+    "yes_description": {
+        "en": [
+            "You spend the day on various government websites. It's good you looked, because your state has a limited amount of time between when you quit a job and when you can apply for health insurance coverage. Now you know that's something you need to do ASAP when the time comes."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You ignore the impulse. You can deal with that when the time comes - and you've got too much on your plate to handle that now!"
+        ]
+    }
+}

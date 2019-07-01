@@ -1,0 +1,23 @@
+{
+    "id": "chapter_04_05",
+    "title": "Valid Criticism",
+    "category": "mindfulness",
+    "character": "dominique",
+    "description": {
+        "en": ["One of the criticisms Dominique gave you is bothering you more than the others. You know that he has far more experience than you do, but you're absolutely convinced his take on this specific issue isn't right. Should you fight it, or listen to his feedback?"]
+    },
+    "yes_action": {
+        "energy": -10
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Fight",
+    "no_caption": "Listen to feedback",
+    "yes_description": {
+        "en": ["You argue with Dominique over e-mails for a while, and eventually he agrees to go with your idea over his own."]
+    },
+    "no_description": {
+        "en": ["You listen to Dominique's critique. After all, you're still learning."]
+    }
+}

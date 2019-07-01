@@ -1,0 +1,29 @@
+{
+    "id": "chapter_04_19",
+    "title": "Management",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "That feeling of overwhelm you had at the beginning of the month keeps returning, putting a temporary hold on all the work you're trying to get done. It's been incredibly hard to deal with, but you don't know what to do. You have to get the work done, and won't be able to take time off - there's no other way, right?"
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Ask for help",
+    "no_caption": "Make a list",
+    "yes_description": {
+        "en": [
+            "You ask Skylar for help. Not a lot can really be done to help you, but having a listening ear does make it feel a bit more bearable."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You make a bulleted list and try to apportion tasks to specific days, reminding yourself this won't last forever. Seeing it all laid out is somehow both more motivating and more overwhelming than ever - but you like getting to cross things off."
+        ]
+    }
+}

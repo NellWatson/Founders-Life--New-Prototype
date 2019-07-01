@@ -10,6 +10,8 @@ label start:
     $ characters_roster.add_character("roger", "Roger", "r", "roger")
     $ chapter_manager.load_chapter("ch_01", "chapter_01")
     $ chapter_manager.load_chapter("ch_02", "chapter_02")
+    $ chapter_manager.load_chapter("ch_03", "chapter_03")
+    $ chapter_manager.load_chapter("ch_04", "chapter_04")
     $ chapter_manager.set_chapter("ch_01")
 
     $ calculate_pool()
@@ -232,6 +234,10 @@ label chapter_finale:
         jump chapter_one_finale
     elif current_chapter == 3:
         jump chapter_two_finale
+    elif current_chapter == 4:
+        jump chapter_three_finale
+    elif current_chapter == 5:
+        jump chapter_four_finale
 
 label chapter_one_finale:
     $ event_code = "chapter_01_99"
@@ -264,3 +270,78 @@ label chapter_one_finale:
             pass
 
     jump checkpoint
+
+label chapter_two_finale:
+    call screen founder_map
+
+    $ event_code = "chapter_03_00"
+    
+    "You've finally proven to Skylar that you are, in fact, capable of achieving your dreams, but the measures you had to take to do it leave you dissatisfied."
+    "You didn't start out on this journey just to wind up working on other people's dreams, after all. You wanted to be your own boss, not gain sixty. But how are you supposed to bide the time between now and when your work is finished?"
+    "As you're mulling this and checking your inbox, you notice another e-mail from Dominique."
+
+    "Dear [founder_name],"
+    "I'm writing again because divine intervention has enabled me to be in your area at the end of the month, on the 28th. If you are available, I would like to meet."
+    "Pitch me your venture. Tell me your plans. Let me know the progress you have made. Then, we can see whether I can be of use to you.\nBest,\nDominique Martel"
+
+    "Before you can give yourself too much time to stop, you reply and accept. But you can't help asking: why are you doing this? The answer comes almost immediately."
+    "Because part of the reason I chose to chase my success was to help others when they chased their own."
+
+    menu:
+        "The 28th? That gives you a whole month to prepare your pitch.":
+            pass
+
+    jump checkpoint
+
+label chapter_three_finale:
+    if characters_roster.get_character_object(character).affection < 15:
+        $ renpy.unlink_save("custom")
+        $ telemetry.end("Game Over at Chapter 03")
+        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+
+        call screen startup_review(current_bg)
+        call screen sprint_review(current_bg)
+
+        play sound "sfx/fx012.wav"
+        n normal "Game over.\nYou survived [total_days] days."
+        
+        if not persistent.submitted_form:
+            n normal "Please let us know your feedback."
+            call screen feedback_form_screen
+        return
+
+    $ characters_roster.get_character_object(character).affection = 0
+    "[founder_name],\nI'm very excited to move forward with you on this. A few things to note:"
+    "There is an event coming up in two months. I think it would be prudent to release your product to correspond with that event, as that should help gain it a lot of publicity. I know that's likely a much faster timeline than you were hoping for, but trust me on this."
+    "On the first of the next month, we will release the product to beta-testers, who will give us valuable feedback. Thus, this month should be spend ensuring the product working as well as we can get it."
+    "I'm having my team look over your project and will send back our notes. It will be a lot to handle, but fixing what they find will go a long way to making a lasting impression on the beta-testers."
+    "Take some rest now while you can. You'll need it.\nDominique"
+
+    menu:
+        "That sounds... ominous.":
+            $ variable("energy", 20)
+            $ variable("morale", 20)
+            
+            "You take some time off, trying to have the most relaxing day possible."
+            "You're deeply grateful you did."
+
+    jump checkpoint
+
+label chapter_four_finale:
+    $ event_code = "chapter_04_99"
+    show dominique at center
+
+    "On the last day, just in the nick of time, you have everything finalized and ready for the beta."
+    "You've been working so furiously hard you haven't even had time to process the fact that tomorrow, real live people will be seeing what you've poured your heart and soul into over the past few months. In fact, you're now too exhausted to even be worried."
+    "Later that night, when you're explaining this to Dominique, he smiles."
+
+    d "That was exactly the point. Trust me, you'll thank me later."
+    "You crawl into bed. Tomorrow, things change for good."
+
+    n normal "Game over.\nThank you for playing."
+    
+    if not persistent.submitted_form:
+        n normal "Please let us know your feedback."
+        call screen feedback_form_screen
+
+    return

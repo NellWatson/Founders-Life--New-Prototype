@@ -1,0 +1,31 @@
+{
+    "id": "chapter_03_20",
+    "title": "Money or Polish 4",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "A potential client e-mails you, asking you to do quite a small amount of work for a bit of quick cash. It's time that could be spent polishing your product, but it's also a quick job easily done."
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10,
+        "money": 150
+    },
+    "no_action": {
+        "mindfulness": 20
+    },
+    "yes_caption": "Do the work",
+    "no_caption": "Polish instead",
+    "yes_description": {
+        "en": [
+            "You get the work done and get paid for it in the same night. Not too shabby!"
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You work on your dream, not someone else's."
+        ]
+    }
+}

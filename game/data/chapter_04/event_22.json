@@ -1,0 +1,20 @@
+{
+    "id": "chapter_04_22",
+    "title": "Emotional Labor",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "Dominique asked you to get a handle on your defensiveness, and that is exactly what you're going to do.",
+            "It takes some time. You read a few articles, skim a few books, and do a lot of journaling and soul-searching. Eventually you have a list of techniques and a deeper understanding of yourself, which you hope will help you take a step back and keep criticism from becoming personal.",
+            "However, the work of sorting through all that completely exhausts you and you lose a day of work."
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Continue",
+    "play_after": "chapter_04_09"
+}

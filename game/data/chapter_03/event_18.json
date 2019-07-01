@@ -1,0 +1,31 @@
+{
+    "id": "chapter_03_18",
+    "title": "Money or Polish 2",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "A potential client comes to you with a fairly time-consuming project. It'd be stressful, but it'll add a decent amount to your pocket."
+        ]
+    },
+    "yes_action": {
+        "energy": -10,
+        "mindfulness": -20,
+        "money": 400
+    },
+    "no_action": {
+        "productivity": 0
+    },
+    "yes_caption": "Take the job",
+    "no_caption": "Decline",
+    "yes_description": {
+        "en": [
+            "You do the work. Hopefully the paycheck was worth the effort."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You decide against taking the job. It just wasn't worth it."
+        ]
+    }
+}

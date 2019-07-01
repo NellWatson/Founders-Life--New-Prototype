@@ -1,0 +1,44 @@
+{
+    "id": "chapter_03_28_A",
+    "title": "The Pitch",
+    "category": "energy",
+    "character": "dominique",
+    "condition": [
+        ["none:affection", 15, "greater_equal"]
+    ],
+    "description": {
+        "en": [
+            "You awaken with butterflies in your stomach. You've prepared for the entire month - surely this will be enough?",
+            "You arrive to the conference room early and have a few minutes to gather your thoughts. You stride around the room to get your bearings, then hear footsteps approaching down the hall.",
+            "Dominique Martel is an intimidating presence. You've never seen a millionaire in real life, and instead of a gaudy old man covered in gold, you find a tastefully-dressed Frenchman.",
+            "dominique::\"You must be #NAME.\"",
+            "He shakes your hand with a smile and makes a bit of small talk while he takes his seat. Then you take a deep breath. It's finally time.",
+            "You flow through the presentation as though you had been through it a thousand times. Throughout, Dominique asks piercing questions, but you've given thought to the majority of them already. The rest you pause to consider, then answer with confidence.",
+            "After finishing, Dominique takes a few minutes to consider you. Just when you start to sweat, he smiles.",
+            "dominique::\"#NAME, right? I like you.\"",
+            "dominique::\"I see so much of myself in you. I was young, ambitious, and confident. I had little to my name, and nothing to hold me back from throwing myself against a brick wall. And throw I did!\"",
+            "His laugh fills the entire room.",
+            "dominique::\"What I didn't have back then was help. Guidance. And this is something I now want to offer you. Not just help with funding, but help with entrepreneurship. What do you say?\""
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 0
+    },
+    "no_action": {
+        "mindfulness": 0
+    },
+    "yes_description": {
+        "en": [
+            "It's all you can do to stutter out an agreement. He beams and clasps your hand.",
+            "dominique::\"Then I will be in touch! For now, I must get to the airport. Thanks again, #NAME. May this be the start of something wonderful.\""
+        ]
+    },
+    "no_description": {
+        "en": [
+            "The gravitas of the situation hits you all at once. Suddenly, you see the man before you less as a savior, and more as a warden. If you agree here, you will be bound to that agreement.",
+            "Your life will completely change. And you don't want that.",
+            "You don't shake his hand.",
+            "He leaves for his flight, and you leave for home. Maybe you weren't as serious about this as you thought."
+        ]
+    }
+}

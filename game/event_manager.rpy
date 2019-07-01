@@ -2,7 +2,7 @@ init python:
 
     class Event():
 
-        def __init__(self, id, title, category, character, description, yes_action, no_action={}, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, repeatable=False, version="1"):
+        def __init__(self, id, title, category, character, description, yes_action, no_action={}, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, play_after="", repeatable=False, version="1"):
             self.id = id
             self.title = title
             self.category = category
@@ -16,6 +16,7 @@ init python:
             self._yes_description = yes_description
             self._no_description = no_description
             self.play_on = play_on
+            self.play_after = play_after
             self.version = version
             self.repeatable = repeatable
 
@@ -208,6 +209,7 @@ init python:
             self.events_seen = 0
             self.all_categories = []
             self.last_event_category = None
+            self.last_event_played = ""
             self.last_version = ""
 
             self.event_choices_lean = []
@@ -247,6 +249,7 @@ init python:
                         available_events = final_events
 
                 chosen_event = renpy.random.choice(available_events)
+                self.last_event_played = chosen_event
             return self.store[chosen_event]
 
         @property
@@ -260,6 +263,9 @@ init python:
                     continue
 
                 if self.store[id].can_run:
+                    if self.store[id].play_after == self.last_event_played:
+                        return [id]
+
                     if self.store[id].play_on == store.turn_no:
                         return [id]
                     _temp_list.append(id)

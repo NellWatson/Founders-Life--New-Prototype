@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v 0.2.4.0701
+------------
+* Added Chapter 03 and Chapter 04 content
+* Changes to Event system
+    * Added `play_after` attribute to play events after another events
+
 v 0.2.0.0328
 ------------
 * Update events

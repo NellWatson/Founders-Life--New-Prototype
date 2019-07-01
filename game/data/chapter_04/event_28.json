@@ -1,0 +1,33 @@
+{
+    "id": "chapter_04_28",
+    "title": "Moment of Despair",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": [
+            "You finally finish up your latest fix - this one's taken you three days - and save the file. As soon as you do, the entire thing falls apart. Something in your fix has triggered a malfunction in a long, deep chain, creating an array of tiny fixes that are sure to eat up hours over the next few days.",
+            "You place your head in your hands and inhale. How will you deal with this?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness":  -10
+    },
+    "yes_caption": "Start to fix them one by one",
+    "no_caption": "Re-examine your solution",
+    "yes_description": {
+        "en": [
+            "It's not going to be fun, but you've gotten through worse. You can handle this - and slowly, you start to do just that."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "In frustration, you go over what you just did, trying to see where exactly you went wrong. Eventually you pinpoint it - and it's a mistake from something you did months ago, at this point deeply woven into the fabric of your creation.",
+            "You get on with the fix, cursing your stupid former self all the while."
+        ]
+    }
+}

@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Founder Life")
+define config.name = _("Founders Life")
 define config.has_autosave = False
 define config.autosave_slots = 0
 
@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.2.2-0328"
+define config.version = "0.2.4-0701"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line

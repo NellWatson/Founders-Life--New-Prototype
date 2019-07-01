@@ -1,0 +1,34 @@
+{
+    "id": "chapter_03_06",
+    "title": "Speech Practice",
+    "category": "mindfulness",
+    "character": "none",
+    "condition": [
+        ["ch_03:chapter", "chapter_03_08", "chose:any"]
+    ],
+    "description": {
+        "en": [
+            "The only thing that's left now is to practice. You can't remember the last time you had to give a speech quite so important. Even with your day job, the closest you come is briefing newer employees or discussing things with your boss. But how should you practice? You can force Skylar to listen in to your speech so you can see when you're losing the audience, or you can practice on your own and not have to risk worrying Skylar."
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Practice with Skylar",
+    "no_caption": "Practice alone",
+    "yes_description": {
+        "en": [
+            "You practice with Skylar, and in some ways it is successful. Boredom has never been so clear to you before. You pivot during the speech to try to make it more animated, and succeed in getting more interest - but it's exhausting, and gives you a more complete idea of exactly what can go wrong in this meeting."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You practice alone, trying to imagine Mr. Martel in front of you from the photos you've seen online. It's hard to do, and distracts you from making sure your speech is being delivered well. But hey, at least you practiced."
+        ]
+    }
+}

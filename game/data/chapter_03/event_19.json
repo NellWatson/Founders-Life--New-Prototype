@@ -1,0 +1,30 @@
+{
+    "id": "chapter_03_19",
+    "title": "Money or Polish 3",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "A client calls you about doing some local work. It could be nice to help out the community - and get paid, to boot!"
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 20,
+        "money": 300
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Help them out",
+    "no_caption": "Decline",
+    "yes_description": {
+        "en": [
+            "You do the work. Even though it's not on your own project, you feel happier for having helped out someone you know."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You decline - your time is better spent on other things."
+        ]
+    }
+}

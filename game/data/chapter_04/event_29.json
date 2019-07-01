@@ -1,0 +1,31 @@
+{
+    "id": "chapter_04_29",
+    "title": "Celebrity Study",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "Dominique sends you an e-mail filled with instructions on how to conduct oneself online and during interviews. He requests you look over them so you can prevent social media disasters from occurring on launch.",
+            "You feel a bit silly about it - you're not a celebrity, after all. What should you do?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Study it",
+    "no_caption": "Do real work",
+    "yes_description": {
+        "en": [
+            "You look over the material. It seems like it'll take a lot of practice to be able to protect yourself from making a silly mistake, but the future of your company depends on it."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You ignore the packet. Surely you'll be able to do this work when it's pertinent. For now, there's no point in wasting time on it."
+        ]
+    }
+}

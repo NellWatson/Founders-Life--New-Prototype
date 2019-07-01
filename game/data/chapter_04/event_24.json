@@ -1,0 +1,32 @@
+{
+    "id": "chapter_04_24",
+    "title": "Disappointment",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": ["You've made it to the end of the week, and you're so closed to finishing the list of what Dominique wanted. But you won't be able to finish it all tonight unless you pull an all-nighter, and that sounds horrifically unpleasant at the moment. What do you do?"]
+    },
+    "yes_action": {
+        "energy": 10,
+        "mindfulness": -20
+    },
+    "no_action": {
+        "productivity": 10,
+        "energy": -20,
+        "mindfulness":  -20
+    },
+    "yes_caption": "Disappoint Dom and get some rest",
+    "no_caption": "Pull the all-nighter",
+    "yes_description": {
+        "en": [
+            "You go to bed, feeling extremely guilty. When you explain the situation to Dominique the next day, he responds with compassion.",
+            "dominique::\"To be honest, I put extra items on the list - I like to aim high so that I achieve more than I otherwise would've. That you've even gotten this close is impressive!\""
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You pull the all-nighter and present your work to Dominique in an e-mail the next morning before going to work. The e-mail is riddled with typos, and Dominique notices.",
+            "dominique::\"Don't work yourself too hard, #NAME. Remember, you - and by extension, your health - are your best asset.\""
+        ]
+    }
+}

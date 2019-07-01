@@ -1,0 +1,31 @@
+{
+    "id": "chapter_03_16",
+    "title": "Investor Research",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": [
+            "As far as persuasive speeches go, there are two main ways to convince someone: using your heart, or aiming for theirs.",
+            "Speaking from the heart will use your passion and drive, which may be enough to entice Mr. Martel to your side. Then again, you could do some research into him and see what kinds of things he values in his own work and aim to highlight the aspects you fit with."
+        ]
+    },
+    "yes_action": {
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "mindfulness": -10
+    },
+    "yes_caption": "Speak from the heart",
+    "no_caption": "Speak to the investors",
+    "yes_description": {
+        "en": [
+            "You decide to speak from the heart. Dominique said he was motivated to help others chase their success. You just hope he was telling the truth."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You do some research on Mr. Martel. He seems to focus on providing the utmost value and usability to his clients. All his products have design elements that his competitors haven't quite caught up to, meant to enable ease of use for the user. That's a focus you can bring to your presentation."
+        ]
+    }
+}

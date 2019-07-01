@@ -1,0 +1,31 @@
+{
+    "id": "chapter_03_09",
+    "title": "A Business Plan",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "As you're setting up the presentation, you realize you haven't gone over your business plan since before you started working. Now that you've been attempting to put it into practice, you know some of the conclusions and goals you came to are slightly off. Take a day to revise the business plan?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "mindfulness": 10
+    },
+    "yes_caption": "Revise",
+    "no_caption": "It's fine as is",
+    "yes_description": {
+        "en": [
+            "You revise the business plan. It's boring and annoying, but at least it's done."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You keep the plan as is. It's not too far off, and you might have to redo it anyways once investors are involved."
+        ]
+    }
+}

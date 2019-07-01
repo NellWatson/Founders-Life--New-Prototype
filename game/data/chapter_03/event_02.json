@@ -1,0 +1,29 @@
+{
+    "id": "chapter_03_02",
+    "title": "Polish the Product",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "Your product is obviously key when it comes to this meeting. You've made progress with it, but mostly with the guts - you haven't yet started to polish it up and make it really presentable. Several core functions are still missing, and you're not sure whether you should spend time polishing the surface or furthering the guts."
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Polish",
+    "no_caption": "Guts",
+    "yes_description": {
+        "en": [
+            "You polish the surface, hoping Mr. Martel will be excited by hint of a final product."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You work on adding more functions to show off. It still looks like something a college student might've thrown together on a whim, but you hope seeing how it functions will help Mr. Martel see what it's capable of."
+        ]
+    }
+}

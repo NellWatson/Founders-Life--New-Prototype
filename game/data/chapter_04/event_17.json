@@ -1,0 +1,20 @@
+{
+    "id": "chapter_04_17",
+    "title": "Free from Freelancing",
+    "category": "money",
+    "character": "none",
+    "condition": [
+        ["turn_no", 0, "greater"],
+        ["turn_no", 5, "lesser"]
+    ],
+    "description": {
+        "en": [
+            "With Dominique as your financial backer, all need for freelance work has gone out the window. Euphoria spreads through you as you update your listings on various websites, declaring that you're no longer free for hire. You only have one boss now! Or is it two?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": 10,
+        "mindfulness": 10
+    }
+}

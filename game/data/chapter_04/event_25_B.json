@@ -1,0 +1,25 @@
+{
+    "id": "chapter_04_25_B",
+    "title": "Follow-Up to Upgrade",
+    "category": "productivity",
+    "character": "none",
+    "condition": [
+        ["ch_04:chapter", "chapter_04_13", "chose:no"]
+    ],
+    "description": {
+        "en": ["You wake up to get to work and your computer won't even start. You spend the entire day trying to recover files from your old computer, only to give up, restore an old backup, and buy a whole new computer. So much for saving money!"]
+    },
+    "yes_action": {
+        "productivity": -20,
+        "mindfulness": -10,
+        "money": -1500
+    },
+    "yes_caption": "Continue",
+    "yes_description": {
+        "en": [
+            "You go to bed, feeling extremely guilty. When you explain the situation to Dominique the next day, he responds with compassion.",
+            "dominique::\"To be honest, I put extra items on the list - I like to aim high so that I achieve more than I otherwise would've. That you've even gotten this close is impressive!\""
+        ]
+    },
+    "play_after": "chapter_04_13"
+}

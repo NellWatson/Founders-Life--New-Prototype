@@ -1,0 +1,31 @@
+{
+    "id": "chapter_03_17",
+    "title": "Money or Polish",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "A client is e-mailing, asking for a pretty light amount of work to be done. You'd rather spend the time working on your own product, but a paycheck does sound nice."
+        ]
+    },
+    "yes_action": {
+        "energy": -10,
+        "money": 200
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Take the job",
+    "no_caption": "Work on your own stuff",
+    "yes_description": {
+        "en": [
+            "You get the work done and cash the paycheck. Nice!"
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You spend your time investing in your future, rather than the client's."
+        ]
+    }
+}

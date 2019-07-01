@@ -1,0 +1,15 @@
+{
+    "id": "chapter_04_04",
+    "title": "Saying No",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": ["One of your former clients e-mails you, asking for help with a new project. You liked this client, but it gives you a rush to be able to turn them down to do more of what you really want."]
+    },
+    "yes_action": {
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Okay",
+    "play_after": "chapter_04_17"
+}

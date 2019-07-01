@@ -1,0 +1,31 @@
+{
+    "id": "chapter_03_28_B",
+    "title": "The Pitch",
+    "category": "energy",
+    "character": "dominique",
+    "condition": [
+        ["none:affection", 14, "lesser_equal"]
+    ],
+    "description": {
+        "en": [
+            "You awaken slightly late the morning of the pitch and feel nothing but dread in your stomach. You've prepared for the entire month - surely this will be enough?",
+            "You arrive to the meeting just as Dominique comes in through the door. You've never seen a millionaire in real life, and you didn't expect this tall, suave man.",
+            "dominique::\"You must be #NAME.\"",
+            "His accent is French, and you remember English isn't his native tongue. You start to sweat.",
+            "dominique::\"Thank you for meeting me. Now, why don't you begin?\"",
+            "You've prepped for this all month. Really, you have. But as you give your presentation, the charming smile on Dominique's face fades. He grows stern, but appears to try to hide it. As soon as you finish, he stands.",
+            "dominique::\"Thank you for your time. I appreciate what you have shown me, but it doesn't seem like something I'm interested in at this time. However, it was very nice to meet you.\"",
+            "He brushes out of the room, quick as he came, and you're left dazed.",
+            "Was... that it? Just like that?"
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 0
+    },
+    "yes_description": {
+        "en": [
+            "You drag yourself home, horrified at what just transpired.",
+            "You're not sure you can look at your project - or yourself - ever again."
+        ]
+    }
+}

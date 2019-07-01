@@ -1,0 +1,33 @@
+{
+    "id": "chapter_03_08",
+    "title": "Memorization",
+    "category": "productivity",
+    "character": "none",
+    "condition": [
+        ["ch_03:chapter", "chapter_03_07", "chose:any"]
+    ],
+    "description": {
+        "en": [
+            "Now that you've settled on what you want to say, another idea strikes you. Should you memorize your points? After all, you don't want your eyes glued to a piece of paper, or even bouncing up and down between them. You've been told eye contact is essential. Memorization would help you maintain that, and you can keep the paper in front of you just in case you get lost."
+        ]
+    },
+    "yes_action": {
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "mindfulness": 10
+    },
+    "yes_caption": "Memorize the script",
+    "no_caption": "There's no need",
+    "yes_description": {
+        "en": [
+            "You memorize what you want to say and feel pretty confident you've got it all down. No eyes glued to the paper for you!"
+        ]
+    },
+    "no_description": {
+        "en": [
+            "There's no need to forcibly memorize it. After enough practice, you'll basically have it memorized, anyways. That time is better spent on other things."
+        ]
+    }
+}

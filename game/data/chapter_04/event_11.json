@@ -1,0 +1,31 @@
+{
+    "id": "chapter_04_11",
+    "title": "Responsibility",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "It crept into your mind slowly - you didn't even see it coming. But hovering over everything you're doing is a terrible cloud of pressure.",
+            "It's no longer just Skylar and your wellbeing at risk. Now, you're also risking Dominique's money.",
+            "For some reason, it was easier before. Your own head was on the line, but you didn't have to take it any further than you wanted to. Now, you can't go back, and that's come with stress you didn't completely anticipate."
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "mindfulness": 0
+    },
+    "yes_caption": "Accept the responsibility",
+    "no_caption": "It was his choice",
+    "yes_description": {
+        "en": ["You're now also responsible the for the wellbeing of your investor - well, at least partially. You accept this fact, and it drives you to work even harder."]
+    },
+    "no_description": {
+        "en": [
+            "This isn't something you need to take responsibility for. Dominique had a choice, and his choice was to invest in you and your business. You owe him your best, but not any more than that.",
+            "The pressure fades, and you continue on."
+        ]
+    }
+}

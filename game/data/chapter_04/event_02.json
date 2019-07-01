@@ -1,0 +1,31 @@
+{
+    "id": "chapter_04_02",
+    "title": "Someone to Talk to",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": ["Dominique has set the beta-test release date for the first of next month, seeing as you're trying to get the product out by the month after. You, however, have yet to publicly release this date. A combination of fear and rebelliousness keeps you from doing it."]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Just release the date",
+    "no_caption": "Reflect on why this is hard",
+    "yes_description": {
+        "en": [
+            "You release the date, and a wave of anxiety rushes over you. You're suddenly aware of every single thing you haven't done, and feel like you might drown under the weight of it all.",
+            "The only thing to do is to work harder."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You take a day to really reflect and examine what's causing this feeling. A bit of writing helps you to pack away the fear - as much as it will be packed, anyways.",
+            "You release the date and feel a rush of energy. You're really doing this."
+        ]
+    }
+}

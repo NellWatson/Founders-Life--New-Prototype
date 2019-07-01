@@ -1,0 +1,30 @@
+{
+    "id": "chapter_04_15",
+    "title": "Almost Free",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "Now that quitting Roger's place is an actual reality, your mind returns again to a retirement fund. You won't have a 401K after quitting - or will you? Is this really something you should be thinking about?"
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Research retirement options",
+    "no_caption": "Let it go",
+    "yes_description": {
+        "en": [
+            "After talking to Dominique and looking at your options, you feel a little better."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Focus! You realize you're just trying to procrastinate and instead get your work done for the day. Distraction eliminated!"
+        ]
+    }
+}

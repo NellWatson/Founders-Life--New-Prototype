@@ -1,0 +1,19 @@
+{
+    "id": "chapter_04_20",
+    "title": "Burnout",
+    "category": "energy",
+    "character": "none",
+    "condition": [
+        ["turn_no", 13, "greater"],
+        ["turn_no", 22, "lesser"]
+    ],
+    "description": {
+        "en": [
+            "The constant stress is getting to you. You're only barely managing to stay on schedule, and it's taken a toll on your health - especially after the stress of last month. Dominique is pushing you further than you ever would've pushed yourself. While you're happy about all the things you've accomplished and didn't know you could achieve, you're also a little sad. It's not necessarily that you dislike it - but this isn't what you imagined it would be like."
+        ]
+    },
+    "yes_action": {
+        "energy": -10
+    },
+    "yes_caption": "Continue"
+}

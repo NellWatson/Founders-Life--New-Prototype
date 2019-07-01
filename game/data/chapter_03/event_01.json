@@ -1,0 +1,34 @@
+{
+    "id": "chapter_03_01",
+    "title": "Investors",
+    "category": "mindfulness",
+    "character": "Skylar",
+    "description": {
+        "en": [
+            "An investor meeting? Oh my!",
+            "But #NAME, you haven't mentioned wanting investors. Are you sure you're ready for this big of a step? How comfortable are you with someone being this involved?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -10
+    },
+    "yes_caption": "The more involved the better",
+    "no_caption": "I don't like it, but I need it",
+    "yes_description": {
+        "en": [
+            "I don't completely understand where you're coming from... but if you've really thought about this, I won't stop you."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You don't need anybody, not really.",
+            "Of course, you might not be able to do it in the timeframe you want... and maybe it'll blow up in your face... and it's your money you're risking, if you go that way...",
+            "Oh, sorry. I'll be quiet."
+        ]
+    }
+}
