@@ -1,0 +1,15 @@
+{
+    "id": "chapter_default",
+    "title": "Default Event",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": ["This event is being shown because we ran out of events to show."]
+    },
+    "yes_action": {
+        "energy": 0
+    },
+    "no_action": {
+        "energy": -10
+    }
+}

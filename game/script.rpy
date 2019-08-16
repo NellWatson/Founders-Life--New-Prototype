@@ -226,6 +226,7 @@ label checkpoint:
         if turn_no <= 27:
             jump week_event#expression find_event()
         else:
+            $ print "Ch change"
             jump chapter_finale
 
 label chapter_finale:
@@ -246,12 +247,12 @@ label chapter_one_finale:
     menu:
         d "Hi, [founder_name], I'm Dominique Martel. I just wanted to reach out to tell you how impressed I've been with the progress you've been making with [startup_name]. I love the idea and your execution.\nI've a lot of free time now I've left Google, and I'd like to spend some of it mentoring you.\nWhat do you say?"
 
-        "$_YES":
+        "Agree":
             $ variable("productivity", 20)
             $ variable("energy", 20)
             $ variable("morale", 20)
 
-        "$_NO":
+        "Disagree":
             $ variable("productivity", -20)
             $ variable("energy", -20)
             $ variable("morale", -20)

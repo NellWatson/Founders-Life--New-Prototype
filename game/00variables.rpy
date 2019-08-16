@@ -18,7 +18,9 @@ define FOUNDER_INDEX = {
 
 define EPISODE_NAMES = [
     "Meeting your Mentor",
-    "Joining the Incubator"
+    "Joining the Incubator",
+    "Chapter 3",
+    "Chapter 4"
     ]
 define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
 define CHAPTER_DAY_COUNT = 28

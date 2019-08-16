@@ -50,7 +50,7 @@ init python:
                         break
                     events_pool[i].append( i + "_" + j + "_" + k )
 
-    def variable(name, value, maximum=100):
+    def variable(name, value, maximum=1000):
         old_value = getattr(store, name)
         new_value = old_value + value
 
@@ -58,6 +58,8 @@ init python:
             modifier = var_tracker.get_modifier(name)
         else:
             modifier = 1
+
+        new_value *= modifier
 
         if new_value > maximum and name != "money":
             new_value = maximum
@@ -69,7 +71,7 @@ init python:
             else:
                 store.check[name] = "{color=#00ff00}$" + format(new_value, ",") + "{/color}"
 
-        _final = int(new_value*modifier)
+        _final = int(new_value)
         setattr(store, name, _final)
         var_tracker.add_value(name, value)
 
