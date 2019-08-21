@@ -67,14 +67,14 @@ screen image_data_screen():
                     xsize 940
                     ysize 248
 
+                    action SetScreenVariable("showing_image", path)
+
                     vbox:
                         spacing 5
 
                         text "Path: [path]"
                         for line, value in details.iteritems():
                             text "[line]: [value]"
-
-                    action SetScreenVariable("showing_image", path)
 
     textbutton _("Save"):
         text_color "#ffffff"
