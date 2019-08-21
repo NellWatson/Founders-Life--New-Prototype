@@ -4,7 +4,7 @@
     "category": "energy",
     "character": "dominique",
     "condition": [
-        ["none:affection", 15, "greater_equal"]
+        ["dominique:affection", 15, "greater_equal"]
     ],
     "description": {
         "en": [

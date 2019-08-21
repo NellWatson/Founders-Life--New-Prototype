@@ -8,6 +8,7 @@ label start:
     $ characters_roster.add_character("skylar", "Skylar", "s", "skylar")
     $ characters_roster.add_character("takashi", "Takashi", "t", "takashi")
     $ characters_roster.add_character("roger", "Roger", "r", "roger")
+    $ characters_roster.add_character("dominique", "Dominique", "d", "dominique")
     $ chapter_manager.load_chapter("ch_01", "chapter_01")
     $ chapter_manager.load_chapter("ch_02", "chapter_02")
     $ chapter_manager.load_chapter("ch_03", "chapter_03")
@@ -29,6 +30,7 @@ label start:
 label week_event:
     $ _event = chapter_manager.get_event()
     $ event_code = _event.id
+    $ print event_code
 
     if _event.character.sprite:
         pass#show expression _event.character.sprite at center
@@ -295,7 +297,7 @@ label chapter_two_finale:
     jump checkpoint
 
 label chapter_three_finale:
-    if characters_roster.get_character_object(character).affection < 15:
+    if characters_roster.store["dominique"].affection < 15:
         $ renpy.unlink_save("custom")
         $ telemetry.end("Game Over at Chapter 03")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
@@ -311,7 +313,7 @@ label chapter_three_finale:
             call screen feedback_form_screen
         return
 
-    $ characters_roster.get_character_object(character).affection = 0
+    $ characters_roster.store["none"].affection = 0
     "[founder_name],\nI'm very excited to move forward with you on this. A few things to note:"
     "There is an event coming up in two months. I think it would be prudent to release your product to correspond with that event, as that should help gain it a lot of publicity. I know that's likely a much faster timeline than you were hoping for, but trust me on this."
     "On the first of the next month, we will release the product to beta-testers, who will give us valuable feedback. Thus, this month should be spend ensuring the product working as well as we can get it."
