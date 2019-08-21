@@ -30,7 +30,6 @@ label start:
 label week_event:
     $ _event = chapter_manager.get_event()
     $ event_code = _event.id
-    $ print event_code
 
     if _event.character.sprite:
         pass#show expression _event.character.sprite at center
@@ -228,7 +227,6 @@ label checkpoint:
         if turn_no <= 27:
             jump week_event#expression find_event()
         else:
-            $ print "Ch change"
             jump chapter_finale
 
 label chapter_finale:

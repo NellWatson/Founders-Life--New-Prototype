@@ -50,7 +50,7 @@ init python:
                         break
                     events_pool[i].append( i + "_" + j + "_" + k )
 
-    def variable(name, value, maximum=1000):
+    def variable(name, value, maximum=100):
         old_value = getattr(store, name)
         new_value = old_value + value
 

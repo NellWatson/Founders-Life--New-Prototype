@@ -128,6 +128,8 @@ init python:
                 current_description_no = self.last_description_no + 1
                 description_list = self._description[self.current_language]
             else:
+                if not self._yes_description and not self._no_description:
+                    return self.character.get_character_object
                 current_description_no = self.choice_last_description_no + 1
                 if self.chose_action == "yes":
                     description_list = self._yes_description[self.current_language]
