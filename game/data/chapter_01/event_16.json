@@ -8,7 +8,9 @@
     "description": {
         "en": ["'ERROR: Program has run into an unexplained error and must close.' You've received that error five times tonight. Post on forums for help and leave off for tonight?"]
     },
-    "yes_action": {},
+    "yes_action": {
+        "productivity": 0
+    },
     "no_action": {
         "productivity": 5,
         "mindfulness": -15,

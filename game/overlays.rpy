@@ -106,9 +106,11 @@ screen character_intro():
     default character_list = ["skylar", "takashi", "roger"]
     add Solid("#00000000") alpha 0.5
 
+    text "Who is with you?"  size 60 color "#000000" xalign 0.5 yalign 0.25
+
     hbox:
         xalign 0.5
-        yalign 0.5
+        yalign 0.55
         spacing 40
 
         for i in character_list:

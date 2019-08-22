@@ -13,7 +13,9 @@
         "productivity": 10,
         "money": -100
     },
-    "no_action": {},
+    "no_action": {
+        "productivity": 0
+    },
     "yes_caption": "Give it a shot.",
     "no_caption": "Save your money.",
     "yes_description": {
