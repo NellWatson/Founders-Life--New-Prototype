@@ -233,6 +233,7 @@ init python:
         @property
         def run_event(self):
             available_events = self.available_events_this_week
+            print available_events
             if len(available_events) == 1:
                 chosen_event = available_events[0]
             elif len(available_events) == 0:
@@ -265,7 +266,7 @@ init python:
                     continue
 
                 if self.store[id].can_run:
-                    if self.store[id].play_after == self.last_event_played:
+                    if self.last_event_played and self.store[id].play_after == self.last_event_played:
                         return [id]
 
                     if self.store[id].play_on == store.turn_no:

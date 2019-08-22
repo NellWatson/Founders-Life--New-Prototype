@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.2.4.0822
+------------
+* Fixed critical bug which compromised the random nature of the event engine.
+
 v 0.2.4.0701
 ------------
 * Added Chapter 03 and Chapter 04 content
