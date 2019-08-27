@@ -8,7 +8,10 @@
         ["turn_no", 15, "lesser"]
     ],
     "description": {
-        "en": ["My dear, I've cleaned up after you every night these past two weeks. I didn't agree to be your servant just because you're fooling around with your little pet project! Step it up around here!"]
+        "en": [
+            "My dear, I've cleaned up after you every night these past two weeks. I didn't agree to be your servant just because you're fooling around with your little pet project! Step it up around here!",
+            "Helping out more will cost you precious work time, at least an hour a day. Do you really want to lose that?"
+        ]
     },
     "yes_action": {
         "productivity": -10,

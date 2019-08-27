@@ -4,7 +4,7 @@
     "category": "energy",
     "character": "none",
     "description": {
-        "en": ["While working, you suddenly notice a dark spot in your vision. You can't read clearly, and you know what this means - you're about to get a migraine! How do you handle it?"]
+        "en": ["You finish your work early this evening and have the option of taking off early or spending some extra time polishing up your skills."]
     },
     "yes_action": {
         "energy": -10

@@ -265,9 +265,10 @@ label chapter_one_finale:
     "It's the second full month of pursuing your dreams, and you've had a terrible realization: you aren't making nearly enough money to be able to quit your job."
     "But what can you do? While you're still working your full-time job, there's only so much time you can put into this venture."
     "At least you have a safety net. If you'd quit your job and jumped into this first thing, you'd be feeling the burn."
+    "It's disappointing, but you have to work harder to make this viable."
 
     menu:
-        "It's disappointing, but you have to work harder to make this viable. You decide to focus on making more money this month.":
+        "Money is the priority for this month.":
             pass
 
     jump checkpoint

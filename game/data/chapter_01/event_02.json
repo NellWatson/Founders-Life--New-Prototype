@@ -7,7 +7,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Hey, #NAME! I know you're busy with... work, but I could use someone to talk to tonight."]
+        "en": ["Hey, #NAME! I know you're busy with your... work, but I could use someone to talk to tonight."]
     },
     "yes_action": {
         "productivity": -15,
