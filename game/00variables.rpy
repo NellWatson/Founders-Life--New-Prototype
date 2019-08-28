@@ -27,6 +27,8 @@ define CHAPTER_DAY_COUNT = 28
 
 default CURRENCY = "$"
 
+default dev_option__event_play = []
+
 default founder_name = ""
 default startup_name = ""
 default startup_field = ""

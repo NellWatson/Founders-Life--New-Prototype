@@ -54,6 +54,13 @@ screen hud():
             else:
                 text "${:,}".format(money) color "#000000"
 
+        if config.developer:
+            hbox:
+                xalign 0.96
+                yalign 0.70
+                
+                textbutton _("Event Play Order") action Show("event_play_list")
+
 screen founder_map():
     add "bg review"
 

@@ -67,9 +67,9 @@ label event_intro:
     call screen character_intro
 
 label skylar_intro:
-    "This is Skylar, the love of my life. I knew as soon as I met him/her that I wanted to be with him/her forever."
-    "She's had a bit of a rough life, but despite that he/she has her life together and is pushing forward. His/her ambition, drive, and patience inspire me. We moved in together two months ago, and it's partially due to him/her I have the confidence to take this step."
-    "That being said, I don't know how he/she will take this."
+    "This is Skylar, the love of my life. I knew as soon as I met them that I wanted to be with them forever."
+    "They have had a bit of a rough life, but despite that they have their life together and is pushing forward. Their ambition, drive, and patience inspire me. We moved in together two months ago, and it's partially due to them I have the confidence to take this step."
+    "That being said, I don't know how they will take this."
 
     call screen character_intro
 

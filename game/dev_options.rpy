@@ -82,3 +82,33 @@ screen image_data_screen():
 
         xalign 1.0
         yalign 0.0
+
+screen event_play_list():
+    add Solid("#ffffff")
+
+    vpgrid:
+        cols 4
+        rows 15
+        transpose True
+        yspacing 10
+        xspacing 25
+
+        for i in dev_option__event_play:
+            if "New Week" in i:
+                text "--" + i color "#000000" size 60
+            else:
+                text i color "#000000" size 50
+    
+    button:
+        xysize (90, 90)
+
+        idle_background Solid("#559fdd")
+        hover_background Solid(Color("#559fdd").tint(0.5))
+        selected_background Solid(Color("#559fdd").shade(0.5))
+
+        text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+
+        action Hide("event_play_list")
+
+        xalign 0.99
+        yalign 0.01

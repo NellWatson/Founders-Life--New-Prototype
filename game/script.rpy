@@ -61,6 +61,7 @@ label checkpoint:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Productivity")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+        $ renpy.set_return_stack("")
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
@@ -77,6 +78,7 @@ label checkpoint:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Energy")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+        $ renpy.set_return_stack("")
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
@@ -93,6 +95,7 @@ label checkpoint:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Mindfulness")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+        $ renpy.set_return_stack("")
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
@@ -138,6 +141,9 @@ label checkpoint:
         $ telemetry.collect()
         $ telemetry.sync()
         $ money_manager.add_weekly_earning()
+
+        if config.developer:
+            $ store.dev_option__event_play.append("New Week")
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
@@ -231,6 +237,10 @@ label checkpoint:
 
 label chapter_finale:
     $ next_chapter()
+
+    if config.developer:
+        $ dev_option__event_play = []
+
     if current_chapter == 2:
         jump chapter_one_finale
     elif current_chapter == 3:

@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.2.4.0828
+------------
+* Added a developer only option which enables to see if of previously scene events.
+* Set text speed to 30 characters per second.
+* In Skylar's intro, change his/her to them.
+* Fixed random bug where game would restart automatically after game over.
+
 v 0.2.4.0822
 ------------
 * Fixed critical bug which compromised the random nature of the event engine.

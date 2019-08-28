@@ -233,7 +233,6 @@ init python:
         @property
         def run_event(self):
             available_events = self.available_events_this_week
-            print available_events
             if len(available_events) == 1:
                 chosen_event = available_events[0]
             elif len(available_events) == 0:
@@ -253,6 +252,9 @@ init python:
 
                 chosen_event = renpy.random.choice(available_events)
                 self.last_event_played = chosen_event
+
+            if config.developer:
+                store.dev_option__event_play.append(chosen_event)
             return self.store[chosen_event]
 
         @property
