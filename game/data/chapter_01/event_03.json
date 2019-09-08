@@ -24,7 +24,7 @@
     "no_caption": "I have to work...",
     "yes_description": {
         "en": [
-            "\"This is going to be a wonderful night!\"",
+            "\"This is going to be a wonderful night!\""
         ]
     },
     "no_description": {
@@ -32,5 +32,4 @@
         "Oh.",
         "Then have fun."]
     }
-
 }
