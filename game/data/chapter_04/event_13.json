@@ -5,11 +5,11 @@
     "character": "none",
     "description": {
         "en": [
-            "Now that you have an investor, more possibilities have opened up to you. One of those involves your computer. It was fine at first - you didn't really have a choice - but now you're noticing how much time is lost waiting for applications to open, dealing with crashes, and restarting your computer. Is it worth the money to upgrade it?"
+            "Now that you have an investor, more possibilities have opened up to you. One of those involves your computer. It was fine at first - when you didn't really have a choice - but now you're noticing how much time is lost waiting for applications to open, dealing with crashes, and restarting your computer. Is it worth the money to upgrade it?"
         ]
     },
     "yes_action": {
-        "productivity": 10,
+        "productivity": 20,
         "energy": -10,
         "mindfulness": 10,
         "money": -1500

@@ -5,7 +5,8 @@
     "character": "dominique",
     "description": {
         "en": [
-            "Dominique's first e-mail is more than two thousand words long, and just looking at it is making you sweat. It's organized neatly into sections and bulleted lists: all of the work he expects you to finish within the next month. It's more than you've ever gotten done on your own, and halfway through the list you stop reading. Too much has happened at once. You are overwhelmed."
+            "Dominique's first e-mail is more than two thousand words long, and just looking at it is making you sweat. It's organized neatly into sections and bulleted lists: all of the work he expects you to finish within the next month.",
+            "It's more than you've ever gotten done on your own, and halfway through the list you stop reading. Too much has happened at once. You are overwhelmed."
         ]
     },
     "yes_action": {
@@ -15,7 +16,8 @@
     "yes_caption": "Continue",
     "yes_description": {
         "en": [
-            "You do eventually manage to respond, but it takes hours. It'll take even longer to look at the list and do the work. But the work is yours to do, and you have an investor - a mentor - who believes in you. You've got to get it done."
+            "You do eventually manage to respond, but it takes hours. It'll take even longer to look at the list and do the work.",
+            "Still, the work is yours to do, and you have an investor - a mentor - who believes in you. You've got to get it done."
         ]
     },
     "play_on": 1

@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "A potential client e-mails you, asking you to do quite a small amount of work for a bit of quick cash. It's time that could be spent polishing your product, but it's also a quick job easily done."
+            "A potential client e-mails you, asking you to do a small amount of work for a quick bit of cash. It's time that could be spent polishing your product, but it's also a job easily done."
         ]
     },
     "yes_action": {
@@ -14,13 +14,14 @@
         "money": 150
     },
     "no_action": {
-        "mindfulness": 20
+        "mindfulness": 20,
+        "productivity": 10
     },
     "yes_caption": "Do the work",
     "no_caption": "Polish instead",
     "yes_description": {
         "en": [
-            "You get the work done and get paid for it in the same night. Not too shabby!"
+            "You get the work done and get paid for it the same night. Not too shabby!"
         ]
     },
     "no_description": {

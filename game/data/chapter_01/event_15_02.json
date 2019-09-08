@@ -7,7 +7,7 @@
         ["mindfulness", 30, "greater"]
     ],
     "description": {
-        "en": ["You're working decently well today - well enough that you think you've earned yourself an early night."]
+        "en": ["You're working decently well today - well enough you think you've earned an early night."]
     },
     "yes_action": {
         "energy": 10,
@@ -19,11 +19,11 @@
         "mindfulness": -15
     },
     "yes_caption": "Rest early.",
-    "no_caption": "Grind.",
+    "no_caption": "Grind on.",
     "yes_description": {
         "en": ["You take the night off, basking in the sense of achievement you feel."]
     },
     "no_description": {
-        "en": ["If you're on a roll, now's the time to keep it going. You get more done, but feel a bit depleted after."]
+        "en": ["If you're on a roll, keep it going. You get more done, but feel a bit depleted after."]
     }
 }

@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "Now that quitting Roger's place is an actual reality, your mind returns again to a retirement fund. You won't have a 401K after quitting - or will you? Is this really something you should be thinking about?"
+            "Now that quitting Roger's place is a possible reality, your mind wanders to your retirement fund. You won't have a 401K after quitting - or will you? Is this really something you should be thinking about?"
         ]
     },
     "yes_action": {
@@ -24,7 +24,7 @@
     },
     "no_description": {
         "en": [
-            "Focus! You realize you're just trying to procrastinate and instead get your work done for the day. Distraction eliminated!"
+            "Focus! You realize you're procrastinating and instead get your work done for the day. Distraction eliminated!"
         ]
     }
 }

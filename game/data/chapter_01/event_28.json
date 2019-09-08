@@ -8,7 +8,7 @@
         ["turn_no", 15, "lesser"]
     ],
     "description": {
-        "en": ["Payday! At least this can cover some costs for the rest of the week. You can save all of it, or spend a small portion to blow off some steam. Do you want to spend it?"]
+        "en": ["Payday! What should you do with it? You can save all of it, or spend a small portion to blow off some steam."]
     },
     "yes_action": {
         "energy": 10,
@@ -20,5 +20,12 @@
         "money": 1000
     },
     "yes_caption": "Spend it.",
-    "no_caption": "Save it."
+    "no_caption": "Save it.",
+
+    "yes_description": {
+        "en": ["Sometimes you have to have a little fun!"]
+    },
+    "no_description": {
+        "en": ["It requires willpower not to spend it all, but at least you've helped yourself somewhere down the line."]
+    }
 }

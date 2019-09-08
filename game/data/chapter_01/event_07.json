@@ -8,7 +8,7 @@
         ["turn_no", 7, "lesser"]
     ],
     "description": {
-        "en": ["So you're trying to start up your own business? That's awesome! Hey, come on down to the café for a break. I want to hear all about it!"]
+        "en": ["So you're trying to start up your own business? That's awesome! Hey, come down to the café for a break. I want to hear all about it!"]
     },
     "yes_action": {
         "productivity": -15,
@@ -21,12 +21,12 @@
         "productivity": 15,
         "affection": -1
     },
-    "yes_caption": "Sure",
+    "yes_caption": "Sure!",
     "no_caption": "I should be working.",
     "yes_description": {
-        "en": ["Takashi seems to get a kick out of what you're saying, but at least he's on your side."]
+        "en": ["HAH! I can't believe that's what you're up to! But hey, I support you. What're friends for?"]
     },
     "no_description": {
-        "en": ["You explain that you can't drop work on a moment's notice because you're trying to take this seriously. Takashi's disappointed, but lets it go."]
+        "en": ["Oh, right. Wow, you're really taking this seriously. Maybe we can hang out later."]
     }
 }

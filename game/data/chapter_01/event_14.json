@@ -6,7 +6,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Now that you're trying to make your own products, you're realizing there's a lot of skills you don't have. Invest in an online course to gain those skills?"]
+        "en": ["Now that you're doing your own thing, you realize there's a lot of skills you don't have. Invest in an online course to gain those skills for $500?"]
     },
     "yes_action": {
         "productivity": 50,
@@ -18,7 +18,7 @@
     "yes_caption": "Learn!",
     "no_caption": "I can study on my own.",
     "yes_description": {
-        "en": ["It costs a lot of money, but you learn a fair bit about marketing that you would never have known otherwise. This will come in handy later. Anything you can learn from a course, you can probably Google."]
+        "en": ["It costs a lot of money, but you learn a fair bit about marketing that you wouldn't have known otherwise. This will come in handy later."]
     },
     "no_description": {
         "en": ["Anything you can learn from a course, you can probably Google."]

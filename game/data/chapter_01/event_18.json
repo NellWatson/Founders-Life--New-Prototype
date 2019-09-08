@@ -9,10 +9,9 @@
     ],
     "description": {
         "en": [
-            "Honey... can we talk? The thing is, you never gave me a chance to agree to you having a startup. This affects me, too - if you quit your job and this doesn't pan out, we'll be living off my income.",
-            "I know we've only been dating for eight months, so it's hard for me to say this. It makes our relationship so serious. But we do live together. And if we're going to be together long-term, what you do affects me, and what I do affects you.",
-            "I know we've only been dating for eight months, so it's hard for me to say this. It makes our relationship so serious. But we do live together. And if we're going to be together long-term, what you do affects me, and what I do affects you.",
-            "If you work hard, then I'll try my hardest, too. But cut me some slack, okay?"
+            "Honey, can we talk? You never gave me a chance to agree to you having a startup. This affects me, too - if you quit your job and this doesn't pan out, we'll be living off my income alone.",
+            "I know we've only been dating for eight months, so it's hard for me to say this. It makes our relationship so serious. But we do live together, and if we're going to be together long-term, what you do affects me, and what I do affects you.",
+            "If you work hard, then I'll try my hardest too. But cut me some slack, okay?"
         ]
     },
     "yes_action": {
@@ -26,12 +25,12 @@
     "yes_caption": "I'll try.",
     "no_caption": "This is my situation to deal with.",
     "yes_description": {
-        "en": ["none::You realize you were a little selfish not to ask Skylar about your plans. Suddenly you realize you're risking a lot more than just your savings. The thought weighs heavily on you, but at least the two of you are on the same page."]
+        "en": ["none::You realize you were a little selfish not to include Skylar in your decision. Suddenly you realize you're risking a lot more than just your savings. The thought weighs heavily on you, but at least the two of you are on the same page."]
     },
     "no_description": {
         "en": [
-            "\"In what world do you afford this apartment on your own?\"",
-            "\"Doing everything by yourself is a myth. Your actions always affect others, whether you want them to or not.\"",
+            "\"In what world can you afford this apartment on your own?\"",
+            "\"Doing everything by yourself is impossible. Your actions always affect others, whether you want them to or not.\"",
             "\"Forget it.\""
         ]
     }

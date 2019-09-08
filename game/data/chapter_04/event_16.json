@@ -9,7 +9,7 @@
     ],
     "description": {
         "en": [
-            "In light of the event coming up, Dominique wants you to place high-profile ads for the eventual product release. The thought, however, terrifies you. You're not sure you're going to meet the deadline on time - how much money are you willing to put into these ads (and how many eyes are you comfortable with)?"
+            "In light of the event coming up, Dominique wants you to place high profile ads for the eventual product release. The thought, however, terrifies you. You're not sure you're going to meet the deadline on time. How much money are you willing to put into these ads? How many eyes are you comfortable with?"
         ]
     },
     "yes_action": {
@@ -25,12 +25,12 @@
     "no_caption": "Modest ads",
     "yes_description": {
         "en": [
-            "You place big ads right where you know your audience will be seeing them. After all, missing the release date wouldn't be the worst thing. You need hype, no matter what."
+            "You place big ads right where you know your audience will be seeing them. Missing the release date wouldn't be the worst thing. You need hype, no matter what."
         ]
     },
     "no_description": {
         "en": [
-            "You place more modest ads. Humble, one could say. Marketing is one thing, but you'd like to focus on meeting the expectations of your customers - and part of that, for you, means not sticking too closely to a release date."
+            "You place modest ads. Humble ads, one could say. Marketing is one thing, but you'd like to focus on meeting the expectations of your customers - and part of that, for you, means not sticking too closely to a release date."
         ]
     }
 }

@@ -8,10 +8,10 @@
     ],
     "description": {
         "en": [
-            "You find yourself feeling a bit down today, and after thinking on it, you realize you're getting a bit burned out.",
-            "You went into working for yourself to make your own projects, not to work on other people's. Not for the first time, you have the impulse to immediately quit your full-time job, but you know that would be too risky. You haven't saved up nearly enough capital to sustain you through the full development of your product, and you don't even know how well it will sell.",
-            "But when you started this, you didn't think you'd be working for even more people than before. Your clients - along with Roger - are your real bosses now, not you.",
-            "Maybe you should work on your own project - just for tonight. Just to clear your head a little..."
+            "You find yourself feeling a bit down today and, after thinking on it, realize you're a bit burnt out.",
+            "You went into working for yourself to make your own projects, not to work on other people's. Not for the first time, you have the impulse to immediately quit your full-time job. Yet you know that would be too risky. You haven't saved up nearly enough capital to sustain you through the full development of your product, and you don't even know how well it will sell.",
+            "Still, when you started this you didn't think you'd be working for even more people than before. Your clients - along with Roger - are your real bosses now, not you.",
+            "Maybe you should work on your own project, just for tonight. Just to clear your head a little..."
         ]
     },
     "yes_action": {
@@ -27,12 +27,12 @@
     "no_caption": "Finish up a client's job",
     "yes_description": {
         "en": [
-            "You feel a burst of inspiration as soon as you sit down and get a ton of work done. This is what you were missing!"
+            "You feel a burst of inspiration as soon as you sit. This is what you were missing!"
         ]
     },
     "no_description": {
         "en": [
-            "No. You have to keep the endgame in sight. You finish up a client's job, and even though you're upset the entire time, the sight of new money coming into your account stabilizes your mood somewhat."
+            "No. You have to keep the endgame in sight. You finish up a client's job and, even though you're upset the entire time, the sight of new money coming into your account stabilizes your mood somewhat."
         ]
     }
 }

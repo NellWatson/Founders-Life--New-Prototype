@@ -18,13 +18,13 @@
     "no_caption": "Reflect on why this is hard",
     "yes_description": {
         "en": [
-            "You release the date, and a wave of anxiety rushes over you. You're suddenly aware of every single thing you haven't done, and feel like you might drown under the weight of it all.",
-            "The only thing to do is to work harder."
+            "You release the date, and a wave of anxiety rushes over you. You're suddenly aware of every single thing you haven't done. You might drown under the weight of it all.",
+            "The only thing to do is work harder."
         ]
     },
     "no_description": {
         "en": [
-            "You take a day to really reflect and examine what's causing this feeling. A bit of writing helps you to pack away the fear - as much as it will be packed, anyways.",
+            "You take a day to reflect and examine what's causing this feeling. A bit of writing helps you pack away the fear - as much as it will be, anyways.",
             "You release the date and feel a rush of energy. You're really doing this."
         ]
     }

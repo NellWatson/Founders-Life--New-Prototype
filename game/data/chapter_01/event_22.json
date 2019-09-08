@@ -1,15 +1,15 @@
 {
     "id": "chapter_01_22",
     "category": "money",
-    "character": "roger",
+    "character": "none",
     "condition": [
         ["turn_no", 4, "greater"]
     ],
     "description": {
         "en": [
             "Roger calls you just as you're getting ready for work.",
-            "One of the projects you're working on is getting cancelled. There's no need for you to come into work today.",
-            "Take the hit in finances and take the day off?"
+            "Roger::One of the projects you're working on is cancelled. There's no need for you to come into work today.",
+            "Take the hit pay and the day off?"
         ]
     },
     "yes_action": {

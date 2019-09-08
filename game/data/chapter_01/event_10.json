@@ -8,7 +8,7 @@
         ["turn_no", 21, "greater"]
     ],
     "description": {
-        "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You're gonna have to step it up, okay?"]
+        "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You have to step it up, okay?"]
     },
     "yes_action": {
         "mindfulness": -20
@@ -19,9 +19,9 @@
     "yes_caption": "I'll try.",
     "no_caption": "I've been busy.",
     "yes_description": {
-        "en": ["Juggling friendships with work is hard, but you've decided it's worth it."]
+        "en": ["none::Juggling friendships with work is hard, but you've decided it's worth it."]
     },
     "no_description": {
-        "en": ["You can't afford the luxury of social time right now. You hope he'll understand."]
+        "en": ["none::You can't afford the luxury of socializing right now. You hope he'll understand."]
     }
 }

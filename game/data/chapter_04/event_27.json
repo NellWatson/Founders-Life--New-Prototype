@@ -5,8 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You're reviewing some of the work you've done on your product previously, and a realization hits you: this early stuff isn't that good. You've already surpassed your initial skill set.",
-            "This idea hits you hard, and you don't know whether to celebrate or double down."
+            "You're reviewing some of the work you've done on your product previously and a realization hits you: this early stuff isn't that good. You've already surpassed your initial skill set.",
+            "This idea hits you hard, and you don't know whether to celebrate it or double down on your work."
         ]
     },
     "yes_action": {
@@ -21,12 +21,12 @@
     "no_caption": "Double down",
     "yes_description": {
         "en": [
-            "This is a great thing! You decide to celebrate your success. Taking the time to do that gives you a huge boost that carries you through the day."
+            "This is a great thing! You celebrate your success, and taking the time to do so gives you a boost that carries you through the day."
         ]
     },
     "no_description": {
         "en": [
-            "Seeing how far you've come makes you want to push even harder - where will you be in six months? Or a year? Motivated, you plunge right back into work."
+            "Seeing how far you've come makes you want to push even harder. Where will you be in six months? A year? Motivated, you plunge right back into work."
         ]
     }
 }

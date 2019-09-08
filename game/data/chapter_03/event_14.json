@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "You're setting up pie graphs for the potential costs of each aspect of production, and a sudden worry occurs to you.",
+            "You're setting up pie graphs for the potential cost of each aspect of production, and a sudden worry occurs to you.",
             "You've inflated the costs somewhat, just in case something goes wrong. But what if that scares the investors off? Maybe you should stick to as small a cost as you can, just in case?"
         ]
     },
@@ -20,12 +20,12 @@
     "no_caption": "Inflated budget",
     "yes_description": {
         "en": [
-            "You keep to the bare minimum of what it might cost. Businesses often go over budget anyways, and you wouldn't want to scare anybody off."
+            "You keep to the bare minimum of what it might cost. Businesses often go overbudget regardless. People expect that. You wouldn't want to scare anybody off."
         ]
     },
     "no_description": {
         "en": [
-            "You inflate the budget, hoping it won't be too intimidating. At least you can rest easy knowing you've caused less problems for yourself in the future."
+            "You inflate the budget, hoping it won't be too intimidating. At least you know you've caused less problems for yourself in the future."
         ]
     }
 }

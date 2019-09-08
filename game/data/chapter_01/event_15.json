@@ -6,7 +6,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You're trying to get work done tonight, but you're feeling restless, listless, and a little despondent. Take a break?"]
+        "en": ["You're trying to get work done tonight, but you're feeling restless, listless, and despondent. Take a break?"]
     },
     "yes_action": {
         "productivity": 10,
@@ -21,9 +21,9 @@
     "yes_caption": "Take a break.",
     "no_caption": "Push through.",
     "yes_description": {
-        "en": ["You assume your mind is sending you a signal to take a break, and you're correct. You end up coming back to work an hour later and getting a lot done!"]
+        "en": ["You assume your mind is sending you a request for a break, and you're correct. You end up coming back to work an hour later and getting a lot done!"]
     },
     "no_description": {
-        "en": ["You push through and manage to get the day's work done, but you feel rather worse for the wear."]
+        "en": ["You push through and manage to get the day's work done, but you feel rather worse for wear."]
     }
 }

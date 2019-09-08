@@ -2,12 +2,12 @@
     "id": "chapter_01_12",
     "title": "Roger",
     "category": "productivity",
-    "character": "roger",
+    "character": "none",
     "condition": [
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Today, your boss Roger slammed an extra two assignments, due today, on your desk, saying it 'seemed like you weren't getting enough work.' This has left you too tired to work tonight."]
+        "en": ["Your boss Roger slammed an extra two assignments on your desk, both due today. He said it seemed like you 'weren't getting enough work.' Doing this will leave you too tired to work tonight."]
     },
     "yes_action": {
         "productivity": -10,

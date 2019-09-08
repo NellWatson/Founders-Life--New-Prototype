@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "You've given this client exactly what they asked you for. However, now it seems they don't just want the product - they want you to implement it into their system, as well! You aren't sure you agreed to do the implementation, but you also aren't sure you were clear that the implementation wasn't included in the price."
+            "You've given this client exactly what they asked for. However, now it seems they don't just want the product - they want you to implement it into their system, as well! You aren't sure you agreed to do the implementation, but you also aren't sure you were clear the implementation wasn't included in the price."
         ]
     },
     "yes_action": {
@@ -25,7 +25,7 @@
     },
     "no_description": {
         "en": [
-            "The client explains they thought implementation was included, and wouldn't have hired you if they knew it wasn't. Still, they pay you - less than what was initially promised."
+            "The client explains they thought implementation was included and wouldn't have hired you if they knew it wasn't. Still, they pay you - less than what was initially promised."
         ]
     }
 }

@@ -5,8 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You've always been aware your product is a bit niche. You're tailoring it most to the people who will find it useful, rather than going for broad appeal. That's what you want to make.",
-            "However, with a few tweaks to your product, you could probably open it up to more general appeal - and make it a safer bet for investors. What do you do?"
+            "You've always been aware your product is a bit niche. You're tailoring it to the people who will find it useful, rather than going for broad appeal. That's what you want to make.",
+            "However, with a shift in focus, you could open it up to more general appeal and make it a safer bet for investors. What do you do?"
         ]
     },
     "yes_action": {
@@ -25,7 +25,7 @@
     },
     "no_description": {
         "en": [
-            "It's better to make what makes money. Sure, it's not exactly what you wanted - but it's close enough."
+            "It's better to make money. It's not exactly what you wanted to create, but it's close enough."
         ]
     }
 }

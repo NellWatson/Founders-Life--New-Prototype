@@ -7,7 +7,7 @@
         "en": [
             "Oh really, hm? Let me get this straight.",
             "You need the day off in a couple of weeks to \"go to an appointment,\" huh?",
-            "I'm not going to say no - but I'm going to dock your pay. You've been doing a real lacluster job around here, and now you're trying to take off on the day we have a big company meeting?",
+            "I'm not going to say no, but I'm docking your pay. You've been doing a real lackluster job around here, and now you're trying to take off on the day we have a big company meeting?",
             "Either get your act together or get out of my business."
         ]
     },
@@ -16,5 +16,5 @@
         "mindfulness": -10,
         "money": -300
     },
-    "yes_caption": "Be the alpha"
+    "yes_caption": "Yes, sir"
 }

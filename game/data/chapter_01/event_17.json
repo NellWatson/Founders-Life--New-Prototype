@@ -9,7 +9,7 @@
     ],
     "description": {
         "en": [
-            "My dear, I've cleaned up after you every night these past two weeks. I didn't agree to be your servant just because you're fooling around with your little pet project! Step it up around here!",
+            "My dear, I've cleaned up after you every night these past two weeks. You might be busy fooling around with your little pet project, but I'm not your servant! Step it up around here!",
             "Helping out more will cost you precious work time, at least an hour a day. Do you really want to lose that?"
         ]
     },
@@ -28,9 +28,9 @@
     "yes_caption": "I'll help out more.",
     "no_caption": "I can't.",
     "yes_description": {
-        "en": ["Thank you. We're a team. If we work together, we can both do the things we want to. I just never wanted to become the partner who doesn't have time for themselves because they have to do all the housework. Thank you for understanding."]
+        "en": ["Thank you. We're a team. If we work together, we can both achieve the things we want to achieve. I never wanted to be the person who has no time for themselves because they're swamped with housework. Thank you for understanding."]
     },
     "no_description": {
-        "en": ["I see. Well, see how productive you are when you have to do everything yourself!"]
+        "en": ["Oh yeah? We'll see how productive you are when you have to do everything yourself!"]
     }
 }

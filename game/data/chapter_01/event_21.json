@@ -6,7 +6,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You read online that exercise helps with productivity, mood, and energy, but are worried that taking an extra hour out of your day will harm how much you can get done. Become a member at your local gym?"]
+        "en": ["You read online exercise helps with productivity, mood, and energy, but are worried taking an extra hour out of your day will hurt how much you get done. Become a member at your local gym?"]
     },
     "yes_action": {
         "productivity": -10,
@@ -22,7 +22,7 @@
     "yes_caption": "Establish an exercise routine.",
     "no_caption": "It's not worth it.",
     "yes_description": {
-        "en": ["The extra exercise makes you sore and grumbly, and at first you take a hit to productivity. But that makes up for itself within a few days as your energy soars and you find you can stay focused much longer than before."]
+        "en": ["The extra exercise makes you sore and grumbly, and at first you take a hit to productivity. However, within a few days your energy soars. You find you can stay focused much longer than before."]
     },
     "no_description": {
         "en": ["You can't afford to lose an hour a day, not at this juncture. You hunker down to keep working, with a niggling voice in the back of your mind reminding you that your health will take a hit for it."]

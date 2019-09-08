@@ -7,7 +7,7 @@
         ["turn_no", 1, "greater"]
     ],
     "description": {
-        "en": ["I just want you to know that I support you in reaching your dreams. If there's anything I can do, let me know! I also made some dinner for you, so you don't have to worry about that for tonight."]
+        "en": ["I just want you to know I support you in reaching your dreams. If there's anything I can do, just say the word! I made dinner for you, too, so you don't have to think about that tonight."]
     },
     "yes_action": {
         "productivity": 10,
@@ -21,4 +21,7 @@
     },
     "yes_caption": "Thank you!",
     "no_caption": "So sweet."
+},
+
+    "play_on": 2
 }

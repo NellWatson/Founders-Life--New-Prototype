@@ -6,7 +6,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Someone is asking for a quick contract job done in a field you have intermediate skill in. It would be an extra source of cash, but would take you away from your project for a few days. Take it up?"]
+        "en": ["Someone is asking you to do a quick contract job. It would be an extra source of cash, but would take you away from your project for a few days. Take it up?"]
     },
     "yes_action": {
         "productivity": -30,

@@ -6,7 +6,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Work today has left you exhausted, but you told yourself you'd get in a bit of time on your own projects before going to bed. Push through the exhaustion?"]
+        "en": ["Your day job has left you exhausted, but you told yourself you'd get in a bit of time on your own projects before going to bed. Push through the exhaustion?"]
     },
     "yes_action": {
         "productivity": 5,
@@ -21,7 +21,7 @@
     "yes_caption": "Work.",
     "no_caption": "Too tired.",
     "yes_description": {
-        "en": ["Your lack of focus means you don't get much done, but you spend a lot of time and energy trying to do it."]
+        "en": ["Your lack of focus means you don't get much done, but you spend a lot of time and energy trying."]
     },
     "no_description": {
         "en": ["You eschew work for the day and go straight to bed."]

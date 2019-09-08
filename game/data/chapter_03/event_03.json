@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "Despite the number of times you've tried to explain exactly what you're making to family and friends, you still don't have a solid \"elevator pitch\" down. The problem is, you're not quite sure how to write it. Do you want to focus on explaining the utility of your product, or on being flashy and catchy to draw interest?"
+            "Despite the number of times you've tried to explain exactly what you're making to family and friends, you still don't have a solid \"elevator pitch\" down. Problem is, you're not quite sure how to write it. Do you want to focus on explaining the utility of your product, or on being flashy and catchy to draw interest?"
         ]
     },
     "yes_action": {
@@ -18,12 +18,12 @@
     "no_caption": "Flash",
     "yes_description": {
         "en": [
-            "Your idea is good enough to stand on its own two feet - at least, you think."
+            "Your idea is good enough to stand on its own two feet - at least, you think it is."
         ]
     },
     "no_description": {
         "en": [
-            "You work on adding more functions to show off. It still looks like something a college student might've thrown together on a whim, but you hope seeing how it functions will help Mr. Martel see what it's capable of."
+            "All the function in the world won't matter if nobody's looking."
         ]
     }
 }

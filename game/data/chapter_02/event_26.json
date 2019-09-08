@@ -19,12 +19,12 @@
     "no_caption": "My time is worth money",
     "yes_description": {
         "en": [
-            "You finish up the work and send it to the client - only for your name to be buried deep within their website on a credits page no one will ever read. Oh well."
+            "You finish up the work and send it to the client, only for your name to be buried deep within their website on a credits page no one will ever read. Oh well."
         ]
     },
     "no_description": {
         "en": [
-            "You ignore the email. Your time is worth money, and knowing this gives your self-esteem a boost."
+            "You ignore the email. Your time is worth money. Knowing this gives your self-esteem a boost."
         ]
     }
 }

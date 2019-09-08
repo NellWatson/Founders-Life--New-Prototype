@@ -6,7 +6,7 @@
     "description": {
         "en": [
             "I've noticed your metrics are off, NAME. You've been doing some real bad work lately.",
-            "Get it together. If this lasts much longer, I'm not sure you will."
+            "Get it together. If this lasts much longer, I'm not sure your job will."
         ]
     },
     "yes_action": {
@@ -17,7 +17,7 @@
     "yes_caption": "Got it, Boss.",
     "yes_description": {
         "en": [
-            "You lay off of your own work tonight to catch up with your full-time job.",
+            "You lay off your own work tonight to catch up with your full-time job.",
             "There just aren't enough hours in the day..."
         ]
     }

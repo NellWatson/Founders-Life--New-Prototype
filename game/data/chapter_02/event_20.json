@@ -8,8 +8,8 @@
     ],
     "description": {
         "en": [
-            "Honey, I noticed you've been putting a lot less effort into your job lately, and Roger seems to be getting upset with you.",
-            "Please remember that this is the job that's paying our bills. You can't risk losing it!"
+            "Honey, I noticed you've been putting a lot less effort into your job lately. Roger seems to be getting upset with you.",
+            "Please remember, {i}this{/i} is the job that's paying our bills. You can't risk losing it."
         ]
     },
     "yes_action": {

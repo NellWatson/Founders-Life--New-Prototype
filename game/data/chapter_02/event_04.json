@@ -6,7 +6,7 @@
     "description": {
         "en": [
             "You landed a great freelance gig that's going to pay really well. There's just one caveat - the client can't make up their mind about what they want!",
-            "You created a mockup that they initially accepted, but now they want to go with a completely different idea they've presented. What should you do?"
+            "You created a mockup they initially accepted, but now they want to go with a completely different idea. What should you do?"
         ]
     },
     "yes_action": {
@@ -20,7 +20,7 @@
         "money": 100
     },
     "yes_caption": "The customer is always right.",
-    "no_caption": "Inform the customer that you're sticking with the original plan.",
+    "no_caption": "Stick with the original plan.",
     "yes_description": {
         "en": [
             "You grit your teeth and put in the extra work. The client thanks you and you finally get paid."
@@ -28,7 +28,7 @@
     },
     "no_description": {
         "en": [
-            "The client is upset. Why hire you if you aren't willing to get the job done right? They pay you for your time, but you lose the gig."
+            "The client is upset. Why hire you if you aren't willing to get the job done right? They pay you for your time so far, but you lose the gig."
         ]
     }
 }

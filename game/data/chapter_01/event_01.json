@@ -4,7 +4,7 @@
     "category": "productivity",
     "character": "none",
     "description": {
-        "en": ["Would you like to announce your decision to become an entrepeneur to your friends and family?"]
+        "en": ["Would you like to announce your decision to become an entrepeneur to friends and family?"]
     },
     "yes_action": {
         "productivity": 10,
@@ -15,18 +15,15 @@
     },
     "yes_description": {
         "en": [
-            "You told Skylar, though not as confidently as you would have liked.",
-            "skylar::\"You're not quitting your job, though, right?\"",
-            "skylar::\"As long as you're careful, then of course I will support you!\"",
-            "skylar::\"I would have... liked to be a part of this decision, though.\"",
-            "Your friends responded with polite interest and encouragement. You wonder how many actually believe you can do it. You don't tell your boss, though."
+            "skylar::\"You're not quitting your job though, right?\"",
+            "skylar::\"As long as you're careful, then of course I'll support you!\"",
+            "skylar::\"I would have liked to be a part of this decision, though.\"",
         ]
     },
     "no_description": {
         "en": [
-            "You decide against telling people your plans, lest you fall flat on your face.",
-            "You don't want your boss, Roger, finding out either.",
-            "However, the time suddenly spend working away at your computer becomes noticeable. Skylar asks you what's going on, and you explain. Eventually, your friends find out, too.",
+            "You decide against telling people your plans, lest you fall flat on your face. You don't want your boss, Roger, finding out either.",
+            "However, the time suddenly spent working away at your computer becomes noticeable. Skylar asks you what's going on, and you explain. Then your friends find out.",
             "\"I'm surprised you didn't tell me. I guess you didn't trust me.\"",
             "Ouch."
         ]

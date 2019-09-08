@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "You finally get paid by a client - but the check bounces. You spend the day working it out between your bank and the client."
+            "You finally get paid by a client, but the check bounces. You spend the day working it out between your bank and the client."
         ]
     },
     "yes_action": {
@@ -15,9 +15,4 @@
         "money": 300
     },
     "yes_caption": "Great.",
-    "yes_description": {
-        "en": [
-            "You grit your teeth and put in the extra work. The client thanks you, and you finally get paid."
-        ]
-    }
 }

@@ -22,13 +22,13 @@
     "no_caption": "Talk to Skylar",
     "yes_description": {
         "en": [
-            "You wait for the feeling to pass. If the doubts came up suddenly, maybe they'll go away just as suddenly.",
-            "You do nothing of any importance all day, and pray that you'll feel better in the morning. And you do - mostly. But the doubt lingers in the back of your mind."
+            "You wait for the feeling to pass. If doubts came up suddenly, maybe they'll go away just as suddenly.",
+            "You do nothing of importance all day, praying you'll feel better in the morning. And you do - mostly. But doubt lingers in the back of your mind."
         ]
     },
     "no_description": {
         "en": [
-            "You discuss it with Skylar, who gives you a rousing speech about what a good idea it is and what kind of people it will help. Then you agree to a hug and a pleasant night in to take your mind off of things. By the next day, you feel like everything is back to normal."
+            "You discuss it with Skylar, who gives you a rousing speech about what a good idea it is and what kind of people it will help. Then you agree to a hug and a pleasant night in to take your mind off of things. By the next day, everything is back to normal."
         ]
     }
 }

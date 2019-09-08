@@ -7,7 +7,7 @@
         ["turn_no", 10, "greater"]
     ],
     "description": {
-        "en": ["Did you hear?! They made a movie out of that old TV-show we were obsessed with in elementary school! We have to go to the premiere tonight."]
+        "en": ["Did you hear? They made a movie out of Bon-Bon Fighters - that old TV-show we were obsessed with in elementary school! We have to go to the premiere tonight."]
     },
     "yes_action": {
         "productivity": -20,
@@ -24,7 +24,7 @@
     "yes_caption": "Sounds like fun!",
     "no_caption": "Gotta work.",
     "yes_description": {
-        "en": ["The movie was a little disappointing, but Takashi is happy you got to spend time together."]
+        "en": ["Ugh, that was boring as heck. But at least we got to hang out!"]
     },
     "no_description": {
         "en": ["\"Man. I feel like I haven't seen you in forever. We used to be really close. I can't be the only one putting effort in, you know.\""]

@@ -8,7 +8,7 @@
     ],
     "description": {
         "en": [
-            "You're at the final stages of negotiation work from a client, and you have to do what you always dread - pitching a price.",
+            "You're at the final stages of negotiating work with a client, and you have to do what you always dread - pitch a price.",
             "Should you highball for $400 and hope it goes through, or go for the safe $200?"
         ]
     },
@@ -22,12 +22,12 @@
     "no_caption": "Lowball for $200",
     "yes_description": {
         "en": [
-            "The client accepts without even a counter offer - and you're left wondering whether what you pitched was quite so high, after all."
+            "The client accepts without even a counter offer, and you're left wondering whether you underpriced yourself after all."
         ]
     },
     "no_description": {
         "en": [
-            "The client immediately accepts - and you get the feeling you didn't get what you're worth."
+            "The client immediately accepts, and you get the feeling you didn't get what you're worth."
         ]
     }
 }

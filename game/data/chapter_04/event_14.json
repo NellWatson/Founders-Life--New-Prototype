@@ -5,9 +5,9 @@
     "character": "roger",
     "description": {
         "en": [
-            "I see our conversation last month hasn't really stuck with you, huh?",
+            "I see our conversation last month hasn't stuck with you, huh?",
             "You only seem to do better when I'm watching you. But you're an adult. I shouldn't have to make you do your job on time!",
-            "(Roger's been getting on your case even more than usual lately. You're sure he knows what you're up to, and you won't need this job much longer. How do you respond?"
+            "none::Roger's been getting on your case even more than usual lately. You're sure he knows what you're up to, and you won't need this job much longer. How do you respond?"
         ]
     },
     "yes_action": {
@@ -18,7 +18,7 @@
         "mindfulness": -10
     },
     "yes_caption": "Be sassy",
-    "no_caption": "Take it in silenve",
+    "no_caption": "Take it in silence",
     "yes_description": {
         "en": [
             "Oh, ho! You have a mouth on you now, too!",

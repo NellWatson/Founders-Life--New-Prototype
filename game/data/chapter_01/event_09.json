@@ -7,7 +7,7 @@
         ["turn_no", 7, "greater"]
     ],
     "description": {
-        "en": ["It's my birthdaaaay! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."]
+        "en": ["It's my birthday! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."]
     },
     "yes_action": {
         "productivity": -30,
@@ -24,9 +24,9 @@
     "yes_caption": "Happy birthday!",
     "no_caption": "I'm busy.",
     "yes_description": {
-        "en": ["You feel a bit guilty that you forgot Takashi's birthday, so you spend a bit more on him than you wanted to. He ends the night happy, and you get less work done the next day due to the hangover."]
+        "en": ["Do another shot with me! Guess you won't be working tomorrow, HAHA!"]
     },
     "no_description": {
-        "en": ["Sometimes achieving your dreams requires sacrifices. But as you turn him down, you hear the disappointment in his voice. It stays with you all night."]
+        "en": ["...Damn. All right."]
     }
 }

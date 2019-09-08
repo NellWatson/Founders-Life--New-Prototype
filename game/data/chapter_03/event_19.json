@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "A client calls you about doing some local work. It could be nice to help out the community - and get paid, to boot!"
+            "A client calls you about doing some local work. It could be nice to help out the community and get paid, to boot!"
         ]
     },
     "yes_action": {

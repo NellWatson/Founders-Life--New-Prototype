@@ -18,7 +18,7 @@
         "mindfulness": -20,
         "affection": -1
     },
-    "yes_caption": "I'll do it",
+    "yes_caption": "I'll do it.",
     "no_caption": "She's your mother. You handle it.",
     "yes_description": {
         "en": ["none::You hate these calls with Skylar's panicky mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]

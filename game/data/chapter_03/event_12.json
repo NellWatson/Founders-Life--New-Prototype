@@ -8,7 +8,7 @@
     ],
     "description": {
         "en": [
-            "After your last round of practice, you're again contemplating taking your elevator pitch out on the road. But this time the prospect exhausts you; you've been so busy prepping for the meeting that you haven't taken any time off. What should you do?"
+            "After the last round of practice, you're again contemplating taking your elevator pitch out on the road. However, this time the prospect exhausts you; you've been so busy prepping for the meeting you haven't taken any time off. What should you do?"
         ]
     },
     "yes_action": {
@@ -22,12 +22,12 @@
     "no_caption": "Take the night off",
     "yes_description": {
         "en": [
-            "You go out to pitch to strangers, and though it is exhausting, you're finally able to convince a majority of them to be interested in your project. You even end up giving out a few business cards and links to your website. Win-win!"
+            "You go out to pitch to strangers and, though it's exhausting, you're finally able to convince a majority of them to be interested in your project. You even end up giving out a few business cards and links to your website. Win-win!"
         ]
     },
     "no_description": {
         "en": [
-            "You take the night in to rest, but find you can't much set your mind at ease. The day of the pitch is getting closer, and you can't help but feel that your life will permanently change - for better or for worse - on the 28th.",
+            "You take the night to rest, but find you can't much set your mind at ease. The day of the pitch is getting closer, and you can't help but feel your life will permanently change - for better or for worse - on the 28th.",
             "At least your body gets some rest."
         ]
     }

@@ -6,18 +6,18 @@
     "description": {
         "en": [
             "The next day, the magnitude of what you've done crashes over you. You haven't thought about what role investors should play in your work - not seriously, at least. You have hardly anything to present aside from an unpolished demo and a few scattered marketing graphics. You don't even know how to pitch your project!",
-            "After a day of research, you understand that you need to put together a presentation to pitch your product to Mr. Martel. You need to present your ideas, some statistics, and convince him that this is an investment that will return his money. And you also need to figure out, privately, how much power an investor should have over your work and how much money you're willing to accept...",
-            "With a sigh, you get to work."
+            "After a day of research, you understand you need to put together a presentation to pitch your product to Mr. Martel. You need to present your ideas, some statistics, and convince him this investment will return his money. And you also need to figure out, privately, how much power an investor should have over your work and how much money you're willing to accept.",
+            "You sigh."
         ]
     },
-    "yes_caption": "Continue",
+    "yes_caption": "Time to make a list!",
     "yes_action": {
         "productivity": 10
     },
     "yes_description": {
         "en": [
             "You write up a list of everything you'll need to do in the next month to have a shot at a successful meeting.",
-            "Time to get to work."
+            "You hope you can get it all done."
         ]
     },
     "play_on": 1

@@ -5,7 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You have so much that you want to cover in your presentation pitch, but you're worried you won't be able to get to it all - and that it won't make much sense when you do. However, you're caught between writing a full script or using notecards as essential bullet points. A script might come off as robotic, but at least you'll know exactly what's happening. Meanwhile, there's always a chance you'll say something foolish or promise something you can't actually do without knowing exactly what you want to say."
+            "You have so much that you want to cover in your presentation pitch, but you're worried you won't be able to get to it all - and that it won't make much sense when you do.",
+            "As such, you're caught between writing a full script or using notecards as essential bullet points. A script might come off as robotic, but at least you'll know exactly what's happening. Meanwhile, there's always a chance you'll say something foolish  or misleading if you go off the cuff."
         ]
     },
     "yes_action": {
@@ -20,7 +21,7 @@
     "no_caption": "Use notecards",
     "yes_description": {
         "en": [
-            "You write out a full script, tweaking sentences to make sure they achieve maximum impact as well as maximum information. Now you just hope you'll be able to deliver it."
+            "You write out a full script, tweaking sentences to achieve maximum impact. Now you just hope you'll be able to deliver it."
         ]
     },
     "no_description": {

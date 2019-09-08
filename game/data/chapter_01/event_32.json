@@ -4,7 +4,7 @@
     "category": "money",
     "character": "none",
     "description": {
-        "en": ["Someone approaches you about some quick contract work. It's easy money, but you were looking forward to a break this evening. What do you do?"]
+        "en": ["You're approached about some quick contract work. It's easy money, but you were looking forward to a break this evening. What do you do?"]
     },
     "yes_action": {
         "energy": -10,

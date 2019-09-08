@@ -5,8 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "Dominique tells you to put out a call for beta-testers, and leaves it up to you whether you want to offer money for their feedback or not.",
-            "On the one hand, offering money could create more valuable feedback, and it also means the beta-testers will have a real stake in making the product better. That matters, since you don't have fans invested in your work.",
+            "Dominique tells you to put out a call for beta-testers, and leaves it up to you whether to offer money for their feedback.",
+            "On the one hand, offering money could create more valuable feedback, and also means beta-testers will have a real stake in making the product better. That matters, since you don't have fans invested in your work.",
             "On the other hand, it might be better to save your money for things that matter more to the company overall. Hopefully you'll still attract reliable beta-testers.",
             "What to do?"
         ]
@@ -20,12 +20,12 @@
     "yes_caption": "Offer money",
     "no_caption": "Ask for free",
     "yes_description": {
-        "en": ["You offer a very modest sum in return for beta-testing your game. Thankfully, interested parties do sign up - including a handful of college students interested in business. Nice!"]
+        "en": ["You offer a modest sum in return for beta-testing. Thankfully, interested parties do sign up - including a handful of college students majoring in business. Nice!"]
     },
     "no_description": {
         "en": [
             "You decide against offering money. You must spend your resources wisely!",
-            "Not a lot of people sign up, but you're hopefully the ones who do did so because they care about it in some way."
+            "Not a lot of people sign up, but you're hopeful the ones who did are here because they care in some way."
         ]
     }
 }

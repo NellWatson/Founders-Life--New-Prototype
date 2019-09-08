@@ -8,7 +8,7 @@
         ["turn_no", 15, "lesser"]
     ],
     "description": {
-        "en": ["You are still having a hard time meeting the deadlines Dominique has sent for you. As you're searching for solutions, you remember the idea of \"Accountability\". Perhaps reporting your work to someone every day would help - but who?"]
+        "en": ["You're having a hard time meeting the deadlines Dominique has sent for you. As you search for solutions, you remember the idea of \"Accountability\". Perhaps reporting your work to someone every day would help - but who?"]
     },
     "yes_action": {
         "energy": 10,
@@ -21,9 +21,9 @@
     "yes_caption": "Skylar",
     "no_caption": "Dominique",
     "yes_description": {
-        "en": ["Skylar proves to be an incredibly supportive, but not necessarily helpful accountabuddy. The feedback is never harsh, but that's exactly the problem - it's not harsh enough to get you to work harder. Still, it is helpful to have someone cheering you on."]
+        "en": ["Skylar proves to be an incredibly supportive, but not necessarily helpful accountabuddy. The feedback is never harsh, but that's exactly the problem - it's not harsh enough to get you to work harder. Still, it's helpful to have someone cheering you on."]
     },
     "no_description": {
-        "en": ["Dominique makes a great accountabuddy, in a certain way. He is harsh and uncompromising, leading you to work even harder than you did before. He is honest and straightforward, pointing out where you went wrong. It makes you work harder, but it also hurts a little. You're trying your hardest, after all! Some slack would be nice!"]
+        "en": ["Dominique makes a great accountabuddy in a certain way. He is harsh and uncompromising, leading you to work even harder than you did before. He is honest and straightforward, pointing out where you went wrong. It makes you work harder, but it also hurts a little. You're trying your hardest, after all. Some slack would be nice!"]
     }
 }

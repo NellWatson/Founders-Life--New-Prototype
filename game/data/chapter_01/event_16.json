@@ -6,7 +6,7 @@
         ["turn_no", 1, "greater"]
     ],
     "description": {
-        "en": ["'ERROR: Program has run into an unexplained error and must close.' You've received that error five times tonight. Post on forums for help and leave off for tonight?"]
+        "en": ["'ERROR: Program has run into an unexplained error and must close.' You've received that error five times tonight. How in the world are you going to deal with this?"]
     },
     "yes_action": {
         "productivity": 0
@@ -16,12 +16,12 @@
         "mindfulness": -15,
         "energy": -15
     },
-    "yes_caption": "Ask for help in forums and stop here.",
+    "yes_caption": "Ask for help in forums.",
     "no_caption": "Try to fix it yourself.",
     "yes_description": {
         "en": ["You ask for help in the forums, and by the next morning you have a solution. The program is up and running, ready for your next session."]
     },
     "no_description": {
-        "en": ["After a lot of cursing and struggling, you get it working again. You get a bit of work done, but the frustration follows you into your dreams."]
+        "en": ["After cursing and struggling, you get it running again. You barely work afterwards, and the frustration follows you into your dreams."]
     }
 }

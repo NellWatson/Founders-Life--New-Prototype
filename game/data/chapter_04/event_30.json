@@ -5,8 +5,8 @@
     "character": "dominique",
     "description": {
         "en": [
-            "So, #NAME. You might want to start thinking about what your story, as a young entrepreneur will be.",
-            "I know, I know. It sounds bad to say you'll need to get a story for yourself. But people are more likely to invest in a product when they feel they know the person behind it and know why they do what they do.",
+            "So, #NAME. You might want to start thinking about what your story as a young entrepreneur will be.",
+            "I know, I know. It sounds bad to say you'll need to get a story for yourself. But people are more likely to invest in a product when they feel they know the person behind it.",
             "Just think about it, eh? How would you market yourself to the world?"
         ]
     },
@@ -22,13 +22,13 @@
     "no_caption": "Be fully honest",
     "yes_description": {
         "en": [
-            "You decide to prepare a story, being honest about your motives but strategically trying to put them in the best light. You don't want to lie or manipulate, but there's no reason not to get off on the right foot."
+            "You decide to prepare a story, being honest about your motives while strategically putting them in the best light. You don't want to lie or manipulate, but there's no reason not to get off on the right foot."
         ]
     },
     "no_description": {
         "en": [
-            "Who needs a \"story?\" Honesty is the way for you and your work. If someone doesn't it like it, fine - they shouldn't buy it!",
-            "You try your hardest to ignore the small doubt in your mind - the doubt asking you whether being open, honest, and vulnerable on the internet might have any costs."
+            "Who needs a \"story?\" Honesty is the way for you and your work. If someone doesn't it like it, fine. They shouldn't buy it!",
+            "You try your hardest to ignore the small doubt in your mind - the doubt asking you whether being open, honest, and vulnerable in the public eye might have any costs."
         ]
     }
 }

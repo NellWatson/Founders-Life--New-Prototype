@@ -4,7 +4,7 @@
     "category": "energy",
     "character": "none",
     "description": {
-        "en": ["You've been working for most of the past few days, and it's starting to show up as aches and pains in your body. But you have a deadline coming up and know you can't afford a day off. How do you deal with this?"]
+        "en": ["You've been working without a break for most of the past few days and your body is starting to complain. However, you have a deadline coming up and can't afford a day off. How do you deal with this?"]
     },
     "yes_action": {
         "productivity": 10,
@@ -20,6 +20,6 @@
         "en": ["You take a long walk around the neighborhood to clear your mind. It helps, and you are more energetic and productive when you get back to work."]
     },
     "no_description": {
-        "en": ["You stretch your muscles, and while it helps for a bit, they start to ache again in another hour or so. You accept the pain and try to work around it."]
+        "en": ["You stretch your muscles and, while they calm for a bit, they start to ache again after an hour. You accept the pain and try to work around it."]
     }
 }

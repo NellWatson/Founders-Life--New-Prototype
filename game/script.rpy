@@ -252,22 +252,22 @@ label chapter_finale:
 
 label chapter_one_finale:
     $ event_code = "chapter_01_99"
-    show dominique at center
 
     menu:
-        d "Hi, [founder_name], I'm Dominique Martel. I just wanted to reach out to tell you how impressed I've been with the progress you've been making with [startup_name]. I love the idea and your execution.\nI've a lot of free time now I've left Google, and I'd like to spend some of it mentoring you.\nWhat do you say?"
+        "You've finally finished your first month with [startup_name]. It ended up being much harder than you thought."
+        "As the calendar flips into February, you feel proud. You're really making your dreams happen. In fact, you feel like..."
 
-        "Agree":
-            $ variable("productivity", 20)
-            $ variable("energy", 20)
+        "You're doing well":
+            $ variable("productivity", 0)
+            $ variable("energy", 0)
             $ variable("morale", 20)
 
-        "Disagree":
-            $ variable("productivity", -20)
-            $ variable("energy", -20)
+        "You could do better":
+            $ variable("productivity", 20)
+            $ variable("energy", 0)
             $ variable("morale", -20)
 
-    hide dominique
+    "The next month is here, and it's ready for what you can do with it."
 
     call screen founder_map
     $ event_code = "chapter_02_00"
@@ -289,15 +289,15 @@ label chapter_two_finale:
     $ event_code = "chapter_03_00"
     
     "You've finally proven to Skylar that you are, in fact, capable of achieving your dreams, but the measures you had to take to do it leave you dissatisfied."
-    "You didn't start out on this journey just to wind up working on other people's dreams, after all. You wanted to be your own boss, not gain sixty. But how are you supposed to bide the time between now and when your work is finished?"
+    "You didn't start out on this journey just to wind up working on other people's dreams, after all. You wanted to be your own boss, not gain sixty. But how are you supposed to bide time between now and when your work is finished?"
     "As you're mulling this and checking your inbox, you notice another e-mail from Dominique."
 
     "Dear [founder_name],"
     "I'm writing again because divine intervention has enabled me to be in your area at the end of the month, on the 28th. If you are available, I would like to meet."
     "Pitch me your venture. Tell me your plans. Let me know the progress you have made. Then, we can see whether I can be of use to you.\nBest,\nDominique Martel"
 
-    "Before you can give yourself too much time to stop, you reply and accept. But you can't help asking: why are you doing this? The answer comes almost immediately."
-    "Because part of the reason I chose to chase my success was to help others when they chased their own."
+    "Before you give yourself too much time to think, you reply and accept. But you can't help asking: why are you doing this? The answer comes almost immediately."
+    "\"Because part of the reason I chose to chase my success was to help others when they chased their own.\""
 
     menu:
         "The 28th? That gives you a whole month to prepare your pitch.":
@@ -325,7 +325,7 @@ label chapter_three_finale:
     $ characters_roster.store["none"].affection = 0
     "[founder_name],\nI'm very excited to move forward with you on this. A few things to note:"
     "There is an event coming up in two months. I think it would be prudent to release your product to correspond with that event, as that should help gain it a lot of publicity. I know that's likely a much faster timeline than you were hoping for, but trust me on this."
-    "On the first of the next month, we will release the product to beta-testers, who will give us valuable feedback. Thus, this month should be spend ensuring the product working as well as we can get it."
+    "On the first of the next month, we will release the product to beta-testers, who will give us valuable feedback. Thus, this month should be spent ensuring the product works as well as we can get it."
     "I'm having my team look over your project and will send back our notes. It will be a lot to handle, but fixing what they find will go a long way to making a lasting impression on the beta-testers."
     "Take some rest now while you can. You'll need it.\nDominique"
 

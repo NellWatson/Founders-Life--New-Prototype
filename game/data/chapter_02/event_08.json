@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "You haven't been getting as many job offers of late, so you have no work due today. Spend the time applying for jobs and sprucing up your website, or take the day to look after yourself?"
+            "You haven't been getting as many job offers of late, so you have no work for today. Spend the time applying for jobs and sprucing up your website, or take the day to look after yourself?"
         ]
     },
     "yes_action": {
@@ -27,7 +27,7 @@
     },
     "no_description": {
         "en": [
-            "You really needed this day off. It's just not healthy to be working every hour of the day."
+            "You really needed this day off. It's not healthy to work every hour of the day."
         ]
     }
 }

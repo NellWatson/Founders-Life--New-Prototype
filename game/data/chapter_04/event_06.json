@@ -4,7 +4,7 @@
     "category": "mindfulness",
     "character": "skylar",
     "description": {
-        "en": ["Hey, #NAME. You've been working really hard lately, what with getting an investor and all. I just wanted to let you know I'm really proud of you. I took the time to make your favorite meal and do some of your chores - don't worry about that for tonight. I just thought it would be nice to cut you a break!"]
+        "en": ["Hey, #NAME. You've been working really hard lately, what with getting an investor and all. I just wanted to let you know I'm really proud of you. I took the time to make your favorite meal and do some of your chores - don't worry about that for tonight. I thought it would be nice to give you a break!"]
     },
     "yes_action": {
         "productivity": 10,

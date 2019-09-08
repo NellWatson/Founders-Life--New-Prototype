@@ -8,7 +8,7 @@
     ],
     "description": {
         "en": [
-            "You awaken slightly late the morning of the pitch and feel nothing but dread in your stomach. You've prepared for the entire month - surely this will be enough?",
+            "You awaken slightly late the morning of the pitch and feel nothing but dread in your stomach. You've prepared for the entire month. Surely it will be enough?",
             "You arrive to the meeting just as Dominique comes in through the door. You've never seen a millionaire in real life, and you didn't expect this tall, suave man.",
             "dominique::\"You must be #NAME.\"",
             "His accent is French, and you remember English isn't his native tongue. You start to sweat.",
@@ -24,7 +24,7 @@
     },
     "yes_description": {
         "en": [
-            "You drag yourself home, horrified at what just transpired.",
+            "You drag yourself home, horrified at what transpired.",
             "You're not sure you can look at your project - or yourself - ever again."
         ]
     }

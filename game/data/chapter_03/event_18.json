@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "A potential client comes to you with a fairly time-consuming project. It'd be stressful, but it'll add a decent amount to your pocket."
+            "A potential client comes to you with a fairly time-consuming project. It'd be stressful, but would add a decent amount to your pocket."
         ]
     },
     "yes_action": {
@@ -14,7 +14,7 @@
         "money": 400
     },
     "no_action": {
-        "productivity": 0
+        "productivity": 10
     },
     "yes_caption": "Take the job",
     "no_caption": "Decline",

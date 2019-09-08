@@ -4,7 +4,7 @@
     "category": "productivity",
     "character": "none",
     "description": {
-        "en": ["You finish your work early this evening, and have the option of taking off early or of spending some extra time polishing up your skills."]
+        "en": ["You finish your work early this evening. You have the option of taking off early or of spending extra time polishing up your skills."]
     },
     "yes_action": {
         "productivity": 20,
@@ -16,9 +16,9 @@
     "yes_caption": "Polish your skills",
     "no_caption": "Take the night off",
     "yes_description": {
-        "en": ["You take the time to dig around for some good books and tutorials to help you improve, and you learn some things you know will prove very useful."]
+        "en": ["You dig around for tutorials to help you improve and learn some things that will prove useful."]
     },
     "no_description": {
-        "en": ["You take the night off, and feel pretty good about it, too!"]
+        "en": ["You take the night off and feel pretty good about it, too!"]
     }
 }

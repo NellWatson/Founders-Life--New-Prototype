@@ -21,5 +21,16 @@
         "affection": -1
     },
     "yes_caption": "All set",
-    "no_caption": "I have to work..."
+    "no_caption": "I have to work...",
+    "yes_description": {
+        "en": [
+            "\"This is going to be a wonderful night!\"",
+        ]
+    },
+    "no_description": {
+        "en": ["You have to...?",
+        "Oh.",
+        "Then have fun."]
+    }
+
 }

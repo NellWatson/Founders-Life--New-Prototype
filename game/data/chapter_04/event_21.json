@@ -9,8 +9,8 @@
     ],
     "description": {
         "en": [
-            "#NAME, you're running behind. I know I'm asking a lot of you - in fact, I'm intentionally asking a lot of you. I want you to prove to me that this is something you can do. That this is something you have passion for.",
-            "Now, I understand that sometimes it takes more work than you want it to. I know that sometimes the work sucks the fun out of things and makes it hard to see why you went into it in the first place. If you're having that problem, try and remember why you were passionate in the first place. Or think of the riches that await you for completing.",
+            "#NAME, you're running behind. I know I'm asking a lot of you. In fact, I'm intentionally asking a lot of you. I want you to prove to me this is something you can do.",
+            "Now, I understand sometimes it takes more work than you want it to. I know sometimes the work sucks the fun out of things and makes it hard to see why you went into it in the first place. If you're having that problem, try and remember why you were passionate about this, or think of the riches that await you when you finish.",
             "Just find something to motivate yourself. You're so close to the finish line."
         ]
     },
@@ -26,13 +26,13 @@
     "no_caption": "Think about the rewards",
     "yes_description": {
         "en": [
-            "You went into this field because you genuinely loved it. The feeling of being able to affect people's lives with something you created, and the belief you had that you could do it well. Not to mention how fun it was to overcome challenges along the way!",
-            "You try to hold onto these memories in the weeks ahead, as you know you'll need them."
+            "You went into this field because you genuinely love it. You felt you could affect people's lives with something you created, and believed you could do it well. Not to mention how much fun you had overcoming challenges along the way!",
+            "You try to hold on to these memories in the weeks ahead, as you know you'll need them."
         ]
     },
     "no_description": {
         "en": [
-            "You imagine what awaits you on the other end of this project - people using the thing you created, and feeling grateful to have it in their lives. The money that you'll (hopefully) get. The freedom that money will give you.",
+            "You imagine what awaits you on the other end of this project: people using the thing you created, feeling grateful to have it in their lives. The money you'll (hopefully) get. The freedom money will give you.",
             "You try to hold on to these thoughts in the weeks ahead, as you know you'll need them."
         ]
     }

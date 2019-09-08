@@ -3,13 +3,14 @@
     "category": "energy",
     "character": "none",
     "condition": [
-        ["energy", 50, "greater"]
+        ["energy", 50, "greater",
+            ["turn_no", 15, "greater"]]
     ],
     "description": {
         "en": [
-            "You've been self-employed for a little while now, but you worry you aren't working hard enough.",
+            "You've been self-employed for a while now, but you worry you aren't working hard enough.",
             "This is your one shot to have your own company. Who knows when you'll get another chance?",
-            "You feel like you haven't been giving your everything to your company. Guilt creeps in to you."
+            "Have you been giving this your all? Guilt creeps in to you."
         ]
     },
     "yes_action": {
@@ -26,15 +27,15 @@
     "yes_description": {
         "en": [
             "You're not entirely sure the feeling is accurate, but you use it to motivate you forward. You get a lot done, anxiety pressing you further along, working desperately to put your own criticisms to rest.",
-            "You finish for the night and feel like you can relax, but a creeping fear steals into your mind.",
+            "You finish for the night and finally feel you can relax, but a creeping fear steals into your mind.",
             "\"If I don't get this much done tomorrow, I'm never going to make it.\"",
-            "You shrug it off and hope it doesn't become a pattern."
+            "You shrug it off."
         ]
     },
     "no_description": {
         "en": [
             "You sit for a bit to examine the thoughts. Where are these coming from?",
-            "Eventually you decide that that's not reality. You could be working harder, but you could always work harder. You don't want to spend your life working yourself to the bone until you die.",
+            "Eventually you decide your thoughts are not reflective of reality. You could be working harder, but you could always work harder. You don't want to spend life working yourself to the bone.",
             "You go to sleep, feeling like you avoided a time bomb."
         ]
     }

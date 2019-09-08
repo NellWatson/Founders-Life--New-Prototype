@@ -7,7 +7,7 @@
         ["turn_no", 21, "greater"]
     ],
     "description": {
-        "en": ["#NAME, I feel as though you've been ignoring me. I know you said your new business would take up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
+        "en": ["#NAME, I feel like you've been ignoring me. I know your new business takes up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
     },
     "yes_action": {
         "productivity": -10,
@@ -24,11 +24,11 @@
     "no_caption": "I'm not finished with work.",
     "yes_description": {
         "en": [
-            "\"Thank you so much, honey. It's just... I've had a hard week, and when you're working so hard, I feel like I've got to do it all by myself.\"",
+            "\"Thank you so much, honey. It's just... I've had a hard week, and when you're working so hard, I feel like I've got to handle everything by myself.\"",
             "\"It's just not the same as when we first started dating. I'm sorry. I'll try to get more used to it.\""
         ]
     },
     "no_description": {
-        "en": ["You try to explain how important it is to be disciplined, but Skylar is not having it. You finish your work with a pit in your stomach."]
+        "en": ["Did you listen to me at all?"]
     }
 }

@@ -5,9 +5,9 @@
     "character": "none",
     "description": {
         "en": [
-            "It's the night before the pitch. This is everything you've been working towards all month. You even disregarded most of your freelance work (and that income) to make sure you'd get it all right.",
-            "Now it's just time to see if it'll pay off.",
-            "But one last choice remains. You have a few hours left. Do you spend them drilling yourself or try to relax and get some rest?"
+            "It's the night before the pitch. This is everything you've been working towards all month. You even disregarded most of your freelance work (and income) to make sure you get it right.",
+            "Now almost it's time to see whether it'll pay off.",
+            "One last choice remains. You have a few hours left. Do you spend them drilling yourself or try to relax and get some rest?"
         ]
     },
     "yes_action": {
@@ -22,14 +22,14 @@
     "no_caption": "Drill",
     "yes_description": {
         "en": [
-            "You take the night off to rest - as best as you can, anyways.",
-            "You're not sure it's helping you destress, but at least you're not getting any more stressed. You manage to get a somewhat decent sleep."
+            "You take the night off to rest as best as you can.",
+            "You're not sure it's helping you destress, but at least you're not getting more stressed. You manage to get a somewhat decent sleep."
         ]
     },
     "no_description": {
         "en": [
-            "You drill yourself, finding slight imperfections each time you make the pitch that start to unnerve you. As it gets later, you find yourself wide awake and riddled with nerves, so you decide you might as well keep drilling. It's the best use of your energy right now, right?",
-            "You end up going to sleep much later than usual, running the presentation over and over in your mind before you eventually pass out."
+            "You drill yourself, finding slight imperfections each time that start to unnerve you. As it gets later, you find yourself wide awake and riddled with nerves, so you decide you might as well keep drilling. It's the best use of your energy right now.",
+            "You end up going to sleep much later than usual, running the presentation over and over in your mind before you finally drift off."
         ]
     }
 }

@@ -6,7 +6,7 @@
     "description": {
         "en": [
             "You've read a few suggestions online about how you should think of the investors duing this interview. One side says to view yourself as the alpha - confident, assured, and dominating. The investor is someone who knows less than you, and you are the authority here to educate them.",
-            "The other side suggests viewing the investor like an enthusiastic fan of the industry you're in - someone interested, but new. You need to explain how the industry works, but also wow them with the project you know they'll love.",
+            "The other side suggests viewing the investor like an enthusiastic fan of the industry - someone interested, but new. You need to explain how the industry works, but also wow them with a project you know they'll love.",
             "Which approach should you take?"
         ]
     },
@@ -16,16 +16,16 @@
     "no_action": {
         "mindfulness": 10
     },
-    "yes_caption": "Be the alpha",
+    "yes_caption": "Be the boss",
     "no_caption": "Approach a fan",
     "yes_description": {
         "en": [
-            "You decide to be the alpha. You are the authority here, not them. It's important that you win their respect."
+            "You decide to be the authority. You are the boss here, not them. It's important that you win their respect."
         ]
     },
     "no_description": {
         "en": [
-            "You decide to approach it as though they are already on your side and just waiting to love your project. Maybe if you view them as friendly, they will become so."
+            "You decide to approach it as though they're already on your side, just waiting to love your project. Maybe if you view them as friendly, they will become so."
         ]
     }
 }

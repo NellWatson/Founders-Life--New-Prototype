@@ -7,7 +7,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You finish working for the day, and even though you're tired, you can't help but feel like you haven't accomplished enough."]
+        "en": ["You finish working for the day and, even though you're tired, you can't help but feel like you haven't accomplished enough."]
     },
     "yes_action": {
         "productivity": -20,
@@ -18,7 +18,7 @@
         "energy": -10,
         "mindfulness": -10
     },
-    "yes_caption": "Keep going!",
+    "yes_caption": "Keep going.",
     "no_caption": "Call it a night.",
     "yes_description": {
         "en": ["You keep going and get things done, but at a cost."]

@@ -7,7 +7,7 @@
         ["mindfulness", 69, "lesser"]
     ],
     "description": {
-        "en": ["The power goes out just as you're about to save your work for today. Although you know you should sit down and get back to work, you're too angry to bother. Instead you turn in early for the night."]
+        "en": ["The power goes out just as you're about to save your work for the day. It comes back on immediately, but it doesn't matter. You've lost everything."]
     },
     "yes_action": {
         "productivity": 10,
@@ -24,6 +24,6 @@
         "en": ["You curse and sputter, then grudgingly restart your work. You get it all done, but you're not happy about it."]
     },
     "no_description": {
-        "en": ["After taking a deep breath, you realize you're too uptight to deal with this right now. You go to sleep and wake up refreshed and mostly clear-headed."]
+        "en": ["After taking a deep breath, you realize you're too uptight to deal with this right now. You call it a night."]
     }
 }
