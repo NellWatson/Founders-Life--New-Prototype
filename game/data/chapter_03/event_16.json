@@ -11,7 +11,8 @@
     },
     "yes_action": {
         "energy": 10,
-        "mindfulness": 10
+        "mindfulness": 10,
+        "affection": 1
     },
     "no_action": {
         "mindfulness": -10

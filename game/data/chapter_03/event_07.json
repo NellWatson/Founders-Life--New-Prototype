@@ -15,6 +15,7 @@
     },
     "no_action": {
         "mindfulness": 10,
+        "affection": 1,
         "affection": 1
     },
     "yes_caption": "Write a script",

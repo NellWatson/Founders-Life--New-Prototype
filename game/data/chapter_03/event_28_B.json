@@ -4,7 +4,7 @@
     "category": "energy",
     "character": "dominique",
     "condition": [
-        ["dominique:affection", 14, "lesser_equal"]
+        ["none:affection", 14, "lesser_equal"]
     ],
     "description": {
         "en": [
@@ -27,5 +27,6 @@
             "You drag yourself home, horrified at what transpired.",
             "You're not sure you can look at your project - or yourself - ever again."
         ]
-    }
+    },
+    "play_on": 28
 }

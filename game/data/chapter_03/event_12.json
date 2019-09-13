@@ -13,7 +13,8 @@
     },
     "yes_action": {
         "productivity": 10,
-        "energy": -10
+        "energy": -10,
+        "affection": 1
     },
     "no_action": {
         "energy": 10

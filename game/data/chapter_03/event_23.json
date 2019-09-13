@@ -14,7 +14,8 @@
         "mindfulness": 0
     },
     "no_action": {
-        "mindfulness": 10
+        "mindfulness": 10,
+        "affection": 1
     },
     "yes_caption": "Be the boss",
     "no_caption": "Approach a fan",

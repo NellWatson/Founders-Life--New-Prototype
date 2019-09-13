@@ -10,7 +10,8 @@
     },
     "yes_action": {
         "mindfulness": 10,
-        "money": -600
+        "money": -600,
+        "affection": 1
     },
     "no_action": {
         "mindfulness": 10

@@ -14,7 +14,8 @@
     "yes_action": {
         "productivity": 10,
         "energy": -10,
-        "mindfulness": -10
+        "mindfulness": -10,
+        "affection": 1
     },
     "no_action": {
         "productivity": 10

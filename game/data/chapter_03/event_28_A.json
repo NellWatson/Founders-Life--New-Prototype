@@ -4,7 +4,7 @@
     "category": "energy",
     "character": "dominique",
     "condition": [
-        ["dominique:affection", 15, "greater_equal"]
+        ["none:affection", 15, "greater_equal"]
     ],
     "description": {
         "en": [
@@ -41,5 +41,6 @@
             "You don't shake his hand.",
             "He leaves for his flight, and you leave for home. Maybe you weren't as serious about this as you thought."
         ]
-    }
+    },
+    "play_on": 28
 }

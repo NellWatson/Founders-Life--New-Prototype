@@ -13,7 +13,8 @@
         "productivity": 10
     },
     "no_action": {
-        "mindfulness": 10
+        "mindfulness": 10,
+        "affection": 1
     },
     "yes_caption": "Optimistic deadlines",
     "no_caption": "Cautious deadlines",

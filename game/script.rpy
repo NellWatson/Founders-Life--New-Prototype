@@ -230,7 +230,7 @@ label checkpoint:
 
         scene expression current_bg with dissolve
 
-        if turn_no <= 27:
+        if turn_no <= 28:
             jump week_event#expression find_event()
         else:
             jump chapter_finale
@@ -306,7 +306,7 @@ label chapter_two_finale:
     jump checkpoint
 
 label chapter_three_finale:
-    if characters_roster.store["dominique"].affection < 15:
+    if characters_roster.store["none"].affection < 15:
         $ renpy.unlink_save("custom")
         $ telemetry.end("Game Over at Chapter 03")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])

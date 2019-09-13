@@ -14,7 +14,8 @@
     },
     "no_action": {
         "productivity": 10,
-        "mindfulness": 10
+        "mindfulness": 10,
+        "affection": 1
     },
     "yes_caption": "Take the job",
     "no_caption": "Work on your own stuff",

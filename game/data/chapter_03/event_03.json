@@ -9,7 +9,8 @@
         ]
     },
     "yes_action": {
-        "productivity": 10
+        "productivity": 10,
+        "affection": 1
     },
     "no_action": {
         "mindfulness": 10

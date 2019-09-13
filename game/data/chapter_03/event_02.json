@@ -12,7 +12,8 @@
         "mindfulness": 10
     },
     "no_action": {
-        "productivity": 10
+        "productivity": 10,
+        "affection": 1
     },
     "yes_caption": "Polish",
     "no_caption": "Expand",
