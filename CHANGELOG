@@ -6,6 +6,7 @@ v 0.2.5.1019
 * Added Chapter 5 content.
 * Added Founderpedia button to main menu.
 * Allow players to continue the story after losing all the points in a KPI, if player has more than $2000.
+* Fixed Founder Map not showing during start of Chapter 4.
 
 v 0.2.4.0828
 ------------

@@ -84,6 +84,7 @@ init python:
                 return True
 
             for condition in self.condition:
+                print self.id, condition
                 if meets_condition(*condition):
                     continue
                 return False
