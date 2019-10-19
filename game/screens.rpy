@@ -346,13 +346,13 @@ screen main_menu():
         action Play("music", "music/ost001.mp3")
 
     add "gui/mainmenu/bg.png"
-    
+
     imagebutton:
         idle "gui/mainmenu/play_idle.png"
         hover "gui/mainmenu/play_hover.png"
 
         action ResumeLastGame("custom")
-        
+
         xalign 0.50
         yalign 0.93
 
@@ -1481,3 +1481,43 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 900
+
+screen credits():
+    modal True
+    add Solid("#000000")
+
+    vbox:
+        xalign 0.5
+        yalign 0.45
+
+        text "Concept and Director" bold True xalign 0.5
+        text "Eleanor \"Nell\" Watson" xalign 0.5
+
+        null height 10
+
+        text "Producer" bold True xalign 0.5
+        text "Sean Taylor" xalign 0.5
+
+        null height 10
+
+        text "Writer" bold True xalign 0.5
+        text "Cara Hillstock" xalign 0.5
+
+        null height 10
+
+        text "Music" bold True xalign 0.5
+        text "Kevin MacLeod" xalign 0.5
+        text "(Provided under CC-NC-3)" xalign 0.5
+
+        null height 10
+
+        text "Sounds by" bold True xalign 0.5
+        text "Denki Soundbank" xalign 0.5
+
+    textbutton _("Continue"):
+        style "fl_button"
+
+        action Return()
+
+        xalign 0.5
+        yalign 0.9

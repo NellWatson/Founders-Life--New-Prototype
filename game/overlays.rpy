@@ -113,7 +113,7 @@ screen character_intro():
     default character_list = ["skylar", "takashi", "roger"]
     add Solid("#00000000") alpha 0.5
 
-    text "Who is with you?"  size 60 color "#000000" xalign 0.5 yalign 0.25
+    text "See who is with you on the journey"  size 60 color "#000000" xalign 0.5 yalign 0.25
 
     hbox:
         xalign 0.5
@@ -129,7 +129,7 @@ screen character_intro():
 
                 action Call(i + "_intro")
 
-    textbutton _("Let's Start the Journey"):
+    textbutton _("Ok. Let's Start the Journey"):
         style "fl_button"
 
         action Jump("checkpoint")

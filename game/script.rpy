@@ -67,6 +67,7 @@ label checkpoint:
 
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
+            call screen credits
 
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [total_days] days."
@@ -91,6 +92,7 @@ label checkpoint:
 
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
+            call screen credits
 
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [total_days] days."
@@ -115,6 +117,7 @@ label checkpoint:
 
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
+            call screen credits
 
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [total_days] days."
@@ -137,6 +140,7 @@ label checkpoint:
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
+        call screen credits
 
         play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [total_days] days."
