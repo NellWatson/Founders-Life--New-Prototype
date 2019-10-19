@@ -1,0 +1,31 @@
+{
+    "id": "chapter_05_17",
+    "title": "Conflicting Feedback",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "Many beta-testers have honed in on one specific feature of your product. The only problem is, the feedback is conflicting! Half seem to love it and half seem to hate it. How exactly should you handle this?"
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Keep it",
+    "no_caption": "Change it",
+    "yes_description": {
+        "en": [
+            "You choose to keep it. Sometimes, polarizing things are exactly what a product needs. Better to love it than to like it!"
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You decide to change it, hoping that with a few tweaks the e-mails will shift to more positive overall.",
+            "When you finish, you await the feedback - and it's the same as before. Well, at least you tried!"
+        ]
+    }
+}

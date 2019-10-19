@@ -383,6 +383,15 @@ screen main_menu():
         xalign 0.015
         yalign 0.925
 
+    imagebutton:
+        idle "gui/mainmenu/trophy_idle.png"
+        hover "gui/mainmenu/trophy_hover.png"
+
+        action ShowMenu("achievement_screen", shelf=persistent.trophy_shelf)
+
+        xalign 0.985
+        yalign 0.925
+
     text "v [config.version]" size 45 xalign 1.0 yalign 1.0
 
     if config.developer:

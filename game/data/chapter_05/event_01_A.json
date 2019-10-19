@@ -1,0 +1,21 @@
+{
+    "id": "chapter_05_01_A",
+    "title": "Takashi's Support",
+    "category": "mindfulness",
+    "character": "Takashi",
+    "condition": [
+        ["ch_04:chapter", "chapter_04_12", "chose:yes"]
+    ],
+    "description": {
+        "en": [
+            "Hey! I saw that your beta finally released. That's crazy! Real, actual people using what you made. You see how incredible that is?!",
+            "Anyways, I just wanted to congratulate you. You're doing great, bud! I'm excited to see what comes of it!"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Thanks"
+}

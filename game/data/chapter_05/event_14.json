@@ -1,0 +1,17 @@
+{
+    "id": "chapter_05_14",
+    "title": "The Pressure Mounts",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "There just isn't enough time. There's so much to fix, and there isn't enough time! You know that realistically it's impossible to solve everyone's issues before launch, but perhaps somewhere in your heart of hearts you thought that everything would come together at the last minute.",
+            "That isn't going to happen, and you have to accept it."
+        ]
+    },
+    "yes_action": {
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Continue"
+}

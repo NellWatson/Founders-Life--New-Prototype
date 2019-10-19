@@ -1,0 +1,28 @@
+{
+    "id": "chapter_05_05",
+    "title": "An Off Day",
+    "category": "energy",
+    "character": "skylar",
+    "description": {
+        "en": [
+            "#NAME, it's time for your off day!",
+            "It's nice out today - I figured we could go to the park and have a picnic! And, of course, no phones while we're there."
+        ]
+    },
+    "yes_action": {
+        "energy": 10,
+        "morale": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "morale": -10
+    },
+    "yes_caption": "Sounds nice",
+    "no_caption": "I'm in crunch mode",
+    "yes_description": {
+        "en": ["I'm glad! This is going to be a great time!"]
+    },
+    "no_description": {
+        "en": ["I understand that, but your health is important, too..."]
+    }
+}

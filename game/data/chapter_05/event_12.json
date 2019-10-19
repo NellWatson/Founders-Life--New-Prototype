@@ -1,0 +1,21 @@
+{
+    "id": "chapter_05_12",
+    "title": "Progress Check",
+    "category": "energy",
+    "character": "dominique",
+    "description": {
+        "en": [
+            "#NAME! How are you doing?",
+            "My, you're shaking like a leaf! I can tell even from your terrible webcam.",
+            "Haha, it makes me nostalgic. I would love to feel the way you're feeling right now. Trust me, one day you'll miss it!",
+            "Anyways, keep up the good work! You've got half a month left. You can do this!"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "yes_caption": "Sure I can",
+    "play_on": 14
+}

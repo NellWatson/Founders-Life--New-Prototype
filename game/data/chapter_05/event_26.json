@@ -1,0 +1,32 @@
+{
+    "id": "chapter_05_26",
+    "title": "Failure",
+    "category": "mindfulness",
+    "character": "dominique",
+    "description": {
+        "en": [
+            "#NAME, I want to make sure you're prepared for what's to come. You understand that sometimes, you can put your very best into something and it can still fail, right? You know that sometimes failure has less to do with you and more to do with forces outside of your control?",
+            "I don't mean to lecture you. But please tell me you've thought about how to handle failure."
+        ]
+    },
+    "yes_action": {
+        "productivity": 10
+    },
+    "no_action": {
+        "mindfulness":  10
+    },
+    "yes_caption": "You can learn from your mistakes.",
+    "no_caption": "I will be heartbroken, but I'll live.",
+    "yes_description": {
+        "en": [
+            "You're right, you can learn from your mistakes. But is that something you've really thought through, or are you just saying that?",
+            "Please think on it. It'll help you in the end."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "That is an honest answer. I'm glad you've given it some thought."
+        ]
+    },
+    "play_on": 26
+}

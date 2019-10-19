@@ -1,0 +1,33 @@
+{
+    "id": "chapter_05_18",
+    "title": "Actionable, but Is it?",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": [
+            "Finally you have received some feedback that is both valid and actionable. There's only one problem - you're not quite sure you agree with it. While the beta-tester sees it as an annoying problem, you thought it was a feature! What should you do?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "mindfulness": -10,
+        "energy": -10
+    },
+    "no_action": {
+        "productivity": -10,
+        "mindfulness": 10,
+        "energy": 10
+    },
+    "yes_caption": "\"Fix\" it",
+    "no_caption": "Change it",
+    "yes_description": {
+        "en": [
+            "It isn't what you wanted, but you're more focused on making a profit than doing what you want."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Maybe a few people won't like it, but you'll be able to look back on your product with pride knowing it has exactly what you wanted it to."
+        ]
+    }
+}

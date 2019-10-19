@@ -1,0 +1,29 @@
+{
+    "id": "chapter_05_07",
+    "title": "Make It Different",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "This beta-tester is giving you feedback, sure - but it almost seems like they want you to make an entirely different product. Not only are they telling you how they could do your job better, but they've entirely missed the point of the product!",
+            "This is frustrating - you almost want to give them a piece of your mind."
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "energy": -10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Delete the e-mail and move on",
+    "no_caption": "Consult Dominique",
+    "yes_description": {
+        "en": ["You shoot off a sassy reply, and you feel better momentarily. Then the beta-tester responds with just as much sass and says they hope your business burns in flames. That went well."]
+    },
+    "no_description": {
+        "en": ["You bite your tongue, and the effort takes quite a bit more energy out of you than you thought it would."]
+    }
+}

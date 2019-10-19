@@ -1,0 +1,27 @@
+{
+    "id": "chapter_05_11",
+    "title": "New User Friendly",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "A tester suggests that you should hide some of the more complex features of your product somewhere in the settings or manual. They feel it's overwhelming to new users, who'll be likely to turn the thing off rather than put the effort in to learn it all. However, you're aware that the vast majority of users don't look in the settings and will likely never even find the features. What should you do?"
+        ]
+    },
+    "yes_action": {
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10
+    },
+    "yes_caption": "Hide the feature",
+    "no_caption": "Keep it complex",
+    "yes_description": {
+        "en": ["You decide to hide the feature. Hopefully, users who want it will be willing to search for it."]
+    },
+    "no_description": {
+        "en": [
+            "You decide to keep it complex. You hope that this will appeal to a more niche audience, ready to sink their teeth into these features."
+        ]
+    }
+}

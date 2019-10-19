@@ -13,6 +13,7 @@ label start:
     $ chapter_manager.load_chapter("ch_02", "chapter_02")
     $ chapter_manager.load_chapter("ch_03", "chapter_03")
     $ chapter_manager.load_chapter("ch_04", "chapter_04")
+    $ chapter_manager.load_chapter("ch_05", "chapter_05")
     $ chapter_manager.set_chapter("ch_01")
 
     $ calculate_pool()
@@ -58,55 +59,76 @@ label checkpoint:
     $ event_code = ""
 
     if productivity <= 0:
-        $ renpy.unlink_save("custom")
-        $ telemetry.end("No Productivity")
-        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
-        $ renpy.set_return_stack("")
+        if money <= 2000:
+            $ renpy.unlink_save("custom")
+            $ telemetry.end("No Productivity")
+            $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+            $ renpy.set_return_stack("")
 
-        call screen startup_review(current_bg)
-        call screen sprint_review(current_bg)
+            call screen startup_review(current_bg)
+            call screen sprint_review(current_bg)
 
-        play sound "sfx/fx012.wav"
-        n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [total_days] days."
-        
-        if not persistent.submitted_form:
-            n normal "Please let us know your feedback."
-            call screen feedback_form_screen
-        return
+            play sound "sfx/fx012.wav"
+            n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [total_days] days."
+            
+            if not persistent.submitted_form:
+                n normal "Please let us know your feedback."
+                call screen feedback_form_screen
+            return
+        else:
+            $ variable("money", -2000)
+            $ variable("productivity", 50)
+            $ no_of_times_died += 1
+
+            n normal "You lost productivity but you bribed the gamedevs to give you a boost ($2000)."
 
     elif energy <= 0:
-        $ renpy.unlink_save("custom")
-        $ telemetry.end("No Energy")
-        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
-        $ renpy.set_return_stack("")
+        if money <= 2000:
+            $ renpy.unlink_save("custom")
+            $ telemetry.end("No Energy")
+            $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+            $ renpy.set_return_stack("")
 
-        call screen startup_review(current_bg)
-        call screen sprint_review(current_bg)
+            call screen startup_review(current_bg)
+            call screen sprint_review(current_bg)
 
-        play sound "sfx/fx012.wav"
-        n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [total_days] days."
-        
-        if not persistent.submitted_form:
-            n normal "Please let us know your feedback."
-            call screen feedback_form_screen
-        return
+            play sound "sfx/fx012.wav"
+            n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [total_days] days."
+            
+            if not persistent.submitted_form:
+                n normal "Please let us know your feedback."
+                call screen feedback_form_screen
+            return
+        else:
+            $ variable("money", -2000)
+            $ variable("energy", 50)
+            $ no_of_times_died += 1
+            
+            n normal "You lost energy but you bribed the gamedevs to give you a boost ($2000)."
 
     elif morale <= 0:
-        $ renpy.unlink_save("custom")
-        $ telemetry.end("No Mindfulness")
-        $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
-        $ renpy.set_return_stack("")
+        if money <= 2000:
+            $ renpy.unlink_save("custom")
+            $ telemetry.end("No Mindfulness")
+            $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+            $ renpy.set_return_stack("")
 
-        call screen startup_review(current_bg)
-        call screen sprint_review(current_bg)
+            call screen startup_review(current_bg)
+            call screen sprint_review(current_bg)
 
-        play sound "sfx/fx012.wav"
-        n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [total_days] days."
-        
-        if not persistent.submitted_form:
-            n normal "Please let us know your feedback."
-            call screen feedback_form_screen
-        return
+            play sound "sfx/fx012.wav"
+            n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [total_days] days."
+            
+            if not persistent.submitted_form:
+                n normal "Please let us know your feedback."
+                call screen feedback_form_screen
+            return
+        else:
+            $ variable("money", -2000)
+            $ variable("morale", 50)
+            $ no_of_times_died += 1
+            
+            n normal "You lost mindfulness but you bribed the gamedevs to give you a boost ($2000)."
 
     elif money <= 0:
         $ renpy.unlink_save("custom")
@@ -249,6 +271,8 @@ label chapter_finale:
         jump chapter_three_finale
     elif current_chapter == 5:
         jump chapter_four_finale
+    elif current_chapter == 6:
+        jump chapter_five_finale
 
 label chapter_one_finale:
     $ event_code = "chapter_01_99"
@@ -285,7 +309,6 @@ label chapter_one_finale:
 
 label chapter_two_finale:
     call screen founder_map
-
     $ event_code = "chapter_03_00"
     
     "You've finally proven to Skylar that you are, in fact, capable of achieving your dreams, but the measures you had to take to do it leave you dissatisfied."
@@ -322,7 +345,10 @@ label chapter_three_finale:
             call screen feedback_form_screen
         return
 
+    call screen founder_map
+    $ event_code = "chapter_04_00"
     $ characters_roster.store["none"].affection = 0
+
     "[founder_name],\nI'm very excited to move forward with you on this. A few things to note:"
     "There is an event coming up in two months. I think it would be prudent to release your product to correspond with that event, as that should help gain it a lot of publicity. I know that's likely a much faster timeline than you were hoping for, but trust me on this."
     "On the first of the next month, we will release the product to beta-testers, who will give us valuable feedback. Thus, this month should be spent ensuring the product works as well as we can get it."
@@ -349,6 +375,23 @@ label chapter_four_finale:
 
     d "That was exactly the point. Trust me, you'll thank me later."
     "You crawl into bed. Tomorrow, things change for good."
+
+    call screen founder_map
+    $ event_code = "chapter_05_00"
+
+    "The first responses from beta-testers start coming in - and your heart sinks. The feedback is, at best, lukewarm. It looks like you're going to have a lot to do if you want to have this product ready to ship in a month."
+
+    menu:
+        "Better get to it!":
+            $ variable("productivity", 20)
+            $ variable("energy", 20)
+            $ variable("morale", 20)
+
+    jump checkpoint
+
+label chapter_five_finale:
+    $ event_code = "chapter_05_99"
+    show dominique at center
 
     n normal "Game over.\nThank you for playing."
     

@@ -1,0 +1,30 @@
+{
+    "id": "chapter_05_21",
+    "title": "Targeting the Audience",
+    "category": "mindfulness",
+    "character": "dominique",
+    "description": {
+        "en": [
+            "So, keep an open mind - I know this doesn't quite suit the vision you had for your project. However, I conducted a bit of a survey. It turns out one of our niche audiences would really want to see this feature in your product.",
+            "I know that it might confused the more general audience of users, but these niche users would be avid, loyal fans if we added this. What do you think?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10
+    },
+    "no_action": {
+        "mindfulness": 10
+    },
+    "yes_caption": "Niche market",
+    "no_caption": "Mass appeal",
+    "yes_description": {
+        "en": [
+            "Better to know your niche than to make something no one needs, eh?"
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Well, I guess focusing on a wider audience isn't the worst idea."
+        ]
+    }
+}

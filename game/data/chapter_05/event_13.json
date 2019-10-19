@@ -1,0 +1,33 @@
+{
+    "id": "chapter_05_13",
+    "title": "Retention",
+    "category": "money",
+    "character": "dominique",
+    "description": {
+        "en": [
+            "I've been looking at some statistics and I'm a bit worried - we are not retaining our beta-testers.",
+            "I've narrowed it down to two different possibilities. We could simplify the interface so it's easier to use (which would cost a bit), or we could ramp up our alarms and alerts if we detect it hasn't been used for a while (a cheap fix). What do you think?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 20,
+        "mindfulness": 20,
+        "money": -500
+    },
+    "no_action": {
+        "productivity": -10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Simplify the interface",
+    "no_caption": "Ramp up alerts",
+    "yes_description": {
+        "en": [
+            "Yes, good. I think you made the right choice. That should pay off in the future."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "All right. We'll do that. I just hope it won't annoy our customers too much!"
+        ]
+    }
+}

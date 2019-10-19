@@ -1,0 +1,34 @@
+{
+    "id": "chapter_05_20",
+    "title": "Deadline",
+    "category": "productivity",
+    "character": "dominique",
+    "condition": [
+        ["turn_no", 1, "greater"],
+        ["turn_no", 8, "lesser"]
+    ],
+    "description": {
+        "en": [
+            "Just a quick reminder, #NAME - since we're releasing on the first, you'll have to be done by the 25th. That way we'll have time to make sure reviews and distributors have the latest update with no issues."
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "mindfulness": -10
+    },
+    "no_action": {
+        "mindfulness": -10
+    },
+    "yes_caption": "What?! But I thought I'd have more time!",
+    "no_caption": "Got it.",
+    "yes_description": {
+        "en": [
+            "Well, you won't! Hah! But I hope it lights a fire for you, my friend."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You are ever reliable."
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "id": "chapter_05_10",
+    "title": "Proofreader",
+    "category": "money",
+    "character": "none",
+    "description": {
+        "en": [
+            "A friendly beta-tester who says they're an English teacher attempts to gently point out a problem you have with your text - there are typos everywhere. It looks unprofessional, but you're not sure you're the person who has the time or the grammatical knowledge to fix it. Hire a proofreader?"
+        ]
+    },
+    "yes_action": {
+        "productivity": 10,
+        "energy": 10,
+        "mindfulness": 10,
+        "money": -300
+    },
+    "no_action": {
+        "productivity": -10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Yes",
+    "no_caption": "No",
+    "yes_description": {
+        "en": ["You hire the proofreader. It cost a chunk, but it's worth it for the peace of mind and added professionalism."]
+    },
+    "no_description": {
+        "en": ["You decide you can't afford a proofreader right now - but you spend the next few days combing for errors, hoping it doesn't look as unprofessional as the beta-tester says."]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "id": "chapter_05_08",
+    "title": "Inconceivable",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "This person's feedback all consists of things that aren't even possible to do. There's no way to utilize any of this - not unless you had hundreds of thousands more in the budget.",
+            "It seems not all feedback is the same."
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10
+    },
+    "yes_caption": "Continue"
+}

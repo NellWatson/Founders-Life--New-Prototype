@@ -20,7 +20,8 @@ define EPISODE_NAMES = [
     "Meeting your Mentor",
     "Joining the Incubator",
     "Chapter 3",
-    "Chapter 4"
+    "Chapter 4",
+    "Chapter 5"
     ]
 define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
 define CHAPTER_DAY_COUNT = 28
@@ -68,3 +69,5 @@ default productivity_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "productivi
 default energy_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "energy", xysize=(700, 36))
 default morale_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "morale", xysize=(700, 36))
 default review_bar = Bar(value=1, range=1, width=500, height=50)
+
+default no_of_times_died = 0

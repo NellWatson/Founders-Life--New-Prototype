@@ -1,0 +1,16 @@
+{
+    "id": "chapter_05_01_B",
+    "title": "Overwhelmed",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": ["With the feedback pouring in, you start to feel overwhelmed. You swear you believe in this project, but there's so much to do - so much to fix! You don't even know where to start.",
+            "In spite of yourself, you close your browser and ignore everything for today. You'll get to it tomorrow."
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": -10
+    },
+    "yes_caption": "Continue"
+}

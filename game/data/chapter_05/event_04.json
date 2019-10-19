@@ -1,0 +1,29 @@
+{
+    "id": "chapter_05_04",
+    "title": "Lukewarm",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": ["As much as you're telling yourself, over and over, that it's okay the feedback hasn't been great... it's still getting to you. You're struggling to handle feeling disappointed in yourself and worried about the future. What should you do?"]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": -10,
+        "energy": 10
+    },
+    "yes_caption": "Find someone to talk to",
+    "no_caption": "Write it out",
+    "yes_description": {
+        "en": [
+            "You confess your feelings to Skylar, who pats you on the back and reminds you that the journey hasn't yet ended. You set your sights, once again, on the future."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You write out your feelings in a journal. You don't gain any new insight, but you do feel a bit energized having put all that energy somewhere else."
+        ]
+    }
+}

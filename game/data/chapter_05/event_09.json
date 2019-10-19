@@ -1,0 +1,16 @@
+{
+    "id": "chapter_05_09",
+    "title": "Unhelpful",
+    "category": "mindfulness",
+    "character": "none",
+    "description": {
+        "en": [
+            "\"Wonderful! Amazing! I love it!\" That's what the tester sent. It's nice to know that the feedback is positive, but you have no idea what they loved or how to improve the product.",
+            "All in all, this feedback isn't useful."
+        ]
+    },
+    "yes_action": {
+        "productivity": 0
+    },
+    "yes_caption": "Continue"
+}

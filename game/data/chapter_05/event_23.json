@@ -1,0 +1,35 @@
+{
+    "id": "chapter_05_23",
+    "title": "Brought to Tears",
+    "category": "mindfullness",
+    "character": "none",
+    "condition": [
+        ["turn_no", 20, "greater"],
+        ["turn_no", 25, "lesser"]
+    ],
+    "description": {
+        "en": [
+            "Finally, finally feedback is starting to get more universally positive. In fact, you received a touching e-mail today from an enthused tester who is excited about what you're doing. They explain they're a young college student, and hope that someday they'll be able to make something like this. The thought unexpectedly brings you to tears."
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness": -10
+    },
+    "yes_caption": "Accept the response",
+    "no_caption": "Try not to think about it",
+    "yes_description": {
+        "en": [
+            "Internally, you accept what the person says. But it's overwhelming, and weighs on your mind all day. You don't get as much done as you'd like."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You put it aside for now to focus on your work. There isn't room for the reflection it would take to process this right now."
+        ]
+    }
+}

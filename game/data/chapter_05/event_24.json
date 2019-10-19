@@ -1,0 +1,33 @@
+{
+    "id": "chapter_05_24",
+    "title": "Disappointment",
+    "category": "energy",
+    "character": "none",
+    "description": {
+        "en": [
+            "As the project becomes more and more \"official,\" you start to feel a little sad. This has been your baby for so long, and now that all the feedback is adding up, it feels a bit less like you.",
+            "Then a new idea occurs to you - why not include an easter egg?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "energy": 10,
+        "mindfulness": 10
+    },
+    "no_action": {
+        "productivity": 10,
+        "mindfulness":  -10
+    },
+    "yes_caption": "Do it!",
+    "no_caption": "It's a waste of time.",
+    "yes_description": {
+        "en": [
+            "You put in an easter egg - an inside joke between you and Takashi. You doubt anyone will find such a silly note, but it does make you happy."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "No, no. There's actual work that you need to do - you shouldn't be goofing off."
+        ]
+    }
+}
