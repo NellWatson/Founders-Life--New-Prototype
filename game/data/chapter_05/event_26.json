@@ -5,7 +5,8 @@
     "character": "dominique",
     "description": {
         "en": [
-            "#NAME, I want to make sure you're prepared for what's to come. You understand that sometimes, you can put your very best into something and it can still fail, right? You know that sometimes failure has less to do with you and more to do with forces outside of your control?",
+            "#NAME, I want to make sure you're prepared for what's to come. Sometimes you can put your very best into something and it can still fail.",
+            "You know that sometimes failure has less to do with you and more to do with forces outside of your control, right?",
             "I don't mean to lecture you. But please tell me you've thought about how to handle failure."
         ]
     },
@@ -16,10 +17,10 @@
         "mindfulness":  10
     },
     "yes_caption": "You can learn from your mistakes.",
-    "no_caption": "I will be heartbroken, but I'll live.",
+    "no_caption": "I'll be heartbroken, but I'll live.",
     "yes_description": {
         "en": [
-            "You're right, you can learn from your mistakes. But is that something you've really thought through, or are you just saying that?",
+            "You're right, you can learn from your mistakes. But is this something you've really thought through, or are you just saying that? That was quite an easy answer to give.",
             "Please think on it. It'll help you in the end."
         ]
     },

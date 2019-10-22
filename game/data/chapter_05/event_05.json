@@ -6,7 +6,7 @@
     "description": {
         "en": [
             "#NAME, it's time for your off day!",
-            "It's nice out today - I figured we could go to the park and have a picnic! And, of course, no phones while we're there."
+            "It's nice out today. I figured we could go to the park and have a picnic! Of course, no phones while we're there."
         ]
     },
     "yes_action": {
@@ -23,6 +23,6 @@
         "en": ["I'm glad! This is going to be a great time!"]
     },
     "no_description": {
-        "en": ["I understand that, but your health is important, too..."]
+        "en": ["I understand that, but your mental health is important, too..."]
     }
 }

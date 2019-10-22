@@ -5,7 +5,9 @@
     "character": "roger",
     "description": {
         "en": [
-            "It's finally time. #NAME, I've been waiting for this day for a while. I don't like bad employees. I especially dislike disloyal ones. But finally, I have a good reason to do this.",
+            "It's finally time, #NAME. I've been waiting for this day for a while.",
+            "You see, I don't like bad employees. I especially don't like unfaithful ones.",
+            "And finally, you have given me a good reason to do this.",
             "You are fired!"
         ]
     },
@@ -17,8 +19,8 @@
     "no_action": {
         "mindfulness": 10
     },
-    "yes_caption": "Ha! You think I care? I quit!",
-    "no_caption": "Welp, okay!",
+    "yes_caption": "You think I care? I quit!",
+    "no_caption": "Well - okay!",
     "yes_description": {
         "en": [
             "HA! Go ahead and quit! You'll get less money that way. Enjoy your early retirement, 'friend!'"
@@ -26,7 +28,7 @@
     },
     "no_description": {
         "en": [
-            "Hmm. That was less satisfying than I wanted it to be."
+            "Hmm. That was less satisfying than I thought it would be."
         ]
     }
 }

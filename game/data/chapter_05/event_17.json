@@ -5,7 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "Many beta-testers have honed in on one specific feature of your product. The only problem is, the feedback is conflicting! Half seem to love it and half seem to hate it. How exactly should you handle this?"
+            "Many beta-testers are offering feedback on one specific feature of your product. The problem is, the feedback is conflicting!",
+            "Half seem to love it and half seem to hate it. How exactly should you handle this?"
         ]
     },
     "yes_action": {
@@ -19,13 +20,14 @@
     "no_caption": "Change it",
     "yes_description": {
         "en": [
-            "You choose to keep it. Sometimes, polarizing things are exactly what a product needs. Better to love it than to like it!"
+            "You choose to keep it. Sometimes, a polarizing feature is exactly what a product needs. Better to love it than to like it!"
         ]
     },
     "no_description": {
         "en": [
-            "You decide to change it, hoping that with a few tweaks the e-mails will shift to more positive overall.",
-            "When you finish, you await the feedback - and it's the same as before. Well, at least you tried!"
+            "You decide to change it, hoping with a few tweaks the e-mails will be universally positive.",
+            "When you finish, you await the feedback - and it's the same as before.",
+            "At least you tried!"
         ]
     }
 }

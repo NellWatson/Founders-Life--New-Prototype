@@ -5,8 +5,9 @@
     "character": "none",
     "description": {
         "en": [
-            "This beta-tester is giving you feedback, sure - but it almost seems like they want you to make an entirely different product. Not only are they telling you how they could do your job better, but they've entirely missed the point of the product!",
-            "This is frustrating - you almost want to give them a piece of your mind."
+            "This beta-tester is giving you feedback, sure, but it almost seems like they want you to make an entirely different product.",
+            "Not only are they telling you how they could do your job better, but they've entirely missed the point of what you made!",
+            "You're not sure whether you should let this go or explain to them that they are the ones who don't understand what you made."
         ]
     },
     "yes_action": {
@@ -18,12 +19,13 @@
         "energy": -10,
         "mindfulness": -10
     },
-    "yes_caption": "Delete the e-mail and move on",
-    "no_caption": "Consult Dominique",
+    "yes_caption": "Tell them what's what",
+    "no_caption": "Delete the e-mail and move on",
     "yes_description": {
-        "en": ["You shoot off a sassy reply, and you feel better momentarily. Then the beta-tester responds with just as much sass and says they hope your business burns in flames. That went well."]
+        "en": ["You shoot off a sassy reply, and you feel better for a moment. Then the beta-tester responds with just as much sass and says they hope your business burns in flames.",
+            "That went well."]
     },
     "no_description": {
-        "en": ["You bite your tongue, and the effort takes quite a bit more energy out of you than you thought it would."]
+        "en": ["You bite your tongue. Taking this high road saps quite a bit more energy than you thought it would."]
     }
 }

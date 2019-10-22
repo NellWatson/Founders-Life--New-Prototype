@@ -5,8 +5,9 @@
     "character": "none",
     "description": {
         "en": [
-            "A beta-tester sends you an ostensibly positive message, telling you they've been searching for something like this all their lives and they can't wait to see the final product once \"some of these annoying things are fixed.\"",
-            "Perhaps it should've made you happy, but you instead feel a small sense of dread. You don't even know this person - why are you worried about letting them down?"
+            "A beta-tester sends you an ostensibly positive message, telling you they've been searching for something like this all their lives and can't wait to see the final product once \"some of these annoying things are fixed.\"",
+            "Perhaps it should make you happy, but you instead feel dread.",
+            "You don't even know this person - why are you worried about letting them down?"
         ]
     },
     "yes_action": {
@@ -21,12 +22,12 @@
     "no_caption": "Tell them you'll do your best",
     "yes_description": {
         "en": [
-            "What you need right now is a break, not more pressure. You walk away, and shortly realize it's not an e-mail you need to respond to."
+            "What you need right now is a break, not more pressure. You walk away, and shortly realize you have a choice in whether or not to apply these expectations to yourself."
         ]
     },
     "no_description": {
         "en": [
-            "You reply telling them you'll do your best, to the best of your ability.",
+            "You reply, assuring them you'll do your best to the best of your ability.",
             "The exchange makes you realize why people have PR representatives."
         ]
     }

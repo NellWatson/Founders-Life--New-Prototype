@@ -5,8 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "As the project becomes more and more \"official,\" you start to feel a little sad. This has been your baby for so long, and now that all the feedback is adding up, it feels a bit less like you.",
-            "Then a new idea occurs to you - why not include an easter egg?"
+            "As the project becomes more and more \"official,\" you start to feel a little sad. This has been your baby for so long and now that the fixes are adding up, it feels a bit less like it's yours.",
+            "Then something occurs to you - why not include an easter egg? Only you will ever know it's there."
         ]
     },
     "yes_action": {
@@ -22,12 +22,12 @@
     "no_caption": "It's a waste of time.",
     "yes_description": {
         "en": [
-            "You put in an easter egg - an inside joke between you and Takashi. You doubt anyone will find such a silly note, but it does make you happy."
+            "You add an easter egg of an inside joke between you and Takashi. You doubt anyone will discover such a silly thing, but it makes you happy."
         ]
     },
     "no_description": {
         "en": [
-            "No, no. There's actual work that you need to do - you shouldn't be goofing off."
+            "No, no. There's actual work to be done - you shouldn't be goofing off."
         ]
     }
 }

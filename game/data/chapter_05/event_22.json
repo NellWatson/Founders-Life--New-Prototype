@@ -5,13 +5,14 @@
     "character": "none",
     "description": {
         "en": [
-            "A few beta-testers are reporting problems that you can't replicate on your computer. It seems they're running from a different operating system, but you don't have access to a computer with that system. However, only a small amount of people use this operating system, so it might be something you can put off until later. Should you buy a new computer to test it, or let it go?"
+            "A few beta-testers are reporting problems you can't replicate on your computer. It seems they're running on a different operating system, but you don't have access to a computer with that system.",
+            "However, only a fraction of people use this operating system, so it might be something you can put off fixing until later. Should you buy a new computer to test this, or let it go?"
         ]
     },
     "yes_action": {
         "productivity": 20,
         "mindfulness": 10,
-        "money": -1000
+        "money": -1200
     },
     "no_action": {
         "mindfulness": -10
@@ -25,7 +26,7 @@
     },
     "no_description": {
         "en": [
-            "You decide not to mess with it - you don't need to be spending a lot of money now, when you're not sure whether you'll be making it back!"
+            "You decide not to mess with it. You don't need to be spending a lot of money when you're not sure you'll make it back."
         ]
     }
 }

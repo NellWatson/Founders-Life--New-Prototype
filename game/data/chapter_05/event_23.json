@@ -9,7 +9,8 @@
     ],
     "description": {
         "en": [
-            "Finally, finally feedback is starting to get more universally positive. In fact, you received a touching e-mail today from an enthused tester who is excited about what you're doing. They explain they're a young college student, and hope that someday they'll be able to make something like this. The thought unexpectedly brings you to tears."
+            "Finally, finally new feedback is mostly positive. In fact, you received a touching e-mail today from a tester who is excited about what you're doing.",
+            "They're a young college student, and hope that someday they'll be able to make something like this. The thought unexpectedly brings you to tears."
         ]
     },
     "yes_action": {
@@ -24,12 +25,12 @@
     "no_caption": "Try not to think about it",
     "yes_description": {
         "en": [
-            "Internally, you accept what the person says. But it's overwhelming, and weighs on your mind all day. You don't get as much done as you'd like."
+            "Internally, you accept what the person says. You're happy about it, but it's also overwhelming. The feelings stirred up distract you for the rest of the day."
         ]
     },
     "no_description": {
         "en": [
-            "You put it aside for now to focus on your work. There isn't room for the reflection it would take to process this right now."
+            "You put the feelings aside to focus on your work. You don't have room to process this right now."
         ]
     }
 }

@@ -5,13 +5,29 @@
     "character": "none",
     "description": {
         "en": [
-            "There just isn't enough time. There's so much to fix, and there isn't enough time! You know that realistically it's impossible to solve everyone's issues before launch, but perhaps somewhere in your heart of hearts you thought that everything would come together at the last minute.",
+            "There isn't enough time. There's so much to fix, and there isn't enough time!",
+            "You know it's impossible to solve everyone's issues before launch - of course you know that. But somewhere in your heart of hearts, you believed everything would come together at the last minute.",
             "That isn't going to happen, and you have to accept it."
         ]
     },
     "yes_action": {
-        "energy": -10,
-        "mindfulness": -10
+        "mindfulness": 10,
     },
-    "yes_caption": "Continue"
+        "no_action": {
+        "energy": -10,
+        "mindfulness": -20,
+    },
+    "yes_caption": "Accept it.",
+    "no_caption": "But just maybe...?",
+
+    "yes_description": {
+        "en": [
+            "Sometimes giving up is the best thing you can do."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Maybe, if you just work hard enough, there's a chance. Never give up... right?"
+        ]
+
 }

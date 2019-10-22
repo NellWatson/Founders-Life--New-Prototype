@@ -5,8 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "The next bout of feedback you receive is harsh and mean - almost visceral. The person is telling you there's no reason you should be alive and that your product is a piece of trash.",
-            "What the heck? How did this person make it into the project? And what are you supposed to do about it?"
+            "The next bout of feedback is harsh and mean - almost visceral. The person is telling you that you shouldn't even be alive and your product is trash.",
+            "The heck? How did this person make it into the project? And what are you supposed to do about it?"
         ]
     },
     "yes_action": {
@@ -19,9 +19,9 @@
     "yes_caption": "Delete the e-mail and move on",
     "no_caption": "Consult Dominique",
     "yes_description": {
-        "en": ["You delete the e-mail and try to move on, but some of the more specific jabs weigh on your mind."]
+        "en": ["You delete the e-mail and try to move on, but some of the more specific jabs dug at your insecurities. For weeks, they pop into your mind at random."]
     },
     "no_description": {
-        "en": ["Dominique quickly removes them from the project, informing you that they game from a \"trollish\" internet chat board. That explains that."]
+        "en": ["Dominique immediately removes them from the project. Apparently, they came from a \"trollish\" Internet chat board. That explains that."]
     }
 }

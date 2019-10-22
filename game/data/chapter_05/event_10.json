@@ -5,7 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "A friendly beta-tester who says they're an English teacher attempts to gently point out a problem you have with your text - there are typos everywhere. It looks unprofessional, but you're not sure you're the person who has the time or the grammatical knowledge to fix it. Hire a proofreader?"
+            "A friendly beta-tester who says they're an English teacher attempts to gently point out a problem you have with your text: there are typos everywhere.",
+            "It looks unprofessional, but you're not sure you have the time or the grammatical knowledge to fix it. Hire a proofreader for $300?"
         ]
     },
     "yes_action": {
@@ -21,9 +22,9 @@
     "yes_caption": "Yes",
     "no_caption": "No",
     "yes_description": {
-        "en": ["You hire the proofreader. It cost a chunk, but it's worth it for the peace of mind and added professionalism."]
+        "en": ["You hire the proofreader. It costs a chunk, but it's worth it for the peace of mind and added touch of professionalism."]
     },
     "no_description": {
-        "en": ["You decide you can't afford a proofreader right now - but you spend the next few days combing for errors, hoping it doesn't look as unprofessional as the beta-tester says."]
+        "en": ["A proofreader isn't worth the money. You spend the next few days combing for errors, hoping it doesn't look as unprofessional as the beta-tester says."]
     }
 }

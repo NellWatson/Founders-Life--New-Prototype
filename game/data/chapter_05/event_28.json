@@ -5,15 +5,16 @@
     "character": "none",
     "description": {
         "en": [
-            "It's the day before the day. The day before you discover whether all of your hard work pays off. The day you find out whether your dream has legs.",
+            "It's the day before the launch. The day before you discover whether all your hard work will pay off. The day you find out whether your dream has legs.",
             "You haven't been able to do much. No eating, sleeping - just staring, waiting for time to crawl by. Aside from general nerves, you can't help but ask so many questions you can't answer.",
             "Is this want you want? Is this your dream? Is this the lifestyle you wanted?",
-            "Even if you knew the answers to those questions up until now, the answers will change tomorrow. Tomorrow, it's possible you'll be living an entirely new life."
+            "Even if you knew the answers before, they'll change tomorrow.",
+            "Tomorrow, it's possible you'll be living an entirely new life."
         ]
     },
     "yes_action": {
         "productivity": 0
     },
-    "yes_caption": "Continue",
+    "yes_caption": "See what tomorrow brings",
     "play_on": 28
 }

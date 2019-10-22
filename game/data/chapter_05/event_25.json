@@ -5,8 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You work as late into the night as you possibly can, but finally Dominique asks for the final project. You give it to him.",
-            "He congratulates you on a job well done and prepares to send famous bloggers and reviewers, hoping to generate even more steam on the day of release. He tells you to relax, take the next few days off.",
+            "You work as late into the night as you possibly can, but at length Dominique asks for the final project. You give it to him.",
+            "He congratulates you on a job well done and sends it off to famous bloggers and reviewers, hoping to generate even more steam for the day of release. He tells you to relax, to take the next few days off.",
             "You say you will and crawl into bed. The only thing you feel is a curious emptiness."
         ]
     },
@@ -14,6 +14,6 @@
         "productivity": 10,
         "energy": 10
     },
-    "yes_caption": "Continue",
+    "yes_caption": "It's done",
     "play_on": 25
 }

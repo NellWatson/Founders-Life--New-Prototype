@@ -5,8 +5,8 @@
     "character": "dominique",
     "description": {
         "en": [
-            "So, keep an open mind - I know this doesn't quite suit the vision you had for your project. However, I conducted a bit of a survey. It turns out one of our niche audiences would really want to see this feature in your product.",
-            "I know that it might confused the more general audience of users, but these niche users would be avid, loyal fans if we added this. What do you think?"
+            "So, keep an open mind - I know this doesn't quite suit the vision you had for your project. However, I conducted a bit of a survey. It turns out one of our niche audiences really wants to see this feature in your product.",
+            "I know it might confuse the average user, but these niche users would be avid, loyal fans if we added this. What do you think?"
         ]
     },
     "yes_action": {
@@ -19,12 +19,12 @@
     "no_caption": "Mass appeal",
     "yes_description": {
         "en": [
-            "Better to know your niche than to make something no one needs, eh?"
+            "Better to know your niche than to make something no one truly needs, eh?"
         ]
     },
     "no_description": {
         "en": [
-            "Well, I guess focusing on a wider audience isn't the worst idea."
+            "I guess focusing on a wider audience isn't the worst idea."
         ]
     }
 }

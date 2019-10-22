@@ -5,7 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "Skylar sends you a text message with an interesting link: a fairly well-known blog posted an article about your product's upcoming release! Apparently, they or someone they know leaked a bit about the beta. Thankfully, the article is positive.",
+            "Skylar sends you a text message with an interesting link: a fairly well-known blog posted an article about your product's upcoming release!",
+            "Apparently, they or someone they know leaked some information about the beta. Thankfully, the article is positive.",
             "You decide not to press charges - it's good publicity, and there's no point in starting a lawsuit now."
         ]
     },
@@ -13,5 +14,5 @@
         "energy": 10,
         "mindfulness": 10
     },
-    "yes_caption": "Continue"
+    "yes_caption": "All right"
 }

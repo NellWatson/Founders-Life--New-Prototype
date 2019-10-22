@@ -9,7 +9,8 @@
     ],
     "description": {
         "en": [
-            "Just a quick reminder, #NAME - since we're releasing on the first, you'll have to be done by the 25th. That way we'll have time to make sure reviews and distributors have the latest update with no issues."
+            "Just a quick reminder, #NAME - since we're releasing on the first, you'll have to be done by the 25th.",
+            "That way we'll have time to make sure reviewers and distributors have the latest update."
         ]
     },
     "yes_action": {
@@ -23,7 +24,7 @@
     "no_caption": "Got it.",
     "yes_description": {
         "en": [
-            "Well, you won't! Hah! But I hope it lights a fire for you, my friend."
+            "Well, you won't. Hah! But I hope it lights a fire for you, my friend."
         ]
     },
     "no_description": {

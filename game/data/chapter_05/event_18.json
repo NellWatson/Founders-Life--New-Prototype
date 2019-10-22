@@ -5,7 +5,8 @@
     "character": "none",
     "description": {
         "en": [
-            "Finally you have received some feedback that is both valid and actionable. There's only one problem - you're not quite sure you agree with it. While the beta-tester sees it as an annoying problem, you thought it was a feature! What should you do?"
+            "Finally you receive feedback that is both valid and actionable. There's only one problem - you're not quite sure you agree with it.",
+            "What the beta-tester sees as an annoying problem, you saw as a feature! What should you do?"
         ]
     },
     "yes_action": {
@@ -22,12 +23,12 @@
     "no_caption": "Change it",
     "yes_description": {
         "en": [
-            "It isn't what you wanted, but you're more focused on making a profit than doing what you want."
+            "Tweaking it turns it into something vastly different from what you originally set out to do. However, you're willing to do what it takes to make this product a success."
         ]
     },
     "no_description": {
         "en": [
-            "Maybe a few people won't like it, but you'll be able to look back on your product with pride knowing it has exactly what you wanted it to."
+            "Maybe a few people won't like it, but you'll look at your product with pride knowing it is exactly what you wanted it to be."
         ]
     }
 }

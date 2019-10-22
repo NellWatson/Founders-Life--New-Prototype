@@ -5,7 +5,9 @@
     "character": "none",
     "description": {
         "en": [
-            "You've gotten so much done so far - everything is finally starting to look like a fully-realized product. But you're staying up late and waking up early, working for hours without breaks. You've been subsisting on passion and the knowledge that this last stretch is really the last one, but how much longer can you last?"
+            "You've gotten so much done. It's finally starting to look like a fully-realized product.",
+            "However, you're burning the candle at both ends, working for hours without breaks.",
+            "Passion and a looming deadline have gotten you this far, but how much longer can you last like this?"
         ]
     },
     "yes_action": {
@@ -22,7 +24,7 @@
     "no_caption": "Make it the best it can be",
     "yes_description": {
         "en": [
-            "It'd be much worse to get sick and lose the rest of the time you do have. Time to take a break."
+            "It would be much worse to get sick and lose the rest of the week. Time to take a break."
         ]
     },
     "no_description": {
