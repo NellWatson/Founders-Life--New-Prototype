@@ -59,7 +59,7 @@ label checkpoint:
     $ event_code = ""
 
     if productivity <= 0:
-        if money <= 2000:
+        if money <= 1000:
             $ renpy.unlink_save("custom")
             $ telemetry.end("No Productivity")
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
@@ -77,14 +77,14 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
-            $ variable("money", -2000)
+            $ variable("money", -1000)
             $ variable("productivity", 50)
             $ no_of_times_died += 1
 
-            n normal "You lost productivity but you bribed the gamedevs to give you a boost ($2000)."
+            n normal "You lost productivity so you went to an emergency entrepreneur's retreat which gave you a boost ($1000)."
 
     elif energy <= 0:
-        if money <= 2000:
+        if money <= 1000:
             $ renpy.unlink_save("custom")
             $ telemetry.end("No Energy")
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
@@ -102,14 +102,14 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
-            $ variable("money", -2000)
+            $ variable("money", -1000)
             $ variable("energy", 50)
             $ no_of_times_died += 1
             
-            n normal "You lost energy but you bribed the gamedevs to give you a boost ($2000)."
+            n normal "You lost energy bso you went to an emergency entrepreneur's retreat which gave you a boost ($1000)."
 
     elif morale <= 0:
-        if money <= 2000:
+        if money <= 1000:
             $ renpy.unlink_save("custom")
             $ telemetry.end("No Mindfulness")
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
@@ -127,11 +127,11 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
-            $ variable("money", -2000)
+            $ variable("money", -1000)
             $ variable("morale", 50)
             $ no_of_times_died += 1
             
-            n normal "You lost mindfulness but you bribed the gamedevs to give you a boost ($2000)."
+            n normal "You lost mindfulness so you went to an emergency entrepreneur's retreat which gave you a boost ($1000)."
 
     elif money <= 0:
         $ renpy.unlink_save("custom")
@@ -177,21 +177,6 @@ label checkpoint:
         # If we have seen the achievement button once, mark it so that the flashing doesn't happen again
         if persistent.trophy_shelf.show_trophy_icon:
             $ persistent.trophy_shelf.unseen = False
-
-        if turn_no == 28:
-            $ current_chapter += 1
-            call screen founder_map
-
-            if not persistent.submitted_form:
-                n normal "Please let us know your feedback."
-                call screen feedback_form_screen
-
-            $ renpy.unlink_save("custom")
-            $ telemetry.end("done")
-            $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
-
-            n normal "Thank you for playing Chapter 1 of Founder Life."
-            return
 
         while total_founder_score > FOUNDER_INDEX[founder_level][1]:
             $ founder_level += 1

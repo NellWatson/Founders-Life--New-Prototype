@@ -1,7 +1,7 @@
 label event_intro:
     show screen block_keys("game_menu")
 
-    n normal "Welcome to Founder's Life."
+    n normal "Welcome to Founder Life."
     n "You've got an entirely new business to create from the bottom up."
 
     $ founder_name = renpy.input("Let's start off with the basics - what's your name?", length=30) or "Sam"

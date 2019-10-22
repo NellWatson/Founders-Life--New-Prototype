@@ -319,6 +319,7 @@ screen navigation():
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
         textbutton _("Reset") action Function(clear_user_data)
+        textbutton _("Credits") action Show("credits", _hide=True)
 
 
 style navigation_button is gui_button
@@ -1482,7 +1483,7 @@ style slider_pref_slider:
     variant "small"
     xsize 900
 
-screen credits():
+screen credits(_hide=False):
     modal True
     add Solid("#000000")
 
@@ -1517,7 +1518,7 @@ screen credits():
     textbutton _("Continue"):
         style "fl_button"
 
-        action Return()
+        action If(_hide, true=Hide("credits"), false=Return())
 
         xalign 0.5
         yalign 0.9
