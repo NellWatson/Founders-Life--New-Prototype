@@ -9,6 +9,12 @@ v 0.2.5.1023
 * Added splashscreen.
 * Added warning boxes to Emergency Entrepreneurial Retreat.
 * Allow warning boxes to show continue button.
+* Added menu transitions to make moving between menu smoother.
+* Added a Success Message box, "success_msg".
+* Reduced the font size of version number in main menu.
+* Changed working of Reset Game button in game menu. Now it removes everything and resets the game to a new install state.
+* Changed "WARNING" to "BURN OUT" for Emergency Entrepreneurial Retreat.
+* Fixed a crash that can happen if the player Resets Game from main menu and then tries to start a new game.
 
 v 0.2.5.1022
 ------------

@@ -17,6 +17,14 @@ define config.has_autosave = False
 define config.autosave_slots = 0
 define config.end_splash_transition = Dissolve(1.5)
 
+define config.after_load_transition = slow_dissolve
+define config.main_game_transition = slow_dissolve
+define config.game_main_transition = slow_dissolve
+define config.end_game_transition = slow_dissolve
+define config.enter_transition = slow_dissolve
+define config.intra_transition = slow_dissolve
+define config.exit_transition = slow_dissolve
+
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 

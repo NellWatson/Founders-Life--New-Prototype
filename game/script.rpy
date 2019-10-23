@@ -83,7 +83,7 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
-            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Warning", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
+            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Burn Out", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
 
             $ no_of_times_died += 1
             $ variable("money", -1000)
@@ -110,7 +110,7 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
-            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Warning", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
+            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Burn Out", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
 
             $ no_of_times_died += 1
             $ variable("money", -1000)
@@ -137,7 +137,7 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
-            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Warning", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
+            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Burn Out", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
 
             $ no_of_times_died += 1
             $ variable("money", -1000)

@@ -59,7 +59,7 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
 
                     text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-                    action If(called, true=Return(), false=Hide(name))
+                    action If(called, true=Return(), false=Hide(name, transition=Dissolve(0.25)))
 
                     xpos width+20
     
@@ -82,7 +82,20 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
 
                 text show_button font "DejaVuSans.ttf" size 50 color "#ffffff" yalign 0.5 xalign 0.52
 
-                action If(called, true=Return(), false=Hide(name))
+                action If(called, true=Return(), false=Hide(name, transition=Dissolve(0.25)))
+
+screen success_msg(message, title="Success", width=600, height=0, hide_anyway=False, show_button=""):
+    modal True
+    add Solid("#00000050")
+
+    default actual_height = height if height else find_height(message, width-20)
+
+    use fl_window("success_msg", title, colour="#4BB543", width=width, height=actual_height, hide_anyway=hide_anyway, show_button=show_button):
+        vbox:
+            xalign 0.5
+            yalign 0.5
+
+            text message color "#000000"
 
 screen warn_msg(message, title="Warning", width=600, height=0, hide_anyway=False, show_button=""):
     modal True

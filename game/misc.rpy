@@ -44,9 +44,17 @@ init python:
         
         return Fixed(Circle(radius, colour), Image(image_path, xalign=0.5, yalign=0.5), xsize=radius*2, ysize=radius*2)
 
-    def clear_user_data():
+    def clear_user_data(fully=False):
         renpy.unlink_save("custom")
-        renpy.show_screen("inform", message="Game was successfully reset.")
+        if fully:
+            persistent._clear(progress=True)
+            renpy.transition(Dissolve(0.25))
+            renpy.show_screen("success_msg", message="Game was successfully reset.", width=600, show_button="Okay")
+
+            create_leaderboard_data()
+        else:
+            renpy.transition(Dissolve(0.25))
+            renpy.show_screen("success_msg", message="Save file was deleted.", width=600, show_button="Okay")
 
     def meets_condition(var, value, condition):
         """
@@ -108,28 +116,3 @@ init python:
 
 label after_load():
     $ telemetry.resume()
-
-screen inform(message):
-    modal True
-    zorder 200
-
-    style_prefix "confirm"
-
-    add "gui/overlay/confirm.png"
-
-    frame:
-
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 45
-
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
-
-            hbox:
-                xalign 0.5
-                spacing 150
-
-                textbutton _("Okay") action Hide("inform")

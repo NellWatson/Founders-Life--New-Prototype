@@ -310,16 +310,16 @@ screen navigation():
 
         textbutton _("About") action ShowMenu("about")
 
+        textbutton _("Reset Game") action Show("reset_data_confirm")
+        textbutton _("Credits") action Show("credits", _hide=True)
+
         if renpy.variant("pc"):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            # textbutton _("Help") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
             textbutton _("Quit") action Quit(confirm=not main_menu)
-
-        textbutton _("Reset") action Function(clear_user_data)
-        textbutton _("Credits") action Show("credits", _hide=True)
 
 
 style navigation_button is gui_button
@@ -405,7 +405,7 @@ screen main_menu():
         xalign 0.985
         yalign 0.925
 
-    text "v [config.version]" size 45 xalign 1.0 yalign 1.0
+    text "v [config.version]" size 25 xalign 1.0 yalign 1.0
 
     if config.developer:
         textbutton _("Image data"):
@@ -1595,3 +1595,64 @@ screen clear_data_confirm():
                 text "START OVER" font "DejaVuSans.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(clear_user_data), Hide("clear_data_confirm", transition=Dissolve(0.25))]
+
+screen reset_data_confirm():
+    modal True
+    add Solid("#00000050")
+
+    default colour = "#ff8800"
+    default width = 650
+    default height = 150
+    default tinted = Color(colour).tint(0.5)
+    default shaded = Color(colour).shade(0.5)
+
+    fixed:
+        xalign 0.5
+        yalign 0.5
+
+        vbox:
+            xalign 0.5
+            yalign 0.5
+
+            fixed:
+                xmaximum width
+                ymaximum 90
+
+                add Solid(colour)
+                text "ARE YOU SURE?" size 64 color "#ffffff" font "DejaVuSans.ttf" bold True yalign 0.5 xalign 0.5
+
+                button:
+                    xysize (90, 90)
+
+                    idle_background Solid(colour)
+                    hover_background Solid(tinted)
+                    selected_background Solid(shaded)
+
+                    text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+
+                    action Hide("clear_data_confirm")
+
+                    xpos width+20
+            frame:
+                xsize width
+                ysize height
+
+                background Solid("#ffffff")
+
+                vbox:
+                    xalign 0.5
+                    yalign 0.5
+
+                    text "This will delete all the data associated with the game (including save files, settings data and achievements)." color "#000000"
+
+            button:
+                xysize width, 90-15
+                yoffset 20
+
+                idle_background Solid(colour)
+                hover_background Solid(tinted)
+                selected_background Solid(shaded)
+
+                text "RESET GAME" font "DejaVuSans.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+
+                action [Function(clear_user_data, fully=True), Hide("reset_data_confirm", transition=Dissolve(0.25))]

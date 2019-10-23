@@ -53,7 +53,7 @@ init python:
         def __eq__(self, other):
             return self.name == other
 
-    if persistent.leaderboard is None:
+    def create_leaderboard_data():
         persistent.leaderboard = []
         persistent.trophy_shelf = Shelf("Achievements", "gui/achievements/locked.png", "#aaaaaa", 10)
         persistent.trophy_shelf.create_achievement(
@@ -126,6 +126,9 @@ init python:
             colour="#3D9970",
             unlock_level=10
         )
+
+    if persistent.leaderboard is None:
+        create_leaderboard_data()
 
 screen achievement_screen(shelf):
     modal True
