@@ -15,6 +15,7 @@
 define config.name = _("Founders Life")
 define config.has_autosave = False
 define config.autosave_slots = 0
+define config.end_splash_transition = Dissolve(1.5)
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

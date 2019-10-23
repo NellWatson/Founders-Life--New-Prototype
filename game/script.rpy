@@ -1,3 +1,9 @@
+label splashscreen:
+    show splash lilac with Dissolve(0.5)
+    pause 2.0
+
+    return
+
 label start:
     $ characters_roster = CharacterRooster()
     $ chapter_manager = ChapterManager()
@@ -154,7 +160,7 @@ label checkpoint:
         
         play week_sound "sfx/fx003.wav"
         n normal "Congratulations [founder_name].\nYou have survived [total_days] days as a founder."
-        
+
         $ founder_score = (productivity + energy + morale + money + (total_days * founder_level)) * founder_level
         $ total_founder_score += founder_score
         $ level_up = False

@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.2.5.1023
+------------
+* Changed icons of Settings and Local Leaderboard.
+* Added "Start Over" button in main menu.
+* Fixed formatting error in Chapter 5 Event 14.
+* Added splashscreen.
+
 v 0.2.5.1022
 ------------
 * Changed Icon of the Founderpedia button.

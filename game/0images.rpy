@@ -15,6 +15,9 @@ image intro energy = "images/intro/energy.png"
 image intro morale = "images/intro/morale.png"
 image intro money = "images/intro/money.png"
 
+image splash violet = "images/splash/violet.png"
+image splash lilac = "images/splash/lilac.png"
+
 image side nell normal = "images/contacts/nell.png"
 image side dominique = "images/contacts/none.png"
 image side eileen = "images/contacts/eileen.png"
