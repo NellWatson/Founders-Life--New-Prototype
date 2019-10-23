@@ -84,12 +84,13 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
 
                 action If(called, true=Return(), false=Hide(name))
 
-screen warn_msg(message, title="Warning", width=600, height=0, hide_anyway=False):
+screen warn_msg(message, title="Warning", width=600, height=0, hide_anyway=False, show_button=""):
     modal True
+    add Solid("#00000050")
 
     default actual_height = height if height else find_height(message, width-20)
 
-    use fl_window("warn_msg", title, colour="#ff8800", width=width, height=actual_height, hide_anyway=hide_anyway):
+    use fl_window("warn_msg", title, colour="#ff8800", width=width, height=actual_height, hide_anyway=hide_anyway, show_button=show_button):
         vbox:
             xalign 0.5
             yalign 0.5

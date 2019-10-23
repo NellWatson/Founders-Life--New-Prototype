@@ -83,11 +83,13 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
+            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Warning", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
+
+            $ no_of_times_died += 1
             $ variable("money", -1000)
             $ variable("productivity", 50)
-            $ no_of_times_died += 1
 
-            n normal "You lost productivity so you went to an emergency entrepreneur's retreat which gave you a boost ($1000)."
+            n normal "That was a very enlightening retreat and you feel renewed."
 
     elif energy <= 0:
         if money <= 1000:
@@ -108,11 +110,13 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
+            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Warning", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
+
+            $ no_of_times_died += 1
             $ variable("money", -1000)
             $ variable("energy", 50)
-            $ no_of_times_died += 1
-            
-            n normal "You lost energy bso you went to an emergency entrepreneur's retreat which gave you a boost ($1000)."
+
+            n normal "That was a very enlightening retreat and you feel renewed."
 
     elif morale <= 0:
         if money <= 1000:
@@ -133,11 +137,13 @@ label checkpoint:
                 call screen feedback_form_screen
             return
         else:
+            call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Warning", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
+
+            $ no_of_times_died += 1
             $ variable("money", -1000)
             $ variable("morale", 50)
-            $ no_of_times_died += 1
-            
-            n normal "You lost mindfulness so you went to an emergency entrepreneur's retreat which gave you a boost ($1000)."
+
+            n normal "That was a very enlightening retreat and you feel renewed."
 
     elif money <= 0:
         $ renpy.unlink_save("custom")
