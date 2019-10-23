@@ -355,11 +355,23 @@ screen main_menu():
         action ResumeLastGame("custom")
 
         xalign 0.50
-        yalign 0.93
+        yalign 0.92
+
+    if renpy.can_load("custom"):
+        textbutton _("START OVER"):
+            style "fl_button"
+            
+            idle_background Frame("gui/frame/hover.png", 1, 1)
+            hover_background Frame("gui/frame/idle.png", 1, 1)
+            
+            action Show("clear_data_confirm", transition=Dissolve(0.25))
+
+            xalign 0.50
+            yalign 1.0
 
     imagebutton:
-        idle "gui/mainmenu/help_idle.png"
-        hover "gui/mainmenu/help_hover.png"
+        idle "gui/mainmenu/settings_idle.png"
+        hover "gui/mainmenu/settings_hover.png"
 
         action ShowMenu("preferences")
 
@@ -367,7 +379,7 @@ screen main_menu():
         yalign 0.025
 
     imagebutton:
-        idle "gui/mainmenu/roadmap.png"
+        idle "gui/mainmenu/roadmap_idle.png"
         hover "gui/mainmenu/roadmap_hover.png"
 
         action ShowMenu("leaderboard_screen")
@@ -1522,3 +1534,64 @@ screen credits(_hide=False):
 
         xalign 0.5
         yalign 0.9
+
+screen clear_data_confirm():
+    modal True
+    add Solid("#00000050")
+
+    default colour = "#559fdd"
+    default width = 650
+    default height = 150
+    default tinted = Color(colour).tint(0.5)
+    default shaded = Color(colour).shade(0.5)
+
+    fixed:
+        xalign 0.5
+        ypos 362
+
+        vbox:
+            xalign 0.5
+            yalign 0.5
+
+            fixed:
+                xmaximum width
+                ymaximum 90
+
+                add Solid(colour)
+                text "ARE YOU SURE?" size 64 color "#ffffff" font "DejaVuSans.ttf" bold True yalign 0.5 xalign 0.5
+
+                button:
+                    xysize (90, 90)
+
+                    idle_background Solid(colour)
+                    hover_background Solid(tinted)
+                    selected_background Solid(shaded)
+
+                    text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+
+                    action Hide("clear_data_confirm")
+
+                    xpos width+20
+            frame:
+                xsize width
+                ysize height
+
+                background Solid("#ffffff")
+
+                vbox:
+                    xalign 0.5
+                    yalign 0.5
+
+                    text "This will delete your current save file and game will start from the beginning." color "#000000"
+
+            button:
+                xysize width, 90-15
+                yoffset 20
+
+                idle_background Solid(colour)
+                hover_background Solid(tinted)
+                selected_background Solid(shaded)
+
+                text "START OVER" font "DejaVuSans.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+
+                action [Function(clear_user_data), Hide("clear_data_confirm", transition=Dissolve(0.25))]

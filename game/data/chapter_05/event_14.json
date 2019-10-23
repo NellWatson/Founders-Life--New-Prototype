@@ -11,11 +11,11 @@
         ]
     },
     "yes_action": {
-        "mindfulness": 10,
+        "mindfulness": 10
     },
-        "no_action": {
+    "no_action": {
         "energy": -10,
-        "mindfulness": -20,
+        "mindfulness": -20
     },
     "yes_caption": "Accept it.",
     "no_caption": "But just maybe...?",
@@ -29,5 +29,5 @@
         "en": [
             "Maybe, if you just work hard enough, there's a chance. Never give up... right?"
         ]
-
+    }
 }

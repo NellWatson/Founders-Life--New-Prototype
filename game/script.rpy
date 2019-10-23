@@ -154,8 +154,7 @@ label checkpoint:
         
         play week_sound "sfx/fx003.wav"
         n normal "Congratulations [founder_name].\nYou have survived [total_days] days as a founder."
-        # current_sprint = energy * morale * turn_no * founder_level
-        # money += current_sprint
+        
         $ founder_score = (productivity + energy + morale + money + (total_days * founder_level)) * founder_level
         $ total_founder_score += founder_score
         $ level_up = False
