@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+v 0.2.51024
+-----------
+* Added programmer to the credit.
+* Circle displayable class now takes two more parameters, `internal_circle` and `internal_radius`. This allows for the circle to have a coloured border.
+* Startup review text now properly rolls to a higher number instead of flashing to it.
+* Updated mac and windows icon.
+* Updated window icon.
+* Removed rejected splash image.
+
 v 0.2.5.1023
 ------------
 * Changed icons of Settings and Local Leaderboard.
@@ -14,6 +23,7 @@ v 0.2.5.1023
 * Reduced the font size of version number in main menu.
 * Changed working of Reset Game button in game menu. Now it removes everything and resets the game to a new install state.
 * Changed "WARNING" to "BURN OUT" for Emergency Entrepreneurial Retreat.
+* Updated icon of the game.
 * Fixed a crash that can happen if the player Resets Game from main menu and then tries to start a new game.
 
 v 0.2.5.1022

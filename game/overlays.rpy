@@ -124,7 +124,9 @@ screen character_intro():
             button:
                 xysize (309, 310)
 
-                background "gui/who.png"
+                idle_background Circle(radius=155, colour="#559fdd", internal_circle="#ffffff", internal_radius=138)
+                hover_background Circle(radius=155, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
+
                 add "images/contacts/" + i + ".png" xalign 0.5 yalign 0.5 xoffset 1 yoffset 4
 
                 action Call(i + "_intro")

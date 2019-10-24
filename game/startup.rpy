@@ -12,9 +12,10 @@ init python:
 
         return _random_list
 
-    def dynamic_show_text(st, at, req_st, value, effect=None, default="0"):
+    def dynamic_show_text(st, at, req_st, value, effect=None, default=0):
         if req_st > st:
-            return Text(default, color="#000000"), .1
+            changing_value = int(value / (1 + req_st - st))
+            return Text("{:,}".format(changing_value), color="#000000"), .05
         else:
             if req_st < 4:
                 renpy.sound.play("sfx/fx008.wav")
@@ -94,7 +95,7 @@ screen sprint_review(bg):
 
     default review = ReviewB()
 
-    use fl_window("startup_preview", "WEEKLY SPRINT COMPLETED", colour="#559fdd", width=900, height=440, cross=False):
+    use fl_window("startup_preview", "WEEKLY SPRINT COMPLETED", colour="#559fdd", width=900, height=460, cross=False):
         vbox:
             xsize 800
             xalign 0.5

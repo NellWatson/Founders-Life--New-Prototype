@@ -13,12 +13,14 @@ init python:
 
     class Circle(renpy.Displayable):
 
-        def __init__(self, radius, colour, width=0, pos=None, **kwargs):
+        def __init__(self, radius, colour, width=0, pos=None, internal_circle=None, internal_radius=0, **kwargs):
             super(Circle, self).__init__(**kwargs)
 
             self.radius = radius
             self.colour = colour
             self.width = width
+            self.internal_circle = internal_circle
+            self.internal_radius = internal_radius
 
             if not pos:
                 self.pos = (radius, radius)
@@ -33,6 +35,9 @@ init python:
 
             c = r.canvas()
             c.circle(self.colour, self.pos, self.radius, self.width)
+
+            if self.internal_circle:
+                c.circle(self.internal_circle, self.pos, self.internal_radius, self.width)
 
             renpy.redraw(self, 0)
             return r

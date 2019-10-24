@@ -1506,23 +1506,28 @@ screen credits(_hide=False):
         text "Concept and Director" bold True xalign 0.5
         text "Eleanor \"Nell\" Watson" xalign 0.5
 
-        null height 10
+        null height 15
 
         text "Producer" bold True xalign 0.5
         text "Sean Taylor" xalign 0.5
 
-        null height 10
+        null height 15
+
+        text "Programmer" bold True xalign 0.5
+        text "Dipesh Aggarwal" xalign 0.5
+
+        null height 15
 
         text "Writer" bold True xalign 0.5
         text "Cara Hillstock" xalign 0.5
 
-        null height 10
+        null height 15
 
         text "Music" bold True xalign 0.5
         text "Kevin MacLeod" xalign 0.5
         text "(Provided under CC-NC-3)" xalign 0.5
 
-        null height 10
+        null height 15
 
         text "Sounds by" bold True xalign 0.5
         text "Denki Soundbank" xalign 0.5
