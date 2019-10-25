@@ -86,7 +86,7 @@ init python:
 
         if ":affection" in var:
             stored_value = characters_roster.get_affection(var.split(":")[0])
-        elif ":money" == var:
+        elif ":money" in var:
             money_month = var.split(":")[0]
             if money_month == "current":
                 money_month = store.month

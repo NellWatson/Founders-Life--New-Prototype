@@ -1,11 +1,25 @@
 CHANGELOG
 =========
 
-v 0.2.51024
------------
+v 0.2.5.1025
+------------
+* Moved all the constants to the file `00constants.rpy`.
+* Replaced `$` with `CURRENCY` constant. It allows for easy customisability as the end user will just have to change one variable and all the currency symbols will be replaced.
+* Changed text speed back to instant (`0`).
+* Show actual Days as Founders in founders map instead of turn number.
+* Removed deprecated code.
+* Renamed `class Event` method `has_multiple_description` to `has_multiple_descriptions` to be more grammatically correct.
+* Renamed `slow_dissolve` to `SLOW_DISSOLVE` to indicate that it's a constant.
+* Fixed message text scrolling twice when a choice menu was shown.
+* Fixed calculation of Founder Score. Before instead of Days as Founder, we were using turn number, which resulted in an overall lower founder score incrememnt per week as turn number resets every new chapter.
+* Fixed `AttributeError` crash which was related to parsing of `current:money`.
+
+v 0.2.5.1024
+------------
 * Added programmer to the credit.
 * Circle displayable class now takes two more parameters, `internal_circle` and `internal_radius`. This allows for the circle to have a coloured border.
 * Startup review text now properly rolls to a higher number instead of flashing to it.
+* Added hover state to character intro icon to indicate that they are interactable.
 * Updated mac and windows icon.
 * Updated window icon.
 * Removed rejected splash image.

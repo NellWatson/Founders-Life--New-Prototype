@@ -52,7 +52,7 @@ screen hud():
             if check["money"]:
                 text check["money"] color "#000000" at flash
             else:
-                text "${:,}".format(money) color "#000000"
+                text "[CURRENCY]{:,}".format(money) color "#000000"
 
         if config.developer:
             hbox:
@@ -70,7 +70,7 @@ screen founder_map():
         spacing 5
 
         text "Founder Score: {:,}".format(total_founder_score) size 45 color "#000000" xalign 1.0
-        text "Days as Founder: {}".format(turn_no) size 45 color "#000000" xalign 1.0
+        text "Days as Founder: {}".format(total_days) size 45 color "#000000" xalign 1.0
 
     vbox:
         xalign 0.10

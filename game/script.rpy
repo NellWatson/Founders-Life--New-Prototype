@@ -22,7 +22,6 @@ label start:
     $ chapter_manager.load_chapter("ch_05", "chapter_05")
     $ chapter_manager.set_chapter("ch_01")
 
-    $ calculate_pool()
     $ telemetry.init()
     $ telemetry.setup()
     $ persistent.trophy_shelf.check_unlock(founder_level)
@@ -32,7 +31,6 @@ label start:
     # print renpy.display.core.scene_lists().get_all_displayables()
 
     jump event_intro
-    #jump week_event
 
 label week_event:
     $ _event = chapter_manager.get_event()
@@ -41,7 +39,7 @@ label week_event:
     if _event.character.sprite:
         pass#show expression _event.character.sprite at center
     
-    if _event.has_multiple_description:
+    if _event.has_multiple_descriptions:
         while not _event.seeing_last_description:
             _event.get_speaker "[_event.description]"
 
@@ -253,7 +251,7 @@ label checkpoint:
         scene expression current_bg with dissolve
 
         if turn_no <= 28:
-            jump week_event#expression find_event()
+            jump week_event
         else:
             jump chapter_finale
 

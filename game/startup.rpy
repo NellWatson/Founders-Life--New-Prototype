@@ -162,11 +162,11 @@ screen startup_review(bg):
                 
                 text "Cashflow" color "#000000"
                 hbox:
-                    text "$" color "#000000"
+                    text "[CURRENCY]" color "#000000"
                     text DynamicDisplayable(dynamic_show_text, 3, money)
                 
                 text "Days as Founder   " color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 3.75, turn_no)
+                text DynamicDisplayable(dynamic_show_text, 3.75, total_days)
                 
                 null height 1.0
                 null height 1.0

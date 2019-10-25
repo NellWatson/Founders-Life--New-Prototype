@@ -1,5 +1,9 @@
 init python:
 
+    def normalise_event_text(txt):
+        return txt.replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning()).split("::")[-1]
+    normalise = normalise_event_text
+
     class Event():
 
         def __init__(self, id, title, category, character, description, yes_action, no_action={}, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, play_after="", repeatable=False, version="1"):
@@ -151,14 +155,17 @@ init python:
         @property
         def description(self):
             self.last_description_no += 1
-            return self._description[self.current_language][self.last_description_no].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning()).split("::")[-1]
+            return normalise(self._description[self.current_language][self.last_description_no])
 
         @property
         def last_description(self):
-            return self._description[self.current_language][-1].replace("#NAME", store.founder_name).replace("#PLAYER:", "").replace("#MONEY_MONTH", money_manager.get_monthly_earning()).split("::")[-1]
+            if self.has_multiple_descriptions:
+                return "{cps=0}" + normalise(self._description[self.current_language][-1]) + "{/cps}"
+            else:
+                return normalise(self._description[self.current_language][-1])
 
         @property
-        def has_multiple_description(self):
+        def has_multiple_descriptions(self):
             return len(self._description[self.current_language]) > 1
 
         @property
@@ -186,14 +193,14 @@ init python:
             self.choice_last_description_no += 1
             if self.choice_last_description_no == len(self._yes_description[self.current_language]):
                 self.choice_last_description_no -= 1
-            return self._yes_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name).split("::")[-1]
+            return normalise(self._yes_description[self.current_language][self.choice_last_description_no])
         
         @property
         def no_description(self):
             self.choice_last_description_no += 1
             if self.choice_last_description_no == len(self._no_description[self.current_language]):
                 self.choice_last_description_no -= 1
-            return self._no_description[self.current_language][self.choice_last_description_no].replace("#NAME", store.founder_name).split("::")[-1]
+            return normalise(self._no_description[self.current_language][self.choice_last_description_no])
 
         @property
         def seeing_choice_last_description(self):

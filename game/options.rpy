@@ -17,13 +17,13 @@ define config.has_autosave = False
 define config.autosave_slots = 0
 define config.end_splash_transition = Dissolve(1.5)
 
-define config.after_load_transition = slow_dissolve
-define config.main_game_transition = slow_dissolve
-define config.game_main_transition = slow_dissolve
-define config.end_game_transition = slow_dissolve
-define config.enter_transition = slow_dissolve
-define config.intra_transition = slow_dissolve
-define config.exit_transition = slow_dissolve
+define config.after_load_transition = SLOW_DISSOLVE
+define config.main_game_transition = SLOW_DISSOLVE
+define config.game_main_transition = SLOW_DISSOLVE
+define config.end_game_transition = SLOW_DISSOLVE
+define config.enter_transition = SLOW_DISSOLVE
+define config.intra_transition = SLOW_DISSOLVE
+define config.exit_transition = SLOW_DISSOLVE
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
@@ -33,7 +33,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.2.5-1024"
+define config.version = "0.2.5-1025"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -123,7 +123,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 30
+default preferences.text_cps = 0
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
