@@ -1508,13 +1508,13 @@ screen credits(_hide=False):
 
         text "Concept and Director" bold True xalign 0.5
         text "Eleanor \"Nell\" Watson" xalign 0.5
-	text "www.nellwatson.com" xalign 0.5
+	    text "www.nellwatson.com" xalign 0.5
 
         null height 15
 
         text "Producer" bold True xalign 0.5
         text "Sean Taylor" xalign 0.5
-	text "www.seantaylor.work" xalign 0.5
+	    text "www.seantaylor.work" xalign 0.5
 
         null height 15
 
@@ -1525,32 +1525,32 @@ screen credits(_hide=False):
 
         text "Writer" bold True xalign 0.5
         text "Cara Hillstock" xalign 0.5
-	text "www.patreon.com/Cheratomo" xalign 0.5
+	    text "www.patreon.com/Cheratomo" xalign 0.5
 
         null height 15
 
         text "Illustrator" bold True xalign 0.5
         text "Livio Perissin" xalign 0.5
-	text "www.livioperissin.com.ar" xalign 0.5
+	    text "www.livioperissin.com.ar" xalign 0.5
 
         null height 15
 
         text "UI Elements" bold True xalign 0.5
         text "Luna Chai" xalign 0.5
-	text "www.lunachai.com" xalign 0.5
+	    text "www.lunachai.com" xalign 0.5
 
         null height 15
 
         text "Music" bold True xalign 0.5
         text "Kevin MacLeod" xalign 0.5
         text "(Provided under CC-NC-3)" xalign 0.5
-	text "www.incompetech.com" xalign 0.5
+	    text "www.incompetech.com" xalign 0.5
 
         null height 15
 
         text "Sounds by" bold True xalign 0.5
         text "Denki Soundbank" xalign 0.5
-	text "www.denki.co.uk" xalign 0.5
+	    text "www.denki.co.uk" xalign 0.5
 
     textbutton _("Continue"):
         style "fl_button"
