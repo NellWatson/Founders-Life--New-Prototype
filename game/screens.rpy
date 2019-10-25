@@ -1504,7 +1504,7 @@ screen credits(_hide=False):
         yalign 0.45
 
         text "Proudly Presented by" bold True xalign 0.5
-        text "Studio Phanteke" True xalign 0.5
+        text "Studio Phanteke" xalign 0.5
 
         text "Concept and Director" bold True xalign 0.5
         text "Eleanor \"Nell\" Watson" xalign 0.5
