@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.2.5.1028
+------------
+* Fixed a bug which caused all save files to be deleted.
+* Changed save file folder to "FoundersLifePrototype-1492417510".
+
 v 0.2.5.1025
 ------------
 * Moved all the constants to the file `00constants.rpy`.

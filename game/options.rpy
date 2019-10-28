@@ -33,7 +33,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.2.5-1025"
+define config.version = "0.2.5-1028"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -146,7 +146,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "FoundersLifeewPrototype-1492417510"
+define config.save_directory = "FoundersLifePrototype-1492417510"
 
 
 ## Icon ########################################################################
