@@ -59,7 +59,7 @@ label week_event:
     jump checkpoint
 
 label checkpoint:
-    scene bg bedroom
+    # scene bg bedroom
     $ event_code = ""
 
     if productivity <= 0:
