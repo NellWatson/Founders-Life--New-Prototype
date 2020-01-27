@@ -128,16 +128,12 @@ screen say(who, what, side_image=None):
         text what id "what" font "fonts/Dosis-Regular.ttf" size 36 color "#ffffff" line_leading -2 xoffset 440 yoffset 90 xmaximum 1400
 
     # If there's a side image, display it above the text.
-    if who == "Nell":
+    if who:
+        $ print side_image
         if side_image:
-            add side_image xpos 139 ypos 790
+            add AlphaMask(side_image, "gui/who_mask.png") xpos 78 ypos 757
         else:
-            add SideImage() xpos 139 ypos 790
-    else:
-        if side_image:
-            add side_image xpos 129 ypos 786
-        else:
-            add SideImage() xpos 129 ypos 786
+            add AlphaMask(SideImage(), "gui/who_mask.png") xpos 78 ypos 757
 
 ## Input screen ################################################################
 ##
@@ -160,7 +156,7 @@ screen input(prompt):
                 text "> " yoffset 3
                 input id "input" font "fonts/Dosis-Regular.ttf" color "#ffffff" size 36
 
-    add "side nell normal" xpos 139 ypos 790
+    add AlphaMask("side nell normal", "gui/who_mask.png") xpos 78 ypos 757
 
 style new_input_window is window:
     xalign 0.0

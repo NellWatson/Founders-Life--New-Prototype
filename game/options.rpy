@@ -33,7 +33,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.2.5-1028"
+define config.version = "0.2.5-0128"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -46,7 +46,7 @@ define gui.about = _("")
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "FounderLife"
+define build.name = "FoundersLife"
 
 
 ## Sounds and music ############################################################
@@ -198,6 +198,7 @@ init python:
     build.classify('game/tl/**/**.**', None)
     build.classify('game/images/icon/**.**', None)
     build.classify('game/dev_options.rpy', None)
+    build.classify('**/_original/**.**', None)
 
     build.archive("scripts", "all")
     build.archive("images", "all")

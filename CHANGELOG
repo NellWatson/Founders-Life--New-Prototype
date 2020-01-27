@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.2.5.0128
+------------
+* Update art assets.
+
 v 0.2.5.1028
 ------------
 * Fixed a bug which caused all save files to be deleted.
