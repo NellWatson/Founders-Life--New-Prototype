@@ -129,7 +129,6 @@ screen say(who, what, side_image=None):
 
     # If there's a side image, display it above the text.
     if who:
-        $ print side_image
         if side_image:
             add AlphaMask(side_image, "gui/who_mask.png") xpos 78 ypos 757
         else:
@@ -1493,68 +1492,78 @@ style slider_pref_slider:
 
 screen credits(_hide=False):
     modal True
-    add Solid("#000000")
+    add Solid("#ffffff")
+    timer 35 action If(_hide, true=Hide("credits", transition=Dissolve(1.0)), false=[With(Dissolve(1.0)), Return()])
 
-    vbox:
+    vbox at credits_scroll(30, 2.5):
+        style_prefix "fl"
         xalign 0.5
-        yalign 0.45
+        ypos 500
 
-        text "Proudly Presented by" bold True xalign 0.5
-        text "Studio Phanteke" xalign 0.5
+        text "Proudly Presented by" color "#559fdd" bold True xalign 0.5
+        text "Studio Phanteke" color "#d88db7" xalign 0.5
 
-        text "Concept and Director" bold True xalign 0.5
-        text "Eleanor \"Nell\" Watson" xalign 0.5
-        text "www.nellwatson.com" xalign 0.5
+        null height 380
 
-        null height 15
+        text "Concept and Director" color "#559fdd" bold True xalign 0.5
+        text "Eleanor \"Nell\" Watson" color "#d88db7" xalign 0.5
+        text "{a=https://www.nellwatson.com/}https://www.nellwatson.com{/a}" xalign 0.5
 
-        text "Producer" bold True xalign 0.5
-        text "Sean Taylor" xalign 0.5
-        text "www.seantaylor.work" xalign 0.5
+        null height 40
 
-        null height 15
+        text "Producer" color "#559fdd" bold True xalign 0.5
+        text "Sean Taylor" color "#d88db7" xalign 0.5
+        text "{a=https://www.seantaylor.work/}https://www.seantaylor.work{/a}" xalign 0.5
 
-        text "Programmer" bold True xalign 0.5
-        text "Dipesh Aggarwal" xalign 0.5
+        null height 40
 
-        null height 15
+        text "Programmer" color "#559fdd" bold True xalign 0.5
+        text "Dipesh Aggarwal" color "#d88db7" xalign 0.5
 
-        text "Writer" bold True xalign 0.5
-        text "Cara Hillstock" xalign 0.5
-        text "www.patreon.com/Cheratomo" xalign 0.5
+        null height 40
 
-        null height 15
+        text "Writer" color "#559fdd" bold True xalign 0.5
+        text "Cara Hillstock" color "#d88db7" xalign 0.5
+        text "{a=https://www.seantaylor.work/}https://www.patreon.com/Cheratomo{/a}" xalign 0.5
 
-        text "Illustrator" bold True xalign 0.5
-        text "Livio Perissin" xalign 0.5
-        text "www.livioperissin.com.ar" xalign 0.5
+        null height 40
 
-        null height 15
+        text "Illustrator" color "#559fdd" bold True xalign 0.5
+        text "Livio Perissin" color "#d88db7" xalign 0.5
+        text "{a=https://www.livioperissin.com.ar/}https://www.livioperissin.com.ar{/a}" xalign 0.5
 
-        text "UI Elements" bold True xalign 0.5
-        text "Luna Chai" xalign 0.5
-        text "www.lunachai.com" xalign 0.5
+        null height 40
 
-        null height 15
+        text "UI Design" color "#559fdd" bold True xalign 0.5
+        text "Luna Chai" color "#d88db7" xalign 0.5
+        text "{a=https://www.lunachai.com/}https://www.lunachai.com{/a}" xalign 0.5
 
-        text "Music" bold True xalign 0.5
-        text "Kevin MacLeod" xalign 0.5
-        text "(Provided under CC-NC-3)" xalign 0.5
-        text "www.incompetech.com" xalign 0.5
+        null height 40
 
-        null height 15
+        text "Music" color "#559fdd" bold True xalign 0.5
+        text "Kevin MacLeod" color "#d88db7" xalign 0.5
+        text "(Provided under CC-NC-3)" color "#d88db7" xalign 0.5
+        text "{a=https://www.incompetech.com/}https://www.incompetech.com{/a}" xalign 0.5
 
-        text "Sounds by" bold True xalign 0.5
-        text "Denki Soundbank" xalign 0.5
-        text "www.denki.co.uk" xalign 0.5
+        null height 40
 
-    textbutton _("Continue"):
+        text "Sounds" color "#559fdd" bold True xalign 0.5
+        text "Denki Soundbank" color "#d88db7" xalign 0.5
+        text "{a=https://www.denki.co.uk/}https://www.denki.co.uk{/a}" xalign 0.5
+
+        null height 500
+        text "Thank you for playing!" size 75 color "#d88db7" xalign 0.5
+
+    add "layer"
+
+    textbutton _("X"):
         style "fl_button"
+        xsize 100
 
-        action If(_hide, true=Hide("credits"), false=Return())
+        action If(_hide, true=Hide("credits", transition=Dissolve(1.0)), false=[With(Dissolve(1.0)), Return()])
 
-        xalign 0.5
-        yalign 0.9
+        xalign 1.0
+        yalign 0.1
 
 screen clear_data_confirm():
     modal True
