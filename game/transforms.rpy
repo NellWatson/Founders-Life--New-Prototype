@@ -71,3 +71,11 @@ transform button_hover:
             linear 0.6 zoom 0.99
 
         repeat
+
+transform credits_scroll(speed, wait_for):
+    time wait_for
+    linear speed ypos -2250
+
+transform hide_in(t):
+    time t
+    linear 0.5 alpha 0.0
