@@ -4,7 +4,7 @@
     "category": "productivity",
     "character": "none",
     "description": {
-        "en": ["Would you like to announce your decision to become an entrepeneur to friends and family?"]
+        "en": ["Would you like to announce your decision to become an entrepreneur to friends and family?"]
     },
     "yes_action": {
         "productivity": 10,
