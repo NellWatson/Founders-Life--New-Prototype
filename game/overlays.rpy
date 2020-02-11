@@ -137,3 +137,32 @@ screen character_intro():
 
         xalign 0.5
         yalign 0.85
+
+screen choose_portrait():
+    default character_list = ["1", "2", "3", "4", "5", "6", "7"]
+    add Solid("#00000000") alpha 0.5
+
+    text "Choose your online account DP."  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.25
+
+    hbox:
+        xalign 0.5
+        yalign 0.55
+        spacing 40
+
+        for i in character_list:
+            button:
+                xysize (308, 308)
+
+                idle_background Circle(radius=154, colour="#559fdd", internal_circle="#ffffff", internal_radius=138)
+                hover_background Circle(radius=154, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
+
+                add AlphaMask("images/contacts/mc/" + i + ".png", "gui/who_mask.png") xalign 0.5 yalign 0.5
+                action Call(i + "_intro")
+
+    textbutton _("Ok. Let's Start the Journey"):
+        style "fl_button"
+
+        action Jump("checkpoint")
+
+        xalign 0.5
+        yalign 0.85
