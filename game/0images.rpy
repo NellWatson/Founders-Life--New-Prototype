@@ -19,13 +19,14 @@ image splash lilac = "images/splash/lilac.png"
 
 image side nell normal = "images/contacts/nell.png"
 image side dominique = "images/contacts/dominique.png"
-image side eileen = "images/contacts/eileen.png"
 image side none = "images/contacts/none.png"
-image side carla = "images/contacts/carla.png"
-image side raquel = "images/contacts/raquel.png"
 image side skylar = "images/contacts/skylar.png"
 image side takashi = "images/contacts/takashi.png"
 image side roger = "images/contacts/roger.png"
+
+#image side eileen = "images/contacts/eileen.png"
+#image side carla = "images/contacts/carla.png"
+#image side raquel = "images/contacts/raquel.png"
 
 image input_caret:
     Text("|")
