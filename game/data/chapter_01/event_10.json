@@ -11,13 +11,13 @@
         "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You have to step it up, okay?"]
     },
     "yes_action": {
-        "mindfulness": -20
+        "mindfulness": -10
     },
     "no_action": {
         "mindfulness": -20
     },
-    "yes_caption": "I'll try.",
-    "no_caption": "I've been busy.",
+    "yes_caption": "Sorry pal, I'll try to be more responsive.",
+    "no_caption": "Yeah, well, I've been busy. Give me a break",
     "yes_description": {
         "en": ["none::Juggling friendships with work is hard, but you've decided it's worth it."]
     },
