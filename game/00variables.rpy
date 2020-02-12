@@ -2,6 +2,7 @@ default dev_option__event_play = []
 
 default founder_name = ""
 default startup_name = ""
+default founder_portrait = ""
 
 default founder_level = 1
 default last_founder_level = 0
@@ -24,6 +25,7 @@ default total_days = 0
 default week = 0
 default month = 0
 default event_code = ""
+default event_name = ""
 default level_up = False
 
 default feedback = {}

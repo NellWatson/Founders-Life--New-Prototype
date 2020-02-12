@@ -5,14 +5,8 @@ screen hud():
 
         background Solid("#ffffff")
 
-        text "Days as Founder: {0:02d}".format(total_days) size 30 color "#000000" xalign 0.05 yalign 0.15
-        if config.developer:
-            hbox:
-                xalign 0.05
-                yalign 0.80
-                spacing 5
-                
-                text "[event_code]" color "#000000" yalign 0.5
+        text "Days as Founder: {0:02d}".format(total_days) style "hud_text" xalign 0.02 yalign 0.15
+        text "[event_name]" style "hud_text" xalign 0.02 yalign 0.9
 
         vbox:
             xalign 0.5
@@ -45,40 +39,37 @@ screen hud():
                 add DynamicDisplayable(dynamic_bar, morale_bar)
         
         hbox:
-            xalign 0.95
+            xalign 0.98
             yalign 0.15
             
-            text "Savings: " color "#000000"
+            text "Savings: " style "hud_text"
             if check["money"]:
-                text check["money"] color "#000000" at flash
+                text check["money"] style "hud_text" at flash
             else:
-                text "[CURRENCY]{:,}".format(money) color "#000000"
+                text "[CURRENCY]{:,}".format(money) style "hud_text"
 
         if config.developer:
-            hbox:
-                xalign 0.96
-                yalign 0.70
-                
-                textbutton _("Event Play Order") action Show("event_play_list")
+            textbutton _("Event Play Order") action Show("event_play_list") xalign 0.98 yalign 0.9
 
 screen founder_map():
     add "bg review"
+    add Solid("#00000050")
 
     vbox:
         xalign 0.90
         ypos 100
         spacing 5
 
-        text "Founder Score: {:,}".format(total_founder_score) size 45 color "#000000" xalign 1.0
-        text "Days as Founder: {}".format(total_days) size 45 color "#000000" xalign 1.0
+        text "Founder Score: {:,}".format(total_founder_score) size 60 color "#559fdd" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 1.0
+        text "Days as Founder: {}".format(total_days) size 60 color "#559fdd" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 1.0
 
     vbox:
-        xalign 0.10
+        xalign 0.05
         ypos 100
         spacing 5
 
-        text "[founder_name]" size 45 color "#000000" text_align 1.0
-        text "[startup_name]" size 45 color "#000000" text_align 1.0
+        text "[founder_name]" size 60 color "#559fdd" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] text_align 1.0
+        text "[startup_name]" size 60 color "#559fdd" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] text_align 1.0
 
     hbox:
         xalign 0.5
@@ -111,7 +102,7 @@ screen founder_map():
 
 screen character_intro():
     default character_list = ["skylar", "takashi", "roger"]
-    add Solid("#00000000") alpha 0.5
+    add Solid("#00000050")
 
     text "See who is with you on the journey"  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.25
 
@@ -139,15 +130,17 @@ screen character_intro():
         yalign 0.85
 
 screen choose_portrait():
+    modal True
     default character_list = ["1", "2", "3", "4", "5", "6", "7"]
-    add Solid("#00000000") alpha 0.5
 
-    text "Choose your online account DP."  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.25
+    add Solid("#00000050")
+    text "Choose your online account DP."  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.05
 
-    hbox:
+    vpgrid:
         xalign 0.5
-        yalign 0.55
+        yalign 0.5
         spacing 40
+        rows 2
 
         for i in character_list:
             button:
@@ -157,12 +150,4 @@ screen choose_portrait():
                 hover_background Circle(radius=154, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
 
                 add AlphaMask("images/contacts/mc/" + i + ".png", "gui/who_mask.png") xalign 0.5 yalign 0.5
-                action Call(i + "_intro")
-
-    textbutton _("Ok. Let's Start the Journey"):
-        style "fl_button"
-
-        action Jump("checkpoint")
-
-        xalign 0.5
-        yalign 0.85
+                action SetVariable("founder_portrait", i), Return()

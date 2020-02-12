@@ -74,7 +74,7 @@ transform button_hover:
 
 transform credits_scroll(speed, wait_for):
     time wait_for
-    linear speed ypos -2250
+    linear speed ypos -2300
 
 transform hide_in(t):
     time t

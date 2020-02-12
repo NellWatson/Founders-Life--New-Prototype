@@ -6,7 +6,10 @@
         ["turn_no", 1, "greater"]
     ],
     "description": {
-        "en": ["'ERROR: Program has run into an unexplained error and must close.' You've received that error five times tonight. How in the world are you going to deal with this?"]
+        "en": [
+            "{color=#ff0000}{b}ERROR{/b}: Program has run into an unexplained error and must close.{/color}",
+            "You've received that error five times tonight. How in the world are you going to deal with this?"
+        ]
     },
     "yes_action": {
         "productivity": 0
