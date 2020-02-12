@@ -5,6 +5,16 @@ label splashscreen:
     return
 
 label start:
+    scene image Solid("#000000")
+
+    menu:
+        n "Do you consent to allow your game data to be held for a reasonable time to help compile statistics on the game?"
+
+        "Yes":
+            $ is_telemetry_allowed = True
+        "No":
+            $ is_telemetry_allowed = False
+
     $ characters_roster = CharacterRooster()
     $ chapter_manager = ChapterManager()
     $ var_tracker = VarTracker()

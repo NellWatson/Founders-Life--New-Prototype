@@ -129,12 +129,14 @@ screen say(who, what, side_image=None):
 
     # If there's a side image, display it above the text.
     if who:
+        add "gui/who.png" xpos 78 ypos 757
         if side_image:
             add AlphaMask(side_image, "gui/who_mask.png") xpos 78 ypos 757
         else:
             add AlphaMask(SideImage(), "gui/who_mask.png") xpos 78 ypos 757
     else:
-        add AlphaMask("images/contacts/thoughtbubble.png", "gui/who_mask.png") xpos 78 ypos 757
+        add "gui/thought.png" xpos 78 ypos 757
+        add AlphaMask(founder_portrait, "gui/thought_mask.png") xpos 78 ypos 757
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -156,6 +158,7 @@ screen input(prompt):
                 text "> " yoffset 3
                 input id "input" font "fonts/Dosis-Regular.ttf" color "#ffffff" size 36
 
+    add "gui/who.png" xpos 78 ypos 757
     add AlphaMask("side nell normal", "gui/who_mask.png") xpos 78 ypos 757
 
 style new_input_window is window:
