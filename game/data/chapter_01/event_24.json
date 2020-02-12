@@ -1,12 +1,5 @@
 {
     "id": "chapter_01_24",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Spa Day",
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "energy",
     "character": "skylar",
     "condition": [
@@ -18,17 +11,6 @@
     "yes_action": {
         "productivity": -20,
         "energy": 20,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "mindfulness": 30,
-        "money": -100
-    },
-    "no_action": {
-        "productivity": 20,
-        "energy": -20,
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "mindfulness": 10,
         "money": -100
     },
@@ -36,10 +18,6 @@
         "productivity": 10,
         "energy": -10,
         "mindfulness": -5
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_caption": "Do it.",
     "no_caption": "I should work.",

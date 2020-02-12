@@ -1,12 +1,5 @@
 {
     "id": "chapter_01_19",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Rocky Relationship",
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "energy",
     "character": "skylar",
     "condition": [
@@ -17,37 +10,16 @@
     },
     "yes_action": {
         "productivity": -20,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "mindfulness": 10,
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "energy": -30,
         "affection": 1
     },
     "no_action": {
         "productivity": 10,
         "mindfulness": -20,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "energy": 10,
-        "affection": -1
-    },
-    "yes_caption": "Yup! Let's do this!",
-    "no_caption": "I can't. I'm too busy, and too tired...",
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "affection": -1
     },
     "yes_caption": "Yup!",
     "no_caption": "I'm too tired...",
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "yes_description": {
         "en": ["none::Despite your exhaustion, you go rock climbing with Skylar. It pushes you over the edge, and you feel scattered the next day. You don't get much done."]
     },

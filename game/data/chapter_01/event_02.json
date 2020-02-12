@@ -1,29 +1,13 @@
 {
     "id": "chapter_01_02",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Be With Me",
-=======
     "title": "Someone to Talk to",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "title": "Someone to Talk to",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
         ["turn_no", 4, "greater"]
     ],
     "description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["Hey, #NAME! I know you're busy with your work, but I could really use someone to talk to tonight."]
-=======
         "en": ["Hey, #NAME! I know you're busy with your work, but I could use someone to talk to tonight."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "en": ["Hey, #NAME! I know you're busy with your work, but I could use someone to talk to tonight."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_action": {
         "productivity": -15,
@@ -35,18 +19,6 @@
         "mindfulness": -10,
         "affection": -1
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "yes_caption": "Sure, I'm here for you.",
-    "no_caption": "I'm sorry, I just can't right now.",
-    "yes_description": {
-        "en": ["Thank you so much for spending time with me. I know it's hard for you to focus on other things right now."]
-    },
-    "no_description": {
-        "en": ["Oh, so your work is more important than me? Fine."]
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "yes_caption": "I'm here for you.",
     "no_caption": "I'm sorry.",
     "yes_description": {
@@ -54,9 +26,5 @@
     },
     "no_description": {
         "en": ["So your work is more important than me? I see."]
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

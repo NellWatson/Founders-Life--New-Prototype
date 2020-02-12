@@ -1,42 +1,18 @@
 {
     "id": "chapter_01_09",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Ravey / Gravy",
-=======
     "title": "Rager",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "title": "Rager",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "productivity",
     "character": "takashi",
     "condition": [
         ["turn_no", 7, "greater"]
     ],
     "description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["It's my birthday! Another year, but not too old to stay out all night and party like we did in college! Ahh, it wouldn't be the same without my partner-in-crime."]
-=======
         "en": ["It's my birthday! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "en": ["It's my birthday! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_action": {
         "productivity": -30,
         "energy": -30,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "mindfulness": 20,
-=======
         "mindfulness": 5,
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "mindfulness": 5,
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "money": -200,
         "affection": 1
     },
@@ -48,22 +24,9 @@
     "yes_caption": "Happy birthday!",
     "no_caption": "I'm busy.",
     "yes_description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["Do another shot with me! SHOT, SHOT, SHOT! Guess you won't be working tomorrow, HAHA!"]
-    },
-    "no_description": {
-        "en": ["...Well, damn. I guess *you're* the ol' stick-in-the-mud. All right..."]
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "en": ["Do another shot with me! Guess you won't be working tomorrow, HAHA!"]
     },
     "no_description": {
         "en": ["...Damn. All right."]
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

@@ -24,14 +24,6 @@
         "en": ["You keep going and get things done, but at a cost."]
     },
     "no_description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["You decide to call it a night, but thoughts of your work stay with you. You don't know how late it is when you finally fall asleep."]
-=======
         "en": ["You decide to call it a night, but the guilt stays with you. You don't know how late it is when you finally fall asleep."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "en": ["You decide to call it a night, but the guilt stays with you. You don't know how late it is when you finally fall asleep."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

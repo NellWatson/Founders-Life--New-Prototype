@@ -17,23 +17,10 @@
         "affection": 1
     },
     "no_action": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "productivity": 20,
-        "affection": -1
-    },
-    "yes_caption": "Yup, I'm all set",
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "productivity": 10,
         "affection": -1
     },
     "yes_caption": "All set",
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "no_caption": "I have to work...",
     "yes_description": {
         "en": [
