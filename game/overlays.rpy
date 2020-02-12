@@ -12,7 +12,7 @@ screen hud():
             xalign 0.5
             yalign 0.5
             spacing 8
-            
+
             hbox:
                 xalign 0.5
                 yalign 0.5
@@ -29,7 +29,7 @@ screen hud():
 
                 add "gui/hud/energy.png" yalign 0.5 xoffset -44
                 add DynamicDisplayable(dynamic_bar, energy_bar)
-            
+
             hbox:
                 xalign 0.5
                 yalign 0.5
@@ -37,11 +37,11 @@ screen hud():
 
                 add "gui/hud/morale.png" yalign 0.5 xoffset -44
                 add DynamicDisplayable(dynamic_bar, morale_bar)
-        
+
         hbox:
             xalign 0.98
             yalign 0.15
-            
+
             text "Savings: " style "hud_text"
             if check["money"]:
                 text check["money"] style "hud_text" at flash
@@ -104,7 +104,7 @@ screen character_intro():
     default character_list = ["skylar", "takashi", "roger"]
     add Solid("#00000050")
 
-    text "See who is with you on the journey"  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.25
+    text "See who else plays a role on the journey"  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.25
 
     hbox:
         xalign 0.5

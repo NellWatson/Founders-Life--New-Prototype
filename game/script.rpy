@@ -8,7 +8,7 @@ label start:
     $ characters_roster = CharacterRooster()
     $ chapter_manager = ChapterManager()
     $ var_tracker = VarTracker()
-    
+
     $ characters_roster.add_character("none", "None", "none", None)
     $ characters_roster.add_character("eileen", "Eileen", "e", "eileen")
     $ characters_roster.add_character("skylar", "Skylar", "s", "skylar")
@@ -39,7 +39,7 @@ label week_event:
 
     if _event.character.sprite:
         pass#show expression _event.character.sprite at center
-    
+
     if _event.has_multiple_descriptions:
         while not _event.seeing_last_description:
             _event.get_speaker "[_event.description]"
@@ -76,9 +76,9 @@ label checkpoint:
 
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [total_days] days."
-            
+
             if not persistent.submitted_form:
-                n normal "Please let us know your feedback."
+                n normal "Please would you kindly give us your feedback?"
                 call screen feedback_form_screen
             return
         else:
@@ -103,9 +103,9 @@ label checkpoint:
 
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [total_days] days."
-            
+
             if not persistent.submitted_form:
-                n normal "Please let us know your feedback."
+                n normal "Please would you kindly give us your feedback?"
                 call screen feedback_form_screen
             return
         else:
@@ -130,9 +130,9 @@ label checkpoint:
 
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [total_days] days."
-            
+
             if not persistent.submitted_form:
-                n normal "Please let us know your feedback."
+                n normal "Please would you kindly give us your feedback?"
                 call screen feedback_form_screen
             return
         else:
@@ -155,14 +155,14 @@ label checkpoint:
 
         play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [total_days] days."
-        
+
         if not persistent.submitted_form:
-            n normal "Please let us know your feedback."
+            n normal "Please would you kindly give us your feedback?"
             call screen feedback_form_screen
         return
 
     if turn_no and not (turn_no % 7):
-        
+
         play week_sound "sfx/fx003.wav"
         n normal "Congratulations [founder_name].\nYou have survived [total_days] days as a founder."
 
@@ -309,7 +309,7 @@ label chapter_one_finale:
 label chapter_two_finale:
     call screen founder_map
     $ event_code = "chapter_03_00"
-    
+
     "You've finally proven to Skylar that you are, in fact, capable of achieving your dreams, but the measures you had to take to do it leave you dissatisfied."
     "You didn't start out on this journey just to wind up working on other people's dreams, after all. You wanted to be your own boss, not gain sixty. But how are you supposed to bide time between now and when your work is finished?"
     "As you're mulling this and checking your inbox, you notice another e-mail from Dominique."
@@ -338,7 +338,7 @@ label chapter_three_finale:
 
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYou survived [total_days] days."
-        
+
         if not persistent.submitted_form:
             n normal "Please let us know your feedback."
             call screen feedback_form_screen
@@ -358,7 +358,7 @@ label chapter_three_finale:
         "That sounds... ominous.":
             $ variable("energy", 20)
             $ variable("morale", 20)
-            
+
             "You take some time off, trying to have the most relaxing day possible."
             "You're deeply grateful you did."
 
@@ -393,9 +393,9 @@ label chapter_five_finale:
     show dominique at center
 
     n normal "Game over.\nThank you for playing."
-    
+
     if not persistent.submitted_form:
-        n normal "Please let us know your feedback."
+        n normal "Please would you kindly give us your feedback?"
         call screen feedback_form_screen
 
     return
