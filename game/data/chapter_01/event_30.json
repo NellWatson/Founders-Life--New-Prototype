@@ -11,7 +11,7 @@
     },
     "no_action": {
         "productivity": -10,
-        "energy": 10,
+        "energy": 20,
         "mindfulness": 10
     },
     "yes_caption": "Take some medicine and push on",

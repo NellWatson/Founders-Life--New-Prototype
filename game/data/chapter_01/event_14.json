@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_14",
+    "title": "Back to School",
     "category": "money",
     "character": "none",
     "condition": [
@@ -21,6 +22,6 @@
         "en": ["It costs a lot of money, but you learn a fair bit about marketing that you wouldn't have known otherwise. This will come in handy later."]
     },
     "no_description": {
-        "en": ["Anything you can learn from a course, you can probably Google."]
+        "en": ["Anything you can learn from a course, you can probably just as easily pick up from some blogs and stuff."]
     }
 }

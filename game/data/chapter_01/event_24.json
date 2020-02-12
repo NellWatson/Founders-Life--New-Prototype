@@ -1,26 +1,27 @@
 {
     "id": "chapter_01_24",
+    "title": "Spa Day",
     "category": "energy",
     "character": "skylar",
     "condition": [
         ["energy", 50, "lesser"]
     ],
     "description": {
-        "en": ["Yeesh, you look tired. How about we go to the spa together? It might be new for you, but I promise it'll completely relax you!"]
+        "en": ["Yeesh, you look tired. I'm going to a a spa for a friend's birthday – you wanna join? I promise it'll completely relax you!"]
     },
     "yes_action": {
         "productivity": -20,
         "energy": 20,
-        "mindfulness": 10,
+        "mindfulness": 30,
         "money": -100
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "energy": -10,
-        "mindfulness": -5
+        "mindfulness": -10
     },
-    "yes_caption": "Do it.",
-    "no_caption": "I should work.",
+    "yes_caption": "Ok, you're on!",
+    "no_caption": "I'd love to, but... I should work.",
     "yes_description": {
         "en": ["You feel refreshed. Skylar seems happy she helped you take time for yourself."]
     },
