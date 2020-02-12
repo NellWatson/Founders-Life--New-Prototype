@@ -34,7 +34,7 @@ v 0.2.5.1025
 * Renamed `class Event` method `has_multiple_description` to `has_multiple_descriptions` to be more grammatically correct.
 * Renamed `slow_dissolve` to `SLOW_DISSOLVE` to indicate that it's a constant.
 * Fixed message text scrolling twice when a choice menu was shown.
-* Fixed calculation of Founder Score. Before instead of Days as Founder, we were using turn number, which resulted in an overall lower founder score incrememnt per week as turn number resets every new chapter.
+* Fixed calculation of Founder Score. Before instead of Days as Founder, we were using turn number, which resulted in an overall lower founder score increment per week as turn number resets every new chapter.
 * Fixed `AttributeError` crash which was related to parsing of `current:money`.
 
 v 0.2.5.1024
@@ -66,7 +66,7 @@ v 0.2.5.1023
 v 0.2.5.1022
 ------------
 * Changed Icon of the Founderpedia button.
-* Changed Emergerncy Entrepreneur's Retreat cost to $1000 from $2000.
+* Changed Emergency Entrepreneur's Retreat cost to $1000 from $2000.
 * Added Credits button in the game menu.
 
 v 0.2.5.1019
@@ -108,12 +108,12 @@ v 0.2.0.0311
 v 0.2.0.0307
 ------------
 * Stop default event from appearing in regular event que. Closes #147.
-* Asign the none image to Dominique. Closes #146.
+* Assign the none image to Dominique. Closes #146.
 
 v 0.2.0.0304
 ------------
 * Allow default events to show when there are no events remaining to show. Closes #144.
-* Bugfix: Mindfulness/Morale variable wsn't being changed on event actions.
+* Bugfix: Mindfulness/Morale variable wasn't being changed on event actions.
 
 v 0.2.0.0303
 ------------
@@ -123,7 +123,7 @@ v 0.2.0.0222
 ------------
 * Added Chapter 2 content.
 * Changes to Event system
-    * Added `is_yes` and `is_no` method to selecitvely show the choices
+    * Added `is_yes` and `is_no` method to selectively show the choices
     * Added `get_speaker` to get the current speaker of the current dialogue
     * Added support for showing money earned in the current month in narrative text
     * Added support for letting player speak lines during a weekly character event
@@ -232,7 +232,7 @@ v 0.0.9-0108
 * Updated Feedback form questions. (#121)
 * Tweaked Sprint screen to new specs. (#122)
 * Now we remove all the save files for first time players.
-* Changed version number text colour to white to follow the main menu asthetic
+* Changed version number text colour to white to follow the main menu aesthetic
 
 v 0.0.9-0103
 ------------
@@ -272,12 +272,12 @@ v 0.0.7-1215
 * Edit main menu buttons and Nell intro to be centered properly.
 * Added credits.txt.
 * Updated build naming rules.
-* Updated build rules to exclude reduntant files when building distributions.
+* Updated build rules to exclude redundant files when building distributions.
 
 v 0.0.6-1214-2
 --------------
 * Closed Issue #102, #103, #104, #108, #109, #110, #111.
-* Removed reduntant image files and moved all the ui assets to gui/
+* Removed redundant image files and moved all the ui assets to gui/
 
 v 0.0.6-1214
 ------------
@@ -302,7 +302,7 @@ v 0.0.5-1207-3
 v 0.0.5-1207-2
 --------------
 * Closed Issue #94, #95.
-* If the player got an game over because of having no money, total day played wasn't shown.
+* If the player got a game over because of having no money, total day played wasn't shown.
 
 v 0.0.5-1207
 ------------
@@ -430,7 +430,7 @@ v 0.0.2-0613
 
 v 0.0.2-0612
 ------------
-* In Review A, Startup Valuation is deplayed in green.
+* In Review A, Startup Valuation is displayed in green.
 
 v 0.0.2-0608
 ------------
