@@ -37,3 +37,4 @@ default morale_bar = SuperBar("#559fdd", "#00ff00", "#ff0000", "morale", xysize=
 default review_bar = Bar(value=1, range=1, width=500, height=50)
 
 default no_of_times_died = 0
+default is_telemetry_allowed = True
