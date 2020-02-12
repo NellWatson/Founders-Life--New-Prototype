@@ -6,6 +6,9 @@ init python in telemetry:
 
         global host, project_id, game_id, collected_data, sessions, last_session_length, session_blocks, status
 
+        if not renpy.store.is_telemetry_allowed:
+            return
+
         host = "http://192.241.146.97:3000/v1/" #"http://localhost:3000/v1/" #
         project_id = "FoundersLifeAlpha"
         game_id = ""
@@ -22,6 +25,8 @@ init python in telemetry:
         Start the actual syncing process in a thread so the game doesn't hang.
         """
 
+        if not renpy.store.is_telemetry_allowed:
+            return
         renpy.invoke_in_thread(_setup)
 
     def _setup():
@@ -70,6 +75,9 @@ init python in telemetry:
     def collect():
         global collected_data, status
 
+        if not renpy.store.is_telemetry_allowed:
+            return
+
         # If some other operation is taking place, wait.
         while status:
             continue
@@ -105,6 +113,9 @@ init python in telemetry:
 
         # Save the collected data and url locally since we are in a different thread now and
         # the collected_data dict can change while we are syncing.
+
+        if not renpy.store.is_telemetry_allowed:
+            return
 
         while status:
             continue
@@ -156,11 +167,17 @@ init python in telemetry:
     def resume():
         global sessions, last_session_length, session_blocks
 
+        if not renpy.store.is_telemetry_allowed:
+            return
+
         sessions += 1
         last_session_length = renpy.get_game_runtime() - last_session_length
         session_blocks.append(last_session_length)
 
     def end(name):
+
+        if not renpy.store.is_telemetry_allowed:
+            return
 
         if game_id == "placeholder":
             setup()
@@ -197,6 +214,9 @@ init python in telemetry:
         """
         Start the actual syncing process in a thread so the game doesn't hang.
         """
+        
+        if not renpy.store.is_telemetry_allowed:
+            return
 
         while status:
             continue
