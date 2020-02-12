@@ -102,14 +102,24 @@ screen sprint_review(bg):
             spacing 10
             first_spacing 40
 
-            text "[founder_name]" color "#000000" xalign 0.5
-            text "Founder Points Earned: {:,}".format(founder_score) color "#000000" xalign 0.5
+            text "[founder_name]" font "fonts/Dosis-Bold.ttf" color "#000000" xalign 0.5
+            hbox:
+                xsize 500
+                xalign 0.5
+
+                text "Founder Points Earned: ".format(founder_score) font "fonts/Dosis-Bold.ttf" color "#000000" xalign 0.0
+                text "{:,}".format(founder_score) font "fonts/Dosis-Light.ttf" color "#000000" xalign 1.0
 
             null height 1.0
             add DynamicDisplayable(dynamic_review, review.bar, 0.25) xalign 0.5
             
-            null height 16.0
-            text "Total Founder Points: {:,}".format(total_founder_score) color "#000000" xalign 0.5
+            null height 1.0
+            hbox:
+                xsize 500
+                xalign 0.5
+
+                text "Total Founder Points: ".format(founder_score) font "fonts/Dosis-Bold.ttf" color "#000000" xalign 0.0
+                text "{:,}".format(total_founder_score) font "fonts/Dosis-Light.ttf" color "#000000" xalign 1.0
 
         textbutton _("Let's Go"):
             idle_background("#d3d3d3")
@@ -144,35 +154,35 @@ screen startup_review(bg):
             spacing 10
 
             null height 1.0
-            text "Another sprint completed [founder_name]" color "#000000" xalign 0.5
+            text "Another sprint completed [founder_name]" font "fonts/Dosis-Bold.ttf" color "#000000" xalign 0.5
             null height 8.0
 
             grid 2 7:
-                xpos 200
+                xpos 170
                 spacing 10
 
-                text "Productivity" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 0.75, productivity)
+                text "Productivity" font "fonts/Dosis-Bold.ttf" color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 0.75, productivity) font "fonts/Dosis-Light.ttf"
                 
-                text "Energy" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 1.5, energy)
+                text "Energy" font "fonts/Dosis-Bold.ttf" color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 1.5, energy) font "fonts/Dosis-Light.ttf"
                 
-                text "Mindfulness" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 2.25, morale)
+                text "Mindfulness" font "fonts/Dosis-Bold.ttf" color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 2.25, morale) font "fonts/Dosis-Light.ttf"
                 
-                text "Cashflow" color "#000000"
+                text "Cashflow" font "fonts/Dosis-Bold.ttf" color "#000000"
                 hbox:
-                    text "[CURRENCY]" color "#000000"
-                    text DynamicDisplayable(dynamic_show_text, 3, money)
+                    text "[CURRENCY]" color "#000000" font "fonts/Dosis-Light.ttf"
+                    text DynamicDisplayable(dynamic_show_text, 3, money) font "fonts/Dosis-Light.ttf"
                 
-                text "Days as Founder   " color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 3.75, total_days)
+                text "Days as Founder   " font "fonts/Dosis-Bold.ttf" color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 3.75, total_days) font "fonts/Dosis-Light.ttf"
                 
                 null height 1.0
                 null height 1.0
 
-                text "{b}Founder Points Earned{/b}" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 4.5, founder_score)
+                text "{b}Founder Points Earned{/b}" font "fonts/Dosis-Bold.ttf" color "#000000"
+                text DynamicDisplayable(dynamic_show_text, 4.5, founder_score) font "fonts/Dosis-Light.ttf"
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")

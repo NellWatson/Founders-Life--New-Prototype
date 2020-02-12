@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.2.5.0212
+------------
+* Add thought bubble icon portrait.
+* Change all the font to Dosis.
+* Add Chapter Name to the HUD screen.
+* Allow player to choose portrait.
+
 v 0.2.5.0129
 ------------
 * Update credits UI.

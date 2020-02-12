@@ -35,6 +35,7 @@ label start:
 label week_event:
     $ _event = chapter_manager.get_event()
     $ event_code = _event.id
+    $ event_name = _event.title
 
     if _event.character.sprite:
         pass#show expression _event.character.sprite at center

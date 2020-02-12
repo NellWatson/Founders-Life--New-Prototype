@@ -20,6 +20,12 @@ style fl_text:
     color "#ffffff"
     
 style feedback_text:
-    font "fonts/Dosis-Light.ttf"
+    font "fonts/Dosis-Bold.ttf"
     size 70
     color "#ffffff"
+
+style hud_text:
+    font "fonts/Dosis-Bold.ttf"
+    color "#559fdd"
+    size 45
+    outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]

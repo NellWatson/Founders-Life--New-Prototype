@@ -133,7 +133,8 @@ screen say(who, what, side_image=None):
             add AlphaMask(side_image, "gui/who_mask.png") xpos 78 ypos 757
         else:
             add AlphaMask(SideImage(), "gui/who_mask.png") xpos 78 ypos 757
-
+    else:
+        add AlphaMask("images/contacts/thoughtbubble.png", "gui/who_mask.png") xpos 78 ypos 757
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -1519,6 +1520,7 @@ screen credits(_hide=False):
 
         text "Programmer" color "#559fdd" bold True xalign 0.5
         text "Dipesh Aggarwal" color "#d88db7" xalign 0.5
+        text "{a=https://dipeshaggarwal.dev/}https://dipeshaggarwal.dev{/a}" xalign 0.5
 
         null height 40
 

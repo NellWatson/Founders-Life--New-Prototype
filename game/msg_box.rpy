@@ -47,7 +47,7 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
             ymaximum _bar_height
 
             add Solid(colour)
-            text title.upper() size t_size color "#ffffff" font "DejaVuSans.ttf" yalign 0.5 xalign 0.5
+            text title.upper() size t_size color "#ffffff" font "fonts/Dosis-Bold.ttf" yalign 0.5 xalign 0.5
 
             if cross and not show_button:
                 button:
