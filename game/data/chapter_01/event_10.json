@@ -1,6 +1,6 @@
 {
     "id": "chapter_01_10",
-    "title": "Disappointment",
+    "title": "A disappointed friend",
     "category": "mindfulness",
     "character": "takashi",
     "condition": [
@@ -8,12 +8,13 @@
         ["turn_no", 21, "greater"]
     ],
     "description": {
-        "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You have to step it up, okay?"]
+        "en": ["It's like I don't know you any more? I feel like I've been making all the effort to keep our friendship going. I'm cheesed-off, seriously."]
     },
     "yes_action": {
         "mindfulness": -10
     },
     "no_action": {
+        "productivity": 10,
         "mindfulness": -20
     },
     "yes_caption": "Sorry pal, I'll try to be more responsive.",

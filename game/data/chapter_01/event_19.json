@@ -1,12 +1,13 @@
 {
     "id": "chapter_01_19",
+    "title": "Rocky Relationship",
     "category": "energy",
     "character": "skylar",
     "condition": [
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["#NAME, you promised you would go rock-climbing with me tonight! I know you're tired, but you always keep your promises. Are you ready to go?"]
+        "en": ["#NAME, you promised you would go rock-climbing with me tonight! I know you're tired, but you did promise. Are you ready to go?"]
     },
     "yes_action": {
         "productivity": -20,
@@ -14,12 +15,13 @@
         "affection": 1
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "mindfulness": -20,
+        "energy": 10,
         "affection": -1
     },
-    "yes_caption": "Yup!",
-    "no_caption": "I'm too tired...",
+    "yes_caption": "Yup! Let's do this!",
+    "no_caption": "I can't. I'm too busy, and I'm too tired...",
     "yes_description": {
         "en": ["none::Despite your exhaustion, you go rock climbing with Skylar. It pushes you over the edge, and you feel scattered the next day. You don't get much done."]
     },

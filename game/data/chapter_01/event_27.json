@@ -1,27 +1,29 @@
 {
     "id": "chapter_01_27",
+    "title": "Family Crisis",
     "category": "energy",
     "character": "skylar",
     "condition": [
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["My mom is calling. She says it's 'an emergency,' and you know how those go. Can you please handle this? After our last fight, I don't know if I can talk to her."]
+        "en": ["My mom is calling. She says it's 'an emergency,' and you know how those go. Can you please handle this? After my last fight with her, I don't know if I can talk to her."]
     },
     "yes_action": {
         "productivity": -20,
-        "energy": 30,
-        "mindfulness": -10
+        "energy": -10,
+        "mindfulness": 10,
+        "affection": 1
     },
     "no_action": {
-        "productivity": 5,
+        "productivity": 10,
         "mindfulness": -20,
         "affection": -1
     },
-    "yes_caption": "I'll do it.",
-    "no_caption": "She's your mother. You handle it.",
+    "yes_caption": "...Okay. No worries. I'm on it...",
+    "no_caption": "She's *your** mother. Be an adult and handle it.",
     "yes_description": {
-        "en": ["none::You hate these calls with Skylar's panicky mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]
+        "en": ["none::You hate these calls with Skylar's difficult mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]
     },
     "no_description": {
         "en": ["none::You know the conversation will last the entire night, and you can't be bothered. Skylar looks at you as though seeing you for the first time."]

@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_15",
+    "title": "Chill Zone",
     "category": "money",
     "character": "none",
     "condition": [
@@ -14,14 +15,14 @@
         "mindfulness": 20
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "energy": -20,
-        "mindfulness": -15
+        "mindfulness": -10
     },
     "yes_caption": "Take a break.",
     "no_caption": "Push through.",
     "yes_description": {
-        "en": ["You assume your mind is sending you a request for a break, and you're correct. You end up coming back to work an hour later and getting a lot done!"]
+        "en": ["You assume your mind is sending you a request for a break, and you're correct. You end up coming back to work an hour later and getting more done!"]
     },
     "no_description": {
         "en": ["You push through and manage to get the day's work done, but you feel rather worse for wear."]

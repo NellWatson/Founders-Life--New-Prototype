@@ -7,7 +7,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Hey, honey! It's time for our date! Are you ready to go?"]
+        "en": ["Hey, honey! It's time for a night out on the town together! Are you ready to go?"]
     },
     "yes_action": {
         "productivity": -10,
@@ -17,11 +17,11 @@
         "affection": 1
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "affection": -1
     },
-    "yes_caption": "All set",
-    "no_caption": "I have to work...",
+    "yes_caption": "Yup, I'm all set.",
+    "no_caption": "I have to work tonight. Next time...",
     "yes_description": {
         "en": [
             "\"This is going to be a wonderful night!\""

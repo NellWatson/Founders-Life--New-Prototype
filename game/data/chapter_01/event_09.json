@@ -1,32 +1,32 @@
 {
     "id": "chapter_01_09",
-    "title": "Rager",
+    "title": "Ravey Gravy",
     "category": "productivity",
     "character": "takashi",
     "condition": [
         ["turn_no", 7, "greater"]
     ],
     "description": {
-        "en": ["It's my birthday! Time to stay out all night and party like we did in college! It wouldn't be the same without my partner-in-crime."]
+        "en": ["It's my birthday! Another year, but not too old to stay out all night and party like we did in college! Ahh, it wouldn't be the same without my partner-in-crime."]
     },
     "yes_action": {
         "productivity": -30,
         "energy": -30,
-        "mindfulness": 5,
+        "mindfulness": 20,
         "money": -200,
         "affection": 1
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "mindfulness": -10,
         "affection": -1
     },
     "yes_caption": "Happy birthday!",
     "no_caption": "I'm busy.",
     "yes_description": {
-        "en": ["Do another shot with me! Guess you won't be working tomorrow, HAHA!"]
+        "en": ["Do another shot with me! SHOT, SHOT, SHOT! Guess you won't be working tomorrow, HAHA!"]
     },
     "no_description": {
-        "en": ["...Damn. All right."]
+        "en": ["..Well, damn. I guess *you're* the ol' stick-in-the-mud. All right..."]
     }
 }

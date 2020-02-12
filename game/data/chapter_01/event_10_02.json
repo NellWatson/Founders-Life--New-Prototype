@@ -9,18 +9,18 @@
     "description": {
         "en": [
             "Hey. I just wanted to say, I know you've got your own things going on, but I really appreciate that you made time for me.",
-            "People say when you go self-employed, you disappear from the people you know because you work too much or whatever. Not you!",
+            "I was concerned that when you went all self-employed, you'd disappear from the people you know because you work too much or whatever. Not you!",
             "In my opinion, you got your priorities straight!"
             ]
     },
     "yes_action": {
-        "productivity": -10,
-        "mindfulness": -20
+        "energy": 20,
+        "mindfulness": 40
     },
     "no_action": {
-        "productivity": 10,
-        "mindfulness": -20
+        "productivity": 30,
+        "mindfulness": 10
     },
-    "yes_caption": "Thanks.",
-    "no_caption": "Work is my priority."
+    "yes_caption": "Thanks, buddy!",
+    "no_caption": "Work is still gonna be a priority for a while, but thanks."
 }

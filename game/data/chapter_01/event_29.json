@@ -7,17 +7,17 @@
         "en": ["You've been working without a break for most of the past few days and your body is starting to complain. However, you have a deadline coming up and can't afford a day off. How do you deal with this?"]
     },
     "yes_action": {
-        "productivity": 10,
-        "energy": 20,
-        "mindfulness": 10
+        "energy": 10,
+        "mindfulness": 20
     },
     "no_action": {
-        "productivity": 0
+        "productivity": 10,
+        "mindfulness": -5
     },
     "yes_caption": "Go on a long walk",
     "no_caption": "Do some stretches and get back to work",
     "yes_description": {
-        "en": ["You take a long walk around the neighborhood to clear your mind. It helps, and you are more energetic and productive when you get back to work."]
+        "en": ["You take a long walk around the neighborhood to clear your mind. It helps, and you find you are actually more energetic when you get back to work."]
     },
     "no_description": {
         "en": ["You stretch your muscles and, while they calm for a bit, they start to ache again after an hour. You accept the pain and try to work around it."]
