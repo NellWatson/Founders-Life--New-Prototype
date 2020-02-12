@@ -2,7 +2,7 @@ default dev_option__event_play = []
 
 default founder_name = ""
 default startup_name = ""
-default founder_portrait = ""
+default founder_portrait = Null()
 
 default founder_level = 1
 default last_founder_level = 0
