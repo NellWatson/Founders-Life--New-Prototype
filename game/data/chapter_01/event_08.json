@@ -1,29 +1,13 @@
 {
     "id": "chapter_01_08",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Movie Night",
-=======
     "title": "Movies",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "title": "Movies",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "productivity",
     "character": "takashi",
     "condition": [
         ["turn_no", 10, "greater"]
     ],
     "description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["Did you hear? They made a movie out of Bon-Bon Fighters - that old TV-show we were obsessed with in elementary school! We *have* to go to the premiere tonight."]
-=======
         "en": ["Did you hear? They made a movie out of Bon-Bon Fighters - that old TV-show we were obsessed with in elementary school! We have to go to the premiere tonight."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "en": ["Did you hear? They made a movie out of Bon-Bon Fighters - that old TV-show we were obsessed with in elementary school! We have to go to the premiere tonight."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_action": {
         "productivity": -20,
@@ -37,18 +21,6 @@
         "mindfulness": -5,
         "affection": -1
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "yes_caption": "Hahaha Ok Takashi. For old times' sake!",
-    "no_caption": "C'mon, man. I gotta focus on real stuff.",
-    "yes_description": {
-        "en": ["Ugh, Ok so... yeah, that kinda sucked.  But hey – we got to hang out!"]
-    },
-    "no_description": {
-        "en": ["\"Man. I feel like I haven't seen you in forever. We used to tight. I can't be the only one putting effort in, you know...\""]
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "yes_caption": "Sounds like fun!",
     "no_caption": "Gotta work.",
     "yes_description": {
@@ -56,9 +28,5 @@
     },
     "no_description": {
         "en": ["\"Man. I feel like I haven't seen you in forever. We used to be really close. I can't be the only one putting effort in, you know.\""]
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

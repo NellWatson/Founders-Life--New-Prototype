@@ -1,14 +1,6 @@
 {
     "id": "chapter_01_01",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Hush hush?",
-=======
     "title": "Announcement",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "title": "Announcement",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "productivity",
     "character": "none",
     "description": {
@@ -23,41 +15,17 @@
     },
     "yes_description": {
         "en": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "skylar::\"You're not quitting your job completely though, right?\"",
-            "skylar::\"As long as you're careful, then of course I'll support you!\"",
-            "skylar::\"I would have preferred to be a part of this decision, though.\""
-=======
             "skylar::\"You're not quitting your job though, right?\"",
             "skylar::\"As long as you're careful, then of course I'll support you!\"",
             "skylar::\"I would have liked to be a part of this decision, though.\""
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-            "skylar::\"You're not quitting your job though, right?\"",
-            "skylar::\"As long as you're careful, then of course I'll support you!\"",
-            "skylar::\"I would have liked to be a part of this decision, though.\""
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         ]
     },
     "no_description": {
         "en": [
             "You decide against telling people your plans, lest you fall flat on your face. You don't want your boss, Roger, finding out either.",
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "However, the time suddenly spent working away at your computer becomes noticeable. Skylar asks you what's going on, and you explain. Then later your friends figure it out.",
-            "skylar::\"I'm surprised you didn't tell me. I guess you didn't trust me.\"",
-            "nell::\"Ouch.\""
-=======
             "However, the time suddenly spent working away at your computer becomes noticeable. Skylar asks you what's going on, and you explain. Then your friends find out.",
             "\"I'm surprised you didn't tell me. I guess you didn't trust me.\"",
             "Ouch."
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-            "However, the time suddenly spent working away at your computer becomes noticeable. Skylar asks you what's going on, and you explain. Then your friends find out.",
-            "\"I'm surprised you didn't tell me. I guess you didn't trust me.\"",
-            "Ouch."
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         ]
     },
     "play_on": 1

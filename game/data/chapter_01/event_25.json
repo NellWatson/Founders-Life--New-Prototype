@@ -1,12 +1,5 @@
 {
     "id": "chapter_01_25",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Easy Money?",
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "money",
     "character": "none",
     "condition": [
@@ -17,18 +10,8 @@
     },
     "yes_action": {
         "productivity": -30,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "energy": -20,
-        "money": 500
-=======
         "energy": 20,
         "money": 200
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "energy": 20,
-        "money": 200
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "no_action": {
         "money": 0

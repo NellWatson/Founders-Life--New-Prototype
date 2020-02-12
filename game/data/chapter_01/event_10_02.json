@@ -15,30 +15,12 @@
     },
     "yes_action": {
         "productivity": -10,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "mindfulness": -10
-=======
         "mindfulness": -20
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "mindfulness": -20
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "no_action": {
         "productivity": 10,
         "mindfulness": -20
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "yes_caption": "Thanks, I guess, old friend.",
-    "no_caption": "Just determined, y'know? Tryin' to get somewhere."
-=======
     "yes_caption": "Thanks.",
     "no_caption": "Work is my priority."
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "yes_caption": "Thanks.",
-    "no_caption": "Work is my priority."
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
 }

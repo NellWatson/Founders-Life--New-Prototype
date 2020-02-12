@@ -22,15 +22,7 @@
         "mindfulness": -20,
         "affection": -1
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "yes_caption": "Ok. Thank you for sharing this. I'll try.",
-=======
     "yes_caption": "I'll try.",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "yes_caption": "I'll try.",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "no_caption": "This is my situation to deal with.",
     "yes_description": {
         "en": ["none::You realize you were a little selfish not to include Skylar in your decision. Suddenly you realize you're risking a lot more than just your savings. The thought weighs heavily on you, but at least the two of you are on the same page."]

@@ -1,14 +1,6 @@
 {
     "id": "chapter_01_07",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Friendly Hang-out",
-=======
     "title": "Friendship",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "title": "Friendship",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "productivity",
     "character": "takashi",
     "condition": [
@@ -16,15 +8,7 @@
         ["turn_no", 7, "lesser"]
     ],
     "description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["So you're trying to start up your own business? That's awesome! Hey, come meet me at the café for a break to tell me more. I want to hear all about it!"]
-=======
         "en": ["So you're trying to start up your own business? That's awesome! Hey, come down to the café for a break. I want to hear all about it!"]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "en": ["So you're trying to start up your own business? That's awesome! Hey, come down to the café for a break. I want to hear all about it!"]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_action": {
         "productivity": -15,
@@ -34,21 +18,6 @@
         "affection": 1
     },
     "no_action": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "productivity": 20,
-        "affection": -1
-    },
-    "yes_caption": "Sure, buddy!",
-    "no_caption": "Oooh... Raincheck? Gotta focus.",
-    "yes_description": {
-        "en": ["HAH! That's... audacious! But hey, I support you. What're friends for?"]
-    },
-    "no_description": {
-        "en": ["Oh, right. Wow, you're really taking this seriously. No worries... Maybe we can hang out later."]
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "productivity": 15,
         "affection": -1
     },
@@ -59,9 +28,5 @@
     },
     "no_description": {
         "en": ["Oh, right. Wow, you're really taking this seriously. Maybe we can hang out later."]
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

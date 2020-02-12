@@ -1,14 +1,6 @@
 {
     "id": "chapter_01_10",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "A disappointed friend",
-=======
     "title": "Disappointment",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "title": "Disappointment",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "mindfulness",
     "character": "takashi",
     "condition": [
@@ -16,15 +8,7 @@
         ["turn_no", 21, "greater"]
     ],
     "description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["It's like I don't know you any more? I feel like I've been making all the effort to keep our friendship going. I'm cheesed-off, seriously."]
-=======
         "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You have to step it up, okay?"]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "en": ["Where the heck have you been? I feel like I've been making all the effort to keep our friendship going. You have to step it up, okay?"]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_action": {
         "mindfulness": -10
@@ -33,15 +17,7 @@
         "mindfulness": -20
     },
     "yes_caption": "Sorry pal, I'll try to be more responsive.",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "no_caption": "Yeah, well, I've been busy. Give me a break.",
-=======
     "no_caption": "Yeah, well, I've been busy. Give me a break",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "no_caption": "Yeah, well, I've been busy. Give me a break",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "yes_description": {
         "en": ["none::Juggling friendships with work is hard, but you've decided it's worth it."]
     },

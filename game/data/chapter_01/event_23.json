@@ -1,12 +1,5 @@
 {
     "id": "chapter_01_23",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Stop or Drop",
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "energy",
     "character": "none",
     "condition": [
@@ -31,14 +24,6 @@
         "en": ["Your lack of focus means you don't get much done, but you spend a lot of time and energy trying."]
     },
     "no_description": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "en": ["You forget work for the day and go straight to bed."]
-=======
         "en": ["You eschew work for the day and go straight to bed."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-        "en": ["You eschew work for the day and go straight to bed."]
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

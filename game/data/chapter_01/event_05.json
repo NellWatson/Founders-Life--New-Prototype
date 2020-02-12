@@ -1,14 +1,6 @@
 {
     "id": "chapter_01_05",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "title": "Got Your Back",
-=======
     "title": "Support",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "title": "Support",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
@@ -19,37 +11,15 @@
     },
     "yes_action": {
         "productivity": 10,
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "mindfulness": 20,
-        "energy": 10
-    },
-    "no_action": {
-        "productivity": 20,
-=======
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "mindfulness": 10,
         "energy": 10
     },
     "no_action": {
         "productivity": 10,
-<<<<<<< HEAD
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "mindfulness": 10,
         "energy": 10
     },
     "yes_caption": "Thank you!",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "no_caption": "This is very helpful, Skylar!",
-=======
     "no_caption": "That's sweet, but...",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
-=======
-    "no_caption": "That's sweet, but...",
->>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "play_on": 2
 }
