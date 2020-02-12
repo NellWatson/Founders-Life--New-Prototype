@@ -1,5 +1,12 @@
 {
     "id": "chapter_01_26",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "Save for the Shakedown",
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "money",
     "character": "none",
     "condition": [
@@ -9,8 +16,18 @@
         "en": ["You've heard mutterings online about taxes for self-employed people being much higher than generally anticipated. You can set aside a large portion of money for taxes now, or take the risk to see if you make enough to pay it off in the future. Set aside some savings?"]
     },
     "yes_action": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "mindfulness": 30,
+        "money": -500
+=======
         "mindfulness": 20,
         "money": -2000
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "mindfulness": 20,
+        "money": -2000
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "no_action": {
         "mindfulness": -30

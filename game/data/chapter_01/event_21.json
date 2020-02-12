@@ -1,5 +1,12 @@
 {
     "id": "chapter_01_21",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "Time to Lift",
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "energy",
     "character": "none",
     "condition": [
@@ -10,12 +17,28 @@
     },
     "yes_action": {
         "productivity": -10,
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "energy": 10,
+=======
         "energy": -5,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "energy": -5,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "mindfulness": 20,
         "money": -100
     },
     "no_action": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "productivity": 10,
+=======
         "productivity": 5,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "productivity": 5,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "energy": -20,
         "mindfulness": -10
     },
@@ -25,6 +48,14 @@
         "en": ["The extra exercise makes you sore and grumbly, and at first you take a hit to productivity. However, within a few days your energy soars. You find you can stay focused much longer than before."]
     },
     "no_description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["You can't afford to lose an hour a day, not right now. You hunker down to keep working, with a niggling voice in the back of your mind reminding you that your health will take a hit for it."]
+=======
         "en": ["You can't afford to lose an hour a day, not at this juncture. You hunker down to keep working, with a niggling voice in the back of your mind reminding you that your health will take a hit for it."]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "en": ["You can't afford to lose an hour a day, not at this juncture. You hunker down to keep working, with a niggling voice in the back of your mind reminding you that your health will take a hit for it."]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

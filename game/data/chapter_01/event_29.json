@@ -12,12 +12,28 @@
         "mindfulness": 10
     },
     "no_action": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "productivity": -10
+=======
         "productivity": 0
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "productivity": 0
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_caption": "Go on a long walk",
     "no_caption": "Do some stretches and get back to work",
     "yes_description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["You take a long walk around the neighborhood to clear your mind. It helps, and you are more actually more energetic and productive when you get back to work."]
+=======
         "en": ["You take a long walk around the neighborhood to clear your mind. It helps, and you are more energetic and productive when you get back to work."]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "en": ["You take a long walk around the neighborhood to clear your mind. It helps, and you are more energetic and productive when you get back to work."]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "no_description": {
         "en": ["You stretch your muscles and, while they calm for a bit, they start to ache again after an hour. You accept the pain and try to work around it."]
