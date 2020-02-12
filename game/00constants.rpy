@@ -3,9 +3,9 @@ define SLOW_DISSOLVE = Dissolve(0.25)
 define EPISODE_NAMES = [
     "Meeting your Mentor",
     "Joining the Incubator",
-    "Chapter 3",
-    "Chapter 4",
-    "Chapter 5"
+    "Branching Out",
+    "Nose to the Grindstone",
+    "Go Big or Go Home"
     ]
 define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
 define CHAPTER_DAY_COUNT = 28
