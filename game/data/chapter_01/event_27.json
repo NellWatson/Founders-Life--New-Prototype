@@ -1,5 +1,12 @@
 {
     "id": "chapter_01_27",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "Family Crisis",
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "energy",
     "character": "skylar",
     "condition": [
@@ -14,6 +21,19 @@
         "mindfulness": -10
     },
     "no_action": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "productivity": 20,
+        "mindfulness": -20,
+        "affection": -1
+    },
+    "yes_caption": "...Okay. No worries. I'm on it...",
+    "no_caption": "She's *your** mother. Be an adult and handle it.",
+    "yes_description": {
+        "en": ["none::You hate these calls with Skylar's difficult mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]
+=======
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "productivity": 5,
         "mindfulness": -20,
         "affection": -1
@@ -22,6 +42,10 @@
     "no_caption": "She's your mother. You handle it.",
     "yes_description": {
         "en": ["none::You hate these calls with Skylar's panicky mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]
+<<<<<<< HEAD
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "no_description": {
         "en": ["none::You know the conversation will last the entire night, and you can't be bothered. Skylar looks at you as though seeing you for the first time."]

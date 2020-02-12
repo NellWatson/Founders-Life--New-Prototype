@@ -7,10 +7,23 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["You've stumbled across an app suite that seems pretty nifty. Organized checklists and calendar events dance in front of your eyes. Buy it and give it a shot?"]
+    },
+    "yes_action": {
+        "productivity": 20,
+=======
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "en": ["You've stumbled across an app suite that seems like it'll help your productivity. Organized checklists and calendar events dance in front of your eyes. Buy it and give it a shot?"]
     },
     "yes_action": {
         "productivity": 10,
+<<<<<<< HEAD
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "money": -100
     },
     "no_action": {
@@ -19,7 +32,15 @@
     "yes_caption": "Give it a shot.",
     "no_caption": "Save your money.",
     "yes_description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["It makes you a bit more productive for a week, but you can't figure out the fiddly mechanics to get it to do exactly what you wanted. At least it helped!"]
+=======
         "en": ["It makes you a bit more productive for a week, but you can't figure out how to get the complex mechanics to work for your precise needs. At least it helped!"]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "en": ["It makes you a bit more productive for a week, but you can't figure out how to get the complex mechanics to work for your precise needs. At least it helped!"]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "no_description": {
         "en": ["You've been down this path before. Productivity apps tend to distract more than help. You pass."]

@@ -1,5 +1,12 @@
 {
     "id": "chapter_01_15",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "Early Night Options",
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "money",
     "character": "none",
     "condition": [
@@ -24,6 +31,14 @@
         "en": ["You take the night off, basking in the sense of achievement you feel."]
     },
     "no_description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["If you're on a roll, keep it going. You get more done, but feel a bit depleted the next day."]
+=======
         "en": ["If you're on a roll, keep it going. You get more done, but feel a bit depleted after."]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "en": ["If you're on a roll, keep it going. You get more done, but feel a bit depleted after."]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

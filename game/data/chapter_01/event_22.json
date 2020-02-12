@@ -1,5 +1,12 @@
 {
     "id": "chapter_01_22",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "R & R",
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "money",
     "character": "none",
     "condition": [
@@ -13,12 +20,28 @@
         ]
     },
     "yes_action": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "productivity": -20,
+        "energy": 40,
+        "money": -400
+        "mindfulness": 40
+    },
+    "no_action": {
+        "productivity": 10,
+=======
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "productivity": 25,
         "energy": 10,
         "money": -400
     },
     "no_action": {
         "productivity": -10,
+<<<<<<< HEAD
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "energy": -10,
         "mindfulness": -10
     },

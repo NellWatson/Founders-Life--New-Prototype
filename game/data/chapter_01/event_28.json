@@ -8,15 +8,36 @@
         ["turn_no", 15, "lesser"]
     ],
     "description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["Payday! What should you do with it? You can save all of it, or take a little off the top to blow off some steam."]
+    },
+    "yes_action": {
+        "energy": 10,
+        "mindfulness": 10,
+=======
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "en": ["Payday! What should you do with it? You can save all of it, or spend a small portion to blow off some steam."]
     },
     "yes_action": {
         "energy": 10,
+<<<<<<< HEAD
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "money": 800
     },
     "no_action": {
         "mindfulness": -10,
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
         "energy": -10,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "energy": -10,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "money": 1000
     },
     "yes_caption": "Spend it.",

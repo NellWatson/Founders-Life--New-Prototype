@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_16",
+    "title": "Borked",
     "category": "productivity",
     "character": "none",
     "condition": [
@@ -16,15 +17,15 @@
     },
     "no_action": {
         "productivity": 5,
-        "mindfulness": -15,
+        "mindfulness": 10,
         "energy": -15
     },
-    "yes_caption": "Ask for help in forums.",
-    "no_caption": "Try to fix it yourself.",
+    "yes_caption": "Ask for help in online forums.",
+    "no_caption": "Try to fix it yourself with an old trick.",
     "yes_description": {
         "en": ["You ask for help in the forums, and by the next morning you have a solution. The program is up and running, ready for your next session."]
     },
     "no_description": {
-        "en": ["After cursing and struggling, you get it running again. You barely work afterwards, and the frustration follows you into your dreams."]
+        "en": ["After cursing and struggling, you get it running again, with some pride. You barely work afterwards, and the frustration follows you into your dreams."]
     }
 }

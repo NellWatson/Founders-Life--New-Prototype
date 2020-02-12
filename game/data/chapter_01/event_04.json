@@ -1,6 +1,14 @@
 {
     "id": "chapter_01_04",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "All Too Quiet",
+=======
     "title": "Ignoring",
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+    "title": "Ignoring",
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
@@ -20,12 +28,27 @@
         "energy": -10,
         "affection": -1
     },
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "yes_caption": "Sure thing, babe. You got it.",
+    "no_caption": "In a minute. I just need to finish something...",
+    "yes_description": {
+        "en": [
+            "\"Thank you so much, honey. It's just... I've had a hard week, and when you're working so hard, I feel like I've got to handle everything by myself.\"",
+            "\"It's okay. I know you're busy. It's just not the same as when we first started dating. I'm sorry. I'll try to get more used to it.\""
+=======
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "yes_caption": "All right.",
     "no_caption": "I'm not finished with work.",
     "yes_description": {
         "en": [
             "\"Thank you so much, honey. It's just... I've had a hard week, and when you're working so hard, I feel like I've got to handle everything by myself.\"",
             "\"It's just not the same as when we first started dating. I'm sorry. I'll try to get more used to it.\""
+<<<<<<< HEAD
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         ]
     },
     "no_description": {

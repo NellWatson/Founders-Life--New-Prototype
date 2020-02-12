@@ -1,5 +1,12 @@
 {
     "id": "chapter_01_24_02",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "Harder / Softer",
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "energy",
     "character": "none",
     "condition": [
@@ -14,13 +21,28 @@
         ]
     },
     "yes_action": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "productivity": 40,
+=======
         "productivity": 20,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "productivity": 20,
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "energy": -20,
         "mindfulness": -25,
         "money": -100
     },
     "no_action": {
         "mindfulness": 10
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "energy": 20,
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     },
     "yes_caption": "Commit to working harder.",
     "no_caption": "Fight the guilt. You're doing fine.",

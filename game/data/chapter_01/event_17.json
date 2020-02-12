@@ -1,6 +1,14 @@
 {
     "id": "chapter_01_17",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "title": "Elbow Grease",
+=======
     "title": "Help",
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+    "title": "Help",
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "category": "energy",
     "character": "skylar",
     "condition": [
@@ -21,16 +29,39 @@
     },
     "no_action": {
         "productivity": 10,
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "energy": 10,
+        "mindfulness": -30,
+        "affection": -1
+    },
+    "yes_caption": "Sorry, yep. I'll help out more.",
+    "no_caption": "I can't. I don't have time for dust",
+=======
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
         "energy": -30,
         "mindfulness": -30,
         "affection": -1
     },
     "yes_caption": "I'll help out more.",
     "no_caption": "I can't.",
+<<<<<<< HEAD
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     "yes_description": {
         "en": ["Thank you. We're a team. If we work together, we can both achieve the things we want to achieve. I never wanted to be the person who has no time for themselves because they're swamped with housework. Thank you for understanding."]
     },
     "no_description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["Oh yeah? We'll see how comfortable you are when you have to do everything yourself!"]
+=======
         "en": ["Oh yeah? We'll see how productive you are when you have to do everything yourself!"]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "en": ["Oh yeah? We'll see how productive you are when you have to do everything yourself!"]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }

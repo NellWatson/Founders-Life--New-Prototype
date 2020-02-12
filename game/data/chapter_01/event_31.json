@@ -19,6 +19,14 @@
         "en": ["You dig around for tutorials to help you improve and learn some things that will prove useful."]
     },
     "no_description": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "en": ["You take the night off and catch up on some rest."]
+=======
         "en": ["You take the night off and feel pretty good about it, too!"]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
+=======
+        "en": ["You take the night off and feel pretty good about it, too!"]
+>>>>>>> d126634cfe76d2654df28f3df9f6c18bb491e771
     }
 }
