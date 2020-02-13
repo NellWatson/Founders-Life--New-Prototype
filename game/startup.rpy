@@ -147,6 +147,9 @@ screen sprint_review(bg):
 screen startup_review(bg):
     add "bg review"
 
+    on "show":
+        action Play("music", "music/ost003.mp3")
+
     use fl_window("startup_preview", "SPRINT REVIEW", colour="#559fdd", width=900, height=550, cross=False):
         vbox:
             xsize 800

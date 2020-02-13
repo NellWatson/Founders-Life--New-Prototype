@@ -47,6 +47,9 @@ label week_event:
     $ event_code = _event.id
     $ event_name = _event.title
 
+    if _event.bg:
+        scene expression _event.bg with dissolve
+
     if _event.character.sprite:
         pass#show expression _event.character.sprite at center
 
@@ -173,6 +176,7 @@ label checkpoint:
 
     if turn_no and not (turn_no % 7):
 
+        play music "music/ost002.mp3" fadein 1.5
         play week_sound "sfx/fx003.wav"
         n normal "Congratulations [founder_name].\nYou have survived [total_days] days as a founder."
 

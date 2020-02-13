@@ -6,7 +6,7 @@ init python:
 
     class Event():
 
-        def __init__(self, id, title, category, character, description, yes_action, no_action={}, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, play_after="", repeatable=False, version="1"):
+        def __init__(self, id, title, category, character, description, yes_action, no_action={}, yes_caption="Yes", no_caption="No", yes_description={}, no_description={}, condition=[], play_on=0, play_after="", bg=None, repeatable=False, version="1"):
             self.id = id
             self.title = title
             self.category = category
@@ -21,6 +21,7 @@ init python:
             self._no_description = no_description
             self.play_on = play_on
             self.play_after = play_after
+            self.bg = bg
             self.version = version
             self.repeatable = repeatable
 
