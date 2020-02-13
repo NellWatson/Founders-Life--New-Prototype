@@ -1,6 +1,6 @@
 {
     "id": "chapter_01_05",
-    "title": "Support",
+    "title": "Got Your Back",
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
@@ -11,15 +11,15 @@
     },
     "yes_action": {
         "productivity": 10,
-        "mindfulness": 10,
+        "mindfulness": 20,
         "energy": 10
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "mindfulness": 10,
         "energy": 10
     },
     "yes_caption": "Thank you!",
-    "no_caption": "That's sweet, but...",
+    "no_caption": "This is very helpful, Skylar",
     "play_on": 2
 }

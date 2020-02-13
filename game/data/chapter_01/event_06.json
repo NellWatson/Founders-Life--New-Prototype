@@ -10,13 +10,13 @@
         "en": ["You finish working for the day and, even though you're tired, you can't help but feel like you haven't accomplished enough."]
     },
     "yes_action": {
-        "productivity": -20,
+        "productivity": 30,
         "energy": -20,
         "mindfulness": -20
     },
     "no_action": {
         "energy": -10,
-        "mindfulness": -10
+        "mindfulness": 10
     },
     "yes_caption": "Keep going.",
     "no_caption": "Call it a night.",
@@ -24,6 +24,6 @@
         "en": ["You keep going and get things done, but at a cost."]
     },
     "no_description": {
-        "en": ["You decide to call it a night, but the guilt stays with you. You don't know how late it is when you finally fall asleep."]
+        "en": ["You decide to call it a night, but thoughts of your work stay with you. You don't know how late it is when you finally fall asleep."]
     }
 }

@@ -2,12 +2,14 @@ label event_intro:
     show screen block_keys("game_menu")
 
     n normal "Welcome to Founder Life."
-    n "You've got an entirely new business to create from the bottom up."
+    n "For a while now you have dreamed of being your own boss, getting more control over your life."
+    n "You have a job at the moment, but want to break out and in your own venture."
+    n "You resolve today to start your own little business and see where that adventure can take you."
 
     $ founder_name = renpy.input("Let's start off with the basics - what's your name?", length=30) or "Sam"
     $ startup_name = renpy.input("What's your startup name?") or "StartUP Inc"
-    
-    n "Awesome. What's going to be your online DP?"
+
+    n "Awesome. Which self-portrait feels most right to you?"
 
     call screen choose_portrait
     n "You've got a lot of work to do, and your savings won't keep you afloat forever."
@@ -37,7 +39,7 @@ label event_intro:
     $ current_sprint = 0
     $ last_founder_level = founder_level
     $ _game_menu_screen = "preferences"
-    
+
     show screen hud
 
     #call screen level_up(current_bg)

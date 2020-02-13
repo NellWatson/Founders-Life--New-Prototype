@@ -1,6 +1,6 @@
 {
     "id": "chapter_01_04",
-    "title": "Call it",
+    "title": "Push on Through",
     "category": "mindfulness",
     "character": "none",
     "condition": [
@@ -14,7 +14,7 @@
         "mindfulness": 10
     },
     "no_action": {
-        "productivity": 5,
+        "productivity": 10,
         "energy": -20,
         "mindfulness": -10
     },
@@ -24,6 +24,7 @@
         "en": ["Breaks are important. Getting sick will set you back weeks, and you can't afford that."]
     },
     "no_description": {
-        "en": ["You criticize yourself to get through the laziness and get everything done, but feel exhausted afterwards."]
+        "en": ["You criticize yourself, frogmarch yourself through the laziness, and get everything done.,
+          But, my goodness how exhausted you feel afterwards."]
     }
 }

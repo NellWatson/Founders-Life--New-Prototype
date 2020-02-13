@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_20_02",
+    "title": "Hard Luck",
     "category": "mindfulness",
     "character": "none",
     "condition": [
@@ -16,6 +17,7 @@
     },
     "no_action": {
         "productivity": -10,
+        "energy": 10,
         "mindfulness": 20
     },
     "yes_caption": "Redo your work.",

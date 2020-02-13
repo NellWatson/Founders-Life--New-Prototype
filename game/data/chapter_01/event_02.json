@@ -7,7 +7,7 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Hey, #NAME! I know you're busy with your work, but I could use someone to talk to tonight."]
+        "en": ["Hey, #NAME! I know you're busy with your work, but I could use someone to talk to tonight about family stuff."]
     },
     "yes_action": {
         "productivity": -15,
@@ -22,9 +22,9 @@
     "yes_caption": "I'm here for you.",
     "no_caption": "I'm sorry.",
     "yes_description": {
-        "en": ["Thank you so much for being there for me and taking time away from your work."]
+        "en": ["Thank you so much for spending time with me. I know it's hard for you to focus on other things right now."]
     },
     "no_description": {
-        "en": ["So your work is more important than me? I see."]
+        "en": ["Oh, so your work is more important than me? Fine."]
     }
 }
