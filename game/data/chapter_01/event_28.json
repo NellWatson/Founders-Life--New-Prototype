@@ -8,10 +8,11 @@
         ["turn_no", 15, "lesser"]
     ],
     "description": {
-        "en": ["Payday! What should you do with it? You can save all of it, or spend a small portion to blow off some steam."]
+        "en": ["Payday! What should you do with it? You can save all of it, or take a little from the top to blow off some steam."]
     },
     "yes_action": {
         "energy": 10,
+        "mindfulness": 20,
         "money": 800
     },
     "no_action": {
@@ -23,9 +24,9 @@
     "no_caption": "Save it.",
 
     "yes_description": {
-        "en": ["Sometimes you have to have a little fun!"]
+        "en": ["Sometimes you have to have live a little!"]
     },
     "no_description": {
-        "en": ["It requires willpower not to spend it all, but at least you've helped yourself somewhere down the line."]
+        "en": ["It requires willpower not to spend it all, but at least you know you've helped yourself somewhere down the line."]
     }
 }

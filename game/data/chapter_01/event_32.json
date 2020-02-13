@@ -9,7 +9,7 @@
     "yes_action": {
         "energy": -10,
         "mindfulness": -10,
-        "money": 100
+        "money": 200
     },
     "no_action": {
         "energy": 10,

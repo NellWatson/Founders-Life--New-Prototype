@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_23",
+    "title": "Stop or Drop",
     "category": "energy",
     "character": "none",
     "condition": [
@@ -18,12 +19,12 @@
         "energy": 10,
         "mindfulness": 10
     },
-    "yes_caption": "Work.",
-    "no_caption": "Too tired.",
+    "yes_caption": "Work onward!",
+    "no_caption": "Too tired. Rest!",
     "yes_description": {
         "en": ["Your lack of focus means you don't get much done, but you spend a lot of time and energy trying."]
     },
     "no_description": {
-        "en": ["You eschew work for the day and go straight to bed."]
+        "en": ["You forget work for the day and go straight to bed."]
     }
 }

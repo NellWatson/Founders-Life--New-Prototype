@@ -114,7 +114,7 @@ v 0.2.0.0311
 
 v 0.2.0.0307
 ------------
-* Stop default event from appearing in regular event que. Closes #147.
+* Stop default event from appearing in regular event queue. Closes #147.
 * Assign the none image to Dominique. Closes #146.
 
 v 0.2.0.0304
@@ -284,7 +284,7 @@ v 0.0.7-1215
 v 0.0.6-1214-2
 --------------
 * Closed Issue #102, #103, #104, #108, #109, #110, #111.
-* Removed redundant image files and moved all the ui assets to gui/
+* Removed redundant image files and moved all the ui assets to gui.
 
 v 0.0.6-1214
 ------------
@@ -336,7 +336,7 @@ v 0.0.3-1113
 * Closed Issue #79. Flash money values on update.
 * Closed Issue #80. Tweaked Performance Review screen
 * Closed Issue #81. Addded missing End of Ceremony.
-* Closed Isuue #82. Pushed End of Episode back.
+* Closed Issue #82. Pushed End of Episode back.
 
 v 0.0.3-1029
 ------------

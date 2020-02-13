@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_11",
+    "title": "Freeform Formulaic",
     "category": "productivity",
     "character": "none",
     "condition": [
@@ -10,7 +11,8 @@
     },
     "yes_action": {
         "productivity": 10,
-        "energy": -10
+        "energy": -10,
+        "mindfulness": 10
     },
     "no_action": {
         "productivity": -10,
@@ -19,9 +21,9 @@
     "yes_caption": "Planning leads to success.",
     "no_caption": "Planning stifles my creativity.",
     "yes_description": {
-        "en": ["Knowing where you're going fills you with confidence, though planning requires some energy."]
+        "en": ["Knowing where you're going gives you some focus, though planning requires some energy."]
     },
     "no_description": {
-        "en": ["You might not know how to spend every minute of your time, but the freedom that comes with that energizes and excites you."]
+        "en": ["You might not know how to spend every minute of your time, but the freedom that comes with that feels liberating."]
     }
 }

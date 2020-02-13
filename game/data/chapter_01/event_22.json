@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_22",
+    "title": "R & R",
     "category": "money",
     "character": "none",
     "condition": [
@@ -8,18 +9,19 @@
     "description": {
         "en": [
             "Roger calls you just as you're getting ready for work.",
-            "Roger::One of the projects you're working on is cancelled. There's no need for you to come into work today.",
-            "Take the hit pay and the day off?"
+            "Roger::One of the projects you're working on is cancelled. There's no need for you to come into work this week.",
+            "Take the hit in pay for a chill week away from home, or spend the time on your own work?"
         ]
     },
     "yes_action": {
-        "productivity": 25,
-        "energy": 10,
-        "money": -400
+        "productivity": 10,
+        "energy": 40,
+        "mindfulness": -10,
+        "money": -300
     },
     "no_action": {
-        "productivity": -10,
-        "energy": -10,
+        "productivity": 20,
+        "energy": 10,
         "mindfulness": -10
     },
     "yes_caption": "Vacation time!",

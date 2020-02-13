@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_24_02",
+    "title": "Harder / Softer",
     "category": "energy",
     "character": "none",
     "condition": [
@@ -8,19 +9,18 @@
     ],
     "description": {
         "en": [
-            "You've been self-employed for a while now, but you worry you aren't working hard enough.",
-            "This is your one shot to have your own company. Who knows when you'll get another chance?",
+            "You've been somewhat self-employed for a while now, but you worry you aren't working hard enough.",
+            "This feels like your big shot to have your own company. Who knows when you'll get another chance?",
             "Have you been giving this your all? Guilt creeps in to you."
         ]
     },
     "yes_action": {
-        "productivity": 20,
-        "energy": -20,
-        "mindfulness": -25,
-        "money": -100
+        "productivity": 40,
+        "energy": -10,
+        "mindfulness": -10,
     },
     "no_action": {
-        "mindfulness": 10
+        "mindfulness": 30
     },
     "yes_caption": "Commit to working harder.",
     "no_caption": "Fight the guilt. You're doing fine.",

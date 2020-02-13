@@ -1,5 +1,6 @@
 {
     "id": "chapter_01_20",
+    "title": "Blank Slate",
     "category": "mindfulness",
     "character": "none",
     "condition": [
@@ -10,7 +11,7 @@
         "en": ["The power goes out just as you're about to save your work for today. It comes back on immediately, but you've lost all your work."]
     },
     "yes_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "no_action": {
         "energy": 10,

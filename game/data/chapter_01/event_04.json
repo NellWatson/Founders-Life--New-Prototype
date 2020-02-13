@@ -1,6 +1,6 @@
 {
     "id": "chapter_01_04",
-    "title": "Ignoring",
+    "title": "All Too Quiet",
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
@@ -20,15 +20,15 @@
         "energy": -10,
         "affection": -1
     },
-    "yes_caption": "All right.",
-    "no_caption": "I'm not finished with work.",
+    "yes_caption": "Sure thing, babe. You got it.",
+    "no_caption": "In a minute. I just need to finish something...",
     "yes_description": {
         "en": [
             "\"Thank you so much, honey. It's just... I've had a hard week, and when you're working so hard, I feel like I've got to handle everything by myself.\"",
-            "\"It's just not the same as when we first started dating. I'm sorry. I'll try to get more used to it.\""
+            "\"It's okay. I know you're busy. It's just not the same as when we first started dating. I'm sorry. I'll try to get more used to it.\""
         ]
     },
     "no_description": {
-        "en": ["Did you listen to me at all?"]
+        "en": ["Did you hear anything I said?"]
     }
 }
