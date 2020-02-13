@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.2.5.0213
+------------
+* Allow events to have an event specific bg.
+* Play different music on week completion.
+* Allow players to opt out of data collection.
+* Add thought bubble side image.
+
 v 0.2.5.0212
 ------------
 * Add thought bubble icon portrait.

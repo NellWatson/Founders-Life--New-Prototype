@@ -134,7 +134,7 @@ screen say(who, what, side_image=None):
             add AlphaMask(side_image, "gui/who_mask.png") xpos 78 ypos 757
         else:
             add AlphaMask(SideImage(), "gui/who_mask.png") xpos 78 ypos 757
-    else:
+    elif what:
         add "gui/thought.png" xpos 78 ypos 757
         add AlphaMask(founder_portrait, "gui/thought_mask.png") xpos 78 ypos 757
 ## Input screen ################################################################
