@@ -136,18 +136,38 @@ screen choose_portrait():
     add Solid("#00000050")
     text "Choose your online account DP."  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.05
 
-    vpgrid:
+    vbox:
         xalign 0.5
         yalign 0.5
+        xsize 1352
         spacing 40
-        rows 2
+        
+        hbox:
+            xalign 0.5
+            yalign 0.5
+            spacing 40
 
-        for i in character_list:
-            button:
-                xysize (308, 308)
+            for i in character_list[0:4]:
+                button:
+                    xysize (308, 308)
 
-                idle_background Circle(radius=154, colour="#559fdd", internal_circle="#ffffff", internal_radius=138)
-                hover_background Circle(radius=154, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
+                    idle_background Circle(radius=154, colour="#559fdd", internal_circle="#ffffff", internal_radius=138)
+                    hover_background Circle(radius=154, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
 
-                add AlphaMask("images/contacts/mc/" + i + ".png", "gui/who_mask.png") xalign 0.5 yalign 0.5
-                action SetVariable("founder_portrait", i), Return()
+                    add AlphaMask("images/contacts/mc/" + i + ".png", "gui/who_mask.png") xalign 0.5 yalign 0.5
+                    action SetVariable("founder_portrait", i), Return()
+        
+        hbox:
+            xalign 0.5
+            yalign 0.5
+            spacing 40
+
+            for i in character_list[4:]:
+                button:
+                    xysize (308, 308)
+
+                    idle_background Circle(radius=154, colour="#559fdd", internal_circle="#ffffff", internal_radius=138)
+                    hover_background Circle(radius=154, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
+
+                    add AlphaMask("images/contacts/mc/" + i + ".png", "gui/who_mask.png") xalign 0.5 yalign 0.5
+                    action SetVariable("founder_portrait", i), Return()

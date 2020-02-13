@@ -28,5 +28,6 @@
             "Ouch."
         ]
     },
-    "play_on": 1
+    "play_on": 1,
+    "bg": "bg spaceship"
 }
