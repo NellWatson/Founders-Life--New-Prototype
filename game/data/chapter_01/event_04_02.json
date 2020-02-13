@@ -24,7 +24,9 @@
         "en": ["Breaks are important. Getting sick will set you back weeks, and you can't afford that."]
     },
     "no_description": {
-        "en": ["You criticize yourself, frogmarch yourself through the laziness, and get everything done.,
-          But, my goodness how exhausted you feel afterwards."]
+        "en": [
+            "You criticize yourself, frogmarch yourself through the laziness, and get everything done.",
+            "But, my goodness how exhausted you feel afterwards."
+        ]
     }
 }
