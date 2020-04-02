@@ -11,13 +11,13 @@
     },
     "yes_action": {
         "mindfulness": -10,
-        "money": 100
+        "money": 200
     },
     "no_action": {
         "productivity": -30,
         "energy": -20,
         "mindfulness": 20,
-        "money": 250
+        "money": 350
     },
     "yes_caption": "Send it off",
     "no_caption": "Redo it",

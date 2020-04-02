@@ -7,15 +7,15 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You find your focus drifting away from work. You don't feel all that well tonight, either."]
+        "en": ["You find your focus drifting away from work. You don't feel all that well tonight, either. A little shivery."]
     },
     "yes_action": {
         "energy": 10,
         "mindfulness": 10
     },
     "no_action": {
-        "productivity": 10,
-        "energy": -20,
+        "productivity": 30,
+        "energy": -30,
         "mindfulness": -10
     },
     "yes_caption": "Head to bed.",

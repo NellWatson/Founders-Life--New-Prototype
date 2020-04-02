@@ -8,8 +8,8 @@
     ],
     "description": {
         "en": [
-            "Honey, I noticed you've been putting a lot less effort into your job lately. Roger seems to be getting upset with you.",
-            "Please remember, {i}this{/i} is the job that's paying our bills. You can't risk losing it."
+            "Honey, I noticed you've been putting a lot less effort into your job lately. Roger phoned looking for you sounding even mpre stressed-out than usual.",
+            "Please remember, {i}this{/i} is job that's helping to pay our bills – yours and mine both. You can't risk losing it."
         ]
     },
     "yes_action": {
@@ -22,8 +22,8 @@
         "mindfulness": 10,
         "affection": 1
     },
-    "yes_caption": "I'll be quitting soon enough",
-    "no_caption": "Okay, I'll work harder",
+    "yes_caption": "Ehh, I'll be quitting soon enough",
+    "no_caption": "Okay, I'll grit my teeth, and give Roger and the job more attention",
     "yes_description": {
         "en": [
             "skylar::\"You'll - I mean, I know you're planning on doing your own thing full-time, but --\"",

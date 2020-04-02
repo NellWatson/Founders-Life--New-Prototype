@@ -1,13 +1,13 @@
 {
     "id": "chapter_01_02",
-    "title": "Someone to Talk to",
+    "title": "Affection and Aversion",
     "category": "mindfulness",
     "character": "skylar",
     "condition": [
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["Hey, #NAME! I know you're busy with your work, but I could use someone to talk to tonight about family stuff."]
+        "en": ["Hey, #NAME! I know you're busy with your work, but can you help me make sense of some of my family craziness?"]
     },
     "yes_action": {
         "productivity": -15,
@@ -19,12 +19,12 @@
         "mindfulness": -10,
         "affection": -1
     },
-    "yes_caption": "I'm here for you.",
-    "no_caption": "I'm sorry.",
+    "yes_caption": "Sure, Skylar, I'm here for you.",
+    "no_caption": "Again? I'm sorry. I just don't have time for this stuff now.",
     "yes_description": {
-        "en": ["Thank you so much for spending time with me. I know it's hard for you to focus on other things right now."]
+        "en": ["I really appreciate you listening. I know it's hard for you to focus on other things right now."]
     },
     "no_description": {
-        "en": ["Oh, so your work is more important than me? Fine."]
+        "en": ["Oh, so your work has priority over my needs? Fine."]
     }
 }

@@ -1,6 +1,6 @@
 {
     "id": "chapter_02_01",
-    "title": "Freelance",
+    "title": "Freelance or Famine",
     "category": "money",
     "character": "none",
     "description": {
@@ -9,25 +9,25 @@
         ]
     },
     "yes_action": {
-        "productivity": -10,
-        "energy": -10,
+        "productivity": -20,
+        "energy": -20,
         "mindfulness": -10,
-        "money": 100
+        "money": 500
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "energy": -10
     },
     "yes_caption": "Take on more freelance work",
     "no_caption": "Work on own project",
     "yes_description": {
         "en": [
-            "Despite it being same kind of work, it's far less interesting when it's for a project that isn't yours. Still, you get it done."
+            "Despite it being broadly similar work, it's far less interesting when it's for a project that isn't yours. Still, you get it done."
         ]
     },
     "no_description": {
         "en": [
-            "Getting this to market is what's going to get you the big bucks. You're now a few hours closer to a working prototype."
+            "Getting something half-way decent to market is what counts in the long run. You're now a few hours closer to a working prototype."
         ]
     }
 }

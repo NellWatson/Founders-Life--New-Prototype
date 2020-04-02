@@ -5,13 +5,11 @@
     "character": "none",
     "description": {
         "en": [
-            "It turns out one of the companies you freelanced for just a few weeks ago has gone bankrupt. Thankfully, you've already gotten paid, but the news is a grim reminder of what you're risking."
+            "It turns out one of the companies you freelanced for just a few weeks ago has apparently gone 'into adminstration' i.e. bankruptcy. Thankfully, you've already gotten paid, but the news is a grim reminder of what you're risking."
         ]
     },
     "yes_action": {
-        "mindfulness": 20
-    },
-    "no_action": {
+        "mindfulness": -10
         "money": 300
     },
     "yes_caption": "Get back to work."

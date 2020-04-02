@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "A client you've been working with emails you; they need the job done a full week sooner than originally anticipated! You'd have to pull an all-nighter to get it done, and even then you're not sure you can do it."
+            "A client you've been working with emails you; they need the job done a full week sooner than originally anticipated! Yikes! You'd have to pull an all-nighter to get it done, and even then you're not sure you can pull it off."
         ]
     },
     "yes_action": {
@@ -14,11 +14,11 @@
         "money": 500
     },
     "no_action": {
-        "mindfulness": 10,
+        "mindfulness": 20,
         "money": 200
     },
-    "yes_caption": "Put your nose to the grindstone.",
-    "no_caption": "Apologize, but stick to the original deadline.",
+    "yes_caption": "Put your nose to the grindstone, and burn the candle at both ends.",
+    "no_caption": "Apologize, but insist on the original deadline on principle of not being railroaded into stress.",
     "yes_description": {
         "en": [
             "You work with intense focus (and several cups of coffee) to finish the job overnight. It's not perfect, but the client is ecstatic and sends you a nice bonus for the work."

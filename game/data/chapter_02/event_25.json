@@ -1,6 +1,6 @@
 {
     "id": "chapter_02_25",
-    "title": "More than was Asked",
+    "title": "Change of Scope",
     "category": "money",
     "character": "none",
     "description": {
@@ -20,12 +20,12 @@
     "no_caption": "Don't do the implementation",
     "yes_description": {
         "en": [
-            "You do the work and the client pays you, no questions asked. You revise your website to make sure this miscommunication won't happen again."
+            "You do the extra work despite not really having the spare time or energy for it, and the client pays you a nice bonus. You revise your website to make sure this miscommunication won't happen again."
         ]
     },
     "no_description": {
         "en": [
-            "The client explains they thought implementation was included and wouldn't have hired you if they knew it wasn't. Still, they pay you - less than what was initially promised."
+            "The client states that they thought implementation was included and wouldn't have hired you if they knew it wasn't. Still, at least they pay you."
         ]
     }
 }

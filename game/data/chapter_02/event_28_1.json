@@ -9,7 +9,7 @@
     "description": {
         "en": [
             "Okay, #NAME. It's time to see how you did.",
-            "You made #MONEY_MONTH this month. That's over $2,000. You did it!"
+            "You made #MONEY_MONTH this month. That's over $2,000. Hurrah, you did it!"
         ]
     },
     "yes_action": {

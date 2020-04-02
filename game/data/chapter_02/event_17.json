@@ -17,16 +17,16 @@
         "mindfulness": -10
     },
     "no_action": {
-        "mindfulness": -10,
+        "productivity": 20,
         "affection": -1
     },
-    "yes_caption": "Proudly show her your work",
-    "no_caption": "Sorry, it's not ready",
+    "yes_caption": "Proudly show Skylar your work",
+    "no_caption": "Sorry, it's not ready yet",
     "yes_description": {
         "en": [
             "Hmmm, I see. Wait, is this all you have?",
             "Oh, I'm sorry #NAME! I didn't mean it like that!",
-            "You're doing great. I mean it."
+            "You're doing great. I mean it!"
         ]
     },
     "no_description": {

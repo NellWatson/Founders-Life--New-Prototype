@@ -9,8 +9,8 @@
     "description": {
         "en": [
             "Hey, #NAME. I just came by to say... goodbye, really.",
-            "You aren't the same person I used to know. You've become really stingy and grumpy and stressed...",
-            "We barely saw each other last month. I kinda thought I meant more to you than that. I'm going to get out of your hair, since that's clearly what you want from me."
+            "You aren't the same person I used to know. You've become really stingy, and grumpy, and stressed...",
+            "We barely saw each other last month. I kinda thought I meant more to you than that. I'm going to stay out of your hair, since that's clearly what you want from me."
         ]
     },
     "yes_action": {
@@ -19,8 +19,8 @@
     "no_action": {
         "mindfulness": -20
     },
-    "yes_caption": "What are you talking about?",
-    "no_caption": "Fine. Good riddance!",
+    "yes_caption": "Takashi, what are you talking about?",
+    "no_caption": "Yeah, Ok. Well, maybe I just grew up a little. You could try doing the same.",
     "yes_description": {
         "en": [
             "You know, sometimes people change. Circumstances change.",
@@ -29,7 +29,7 @@
     },
     "no_description": {
         "en": [
-            "Yeah. Don't know why I expected any different."
+            "Whatever. "
         ]
     }
 }

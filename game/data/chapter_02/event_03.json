@@ -10,29 +10,29 @@
         "en": [
             "Hey, I need to talk to you. I looked into how much money you made last month... and then looked over your general business plan.",
             "I know I was going to let you do your own thing, but this is crazy. We're a partnership, and I can't help but feel like you're putting us in danger. There's no way this is going to be sustainable.",
-            "Still, I know this means a lot to you. Even if I want you to stop, that isn't fair of me to ask. So, I have a proposition. If you can make enough money to cover rent this month - $2000 - I'll be quiet and trust your decisions from now on.",
-            "But if you can't do that, then I can't support you in this."
+            "Still, I know this means a lot to you. Even if I want you to stop, that isn't fair of me to ask either. So, I have a proposition. If you can make enough money to cover rent and expenses this month and next, with a little extra - say $2000 - I'll be quiet and trust your decisions from now on.",
+            "But if you can't make that happen, then I don't think this is going to work out for me."
         ]
     },
     "yes_action": {
-        "energy": -10,
-        "mindfulness": -10
+        "energy": 10,
+        "mindfulness": 10
     },
     "no_action": {
         "energy": -10,
         "mindfulness": -30
     },
-    "yes_caption": "I accept the challenge.",
-    "no_caption": "But what if I fail?",
+    "yes_caption": "Ok. Challenge accepted.",
+    "no_caption": "I probably can do that, but I should set my own challenges for me. Whatever.",
     "yes_description": {
         "en": [
-            "skylar::\"Okay. Thank you for being okay with this. It's just so risky. You know how my mom is - running her little scams, always chasing the next big money-making scheme...\"",
-            "skylar::\"It's so scary for me. Hopefully this will help.\""
+            "skylar::\"Okay. Thank you for being okay with this. It's just so risky. You know how my mom is - always chasing some money-making scheme...\"",
+            "skylar::\"This is a little out of my comfort zone, quite honestly. Hopefully this will help me not to freak out.\""
         ]
     },
     "no_description": {
         "en": [
-            "skylar::\"If you fail...\"",
+            "skylar::\"If you cannot, or will not, make bank...\"",
             "skylar::\"I don't know what will happen. I don't want to force you to give up your dream, but I just - I can't live with this kind of insecurity.\""
         ]
     }
