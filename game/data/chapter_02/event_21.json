@@ -6,7 +6,7 @@
     "description": {
         "en": [
             "All these hours spent craning over your desk are doing a number on your back. The resulting pain is affecting how well you work.",
-            "You can invest in some ergonomic office furniture, but it would cost quite a bit."
+            "You could invest in some ergonomic office furniture, but that stuff is expensive."
         ]
     },
     "yes_action": {
@@ -27,7 +27,7 @@
     },
     "no_description": {
         "en": [
-            "You tell yourself you'll do stretches while working, and for a few days you do, but then it slips your mind. The pain ends up becoming a constant."
+            "You tell yourself you'll do stretches while working, and for a few days you do, but then it slips your mind. The pain comes back now and then for a long time."
         ]
     }
 }

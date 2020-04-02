@@ -10,14 +10,14 @@
         "en": [
             "Hey, #NAME. I was thinking about it yesterday, and... I'm sorry.",
             "You've been trying to give this your all. I think that's amazing! If I'm anywhere close to being a good enough friend of yours, I should support you - not get all selfish and take up your time.",
-            "I'm sorry I've been distracting you. I can wait a while. You go get your dream. I'll be here when you come back."
+            "I'm sorry I've been distracting you. I can wait a while. You go slay dream. I'll still be here when you come up for air."
         ]
     },
     "yes_action": {
         "energy": 10,
-        "mindfulness": 20
+        "mindfulness": 30
     },
-    "yes_caption": "Thank you, Takashi.",
+    "yes_caption": "Thank you, Takashi. You're the best pal anyone could ask for.",
     "yes_description": {
         "en": [
             "Of course, #NAME. I got your back!"

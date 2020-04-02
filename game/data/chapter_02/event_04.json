@@ -12,23 +12,24 @@
     "yes_action": {
         "productivity": -20,
         "energy": -20,
-        "mindfulness": -20,
-        "money": 500
+        "mindfulness": -10,
+        "money": 1000
     },
     "no_action": {
-        "productivity": -10,
-        "money": 100
+        "productivity": 10,
+        "mindfulness": 10,
+        "money": 200
     },
     "yes_caption": "The customer is always right.",
     "no_caption": "Stick with the original plan.",
     "yes_description": {
         "en": [
-            "You grit your teeth and put in the extra work. The client thanks you and you finally get paid."
+            "You grit your teeth and put in the extra work, checking to see if it's 'warmer or colder' at each stage. The client thanks you and you eventually get paid."
         ]
     },
     "no_description": {
         "en": [
-            "The client is upset. Why hire you if you aren't willing to get the job done right? They pay you for your time so far, but you lose the gig."
+            "The client is upset. \"Why hire you if you aren't willing to get the job done right?\" They pay you for your time so far, but you lose the gig. Maybe a blessing."
         ]
     }
 }

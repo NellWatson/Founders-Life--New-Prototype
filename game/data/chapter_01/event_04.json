@@ -7,7 +7,7 @@
         ["turn_no", 21, "greater"]
     ],
     "description": {
-        "en": ["#NAME, I feel like you've been ignoring me. I know your new business takes up a lot of your time, but you can't just wave me to the side because you're busy. Please spend some time with me."]
+        "en": ["#NAME, I feel like you've been ignoring me. I know your new business takes up a lot of your time, but you can't just wave me to the side because you're busy. Please let's spend some time with me."]
     },
     "yes_action": {
         "productivity": -10,
@@ -20,8 +20,8 @@
         "energy": -10,
         "affection": -1
     },
-    "yes_caption": "Sure thing, babe. You got it.",
-    "no_caption": "In a minute. I just need to finish something...",
+    "yes_caption": "You're right, my bad. Sure thing, babe. You got it.",
+    "no_caption": "I know, but this is my life now, at least for a while. I'm sorry.",
     "yes_description": {
         "en": [
             "\"Thank you so much, honey. It's just... I've had a hard week, and when you're working so hard, I feel like I've got to handle everything by myself.\"",
@@ -29,6 +29,6 @@
         ]
     },
     "no_description": {
-        "en": ["Did you hear anything I said?"]
+        "en": ["Are you serious? Maybe that's so, but I didn't sign up for this."]
     }
 }

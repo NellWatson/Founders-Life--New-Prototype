@@ -5,7 +5,7 @@
     "character": "none",
     "description": {
         "en": [
-            "Skylar's been worried about the business, and you've yet to discuss how little money you brought in last month. Should you be honest and upfront about it or try not to cause worry?"
+            "Skylar's been worried about the business, and you've yet to discuss how little money you brought in last month. Should you be honest and upfront about it, or try not to cause worry?"
         ]
     },
     "yes_action": {
@@ -14,7 +14,7 @@
         "mindfulness": 10
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 20,
         "mindfulness": -10,
         "skylar:affection": -1
     },
@@ -22,7 +22,7 @@
     "no_caption": "Try not to cause worry",
     "yes_description": {
         "en": [
-            "The frown on Skylar's face deepens. You knew this wasn't good news, but her reaction is really demotivating. At least your conscience is clear."
+            "The frown on Skylar's face deepens. You knew this wasn't good news, but Skylar's reaction is really demotivating. At least your conscience is clear."
         ]
     },
     "no_description": {

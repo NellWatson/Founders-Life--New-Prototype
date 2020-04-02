@@ -21,7 +21,7 @@
     "no_action": {
         "energy": -20,
         "mindfulness": -10,
-        "money": 300
+        "money": 500
     },
     "yes_caption": "Work on your own project",
     "no_caption": "Finish up a client's job",
@@ -32,7 +32,7 @@
     },
     "no_description": {
         "en": [
-            "No. You have to keep the endgame in sight. You finish up a client's job and, even though you're upset the entire time, the sight of new money coming into your account stabilizes your mood somewhat."
+            "No. You have to play the long game. You finish up a client's job and, even though you're weary the entire time, the sight of new money coming into your account stabilizes your mood somewhat."
         ]
     }
 }

@@ -1,33 +1,33 @@
 {
     "id": "chapter_02_08",
-    "title": "No Work",
+    "title": "Day Off",
     "category": "energy",
     "character": "none",
     "description": {
         "en": [
-            "You haven't been getting as many job offers of late, so you have no work for today. Spend the time applying for jobs and sprucing up your website, or take the day to look after yourself?"
+            "You haven't been getting as many job offers of late, so you have no work for today. You could spend the time applying for jobs and sprucing up your website, or take the day to look after yourself?"
         ]
     },
     "yes_action": {
-        "productivity": 10,
+        "productivity": 20,
         "energy": -10,
         "mindfulness": 10
     },
     "no_action": {
         "productivity": -10,
         "energy": 20,
-        "mindfulness": 20
+        "mindfulness": 30
     },
     "yes_caption": "Apply for jobs",
     "no_caption": "Take the day off",
     "yes_description": {
         "en": [
-            "You add your most recent work to your resume and get your name out there. The hope that some of it will pay off puts you in a good mood."
+            "You add your most recent work to your resume and portfolio, and get your name out there. The hope that some of it will pay off puts you in a good mood."
         ]
     },
     "no_description": {
         "en": [
-            "You really needed this day off. It's not healthy to work every hour of the day."
+            "You really needed a 'duvet day'. It's a welcome indulgence."
         ]
     }
 }
