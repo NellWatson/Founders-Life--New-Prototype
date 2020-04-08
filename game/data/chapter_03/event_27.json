@@ -16,7 +16,7 @@
         "affection": 1
     },
     "no_action": {
-        "energy": -10,
+        "energy": -20,
         "mindfulness": -10
     },
     "yes_caption": "Rest",
@@ -24,7 +24,7 @@
     "yes_description": {
         "en": [
             "You take the night off to rest as best as you can.",
-            "You're not sure it's helping you destress, but at least you're not getting more stressed. You manage to get a somewhat decent sleep."
+            "You're not sure it's helping you de-stress, but at least you're not getting any more wrapped-up. You manage to get a somewhat decent sleep."
         ]
     },
     "no_description": {

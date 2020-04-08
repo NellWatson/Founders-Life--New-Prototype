@@ -1,6 +1,6 @@
 {
     "id": "chapter_03_12",
-    "title": "Elevator Pitch 3",
+    "title": "Elevator Catch",
     "category": "mindfulness",
     "character": "none",
     "condition": [
@@ -8,16 +8,17 @@
     ],
     "description": {
         "en": [
-            "After the last round of practice, you're again contemplating taking your elevator pitch out on the road. However, this time the prospect exhausts you; you've been so busy prepping for the meeting you haven't taken any time off. What should you do?"
+            "After the last round of practice, you're again contemplating taking your elevator pitch out on the road to your identified target end-users. However, this time the prospect exhausts you; you've been so busy prepping for the meeting you haven't taken any time off. What should you do?"
         ]
     },
     "yes_action": {
         "productivity": 10,
-        "energy": -10,
+        "energy": -20,
         "affection": 1
     },
     "no_action": {
-        "energy": 10
+        "energy": 20,
+        "mindfulness": -10
     },
     "yes_caption": "Pitch to strangers",
     "no_caption": "Take the night off",
@@ -28,7 +29,7 @@
     },
     "no_description": {
         "en": [
-            "You take the night to rest, but find you can't much set your mind at ease. The day of the pitch is getting closer, and you can't help but feel your life will permanently change - for better or for worse - on the 28th.",
+            "You take the night to rest, but find you can't much set your mind at ease. The day of the big pitch is getting closer, and you can't help but feel your life will permanently change - for better or for worse - on the 28th.",
             "At least your body gets some rest."
         ]
     }

@@ -5,15 +5,15 @@
     "character": "none",
     "description": {
         "en": [
-            "As you're drawing up plans to include in the presentation, you realize your deadlines might be a bit optimistic.",
-            "Setting these goals for yourself, personally, was fine to do at first. No one would be upset if something went awry. But perhaps you should be a bit more cautious in pitching to a third party. Then again, if you're too cautious they might worry the opportunity window will close."
+            "As you're drawing up plans to include in the presentation, you realize the projected deadlines might be a bit optimistic.",
+            "Setting these goals for yourself, personally, was fine to do at first. No one would be upset if something went awry. But perhaps you should be a bit more cautious in pitching to a third party. Then again, if you're too cautious they might think you aren't serious."
         ]
     },
     "yes_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "no_action": {
-        "mindfulness": 10,
+        "mindfulness": 20,
         "affection": 1
     },
     "yes_caption": "Optimistic deadlines",
@@ -25,7 +25,7 @@
     },
     "no_description": {
         "en": [
-            "You settle on cautious deadlines. Unexpected problems could always come up, and you'd rather risk no investor than an unhappy one who wants to pull out."
+            "You settle on cautious deadlines. Unexpected problems could always come up, and you'd rather risk no investor now than an unhappy one with unmet expectations who wants to pull out."
         ]
     }
 }

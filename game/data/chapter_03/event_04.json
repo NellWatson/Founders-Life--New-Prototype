@@ -1,6 +1,6 @@
 {
     "id": "chapter_03_04",
-    "title": "Elevator Pitch 2",
+    "title": "Pimp my Pitch",
     "category": "mindfulness",
     "character": "none",
     "condition": [
@@ -13,24 +13,23 @@
     },
     "yes_action": {
         "energy": -10,
-        "mindfulness": 10,
+        "mindfulness": 20,
         "affection": 1
     },
     "no_action": {
-        "productivity": 10,
-        "affection": 1
+        "productivity": 10
     },
     "yes_caption": "Pitch to strangers",
     "no_caption": "Practice by yourself",
     "yes_description": {
         "en": [
-            "You pitch to strangers and end up embarrassing yourself repeatedly. You're not sure whether the problem is with your pitch or your delivery, but people are visibly uninterested in everything you're trying to do."
+            "You pitch to strangers and end up embarrassing yourself repeatedly. You're not sure whether the problem is with your pitch or your delivery, but people are visibly uninterested in everything you're trying to do. However, eventually, you start to get a little better at it. It feels good."
         ]
     },
     "no_description": {
         "en": [
-            "Although you feel a little lame for staying in, you realize there's a lot to learn just from practicing in front of a mirror. Your expressions are off, and you seem at turns aggressive, hesitant, and bored.",
-            "You focus on delivering the pitch with confidence and enthusiasm, practicing until you have something you think may be infectious."
+            "Although you feel a little bit of a lazy lightweight for staying in, you realize there's a lot to learn just from practicing in front of a camera. Your expressions are off, and you seem at turns aggressive, hesitant, and bored.",
+            "You focus on delivering the pitch with enthusiasm and as much confidence as you can feign, practicing until you have something you hope might be infectious. You have no idea if you are just kidding yourself, though. You aren't sure about the core message either."
         ]
     }
 }

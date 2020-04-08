@@ -8,7 +8,7 @@
     ],
     "description": {
         "en": [
-            "The only thing left now is to practice. You can't remember the last time you gave a speech quite so important. How should you practice? You can force Skylar to listen in, or you can practice on your own."
+            "The only thing left now is to practice further. You can't remember the last time you gave a speech quite so important. How should you practice? You can oblige Skylar to listen in, or you can practice on your own."
         ]
     },
     "yes_action": {
@@ -24,7 +24,7 @@
     "no_caption": "Practice alone",
     "yes_description": {
         "en": [
-            "You practice with Skylar. In some ways, it is successful. Boredom has never been so clear to you before. You pivot during the speech to try to make it more animated, and succeed in getting more interest - but it's exhausting, and gives you a more complete idea of exactly what can go wrong in this meeting."
+            "You practice with Skylar. In some ways, it is successful. Boredom has never been so clear to you before. You pivot during the speech to try to make it more animated, and succeed in getting more interest. It's exhausting, but it gives you a more complete idea of exactly what can go wrong in this meeting."
         ]
     },
     "no_description": {

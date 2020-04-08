@@ -17,16 +17,15 @@
     "no_action": {
         "productivity": 10
     },
-    "yes_caption": "Make what you want to make",
-    "no_caption": "Make what makes money",
+    "yes_caption": "Find a special niche first",
+    "no_caption": "Broaden the appeal, even if it's a little generic",
     "yes_description": {
         "en": [
-            "You decide to make what you want to make. That's why you're doing this, isn't it?"
-        ]
+            "You decide to make what the product that scratches a specific itch, for people who need that specific solution."
     },
     "no_description": {
         "en": [
-            "It's better to make money. It's not exactly what you wanted to create, but it's close enough."
+            "It's better to make money, and appeal to a bigger potential market of customers. It loses a little soul in the process of broadening the appeal."
         ]
     }
 }

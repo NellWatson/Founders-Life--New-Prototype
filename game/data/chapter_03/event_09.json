@@ -21,12 +21,12 @@
     "no_caption": "It's fine as is",
     "yes_description": {
         "en": [
-            "You revise the business plan. It's annoying, but at least it's done."
+            "You revise the business plan. It's annoying, but at least it makes sense now, and it appropriately manages expectations."
         ]
     },
     "no_description": {
         "en": [
-            "You keep the plan as is. It's not too far off, and you might have to redo it anyways once investors are involved."
+            "You keep the plan as is. It's not too far off, and it's going to live in a drawer once you're up and running anyway."
         ]
     }
 }

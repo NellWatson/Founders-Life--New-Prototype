@@ -1,30 +1,32 @@
 {
     "id": "chapter_03_19",
-    "title": "Money or Polish 3",
+    "title": "Good causes",
     "category": "money",
     "character": "none",
     "description": {
         "en": [
-            "A client calls you about doing some local work. It could be nice to help out the community and get paid, to boot!"
+            "A client calls you about doing some local work. It could be nice to help out the community and get paid, to boot! However, it would be a major distraction on your focus."
         ]
     },
     "yes_action": {
         "mindfulness": 20,
-        "money": 300
+        "productivity": -20,
+        "money": 200
     },
     "no_action": {
-        "productivity": 10
+        "productivity": 30,
+        "money": -50
     },
     "yes_caption": "Help them out",
-    "no_caption": "Decline",
+    "no_caption": "Decline, but give a donation instead",
     "yes_description": {
         "en": [
-            "You do the work. Even though it's not on your own project, you feel happier for having helped out someone you know."
+            "You do the work. Even though it's not on your own project, and the payment is modest, you feel happier for having helped someone out with a meaningful project."
         ]
     },
     "no_description": {
         "en": [
-            "You decline - your time is better spent on other things."
+            "You decline - your time is better spent on your personal priorities. The donation helps to ensure that your conscience is clear, and the client relationship is maintained"
         ]
     }
 }

@@ -1,11 +1,11 @@
 {
     "id": "chapter_03_20",
-    "title": "Money or Polish 4",
+    "title": "Beer Money",
     "category": "money",
     "character": "none",
     "description": {
         "en": [
-            "A potential client e-mails you, asking you to do a small amount of work for a quick bit of cash. It's time that could be spent polishing your product, but it's also a job easily done."
+            "An old client messages you, asking you to do a small amount of side work for a quick bit of cash. It's time that could be spent polishing your product, but it's a job you can practically do in your sleep."
         ]
     },
     "yes_action": {
@@ -14,8 +14,8 @@
         "money": 150
     },
     "no_action": {
-        "mindfulness": 20,
-        "productivity": 10,
+        "mindfulness": 10,
+        "productivity": 30,
         "affection": 1
     },
     "yes_caption": "Do the work",
@@ -27,7 +27,7 @@
     },
     "no_description": {
         "en": [
-            "You work on your dream, not someone else's."
+            "You decide to focus on the important things. Work on your dream, not someone else's."
         ]
     }
 }

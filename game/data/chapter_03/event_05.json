@@ -9,18 +9,19 @@
         ]
     },
     "yes_action": {
-        "mindfulness": 10,
+        "mindfulness": 20,
+        "energy": -10,
         "money": -600,
         "affection": 1
     },
     "no_action": {
-        "mindfulness": 10
+        "mindfulness": -10
     },
     "yes_caption": "Do the workshop",
     "no_caption": "Too expensive",
     "yes_description": {
         "en": [
-            "You enroll in the workshop and spend the day speaking and listening to others speak. Surprisingly, you learn more from listening to others. Now you have an idea of what to avoid during your presentation."
+            "You enroll in the workshop and spend the day speaking and listening to others speak. Surprisingly, you learn more from listening to others. Now you have an idea of what NOT to do during your presentation."
         ]
     },
     "no_description": {
