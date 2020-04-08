@@ -10,9 +10,9 @@
             "You sigh."
         ]
     },
-    "yes_caption": "Time to make a list!",
+    "yes_caption": "Time to make major to-do list!",
     "yes_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "yes_description": {
         "en": [

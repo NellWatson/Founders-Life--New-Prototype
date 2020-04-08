@@ -15,13 +15,13 @@
     "yes_action": {
         "energy": -10,
         "mindfulness": -10,
-        "affection": 1
     },
     "no_action": {
         "mindfulness": 10
+        "affection": 1
     },
     "yes_caption": "Memorize the script",
-    "no_caption": "There's no need",
+    "no_caption": "Keep it natural",
     "yes_description": {
         "en": [
             "You memorize what you want to say and feel pretty confident you've got it all down. No eyes glued to the paper for you!"
@@ -29,7 +29,8 @@
     },
     "no_description": {
         "en": [
-            "There's no need to forcibly memorize it. After enough practice, you'll basically have it memorized, anyways. That time is better spent on other things."
+            "There's no need to forcibly memorize it. After enough practice, you'll basically have it memorized, anyways."
+            "And besides, natural flow, which a few key phrases keeps things sounding real. The time is better spent on other things."
         ]
     }
 }

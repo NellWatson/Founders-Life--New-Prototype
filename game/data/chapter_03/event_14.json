@@ -10,15 +10,15 @@
         ]
     },
     "yes_action": {
+        "productivity": 10,
         "mindfulness": -10
     },
     "no_action": {
-        "productivity": 10,
         "mindfulness": 10,
         "affection": 1
     },
-    "yes_caption": "Austere budget",
-    "no_caption": "Inflated budget",
+    "yes_caption": "Austere zero budget",
+    "no_caption": "Slightly padded-out budget",
     "yes_description": {
         "en": [
             "You keep to the bare minimum of what it might cost. Businesses often go overbudget regardless. People expect that. You wouldn't want to scare anybody off."

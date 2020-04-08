@@ -1,26 +1,26 @@
 {
     "id": "chapter_03_18",
-    "title": "Money or Polish 2",
+    "title": "Golden Handcuffs",
     "category": "money",
     "character": "none",
     "description": {
         "en": [
-            "A potential client comes to you with a fairly time-consuming project. It'd be stressful, but would add a decent amount to your pocket."
+            "A potential client comes to you with a fairly time-consuming project. It'd be stressful and boring, but would add a decent amount to your pocket."
         ]
     },
     "yes_action": {
-        "energy": -10,
+        "energy": -20,
         "mindfulness": -20,
-        "money": 400
+        "money": 500
     },
     "no_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "yes_caption": "Take the job",
     "no_caption": "Decline",
     "yes_description": {
         "en": [
-            "You do the work. Hopefully the paycheck was worth the effort."
+            "Somewhat grudgingly, you do the dull and difficult work. Hopefully the paycheck was worth the effort."
         ]
     },
     "no_description": {

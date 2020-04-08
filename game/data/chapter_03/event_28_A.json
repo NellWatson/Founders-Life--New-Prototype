@@ -4,7 +4,7 @@
     "category": "energy",
     "character": "dominique",
     "condition": [
-        ["none:affection", 15, "greater_equal"]
+        ["none:affection", 12, "greater_equal"]
     ],
     "description": {
         "en": [
@@ -37,9 +37,9 @@
         "en": [
             "The gravitas of the situation hits you all at once. Suddenly, you see the man before you less as a savior and more as a warden. If you agree here, you will be bound to that agreement.",
             "Your life will completely change.",
-            "And you actually don't want that.",
-            "You don't shake his hand.",
-            "He leaves for his flight, and you leave for home. Maybe you weren't as serious about this as you thought."
+            "And you realise you actually don't want that.",
+            "You smile, and thank him, but you don't shake his hand.",
+            "He shrugs, smiles faintly, leaves for his flight, and you head for home. Maybe you weren't as serious about this as you thought."
         ]
     },
     "play_on": 28

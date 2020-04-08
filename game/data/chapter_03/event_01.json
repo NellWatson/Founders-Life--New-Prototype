@@ -18,16 +18,16 @@
         "mindfulness": -10
     },
     "yes_caption": "The more involved the better",
-    "no_caption": "I don't like it, but I need it",
+    "no_caption": "I don't like it, but maybe I need it",
     "yes_description": {
         "en": [
-            "I don't completely understand where you're coming from, but if you've really thought about this, I won't stop you."
+            "Is it about having more accountability? Okay. I don't completely understand where you're coming from, but if you've really thought about this, I won't stop you."
         ]
     },
     "no_description": {
         "en": [
             "You don't need anybody, not really.",
-            "Of course, you might not be able to do it in the timeframe you want... and maybe it'll blow up in your face... and it's your money you're risking, if you go that way...",
+            "Of course, you might not be able to do it in the timeframe you want... and maybe it'll blow up in your face... and it's your own money you're risking, if you go that way...",
             "Oh, sorry. I'll be quiet."
         ]
     }

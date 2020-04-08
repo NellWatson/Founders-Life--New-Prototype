@@ -1,11 +1,11 @@
 {
     "id": "chapter_03_03",
-    "title": "Elevator Pitch 1",
+    "title": "Life's a Pitch",
     "category": "productivity",
     "character": "none",
     "description": {
         "en": [
-            "Despite the number of times you've tried to explain exactly what you're making to family and friends, you still don't have a solid \"elevator pitch\" down. Problem is, you're not quite sure how to write it. Do you want to focus on explaining the utility of your product, or on being flashy and catchy to draw interest?"
+            "Despite the number of times you've tried to explain exactly what you're making to family and friends, you still don't have a solid \"elevator pitch\" down. Problem is, you're not quite sure how to write it. Do you want to focus on explaining the core problem that your product can solve, or on being flashy and catchy to draw interest?"
         ]
     },
     "yes_action": {
@@ -15,11 +15,11 @@
     "no_action": {
         "mindfulness": 10
     },
-    "yes_caption": "Utility",
-    "no_caption": "Flash",
+    "yes_caption": "Show the painful problem",
+    "no_caption": "Flash and pizzaz",
     "yes_description": {
         "en": [
-            "Your idea is good enough to stand on its own two feet - at least, you think it is."
+            "Your idea is important enough to the world to stand on its own two feet - at least, you think it is."
         ]
     },
     "no_description": {

@@ -6,7 +6,7 @@
     "description": {
         "en": [
             "As far as persuasive speeches go, there are two main ways to convince someone: using your heart or aiming for theirs.",
-            "Speaking from the heart will use your passion and drive, which may be enough to entice Mr. Martel to your side. Then again, you could do some research, see what he values in his own work, and aim to highlight the aspects you fit with."
+            "Speaking from the heart will use your passion and drive, which may be enough to entice Mr. Martel to your side. Then again, you could do some research, see what values might fit in his own body of work, and aim to highlight those aspects."
         ]
     },
     "yes_action": {
@@ -17,11 +17,11 @@
     "no_action": {
         "mindfulness": -10
     },
-    "yes_caption": "Speak from the heart",
-    "no_caption": "Speak to the investors",
+    "yes_caption": "Speak from your heart",
+    "no_caption": "Say what you reckon they want to hear",
     "yes_description": {
         "en": [
-            "You decide to speak from the heart. Dominique said he wanted to help others chase their success. You just hope he was telling the truth."
+            "You decide to speak from the heart. Dominique said he wanted to help others chase their success. By being upfront about what you find important, you make a beacon for others who resonate to find you. You just hope he was telling the truth."
         ]
     },
     "no_description": {
