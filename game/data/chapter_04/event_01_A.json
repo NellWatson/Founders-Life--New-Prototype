@@ -7,7 +7,7 @@
         ["ch_04:chapter", "chapter_04_12", "chose:yes"]
     ],
     "description": {
-        "en": ["The graphic designer sends you their finished work on time and with thoughtful touches that make the work easier to implement. You're very satisfied and leave a great commendation for them."]
+        "en": ["The graphic designer sends you their finished work on time and with thoughtful extra touches that make the work even nicer. You're very satisfied and leave a great commendation for them."]
     },
     "yes_action": {
         "productivity": 10,

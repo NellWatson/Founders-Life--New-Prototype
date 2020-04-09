@@ -4,12 +4,12 @@
     "category": "mindfulness",
     "character": "none",
     "description": {
-        "en": ["One of your former clients e-mails you asking for help with a new project. You liked this client, but it gives you a rush to be able to turn them down to do more of what you really want."]
+        "en": ["One of your former clients messages you asking for help with a new project. You liked this client, but it gives you a rush to be able to turn them down to do more of what you really want."]
     },
     "yes_action": {
         "energy": 10,
         "mindfulness": 10
     },
-    "yes_caption": "Nice!",
+    "yes_caption": "Thank you, but no!",
     "play_after": "chapter_04_17"
 }

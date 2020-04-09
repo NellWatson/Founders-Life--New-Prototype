@@ -7,13 +7,13 @@
         "en": ["You've made it to the end of the week. You're so close to finishing the list of what Dominique wanted, but you won't be able to finish it all tonight unless you pull an all-nighter, and that sounds horrifically unpleasant at the moment. What do you do?"]
     },
     "yes_action": {
-        "energy": 10,
-        "mindfulness": -20
+        "energy": 20,
+        "mindfulness": -10
     },
     "no_action": {
-        "productivity": 10,
+        "productivity": 30,
         "energy": -20,
-        "mindfulness":  -20
+        "mindfulness": 20
     },
     "yes_caption": "Disappoint Dom and get some rest",
     "no_caption": "Pull the all-nighter",

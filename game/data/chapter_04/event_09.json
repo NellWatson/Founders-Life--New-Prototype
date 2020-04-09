@@ -11,13 +11,13 @@
         ]
     },
     "yes_action": {
-        "mindfulness": -10
+        "mindfulness": 10
     },
     "no_action": {
-        "mindfulness": -10
+        "mindfulness": 10
     },
-    "yes_caption": "I understand.",
-    "no_caption": "I'm not defensive!",
+    "yes_caption": "That's okay, I understand",
+    "no_caption": "I'm not defensive. I'm setting a boundary",
     "yes_description": {
         "en": ["Thank you. I hope things will go more easily in the future."]
     },

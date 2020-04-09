@@ -10,10 +10,11 @@
         ]
     },
     "yes_action": {
-        "mindfulness": 10
+        "mindfulness": 20,
+        "energy": 10
     },
     "no_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "yes_caption": "Ask for help",
     "no_caption": "Make a list",

@@ -9,11 +9,12 @@
         ]
     },
     "yes_action": {
-        "energy": -20,
-        "mindfulness": 10
+        "energy": -10,
+        "mindfulness": 20
     },
     "no_action": {
-        "mindfulness": 10
+        "energy": 10,
+        "mindfulness": -10
     },
     "yes_caption": "Read the book.",
     "no_caption": "Throw him some sass",

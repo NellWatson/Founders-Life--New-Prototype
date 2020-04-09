@@ -15,12 +15,12 @@
         ]
     },
     "yes_action": {
-        "energy": 10,
-        "mindfulness": 10
+        "energy": 20,
+        "mindfulness": 20
     },
     "no_action": {
-        "productivity": 10,
-        "energy": 10
+        "productivity": 20,
+        "energy": 20
     },
     "yes_caption": "Think about your passion",
     "no_caption": "Think about the rewards",
@@ -32,7 +32,7 @@
     },
     "no_description": {
         "en": [
-            "You imagine what awaits you on the other end of this project: people using the thing you created, feeling grateful to have it in their lives. The money you'll (hopefully) get. The freedom money will give you.",
+            "You imagine what awaits you on the other end of this project: people using the thing you created, feeling grateful to have it in their lives. The money you'll (hopefully) get. The freedom that money will give you.",
             "You try to hold on to these thoughts in the weeks ahead, as you know you'll need them."
         ]
     }

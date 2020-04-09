@@ -11,10 +11,10 @@
     },
     "yes_action": {
         "productivity": -10,
-        "mindfulness": 10
+        "mindfulness": 20
     },
     "no_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "yes_caption": "Study it",
     "no_caption": "Do real work",
