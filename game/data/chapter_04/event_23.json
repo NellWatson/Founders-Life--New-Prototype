@@ -10,7 +10,8 @@
         ]
     },
     "yes_action": {
-        "energy": -10
+        "energy": 10,
+        "mindfulness": -10
     },
     "yes_caption": "Stressful!"
 }

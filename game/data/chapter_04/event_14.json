@@ -15,15 +15,15 @@
         "money": -300
     },
     "no_action": {
-        "mindfulness": -10
+        "mindfulness": -20
     },
-    "yes_caption": "Be sassy",
-    "no_caption": "Take it in silence",
+    "yes_caption": "Give Roger a sassy retort",
+    "no_caption": "Shut up and eat dirt",
     "yes_description": {
         "en": [
             "Oh, ho! You have a mouth on you now, too!",
             "I'm docking your pay - you're costing the company money and setting a bad example for everyone here.",
-            "Think before you speak next time, all right?"
+            "Think before you open your mouth to me next time, all right?"
         ]
     },
     "no_description": {

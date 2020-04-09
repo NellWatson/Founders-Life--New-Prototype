@@ -15,7 +15,7 @@
     "yes_caption": "Fight",
     "no_caption": "Listen to feedback",
     "yes_description": {
-        "en": ["You argue with Dominique over e-mails for a while, and eventually he agrees to go with your idea over his own."]
+        "en": ["You argue with Dominique back-and-forth for a while, and eventually he agrees to go with your approach over his own."]
     },
     "no_description": {
         "en": ["You listen to Dominique's critique. After all, you're still learning."]

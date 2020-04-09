@@ -5,15 +5,15 @@
     "character": "none",
     "description": {
         "en": [
-            "Now that quitting Roger's place is a possible reality, your mind wanders to your retirement fund. You won't have a 401K after quitting - or will you? Is this really something you should be thinking about?"
+            "Now that quitting Roger's place is a possible reality, your mind wanders to your retirement fund. It will be hard to contribute to that after quitting. Is this really something you should be thinking about now?"
         ]
     },
     "yes_action": {
-        "mindfulness": 10
+        "mindfulness": 20
     },
     "no_action": {
-        "productivity": 10,
-        "mindfulness": 10
+        "productivity": 20,
+        "mindfulness": -10
     },
     "yes_caption": "Research retirement options",
     "no_caption": "Let it go",

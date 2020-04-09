@@ -8,10 +8,10 @@
     },
     "yes_action": {
         "productivity": 10,
-        "energy": 10,
-        "mindfulness": 10
+        "energy": 20,
+        "mindfulness": 20
     },
-    "yes_caption": "Thanks, Skylar.",
+    "yes_caption": "Thanks, Skylar!",
     "yes_description": {
         "en": ["skylar::\"You're welcome.\""]
     }

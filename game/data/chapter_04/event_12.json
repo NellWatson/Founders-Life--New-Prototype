@@ -5,24 +5,24 @@
     "character": "dominique",
     "description": {
         "en": [
-            "One of Dominique's criticisms concerns the graphic designs - they're terrible! While he respects that you did the work on your own, he requests you find a reputable graphic designer to update things for you.",
+            "One of Dominique's criticisms concerns design - it's well below par. While he respects that you did the work on your own, he requests you find a reputable designer to update things for you.",
             "You find two candidates you like, but there's a major difference between them - the price. One is an up-and-comer with little experience and a $300 price tag, while the other is reputable, good at meeting deadlines, and priced to match at $1000. Which do you choose?"
         ]
     },
     "yes_action": {
-        "money": -1000
+        "money": -500
     },
     "no_action": {
         "money": -300
     },
-    "yes_caption": "$1000",
+    "yes_caption": "$500",
     "no_caption": "$300",
     "yes_description": {
         "en": ["You choose the reliable, experienced graphic designer. New talent is great, but now might not be the time to go with someone without a proven track record."]
     },
     "no_description": {
         "en": [
-            "No need to spend more than you have to - and you're giving a fresh face spotlight! You feel great about your decision."
+            "No need to spend more than you have to - and you're giving a fresh face spotlight!"
         ]
     }
 }

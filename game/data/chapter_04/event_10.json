@@ -17,8 +17,8 @@
     "no_action": {
         "mindfulness": 0
     },
-    "yes_caption": "Offer money",
-    "no_caption": "Ask for free",
+    "yes_caption": "Offer a modest amount of money",
+    "no_caption": "Ask the community nicely",
     "yes_description": {
         "en": ["You offer a modest sum in return for beta-testing. Thankfully, interested parties do sign up - including a handful of college students majoring in business. Nice!"]
     },

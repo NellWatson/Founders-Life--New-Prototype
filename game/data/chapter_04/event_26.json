@@ -8,17 +8,17 @@
     },
     "yes_action": {
         "productivity": -10,
-        "mindfulness": 10
+        "mindfulness": 30
     },
     "no_action": {
         "productivity": 10,
-        "mindfulness":  -10
+        "mindfulness":  -30
     },
     "yes_caption": "Do the research",
     "no_caption": "Put it out of your mind",
     "yes_description": {
         "en": [
-            "You spend the day on various government websites. It's good you looked, because your state has a limited amount of time between when you quit a job and when you can apply for health insurance coverage. Now you know that's something you need to do ASAP when the time comes."
+            "You spend the day on various websites. It's good that you looked, because there was a limited amount of time between when you quit a job and when you can apply for assisted health insurance coverage. Now you know that's something you need to do ASAP when the time comes."
         ]
     },
     "no_description": {

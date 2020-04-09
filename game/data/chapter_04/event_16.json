@@ -13,16 +13,16 @@
         ]
     },
     "yes_action": {
-        "productivity": 10,
+        "productivity": 20,
         "mindfulness": -10,
-        "money": -1000
+        "money": 600
     },
     "no_action": {
         "mindfulness": 10,
-        "money": -500
+        "money": 300
     },
-    "yes_caption": "Big ads - go for gold!",
-    "no_caption": "Modest ads",
+    "yes_caption": "Big broad ads - go for gold!",
+    "no_caption": "Modest, targetted ads",
     "yes_description": {
         "en": [
             "You place big ads right where you know your audience will be seeing them. Missing the release date wouldn't be the worst thing. You need hype, no matter what."

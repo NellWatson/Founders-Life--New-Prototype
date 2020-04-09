@@ -11,14 +11,14 @@
         ]
     },
     "yes_action": {
-        "productivity": 10,
+        "productivity": 20,
         "mindfulness": -10
     },
     "no_action": {
-        "mindfulness": 0
+        "mindfulness": 20
     },
     "yes_caption": "Accept the responsibility",
-    "no_caption": "It was his choice",
+    "no_caption": "His choice. Risk of failure is normal",
     "yes_description": {
         "en": ["You're now also responsible the for the wellbeing of your investor - well, at least partially. You accept this fact, and it drives you to work even harder."]
     },
