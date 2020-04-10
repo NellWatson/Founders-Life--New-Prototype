@@ -12,15 +12,15 @@
         ]
     },
     "yes_action": {
-        "energy": 10,
-        "mindfulness": 10,
+        "energy": 20,
+        "mindfulness": 20,
         "money": -500
     },
     "no_action": {
         "mindfulness": 10
     },
-    "yes_caption": "You think I care? I quit!",
-    "no_caption": "Well - okay!",
+    "yes_caption": "You can't fire me. I quit!",
+    "no_caption": "Well - okay then! I'll serve out the week.",
     "yes_description": {
         "en": [
             "HA! Go ahead and quit! You'll get less money that way. Enjoy your early retirement, 'friend!'"

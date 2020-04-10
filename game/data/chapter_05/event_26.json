@@ -1,6 +1,6 @@
 {
     "id": "chapter_05_26",
-    "title": "Failure",
+    "title": "Founder Philosophy",
     "category": "mindfulness",
     "character": "dominique",
     "description": {
@@ -11,13 +11,13 @@
         ]
     },
     "yes_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "no_action": {
-        "mindfulness":  10
+        "mindfulness":  20
     },
-    "yes_caption": "You can learn from your mistakes.",
-    "no_caption": "I'll be heartbroken, but I'll live.",
+    "yes_caption": "I'll learn from my mistakes for next time.",
+    "no_caption": "I'll be heartbroken, but in the end – I'll live.",
     "yes_description": {
         "en": [
             "You're right, you can learn from your mistakes. But is this something you've really thought through, or are you just saying that? That was quite an easy answer to give.",

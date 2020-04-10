@@ -1,29 +1,29 @@
 {
     "id": "chapter_05_11",
-    "title": "New User Friendly",
+    "title": "User Friendly",
     "category": "productivity",
     "character": "none",
     "description": {
         "en": [
-            "A tester suggests you hide some more complex features of your product somewhere in the settings or manual.",
+            "A tester suggests you hide some more complex features of your product somewhere beneath the surface of the main interface.",
             "They feel it's overwhelming to new users, who'll likely turn the thing off rather than put in the effort to learn it all.",
             "However, the vast majority of users don't look in the settings of an app. People will likely never see those features if you take the tester's advice. What should you do?"
         ]
     },
     "yes_action": {
-        "mindfulness": 10
+        "mindfulness": 20
     },
     "no_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "yes_caption": "Hide the feature",
     "no_caption": "Keep it complex",
     "yes_description": {
-        "en": ["You decide to hide the feature. Hopefully, users who want it will be willing to search for it."]
+        "en": ["You decide to hide some of the more complex features. Hopefully, users who want those options will be willing to search for them."]
     },
     "no_description": {
         "en": [
-            "You decide to keep it complex. You hope this will appeal to a more niche audience, giving your app an edge among a specific audience."
+            "You decide to keep it complex. You hope this will appeal more to a niche audience of pro users."
         ]
     }
 }

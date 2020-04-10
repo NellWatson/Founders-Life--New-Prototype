@@ -10,7 +10,7 @@
         ]
     },
     "yes_action": {
-        "productivity": 10
+        "productivity": 20
     },
     "no_action": {
         "mindfulness": 10
@@ -19,7 +19,7 @@
     "no_caption": "Mass appeal",
     "yes_description": {
         "en": [
-            "Better to know your niche than to make something no one truly needs, eh?"
+            "Better to appear to a niche than to make something no one truly loves, eh?"
         ]
     },
     "no_description": {

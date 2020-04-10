@@ -1,6 +1,6 @@
 {
     "id": "chapter_05_07",
-    "title": "Make It Different",
+    "title": "Make it Different",
     "category": "energy",
     "character": "none",
     "description": {
@@ -16,6 +16,7 @@
         "mindfulness": 10
     },
     "no_action": {
+        "productivity": 20,
         "energy": -10,
         "mindfulness": -10
     },

@@ -13,9 +13,9 @@
         ]
     },
     "yes_action": {
-        "productivity": 10,
-        "energy": 10,
-        "mindfulness": 10
+        "productivity": 30,
+        "energy": 30,
+        "mindfulness": 30
     },
     "yes_caption": "Thanks!"
 }

@@ -4,16 +4,16 @@
     "category": "mindfulness",
     "character": "none",
     "description": {
-        "en": ["You tell yourself, over and over, that it's okay the feedback hasn't been great... but it's still getting to you.",
+        "en": ["You tell yourself, over and over, that it's okay the public feedback hasn't been great... but it's still getting to you.",
             "You're struggling to handle feeling disappointed in yourself and worried about the future. What should you do?"]
     },
     "yes_action": {
         "productivity": -10,
-        "mindfulness": 10
+        "mindfulness": 20
     },
     "no_action": {
         "productivity": -10,
-        "energy": 10
+        "energy": 20
     },
     "yes_caption": "Find someone to talk to",
     "no_caption": "Write it out",
