@@ -7,7 +7,7 @@ define EPISODE_NAMES = [
     "Nose to the Grindstone",
     "Go Big or Go Home"
     ]
-define BACKGROUNDS = ["bedroom", "garage", "coworking", "small office", "modest office", "upgrade office", "major office", "googleplex", "boardroom", "spaceship"]
+define BACKGROUNDS = ["bedroom", "cubicle", "desk", "meeting", "stickies"]
 define CHAPTER_DAY_COUNT = 28
 
 default CURRENCY = "$"

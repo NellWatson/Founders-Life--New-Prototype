@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Founders Life")
+define config.name = _("Founder Life")
 define config.has_autosave = False
 define config.autosave_slots = 0
 define config.end_splash_transition = Dissolve(1.5)
