@@ -10,7 +10,7 @@
     },
     "yes_action": {
         "productivity": -10,
-        "energy": -10
+        "mindfulness": -10
     },
     "yes_caption": "Breathe..."
 }

@@ -21,7 +21,7 @@
         "mindfulness": -10
     },
     "yes_caption": "Take a day off",
-    "no_caption": "Make it the best it can be",
+    "no_caption": "Not now, not yet. Push harder",
     "yes_description": {
         "en": [
             "It would be much worse to get sick and lose the rest of the week. Time to take a break."
@@ -29,7 +29,7 @@
     },
     "no_description": {
         "en": [
-            "Another fix in, another step closer to perfection."
+            "Another fix in, another step closer to perfection. Another grey hair, another wrinkle."
         ]
     }
 }

@@ -6,11 +6,11 @@
     "description": {
         "en": [
             "\"Wonderful! Amazing! I love it!\" That's what the tester sent. It's nice to get positive feedback, but you have no idea what they loved or how to improve the product.",
-            "All in all, this isn't useful."
+            "All in all, this isn't useful. Still, it makes you hunger for more."
         ]
     },
     "yes_action": {
-        "productivity": 0
+        "energy": 10
     },
     "yes_caption": "Oh well"
 }

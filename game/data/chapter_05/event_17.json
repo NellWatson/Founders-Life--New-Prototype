@@ -10,13 +10,13 @@
         ]
     },
     "yes_action": {
-        "mindfulness": 10
+        "mindfulness": 20
     },
     "no_action": {
-        "productivity": -10,
+        "productivity": -20,
         "mindfulness": 10
     },
-    "yes_caption": "Keep it",
+    "yes_caption": "Keep it as is",
     "no_caption": "Change it",
     "yes_description": {
         "en": [
@@ -27,7 +27,7 @@
         "en": [
             "You decide to change it, hoping with a few tweaks the e-mails will be universally positive.",
             "When you finish, you await the feedback - and it's the same as before.",
-            "At least you tried!"
+            "It seems you can't please everyone. At least you know you tried!"
         ]
     }
 }

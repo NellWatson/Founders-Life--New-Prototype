@@ -1,21 +1,22 @@
 {
     "id": "chapter_05_22",
-    "title": "Testing Equipment",
+    "title": "Test Equipment",
     "category": "money",
     "character": "none",
     "description": {
         "en": [
             "A few beta-testers are reporting problems you can't replicate on your computer. It seems they're running on a different operating system, but you don't have access to a computer with that system.",
-            "However, only a fraction of people use this operating system, so it might be something you can put off fixing until later. Should you buy a new computer to test this, or let it go?"
+            "However, only a fraction of people use this operating system, so it might be something you can put off fixing until later. Should you buy the cheapest computer of that type to test this ($800), or let it go?"
         ]
     },
     "yes_action": {
-        "productivity": 20,
-        "mindfulness": 10,
-        "money": -1200
+        "productivity": 30,
+        "mindfulness": 20,
+        "money": -800
     },
     "no_action": {
-        "mindfulness": -10
+        "productivity": -20,
+        "mindfulness": -30
     },
     "yes_caption": "Buy a new computer",
     "no_caption": "Let it go",
@@ -26,7 +27,7 @@
     },
     "no_description": {
         "en": [
-            "You decide not to mess with it. You don't need to be spending a lot of money when you're not sure you'll make it back."
+            "You decide not to let it go for now. You wouldn't mind spending the money – if you could affort it. You continue to get irate complaints from a small number of users."
         ]
     }
 }

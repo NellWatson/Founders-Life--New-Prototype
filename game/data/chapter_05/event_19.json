@@ -7,12 +7,12 @@
         "en": [
             "Skylar sends you a text message with an interesting link: a fairly well-known blog posted an article about your product's upcoming release!",
             "Apparently, they or someone they know leaked some information about the beta. Thankfully, the article is positive.",
-            "You decide not to press charges - it's good publicity, and there's no point in starting a lawsuit now."
+            "You decide not to investigate the source of the leak - it's good publicity, and there's no point in getting distracted by a squabble."
         ]
     },
     "yes_action": {
-        "energy": 10,
-        "mindfulness": 10
+        "energy": 20,
+        "mindfulness": 20
     },
-    "yes_caption": "All right"
+    "yes_caption": "All right!"
 }

@@ -1,12 +1,12 @@
 {
     "id": "chapter_05_18",
-    "title": "Actionable, but Is it?",
+    "title": "Specific & Actionable",
     "category": "mindfulness",
     "character": "none",
     "description": {
         "en": [
-            "Finally you receive feedback that is both valid and actionable. There's only one problem - you're not quite sure you agree with it.",
-            "What the beta-tester sees as an annoying problem, you saw as a feature! What should you do?"
+            "Finally you receive feedback that is both specific and actionable. There's only one problem - you're not quite sure you agree with it.",
+            "What the beta-tester sees as an annoying problem, you intended as a feature! What should you do?"
         ]
     },
     "yes_action": {
@@ -19,7 +19,7 @@
         "mindfulness": 10,
         "energy": 10
     },
-    "yes_caption": "\"Fix\" it",
+    "yes_caption": "Fix it",
     "no_caption": "Change it",
     "yes_description": {
         "en": [

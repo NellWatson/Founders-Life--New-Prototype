@@ -1,20 +1,20 @@
 {
     "id": "chapter_05_06",
-    "title": "Getting Hate",
+    "title": "Abusive Feedback",
     "category": "mindfulness",
     "character": "none",
     "description": {
         "en": [
-            "The next bout of feedback is harsh and mean - almost visceral. The person is telling you that you shouldn't even be alive and your product is trash.",
+            "The next bout of feedback from your beta testersis harsh and mean - almost visceral. The person is telling you that you shouldn't even be alive and your product is trash.",
             "The heck? How did this person make it into the project? And what are you supposed to do about it?"
         ]
     },
     "yes_action": {
-        "energy": -10,
         "mindfulness": -10
     },
     "no_action": {
         "productivity": 10
+        "mindfulness": 10
     },
     "yes_caption": "Delete the e-mail and move on",
     "no_caption": "Consult Dominique",

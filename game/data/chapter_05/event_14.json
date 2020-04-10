@@ -5,20 +5,21 @@
     "character": "none",
     "description": {
         "en": [
-            "There isn't enough time. There's so much to fix, and there isn't enough time!",
-            "You know it's impossible to solve everyone's issues before launch - of course you know that. But somewhere in your heart of hearts, you believed everything would come together at the last minute.",
-            "That isn't going to happen, and you have to accept it."
+            "There isn't enough time. There's so much to fix, and there aren't enough hours left!",
+            "You know it's impossible to solve every issue before launch - of course you know that. But somewhere in your heart of hearts, you believed everything would come together at the last minute.",
+            "That isn't going to happen they way you wanted, and you have to accept it."
         ]
     },
     "yes_action": {
         "mindfulness": 10
     },
     "no_action": {
-        "energy": -10,
+        "energy": -20,
+        "productivity": 30,
         "mindfulness": -20
     },
-    "yes_caption": "Accept it.",
-    "no_caption": "But just maybe...?",
+    "yes_caption": "It is what it is",
+    "no_caption": "I need to struggle very, very hard",
 
     "yes_description": {
         "en": [
@@ -27,7 +28,7 @@
     },
     "no_description": {
         "en": [
-            "Maybe, if you just work hard enough, there's a chance. Never give up... right?"
+            "Maybe, if you just work hard enough, there's a chance. Your run-up to launch is clear: No sleep, and a dozen strong coffees. This is going to hurt."
         ]
     }
 }

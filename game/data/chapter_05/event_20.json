@@ -14,17 +14,18 @@
         ]
     },
     "yes_action": {
-        "productivity": 10,
+        "productivity": -10,
         "mindfulness": -10
     },
     "no_action": {
+        "productivity": 10,
         "mindfulness": -10
     },
-    "yes_caption": "What?! But I thought I'd have more time!",
-    "no_caption": "Got it.",
+    "yes_caption": "What?! I thought I'd have more time!",
+    "no_caption": "Okay, got it.",
     "yes_description": {
         "en": [
-            "Well, you won't. Hah! But I hope it lights a fire for you, my friend."
+            "Well, you won't. Hah! But I hope it lights a fire for you!"
         ]
     },
     "no_description": {
