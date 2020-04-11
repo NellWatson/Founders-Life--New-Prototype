@@ -1,5 +1,6 @@
 {
     "id": "chapter_05_07",
+    "bg": "meeting"
     "title": "Make it Different",
     "category": "energy",
     "character": "none",
@@ -21,9 +22,9 @@
         "mindfulness": -10
     },
     "yes_caption": "Tell them what's what",
-    "no_caption": "Delete the e-mail and move on",
+    "no_caption": "Forget it and move on",
     "yes_description": {
-        "en": ["You shoot off a sassy reply, and you feel better for a moment. Then the beta-tester responds with just as much sass and says they hope your business burns in flames.",
+        "en": ["You shoot off a sassy retort, and you feel better for a moment. Then the beta-tester responds with just as much sass and says they hope your business burns in flames.",
             "That went well."]
     },
     "no_description": {

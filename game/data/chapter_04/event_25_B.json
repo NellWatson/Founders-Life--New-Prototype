@@ -1,5 +1,6 @@
 {
     "id": "chapter_04_25_B",
+    "bg": "desk"
     "title": "Follow-Up to Upgrade",
     "category": "productivity",
     "character": "none",
@@ -7,12 +8,12 @@
         ["ch_04:chapter", "chapter_04_13", "chose:no"]
     ],
     "description": {
-        "en": ["Your computer won't even start. You spend the entire day trying to recover files you didn't back up from your old computer, only to give in and buy a whole new computer. So much for saving money!"]
+        "en": ["Your computer won't even start. You spend the entire day trying to recover files you didn't back up from your old computer, only to give in and take it to a professional for servicing. So much for saving money!"]
     },
     "yes_action": {
-        "productivity": -20,
-        "mindfulness": -10,
-        "money": -1500
+        "productivity": -30,
+        "mindfulness": -20,
+        "money": -300
     },
     "yes_caption": "Ridiculous.",
     "play_after": "chapter_04_13"
