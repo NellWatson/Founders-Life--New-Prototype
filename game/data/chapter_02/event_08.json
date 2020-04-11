@@ -1,11 +1,12 @@
 {
     "id": "chapter_02_08",
+    "bg": "bedroom"
     "title": "Day Off",
     "category": "energy",
     "character": "none",
     "description": {
         "en": [
-            "You haven't been getting as many job offers of late, so you have no work for today. You could spend the time applying for jobs and sprucing up your website, or take the day to look after yourself?"
+            "You haven't been getting as many task offers of late, so you have no work for today. You could spend the time applying for freelance contracts and sprucing up your website, or take the day to look after yourself?"
         ]
     },
     "yes_action": {
@@ -18,7 +19,7 @@
         "energy": 20,
         "mindfulness": 30
     },
-    "yes_caption": "Apply for jobs",
+    "yes_caption": "Apply for tasks",
     "no_caption": "Take the day off",
     "yes_description": {
         "en": [

@@ -1,5 +1,6 @@
 {
     "id": "chapter_03_17",
+    "bg": "desk"
     "title": "Money or Polish",
     "category": "money",
     "character": "none",
@@ -26,7 +27,7 @@
     },
     "no_description": {
         "en": [
-            "You spend your time investing in your future, rather than the client's."
+            "You spend your time investing in \"your\" future, rather than the client's."
         ]
     }
 }

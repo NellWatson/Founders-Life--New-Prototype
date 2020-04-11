@@ -1,11 +1,12 @@
 {
     "id": "chapter_04_09",
+    "bg": "meeting"
     "title": "Defensiveness",
     "category": "productivity",
     "character": "dominique",
     "description": {
         "en": [
-            "Hey, #NAME. I decided to have a video call with you for this conversation, because it's important you understand what I'm saying.",
+            "Hey, #NAME. I decided to meet up in person again for this conversation, because it's important you understand what I'm saying.",
             "You're defensive with some of the criticism I'm offering. I understand I can be harsh, but you need to be able to handle criticism without reacting in anger or retreating from your responsibilities.",
             "This is something that's going affect your work for the rest of your life. You can't hide from it. Please figure out how to handle it."
         ]
