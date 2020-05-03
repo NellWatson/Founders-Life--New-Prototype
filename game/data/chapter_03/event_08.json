@@ -1,6 +1,6 @@
 {
     "id": "chapter_03_08",
-    "bg": "meeting"
+    "bg": "meeting",
     "title": "Memorization",
     "category": "productivity",
     "character": "none",
@@ -15,10 +15,10 @@
     },
     "yes_action": {
         "energy": -10,
-        "mindfulness": -10,
+        "mindfulness": -10
     },
     "no_action": {
-        "mindfulness": 10
+        "mindfulness": 10,
         "affection": 1
     },
     "yes_caption": "Memorize the script",
@@ -30,7 +30,7 @@
     },
     "no_description": {
         "en": [
-            "There's no need to forcibly memorize it. After enough practice, you'll basically have it memorized, anyways."
+            "There's no need to forcibly memorize it. After enough practice, you'll basically have it memorized, anyways.",
             "And besides, natural flow, which a few key phrases keeps things sounding real. The time is better spent on other things."
         ]
     }

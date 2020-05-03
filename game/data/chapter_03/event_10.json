@@ -1,6 +1,6 @@
 {
     "id": "chapter_03_10",
-    "bg": "desk"
+    "bg": "desk",
     "title": "Target Audience",
     "category": "money",
     "character": "none",
@@ -31,7 +31,7 @@
     },
     "no_description": {
         "en": [
-            "You save the money and keep to your initial instincts. After all, you wouldn't have started making this product without an intuitive understand of who it's for.
+            "You save the money and keep to your initial instincts. After all, you wouldn't have started making this product without an intuitive understand of who it's for.",
             "Sometimes people don't know what they want until they get it."
         ]
     }

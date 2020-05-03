@@ -1,6 +1,6 @@
 {
     "id": "chapter_03_15",
-    "bg": "desk"
+    "bg": "desk",
     "title": "Niche or Splendor",
     "category": "mindfulness",
     "character": "none",
@@ -23,6 +23,7 @@
     "yes_description": {
         "en": [
             "You decide to make what the product that scratches a specific itch, for people who need that specific solution."
+        ]
     },
     "no_description": {
         "en": [

@@ -1,6 +1,6 @@
 {
     "id": "chapter_02_15",
-    "bg": "bedroom"
+    "bg": "bedroom",
     "title": "Bankrupted",
     "category": "mindfulness",
     "character": "none",
@@ -10,7 +10,7 @@
         ]
     },
     "yes_action": {
-        "mindfulness": -10
+        "mindfulness": -10,
         "money": 300
     },
     "yes_caption": "Get back to work."

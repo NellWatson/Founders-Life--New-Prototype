@@ -1,6 +1,6 @@
 {
     "id": "chapter_05_06",
-    "bg": "meeting"
+    "bg": "meeting",
     "title": "Abusive Feedback",
     "category": "mindfulness",
     "character": "none",
@@ -14,7 +14,7 @@
         "mindfulness": -10
     },
     "no_action": {
-        "productivity": 10
+        "productivity": 10,
         "mindfulness": 10
     },
     "yes_caption": "Delete the e-mail and move on",

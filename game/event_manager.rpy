@@ -228,6 +228,7 @@ init python:
             file_list = load(filepath, "index")
 
             for file, version in file_list:
+                print file
                 data = load(filepath, file)
                 if "title" not in data:
                     data["title"] = "No Title"
