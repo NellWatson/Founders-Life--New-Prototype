@@ -51,10 +51,10 @@ init python in telemetry:
 
         payload = {
             "project_id": project_id,
-            "platform": os,
-            "display_render": render,
-            "display_size": resolution,
-            "multiple_ids": renpy.store.persistent.multiple_id
+            "platform": "placeholder", #os,
+            "display_render": "placeholder", #render,
+            "display_size": "0, 0", #resolution,
+            "multiple_ids": "False" #renpy.store.persistent.multiple_id
         }
 
         data = json.dumps(payload)

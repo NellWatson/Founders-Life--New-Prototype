@@ -135,8 +135,10 @@ screen say(who, what, side_image=None):
         else:
             add AlphaMask(SideImage(), "gui/who_mask.png") xpos 78 ypos 757
     elif what:
-        add "gui/thought.png" xpos 78 ypos 757
-        add AlphaMask(founder_portrait, "gui/thought_mask.png") xpos 78 ypos 757
+        add "gui/who.png" xpos 78 ypos 757
+        add AlphaMask(founder_portrait, "gui/who_mask.png") xpos 78 ypos 757
+        add "gui/idea.png" xpos 290 ypos 737:
+            zoom 0.9
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to

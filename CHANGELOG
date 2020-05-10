@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.2.5.0510
+------------
+* Allow events to have an event specific bg.
+
 v 0.2.5.0213
 ------------
 * Allow events to have an event specific bg.
