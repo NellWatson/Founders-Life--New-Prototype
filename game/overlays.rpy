@@ -134,14 +134,14 @@ screen choose_portrait():
     default character_list = ["1", "2", "3", "4", "5", "6", "7"]
 
     add Solid("#00000050")
-    text "Choose your online account DP."  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.05
+    text "Choose your profile picture."  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.05
 
     vbox:
         xalign 0.5
         yalign 0.5
         xsize 1352
         spacing 40
-        
+
         hbox:
             xalign 0.5
             yalign 0.5
@@ -156,7 +156,7 @@ screen choose_portrait():
 
                     add AlphaMask("images/contacts/mc/" + i + ".png", "gui/who_mask.png") xalign 0.5 yalign 0.5
                     action SetVariable("founder_portrait", i), Return()
-        
+
         hbox:
             xalign 0.5
             yalign 0.5

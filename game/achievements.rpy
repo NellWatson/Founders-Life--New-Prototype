@@ -131,6 +131,8 @@ init python:
         create_leaderboard_data()
 
 screen achievement_screen(shelf):
+    on "show":
+        action Play("music", "music/ost004.mp3")
     modal True
 
     default page = 1

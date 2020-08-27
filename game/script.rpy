@@ -203,7 +203,8 @@ label checkpoint:
 
         $ renpy.save("custom")
         play week_sound "sfx/fx004.wav"
-
+        play music "music/ost002.mp3" fadein 1.5
+        
         #call screen level_up(current_bg)
         if energy < 30 and morale < 30 and productivity < 30 and money < 1500:
             n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life. Try and eliminate all other distractions."
