@@ -125,7 +125,7 @@ screen say(who, what, side_image=None):
         right_padding 250
         background "gui/textbox.png"
 
-        text what id "what" font "fonts/Dosis-Regular.ttf" size 36 color "#ffffff" line_leading -2 xoffset 440 yoffset 90 xmaximum 1400
+        text what id "what" font "fonts/Dyslexie_Regular_159164.ttf" size 36 color "#ffffff" line_leading -2 xoffset 440 yoffset 90 xmaximum 1400
 
     # If there's a side image, display it above the text.
     if who:
@@ -158,7 +158,7 @@ screen input(prompt):
             text prompt style "new_input_text"
             hbox:
                 text "> " yoffset 3
-                input id "input" font "fonts/Dosis-Regular.ttf" color "#ffffff" size 36
+                input id "input" font "fonts/Dyslexie_Regular_159164.ttf" color "#ffffff" size 36
 
     add "gui/who.png" xpos 78 ypos 757
     add AlphaMask("side nell normal", "gui/who_mask.png") xpos 78 ypos 757
@@ -172,7 +172,7 @@ style new_input_window is window:
     background "gui/textbox.png"
 
 style new_input_text is text:
-    font "fonts/Dosis-Regular.ttf"
+    font "fonts/Dyslexie_Regular_159164.ttf"
     size 36
     color "#ffffff"
     caret "input_caret"
@@ -361,10 +361,10 @@ screen main_menu():
     if renpy.can_load("custom"):
         textbutton _("START OVER"):
             style "fl_button"
-            
+
             idle_background Frame("gui/frame/hover.png", 1, 1)
             hover_background Frame("gui/frame/idle.png", 1, 1)
-            
+
             action Show("clear_data_confirm", transition=Dissolve(0.25))
 
             xalign 0.50
@@ -1509,56 +1509,62 @@ screen credits(_hide=False):
         text "Proudly Presented by" color "#559fdd" bold True xalign 0.5
         text "Studio Phanteke" color "#d88db7" xalign 0.5
 
-        null height 380
+        null height 240
 
         text "Concept and Director" color "#559fdd" bold True xalign 0.5
         text "Eleanor \"Nell\" Watson" color "#d88db7" xalign 0.5
         text "{a=https://www.nellwatson.com/}https://www.nellwatson.com{/a}" xalign 0.5
 
-        null height 40
+        null height 60
 
         text "Producer" color "#559fdd" bold True xalign 0.5
         text "Sean Taylor" color "#d88db7" xalign 0.5
         text "{a=https://www.seantaylor.work/}https://www.seantaylor.work{/a}" xalign 0.5
 
-        null height 40
+        null height 60
 
         text "Programmer" color "#559fdd" bold True xalign 0.5
         text "Dipesh Aggarwal" color "#d88db7" xalign 0.5
         text "{a=https://dipeshaggarwal.dev/}https://dipeshaggarwal.dev{/a}" xalign 0.5
 
-        null height 40
+        null height 60
 
         text "Writer" color "#559fdd" bold True xalign 0.5
         text "Cara Hillstock" color "#d88db7" xalign 0.5
         text "{a=https://www.seantaylor.work/}https://www.patreon.com/Cheratomo{/a}" xalign 0.5
 
-        null height 40
+        null height 60
 
         text "Illustrator" color "#559fdd" bold True xalign 0.5
         text "Livio Perissin" color "#d88db7" xalign 0.5
         text "{a=https://www.livioperissin.com.ar/}https://www.livioperissin.com.ar{/a}" xalign 0.5
 
-        null height 40
+        null height 60
 
         text "UI Design" color "#559fdd" bold True xalign 0.5
         text "Luna Chai" color "#d88db7" xalign 0.5
         text "{a=https://www.lunachai.com/}https://www.lunachai.com{/a}" xalign 0.5
 
-        null height 40
+        null height 60
 
         text "Music" color "#559fdd" bold True xalign 0.5
         text "Kevin MacLeod" color "#d88db7" xalign 0.5
         text "(Provided under CC-NC-3)" color "#d88db7" xalign 0.5
         text "{a=https://www.incompetech.com/}https://www.incompetech.com{/a}" xalign 0.5
 
-        null height 40
+        null height 60
 
         text "Sounds" color "#559fdd" bold True xalign 0.5
         text "Denki Soundbank" color "#d88db7" xalign 0.5
         text "{a=https://www.denki.co.uk/}https://www.denki.co.uk{/a}" xalign 0.5
 
-        null height 500
+        null height 60
+
+        text "Typeface" color "#559fdd" bold True xalign 0.5
+        text "Dyslexie Font" color "#d88db7" xalign 0.5
+        text "{a=https://www.dyslexiefont.com/}https://www.dyslexiefont.com{/a}" xalign 0.5
+
+        null height 240
         text "Thank you for playing!" size 75 color "#d88db7" xalign 0.5
 
     add "layer"
@@ -1595,7 +1601,7 @@ screen clear_data_confirm():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 64 color "#ffffff" font "DejaVuSans.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 64 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1604,7 +1610,7 @@ screen clear_data_confirm():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action Hide("clear_data_confirm")
 
@@ -1629,7 +1635,7 @@ screen clear_data_confirm():
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "START OVER" font "DejaVuSans.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "START OVER" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(clear_user_data), Hide("clear_data_confirm", transition=Dissolve(0.25))]
 
@@ -1656,7 +1662,7 @@ screen reset_data_confirm():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 64 color "#ffffff" font "DejaVuSans.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 64 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1665,7 +1671,7 @@ screen reset_data_confirm():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action Hide("clear_data_confirm")
 
@@ -1690,6 +1696,6 @@ screen reset_data_confirm():
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "RESET GAME" font "DejaVuSans.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "RESET GAME" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(clear_user_data, fully=True), Hide("reset_data_confirm", transition=Dissolve(0.25))]

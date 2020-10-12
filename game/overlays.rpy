@@ -104,7 +104,7 @@ screen character_intro():
     default character_list = ["skylar", "takashi", "roger"]
     add Solid("#00000050")
 
-    text "See who else plays a role on the journey"  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.25
+    text "See who else plays a role on the journey"  size 52 color "#559fdd" font "fonts/Dyslexie_Bold_159164.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.25
 
     hbox:
         xalign 0.5
@@ -134,7 +134,7 @@ screen choose_portrait():
     default character_list = ["1", "2", "3", "4", "5", "6", "7"]
 
     add Solid("#00000050")
-    text "Choose your profile picture."  size 75 color "#559fdd" font "fonts/Dosis-Bold.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.05
+    text "Choose your profile picture."  size 60 color "#559fdd" font "fonts/Dyslexie_Bold_159164.ttf" outlines [ (absolute(2), "#fff", absolute(0), absolute(0)) ] xalign 0.5 yalign 0.05
 
     vbox:
         xalign 0.5

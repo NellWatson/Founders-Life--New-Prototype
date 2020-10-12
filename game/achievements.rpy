@@ -148,7 +148,7 @@ screen achievement_screen(shelf):
         hover_background Solid(Color("#559fdd").tint(0.5))
         selected_background Solid(Color("#559fdd").shade(0.5))
 
-        text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+        text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
         action Hide("achievement_screen")
 
@@ -194,7 +194,7 @@ screen achievement_screen(shelf):
             hover_background Solid(Color("#559fdd").tint(0.5))
             selected_background Solid(Color("#559fdd").shade(0.5))
 
-            text "←" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+            text "←" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
             action [SetScreenVariable("page", 1), SetScreenVariable("desc", "")]
 
@@ -244,7 +244,7 @@ screen leaderboard_screen():
         hover_background Solid(Color("#559fdd").tint(0.5))
         selected_background Solid(Color("#559fdd").shade(0.5))
 
-        text "X" font "DejaVuSans.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+        text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
         action Hide("achievement_screen")
 

@@ -53,7 +53,7 @@ init python:
                 else:
                     return At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash)
             else:
-                self.sound_played = False   
+                self.sound_played = False
 
                 if config.developer:
                     return Fixed(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18), xfit=True, yfit=True)
@@ -181,11 +181,11 @@ init python:
 
             bar_d = Bar(range=self.bar_range, value=self.bar_value, height=10)
             if self.updated_fl:
-                text_fl = At(HBox(Text("Founder Level: ", font="fonts/Dosis-Bold.ttf", color="#000000", xalign=0.0), Text("{color=#00e500}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dosis-Light.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5), flash)
-                text_fs = At(HBox(Text("Founder Status: ", font="fonts/Dosis-Bold.ttf", color="#000000", xalign=0.0), Text("{color=#00e500}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dosis-Light.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5), flash)
+                text_fl = At(HBox(Text("Founder Level: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#00e500}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5), flash)
+                text_fs = At(HBox(Text("Founder Status: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#00e500}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5), flash)
             else:
-                text_fl = HBox(Text("Founder Level: ", font="fonts/Dosis-Bold.ttf", color="#000000", xalign=0.0), Text("{color=#000000}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dosis-Light.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5)
-                text_fs = HBox(Text("Founder Status: ", font="fonts/Dosis-Bold.ttf", color="#000000", xalign=0.0), Text("{color=#000000}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dosis-Light.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5)
+                text_fl = HBox(Text("Founder Level: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#000000}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5)
+                text_fs = HBox(Text("Founder Status: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#000000}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=500, xalign=0.5)
 
             return VBox(Fixed(bar_d, Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8), xfit=True, yfit=True), text_fl, text_fs, spacing=12)
 

@@ -118,7 +118,7 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("liked"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("liked"), size=40, color="#ffffff", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=3200)
 
                 text "Question #01/05" style "feedback_text" size 50
                 text "What did you like about Founder Life?" style "feedback_text" xmaximum 1400 xalign 0.5
@@ -141,7 +141,7 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("not_liked"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("not_liked"), size=40, color="#ffffff", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=3200)
 
                 text "Question #02/05" style "feedback_text" size 50
                 text "What did you dislike about Founder Life?" style "feedback_text" xmaximum 1400 xalign 0.5
@@ -164,7 +164,7 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("more_of"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("more_of"), size=40, color="#ffffff", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=3200)
 
                 text "Question #03/05" style "feedback_text" size 50
                 text "Founder Life should have more..." style "feedback_text" xmaximum 1400 xalign 0.5
@@ -187,7 +187,7 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("less_of"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("less_of"), size=40, color="#ffffff", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=3200)
 
                 text "Question #04/05" style "feedback_text" size 50
                 text "Founder Life should have less..." style "feedback_text" xmaximum 1400 xalign 0.5
@@ -209,7 +209,7 @@ screen feedback_form_screen():
                 yalign 0.4
                 spacing 40
 
-                $ input = Input(value=FeedbackInputValue("one_change"), size=40, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=3200)
+                $ input = Input(value=FeedbackInputValue("one_change"), size=40, color="#ffffff", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=3200)
 
                 text "Question #05/05" style "feedback_text" size 50
                 text "If I was to only change one thing about the game, it would be..." style "feedback_text" xmaximum 1400 xalign 0.5
@@ -264,7 +264,7 @@ screen feedback_form_screen():
                 xalign 0.5
                 yalign 0.5
 
-                $ input = Input(value=FeedbackInputValue("email"), size=30, color="#ffffff", font="fonts/Dosis-Light.ttf", pixel_width=580)
+                $ input = Input(value=FeedbackInputValue("email"), size=30, color="#ffffff", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=580)
 
                 text "If you are would enjoy chatting about the game some more, please leave your email address below." style "feedback_text" size 50 xalign 0.5 yalign 0.5
 
