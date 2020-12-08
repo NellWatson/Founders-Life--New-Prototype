@@ -1,12 +1,12 @@
 label event_intro:
     show screen block_keys("game_menu")
 
-    n normal "Welcome to Founder Life."
+    n normal "Welcome to Founder Life! (click or tap to move forward)"
     n "For a while now you have dreamed of being your own boss, getting more control over your life."
     n "You have a job at the moment, but want to break out and in your own venture."
     n "You resolve today to start your own little business and see where that adventure can take you."
 
-    $ founder_name = renpy.input("Let's start off with the basics - what's your name?", length=30) or "Sam"
+    $ founder_name = renpy.input("Let's start off with the basics - what's your name?", length=30) or "Founder"
     $ startup_name = renpy.input("What's your startup name?") or "StartUP Inc"
 
     n "Awesome. Which self-portrait feels most right to you?"
