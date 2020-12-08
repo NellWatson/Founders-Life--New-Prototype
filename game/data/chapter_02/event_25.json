@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You've given this client exactly what they asked for. However, now it seems they don't just want the product - they want you to implement it into their system, as well! You aren't sure you agreed to do the implementation, but you also aren't sure you were clear the implementation wasn't included in the price."
+            "You've given this client exactly what they asked for. However, now it seems they don't just want the product - they want you to implement it into their system, as well!"
+            "You aren't sure you agreed to do the implementation, but you also aren't sure you were clear the implementation wasn't included in the price."
         ]
     },
     "yes_action": {
@@ -21,7 +22,8 @@
     "no_caption": "Don't do the implementation",
     "yes_description": {
         "en": [
-            "You do the extra work despite not really having the spare time or energy for it, and the client pays you a nice bonus. You revise your website to make sure this miscommunication won't happen again."
+            "You do the extra work despite not really having the spare time or energy for it, and the client pays you a nice bonus."
+            "You revise your website to make sure this miscommunication won't happen again."
         ]
     },
     "no_description": {

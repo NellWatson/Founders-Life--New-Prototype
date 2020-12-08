@@ -8,7 +8,7 @@
         ["energy", 50, "lesser"]
     ],
     "description": {
-        "en": ["Yeesh, you look tired. I'm going to a a spa for a friend's birthday – you wanna join? I promise it'll completely relax you!"]
+        "en": ["Yeesh, you look tired. I'm going to a a spa for a friend's birthday, #NAME - you wanna join? I promise it'll completely relax you!"]
     },
     "yes_action": {
         "productivity": -20,
