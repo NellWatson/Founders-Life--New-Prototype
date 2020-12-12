@@ -399,7 +399,8 @@ label chapter_five_finale:
     $ event_code = "chapter_05_99"
     show dominique at center
 
-    n normal "Game over.\nThank you for playing."
+    n normal "Game over."
+    n normal "Thank you for playing."
 
     if not persistent.submitted_form:
         n normal "Please would you kindly give us your feedback?"

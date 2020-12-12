@@ -248,23 +248,42 @@ screen quick_menu():
     ## Ensure this appears on top of other screens.
     zorder 100
 
-    if quick_menu:
+    hbox:
+        style_prefix "quick"
 
-        hbox:
-            style_prefix "quick"
+        xalign 1.0
+        yalign 1.0
+        spacing 15
 
-            xalign 0.5
-            yalign 1.0
+        imagebutton:
+            idle "gui/back_idle.png"
+            hover "gui/back_hover.png"
+            insensitive "gui/back_insensitive.png"
+            action Rollback()
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            at set_size(50, 50)
+        imagebutton:
+            idle "gui/skip_idle.png"
+            hover "gui/skip_hover.png"
+            insensitive "gui/skip_insensitive.png"
+            action Skip() alternate Skip(fast=True, confirm=True)
 
+            at set_size(50, 50)
+        imagebutton:
+            idle "gui/save_idle.png"
+            hover "gui/save_hover.png"
+            action ShowMenu('save')
+
+            at set_size(50, 50)
+        imagebutton:
+            idle "gui/settings_idle.png"
+            hover "gui/settings_hover.png"
+            action ShowMenu('preferences')
+
+            at set_size(50, 50)
+
+init python:
+    config.overlay_screens.append("quick_menu")
 
 style quick_button is default
 style quick_button_text is button_text
@@ -1564,7 +1583,7 @@ screen credits(_hide=False):
         text "Dyslexie Font" color "#d88db7" xalign 0.5
         text "{a=https://www.dyslexiefont.com/}https://www.dyslexiefont.com{/a}" xalign 0.5
 
-        null height 240
+        null height 470
         text "Thank you for playing!" size 75 color "#d88db7" xalign 0.5
 
     add "layer"
@@ -1601,7 +1620,7 @@ screen clear_data_confirm():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 64 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 50 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)

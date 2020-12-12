@@ -10,6 +10,9 @@ transform zoom_out(factor):
     subpixel True
     zoom factor
 
+transform set_size(x, y):
+    size (x, y)
+
 transform flash_zoom:
     alpha 1.0
     zoom 1.05
@@ -74,7 +77,8 @@ transform button_hover:
 
 transform credits_scroll(speed, wait_for):
     time wait_for
-    linear speed ypos -2300
+    subpixel True
+    linear speed ypos -2430
 
 transform hide_in(t):
     time t
