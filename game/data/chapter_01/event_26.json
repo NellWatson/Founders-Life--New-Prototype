@@ -8,7 +8,10 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You've heard mutterings online about taxes for self-employed people being much higher than generally anticipated. You can set aside a large portion of money for taxes now, or take the risk to see if you make enough to pay it off in the future. Set aside some savings?"]
+        "en": [
+            "You've heard mutterings online about taxes for self-employed people being much higher than generally anticipated.",
+            "You can set aside a large portion of money for taxes now, or take the risk to see if you make enough to pay it off in the future. Set aside some savings?"
+        ]
     },
     "yes_action": {
         "mindfulness": 30,

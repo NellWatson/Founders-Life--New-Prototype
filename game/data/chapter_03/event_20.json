@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "An old client messages you, asking you to do a small amount of side work for a quick bit of cash. It's time that could be spent polishing your product, but it's a job you can practically do in your sleep."
+            "An old client messages you, asking you to do a small amount of side work for a quick bit of cash.",
+            "It's time that could be spent polishing your product, but it's a job you can practically do in your sleep."
         ]
     },
     "yes_action": {

@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "It hits you while you're working: you really haven't had time for fun this month. The things that used to take up your time - TV, friends, hobbies - have fallen away in favor of your overall goal. Is this a good thing, or should you make time for fun?"
+            "It hits you while you're working: you really haven't had time for fun this month.",
+            "The things that used to take up your time - TV, friends, hobbies - have fallen away in favor of your overall goal. Is this a good thing, or should you make time for fun?"
         ]
     },
     "yes_action": {

@@ -12,7 +12,8 @@
             "Okay, #NAME. It's time to tally up how much you brought home the bacon.",
             "You made #MONEY_MONTH this month. That's... not enough.",
             "...",
-            "I've thought a lot about this over the past month. And I just - I don't think I can be with you while you're taking such big risks. It just doesn't feel safe to me. So, if this is really something you still want to do, I think we should end this."
+            "I've thought a lot about this over the past month. And I just - I don't think I can be with you while you're taking such big risks.",
+            "It just doesn't feel safe to me. So, if this is really something you still want to do, I think we should end this."
         ]
     },
     "yes_action": {

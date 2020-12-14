@@ -7,7 +7,8 @@
     "description": {
         "en": [
             "You finish a project for a client ahead of schedule. As you're getting ready to send it, your heart sinks.",
-            "You know this isn't your best work, but you're not sure you have the energy to do it all over again. It's not terrible quality, but it's not up to your usual standards. What do you do?"
+            "You know this isn't your best work, but you're not sure you have the energy to do it all over again. It's not terrible quality, but it's not up to your usual standards.",
+            "What do you do?"
         ]
     },
     "yes_action": {

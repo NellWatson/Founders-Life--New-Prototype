@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "Having spent the week working on a client's job, you get it finished and send it in - only to be informed they hired someone else and won't be paying you for the work, \"since they won't be using it.\""
+            "Having spent the week working on a client's job, you get it finished and send it in",
+            "But you are informed that they hired someone else and won't be paying you for the work, \"since they won't be using it.\""
         ]
     },
     "yes_action": {

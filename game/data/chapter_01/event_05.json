@@ -8,7 +8,8 @@
         ["turn_no", 1, "greater"]
     ],
     "description": {
-        "en": ["I just want you to know I support you in reaching your dreams. If there's anything I can do, just say the word! I made dinner for you, too, so you don't have to think about that tonight."]
+        "en": ["I just want you to know I support you in reaching your dreams. If there's anything I can do, just say the word!",
+            "I made dinner for you, too, so you don't have to think about that tonight."]
     },
     "yes_action": {
         "productivity": 10,

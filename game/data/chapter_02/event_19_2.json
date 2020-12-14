@@ -9,7 +9,8 @@
     ],
     "description": {
         "en": [
-            "This week, you find yourself without a lot of spare time and with a huge deadline on the horizon. Unfortunately, you aren't able to juggle your schedule well enough and it's definitely not your best work. It shows too. Roger is upset and docks your pay."
+            "This week, you find yourself without a lot of spare time and with a huge deadline on the horizon.",
+            "Unfortunately, you aren't able to juggle your schedule well enough and it's definitely not your best work. It shows too. Roger is upset and docks your pay."
         ]
     },
     "yes_action": {

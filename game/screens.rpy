@@ -125,7 +125,7 @@ screen say(who, what, side_image=None):
         right_padding 250
         background "gui/textbox.png"
 
-        text what id "what" font "fonts/Dyslexie_Regular_159164.ttf" size 36 color "#ffffff" line_leading -2 xoffset 440 yoffset 90 xmaximum 1400
+        text what id "what" font "fonts/Dyslexie_Regular_159164.ttf" size 32 color "#ffffff" line_leading -2 xoffset 440 yoffset 90 xmaximum 1400
 
     # If there's a side image, display it above the text.
     if who:

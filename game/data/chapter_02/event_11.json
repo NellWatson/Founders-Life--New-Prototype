@@ -11,10 +11,13 @@
         "en": [
             "An odd e-mail appeared in your inbox today.",
             "Dear #NAME,",
-            "I saw the marketing pitch drawn up for your product on your website, and my team and I are very interested in what you have to show for it. I realize you may not be looking for investors at such an early stage, but should you be interested in meeting up to discuss the potential of your product, please let me know.",
+            "I saw the marketing pitch drawn up for your product on your website, and my team and I are very interested in what you have to show for it.",
+            "I realize you may not be looking for investors at such an early stage, but should you be interested in meeting up to discuss the potential of your product, please let me know.",
             "Dominique Martel, CEO of Martel Inc.",
-            "Martel, Martel... haven't you heard that name before? A quick Internet search reveals why the name is so familiar to you. Dishwashers, ovens, smart lights, televisions - if it's a luxury home or office appliance, Martel sells it.",
-            "Still, you aren't sure whether to be happy about this e-mail. It seems suspicious that a man worth millions of dollars would be running around the Internet, e-mailing strangers. At the very least, wouldn't he have staff do that for him?",
+            "Martel, Martel... haven't you heard that name before? A quick Internet search reveals why the name is so familiar to you.",
+            "Dishwashers, ovens, smart lights, televisions - if it's a luxury home or office appliance, Martel sells it.",
+            "Still, you aren't sure whether to be happy about this e-mail.",
+            "It seems suspicious that a man worth millions of dollars would be running around the Internet, e-mailing strangers. At the very least, wouldn't he have staff do that for him?",
             "You leave the e-mail sitting in your inbox. You have other things to worry about for the time being."
         ]
     },

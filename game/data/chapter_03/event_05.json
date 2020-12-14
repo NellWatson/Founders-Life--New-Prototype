@@ -6,7 +6,9 @@
     "character": "none",
     "description": {
         "en": [
-            "Public speaking has never been your forte, and now your entire dream is riding on it. Rationalize as you might, there's some part of you that feels this is your only chance to get off the ground. You know there's a community college that offers workshops in public speaking, but they're expensive at $600. Enroll?"
+            "Public speaking has never been your forte, and now your entire dream is riding on it.",
+            "Rationalize as you might, there's some part of you that feels this is your only chance to get off the ground.",
+            "You know there's a community college that offers workshops in public speaking, but they're expensive at $600. Enroll?"
         ]
     },
     "yes_action": {
