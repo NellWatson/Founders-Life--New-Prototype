@@ -179,6 +179,7 @@ label checkpoint:
         $ week += 1
         $ week_event_bucket_type = set()
         $ check["money"] = ""
+        $ is_telemetry_allowed = False
 
         $ telemetry.collect()
         $ telemetry.sync()
