@@ -28,14 +28,14 @@
     "no_caption": "I probably can do that, but I should set my own challenges for me. Whatever.",
     "yes_description": {
         "en": [
-            "skylar::\"Okay. Thank you for being okay with this. It's just so risky. You know how my mom is - always chasing some money-making scheme...\"",
-            "skylar::\"This is a little out of my comfort zone, quite honestly. Hopefully this will help me not to freak out.\""
+          "Okay. Thank you for being okay with this. It's just so risky. You know how my mom is - always chasing some money-making scheme...",
+          "This is a little out of my comfort zone, quite honestly. Hopefully this will help me not to freak out."
         ]
     },
     "no_description": {
         "en": [
-            "skylar::\"If you cannot, or will not, make bank...\"",
-            "skylar::\"I don't know what will happen. I don't want to force you to give up your dream, but I just - I can't live with this kind of insecurity.\""
+            "If you cannot, or will not, 'make bank'...",
+            "skylar::I don't know what will happen. I don't want to force you to give up your dream, but I just - I can't live with this kind of insecurity."
         ]
     }
 }
