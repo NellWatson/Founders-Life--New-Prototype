@@ -260,7 +260,7 @@ label checkpoint:
         $ total_days = ((current_chapter-1) * CHAPTER_DAY_COUNT) + turn_no
         $ current_bg = "bg " + BACKGROUNDS[founder_level - 1]
 
-        scene expression current_bg with dissolve
+        #scene expression current_bg with dissolve
 
         if turn_no <= 28:
             jump week_event
