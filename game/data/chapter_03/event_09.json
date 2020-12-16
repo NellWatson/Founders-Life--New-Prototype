@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "As you're preparing for the presentation, you realize you haven't gone over your business plan since before you started working. Now that you've been attempting to put it into practice, you know some of the goals you had are unrealistic. Take a day to revise the business plan?"
+            "As you're preparing for the presentation, you realize you haven't gone over your business plan since before you started working.",
+            "Now that you've been attempting to put it into practice, you know some of the goals you had are unrealistic. Take a day to revise the business plan?"
         ]
     },
     "yes_action": {

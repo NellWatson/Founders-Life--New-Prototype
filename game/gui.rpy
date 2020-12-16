@@ -64,7 +64,7 @@ define gui.name_font = "Dyslexie_Bold_159164.ttf"
 define gui.interface_font = "Dyslexie_Bold_159164.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 26
+define gui.text_size = 28
 
 ## The size of character names.
 define gui.name_text_size = 28

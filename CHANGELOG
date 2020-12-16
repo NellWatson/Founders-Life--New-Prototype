@@ -3,7 +3,9 @@ CHANGELOG
 
 v 0.2.5.0510
 ------------
-* Allow events to have an event specific bg.
+* Remove telemetry. We do that by sending dummy data about the user so there is no way of knowing who the player is.
+* Remove thought mask for player sideimages.
+* Fix bg not showing bug.
 
 v 0.2.5.0213
 ------------

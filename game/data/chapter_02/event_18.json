@@ -23,13 +23,13 @@
     "no_caption": "Power through",
     "yes_description": {
         "en": [
-            "You rest in bed, staying very warm, and drinking as much water as possible."
+            "You rest in bed, staying very warm, and drinking as much water as possible.",
             "Thankfully, it's mostly cleared up by the next day."
         ]
     },
     "no_description": {
         "en": [
-            "You power through with a bunch of meds, trying to get work done... and knock yourself flat on your back.""
+            "You power through with a bunch of meds, trying to get work done... and knock yourself flat on your back.",
             "You have to take even more time off than you would've originally and feel terrible the whole time."
         ]
     }

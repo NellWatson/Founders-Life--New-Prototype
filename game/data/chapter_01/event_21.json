@@ -8,7 +8,10 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You read online that exercise helps with productivity, mood, and energy, but are worried taking an extra hour out of your day will hurt how much you get done. Become a member at your local gym?"]
+        "en": [
+            "You read online that exercise helps with productivity, mood, and energy, but are worried taking an extra hour out of your day will hurt how much you get done.",
+            "Become a member at your local gym?"
+        ]
     },
     "yes_action": {
         "productivity": 10,

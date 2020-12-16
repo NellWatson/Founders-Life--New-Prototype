@@ -9,7 +9,8 @@
     ],
     "description": {
         "en": [
-            "As the big day looms closer, the spectre of failure beckons over the horizon. You begin to wonder: what will failure mean for you? You don't really want to think about what might happen if you fail, but maybe you should take a moment to figure it out... just in case?"
+            "As the big day looms closer, the spectre of failure beckons over the horizon. You begin to wonder: what will failure mean for you?",
+            "You don't really want to think about what might happen if you fail, but maybe you should take a moment to figure it out... just in case?"
         ]
     },
     "yes_action": {
@@ -23,7 +24,8 @@
     "no_caption": "Whatever. Do or die",
     "yes_description": {
         "en": [
-            "At first, the images that flash through your head are terrible and demoralizing. But eventually your brain starts suggesting other options to you - roads you could potentially take if this doesn't pan out, contingencies.",
+            "At first, the images that flash through your head are terrible and demoralizing.",
+            "But eventually your brain starts suggesting other options to you - roads you could potentially take if this doesn't pan out, contingencies.",
             "It's not fun, but it helps you feel a less like the world will end if this doesn't go your way."
         ]
     },

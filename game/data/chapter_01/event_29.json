@@ -5,7 +5,10 @@
     "category": "energy",
     "character": "none",
     "description": {
-        "en": ["You've been working without a break for most of the past few days and your body is starting to complain. However, you have a deadline coming up and can't afford a day off. How do you deal with this?"]
+        "en": [
+            "You've been working without a break for most of the past few days and your body is starting to complain.",
+            "However, you have a deadline coming up and can't afford a day off. How do you deal with this?"
+        ]
     },
     "yes_action": {
         "energy": 10,

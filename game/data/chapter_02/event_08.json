@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You haven't been getting as many task offers of late, so you have no work for today. You could spend the time applying for freelance contracts and sprucing up your website, or take the day to look after yourself?"
+            "You haven't been getting as many task offers of late, so you have no work for today.",
+            "You could spend the time applying for freelance contracts and sprucing up your website, or take the day to look after yourself?"
         ]
     },
     "yes_action": {

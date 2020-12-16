@@ -34,7 +34,7 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
         add Solid("#000000") alpha 0.60
 
     if len(title) > 20:
-        default t_size = 50
+        default t_size = 46
     else:
         default t_size = 64
 

@@ -207,16 +207,20 @@ label checkpoint:
         
         #call screen level_up(current_bg)
         if energy < 30 and morale < 30 and productivity < 30 and money < 1500:
-            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life. Try and eliminate all other distractions."
+            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life."
+            n normal "Try and eliminate all other distractions."
 
         elif energy < 30 and productivity < 30 and money < 1500:
-            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life. Try and eliminate all other distractions."
+            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life."
+            n normal "Try and eliminate all other distractions."
 
         elif productivity < 30 and morale < 30 and money < 1500:
-            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life. Try and eliminate all other distractions."
+            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life."
+            n normal "Try and eliminate all other distractions."
 
         elif energy < 30 and productivity < 30 and morale < 30:
-            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life. Try and eliminate all other distractions."
+            n normal "Wow, things are almost spinning out of control. You need to take a step back and start focusing on what's really important in your startup and your life."
+            n normal "Try and eliminate all other distractions."
 
         elif energy < 30 and productivity < 30:
             n normal "Being a founder demands vision and momentum, you need to start being ruthless with your focus. But you also need to pro-actively manage your energy."
@@ -283,8 +287,8 @@ label chapter_finale:
 label chapter_one_finale:
     $ event_code = "chapter_01_99"
 
+    "You've finally finished your first month with [startup_name]. It ended up being much harder than you thought."
     menu:
-        "You've finally finished your first month with [startup_name]. It ended up being much harder than you thought."
         "As the calendar flips into February, you feel proud. You're really making your dreams happen. In fact, you feel like..."
 
         "You're doing well":
@@ -318,12 +322,14 @@ label chapter_two_finale:
     $ event_code = "chapter_03_00"
 
     "You've finally proven to Skylar that you are, in fact, capable of achieving your dreams, but the measures you had to take to do it leave you dissatisfied."
-    "You didn't start out on this journey just to wind up working on other people's dreams, after all. You wanted to be your own boss, not gain sixty. But how are you supposed to bide time between now and when your work is finished?"
+    "You didn't start out on this journey just to wind up working on other people's dreams, after all."
+    "You wanted to be your own boss, not gain sixty. But how are you supposed to bide time between now and when your work is finished?"
     "As you're mulling this and checking your inbox, you notice another e-mail from Dominique."
 
     "Dear [founder_name],"
     "I'm writing again because divine intervention has enabled me to be in your area at the end of the month, on the 28th. If you are available, I would like to meet."
-    "Pitch me your venture. Tell me your plans. Let me know the progress you have made. Then, we can see whether I can be of use to you.\nBest,\nDominique Martel"
+    "Pitch me your venture. Tell me your plans. Let me know the progress you have made. Then, we can see whether I can be of use to you."
+    "Best,\nDominique Martel"
 
     "Before you give yourself too much time to think, you reply and accept. But you can't help asking: why are you doing this? The answer comes almost immediately."
     "\"Because part of the reason I chose to chase my success was to help others when they chased their own.\""
@@ -356,9 +362,12 @@ label chapter_three_finale:
     $ characters_roster.store["none"].affection = 0
 
     "[founder_name],\nI'm very excited to move forward with you on this. A few things to note:"
-    "There is an event coming up in two months. I think it would be prudent to release your product to correspond with that event, as that should help gain it a lot of publicity. I know that's likely a much faster timeline than you were hoping for, but trust me on this."
-    "On the first of the next month, we will release the product to beta-testers, who will give us valuable feedback. Thus, this month should be spent ensuring the product works as well as we can get it."
-    "I'm having my team look over your project and will send back our notes. It will be a lot to handle, but fixing what they find will go a long way to making a lasting impression on the beta-testers."
+    "There is an event coming up in two months. I think it would be prudent to release your product to correspond with that event, as that should help gain it a lot of publicity."
+    "I know that's likely a much faster timeline than you were hoping for, but trust me on this."
+    "On the first of the next month, we will release the product to beta-testers, who will give us valuable feedback."
+    "Thus, this month should be spent ensuring the product works as well as we can get it."
+    "I'm having my team look over your project and will send back our notes."
+    "It will be a lot to handle, but fixing what they find will go a long way to making a lasting impression on the beta-testers."
     "Take some rest now while you can. You'll need it.\nDominique"
 
     menu:
@@ -376,7 +385,8 @@ label chapter_four_finale:
     show dominique at center
 
     "On the last day, just in the nick of time, you have everything finalized and ready for the beta."
-    "You've been working so furiously hard you haven't even had time to process the fact that tomorrow, real live people will be seeing what you've poured your heart and soul into over the past few months. In fact, you're now too exhausted to even be worried."
+    "You've been working so furiously hard you haven't even had time to process the fact that tomorrow, real live people will be seeing what you've poured your heart and soul into over the past few months."
+    "In fact, you're now too exhausted to even be worried."
     "Later that night, when you're explaining this to Dominique, he smiles."
 
     d "That was exactly the point. Trust me, you'll thank me later."
@@ -399,7 +409,8 @@ label chapter_five_finale:
     $ event_code = "chapter_05_99"
     show dominique at center
 
-    n normal "Game over.\nThank you for playing."
+    n normal "Game over."
+    n normal "Thank you for playing."
 
     if not persistent.submitted_form:
         n normal "Please would you kindly give us your feedback?"
