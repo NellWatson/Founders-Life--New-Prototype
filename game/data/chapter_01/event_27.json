@@ -24,9 +24,9 @@
     "yes_caption": "...Okay. No worries. I'm on it...",
     "no_caption": "She's *your** mother. Be an adult and handle it.",
     "yes_description": {
-        "en": ["none::You hate these calls with Skylar's difficult mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]
+        "en": ["none::You hate joining these calls with Skylar's difficult mother, but you know the consequences for not helping out would be much worse than the benefits of not doing it."]
     },
     "no_description": {
-        "en": ["none::You know the conversation will last the entire night, and you can't be bothered. Skylar looks at you as though seeing you for the first time."]
+        "en": ["none::You know the annoying conversation will last the entire night, and you really can't be bothered to deal with this nonsense. Skylar looks at you with exasperation."]
     }
 }
