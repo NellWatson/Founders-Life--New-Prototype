@@ -27,13 +27,13 @@
     "no_caption": "Okay, I'll grit my teeth, and give Roger and the job more attention",
     "yes_description": {
         "en": [
-            "skylar::\"You'll - I mean, I know you're planning on doing your own thing full-time, but --\"",
-            "skylar::\"Forget it. We'll talk about this some other time.\""
+            "skylar::You'll - I mean, I know you're planning on doing your own thing full-time, but --",
+            "skylar::Forget it. We'll talk about this some other time."
         ]
     },
     "no_description": {
         "en": [
-            "skylar::\"Thank you for listening, #NAME.\""
+            "skylar::Okay, Thank you for listening, #NAME!"
         ]
     }
 }

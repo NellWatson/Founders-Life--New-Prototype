@@ -16,16 +16,16 @@
     },
     "yes_description": {
         "en": [
-            "skylar::\"You're not quitting your job though, right?\"",
-            "skylar::\"As long as you're careful, then of course I'll support you!\"",
-            "skylar::\"I would have liked to be a part of this decision, though.\""
+            "skylar::You're not quitting your job though, right?",
+            "skylar::As long as you're careful, then of course I'll support you!",
+            "skylar::I would have liked to be a part of this decision, though."
         ]
     },
     "no_description": {
         "en": [
             "You decide against telling people your plans, lest you fall flat on your face. You don't want your boss, Roger, finding out either.",
             "However, the time suddenly spent working away at your computer becomes noticeable. Skylar asks you what's going on, and you explain. Then your friends find out.",
-            "\"I'm surprised you didn't tell me. I guess you didn't trust me.\"",
+            "skylar::I'm surprised you didn't tell me. I guess you didn't trust me.",
             "Ouch."
         ]
     },
