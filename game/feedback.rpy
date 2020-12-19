@@ -25,7 +25,7 @@ screen feedback_form_screen():
     default required_actions = 0
 
     default metrics = [
-        ("OVERALL EXPERIENCE", "overall"),
+        ("OVERALL EXP.", "overall"),
         ("EASE OF USE", "ease"),
         ("GAMEPLAY", "gameplay"),
         ("STORY", "story"),

@@ -383,7 +383,7 @@ label chapter_three_finale:
 
 label chapter_four_finale:
     $ event_code = "chapter_04_99"
-    show dominique at center
+    #show dominique at center
 
     "On the last day, just in the nick of time, you have everything finalized and ready for the beta."
     "You've been working so furiously hard you haven't even had time to process the fact that tomorrow, real live people will be seeing what you've poured your heart and soul into over the past few months."

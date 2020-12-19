@@ -22,7 +22,8 @@
     "no_caption": "It's not worth raising a fuss over.",
     "yes_description": {
         "en": [
-            "The client responds with a sassy e-mail, declaring that you never signed an official contract and the sparse verbal agreement guaranteed payment only upon use of the asset in question. You're not so sure if that makes a difference, legally. Still, they send you $100 'ex gratia' for your consultation - probably to keep you quiet."
+            "The client responds with a sassy e-mail, declaring that you never signed an official contract and the sparse verbal agreement guaranteed payment only upon use of the asset in question.",
+            "You're not so sure if that makes a difference, legally. Still, they send you $100 'ex gratia' for your consultation - probably to keep you quiet."
         ]
     },
     "no_description": {

@@ -1681,7 +1681,7 @@ screen reset_data_confirm():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 64 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 48 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1692,7 +1692,7 @@ screen reset_data_confirm():
 
                     text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-                    action Hide("clear_data_confirm")
+                    action Hide("reset_data_confirm")
 
                     xpos width+20
             frame:
@@ -1705,7 +1705,7 @@ screen reset_data_confirm():
                     xalign 0.5
                     yalign 0.5
 
-                    text "This will delete all the data associated with the game (including save files, settings data and achievements)." color "#000000"
+                    text "This will delete all the data associated with the game (including save files, settings data and achievements)." size 25 color "#000000"
 
             button:
                 xysize width, 90-15
