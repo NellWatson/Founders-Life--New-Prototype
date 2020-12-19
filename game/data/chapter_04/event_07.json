@@ -5,7 +5,11 @@
     "category": "productivity",
     "character": "dominique",
     "description": {
-        "en": ["The first e-mail of criticisms Dominique sent you keeps running through your mind at the worst of times. Finally, after mulling it over for days, you decide to shoot Dominique a quick e-mail rebutting some of what he found. You know you should be listening to him - he really does know better than you - but you're not going to let him walk all over you like that."]
+        "en": [
+            "The first e-mail of criticisms Dominique sent you keeps running through your mind at the worst of times.",
+            "Finally, after mulling it over for days, you decide to shoot Dominique a quick e-mail rebutting some of what he found.",
+            "You know you should be listening to him - he really does know better than you - but you're not going to let him walk all over you like that."
+        ]
     },
     "yes_action": {
         "mindfulness": 10
