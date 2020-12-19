@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v 0.3.1.1219
+------------
+* Fixed return stack bug.
+* Fixed the bug where money check was giving reverse results.
+* Hide Save button from end executable.
+* Record score when player finishes the game by victory.
+
 v 0.2.5.0510
 ------------
 * Remove telemetry. We do that by sending dummy data about the user so there is no way of knowing who the player is.

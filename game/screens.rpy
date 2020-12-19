@@ -269,12 +269,14 @@ screen quick_menu():
             action Skip() alternate Skip(fast=True, confirm=True)
 
             at set_size(50, 50)
-        imagebutton:
-            idle "gui/save_idle.png"
-            hover "gui/save_hover.png"
-            action ShowMenu('save')
 
-            at set_size(50, 50)
+        if config.developer:
+            imagebutton:
+                idle "gui/save_idle.png"
+                hover "gui/save_hover.png"
+                action ShowMenu('save')
+
+                at set_size(50, 50)
         imagebutton:
             idle "gui/settings_idle.png"
             hover "gui/settings_hover.png"

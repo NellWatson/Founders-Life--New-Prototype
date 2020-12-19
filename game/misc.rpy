@@ -95,7 +95,7 @@ init python:
             else:
                 money_month = int(money_month)
                 
-            stored_value = money_manager.get_monthly_earning(money_month)
+            stored_value = int(money_manager.get_monthly_earning(money_month))
         else:
             stored_value = getattr(store, var)
 
