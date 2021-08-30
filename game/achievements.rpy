@@ -156,7 +156,7 @@ screen achievement_screen(shelf):
         yalign 0.01
 
     if page == 1:
-        use say("Nell", "Welcome to Founderpedia, where I'll be sharing some of my best startup lessons and worst entrepreneurial expreciences.", "side nell normal")
+        use say("Nell", "Welcome to Founderpedia, where you'll find some of the best startup lessons and resources.", "side nell normal")
 
         $ row = 2
         $ column = shelf.limit / 2

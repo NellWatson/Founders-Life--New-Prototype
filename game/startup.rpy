@@ -157,7 +157,7 @@ screen startup_review(bg):
             spacing 10
 
             null height 1.0
-            text "Another sprint completed [founder_name]" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 0.5
+            text "Another sprint completed, [founder_name]" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 0.5
             null height 8.0
 
             grid 2 7:
