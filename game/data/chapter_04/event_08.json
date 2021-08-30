@@ -5,7 +5,10 @@
     "category": "mindfulness",
     "character": "dominique",
     "description": {
-        "en": ["You turn in your solution to one of Dominique's many, many doubts and nitpicks, and he comes back with a problem to the solution you found. Heat surges through you. Would it kill him to just say, \"Good job\" every once in a while?"]
+        "en": [
+            "You turn in your solution to one of Dominique's many, many doubts and nitpicks, and he comes back with a problem to the solution you found. Heat surges through you.",
+            "Would it kill him to just say, \"Good job\" every once in a while?"
+        ]
     },
     "yes_action": {
         "mindfulness": 10

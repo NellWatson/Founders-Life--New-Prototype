@@ -10,7 +10,8 @@
     ],
     "description": {
         "en": [
-            "In light of the event coming up, Dominique wants you to place high profile ads for the eventual product release. The thought, however, terrifies you. You're not sure you're going to meet the deadline on time. How much money are you willing to put into these ads? How many eyes are you comfortable with?"
+            "In light of the event coming up, Dominique wants you to place high profile ads for the eventual product release. The thought, however, terrifies you. You're not sure you're going to meet the deadline on time.",
+            "How much money are you willing to put into these ads? How many eyes are you comfortable with?"
         ]
     },
     "yes_action": {

@@ -153,6 +153,7 @@ label checkpoint:
         $ renpy.unlink_save("custom")
         $ telemetry.end("No Cashflow")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+        $ renpy.set_return_stack("")
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
@@ -346,6 +347,7 @@ label chapter_three_finale:
         $ renpy.unlink_save("custom")
         $ telemetry.end("Game Over at Chapter 03")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+        $ renpy.set_return_stack("")
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
@@ -383,7 +385,7 @@ label chapter_three_finale:
 
 label chapter_four_finale:
     $ event_code = "chapter_04_99"
-    show dominique at center
+    #show dominique at center
 
     "On the last day, just in the nick of time, you have everything finalized and ready for the beta."
     "You've been working so furiously hard you haven't even had time to process the fact that tomorrow, real live people will be seeing what you've poured your heart and soul into over the past few months."
@@ -408,7 +410,9 @@ label chapter_four_finale:
 
 label chapter_five_finale:
     $ event_code = "chapter_05_99"
-    show dominique at center
+    $ telemetry.end("Game finished")
+    $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+    #show dominique at center
 
     n normal "Game over."
     n normal "Thank you for playing."
