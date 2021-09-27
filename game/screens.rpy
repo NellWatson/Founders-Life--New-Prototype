@@ -114,7 +114,7 @@ screen say(who, what, side_image=None):
             yanchor 0
             background "gui/nameplate.png"
 
-            text who id "who" font "fonts/Geo-Regular.ttf" size 100 color "#559fdd" xoffset 488
+            text who id "who" font "fonts/Geo-Regular.ttf" size 90 color "#559fdd" xoffset 488
 
     window:
         id "window"

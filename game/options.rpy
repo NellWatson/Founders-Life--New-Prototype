@@ -33,7 +33,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.3.1-1219"
+define config.version = "0.4.0-0927"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -59,7 +59,7 @@ define config.has_music = True
 define config.has_voice = False
 
 ## The default audio volumes
-define config.default_music_volume = 0.5
+define config.default_music_volume = 0.25
 define config.default_sfx_volume = 0.7
 define config.default_voice_volume = 1.0
 

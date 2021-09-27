@@ -9,7 +9,7 @@ init python:
         "mainmenu": "Main menu elements",
         "bg": "Background",
         "contacts": "Sprites for In game Characters",
-        "intro": "KPI Icon images show during during Intro"
+        "intro": "KPI Icon images shown during Intro"
     }
 
     def image_details():

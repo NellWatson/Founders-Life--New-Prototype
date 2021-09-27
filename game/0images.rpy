@@ -24,6 +24,8 @@ image side skylar = "images/contacts/skylar.png"
 image side takashi = "images/contacts/takashi.png"
 image side roger = "images/contacts/roger.png"
 
+image the end = "images/splash/the_end.jpg"
+
 #image side eileen = "images/contacts/eileen.png"
 #image side carla = "images/contacts/carla.png"
 #image side raquel = "images/contacts/raquel.png"

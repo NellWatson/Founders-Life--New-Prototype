@@ -22,7 +22,7 @@ label start:
     $ chapter_manager.load_chapter("ch_03", "chapter_03")
     $ chapter_manager.load_chapter("ch_04", "chapter_04")
     $ chapter_manager.load_chapter("ch_05", "chapter_05")
-    $ chapter_manager.set_chapter("ch_01")
+    $ chapter_manager.set_chapter("ch_02")
 
     $ telemetry.init()
     $ telemetry.setup()
@@ -349,6 +349,8 @@ label chapter_three_finale:
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
         $ renpy.set_return_stack("")
 
+        n "Oh dear! Your personal relationships are in tatters, and without the moral support of those closest to you, the grind becomes unbearable. You give up this misery-generating enterprise and try to get your old job back."
+
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
 
@@ -414,11 +416,16 @@ label chapter_five_finale:
     $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
     #show dominique at center
 
-    n normal "Game over."
-    n normal "Thank you for playing."
+    scene the end:
+        xalign 0.5
+        yalign 0.5
+
+    n normal "Congratulations! You have endured a long and difficult journey. Your baby venture is now starting to mature. With greater scale will come further challenges, but these too may be overcome."
+    n normal "For now, this episode has reached its conclusion. Congratulations, once again!"
 
     if not persistent.submitted_form:
         n normal "Please would you kindly give us your feedback?"
-        call screen feedback_form_screen
+        call screen feedback_form_screen    
+    call screen credits
 
     return

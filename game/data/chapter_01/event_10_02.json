@@ -5,7 +5,7 @@
     "category": "mindfulness",
     "character": "takashi",
     "condition": [
-        ["takashi:affection", 3, "greater"]
+        ["takashi:affection", 3, "greater_equal"]
     ],
     "description": {
         "en": [
