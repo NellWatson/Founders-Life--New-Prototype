@@ -1,0 +1,33 @@
+{
+    "id": "chapter_02_29",
+    "bg": "desk",
+    "title": "Desk Fit",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "You see an offer for a second-hand combo desk and exercise bike combo in your area. It's much cheaper than buying it new, at only $200. Is it worth buying it?"
+        ]
+    },
+    "yes_action": {
+        "productivity": -10,
+        "mindfulness": 10,
+        "money": -200,
+        "energy": 40
+    },
+    "no_action": {
+        "productivity": 0
+    },
+    "yes_caption": "Kill two birds with one stone, right?",
+    "no_caption": "Try to do two things, do neither.",
+    "yes_description": {
+        "en": [
+            "It does admittedly distract you a little bit, but you get lots of energy and a bit of satisfaction too."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "You decide not to bother. Looks like a recipe for haemorrhoids anyway."
+        ]
+    }
+}

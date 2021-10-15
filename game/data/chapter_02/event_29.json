@@ -1,0 +1,31 @@
+{
+    "id": "chapter_02_29",
+    "bg": "desk",
+    "title": "Finding Flow",
+    "category": "productivity",
+    "character": "none",
+    "description": {
+        "en": [
+            "You come across an audio streaming service that claims to enhance one's ability to focus. The subscription is $200. However you find a coupon for 50% off. You wonder if it's worth the money."
+        ]
+    },
+    "yes_action": {
+        "productivity": 40,
+        "money": -100
+    },
+    "no_action": {
+        "productivity": 0
+    },
+    "yes_caption": "It's worth a try.",
+    "no_caption": "Nah, it might just distract me.",
+    "yes_description": {
+        "en": [
+            "It actually helps your ability to focus a lot, and you are unusually productive as a result."
+        ]
+    },
+    "no_description": {
+        "en": [
+            "Much later you read online about someone who said they found it really useful. The coupon since expired, though. Oh well."
+        ]
+    }
+}

@@ -26,7 +26,7 @@ label start:
 
     $ telemetry.init()
     $ telemetry.setup()
-    $ persistent.trophy_shelf.check_unlock(founder_level)
+    #$ persistent.trophy_shelf.check_unlock(founder_level)
 
     play music "music/ost002.mp3" fadein 1.5
     scene bg bedroom
