@@ -23,12 +23,14 @@
     "no_caption": "Say what you reckon they want to hear",
     "yes_description": {
         "en": [
-            "You decide to speak from the heart. Dominique said he wanted to help others chase their success. By being upfront about what you find important, you make a beacon for others who resonate to find you. You just hope he was telling the truth."
+            "You decide to speak from the heart. Dominique said he wanted to help others chase their success.",
+            "By being upfront about what you find important, you make a beacon for others who resonate to find you. You just hope he was telling the truth."
         ]
     },
     "no_description": {
         "en": [
-            "You do some research on Mr. Martel. He seems to focus on providing the utmost value and usability to his clients. All his products have design elements his competitors haven't quite caught up to, meant to enable ease of use. That's a focus you can bring to your presentation."
+            "You do some research on Mr. Martel. He seems to focus on providing the utmost value and usability to his clients.",
+            "All his products have design elements his competitors haven't quite caught up to, meant to enable ease of use. That's a focus you can bring to your presentation."
         ]
     }
 }

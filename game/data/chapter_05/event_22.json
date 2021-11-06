@@ -6,8 +6,10 @@
     "character": "none",
     "description": {
         "en": [
-            "A few beta-testers are reporting problems you can't replicate on your computer. It seems they're running on a different operating system, but you don't have access to a computer with that system.",
-            "However, only a fraction of people use this operating system, so it might be something you can put off fixing until later. Should you buy the cheapest computer of that type to test this ($800), or let it go?"
+            "A few beta-testers are reporting problems you can't replicate on your computer.",
+            "It seems they're running on a different operating system, but you don't have access to a computer with that system.",
+            "However, only a fraction of people use this operating system, so it might be something you can put off fixing until later.",
+            "Should you buy the cheapest computer of that type to test this ($800), or let it go?"
         ]
     },
     "yes_action": {

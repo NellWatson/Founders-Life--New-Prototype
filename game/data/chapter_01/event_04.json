@@ -8,7 +8,8 @@
         ["turn_no", 21, "greater"]
     ],
     "description": {
-        "en": ["#NAME, I feel like you've been ignoring me. I know your new business takes up a lot of your time, but you can't just wave me to the side because you're busy. Please let's spend some time with me."]
+        "en": ["#NAME, I feel like you've been ignoring me. I know your new business takes up a lot of your time, but...",
+          "you can't just wave me to the side because you're busy. Please let's spend some time together."]
     },
     "yes_action": {
         "productivity": -10,

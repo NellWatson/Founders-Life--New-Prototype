@@ -6,7 +6,9 @@
     "character": "dominique",
     "description": {
         "en": [
-            "Dominique informs you it would be prudent to comb through your online profiles and remove from public view anything that might reveal your personal information or information about your family. He's found some, shall we say, unprofessional photos of you on Facebook. But when you search your own name, you realize it'll take all day to get this done. What do you do?"
+            "Dominique informs you it would be prudent to comb through your online profiles and remove from public view anything that might reveal your personal information or information about your family.",
+            "He's found some, shall we say, unprofessional photos of you on social media.",
+            "But when you see how much of yourself if plastered over the web, you realize it'll take all day to get rid of old posts. What do you do?"
         ]
     },
     "yes_action": {
@@ -21,7 +23,8 @@
     "no_caption": "Don't worry about it",
     "yes_description": {
         "en": [
-            "It takes far more work than you imagined. So many sites have your address and require huge amounts of effort to have it taken down! Still, you get some peace of mind from knowing you're safer now than you were before."
+            "It takes far more work than you imagined. So many sites have your address and require huge amounts of effort to have it taken down!",
+            "Still, you get some peace of mind from knowing you're safer now than you were before."
         ]
     },
     "no_description": {

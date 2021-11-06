@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You come across an audio streaming service that claims to enhance one's ability to focus. The subscription is $200. However you find a coupon for 50% off. You wonder if it's worth the money."
+            "You come across an audio streaming service that claims to enhance one's ability to focus. The subscription is $200.", 
+            "However you find a coupon for 50% off. You wonder if it's worth the money."
         ]
     },
     "yes_action": {

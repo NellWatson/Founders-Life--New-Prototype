@@ -5,7 +5,8 @@
     "category": "energy",
     "character": "none",
     "description": {
-        "en": ["You've made it to the end of the week. You're so close to finishing the list of what Dominique wanted, but you won't be able to finish it all tonight unless you pull an all-nighter, and that sounds horrifically unpleasant at the moment. What do you do?"]
+        "en": ["You've made it to the end of the week. You're so close to finishing the list of what Dominique wanted, but you won't be able to finish it all tonight unless you pull an all-nighter.",
+          "That sounds horrifically unpleasant at the moment. What do you do?"]
     },
     "yes_action": {
         "energy": 20,

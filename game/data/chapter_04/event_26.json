@@ -5,7 +5,8 @@
     "category": "mindfulness",
     "character": "none",
     "description": {
-        "en": ["Now that you have someone to back you up, you realize quitting your full-time job is real, achievable, and right around the corner. But with the joy of that realization comes an unpleasant reality: you'll soon be out of health insurance. The anxiety sits in the back of your mind, tugging at you. Is it worth doing some research to see what your options are?"]
+        "en": ["Now that you have someone to back you up, you realize quitting your full-time job is real, achievable, and right around the corner. But with the joy of that realization comes an unpleasant reality: you'll soon be out of health insurance.",
+          "The anxiety sits in the back of your mind, tugging at you. Is it worth doing some research to see what your options are?"]
     },
     "yes_action": {
         "productivity": -10,
@@ -19,7 +20,8 @@
     "no_caption": "Put it out of your mind",
     "yes_description": {
         "en": [
-            "You spend the day on various websites. It's good that you looked, because there was a limited amount of time between when you quit a job and when you can apply for assisted health insurance coverage. Now you know that's something you need to do ASAP when the time comes."
+            "You spend the day on various websites. It's good that you looked, because there was a limited amount of time between when you quit a job and when you can apply for assisted health insurance coverage.",
+            "Now you know that's something you need to do ASAP when the time comes."
         ]
     },
     "no_description": {

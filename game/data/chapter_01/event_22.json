@@ -11,7 +11,7 @@
         "en": [
             "Roger calls you just as you're getting ready for work.",
             "Roger::One of the projects you're working on is cancelled. There's no need for you to come into work this week.",
-            "Take the hit in pay for a chill week away from home, or spend the time on your own work?"
+            "Take the hit in pay for a chill week away from home, or spend the time on your own freelance work?"
         ]
     },
     "yes_action": {
@@ -31,6 +31,6 @@
         "en": ["none::Sometimes money isn't everything!"]
     },
     "no_description": {
-        "en": ["none::Now isn't the time to be making risky financial decisions. You stick to the plan."]
+        "en": ["none::Now isn't the time to be making laying on your laurels. You stick to the plan."]
     }
 }

@@ -7,9 +7,8 @@
     "description": {
         "en": [
             "Oh really, hm? Let me get this straight.",
-            "You need the day off in a couple of weeks to \"go to an appointment,\" huh?",
-            "I'm not going to say no, but I'm docking your pay. You've been doing a real lackluster job around here, and now you're trying to take off on a day we have a big company meeting?",
-            "Nuh-uh. Either get your act together or just walk away."
+            "You need the day off in a couple of weeks to \"go to an appointment,\" huh? I'm not going to say no, but I'm docking your pay.",
+            "You've been doing a real lackluster job around here, and now you're trying to take off on a day we have a big company meeting?",
         ]
     },
     "yes_action": {

@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You've read a few suggestions online about how you should think of the investors duing this interview. One side says to view yourself as the alpha - confident, assured, and dominating.",
+            "You've read a few suggestions online about how you should think of the investors duing this interview.",
+            "One side says to view yourself as the alpha dog - confident, assured, and dominating.",
             "The investor is someone who knows less than you, and you are the authority here to educate them.",
             "The other side suggests viewing the investor like an enthusiastic fan of the industry - someone interested, but new.",
             "You need to explain how things work, but also wow them with a project you know they'll love.",
@@ -29,7 +30,8 @@
     },
     "no_description": {
         "en": [
-            "You decide to approach it as though they're already on your side, just waiting to love your project once they understand it. Maybe if you view them as people to be befriended, that can come true."
+            "You decide to approach it as though they're already on your side, just waiting to love your project once they understand it.",
+            "Maybe if you view them as people to be befriended, that can come true."
         ]
     }
 }

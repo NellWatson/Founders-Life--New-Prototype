@@ -6,9 +6,9 @@
     "character": "none",
     "description": {
         "en": [
-            "A beta-tester sends you an ostensibly positive message, telling you they've been searching for something like this all their lives and can't wait to see the final product once \"some of these annoying things are fixed.\"",
-            "Perhaps it should make you happy, but you instead feel dread.",
-            "You don't even know this person - why are you worried about letting them down?"
+            "A beta-tester sends you an ostensibly positive message.",
+            "They tell you they've been searching for something like this all their lives and can't wait to see the final product once \"some of these annoying things are fixed.\"",
+            "Perhaps it should make you happy, but you instead feel dread. You don't even know this person - why are you worried about letting them down?"
         ]
     },
     "yes_action": {

@@ -27,9 +27,11 @@
     "yes_caption": "Establish an exercise routine.",
     "no_caption": "It's not worth it.",
     "yes_description": {
-        "en": ["The extra exercise makes you sore and grumbly, and at first you take a hit to productivity. However, within a few days your energy soars. You find you can stay focused much longer than before."]
+        "en": ["The extra exercise makes you sore and grumbly, and at first you take a hit to productivity.",
+          "However, within a few days your energy soars. You find you can stay focused much longer than before."]
     },
     "no_description": {
-        "en": ["You can't afford to lose an hour a day, not right now. You hunker down to keep working, with a niggling voice in the back of your mind reminding you that your health will take a hit for it."]
+        "en": ["You can't afford to lose an hour a day, not right now.", 
+          "You hunker down to keep working, with a niggling voice in the back of your mind reminding you that your health will take a hit for it."]
     }
 }

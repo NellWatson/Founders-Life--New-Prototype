@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You finally finish up your latest fix - this one's taken you three days - and save the file. As soon as you do, the entire thing falls apart. Something in your fix has triggered a malfunction in a long, deep chain, creating an array of tiny fixes that are sure to eat up hours of time over the next few days.",
+            "You finally finish up your latest fix - this one's taken you three days - and save the file. As soon as you do, the entire thing falls apart.",
+            "Something in your fix has triggered a malfunction in a long, deep chain, creating an array of tiny fixes that are sure to eat up hours of time over the next few days.",
             "You place your head in your hands and inhale. How will you deal with this?"
         ]
     },
@@ -28,7 +29,8 @@
     },
     "no_description": {
         "en": [
-            "In frustration you go over what you just did, trying to see where exactly you went wrong. Eventually you pinpoint it. It's a mistake made months ago, at this point deeply woven into the fabric of your creation.",
+            "In frustration you go over what you just did, trying to see where exactly you went wrong.",
+            "Eventually you pinpoint it. It's a mistake made months ago, at this point deeply woven into the fabric of your creation.",
             "You get on with the fix, cursing your stupid former self all the while."
         ]
     }

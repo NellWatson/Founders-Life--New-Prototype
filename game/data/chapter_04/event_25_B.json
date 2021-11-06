@@ -8,13 +8,14 @@
         ["ch_04:chapter", "chapter_04_13", "chose:no"]
     ],
     "description": {
-        "en": ["Your computer won't even start. You spend the entire day trying to recover files you didn't back up from your old computer, only to give in and take it to a professional for servicing. So much for saving money!"]
+        "en": ["Your computer won't even start today.",
+          "You spend the entire day trying to recover files you didn't back up from your old computer, only to give in and take it to a professional for servicing. So much for saving money!"]
     },
     "yes_action": {
         "productivity": -30,
         "mindfulness": -20,
         "money": -300
     },
-    "yes_caption": "Ridiculous.",
+    "yes_caption": "Oh dear.",
     "play_after": "chapter_04_13"
 }

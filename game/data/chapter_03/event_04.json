@@ -26,13 +26,17 @@
     "no_caption": "Practice by yourself",
     "yes_description": {
         "en": [
-            "You pitch to strangers and end up embarrassing yourself repeatedly. You're not sure whether the problem is with your pitch or your delivery, but people are visibly uninterested in everything you're trying to do. However, eventually, you start to get a little better at it. It feels good."
+            "You pitch to strangers and end up embarrassing yourself repeatedly.",
+            "You're not sure whether the problem is with your pitch or your delivery, but people are visibly uninterested in everything you're trying to do.",
+            "However, eventually, you start to get a little better at it. It feels good."
         ]
     },
     "no_description": {
         "en": [
-            "Although you feel a little bit of a lazy lightweight for staying in, you realize there's a lot to learn just from practicing in front of a camera. Your expressions are off, and you seem at turns aggressive, hesitant, and bored.",
-            "You focus on delivering the pitch with enthusiasm and as much confidence as you can feign, practicing until you have something you hope might be infectious. You have no idea if you are just kidding yourself, though. You aren't sure about the core message either."
+            "Although you feel a little bit of a lazy lightweight for staying in, you realize there's a lot to learn just from practicing in front of a camera.",
+            "Your expressions are off, and you seem at turns aggressive, hesitant, and bored.",
+            "You focus on delivering the pitch with enthusiasm and as much confidence as you can feign, practicing until you have something you hope might be infectious.",
+            "You have no idea if you are just kidding yourself, though. You aren't sure about the core message either."
         ]
     }
 }

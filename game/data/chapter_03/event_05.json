@@ -24,12 +24,14 @@
     "no_caption": "Too expensive",
     "yes_description": {
         "en": [
-            "You enroll in the workshop and spend the day speaking and listening to others speak. Surprisingly, you learn more from listening to others. Now you have an idea of what NOT to do during your presentation."
+            "You enroll in the workshop and spend the day speaking and listening to others speak.",
+            "Surprisingly, you learn more from listening to others. Now you have an idea of what NOT to do during your presentation."
         ]
     },
     "no_description": {
         "en": [
-            "You decide against it, but doubt about the decision stays with you into the night. What if you fail the presentation, all because you didn't attend the workshop? The regret clings to you, no matter how irrational you tell yourself you're being."
+            "You decide against it, but doubt about the decision stays with you into the night. What if you fail the presentation, all because you didn't attend the workshop?",
+            "The regret clings to you, no matter how irrational you tell yourself you're being."
         ]
     }
 }

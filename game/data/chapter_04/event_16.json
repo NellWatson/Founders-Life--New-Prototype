@@ -10,7 +10,8 @@
     ],
     "description": {
         "en": [
-            "In light of the event coming up, Dominique wants you to place high profile ads for the eventual product release. The thought, however, terrifies you. You're not sure you're going to meet the deadline on time.",
+            "In light of the event coming up, Dominique wants you to place high profile ads for the eventual product release.",
+            "The thought, however, terrifies you. You're not sure you're going to meet the deadline on time.",
             "How much money are you willing to put into these ads? How many eyes are you comfortable with?"
         ]
     },
@@ -32,7 +33,8 @@
     },
     "no_description": {
         "en": [
-            "You place modest ads. Humble ads, one could say. Marketing is one thing, but you'd like to focus on meeting the expectations of your customers - and part of that, for you, means not sticking too closely to a release date."
+            "You place modest ads. Humble ads, one could say.",
+            "Marketing is one thing, but you'd like to focus on meeting the expectations of your customers - and part of that, for you, means not sticking too closely to a release date."
         ]
     }
 }

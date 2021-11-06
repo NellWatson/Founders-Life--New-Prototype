@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "You had a doctor's appointment today. While most everything was normal, your blood pressure has risen to an unhealthy level. The doctor tells you it's likely due to stress. You need to figure out how to relax or risk damaging your body.",
+            "You had a doctor's appointment today. While most everything was normal, your blood pressure has risen to an unhealthy level.",
+            "The doctor tells you it's likely due to stress. You need to figure out how to relax or risk damaging your body.",
             "You know what the doctor says is true, but with everything going on, there's no way you'll be able to take care of it. Unfortunately, this only stresses you out further."
         ]
     },
@@ -14,5 +15,5 @@
         "energy": 10,
         "mindfulness": -10
     },
-    "yes_caption": "Stressful!"
+    "yes_caption": "Oh dear!"
 }

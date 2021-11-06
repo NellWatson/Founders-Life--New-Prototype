@@ -1,13 +1,14 @@
 {
     "id": "chapter_05_14",
     "bg": "desk",
-    "title": "The Pressure Mounts",
+    "title": "Pressure Mounts",
     "category": "energy",
     "character": "none",
     "description": {
         "en": [
             "There isn't enough time. There's so much to fix, and there aren't enough hours left!",
-            "You know it's impossible to solve every issue before launch - of course you know that. But somewhere in your heart of hearts, you believed everything would come together at the last minute.",
+            "You know it's impossible to solve every issue before launch - of course you know that.",
+            "But somewhere in your heart of hearts, you believed everything would come together at the last minute.",
             "That isn't going to happen they way you wanted, and you have to accept it."
         ]
     },

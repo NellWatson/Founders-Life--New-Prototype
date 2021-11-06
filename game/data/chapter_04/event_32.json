@@ -6,7 +6,8 @@
     "character": "dominique",
     "description": {
         "en": [
-            "You receive a book in the mail titled, \"How to Handle Criticism Constructively: Change Your Life by Changing Your Attitude!\" There's no way to know when it was sent, but you know who must've sent it: Dominique. How do you respond?"
+            "You receive a book in the mail titled, \"How to Handle Criticism Constructively: Change Your Life by Changing Your Attitude!\".",
+            "There's no way to know when it was sent, but you know who must've sent it: Dominique. How do you respond?"
         ]
     },
     "yes_action": {
@@ -26,7 +27,8 @@
     },
     "no_description": {
         "en": [
-            "You send Dominique an \"innocent\" e-mail, talking about how someone must have sent you this book and what an idiot that person must be! You end by saying you're going to donate it to your local library. Who could argue with such a generous person?"
+            "You send Dominique an \"innocent\" e-mail, talking about how someone must have sent you this book and what an idiot that person must be!",
+            "You end by saying you're going to donate it to your local library. Who could argue with such a generous person?"
         ]
     }
 }

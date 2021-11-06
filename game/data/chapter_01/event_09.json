@@ -8,7 +8,8 @@
         ["turn_no", 7, "greater"]
     ],
     "description": {
-        "en": ["It's my birthday! Another year, but not too old to stay out all night and party like we did in college! Ahh, it wouldn't be the same without my partner-in-crime."]
+        "en": ["It's my birthday! Another year, but not too old to stay out all night and party like we did in college!",
+          "Ahh, it wouldn't be the same without my partner-in-crime."]
     },
     "yes_action": {
         "productivity": -30,

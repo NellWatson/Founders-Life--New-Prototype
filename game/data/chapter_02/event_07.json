@@ -23,7 +23,8 @@
     "no_caption": "Apologize, but insist on the original deadline on principle of not being railroaded into stress.",
     "yes_description": {
         "en": [
-            "You work with intense focus (and several cups of coffee) to finish the job overnight. It's not perfect, but the client is ecstatic and sends you a nice bonus for the work."
+            "You work with intense focus (and several cups of coffee) to finish the job overnight.",
+            "It's not perfect, but the client is ecstatic and sends you a nice bonus for the work."
         ]
     },
     "no_description": {

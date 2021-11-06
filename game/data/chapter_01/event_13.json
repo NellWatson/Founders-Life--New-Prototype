@@ -8,7 +8,8 @@
         ["turn_no", 4, "greater"]
     ],
     "description": {
-        "en": ["You've stumbled across an app suite that seems pretty nifty. Organized checklists and calendar events dance in front of your eyes. Buy it and give it a shot?"]
+        "en": ["You've stumbled across an app suite that seems pretty nifty. Organized checklists and calendar events dance in front of your eyes.",
+          "Buy it and give it a shot?"]
     },
     "yes_action": {
         "productivity": 20,
@@ -20,7 +21,8 @@
     "yes_caption": "Give it a shot.",
     "no_caption": "Save your money.",
     "yes_description": {
-        "en": ["It makes you a bit more productive for a week, but you can't figure out the fiddly mechanics to get it to do exactly what you wanted. At least it helped!"]
+        "en": ["It makes you a bit more productive for a week, but you can't figure out the fiddly mechanics to get it to do exactly what you wanted.", 
+          "At least it helped!"]
     },
     "no_description": {
         "en": ["You've been down this path before. Productivity apps tend to distract more than help. You pass."]

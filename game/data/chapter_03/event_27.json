@@ -6,8 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "It's the night before the pitch. This is everything you've been working towards all month. You even disregarded most of your freelance work (and income) to make sure you get it right.",
-            "Now almost it's time to see whether it'll pay off.",
+            "It's the night before the pitch. This is everything you've been working towards all month.",
+            "You even disregarded most of your freelance work (and income) to make sure you get it right. Now almost it's time to see whether it'll pay off.",
             "One last choice remains. You have a few hours left. Do you spend them drilling yourself or try to relax and get some rest?"
         ]
     },
@@ -30,7 +30,8 @@
     },
     "no_description": {
         "en": [
-            "You drill yourself, finding slight imperfections each time that start to unnerve you. As it gets later, you find yourself wide awake and riddled with nerves, so you decide you might as well keep drilling. It's the best use of your energy right now.",
+            "You drill yourself, finding slight imperfections each time that start to unnerve you.",
+            "As it gets later, you find yourself wide awake and riddled with nerves, so you decide you might as well keep drilling. It's the best use of your energy right now.",
             "You end up going to sleep much later than usual, running the presentation over and over in your mind before you finally drift off."
         ]
     }

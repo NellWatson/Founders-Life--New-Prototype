@@ -8,7 +8,8 @@
         "en": [
             "I've been looking at some statistics...I'm a bit worried. We aren't retaining our beta-testers.",
             "I've narrowed down two possible solutions.",
-            "We could simplify the interface so it's easier to use, though it would be costly. Alternatively, we could ramp up our notifications if we believe the product hasn't been used for a while.",
+            "We could simplify the interface so it's easier to use, though it would be costly.",
+            "Alternatively, we could ramp up our notifications if we believe the product hasn't been used for a while.",
             "The first is damaging to the wallet, the second damaging to the brand. What do you think?"
         ]
     },

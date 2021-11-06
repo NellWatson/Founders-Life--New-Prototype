@@ -9,7 +9,7 @@
         ["turn_no", 21, "greater"]
     ],
     "description": {
-        "en": ["It's like I don't know you any more? I feel like I've been making all the effort to keep our friendship going. I'm cheesed-off, seriously."]
+        "en": ["It's like I don't know you any more? I feel like I've been making all the effort to keep our friendship going. I'm not happy, seriously."]
     },
     "yes_action": {
         "mindfulness": -10

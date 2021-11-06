@@ -19,7 +19,8 @@
     "yes_caption": "Ask him for some positive feedback instead",
     "no_caption": "Grudgingly accept",
     "yes_description": {
-        "en": ["You attempt to ask for some positive feedback, but it comes out as passive-aggressive and bitter. You know it's a bad look, but he should have been a bit more gentle."]
+        "en": ["You attempt to ask for some positive feedback, but it comes out as passive-aggressive and bitter.", 
+          "You know it's a bad look, but he should have been a bit more gentle."]
     },
     "no_description": {
         "en": ["You grudgingly do the work of placating his concerns, and send it back to him. Your message was a bit gruff, but it's nothing he can't handle."]

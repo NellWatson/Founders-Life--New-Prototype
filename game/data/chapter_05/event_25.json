@@ -7,8 +7,9 @@
     "description": {
         "en": [
             "You work as late into the night as you possibly can, but at last Dominique asks for the final version of your project. You give it to him.",
-            "He congratulates you on a job well done and sends it off to famous bloggers and reviewers, hoping to generate even more steam for the day of release. He tells you to relax, to take the next few days off.",
-            "You say you will and crawl into bed. The only thing you feel in particular is a curious emptiness."
+            "He congratulates you on a job well done and sends it off to famous bloggers and reviewers, hoping to generate even more steam for the day of release.",
+            "He tells you to relax, to take the next few days off. You say you will indeed, and crawl into bed.",
+            "The only thing you feel in particular is a curious emptiness."
         ]
     },
     "yes_action": {

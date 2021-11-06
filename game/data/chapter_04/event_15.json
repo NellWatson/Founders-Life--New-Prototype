@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "Now that quitting Roger's place is a possible reality, your mind wanders to your retirement fund. It will be hard to contribute to that after quitting. Is this really something you should be thinking about now?"
+            "Now that quitting Roger's place is a possible reality, your mind wanders to your retirement fund.",
+            "It will be hard to contribute to that after quitting. Is this really something you should be thinking about now?"
         ]
     },
     "yes_action": {

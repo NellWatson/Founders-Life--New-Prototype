@@ -26,12 +26,15 @@
     "no_caption": "Practice alone",
     "yes_description": {
         "en": [
-            "You practice with Skylar. In some ways, it is successful. Boredom has never been so clear to you before. You pivot during the speech to try to make it more animated, and succeed in getting more interest. It's exhausting, but it gives you a more complete idea of exactly what can go wrong in this meeting."
+            "You practice with Skylar. In some ways, it is successful. Boredom has never been so clear to you before.",
+            "You pivot during the speech to try to make it more animated, and succeed in getting more interest.",
+            "It's exhausting, but it gives you a more complete idea of exactly what can go wrong in this meeting."
         ]
     },
     "no_description": {
         "en": [
-            "You practice alone, trying to imagine Mr. Martel in front of you from the photos you've seen online. It's hard to do and distracts you from making sure your speech is being delivered well. But hey, at least you practiced."
+            "You practice alone, trying to imagine Mr. Martel in front of you from the photos you've seen online.",
+            "It's hard to do and distracts you from making sure your speech is being delivered well. But hey, at least you practiced."
         ]
     }
 }

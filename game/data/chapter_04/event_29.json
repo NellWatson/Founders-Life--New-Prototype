@@ -6,7 +6,8 @@
     "character": "none",
     "description": {
         "en": [
-            "Dominique sends you an e-mail filled with instructions on how to conduct oneself online and during interviews. He requests you look over it so you can prevent social media disasters from occurring on launch.",
+            "Dominique sends you an e-mail filled with instructions on how to conduct oneself online and during interviews.",
+            "He requests you look over it so you can prevent social media disasters from occurring on launch.",
             "You feel a bit silly about it. You're not a celebrity, after all. What should you do?"
         ]
     },
@@ -26,7 +27,7 @@
     },
     "no_description": {
         "en": [
-            "You ignore the packet. Surely you'll be able to do this work when it's pertinent. For now, there's no point in wasting time on it."
+            "You ignore the package. Surely you'll be able to do this work when it's pertinent. For now, there's no point in wasting time on it."
         ]
     }
 }
