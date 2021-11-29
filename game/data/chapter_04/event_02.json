@@ -5,7 +5,7 @@
     "category": "productivity",
     "character": "none",
     "description": {
-        "en": ["Dominique has set the beta-test release date for the first of next month, seeing as you're trying to get the product out by the month after.",\
+        "en": ["Dominique has set the beta-test release date for the first of next month, seeing as you're trying to get the product out by the month after.",
           "You, however, have yet to publicly release this date. A combination of fear and rebelliousness keeps you from doing it."]
     },
     "yes_action": {

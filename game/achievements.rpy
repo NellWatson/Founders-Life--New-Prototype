@@ -61,7 +61,7 @@ init python:
         persistent.trophy_shelf.create_achievement(
             title="Ja-Naé Duane and Steve Fisher's Startup Equation",
             description="TBC",
-            image="gui/achievements/achievement.png",
+            image="gui/achievements/the_startup_equation.jpg",
             colour="#3D9970",
             unlock_level=1,
             link="https://startupequation.com/"
@@ -69,7 +69,7 @@ init python:
         persistent.trophy_shelf.create_achievement(
             title="Ja-Naé Duane and Steve Fisher's BASE Board Model for planning an enterprise",
             description="TBC",
-            image="gui/achievements/achievement.png",
+            image="gui/achievements/base_board.jpg",
             colour="#3D9970",
             unlock_level=1,
             link="https://www.dropbox.com/s/0qdzkyqev23l50l/Base%20Board%20Model_Workbook.pdf"
@@ -85,7 +85,7 @@ init python:
         persistent.trophy_shelf.create_achievement(
             title="Alex Hillman et al's Stacking the Bricks resources for entrepreneurs",
             description="TBC",
-            image="gui/achievements/achievement.png",
+            image="gui/achievements/stacking_the_bricks.jpg",
             colour="#3D9970",
             unlock_level=1,
             link="https://stackingthebricks.com/articles"
@@ -93,7 +93,7 @@ init python:
         persistent.trophy_shelf.create_achievement(
             title="Brendan Dunn's Double Your Freelancing resources",
             description="TBC",
-            image="gui/achievements/achievement.png",
+            image="gui/achievements/double_your_freelancing.jpg",
             colour="#3D9970",
             unlock_level=1,
             link="https://doubleyourfreelancing.com/topics"
@@ -110,7 +110,9 @@ init python:
         create_leaderboard_data()
 
 screen achievement_screen(shelf):
-    on "show":
+    tag menu
+
+    on "replace":
         action Play("music", "music/ost004.mp3")
     modal True
 
@@ -129,7 +131,7 @@ screen achievement_screen(shelf):
 
         text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-        action Hide("achievement_screen")
+        action Return()
 
         xalign 0.99
         yalign 0.01
@@ -152,7 +154,7 @@ screen achievement_screen(shelf):
 
             for ach in shelf.store:
                 button:
-                    xysize (160, 160)
+                    xysize (376, 189)
 
                     idle_background Solid(ach.colour)
                     hover_background Solid( Color(ach.colour).tint(0.5) )
@@ -213,6 +215,7 @@ screen achievement_notify(title):
         at slide_down_center
 
 screen leaderboard_screen():
+    tag menu
 
     add Solid("#ffffff")
     text "LOCAL LEADERBOARD" color "#000000" bold True size 80 xalign 0.5 yalign 0.06
@@ -266,7 +269,7 @@ screen leaderboard_screen():
 
         text "<" color "#ffffff" size 100 bold True xalign 0.5 yalign 0.5
 
-        action Hide("leaderboard_screen")
+        action Return()
 
     button:
         xysize (200, 1080)
@@ -277,4 +280,4 @@ screen leaderboard_screen():
 
         add "gui/achievements/achievement_white.png" xalign 0.5 yalign 0.5
 
-        action Show("achievement_screen", shelf=persistent.trophy_shelf)
+        action ShowMenu("achievement_screen", shelf=persistent.trophy_shelf)

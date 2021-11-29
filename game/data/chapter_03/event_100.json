@@ -1,15 +1,17 @@
 {
     "id": "chapter_default",
-    "title": "Default Event",
+    "title": "Throttle Check",
     "category": "money",
     "character": "none",
     "description": {
-        "en": ["This event is being shown because we ran out of events to show."]
+        "en": [" You're doing well so far today, better than you expected. Take the rest of the day off or press on?"]
     },
     "yes_action": {
-        "energy": 0
+        "productivity": -10,
+        "energy": 10
     },
     "no_action": {
+        "productivity": 10,
         "energy": -10
     }
 }

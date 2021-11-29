@@ -9,7 +9,7 @@ init python in telemetry:
         if not renpy.store.is_telemetry_allowed:
             return
 
-        host = "http://192.241.146.97:3000/v1/" #"http://localhost:3000/v1/" #
+        host = "http://localhost:3000/v1/" #"http://192.241.146.97:3000/v1/" #
         project_id = "FoundersLifeAlpha"
         game_id = ""
 
@@ -35,6 +35,7 @@ init python in telemetry:
         """
 
         global game_id, status
+        print "here"
     
         import platform
 

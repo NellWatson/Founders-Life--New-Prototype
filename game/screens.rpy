@@ -367,6 +367,8 @@ screen main_menu():
 
     on "show":
         action Play("music", "music/ost001.mp3")
+    on "replace":
+        action Play("music", "music/ost001.mp3")
 
     add "gui/mainmenu/bg.png"
 

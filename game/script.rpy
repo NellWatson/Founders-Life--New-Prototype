@@ -22,7 +22,7 @@ label start:
     $ chapter_manager.load_chapter("ch_03", "chapter_03")
     $ chapter_manager.load_chapter("ch_04", "chapter_04")
     $ chapter_manager.load_chapter("ch_05", "chapter_05")
-    $ chapter_manager.set_chapter("ch_02")
+    $ chapter_manager.set_chapter("ch_01")
 
     $ telemetry.init()
     $ telemetry.setup()
