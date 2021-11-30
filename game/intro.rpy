@@ -72,24 +72,30 @@ label event_intro:
     call screen character_intro
 
 label skylar_intro:
+    show screen character_intro_highlighted(highlight="skylar")
     "This is Skylar, the love of your life. You knew as soon as you met them you wanted to be with them forever."
     "They've had a bit of a rough life, but despite that they have their life together and are pushing forward."
     "Their ambition, drive, and patience inspire you. You moved in together two months ago, and it's partially due to them you have the confidence to take this step."
     "That being said, you don't know how they will take this."
 
+    hide screen character_intro_highlighted
     call screen character_intro
 
 label takashi_intro:
+    show screen character_intro_highlighted(highlight="takashi")
     "This is Takashi. You've been friends since you were in diapers, going to school together and wreaking havoc through town."
     "He's a bit of a joker. You were always the more serious one. He mellows you out and reminds you to enjoy the fun in life."
     "You're used to hanging out at least three times a week, and you won't be able to do that when you make this change."
     "His carefree nature has always been helpful, but you're worried you're not going to see eye-to-eye on this."
 
+    hide screen character_intro_highlighted
     call screen character_intro
 
 label roger_intro:
+    show screen character_intro_highlighted(highlight="roger")
     "This is Roger, your current boss. While not the worst boss you've had, you don't like working under him."
     "He'll throw temper tantrums, sulk, and push more work at people he doesn't like. You don't ever want to be a boss like that."
     "You're trying to hide your plans from him. You have a feeling if he finds out, things won't go well for you."
 
+    hide screen character_intro_highlighted
     call screen character_intro

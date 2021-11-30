@@ -129,6 +129,28 @@ screen character_intro():
         xalign 0.5
         yalign 0.85
 
+screen character_intro_highlighted(highlight=""):
+    default character_list = ["skylar", "takashi", "roger"]
+    add Solid("#00000050")
+
+    hbox:
+        xalign 0.5
+        yalign 0.55
+        spacing 40
+
+        for i in character_list:
+            button:
+                xysize (308, 308)
+
+                idle_background Circle(radius=154, colour="#559fdd", internal_circle="#ffffff", internal_radius=138)
+                hover_background Circle(radius=154, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
+                selected_idle_background Circle(radius=154, colour=Color("559fdd").tint(0.5), internal_circle="#ffffff", internal_radius=138)
+
+                selected highlight == i
+
+                add AlphaMask("images/contacts/" + i + ".png", "gui/who_mask.png") xalign 0.5 yalign 0.5
+                action NullAction()
+
 screen choose_portrait():
     modal True
     default character_list = ["1", "2", "3", "4", "5", "6", "7"]
