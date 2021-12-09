@@ -23,7 +23,7 @@ init python:
                 "Days": store.total_days,
                 "Founder Name": store.founder_name,
                 "Startup Name": store.startup_name,
-                "Score": store.founder_score,
+                "Score": store.total_founder_score,
             }, timeout=2.5)
 
     def _delete_data():

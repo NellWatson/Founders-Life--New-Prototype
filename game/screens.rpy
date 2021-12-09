@@ -333,7 +333,7 @@ screen navigation():
         textbutton _("About") action ShowMenu("about")
 
         textbutton _("Reset Game") action Show("reset_data_confirm")
-        textbutton _("Delete Data") action Show("reset_data_confirm") sensitive persistent.game_ids != []
+        textbutton _("Delete Data") action Show("delete_data_confirm") sensitive persistent.game_ids != []
         textbutton _("Credits") action Show("credits", _hide=True)
 
         if renpy.variant("pc"):
