@@ -17,8 +17,6 @@ label event_intro:
     n "Working on your own is about more than just business. If you can figure out what you want to do and why exactly you want to do it, you will be a lot happier."
     n "A good founder learns how to balance..."
 
-    $ delete_data()
-
     show intro productivity at im_center
     n "... Productivity"
 

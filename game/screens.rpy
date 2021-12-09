@@ -333,6 +333,7 @@ screen navigation():
         textbutton _("About") action ShowMenu("about")
 
         textbutton _("Reset Game") action Show("reset_data_confirm")
+        textbutton _("Delete Data") action Show("reset_data_confirm") sensitive persistent.game_ids != []
         textbutton _("Credits") action Show("credits", _hide=True)
 
         if renpy.variant("pc"):
@@ -1722,3 +1723,64 @@ screen reset_data_confirm():
                 text "RESET GAME" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(clear_user_data, fully=True), Hide("reset_data_confirm", transition=Dissolve(0.25))]
+
+screen delete_data_confirm():
+    modal True
+    add Solid("#00000050")
+
+    default colour = "#ff8800"
+    default width = 650
+    default height = 150
+    default tinted = Color(colour).tint(0.5)
+    default shaded = Color(colour).shade(0.5)
+
+    fixed:
+        xalign 0.5
+        yalign 0.5
+
+        vbox:
+            xalign 0.5
+            yalign 0.5
+
+            fixed:
+                xmaximum width
+                ymaximum 90
+
+                add Solid(colour)
+                text "ARE YOU SURE?" size 48 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+
+                button:
+                    xysize (90, 90)
+
+                    idle_background Solid(colour)
+                    hover_background Solid(tinted)
+                    selected_background Solid(shaded)
+
+                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+
+                    action Hide("reset_data_confirm")
+
+                    xpos width+20
+            frame:
+                xsize width
+                ysize height
+
+                background Solid("#ffffff")
+
+                vbox:
+                    xalign 0.5
+                    yalign 0.5
+
+                    text "This will delete all the server data the game has collected about your playthroughs. An internet connection is required." size 25 color "#000000"
+
+            button:
+                xysize width, 90-15
+                yoffset 20
+
+                idle_background Solid(colour)
+                hover_background Solid(tinted)
+                selected_background Solid(shaded)
+
+                text "RESET GAME" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+
+                action [Function(_delete_data), Hide("delete_data_confirm", transition=Dissolve(0.25))]

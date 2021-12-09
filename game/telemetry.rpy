@@ -14,14 +14,11 @@ init python:
         renpy.invoke_in_thread(_delete_data)
 
     def _send_data():
-        # The URL to send the data to.
         URL = "https://script.google.com/macros/s/AKfycbxv1RJXORzKZ0lq6VQUVtUSoXabiqrx6enkkE8BDv-0mKRXnAybWLrTY2HKY0ExcHIgzA/exec"
 
-        # Use requests to send the data.
         r = requests.post(
             URL,
             json={
-                # These are the fields to send.
                 "ID": store.gid,
                 "Days": store.total_days,
                 "Founder Name": store.founder_name,
@@ -30,19 +27,16 @@ init python:
             }, timeout=2.5)
 
     def _delete_data():
-        # The URL to send the data to.
         URL = "https://script.google.com/macros/s/AKfycbxv1RJXORzKZ0lq6VQUVtUSoXabiqrx6enkkE8BDv-0mKRXnAybWLrTY2HKY0ExcHIgzA/exec?delete"
-        print persistent.game_ids
 
-        # Use requests to send the data.
         r = requests.post(
             URL,
             json={
-                # These are the fields to send.
                 "ID": persistent.game_ids,
             }, timeout=2.5)
-        print r.content
-        persistent.game_ids = []
+
+        if r.content == "Deleted Okay":
+            persistent.game_ids = []
 
 init python in telemetry:
     

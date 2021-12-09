@@ -129,11 +129,11 @@ label checkpoint:
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
             $ renpy.set_return_stack("")
 
+            $ send_end_game_data()
+
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
             call screen credits
-
-            $ send_end_game_data()
 
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [total_days] days."
@@ -346,6 +346,8 @@ label chapter_three_finale:
         $ telemetry.end("Game Over at Chapter 03")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
         $ renpy.set_return_stack("")
+
+        $ send_end_game_data()
 
         n "Oh dear! Your personal relationships are in tatters, and without the moral support of those closest to you, the grind becomes unbearable. You give up this misery-generating enterprise and try to get your old job back."
 
