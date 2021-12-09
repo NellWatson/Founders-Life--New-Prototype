@@ -425,7 +425,7 @@ screen main_menu():
         idle "gui/mainmenu/trophy_idle.png"
         hover "gui/mainmenu/trophy_hover.png"
 
-        action ShowMenu("achievement_screen", shelf=persistent.trophy_shelf)
+        action ShowMenu("achievement_screen", shelf=trophy_shelf)
 
         xalign 0.985
         yalign 0.925
