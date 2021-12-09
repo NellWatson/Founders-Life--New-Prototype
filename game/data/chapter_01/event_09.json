@@ -4,9 +4,6 @@
     "title": "Ravey Gravy",
     "category": "productivity",
     "character": "takashi",
-    "condition": [
-        ["turn_no", 7, "greater"]
-    ],
     "description": {
         "en": ["It's my birthday! Another year, but not too old to stay out all night and party like we did in college!",
           "Ahh, it wouldn't be the same without my partner-in-crime."]
@@ -30,5 +27,6 @@
     },
     "no_description": {
         "en": ["..Well, damn. I guess *you're* the ol' stick-in-the-mud. All right..."]
-    }
+    },
+    "play_on": 19
 }

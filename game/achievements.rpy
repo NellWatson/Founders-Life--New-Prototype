@@ -1,25 +1,4 @@
-init python:
-    class Achievement():
-
-        def __init__(self, title, description, image, colour, unlock_level, locked_image=None, locked_colour=None, add_to_shelf=None, link=""):
-            self.title = title
-            self.description = description
-            self.image = image
-            self.colour = colour
-            self.unlock_level = unlock_level
-
-            self.unlocked = True
-            self.locked_image = locked_image
-            self.locked_colour = locked_colour
-
-            self.link = link
-
-            if add_to_shelf:
-                shelf.add_achievement(self)
-
-        @property
-        def get_image(self):
-            return self.image if self.unlocked else self.locked_image
+init python early:
 
     class Shelf():
 
@@ -54,61 +33,85 @@ init python:
 
         def __eq__(self, other):
             return self.name == other
+            
+    class Achievement():
+
+        def __init__(self, title, description, image, colour, unlock_level, locked_image=None, locked_colour=None, add_to_shelf=None, link=""):
+            self.title = title
+            self.description = description
+            self.image = image
+            self.colour = colour
+            self.unlock_level = unlock_level
+
+            self.unlocked = True
+            self.locked_image = locked_image
+            self.locked_colour = locked_colour
+
+            self.link = link
+
+            if add_to_shelf:
+                shelf.add_achievement(self)
+
+        @property
+        def get_image(self):
+            return self.image if self.unlocked else self.locked_image
+
+init python:
 
     def create_leaderboard_data():
         persistent.leaderboard = []
+        
+        persistent.trophy_shelf = Shelf("Achievements", "gui/achievements/locked.png", "#66A8E0", 6)
+        persistent.trophy_shelf.create_achievement(
+            title="Ja-Naé Duane and Steve Fisher's Startup Equation",
+            description="TBC",
+            image="gui/achievements/the_startup_equation.jpg",
+            colour="#3D9970",
+            unlock_level=1,
+            link="https://startupequation.com/"
+        )
+        persistent.trophy_shelf.create_achievement(
+            title="Ja-Naé Duane and Steve Fisher's BASE Board Model for planning an enterprise",
+            description="TBC",
+            image="gui/achievements/base_board.jpg",
+            colour="#3D9970",
+            unlock_level=1,
+            link="https://www.dropbox.com/s/0qdzkyqev23l50l/Base%20Board%20Model_Workbook.pdf"
+        )
+        persistent.trophy_shelf.create_achievement(
+            title="Ja-Naé Duane and Steve Fisher's Startup Launch Kits",
+            description="TBC",
+            image="gui/achievements/achievement.png",
+            colour="#3D9970",
+            unlock_level=1,
+            link="https://drive.google.com/drive/folders/0B9wuRcuwU59aaTVIUFdwSFlDOTQ"
+        )
+        persistent.trophy_shelf.create_achievement(
+            title="Alex Hillman et al's Stacking the Bricks resources for entrepreneurs",
+            description="TBC",
+            image="gui/achievements/stacking_the_bricks.jpg",
+            colour="#3D9970",
+            unlock_level=1,
+            link="https://stackingthebricks.com/articles"
+        )
+        persistent.trophy_shelf.create_achievement(
+            title="Brendan Dunn's Double Your Freelancing resources",
+            description="TBC",
+            image="gui/achievements/double_your_freelancing.jpg",
+            colour="#3D9970",
+            unlock_level=1,
+            link="https://doubleyourfreelancing.com/topics"
+        )
+        persistent.trophy_shelf.create_achievement(
+            title="Nell Watson's Founder Life Book",
+            description="TBC",
+            image="gui/achievements/achievement.png",
+            colour="#3D9970",
+            unlock_level=1
+        )
 
     if persistent.leaderboard is None:
         create_leaderboard_data()
-        
-    trophy_shelf = Shelf("Achievements", "gui/achievements/locked.png", "#66A8E0", 6)
-    trophy_shelf.create_achievement(
-        title="Ja-Naé Duane and Steve Fisher's Startup Equation",
-        description="TBC",
-        image="gui/achievements/the_startup_equation.jpg",
-        colour="#3D9970",
-        unlock_level=1,
-        link="https://startupequation.com/"
-    )
-    trophy_shelf.create_achievement(
-        title="Ja-Naé Duane and Steve Fisher's BASE Board Model for planning an enterprise",
-        description="TBC",
-        image="gui/achievements/base_board.jpg",
-        colour="#3D9970",
-        unlock_level=1,
-        link="https://www.dropbox.com/s/0qdzkyqev23l50l/Base%20Board%20Model_Workbook.pdf"
-    )
-    trophy_shelf.create_achievement(
-        title="Ja-Naé Duane and Steve Fisher's Startup Launch Kits",
-        description="TBC",
-        image="gui/achievements/achievement.png",
-        colour="#3D9970",
-        unlock_level=1,
-        link="https://drive.google.com/drive/folders/0B9wuRcuwU59aaTVIUFdwSFlDOTQ"
-    )
-    trophy_shelf.create_achievement(
-        title="Alex Hillman et al's Stacking the Bricks resources for entrepreneurs",
-        description="TBC",
-        image="gui/achievements/stacking_the_bricks.jpg",
-        colour="#3D9970",
-        unlock_level=1,
-        link="https://stackingthebricks.com/articles"
-    )
-    trophy_shelf.create_achievement(
-        title="Brendan Dunn's Double Your Freelancing resources",
-        description="TBC",
-        image="gui/achievements/double_your_freelancing.jpg",
-        colour="#3D9970",
-        unlock_level=1,
-        link="https://doubleyourfreelancing.com/topics"
-    )
-    trophy_shelf.create_achievement(
-        title="Nell Watson's Founder Life Book",
-        description="TBC",
-        image="gui/achievements/achievement.png",
-        colour="#3D9970",
-        unlock_level=1
-    )
 
 screen achievement_screen(shelf):
     tag menu
@@ -281,4 +284,4 @@ screen leaderboard_screen():
 
         add "gui/achievements/achievement_white.png" xalign 0.5 yalign 0.5
 
-        action ShowMenu("achievement_screen", shelf=trophy_shelf)
+        action ShowMenu("achievement_screen", shelf=persistent.trophy_shelf)

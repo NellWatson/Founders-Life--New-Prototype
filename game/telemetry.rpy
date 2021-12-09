@@ -11,6 +11,9 @@ init python:
         renpy.invoke_in_thread(_send_data)
 
     def delete_data():
+        if store.gid == "":
+            return
+            
         renpy.invoke_in_thread(_delete_data)
 
     def _send_data():
@@ -37,6 +40,7 @@ init python:
 
         if r.content == "Deleted Okay":
             persistent.game_ids = []
+            store.gid = ""
 
 init python in telemetry:
     

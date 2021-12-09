@@ -425,7 +425,7 @@ screen main_menu():
         idle "gui/mainmenu/trophy_idle.png"
         hover "gui/mainmenu/trophy_hover.png"
 
-        action ShowMenu("achievement_screen", shelf=trophy_shelf)
+        action ShowMenu("achievement_screen", shelf=persistent.trophy_shelf)
 
         xalign 0.985
         yalign 0.925
@@ -1730,7 +1730,7 @@ screen delete_data_confirm():
 
     default colour = "#ff8800"
     default width = 650
-    default height = 150
+    default height = 160
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
 
@@ -1758,7 +1758,7 @@ screen delete_data_confirm():
 
                     text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-                    action Hide("reset_data_confirm")
+                    action Hide("delete_data_confirm")
 
                     xpos width+20
             frame:
@@ -1781,6 +1781,6 @@ screen delete_data_confirm():
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "RESET GAME" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "DELETE DATA" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(_delete_data), Hide("delete_data_confirm", transition=Dissolve(0.25))]
