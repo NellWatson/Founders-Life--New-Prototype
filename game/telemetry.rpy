@@ -1,3 +1,49 @@
+init python:
+
+    import uuid
+    import requests
+
+    def set_game_id():
+        store.gid = uuid.uuid4().hex
+        persistent.game_ids.append(gid)
+
+    def send_end_game_data():
+        renpy.invoke_in_thread(_send_data)
+
+    def delete_data():
+        renpy.invoke_in_thread(_delete_data)
+
+    def _send_data():
+        # The URL to send the data to.
+        URL = "https://script.google.com/macros/s/AKfycbxv1RJXORzKZ0lq6VQUVtUSoXabiqrx6enkkE8BDv-0mKRXnAybWLrTY2HKY0ExcHIgzA/exec"
+
+        # Use requests to send the data.
+        r = requests.post(
+            URL,
+            json={
+                # These are the fields to send.
+                "ID": store.gid,
+                "Days": store.total_days,
+                "Founder Name": store.founder_name,
+                "Startup Name": store.startup_name,
+                "Score": store.founder_score,
+            }, timeout=2.5)
+
+    def _delete_data():
+        # The URL to send the data to.
+        URL = "https://script.google.com/macros/s/AKfycbxv1RJXORzKZ0lq6VQUVtUSoXabiqrx6enkkE8BDv-0mKRXnAybWLrTY2HKY0ExcHIgzA/exec?delete"
+        print persistent.game_ids
+
+        # Use requests to send the data.
+        r = requests.post(
+            URL,
+            json={
+                # These are the fields to send.
+                "ID": persistent.game_ids,
+            }, timeout=2.5)
+        print r.content
+        persistent.game_ids = []
+
 init python in telemetry:
     
     import urllib, urllib2, json
@@ -35,7 +81,6 @@ init python in telemetry:
         """
 
         global game_id, status
-        print "here"
     
         import platform
 

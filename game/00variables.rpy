@@ -39,4 +39,6 @@ default review_bar = Bar(value=1, range=1, width=500, height=50)
 default no_of_times_died = 0
 default is_telemetry_allowed = False
 
+default gid = ""
+
 define _game_menu_screen = "preferences"

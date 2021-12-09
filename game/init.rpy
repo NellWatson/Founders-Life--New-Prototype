@@ -58,3 +58,6 @@ init python:
     if not persistent.set_volumes:
         persistent.set_volumes = True
         _preferences.volumes['music'] = 0.25
+
+    if not persistent.game_ids:
+        persistent.game_ids = []

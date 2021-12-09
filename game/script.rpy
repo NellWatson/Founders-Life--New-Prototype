@@ -11,6 +11,8 @@ label start:
     $ chapter_manager = ChapterManager()
     $ var_tracker = VarTracker()
 
+    $ set_game_id()
+
     $ characters_roster.add_character("none", "None", "none", None)
     $ characters_roster.add_character("eileen", "Eileen", "e", "eileen")
     $ characters_roster.add_character("skylar", "Skylar", "s", "skylar")
@@ -75,6 +77,8 @@ label checkpoint:
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
             $ renpy.set_return_stack("")
 
+            $ send_end_game_data()
+
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
             call screen credits
@@ -82,9 +86,6 @@ label checkpoint:
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Startup Productivity level has dropped below zero.\nYou survived [total_days] days."
 
-            if not persistent.submitted_form:
-                n normal "Please would you kindly give us your feedback?"
-                call screen feedback_form_screen
             return
         else:
             call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Burn Out", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
@@ -102,6 +103,8 @@ label checkpoint:
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
             $ renpy.set_return_stack("")
 
+            $ send_end_game_data()
+
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
             call screen credits
@@ -109,9 +112,6 @@ label checkpoint:
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Energy level has dropped below zero.\nYou survived [total_days] days."
 
-            if not persistent.submitted_form:
-                n normal "Please would you kindly give us your feedback?"
-                call screen feedback_form_screen
             return
         else:
             call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Burn Out", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
@@ -133,12 +133,11 @@ label checkpoint:
             call screen sprint_review(current_bg)
             call screen credits
 
+            $ send_end_game_data()
+
             play sound "sfx/fx012.wav"
             n normal "Game over.\nYour Mindfulness level has dropped below zero.\nYou survived [total_days] days."
 
-            if not persistent.submitted_form:
-                n normal "Please would you kindly give us your feedback?"
-                call screen feedback_form_screen
             return
         else:
             call screen warn_msg("Fed up and miserable, you decide in desperation to book an emergency entrepreneurial retreat to get back on track. It helps a lot, but at a significant cost ($1000).", title="Burn Out", width=700, height=0, hide_anyway=False, show_button="Pay $1000")
@@ -155,6 +154,8 @@ label checkpoint:
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
         $ renpy.set_return_stack("")
 
+        $ send_end_game_data()
+
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
         call screen credits
@@ -162,9 +163,6 @@ label checkpoint:
         play sound "sfx/fx012.wav"
         n normal "Game over. You have run out of savings.\nYou survived [total_days] days."
 
-        if not persistent.submitted_form:
-            n normal "Please would you kindly give us your feedback?"
-            call screen feedback_form_screen
         return
 
     if turn_no and not (turn_no % 7):
@@ -357,9 +355,6 @@ label chapter_three_finale:
         play sound "sfx/fx012.wav"
         n normal "Game over.\nYou survived [total_days] days."
 
-        if not persistent.submitted_form:
-            n normal "Please let us know your feedback."
-            call screen feedback_form_screen
         return
 
     call screen founder_map
@@ -416,16 +411,15 @@ label chapter_five_finale:
     $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
     #show dominique at center
 
+    $ send_end_game_data()
+
     scene the end:
         xalign 0.5
         yalign 0.5
 
     n normal "Congratulations! You have endured a long and difficult journey. Your baby venture is now starting to mature. With greater scale will come further challenges, but these too may be overcome."
     n normal "For now, this episode has reached its conclusion. Congratulations, once again!"
-
-    if not persistent.submitted_form:
-        n normal "Please would you kindly give us your feedback?"
-        call screen feedback_form_screen    
+ 
     call screen credits
 
     return
