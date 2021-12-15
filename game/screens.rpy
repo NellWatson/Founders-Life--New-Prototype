@@ -1549,7 +1549,7 @@ screen credits(_hide=False):
 
         text "Programmer" color "#559fdd" bold True xalign 0.5
         text "Dipesh Aggarwal" color "#d88db7" xalign 0.5
-        text "{a=https://dipeshaggarwal.dev/}https://dipeshaggarwal.dev{/a}" xalign 0.5
+        text "{a=https://dipeshaggarwal.com/}https://dipeshaggarwal.com{/a}" xalign 0.5
 
         null height 60
 

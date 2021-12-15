@@ -3,7 +3,7 @@
     "bg": "meeting",
     "title": "The Pitch",
     "category": "energy",
-    "character": "dominique",
+    "character": "none",
     "condition": [
         ["none:affection", 11, "lesser_equal"]
     ],
