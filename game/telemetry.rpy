@@ -5,7 +5,10 @@ init python:
 
     def set_game_id():
         store.gid = uuid.uuid4().hex
-        persistent.game_ids.append(gid)
+        if persistent.game_ids:
+            persistent.game_ids.append(gid)
+        else:
+            persistent.game_ids = [gid]
 
     def send_end_game_data():
         renpy.invoke_in_thread(_send_data)

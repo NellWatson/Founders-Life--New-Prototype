@@ -5,7 +5,7 @@
     "category": "energy",
     "character": "none",
     "condition": [
-        ["none:affection", 11, "lesser_equal"]
+        ["none:affection", 9, "lesser_equal"]
     ],
     "description": {
         "en": [

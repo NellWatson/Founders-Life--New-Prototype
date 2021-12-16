@@ -341,7 +341,7 @@ label chapter_two_finale:
     jump checkpoint
 
 label chapter_three_finale:
-    if characters_roster.store["none"].affection < 15:
+    if characters_roster.store["none"].affection < 10:
         $ renpy.unlink_save("custom")
         $ telemetry.end("Game Over at Chapter 03")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
