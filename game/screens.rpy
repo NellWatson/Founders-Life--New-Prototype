@@ -322,6 +322,8 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
+        textbutton _("Create/Set Room") action ShowMenu("create_room")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
@@ -1784,3 +1786,71 @@ screen delete_data_confirm():
                 text "DELETE DATA" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(_delete_data), Hide("delete_data_confirm", transition=Dissolve(0.25))]
+
+screen create_room():
+    modal True
+    add Solid("#00000050")
+
+    default colour = "#ff8800"
+    default width = 950
+    default height = 250
+    default tinted = Color(colour).tint(0.5)
+    default shaded = Color(colour).shade(0.5)
+    default dark = Color(colour).shade(-0.5)
+
+    fixed:
+        xalign 0.5
+        yalign 0.5
+
+        vbox:
+            xalign 0.5
+            yalign 0.5
+
+            fixed:
+                xmaximum width
+                ymaximum 90
+
+                add Solid(colour)
+                text "CREATE NEW ROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+
+                button:
+                    xysize (90, 90)
+
+                    idle_background Solid(colour)
+                    hover_background Solid(tinted)
+                    selected_background Solid(shaded)
+
+                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+
+                    action Hide("create_room")
+
+                    xpos width+20
+            frame:
+                xsize width
+                ysize height
+
+                background Solid("#ffffff")
+
+                vbox:
+                    xalign 0.5
+                    yalign 0.5
+
+                    text "This will create a new room so you can have your scores in one place." size 25 color "#000000"
+
+                    hbox:
+                        text "> " yoffset 3 color "#000000"
+                        input id "input" default persistent.room_id font "fonts/Dyslexie_Regular_159164.ttf" color "#000000" size 36 length 24 changed input_room_id
+
+            button:
+                xysize width, 90-15
+                yoffset 20
+
+                idle_background Solid(colour)
+                hover_background Solid(tinted)
+                selected_background Solid(shaded)
+                insensitive_background Solid(dark)
+
+                text "SEND REQUEST" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+
+                sensitive persistent.room_id
+                action [Function(set_game_room_id), Hide("create_room", transition=Dissolve(0.25))]

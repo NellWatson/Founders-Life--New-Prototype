@@ -110,12 +110,12 @@ screen warn_msg(message, title="Warning", width=600, height=0, hide_anyway=False
 
             text message color "#000000"
 
-screen err_msg(message, title="Error", width=600, height=0):
+screen err_msg(message, title="Error", width=600, height=0, hide_anyway=False, show_button=""):
     modal True
 
     default actual_height = height if height else find_height(message, width-20)
 
-    use fl_window("err_msg", title, colour="#ff0000", width=width, height=actual_height):
+    use fl_window("err_msg", title, colour="#ff0000", width=width, height=actual_height, hide_anyway=hide_anyway, show_button=show_button):
         vbox:
             xalign 0.5
             yalign 0.5

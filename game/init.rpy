@@ -38,6 +38,9 @@ init python:
         store.turn_no = 0
         store.month += 1
 
+    def input_room_id(s):
+        persistent.room_id = s
+
     for slot in renpy.list_saved_games(fast=True):
         if config.developer:
             break
@@ -61,3 +64,6 @@ init python:
 
     if not persistent.game_ids:
         persistent.game_ids = []
+
+    if not persistent.room_id:
+        persistent.room_id = ""
