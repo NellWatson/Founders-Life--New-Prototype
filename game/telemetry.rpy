@@ -5,24 +5,24 @@ init python:
 
     def set_game_id():
         store.gid = uuid.uuid4().hex
-        if persistent.game_ids:
-            persistent.game_ids.append(gid)
-        else:
-            persistent.game_ids = [gid]
 
     def send_end_game_data():
+        persistent.game_data[store.gid] = [persistent.room_id, datetime.date.today(), store.founder_name, store.total_days, store.founder_score]
         renpy.invoke_in_thread(_send_data)
 
-    def delete_data():
+    def delete_data(room_id, game_id):
         if store.gid == "":
             return
             
-        renpy.invoke_in_thread(_delete_data)
+        renpy.invoke_in_thread(_delete_data, room_id=room_id, game_id=game_id)
 
-    def set_game_room_id():
-        URL = "https://script.google.com/macros/s/AKfycbz4xHiKRC-DWyewsTV0jBymbofeGES4Jwe7YryRIaCYIZi9UeYgZtN9jPj-tvlO0hFIQw/exec?sheet=" + persistent.room_id
+    def delete_room(room_id, password):
+        renpy.invoke_in_thread(_delete_room, room_id=room_id, password=password)
+
+    def create_game_room_id():
+        URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?sheet=" + persistent.room_id + "&password=" + persistent.room_password
         try:
-            r = requests.get(URL, timeout=2.5)
+            r = requests.get(URL, timeout=30)
             if r.content == "Sheet created.":
                 renpy.show_screen("success_msg", "Room Created", show_button="Okay")
             elif r.content == "Sheet exists.":
@@ -30,11 +30,22 @@ init python:
         except:
             renpy.show_screen("err_msg", "No internet.", show_button="Okay")
 
+    def set_room_id():
+        URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?sheet=" + persistent.room_id
+        try:
+            r = requests.get(URL, timeout=30)
+            if r.content == "Sheet does not exist.":
+                renpy.show_screen("warn_msg", "Room does not exist.", show_button="Okay")
+            elif r.content == "Sheet exists.":
+                renpy.show_screen("success_msg", "Room Joined.", show_button="Okay")
+        except:
+            renpy.show_screen("err_msg", "No internet.", show_button="Okay")
+
     def _send_data():
         if persistent.room_id:
-            URL = "https://script.google.com/macros/s/AKfycbz4xHiKRC-DWyewsTV0jBymbofeGES4Jwe7YryRIaCYIZi9UeYgZtN9jPj-tvlO0hFIQw/exec?sheet=" + persistent.room_id
+            URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?sheet=" + persistent.room_id
         else:
-            URL = "https://script.google.com/macros/s/AKfycbz4xHiKRC-DWyewsTV0jBymbofeGES4Jwe7YryRIaCYIZi9UeYgZtN9jPj-tvlO0hFIQw/exec"
+            URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec"
 
         try:
             r = requests.post(
@@ -45,27 +56,39 @@ init python:
                     "Founder Name": store.founder_name,
                     "Startup Name": store.startup_name,
                     "Score": store.total_founder_score,
-                }, timeout=2.5)
+                }, timeout=30)
         except:
             renpy.show_screen("err_msg", "No internet.", show_button="Okay")
 
-    def _delete_data():
+    def _delete_data(room_id, game_id):
         if persistent.room_id:
-            URL = "https://script.google.com/macros/s/AKfycbz4xHiKRC-DWyewsTV0jBymbofeGES4Jwe7YryRIaCYIZi9UeYgZtN9jPj-tvlO0hFIQw/exec?sheet=" + persistent.room_id
+            URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?sheet=" + persistent.room_id + "&delete"
         else:
-            URL = "https://script.google.com/macros/s/AKfycbz4xHiKRC-DWyewsTV0jBymbofeGES4Jwe7YryRIaCYIZi9UeYgZtN9jPj-tvlO0hFIQw/exec"
+            URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?delete"
+
         try:
             r = requests.post(
                 URL,
                 json={
-                    "ID": persistent.game_ids,
-                }, timeout=2.5)
+                    "sheet": room_id,
+                    "ID": game_id
+                }, timeout=30.0)
 
-            if r.content == "Deleted Okay":
-                persistent.game_ids = []
+            if r.content == "Deleted Okay" or r.content == "Not found.":
+                del persistent.game_data[game_id]
                 store.gid = ""
         except:
             renpy.show_screen("err_msg", "No internet.", show_button="Okay")
+
+    def _delete_room(room_id, password):
+        URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?sheet=" + room_id + "&password=" + password + "&remove"
+        r = requests.get(URL, timeout=30)
+        if r.content == "Sheet deleted.":
+            renpy.show_screen("success_msg", "Room Deleted.", show_button="Okay")
+        elif r.content == "Sheet does not exist.":
+            renpy.show_screen("warn_msg", "Room does not exist.", show_button="Okay")
+        elif r.content == "Wrong password.":
+            renpy.show_screen("err_msg", "Wrong password.", show_button="Okay")
 
 init python in telemetry:
     

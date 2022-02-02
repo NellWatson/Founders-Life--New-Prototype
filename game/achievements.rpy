@@ -237,30 +237,45 @@ screen leaderboard_screen():
         xalign 0.99
         yalign 0.01
 
-    if persistent.leaderboard:
+    if persistent.game_data:
         vpgrid:
-            cols 4
+            cols 6
             draggable True
             mousewheel True
-            xsize 1200
+            xsize 1500
             ysize 850
 
             xalign 0.50
             ypos 200
 
             fixed:
-                xysize (300, 50)
-                text "Date" color "#559fdd" bold True
+                xysize (250, 50)
+                text "Room" color "#559fdd" bold True
+            text "Date" color "#559fdd" bold True
             text "Founder Name" color "#559fdd" bold True
-            text "Days Survived" color "#559fdd" bold True
-            text "Founder Score" color "#559fdd" bold True
+            text "Days" color "#559fdd" bold True
+            text "Score" color "#559fdd" bold True
+            text "Delete" color "#559fdd" bold True
 
-            for index, i in enumerate(persistent.leaderboard):
-                for j in i:
+            for index, i in enumerate(persistent.game_data):
+                for j in persistent.game_data[i]:
                     fixed:
                         if index % 2 == 0:
                             add Solid("#d3d3d3")
-                        text str(j) color "#000000" yalign 0.5
+                        if j == "":
+                            text "Default" color "#000000" yalign 0.5
+                        else:
+                            text str(j) color "#000000" yalign 0.5
+                button:
+                    xsize 250
+                    ysize 50
+                    if index % 2 == 0:
+                        idle_background Solid("#d3d3d3")
+                    else:
+                        idle_background Solid("#ffffff")
+                    hover_background Solid("#ff0000")
+                    text _("X") color "#000000" xalign 0.5 yalign 0.5
+                    action Show("delete_data_confirm", room_id=persistent.game_data[i][0], game_id=i)
     else:
         text "Empty :(" color "#000000" xalign 0.5 yalign 0.5
 

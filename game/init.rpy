@@ -41,6 +41,9 @@ init python:
     def input_room_id(s):
         persistent.room_id = s
 
+    def input_password(s):
+        persistent.room_password = s
+
     for slot in renpy.list_saved_games(fast=True):
         if config.developer:
             break
@@ -67,3 +70,11 @@ init python:
 
     if not persistent.room_id:
         persistent.room_id = ""
+        persistent.room_password = ""
+
+    if not persistent.delete_room_id:
+        persistent.delete_room_id = ""
+        persistent.delete_room_password = ""
+
+    if not persistent.game_data:
+        persistent.game_data = {}

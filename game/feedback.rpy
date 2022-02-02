@@ -17,6 +17,21 @@ init python:
             renpy.run(self.Toggle())
             raise renpy.IgnoreEvent()
 
+    class RoomInputValue(InputValue):
+
+        def __init__(self, key=None, mechanics=False):
+            self.key = key
+
+        def get_text(self):
+            return getattr(persistent, self.key)
+
+        def set_text(self, s):
+            setattr(persistent, self.key, s)
+
+        def enter(self):
+            renpy.run(self.Toggle())
+            raise renpy.IgnoreEvent()
+
 screen feedback_form_screen():
     modal True
 
