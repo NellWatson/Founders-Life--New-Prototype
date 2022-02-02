@@ -70,6 +70,8 @@ init python:
 
     if not persistent.room_id:
         persistent.room_id = ""
+
+    if not persistent.room_password:
         persistent.room_password = ""
 
     if not persistent.delete_room_id:
