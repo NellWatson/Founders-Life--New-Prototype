@@ -322,9 +322,10 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
-        textbutton _("Create Room") action ShowMenu("create_room")
-        textbutton _("Set Room") action ShowMenu("set_room")
-        textbutton _("Delete Room") action ShowMenu("delete_room")
+        textbutton _("Create Classroom") action ShowMenu("create_room")
+        textbutton _("Set Classroom") action ShowMenu("set_room")
+        textbutton _("Exit Classroom") action ShowMenu("exit_room")
+        textbutton _("Delete Classroom") action ShowMenu("delete_room")
 
         if _in_replay:
 
@@ -435,9 +436,9 @@ screen main_menu():
 
     text "v [config.version]" size 25 xalign 1.0 yalign 1.0
     if persistent.room_id:
-        text "Current Room: " + persistent.room_id xalign 0.5 yalign 1.0
+        text "Current Classroom: " + persistent.room_id xalign 0.5 yalign 1.0
     else:
-        text "Current Room: Default" xalign 0.5 yalign 1.0
+        text "Current Classroom: Default" xalign 0.5 yalign 1.0
 
     if config.developer:
         textbutton _("Image data"):
@@ -1802,6 +1803,7 @@ screen create_room():
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
     default dark = Color(colour).shade(-0.5)
+    default current_room_name = persistent.room_id
 
     fixed:
         xalign 0.5
@@ -1816,7 +1818,7 @@ screen create_room():
                 ymaximum 90
 
                 add Solid(colour)
-                text "CREATE NEW ROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "CREATE CLASSROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1827,7 +1829,7 @@ screen create_room():
 
                     text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-                    action Hide("create_room")
+                    action SetField(persistent, "room_id", current_room_name), Hide("create_room")
 
                     xpos width+20
             frame:
@@ -1840,26 +1842,26 @@ screen create_room():
                     xalign 0.5
                     yalign 0.5
 
-                    text "This will create a new room so you can have your scores in one place. Remember the password you type to delete the room in future." size 25 color "#000000"
+                    text "This will create a new classroom so you can have your scores in one place. Remember the password you type to delete the classroom in future." size 25 color "#000000"
 
-                    $ input_1 = Input(value=RoomInputValue("room_id"), size=36, length=24, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
+                    $ input_1 = Input(value=RoomInputValue("room_id"), size=36, length=20, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
                     button:
                         xysize (900, 50)
                         background "#00000000"
 
                         action input_1.enable
                         hbox:
-                            text "> " yoffset 3 color "#000000"
+                            text "Classroom > " yoffset 3 color "#000000"
                             add input_1
 
-                    $ input_2 = Input(value=RoomInputValue("room_password"), size=36, length=24, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
+                    $ input_2 = Input(value=RoomInputValue("room_password"), size=36, length=20, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
                     button:
                         xysize (900, 50)
                         background "#00000000"
 
                         action input_2.enable
                         hbox:
-                            text "> " yoffset 3 color "#000000"
+                            text "Password > " yoffset 3 color "#000000"
                             add input_2
                         
             button:
@@ -1874,7 +1876,7 @@ screen create_room():
                 text "SEND REQUEST" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 sensitive persistent.room_id and persistent.room_password
-                action [Function(create_game_room_id), Hide("create_room", transition=Dissolve(0.25))]
+                action [Function(create_game_room_id, last_room_id=current_room_name), Hide("create_room", transition=Dissolve(0.25))]
 
 screen set_room():
     modal True
@@ -1882,10 +1884,11 @@ screen set_room():
 
     default colour = "#ff8800"
     default width = 950
-    default height = 200
+    default height = 180
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
     default dark = Color(colour).shade(-0.5)
+    default current_room_name = persistent.room_id
 
     fixed:
         xalign 0.5
@@ -1900,7 +1903,7 @@ screen set_room():
                 ymaximum 90
 
                 add Solid(colour)
-                text "CREATE NEW ROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ENTER CLASSROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1911,7 +1914,7 @@ screen set_room():
 
                     text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
-                    action Hide("set_room")
+                    action SetField(persistent, "room_id", current_room_name), Hide("set_room")
 
                     xpos width+20
             frame:
@@ -1924,7 +1927,7 @@ screen set_room():
                     xalign 0.5
                     yalign 0.5
 
-                    text "This will create a new room so you can have your scores in one place. Remember the password you type to delete the room in future." size 25 color "#000000"
+                    text "Enter a valid classroom ID." size 25 color "#000000"
 
                     $ input_1 = Input(value=RoomInputValue("room_id"), size=36, length=24, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
                     button:
@@ -1933,7 +1936,7 @@ screen set_room():
 
                         action input_1.enable
                         hbox:
-                            text "> " yoffset 3 color "#000000"
+                            text "Classroom > " yoffset 3 color "#000000"
                             add input_1
                         
             button:
@@ -1947,7 +1950,7 @@ screen set_room():
 
                 text "SEND REQUEST" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
-                action [Function(set_room_id), Hide("set_room", transition=Dissolve(0.25))]
+                action [Function(set_room_id, last_room_id=current_room_name), Hide("set_room", transition=Dissolve(0.25))]
 
 screen delete_room():
     modal True
@@ -1973,7 +1976,7 @@ screen delete_room():
                 ymaximum 90
 
                 add Solid(colour)
-                text "DELETE ROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "DELETE CLASSROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1997,7 +2000,7 @@ screen delete_room():
                     xalign 0.5
                     yalign 0.5
 
-                    text "This will delete a created room. This action cannot be undone." size 25 color "#000000"
+                    text "This will delete a created classroom. This action cannot be undone." size 25 color "#000000"
 
                     $ input_1 = Input(value=RoomInputValue("delete_room_id"), size=36, length=24, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
                     button:
@@ -2006,7 +2009,7 @@ screen delete_room():
 
                         action input_1.enable
                         hbox:
-                            text "> " yoffset 3 color "#000000"
+                            text "Classroom > " yoffset 3 color "#000000"
                             add input_1
 
                     $ input_2 = Input(value=RoomInputValue("delete_room_password"), size=36, length=24, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
@@ -2032,3 +2035,64 @@ screen delete_room():
 
                 sensitive persistent.delete_room_id and persistent.delete_room_password
                 action [Function(_delete_room, room_id=persistent.delete_room_id, password=persistent.delete_room_password), Hide("delete_room", transition=Dissolve(0.25))]
+
+screen exit_room():
+    modal True
+    add Solid("#00000050")
+
+    default colour = "#ff0000"
+    default width = 650
+    default height = 160
+    default tinted = Color(colour).tint(0.5)
+    default shaded = Color(colour).shade(0.5)
+
+    fixed:
+        xalign 0.5
+        yalign 0.5
+
+        vbox:
+            xalign 0.5
+            yalign 0.5
+
+            fixed:
+                xmaximum width
+                ymaximum 90
+
+                add Solid(colour)
+                text "ARE YOU SURE?" size 48 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+
+                button:
+                    xysize (90, 90)
+
+                    idle_background Solid(colour)
+                    hover_background Solid(tinted)
+                    selected_background Solid(shaded)
+
+                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+
+                    action Hide("exit_room")
+
+                    xpos width+20
+            frame:
+                xsize width
+                ysize height
+
+                background Solid("#ffffff")
+
+                vbox:
+                    xalign 0.5
+                    yalign 0.5
+
+                    text "This will exit the current classroom. You can join another one anytime." size 25 color "#000000"
+
+            button:
+                xysize width, 90-15
+                yoffset 20
+
+                idle_background Solid(colour)
+                hover_background Solid(tinted)
+                selected_background Solid(shaded)
+
+                text "DELETE DATA" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+
+                action [SetField(persistent, "room_id", ""), Hide("exit_room", transition=Dissolve(0.25))]

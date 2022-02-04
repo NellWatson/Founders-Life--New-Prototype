@@ -19,7 +19,7 @@ init python:
     def delete_room(room_id, password):
         renpy.invoke_in_thread(_delete_room, room_id=room_id, password=password)
 
-    def create_game_room_id():
+    def create_game_room_id(last_room_id):
         URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?sheet=" + persistent.room_id + "&password=" + persistent.room_password
         try:
             r = requests.get(URL, timeout=30)
@@ -27,18 +27,23 @@ init python:
                 renpy.show_screen("success_msg", "Room Created", show_button="Okay")
             elif r.content == "Sheet exists.":
                 renpy.show_screen("success_msg", "Room Already Exists", show_button="Okay")
+            else:
+                persistent.room_id = last_room_id
         except:
+            persistent.room_id = last_room_id
             renpy.show_screen("err_msg", "No internet.", show_button="Okay")
 
-    def set_room_id():
+    def set_room_id(last_room_id):
         URL = "https://script.google.com/macros/s/AKfycbzLqfoUlNvdOvw3nW-jOxY95a-76zexvTFXOYw_kq0FfCXSE3MV5ibOiNUcSObgymyETQ/exec?sheet=" + persistent.room_id
         try:
             r = requests.get(URL, timeout=30)
             if r.content == "Sheet does not exist.":
+                persistent.room_id = last_room_id
                 renpy.show_screen("warn_msg", "Room does not exist.", show_button="Okay")
             elif r.content == "Sheet exists.":
                 renpy.show_screen("success_msg", "Room Joined.", show_button="Okay")
         except:
+            persistent.room_id = last_room_id
             renpy.show_screen("err_msg", "No internet.", show_button="Okay")
 
     def _send_data():
