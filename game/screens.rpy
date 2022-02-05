@@ -323,7 +323,7 @@ screen navigation():
         textbutton _("Preferences") action ShowMenu("preferences")
 
         textbutton _("Create Classroom") action ShowMenu("create_room")
-        textbutton _("Set Classroom") action ShowMenu("set_room")
+        textbutton _("Enter Classroom") action ShowMenu("set_room")
         textbutton _("Exit Classroom") action ShowMenu("exit_room")
         textbutton _("Delete Classroom") action ShowMenu("delete_room")
 
@@ -437,8 +437,6 @@ screen main_menu():
     text "v [config.version]" size 25 xalign 1.0 yalign 1.0
     if persistent.room_id:
         text "Current Classroom: " + persistent.room_id xalign 0.5 yalign 1.0
-    else:
-        text "Current Classroom: Default" xalign 0.5 yalign 1.0
 
     if config.developer:
         textbutton _("Image data"):
@@ -2093,6 +2091,6 @@ screen exit_room():
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "DELETE DATA" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "EXIT CLASSROOM" font "Dyslexie_Regular_159164.ttf" bold True size 45 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [SetField(persistent, "room_id", ""), Hide("exit_room", transition=Dissolve(0.25))]
