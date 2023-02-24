@@ -1631,7 +1631,7 @@ screen clear_data_confirm():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 50 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 50 color "#ffffff" font "fonts/Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1640,7 +1640,7 @@ screen clear_data_confirm():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action Hide("clear_data_confirm")
 
@@ -1665,7 +1665,7 @@ screen clear_data_confirm():
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "START OVER" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "START OVER" font "fonts/Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(clear_user_data), Hide("clear_data_confirm", transition=Dissolve(0.25))]
 
@@ -1692,7 +1692,7 @@ screen reset_data_confirm():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 48 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 48 color "#ffffff" font "fonts/Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1701,7 +1701,7 @@ screen reset_data_confirm():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action Hide("reset_data_confirm")
 
@@ -1726,7 +1726,7 @@ screen reset_data_confirm():
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "RESET GAME" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "RESET GAME" font "fonts/Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(clear_user_data, fully=True), Hide("reset_data_confirm", transition=Dissolve(0.25))]
 
@@ -1753,7 +1753,7 @@ screen delete_data_confirm(room_id, game_id):
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 48 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 48 color "#ffffff" font "fonts/Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1762,7 +1762,7 @@ screen delete_data_confirm(room_id, game_id):
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action Hide("delete_data_confirm")
 
@@ -1787,7 +1787,7 @@ screen delete_data_confirm(room_id, game_id):
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "DELETE DATA" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "DELETE DATA" font "fonts/Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(_delete_data, room_id=room_id, game_id=game_id), Hide("delete_data_confirm", transition=Dissolve(0.25))]
 
@@ -1816,7 +1816,7 @@ screen create_room():
                 ymaximum 90
 
                 add Solid(colour)
-                text "CREATE CLASSROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "CREATE CLASSROOM" size 42 color "#ffffff" font "fonts/Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1825,7 +1825,7 @@ screen create_room():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action SetField(persistent, "room_id", current_room_name), Hide("create_room")
 
@@ -1871,7 +1871,7 @@ screen create_room():
                 selected_background Solid(shaded)
                 insensitive_background Solid(dark)
 
-                text "SEND REQUEST" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "SEND REQUEST" font "fonts/Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 sensitive persistent.room_id and persistent.room_password
                 action [Function(create_game_room_id, last_room_id=current_room_name), Hide("create_room", transition=Dissolve(0.25))]
@@ -1901,7 +1901,7 @@ screen set_room():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ENTER CLASSROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ENTER CLASSROOM" size 42 color "#ffffff" font "fonts/Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1910,7 +1910,7 @@ screen set_room():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action SetField(persistent, "room_id", current_room_name), Hide("set_room")
 
@@ -1946,7 +1946,7 @@ screen set_room():
                 selected_background Solid(shaded)
                 insensitive_background Solid(dark)
 
-                text "SEND REQUEST" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "SEND REQUEST" font "fonts/Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [Function(set_room_id, last_room_id=current_room_name), Hide("set_room", transition=Dissolve(0.25))]
 
@@ -1974,7 +1974,7 @@ screen delete_room():
                 ymaximum 90
 
                 add Solid(colour)
-                text "DELETE CLASSROOM" size 42 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "DELETE CLASSROOM" size 42 color "#ffffff" font "fonts/Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -1983,7 +1983,7 @@ screen delete_room():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action Hide("delete_room")
 
@@ -2029,7 +2029,7 @@ screen delete_room():
                 selected_background Solid(shaded)
                 insensitive_background Solid(dark)
 
-                text "SEND REQUEST" font "Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
+                text "SEND REQUEST" font "fonts/Dyslexie_Regular_159164.ttf" bold True size 50 color "#ffffff" yalign 0.56 xalign 0.52
 
                 sensitive persistent.delete_room_id and persistent.delete_room_password
                 action [Function(_delete_room, room_id=persistent.delete_room_id, password=persistent.delete_room_password), Hide("delete_room", transition=Dissolve(0.25))]
@@ -2057,7 +2057,7 @@ screen exit_room():
                 ymaximum 90
 
                 add Solid(colour)
-                text "ARE YOU SURE?" size 48 color "#ffffff" font "Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
+                text "ARE YOU SURE?" size 48 color "#ffffff" font "fonts/Dyslexie_Regular_159164.ttf" bold True yalign 0.5 xalign 0.5
 
                 button:
                     xysize (90, 90)
@@ -2066,7 +2066,7 @@ screen exit_room():
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action Hide("exit_room")
 
@@ -2091,6 +2091,6 @@ screen exit_room():
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text "EXIT CLASSROOM" font "Dyslexie_Regular_159164.ttf" bold True size 45 color "#ffffff" yalign 0.56 xalign 0.52
+                text "EXIT CLASSROOM" font "fonts/Dyslexie_Regular_159164.ttf" bold True size 45 color "#ffffff" yalign 0.56 xalign 0.52
 
                 action [SetField(persistent, "room_id", ""), Hide("exit_room", transition=Dissolve(0.25))]

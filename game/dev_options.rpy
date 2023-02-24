@@ -55,6 +55,8 @@ screen image_data_screen():
 
         draggable True
         mousewheel True
+        
+        allow_underfull True
 
         cols 2
 
@@ -90,6 +92,7 @@ screen event_play_list():
         cols 4
         rows 15
         transpose True
+        allow_underfull True
         yspacing 10
         xspacing 25
 
@@ -106,7 +109,7 @@ screen event_play_list():
         hover_background Solid(Color("#559fdd").tint(0.5))
         selected_background Solid(Color("#559fdd").shade(0.5))
 
-        text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+        text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
         action Hide("event_play_list")
 

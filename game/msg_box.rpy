@@ -57,7 +57,7 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
                     hover_background Solid(tinted)
                     selected_background Solid(shaded)
 
-                    text "X" font "Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
+                    text "X" font "fonts/Dyslexie_Regular_159164.ttf" size 60 color "#ffffff" yalign 0.5 xalign 0.52
 
                     action If(called, true=Return(), false=Hide(name, transition=Dissolve(0.25)))
 
@@ -80,7 +80,7 @@ screen fl_window(name, title, colour="#559fdd", width=600, height=400, _bar_heig
                 hover_background Solid(tinted)
                 selected_background Solid(shaded)
 
-                text show_button font "Dyslexie_Regular_159164.ttf" size 50 color "#ffffff" yalign 0.5 xalign 0.52
+                text show_button font "fonts/Dyslexie_Regular_159164.ttf" size 50 color "#ffffff" yalign 0.5 xalign 0.52
 
                 action If(called, true=Return(), false=Hide(name, transition=Dissolve(0.25)))
 

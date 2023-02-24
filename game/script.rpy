@@ -1,6 +1,7 @@
 label splashscreen:
-    show splash lilac with Dissolve(0.5)
-    pause 2.0
+    if not skip_splashscreen:
+        show splash lilac with Dissolve(0.5)
+        pause 2.0
 
     return
 
@@ -37,6 +38,8 @@ label start:
     jump event_intro
 
 label week_event:
+    $ variable("money", -50)
+
     $ _event = chapter_manager.get_event()
     $ event_code = _event.id
     $ event_name = _event.title
@@ -76,6 +79,7 @@ label checkpoint:
             $ telemetry.end("No Productivity")
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
             $ renpy.set_return_stack("")
+            $ skip_splashscreen = True
 
             $ send_end_game_data()
 
@@ -102,6 +106,7 @@ label checkpoint:
             $ telemetry.end("No Energy")
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
             $ renpy.set_return_stack("")
+            $ skip_splashscreen = True
 
             $ send_end_game_data()
 
@@ -128,6 +133,7 @@ label checkpoint:
             $ telemetry.end("No Mindfulness")
             $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
             $ renpy.set_return_stack("")
+            $ skip_splashscreen = True
 
             $ send_end_game_data()
 
@@ -153,6 +159,7 @@ label checkpoint:
         $ telemetry.end("No Cashflow")
         $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
         $ renpy.set_return_stack("")
+        $ skip_splashscreen = True
 
         $ send_end_game_data()
 
@@ -411,6 +418,7 @@ label chapter_five_finale:
     $ event_code = "chapter_05_99"
     $ telemetry.end("Game finished")
     $ persistent.leaderboard.append([ datetime.date.today(), founder_name, total_days, founder_score ])
+    $ skip_splashscreen = True
     #show dominique at center
 
     $ send_end_game_data()

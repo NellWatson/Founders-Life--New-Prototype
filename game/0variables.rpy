@@ -42,3 +42,4 @@ default is_telemetry_allowed = False
 default gid = ""
 
 define _game_menu_screen = "preferences"
+define skip_splashscreen = False
