@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.4.5.0226
+------------
+* Add hint functionality for choice.
+
 v 0.4.5.0225
 ------------
 * If the game ends, don't show splashscreen.

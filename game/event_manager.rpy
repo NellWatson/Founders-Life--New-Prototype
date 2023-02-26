@@ -73,6 +73,8 @@ init python:
                         name = "morale"
                     variable(name, value)
 
+            store.choice_effects = {}
+
         @property
         def overall_lean(self):
             return self.positive_lean - self.negative_lean

@@ -6,6 +6,15 @@ transform flash:
     
     repeat
 
+transform flash_fast:
+    on idle:
+        alpha 1.0
+
+        linear 0.4 alpha 0.25
+        linear 0.4 alpha 1.0
+        
+        repeat
+
 transform zoom_out(factor):
     subpixel True
     zoom factor

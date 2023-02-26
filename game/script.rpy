@@ -43,6 +43,7 @@ label week_event:
     $ _event = chapter_manager.get_event()
     $ event_code = _event.id
     $ event_name = _event.title
+    $ choice_hover_on = True
 
     if _event.bg:
         scene expression _event.bg with dissolve
@@ -57,11 +58,13 @@ label week_event:
     menu:
         _event.get_speaker "[_event.last_description]"
 
-        "[_event.yes_caption]" if _event.is_yes:
+        "[_event.yes_caption]||y" if _event.is_yes:
             $ _event.yes
 
-        "[_event.no_caption]" if _event.is_no:
+        "[_event.no_caption]||n" if _event.is_no:
             $ _event.no
+
+    $ choice_hover_on = False
 
     if _event.choice_have_description:
         while not _event.seeing_choice_last_description:

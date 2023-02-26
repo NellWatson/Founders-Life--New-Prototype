@@ -215,7 +215,14 @@ screen choice(items):
         else:
             vbox:
                 for i in items:
-                    textbutton i.caption action i.action
+                    if choice_hover_on:
+                        $ caption, kind = i.caption.split("||")
+                        textbutton caption action i.action:
+                            hovered If(kind == "y", true=SetVariable("choice_effects", _event.yes_action), false=SetVariable("choice_effects", _event.no_action))
+                            unhovered SetVariable("choice_effects", {})
+
+                    else:
+                        textbutton i.caption action i.action
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
@@ -812,6 +819,12 @@ screen preferences():
                     textbutton _("Unseen Text") action Preference("skip", "toggle")
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+
+                vbox:
+                    style_prefix "check"
+                    label _("Show Choice Effects")
+                    textbutton _("Yes") action SetField(persistent, "give_hints", True)
+                    textbutton _("No") action SetField(persistent, "give_hints", False)
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.

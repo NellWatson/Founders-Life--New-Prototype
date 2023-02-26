@@ -17,6 +17,12 @@ init python:
 
         def displayable(self, st):
             current = getattr(store, self.var)
+            if self.var in choice_effects:
+                change = choice_effects[self.var]
+            elif self.var == "morale" and "mindfulness" in choice_effects:
+                change = choice_effects["mindfulness"]
+            else:
+                change = 0
 
             # Check to see if the variable value has changed
             if current != self.last_value:
@@ -49,14 +55,21 @@ init python:
                     renpy.sound.play("sfx/fx007.wav")
 
                 if config.developer:
-                    return Fixed(At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash), Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18), xfit=True, yfit=True)
+                    return Fixed(
+                            At(
+                                Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash),
+                                Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18),
+                            xfit=True, yfit=True)
                 else:
                     return At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash)
             else:
                 self.sound_played = False
 
                 if config.developer:
-                    return Fixed(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18), xfit=True, yfit=True)
+                    return Fixed(
+                            bar_overlay(value=v, base=self.base, inc=self.inc, dec=self.dec, properties=self.properties, change=change),
+                            Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18),
+                            xfit=True, yfit=True)
                 else:
                     return Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties)
 
@@ -194,3 +207,31 @@ init python:
 
     def dynamic_review(st, at, d, limit):
         return d(st, limit), 0.05
+
+    def bar_overlay(value, base, inc, dec, properties, change=0):
+        if not change or not persistent.give_hints:
+            return Bar(value=value, range=100, left_bar=Solid(base), right_bar=Color(base).shade(0.75), **properties)
+
+        if change > 0:
+            value_2 = value + change
+            if value_2 > 100:
+                x_size = int(((100 - value) * 0.01) * properties["xysize"][0])
+            else:
+                x_size = int((change * 0.01) * properties["xysize"][0])
+            x_pos = int(((value) / 100.0 ) * properties["xysize"][0])
+
+            box = At(Solid(inc, xsize=x_size, ysize=properties["xysize"][1], xpos=x_pos), flash_fast)
+            bar = Bar(value=value, range=100, left_bar=Solid(base), right_bar=Color(base).shade(0.75), **properties)
+
+        else:
+            x_size = int((change * 0.01) * properties["xysize"][0]) * -1
+
+            value_2 = value + change
+            if value_2 < 0:
+                value_2 = 0
+            x_pos = int(((value_2) / 100.0 ) * properties["xysize"][0])
+
+            bar = Bar(value=value, range=100, left_bar=Solid(base), right_bar=Color(base).shade(0.75), **properties)
+            box = At(Solid(dec, xsize=x_size, ysize=properties["xysize"][1], xpos=x_pos), flash_fast)
+
+        return Fixed(bar, box, xfit=True, yfit=True)
