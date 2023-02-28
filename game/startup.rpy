@@ -175,7 +175,7 @@ screen startup_review(bg):
 
                 text "Cashflow" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
                 hbox:
-                    text "[CURRENCY]" color "#000000" font "Dyslexie_Italic_159164.ttf"
+                    text "[CURRENCY]" color "#000000" font "fonts/Dyslexie_Italic_159164.ttf"
                     text DynamicDisplayable(dynamic_show_text, 3, money) font "fonts/Dyslexie_Italic_159164.ttf"
 
                 text "Days as Founder   " font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
