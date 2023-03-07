@@ -307,6 +307,3 @@ init python:
 
         def record_choice_lean(self, value):
             self.store[self.current_chapter].event_choices_lean.append(value)
-
-    def string_formatter(string):
-        pass

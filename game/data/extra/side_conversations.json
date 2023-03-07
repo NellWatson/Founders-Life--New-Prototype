@@ -1,0 +1,18 @@
+[
+    {
+        "id": "sc_01",
+        "title": "Big Announcement",
+        "label": "sc_01",
+        "condition": [
+            ["turn_no", 1, "greater_equal"]
+        ]
+    },
+    {
+        "id": "sc_02",
+        "title": "Big Announcement",
+        "label": "sc_02",
+        "condition": [
+            ["turn_no", 15, "greater_equal"]
+        ]
+    }
+]

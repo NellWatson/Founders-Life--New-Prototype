@@ -220,7 +220,7 @@ init python:
                 x_size = int((change * 0.01) * properties["xysize"][0])
             x_pos = int(((value) / 100.0 ) * properties["xysize"][0])
 
-            box = At(Solid(inc, xsize=x_size, ysize=properties["xysize"][1], xpos=x_pos), flash_fast)
+            box = At(Solid(Color(inc).shade(0.75), xsize=x_size, ysize=properties["xysize"][1], xpos=x_pos), flash_fast)
             bar = Bar(value=value, range=100, left_bar=Solid(base), right_bar=Color(base).shade(0.75), **properties)
 
         else:
@@ -232,6 +232,6 @@ init python:
             x_pos = int(((value_2) / 100.0 ) * properties["xysize"][0])
 
             bar = Bar(value=value, range=100, left_bar=Solid(base), right_bar=Color(base).shade(0.75), **properties)
-            box = At(Solid(dec, xsize=x_size, ysize=properties["xysize"][1], xpos=x_pos), flash_fast)
+            box = At(Solid(Color(dec).shade(0.75), xsize=x_size, ysize=properties["xysize"][1], xpos=x_pos), flash_fast)
 
         return Fixed(bar, box, xfit=True, yfit=True)

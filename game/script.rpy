@@ -11,6 +11,7 @@ label start:
     $ characters_roster = CharacterRooster()
     $ chapter_manager = ChapterManager()
     $ var_tracker = VarTracker()
+    $ side_conversations = SideConversationManager()
 
     $ set_game_id()
 
@@ -20,12 +21,15 @@ label start:
     $ characters_roster.add_character("takashi", "Takashi", "t", "takashi")
     $ characters_roster.add_character("roger", "Roger", "r", "roger")
     $ characters_roster.add_character("dominique", "Dominique", "d", "dominique")
+
     $ chapter_manager.load_chapter("ch_01", "chapter_01")
     $ chapter_manager.load_chapter("ch_02", "chapter_02")
     $ chapter_manager.load_chapter("ch_03", "chapter_03")
     $ chapter_manager.load_chapter("ch_04", "chapter_04")
     $ chapter_manager.load_chapter("ch_05", "chapter_05")
     $ chapter_manager.set_chapter("ch_01")
+
+    $ side_conversations.load()
 
     $ telemetry.init()
     $ telemetry.setup()
@@ -38,7 +42,9 @@ label start:
     jump event_intro
 
 label week_event:
-    $ variable("money", -50)
+    $ money -= 50
+    if money < 0:
+        $ money = 0
 
     $ _event = chapter_manager.get_event()
     $ event_code = _event.id
@@ -265,6 +271,9 @@ label checkpoint:
         else:
             n normal "Congratulations, things are going great. But don't get complacent, founder life is a constant tension between taking care of your business and taking care of yourself."
 
+    $ side_conversations.find_and_play_event()
+
+label turn_advance:
     if energy > 0 and morale > 0:
         $ turn_no += 1
         $ total_days = ((current_chapter-1) * CHAPTER_DAY_COUNT) + turn_no

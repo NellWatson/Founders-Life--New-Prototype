@@ -53,6 +53,7 @@ init python:
         renpy.unlink_save("custom")
         if fully:
             persistent._clear(progress=True)
+            persistent.give_hints = False
             renpy.transition(Dissolve(0.25))
             renpy.show_screen("success_msg", message="Game was successfully reset.", width=600, show_button="Okay")
 
