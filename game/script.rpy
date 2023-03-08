@@ -273,7 +273,6 @@ label checkpoint:
 
     $ side_conversations.find_and_play_event()
 
-label turn_advance:
     if energy > 0 and morale > 0:
         $ turn_no += 1
         $ total_days = ((current_chapter-1) * CHAPTER_DAY_COUNT) + turn_no

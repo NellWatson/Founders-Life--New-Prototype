@@ -1895,7 +1895,7 @@ screen set_room():
 
     default colour = "#ff8800"
     default width = 950
-    default height = 180
+    default height = 240
     default tinted = Color(colour).tint(0.5)
     default shaded = Color(colour).shade(0.5)
     default dark = Color(colour).shade(-0.5)
@@ -1938,7 +1938,7 @@ screen set_room():
                     xalign 0.5
                     yalign 0.5
 
-                    text "Enter a valid classroom ID." size 25 color "#000000"
+                    text "Enter a valid classroom ID. A classroom allows you to collect and compare scores with your fellow participants. Your instructor would have provided you with a classroom id." size 25 color "#000000"
 
                     $ input_1 = Input(value=RoomInputValue("room_id"), size=36, length=24, color="#000000", font="fonts/Dyslexie_Regular_159164.ttf", pixel_width=900)
                     button:
