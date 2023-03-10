@@ -1,4 +1,4 @@
-init python:
+init -100 python:
     import json
 
     def decode(d):
@@ -57,5 +57,20 @@ init python:
             data = decode(json.load(renpy.file("data/{}/{}.json".format(filepath, filename))))
         except IOError:
             return None
+
+        return data
+
+    def load_config(filename="config"):
+        try:
+            data = decode(json.load(renpy.file("data/{}.json".format(filename))))
+        except IOError:
+            return {
+                "enable_hints": True,
+                "default_hints_show": False,
+                "enable_class_room": True,
+                "set_class_room_id": "",
+                "daily_money_use": 50,
+                "starting_money": 5000
+            }
 
         return data

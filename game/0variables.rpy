@@ -27,7 +27,6 @@ default month = 0
 default event_code = ""
 default event_name = ""
 default level_up = False
-default persistent.give_hints = False
 default choice_hover_on = False
 
 default feedback = {}
@@ -46,3 +45,6 @@ default gid = ""
 define _game_menu_screen = "preferences"
 define skip_splashscreen = False
 define choice_effects = {}
+define config_fl = load_config()
+
+default persistent.give_hints = config_fl["enable_hints"] and config_fl["default_hints_show"]

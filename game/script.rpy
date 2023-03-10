@@ -29,6 +29,12 @@ label start:
     $ chapter_manager.load_chapter("ch_05", "chapter_05")
     $ chapter_manager.set_chapter("ch_01")
 
+    if config_fl["starting_money"]:
+        $ money = config_fl["starting_money"]
+    if config_fl["set_class_room_id"]:
+        $ persistent.room_id = config_fl["set_class_room_id"]
+        $ set_room_id(last_room_id="") 
+
     $ side_conversations.load()
 
     $ telemetry.init()
@@ -42,7 +48,11 @@ label start:
     jump event_intro
 
 label week_event:
-    $ money -= 50
+    if config_fl["daily_money_use"]:
+        $ money -= config_fl["daily_money_use"]
+    else:
+        $ money -= 50
+        
     if money < 0:
         $ money = 0
 

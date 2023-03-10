@@ -1,0 +1,8 @@
+{
+    "enable_hints": "True",
+    "default_hints_show": "False",
+    "enable_class_room": "True",
+    "set_class_room_id": "",
+    "daily_money_use": 50,
+    "starting_money": 5000
+}

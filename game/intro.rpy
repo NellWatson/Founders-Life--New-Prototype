@@ -69,16 +69,18 @@ label event_intro:
     "5... 4... 3... 2... 1... HAPPY NEW YEAR!"
     "It's the start of what you hope will change the rest of your life."
 
-    menu:
-        "Do you want to enable choice hints which will allow you to see what impact a choice will have on your KPIs?"
+    if config_fl["enable_hints"]:
+        menu:
+            "Do you want to enable choice hints which will allow you to see what impact a choice will have on your KPIs?"
 
-        "Yes":
-            $ persistent.give_hints = True
+            "Yes":
+                $ persistent.give_hints = True
 
-            "Hover over a choice, and look up at the HUD for the impacts a choice will have."
+                "Hover over a choice, and look up at the HUD for the impacts a choice will have."
 
-        "No":
-            pass
+            "No":
+                $ persistent.give_hints = False
+                pass
 
     "Also remember, $50 will be deducted daily for your ongoing expenses. Keep that in mind while planning your future."
 

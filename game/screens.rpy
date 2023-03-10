@@ -329,10 +329,11 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
-        textbutton _("Create Classroom") action ShowMenu("create_room")
-        textbutton _("Enter Classroom") action ShowMenu("set_room")
-        textbutton _("Exit Classroom") action ShowMenu("exit_room")
-        textbutton _("Delete Classroom") action ShowMenu("delete_room")
+        if config_fl["enable_class_room"]:
+            textbutton _("Create Classroom") action ShowMenu("create_room")
+            textbutton _("Enter Classroom") action ShowMenu("set_room")
+            textbutton _("Exit Classroom") action ShowMenu("exit_room")
+            textbutton _("Delete Classroom") action ShowMenu("delete_room")
 
         if _in_replay:
 
@@ -820,11 +821,12 @@ screen preferences():
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
-                vbox:
-                    style_prefix "check"
-                    label _("Show Choice Effects")
-                    textbutton _("Yes") action SetField(persistent, "give_hints", True)
-                    textbutton _("No") action SetField(persistent, "give_hints", False)
+                if config_fl["enable_hints"]:
+                    vbox:
+                        style_prefix "check"
+                        label _("Show Choice Effects")
+                        textbutton _("Yes") action SetField(persistent, "give_hints", True)
+                        textbutton _("No") action SetField(persistent, "give_hints", False)
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
