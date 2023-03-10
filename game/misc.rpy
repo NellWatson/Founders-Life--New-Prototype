@@ -62,6 +62,17 @@ init python:
             renpy.transition(Dissolve(0.25))
             renpy.show_screen("success_msg", message="Save file was deleted.", width=600, show_button="Okay")
 
+    def show_affection():
+        for i, j in store.choice_effects.items():
+            if "affection" in i:
+                if j > 0:
+                    return "gain"
+                
+                else:
+                    return "lose"
+
+        return ""
+
     def meets_condition(var, value, condition):
         """
         Checks if the condition is satisfied or not.

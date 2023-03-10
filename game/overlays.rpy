@@ -38,6 +38,11 @@ screen hud():
                 add "gui/hud/morale.png" yalign 0.5 xoffset -44
                 add DynamicDisplayable(dynamic_bar, morale_bar)
 
+        $ heart_type = show_affection()
+        if heart_type:
+            add "images/intro/heart_[heart_type].png" xalign 0.76 yalign 0.5:
+                zoom 0.75
+
         hbox:
             xalign 0.98
             yalign 0.15

@@ -76,7 +76,15 @@ label event_intro:
             "Yes":
                 $ persistent.give_hints = True
 
-                "Hover over a choice, and look up at the HUD for the impacts a choice will have."
+                "Hover over a choice, and look up at the HUD for the impacts it will have."
+
+                show intro heart gain at im_center
+                "When this icon appears in your HUD, it means that selecting this choice will positively affect your relationship with the character appearing in that event."
+
+                show intro heart lose at im_center
+                "When this icon appears in your HUD, it means that selecting this choice will negatively affect your relationship with the character appearing in that event."
+
+                hide intro with dissolve
 
             "No":
                 $ persistent.give_hints = False

@@ -14,6 +14,8 @@ image intro productivity = "images/intro/productivity.png"
 image intro energy = "images/intro/energy.png"
 image intro morale = "images/intro/morale.png"
 image intro money = "images/intro/money.png"
+image intro heart gain = "images/intro/heart_gain.png"
+image intro heart lose = "images/intro/heart_lose.png"
 
 image splash lilac = "images/splash/lilac.png"
 

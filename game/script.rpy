@@ -33,7 +33,7 @@ label start:
         $ money = config_fl["starting_money"]
     if config_fl["set_class_room_id"]:
         $ persistent.room_id = config_fl["set_class_room_id"]
-        $ set_room_id(last_room_id="") 
+        $ set_room_id(last_room_id="")
 
     $ side_conversations.load()
 
