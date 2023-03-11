@@ -71,7 +71,7 @@ init python:
                             Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18),
                             xfit=True, yfit=True)
                 else:
-                    return Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties)
+                    return bar_overlay(value=v, base=self.base, inc=self.inc, dec=self.dec, properties=self.properties, change=change)
 
     class ReviewB():
 
