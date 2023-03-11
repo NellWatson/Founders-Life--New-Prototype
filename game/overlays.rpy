@@ -50,6 +50,13 @@ screen hud():
             text "Savings: " style "hud_text"
             if check["money"]:
                 text check["money"] style "hud_text" at flash
+
+            elif "money" in choice_effects:
+                if choice_effects["money"] > 0:
+                    text "[CURRENCY]{:,}".format(money + choice_effects["money"]) style "hud_text" color "#00ff00" at flash
+                else:
+                    text "[CURRENCY]{:,}".format(money + choice_effects["money"]) style "hud_text" color "#ff0000" at flash
+                    
             else:
                 text "[CURRENCY]{:,}".format(money) style "hud_text"
 

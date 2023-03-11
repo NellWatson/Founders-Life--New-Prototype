@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.4.6.0312
+------------
+* Show money hints.
+
 v 0.4.6.0311
 ------------
 * Show icons when a choice affects affection if hints are enabled.

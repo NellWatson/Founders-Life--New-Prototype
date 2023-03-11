@@ -9,10 +9,12 @@
     },
     "yes_action": {
         "productivity": 10,
-        "mindfulness": -5
+        "mindfulness": -5,
+        "money": 100
     },
     "no_action": {
-        "productivity": -10
+        "productivity": -10,
+        "money": -100
     },
     "yes_description": {
         "en": [
