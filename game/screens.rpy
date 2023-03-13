@@ -158,7 +158,9 @@ screen input(prompt):
             text prompt style "new_input_text"
             hbox:
                 text "> " yoffset 3
-                input id "input" font "fonts/Dyslexie_Regular_159164.ttf" color "#ffffff" size 36
+                input id "input" font "fonts/Dyslexie_Regular_159164.ttf" color "#ffffff" size 36:
+                    if renpy.mobile:
+                        yoffset 25
 
     add "gui/who.png" xpos 78 ypos 757
     add AlphaMask("side nell normal", "gui/who_mask.png") xpos 78 ypos 757
@@ -220,6 +222,7 @@ screen choice(items):
                         textbutton caption action i.action:
                             hovered If(kind == "y", true=SetVariable("choice_effects", _event.yes_action), false=SetVariable("choice_effects", _event.no_action))
                             unhovered SetVariable("choice_effects", {})
+                            alternate NullAction()
 
                     else:
                         textbutton i.caption action i.action
@@ -254,42 +257,42 @@ screen quick_menu():
 
     ## Ensure this appears on top of other screens.
     zorder 100
+    if quick_menu:
+        hbox:
+            style_prefix "quick"
 
-    hbox:
-        style_prefix "quick"
+            xalign 1.0
+            yalign 1.0
+            spacing 15
 
-        xalign 1.0
-        yalign 1.0
-        spacing 15
-
-        imagebutton:
-            idle "gui/back_idle.png"
-            hover "gui/back_hover.png"
-            insensitive "gui/back_insensitive.png"
-            action Rollback()
-
-            at set_size(50, 50)
-        imagebutton:
-            idle "gui/skip_idle.png"
-            hover "gui/skip_hover.png"
-            insensitive "gui/skip_insensitive.png"
-            action Skip() alternate Skip(fast=True, confirm=True)
-
-            at set_size(50, 50)
-
-        if config.developer:
             imagebutton:
-                idle "gui/save_idle.png"
-                hover "gui/save_hover.png"
-                action ShowMenu('save')
+                idle "gui/back_idle.png"
+                hover "gui/back_hover.png"
+                insensitive "gui/back_insensitive.png"
+                action Rollback()
 
                 at set_size(50, 50)
-        imagebutton:
-            idle "gui/settings_idle.png"
-            hover "gui/settings_hover.png"
-            action ShowMenu('preferences')
+            imagebutton:
+                idle "gui/skip_idle.png"
+                hover "gui/skip_hover.png"
+                insensitive "gui/skip_insensitive.png"
+                action Skip() alternate Skip(fast=True, confirm=True)
 
-            at set_size(50, 50)
+                at set_size(50, 50)
+
+            if config.developer:
+                imagebutton:
+                    idle "gui/save_idle.png"
+                    hover "gui/save_hover.png"
+                    action ShowMenu('save')
+
+                    at set_size(50, 50)
+            imagebutton:
+                idle "gui/settings_idle.png"
+                hover "gui/settings_hover.png"
+                action ShowMenu('preferences')
+
+                at set_size(50, 50)
 
 init python:
     config.overlay_screens.append("quick_menu")
@@ -321,19 +324,40 @@ screen navigation():
         xpos gui.navigation_xpos
         yalign 0.5
 
-        spacing gui.navigation_spacing
+        if renpy.mobile:
+            spacing gui.navigation_spacing
+        else:
+            spacing gui.navigation_spacing
 
-        if config.developer:
+        if config.developer and not renpy.mobile:
             textbutton _("Save") action ShowMenu("save")
             textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
         if config_fl["enable_class_room"]:
-            textbutton _("Create Classroom") action ShowMenu("create_room")
-            textbutton _("Enter Classroom") action ShowMenu("set_room")
-            textbutton _("Exit Classroom") action ShowMenu("exit_room")
-            textbutton _("Delete Classroom") action ShowMenu("delete_room")
+            null height 1
+            textbutton _("Create Classroom") action ShowMenu("create_room"):
+                if renpy.mobile:
+                    text_xmaximum 200
+                    text_line_leading -22
+            null height 10
+            textbutton _("Enter Classroom") action ShowMenu("set_room"):
+                if renpy.mobile:
+                    text_xmaximum 200
+                    text_line_leading -22
+
+            if not persistent.room_id:
+                null height 8
+                textbutton _("Exit Classroom") action ShowMenu("exit_room"):
+                    if renpy.mobile:
+                        text_xmaximum 200
+                        text_line_leading -22
+                null height 10
+                textbutton _("Delete Classroom") action ShowMenu("delete_room"):
+                    if renpy.mobile:
+                        text_xmaximum 200
+                        text_line_leading -22
 
         if _in_replay:
 
@@ -343,9 +367,10 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        if main_menu:
+            textbutton _("About") action ShowMenu("about")
 
-        textbutton _("Reset Game") action Show("reset_data_confirm")
+            textbutton _("Reset Game") action Show("reset_data_confirm")
         textbutton _("Credits") action Show("credits", _hide=True)
 
         if renpy.variant("pc"):
@@ -1493,16 +1518,43 @@ screen quick_menu():
 
     zorder 100
 
-    hbox:
-        style_prefix "quick"
+    if quick_menu:
 
-        xalign 0.5
-        yalign 1.0
+        hbox:
+            style_prefix "quick"
 
-        textbutton _("Back") action Rollback()
-        textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-        textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Menu") action ShowMenu()
+            xalign 1.0
+            yalign 1.0
+            spacing 30
+
+            imagebutton:
+                idle "gui/back_idle.png"
+                hover "gui/back_hover.png"
+                insensitive "gui/back_insensitive.png"
+                action Rollback()
+
+                at set_size(50, 50)
+            imagebutton:
+                idle "gui/skip_idle.png"
+                hover "gui/skip_hover.png"
+                insensitive "gui/skip_insensitive.png"
+                action Skip() alternate Skip(fast=True, confirm=True)
+
+                at set_size(50, 50)
+
+            if config.developer:
+                imagebutton:
+                    idle "gui/save_idle.png"
+                    hover "gui/save_hover.png"
+                    action ShowMenu('save')
+
+                    at set_size(50, 50)
+            imagebutton:
+                idle "gui/settings_idle.png"
+                hover "gui/settings_hover.png"
+                action ShowMenu('preferences')
+
+                at set_size(50, 50)
 
 
 style window:

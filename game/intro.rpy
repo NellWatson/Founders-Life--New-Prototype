@@ -1,4 +1,5 @@
 label event_intro:
+    $ quick_menu = False
     show screen block_keys("game_menu")
 
     n normal "Welcome to Founder Life! (click or tap to move forward)"
@@ -34,6 +35,8 @@ label event_intro:
     #call screen msg("Meeting Your Mentor", title="episode 1", show_button="Let's go!")
 
     hide screen block_keys
+
+    $ quick_menu = True
 
     # Set up a dummy screen
     $ current_sprint = 0

@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v 0.4.6.0313
+------------
+* Optimise interface for handheld devices.
+
 v 0.4.6.0312
 ------------
 * Show money hints.
