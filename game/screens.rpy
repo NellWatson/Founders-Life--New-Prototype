@@ -160,7 +160,7 @@ screen input(prompt):
                 text "> " yoffset 3
                 input id "input" font "fonts/Dyslexie_Regular_159164.ttf" color "#ffffff" size 36:
                     if renpy.mobile:
-                        yoffset 25
+                        yoffset 23
 
     add "gui/who.png" xpos 78 ypos 757
     add AlphaMask("side nell normal", "gui/who_mask.png") xpos 78 ypos 757
@@ -222,7 +222,6 @@ screen choice(items):
                         textbutton caption action i.action:
                             hovered If(kind == "y", true=SetVariable("choice_effects", _event.yes_action), false=SetVariable("choice_effects", _event.no_action))
                             unhovered SetVariable("choice_effects", {})
-                            alternate NullAction()
 
                     else:
                         textbutton i.caption action i.action
