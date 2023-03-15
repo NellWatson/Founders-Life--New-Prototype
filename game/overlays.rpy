@@ -110,7 +110,7 @@ screen founder_map():
                 xalign 0.5
                 yalign 0.5
 
-                text EPISODE_NAMES[current_chapter-1] color "#000000"
+                text EPISODE_NAMES[current_chapter-1] color "#000000" size 30
 
 screen character_intro():
     default character_list = ["skylar", "takashi", "roger"]

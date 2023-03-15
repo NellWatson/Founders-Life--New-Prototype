@@ -1,6 +1,18 @@
 CHANGELOG
 =========
 
+v 0.4.6.0315
+------------
+* Fix text sizes in different screens.
+
+v 0.4.6.0314
+------------
+* Add Android related assets.
+
+v 0.4.6.0313
+------------
+* Optimise interface for handheld devices.
+
 v 0.4.6.0312
 ------------
 * Show money hints.

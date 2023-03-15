@@ -15,7 +15,7 @@ init python:
     def dynamic_show_text(st, at, req_st, value, effect=None, default=0):
         if req_st > st:
             changing_value = int(value / (1 + req_st - st))
-            return Text("{:,}".format(changing_value), color="#000000"), .05
+            return Text("{:,}".format(changing_value), color="#000000", size=28), .05
         else:
             if req_st < 4:
                 renpy.sound.play("sfx/fx008.wav")
@@ -23,14 +23,14 @@ init python:
                 renpy.sound.play("sfx/fx009.wav")
             if effect:
                 if type(value) == int:
-                    return At(Text("{:,}".format(value), color="#000000"), effect), None
+                    return At(Text("{:,}".format(value), color="#000000", size=28), effect), None
                 else:
-                    return At(Text(value, color="#000000"), effect), None
+                    return At(Text(value, color="#000000", size=28), effect), None
             else:
                 if type(value) == int:
-                    return Text("{:,}".format(value), color="#000000"), None
+                    return Text("{:,}".format(value), color="#000000", size=28), None
                 else:
-                    return Text(value, color="#000000"), None
+                    return Text(value, color="#000000", size=28), None
 
     def dynamic_show(st, at, req_st, d):
         if req_st > st:
@@ -102,13 +102,13 @@ screen sprint_review(bg):
             spacing 10
             first_spacing 40
 
-            text "[founder_name]" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 0.5
+            text "[founder_name]" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28 xalign 0.5
             hbox:
                 xsize 500
                 xalign 0.5
 
-                text "Founder Points Earned: ".format(founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 0.0
-                text "{:,}".format(founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 1.0
+                text "Founder Points Earned: ".format(founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28 xalign 0.0
+                text "{:,}".format(founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28 xalign 1.0
 
             null height 1.0
             add DynamicDisplayable(dynamic_review, review.bar, 0.25) xalign 0.5
@@ -118,13 +118,15 @@ screen sprint_review(bg):
                 xsize 500
                 xalign 0.5
 
-                text "Total Founder Points: ".format(founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 0.0
-                text "{:,}".format(total_founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 1.0
+                text "Total Founder Points: ".format(founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28 xalign 0.0
+                text "{:,}".format(total_founder_score) font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28 xalign 1.0
 
         textbutton _("Let's Go"):
             idle_background("#d3d3d3")
             hover_background Solid( Color("#d3d3d3").tint(0.5) )
             selected_background Solid( Color("#d3d3d3").shade(0.5) )
+
+            text_size 28
 
             action [ Function(review.force_update), Stop("bar_sound"), Return() ]
 
@@ -157,40 +159,42 @@ screen startup_review(bg):
             spacing 10
 
             null height 1.0
-            text "Another sprint completed, [founder_name]" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" xalign 0.5
+            text "Another sprint completed, [founder_name]" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28 xalign 0.5
             null height 8.0
 
             grid 2 7:
                 xpos 170
                 spacing 10
 
-                text "Productivity" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 0.75, productivity) font "fonts/Dyslexie_Italic_159164.ttf"
+                text "Productivity" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28
+                text DynamicDisplayable(dynamic_show_text, 0.75, productivity) font "fonts/Dyslexie_Italic_159164.ttf" size 28
 
-                text "Energy" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 1.5, energy) font "fonts/Dyslexie_Italic_159164.ttf"
+                text "Energy" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28
+                text DynamicDisplayable(dynamic_show_text, 1.5, energy) font "fonts/Dyslexie_Italic_159164.ttf" size 28
 
-                text "Mindfulness" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 2.25, morale) font "fonts/Dyslexie_Italic_159164.ttf"
+                text "Mindfulness" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28
+                text DynamicDisplayable(dynamic_show_text, 2.25, morale) font "fonts/Dyslexie_Italic_159164.ttf" size 28
 
-                text "Cashflow" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
+                text "Cashflow" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28
                 hbox:
-                    text "[CURRENCY]" color "#000000" font "fonts/Dyslexie_Italic_159164.ttf"
-                    text DynamicDisplayable(dynamic_show_text, 3, money) font "fonts/Dyslexie_Italic_159164.ttf"
+                    text "[CURRENCY]" color "#000000" font "fonts/Dyslexie_Italic_159164.ttf" size 28
+                    text DynamicDisplayable(dynamic_show_text, 3, money) font "fonts/Dyslexie_Italic_159164.ttf" size 28
 
-                text "Days as Founder   " font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 3.75, total_days) font "fonts/Dyslexie_Italic_159164.ttf"
+                text "Days as Founder   " font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28
+                text DynamicDisplayable(dynamic_show_text, 3.75, total_days) font "fonts/Dyslexie_Italic_159164.ttf" size 28
 
                 null height 1.0
                 null height 1.0
 
-                text "{b}Founder Points Earned{/b}" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000"
-                text DynamicDisplayable(dynamic_show_text, 4.5, founder_score) font "fonts/Dyslexie_Italic_159164.ttf"
+                text "{b}Founder Points Earned{/b}" font "fonts/Dyslexie_Bold_159164.ttf" color "#000000" size 28
+                text DynamicDisplayable(dynamic_show_text, 4.5, founder_score) font "fonts/Dyslexie_Italic_159164.ttf" size 28
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
             hover_background Solid( Color("#d3d3d3").tint(0.5) )
             selected_background Solid( Color("#d3d3d3").shade(0.5) )
+
+            text_size 28
 
             action Return()
 
@@ -223,19 +227,21 @@ screen level_up(bg):
 
                 xalign 0.5
 
-                text "Startup Valuation: " color "#000000"
-                text "Founder Level: " color "#000000"
+                text "Startup Valuation: " color "#000000" size 28
+                text "Founder Level: " color "#000000" size 28
 
-                text DynamicDisplayable(dynamic_review, review.valuation, 0.0) xalign 0.5
-                text DynamicDisplayable(dynamic_review, review.fl, 1.0) xalign 0.5
+                text DynamicDisplayable(dynamic_review, review.valuation, 0.0) xalign 0.5 size 28
+                text DynamicDisplayable(dynamic_review, review.fl, 1.0) xalign 0.5 size 28
 
             text " " size 7
-            add DynamicDisplayable(dynamic_review, review.bar, 2.0) xalign 0.5
+            add DynamicDisplayable(dynamic_review, review.bar, 2.0) xalign 0.5 size 28
 
         textbutton _("CONTINUE"):
             idle_background("#d3d3d3")
             hover_background Solid( Color("#d3d3d3").tint(0.5) )
             selected_background Solid( Color("#d3d3d3").shade(0.5) )
+
+            text_size 28
 
             action Return()
 

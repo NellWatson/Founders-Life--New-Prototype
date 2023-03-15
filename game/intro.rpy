@@ -1,4 +1,5 @@
 label event_intro:
+    $ quick_menu = False
     show screen block_keys("game_menu")
 
     n normal "Welcome to Founder Life! (click or tap to move forward)"
@@ -34,6 +35,8 @@ label event_intro:
     #call screen msg("Meeting Your Mentor", title="episode 1", show_button="Let's go!")
 
     hide screen block_keys
+
+    $ quick_menu = True
 
     # Set up a dummy screen
     $ current_sprint = 0
@@ -76,7 +79,11 @@ label event_intro:
             "Yes":
                 $ persistent.give_hints = True
 
-                "Hover over a choice, and look up at the HUD for the impacts it will have."
+                if renpy.mobile:
+                    "Long press a choice, and look up at the HUD for the impacts it will have."
+                
+                else:
+                    "Hover over a choice, and look up at the HUD for the impacts it will have."
 
                 show intro heart gain at im_center
                 "When this icon appears in your HUD, it means that selecting this choice will positively affect your relationship with the character appearing in that event."

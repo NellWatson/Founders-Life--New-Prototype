@@ -58,7 +58,7 @@ init python:
                     return Fixed(
                             At(
                                 Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash),
-                                Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18),
+                                Text("{:,}/{:,}".format(v, 100), color="#ffffff", size=28, xalign=0.18),
                             xfit=True, yfit=True)
                 else:
                     return At(Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties), flash)
@@ -68,10 +68,10 @@ init python:
                 if config.developer:
                     return Fixed(
                             bar_overlay(value=v, base=self.base, inc=self.inc, dec=self.dec, properties=self.properties, change=change),
-                            Text("{:,}/{:,}".format(v, 100), color="#ffffff", xalign=0.18),
+                            Text("{:,}/{:,}".format(v, 100), color="#ffffff", size=28, xalign=0.18),
                             xfit=True, yfit=True)
                 else:
-                    return Bar(value=v, range=100, left_bar=Solid(d), right_bar=Color(d).shade(0.75), **self.properties)
+                    return bar_overlay(value=v, base=self.base, inc=self.inc, dec=self.dec, properties=self.properties, change=change)
 
     class ReviewB():
 
@@ -119,7 +119,7 @@ init python:
                 symbol = "(-$"
                 end_tag = "){/color}"
 
-            return Text(tag + "{:,}".format(store.money) + symbol + "{:,}".format(store.current_sprint) + end_tag, color="#000000")
+            return Text(tag + "{:,}".format(store.money) + symbol + "{:,}".format(store.current_sprint) + end_tag, color="#000000", size=28)
 
         def fl(self, st, limit):
             # If enough time had not passed, don't show the text
@@ -127,9 +127,9 @@ init python:
                 return Text("")
 
             if self.updated_fl:
-                return Text("{color=#00ff00}" + str(self.founder_level) + "{/color}")
+                return Text("{color=#00ff00}" + str(self.founder_level) + "{/color}", size=28)
             else:
-                return Text(str(last_founder_level), color="#000000")
+                return Text(str(last_founder_level), color="#000000", size=28)
 
         def force_update(self):
             if self.show_achivement_popup:
@@ -194,13 +194,13 @@ init python:
 
             bar_d = Bar(range=self.bar_range, value=self.bar_value, height=10)
             if self.updated_fl:
-                text_fl = At(HBox(Text("Founder Level: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#00e500}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=600, xalign=0.5), flash)
-                text_fs = At(HBox(Text("Founder Status: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#00e500}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=600, xalign=0.5), flash)
+                text_fl = At(HBox(Text("Founder Level: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0, size=28), Text("{color=#00e500}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0, size=28), xsize=600, xalign=0.5), flash)
+                text_fs = At(HBox(Text("Founder Status: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0, size=28), Text("{color=#00e500}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0, size=28), xsize=600, xalign=0.5), flash)
             else:
-                text_fl = HBox(Text("Founder Level: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#000000}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=600, xalign=0.5)
-                text_fs = HBox(Text("Founder Status: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0), Text("{color=#000000}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0), xsize=600, xalign=0.5)
+                text_fl = HBox(Text("Founder Level: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0, size=28), Text("{color=#000000}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0, size=28), xsize=600, xalign=0.5)
+                text_fs = HBox(Text("Founder Status: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0, size=28), Text("{color=#000000}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0, size=28), xsize=600, xalign=0.5)
 
-            return VBox(Fixed(bar_d, Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8), xfit=True, yfit=True), text_fl, text_fs, spacing=12)
+            return VBox(Fixed(bar_d, Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8, size=28), xfit=True, yfit=True), text_fl, text_fs, spacing=12)
 
     def dynamic_bar(st, at, bar):
         return bar.displayable(st), 0.1
