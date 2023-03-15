@@ -74,7 +74,7 @@ label event_intro:
 
     if config_fl["enable_hints"]:
         menu:
-            "Do you want to enable choice hints which will allow you to see what impact a choice will have on your KPIs?"
+            "Do you want to enable choice hints which will allow you to see what impact a choice will have on your personal resource indicators (recommended)?"
 
             "Yes":
                 $ persistent.give_hints = True
