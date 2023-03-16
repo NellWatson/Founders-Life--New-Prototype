@@ -1602,6 +1602,10 @@ screen credits(_hide=False):
         xalign 0.5
         ypos 500
 
+	text "Dedicated to Patrick de Zeeuw (1968-2022)" color "#559fdd" bold True xalign 0.5
+
+        null height 240
+
         text "Proudly Presented by" color "#559fdd" bold True xalign 0.5
         text "Studio Phanteke" color "#d88db7" xalign 0.5
 
@@ -1619,13 +1623,13 @@ screen credits(_hide=False):
 
         null height 60
 
-        text "Programmer" color "#559fdd" bold True xalign 0.5
+        text "Lead Development Engineer" color "#559fdd" bold True xalign 0.5
         text "Dipesh Aggarwal" color "#d88db7" xalign 0.5
         text "{a=https://dipeshaggarwal.com/}https://dipeshaggarwal.com{/a}" xalign 0.5
 
         null height 60
 
-        text "Writer" color "#559fdd" bold True xalign 0.5
+        text "Lead Story Content Author" color "#559fdd" bold True xalign 0.5
         text "Cara Hillstock" color "#d88db7" xalign 0.5
         text "{a=https://www.seantaylor.work/}https://www.patreon.com/Cheratomo{/a}" xalign 0.5
 
