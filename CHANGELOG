@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v 0.4.7.0316
+------------
+* Imported Project to Ren'Py 8.
+* Disabled side conversation for now.
+
 v 0.4.6.0315
 ------------
 * Fix text sizes in different screens.

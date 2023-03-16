@@ -62,7 +62,7 @@ label week_event:
     $ choice_hover_on = True
 
     if _event.bg:
-        scene expression _event.bg with dissolve
+        scene expression "bg " + _event.bg with dissolve
 
     if _event.character.sprite:
         pass#show expression _event.character.sprite at center
@@ -104,6 +104,8 @@ label checkpoint:
 
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
+
+            $ quick_menu = False
             call screen credits
 
             play sound "sfx/fx012.wav"
@@ -131,6 +133,8 @@ label checkpoint:
 
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
+
+            $ quick_menu = False
             call screen credits
 
             play sound "sfx/fx012.wav"
@@ -158,6 +162,8 @@ label checkpoint:
 
             call screen startup_review(current_bg)
             call screen sprint_review(current_bg)
+
+            $ quick_menu = False
             call screen credits
 
             play sound "sfx/fx012.wav"
@@ -184,6 +190,8 @@ label checkpoint:
 
         call screen startup_review(current_bg)
         call screen sprint_review(current_bg)
+
+        $ quick_menu = False
         call screen credits
 
         play sound "sfx/fx012.wav"
@@ -281,7 +289,8 @@ label checkpoint:
         else:
             n normal "Congratulations, things are going great. But don't get complacent, founder life is a constant tension between taking care of your business and taking care of yourself."
 
-    $ side_conversations.find_and_play_event()
+    if SIDE_CONVERSATION:
+        $ side_conversations.find_and_play_event()
 
     if energy > 0 and morale > 0:
         $ turn_no += 1

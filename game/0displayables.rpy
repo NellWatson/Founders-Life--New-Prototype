@@ -200,7 +200,7 @@ init python:
                 text_fl = HBox(Text("Founder Level: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0, size=28), Text("{color=#000000}" + "{:,}".format(self.founder_level) + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0, size=28), xsize=600, xalign=0.5)
                 text_fs = HBox(Text("Founder Status: ", font="fonts/Dyslexie_Bold_159164.ttf", color="#000000", xalign=0.0, size=28), Text("{color=#000000}" + FOUNDER_INDEX[self.founder_level][0] + "{/color}", font="fonts/Dyslexie_Italic_159164.ttf", color="#000000", xalign=1.0, size=28), xsize=600, xalign=0.5)
 
-            return VBox(Fixed(bar_d, Text("{:,}/{:,}".format(self.bar_value, self.bar_range), xalign=0.5, ypos=8, size=28), xfit=True, yfit=True), text_fl, text_fs, spacing=12)
+            return VBox(Fixed(bar_d, Text("{:,}/{:,}".format(int(self.bar_value), self.bar_range), xalign=0.5, ypos=8, size=28), xfit=True, yfit=True), text_fl, text_fs, spacing=12)
 
     def dynamic_bar(st, at, bar):
         return bar.displayable(st), 0.1

@@ -97,7 +97,8 @@ init python:
 
 init python in telemetry:
     
-    import urllib, urllib2, json
+    import urllib, json
+    import urllib.request as urllib2
 
     def init():
 
@@ -161,7 +162,7 @@ init python in telemetry:
 
         # Get the game ID. It will idenitfy the game play
         game_id = response.read()[1:-1]
-        print game_id.encode("utf-8")
+        print(game_id.encode("utf-8"))
 
         # Now mark it so that we know if a player is playing the game multiple times.
         renpy.store.persistent.multiple_id = True
@@ -182,7 +183,7 @@ init python in telemetry:
         # Set the status to mark that we are in an operation
         status = "collecting"
         week = renpy.store.week
-        print game_id.encode("utf-8")
+        print(game_id.encode("utf-8"))
 
         # If for some reason no game_id has been generated, generate one.
         if game_id == "placeholder":
@@ -238,7 +239,7 @@ init python in telemetry:
             try:
                 r = urllib2.Request(url, data, { "Content-Type": "application/json" })
                 response = urllib2.urlopen(r)
-            except Exception, e:
+            except Exception as e:
                 return "No Internet Connection"
 
             # When two choices are placed back to back and player fast clicks + skips through them,
@@ -303,7 +304,7 @@ init python in telemetry:
         try:
             r = urllib2.Request(url, data, { "Content-Type": "application/json" })
             response = urllib2.urlopen(r)
-        except Exception, e:
+        except Exception as e:
             return "No Internet Connection"
         status = ""
 
@@ -338,6 +339,6 @@ init python in telemetry:
         try:
             r = urllib2.Request(url, data, { "Content-Type": "application/json" })
             response = urllib2.urlopen(r)
-        except Exception, e:
-            print str(e)
+        except Exception as e:
+            print(str(e))
             return "No Internet Connection"

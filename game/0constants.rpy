@@ -1,4 +1,5 @@
 define SLOW_DISSOLVE = Dissolve(0.25)
+define SIDE_CONVERSATION = False
 
 define EPISODE_NAMES = [
     "Meeting your Mentor",

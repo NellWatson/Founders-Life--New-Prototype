@@ -12,8 +12,6 @@ init -100 python:
             """
 
             if isinstance(j, unicode):
-                j = j.encode("utf-8").replace("\xc3\xa9", "é")
-
                 if j == u"True":
                     j = True
                 elif j == u"False":
@@ -37,7 +35,7 @@ init -100 python:
             return d
 
         if isinstance(d, _dict):
-            for i, k in d.iteritems():
+            for i, k in d.items():
 
                 if isinstance(k, _dict):
                     decode(k)
