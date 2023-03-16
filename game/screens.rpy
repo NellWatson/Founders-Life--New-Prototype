@@ -1601,8 +1601,8 @@ screen credits(_hide=False):
         style_prefix "fl"
         xalign 0.5
         ypos 500
-
-	text "Dedicated to Patrick de Zeeuw (1968-2022)" color "#559fdd" bold True xalign 0.5
+        
+        text "Dedicated to Patrick de Zeeuw (1968-2022)" color "#559fdd" bold True xalign 0.5
 
         null height 240
 
