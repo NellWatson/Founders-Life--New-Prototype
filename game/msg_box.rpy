@@ -5,6 +5,9 @@ init python:
         Returns the height of the Text displayable
         """
 
+        if renpy.mobile:
+            return 300
+
         w, h = Text(message).size()
         modifier, round_up = divmod(w, width)
 
@@ -108,7 +111,7 @@ screen warn_msg(message, title="Warning", width=600, height=0, hide_anyway=False
             xalign 0.5
             yalign 0.5
 
-            text message color "#000000"
+            text message size 30 color "#000000"
 
 screen err_msg(message, title="Error", width=600, height=0, hide_anyway=False, show_button=""):
     modal True

@@ -1725,7 +1725,7 @@ screen clear_data_confirm():
                     xalign 0.5
                     yalign 0.5
 
-                    text "This will delete your current save file and game will start from the beginning." color "#000000"
+                    text "This will delete your current save file and game will start from the beginning." size 30 color "#000000"
 
             button:
                 xysize width, 90-15
